@@ -14,3 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.header__btn.btn:hover {
+  color: #0a58ca;
+}

@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
 
 const Header = () => {
+    const [headerSearchBar, setHeaderSearchBar] = useState(false);
+
+    const headerSearch = () => {
+        const searchBarShowHide = headerSearchBar ? false : true;
+        setHeaderSearchBar(searchBarShowHide);
+    }
+
     return (
         <>
             <Head>
                 <meta charset="utf-8" />
                 <title>CodeGarageTech</title>
-                <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+                <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
                 <meta name="format-detection" content="telephone=no"/>
                 <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png"/>
@@ -142,13 +149,15 @@ const Header = () => {
                             <img className="header__pic" src="img/menu-pic.png" alt="" />
                         </div>
                     </div>
-                    <div className="header__search js-header-search">
-                        <button className="header__open js-header-open">
+                    <div className={ headerSearchBar ? "header__search js-header-search active" : "header__search js-header-search" }>
+                        <button onClick={() => headerSearch()} className="header__open js-header-open">
                             <svg className="icon icon-search">
                                 <use xlinkHref="img/sprite.svg#icon-search"></use>
                             </svg>
                         </button>
-                        <div className="header__field"><input className="header__input" type="text" placeholder="Search ..." /></div>
+                        <div className="header__field">
+                            <input className="header__input" type="text" placeholder="Search ..." />
+                        </div>
                     </div>
                     <a className="header__btn btn btn_pink" href="login.html">Get Started</a>
                 </div>

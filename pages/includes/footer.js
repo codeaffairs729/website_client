@@ -54,7 +54,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer__bottom">
-                <a className="footer__company" href="https://ui8.net/" target="_blank">
+                <a className="footer__company" href="#">
                     <img className="footer__pic" src="img/ui8.svg" alt="" />
                 </a>
                 <div className="footer__copyright">© 2020, UI8 LLC.</div>
