@@ -18,3 +18,11 @@ a {
 .header__btn.btn:hover {
   color: #0a58ca;
 }
+
+.main__btn.btn:hover {
+  color: #fff;
+}
+
+.main__link:hover {
+  color: #999FAE
+}
