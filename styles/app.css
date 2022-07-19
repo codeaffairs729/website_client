@@ -5006,7 +5006,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex !important;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;

@@ -7,13 +7,26 @@ const Plan = () => {
           <div className="plan__center center">
             <div className="plan__head" data-aos="animation-scale-y">
               <div className="plan__stage stage">Join The Revolution</div>
-              <h2 className="plan__title title">Find the <span className="title__color">Right Plan.</span></h2>
-              <div className="plan__info info">Flexible pricing options for freelancers and design teams.</div><label className="switch"><input className="switch__input" type="checkbox" checked /><span className="switch__flex"><span className="switch__yearly">Billed Yearly</span><span className="switch__box"></span><span className="switch__monthly">Billed Monthly</span></span></label>
-              <div className="plan__variants"><select className="plan__select js-plan-select">
+              <h2 className="plan__title title">
+                Find the
+                <span className="title__color">Right Plan.</span>
+              </h2>
+              <div className="plan__info info">Flexible pricing options for freelancers and design teams.</div>
+              <label className="switch">
+                <input className="switch__input" type="checkbox" defaultChecked />
+                <span className="switch__flex">
+                  <span className="switch__yearly">Billed Yearly</span>
+                  <span className="switch__box"></span>
+                  <span className="switch__monthly">Billed Monthly</span>
+                </span>
+              </label>
+              <div className="plan__variants">
+                <select className="plan__select js-plan-select">
                   <option>Professional</option>
                   <option>Standard</option>
                   <option>Ultimate</option>
-                </select></div>
+                </select>
+              </div>
             </div>
             <div className="plan__body">
               <div className="plan__item js-plan-item" data-aos="animation-translate-y">

@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Slider from "react-slick";
 
 const Features = () => {
+    const [currentSlideNumber, setCurrentSlideNumber] = useState(0);
+    const [totalslides, setTotalSlides] = useState(0);
+
     const settings = {
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -11,6 +14,7 @@ const Features = () => {
         dots: false,
         infinite: false,
         speed: 600,
+        afterChange: current => setCurrentSlideNumber(current),
         responsive: [
             {
                 breakpoint: 1024,
@@ -97,7 +101,10 @@ const Features = () => {
                                 </div>
                             </Slider>
                         </div>
-                        <div className="features__status js-features-status"></div>
+                        <div className="features__status js-features-status">
+                            <span className="status__number">0{currentSlideNumber + 1}</span>
+                            <span className="status__all">05</span>
+                        </div>
                     </div>
                 </div>
                 <div className="features__circle js-rellax" data-rellax-speed="-.7"></div>

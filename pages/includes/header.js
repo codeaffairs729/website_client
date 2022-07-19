@@ -159,7 +159,7 @@ const Header = () => {
                             <input className="header__input" type="text" placeholder="Search ..." />
                         </div>
                     </div>
-                    <a className="header__btn btn btn_pink" href="login.html">Get Started</a>
+                    <a className="header__btn btn btn_pink" href='./login' >Get Started</a>
                 </div>
                 <div className="header__bg js-header-bg"></div>
             </div>
