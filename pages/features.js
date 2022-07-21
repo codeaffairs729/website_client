@@ -27,7 +27,7 @@ const Features = () => {
 
     return (
         <>
-            <div className="features js-features">
+            <div id="features" className="features js-features">
                 <div className="features__center center">
                     <div className="features__head" data-aos="animation-scale-y">
                         <div className="features__stage stage">Features</div>

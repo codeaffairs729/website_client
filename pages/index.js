@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+// import Image from 'next/image'
+// import styles from '../styles/Home.module.css'
 import Main from './main'
 import Features from './features'
 import Access from './access'
@@ -23,15 +23,8 @@ import Showcase from './showcase'
 import Offer from './offer'
 
 import Footer from './includes/footer'
-import AOS from "aos";
-// import "aos/dist/aos.css";
 
 export default function Home() {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
-
   return (
     <>
       <div className="page">

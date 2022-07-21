@@ -3,7 +3,7 @@ import React from 'react'
 const Plan = () => {
   return (
     <>
-        <div className="plan js-plan">
+        <div id="plan" className="plan js-plan">
           <div className="plan__center center">
             <div className="plan__head" data-aos="animation-scale-y">
               <div className="plan__stage stage">Join The Revolution</div>

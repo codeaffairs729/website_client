@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <>
             <Head>
-                <meta charset="utf-8" />
+                <meta charSet="utf-8" />
                 <title>CodeGarageTech</title>
                 <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
@@ -24,20 +24,7 @@ const Header = () => {
                 <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5"/>
                 <meta name="msapplication-TileColor" content="#da532c"/>
                 <meta name="theme-color" content="#ffffff"/>
-                <meta name="description" content=""/>
-                <meta name="twitter:card" content="summary"/>
-                <meta name="twitter:site" content=""/>
-                <meta name="twitter:title" content=""/>
-                <meta name="twitter:description" content=""/>
-                <meta name="twitter:creator" content=""/>
-                <meta name="twitter:image" content=""/>
-                <meta property="og:title" content=""/>
-                <meta property="og:type" content="Article"/>
-                <meta property="og:url" content=""/>
-                <meta property="og:image" content=""/>
-                <meta property="og:description" content=""/>
-                <meta property="og:site_name" content=""/>
-                <meta property="fb:admins" content=""/>
+                <meta name="description" content="CodeGarageTech"/>
             </Head>
             <div className="header js-header" id="header">
                 <div className="header__center center">
@@ -49,8 +36,8 @@ const Header = () => {
                     </a>
                     <div className="header__wrap js-header-wrap">
                         <nav className="header__nav">
-                            <a className="header__item" href="#">Features</a>
-                            <a className="header__item" href="#">Pricing</a>
+                            <a className="header__item" href="#features">Features</a>
+                            <a className="header__item" href="#plan">Pricing</a>
                             <a className="header__item" href="#">Tours</a>
                             <div className="header__item js-header-item">
                                 <a className="header__head js-header-head" href="#">
