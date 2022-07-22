@@ -73,7 +73,7 @@ const Package = () => {
                                                         </svg>
                                                     </button>
                                                 </div>
-                                                <button className="package__btn btn btn_purple" onClick={() => {}} >Get Started</button>
+                                                <a className="package__btn btn btn_purple" href="./login">Get Started</a>
                                             </div>
                                         </div>
                                         <div className="package__preview">
@@ -119,7 +119,7 @@ const Package = () => {
                                                         </svg>
                                                     </button>
                                                 </div>
-                                                <a className="package__btn btn btn_purple" href="login.html">Get Started</a>
+                                                <a className="package__btn btn btn_purple" href="./login">Get Started</a>
                                             </div>
                                         </div>
                                         <div className="package__preview">
@@ -165,7 +165,7 @@ const Package = () => {
                                                         </svg>
                                                     </button>
                                                 </div>
-                                                <a className="package__btn btn btn_purple" href="login.html">Get Started</a>
+                                                <a className="package__btn btn btn_purple" href="./login">Get Started</a>
                                             </div>
                                         </div>
                                         <div className="package__preview">
@@ -211,7 +211,7 @@ const Package = () => {
                                                         </svg>
                                                     </button>
                                                 </div>
-                                                <a className="package__btn btn btn_purple" href="login.html">Get Started</a>
+                                                <a className="package__btn btn btn_purple" href="./login">Get Started</a>
                                             </div>
                                         </div>
                                         <div className="package__preview">

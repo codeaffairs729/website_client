@@ -67,3 +67,11 @@ a {
   background: #FAB8C4;
   color: #2522BA;
 }
+
+.design__slide {
+  width: auto !important;
+}
+
+.design__link:hover {
+  color: inherit;
+}

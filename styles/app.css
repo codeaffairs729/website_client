@@ -5309,7 +5309,63 @@ body:not(.touch-device) .header__item:hover .header__body {
   border-radius: 24px;
 }
 
-.design__slide:first-child, .design__slide:nth-child(4) {
+.design__slider .slick-slide:first-child .design__slide, .design__slider .slick-slide:nth-child(4) .design__slide {
+  background: #FFEDDC;
+}
+
+.design__slider .slick-slide:first-child .design__slide .design__view, .design__slider .slick-slide:nth-child(4) .design__slide .design__view {
+  background: #FAB8C4;
+}
+
+.design__slider .slick-slide:first-child .design__slide .design__preview, .design__slider .slick-slide:nth-child(4) .design__slide .design__preview {
+  top: 10px;
+  left: 15px;
+  width: 360px;
+}
+
+.design__slider .slick-slide:nth-child(2) .design__slide, .design__slider .slick-slide:nth-child(5) .design__slide {
+  background: #DBDEFF;
+}
+
+.design__slider .slick-slide:nth-child(2) .design__slide .design__view, .design__slider .slick-slide:nth-child(5) .design__slide .design__view {
+  background: #5956E9;
+}
+
+.design__slider .slick-slide:nth-child(2) .design__slide .design__preview, .design__slider .slick-slide:nth-child(5) .design__slide .design__preview {
+  top: 52px;
+  left: 50%;
+  -webkit-transform: translateX(-41%);
+  -ms-transform: translateX(-41%);
+  transform: translateX(-41%);
+  width: 150px;
+}
+
+.design__slider .slick-slide:nth-child(2) .design__slide .design__link, .design__slider .slick-slide:nth-child(5) .design__slide .design__link {
+  color: #5956E9;
+}
+
+.design__slider .slick-slide:nth-child(2) .design__slide .design__link .icon, .design__slider .slick-slide:nth-child(5) .design__slide .design__link .icon {
+  fill: #5956E9;
+}
+
+.design__slider .slick-slide:nth-child(3) .design__slide {
+  background: #DBF8FF;
+}
+
+.design__slider .slick-slide:nth-child(3) .design__slide .design__view {
+  background: #90C8FC;
+}
+
+.design__slider .slick-slide:nth-child(3) .design__slide .design__preview {
+  top: 45px;
+  left: 50%;
+  -webkit-transform: translateX(-51%);
+  -ms-transform: translateX(-51%);
+  transform: translateX(-51%);
+  width: 150px;
+}
+
+/* .design__slide:first-child, .design__slide:nth-child(4) {
   background: #FFEDDC;
 }
 
@@ -5363,7 +5419,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   -ms-transform: translateX(-51%);
   transform: translateX(-51%);
   width: 150px;
-}
+} */
 
 .design__view {
   position: relative;
