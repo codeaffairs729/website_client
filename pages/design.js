@@ -2,7 +2,7 @@ import React from 'react'
 import Slider from "react-slick";
 
 const Design = () => {
-    const settings = {
+    const designSettings = {
         slidesToShow: 3,
         slidesToScroll: 1,
         dots: false,
@@ -55,7 +55,7 @@ const Design = () => {
                             <div className="design__text">Using Collab</div>
                         </a>
                         <div className="design__container">
-                            <Slider className="design__slider js-design-slider" {...settings}>
+                            <Slider className="design__slider js-design-slider" {...designSettings}>
                                 <div className="design__slide" data-aos="animation-translate-y" data-aos-delay="0">
                                     <div className="design__view">
                                         <div className="design__preview">

@@ -15,14 +15,55 @@ a {
   box-sizing: border-box;
 }
 
+.btn {
+  min-width: 178px;
+  height: 72px;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -.04em;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+
+.plan__btn {
+  min-width: 100%;
+  margin-top: auto;
+}
+
 .header__btn.btn:hover {
   color: #0a58ca;
 }
 
-.main__btn.btn:hover {
+.btn_purple {
+  background: #5956E9;
+  color: #fff;
+}
+
+.btn_purple.btn:hover {
   color: #fff;
 }
 
 .main__link:hover {
   color: #999FAE
+}
+
+.btn_white {
+  background: #fff;
+  color: #2522BA;
+}
+
+.btn_white.btn:hover {
+  color: #2522BA;
+}
+
+.package__arrow:hover {
+  background: #5956E9;
+}
+
+.btn_pink {
+  background: #FAB8C4;
+  color: #2522BA;
 }

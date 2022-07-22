@@ -3,7 +3,7 @@ import AOS from "aos";
 import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/app.css'
 import '../styles/globals.css'
-// import "aos/dist/aos.css";
+import "aos/dist/aos.css";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

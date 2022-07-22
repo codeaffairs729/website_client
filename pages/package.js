@@ -2,7 +2,7 @@ import React from 'react'
 import Slider from "react-slick";
 
 const Package = () => {
-    const settings = {
+    const packageSettings = {
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
@@ -34,7 +34,7 @@ const Package = () => {
                 <div className="package__center center">
                     <div className="package__container">
                         <div className="package__wrap">
-                            <Slider className="package__slider js-package-slider" {...settings}>
+                            <Slider className="package__slider js-package-slider" {...packageSettings}>
                                 <div className="package__slide">
                                     <div className="package__row">
                                         <div className="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
@@ -73,7 +73,7 @@ const Package = () => {
                                                         </svg>
                                                     </button>
                                                 </div>
-                                                <a className="package__btn btn btn_purple" href="login.html">Get Started</a>
+                                                <button className="package__btn btn btn_purple" onClick={() => {}} >Get Started</button>
                                             </div>
                                         </div>
                                         <div className="package__preview">
