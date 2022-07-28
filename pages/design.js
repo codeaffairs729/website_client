@@ -68,7 +68,7 @@ const Design = () => {
                                         <div className="design__text">
                                             Use the smart color picker to easily select and apply colors.
                                         </div>
-                                        <a className="design__link" href="login.html">
+                                        <a className="design__link" href="./login">
                                             Get started
                                             <svg className="icon icon-arrow-right">
                                                 <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
@@ -88,7 +88,7 @@ const Design = () => {
                                         <div className="design__text">
                                             Using the Component Builder with your projects.
                                         </div>
-                                        <a className="design__link" href="login.html">
+                                        <a className="design__link" href="./login">
                                             Get started
                                             <svg className="icon icon-arrow-right">
                                                 <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
@@ -108,7 +108,7 @@ const Design = () => {
                                         <div className="design__text">
                                             Deploy your projects more efficiently for web &amp; mobile.
                                         </div>
-                                        <a className="design__link" href="login.html">
+                                        <a className="design__link" href="./login">
                                             Get started
                                             <svg className="icon icon-arrow-right">
                                                 <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
@@ -128,7 +128,7 @@ const Design = () => {
                                         <div className="design__text">
                                             Use the smart color picker to easily select and apply colors.
                                         </div>
-                                        <a className="design__link" href="login.html">
+                                        <a className="design__link" href="./login">
                                             Get started
                                             <svg className="icon icon-arrow-right">
                                                 <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
@@ -148,7 +148,7 @@ const Design = () => {
                                         <div className="design__text">
                                             Using the Component Builder with your projects.
                                         </div>
-                                        <a className="design__link" href="login.html">
+                                        <a className="design__link" href="./login">
                                             Get started
                                             <svg className="icon icon-arrow-right">
                                                 <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>

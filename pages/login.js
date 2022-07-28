@@ -35,7 +35,7 @@ const Login = () => {
                                         <img className="btn__pic" src="img/google.svg" alt="" />
                                         <span className="btn__text">Sign in with Google</span>
                                     </button>
-                                    <a className="entry__btn btn btn_purple" href="./signUp">Sign in with your email</a>
+                                    <a className="entry__btn btn btn_purple" href="./signIn">Sign in with your email</a>
                                 </div>
                                 <div className="entry__links">
                                     <a className="entry__link" href="#">Not a member? Sigup now</a>

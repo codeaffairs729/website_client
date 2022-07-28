@@ -31,7 +31,7 @@ const Main = () => {
                             Create, build, collaborate and ship products faster. Good bye code! 👋
                         </div>
                         <div className="main__control" data-aos="animation-scale-y" data-aos-delay="550">
-                            <a className="main__btn btn btn_purple" href="login.html">Get Started</a>
+                            <a className="main__btn btn btn_purple" href="./login">Get Started</a>
                             <a className="main__link" href="#">
                                 <div className="main__icon">
                                     <img className="main__pic" src="img/play.svg" alt="" />

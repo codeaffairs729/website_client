@@ -68,6 +68,10 @@ a {
   color: #2522BA;
 }
 
+.btn_pink.btn:hover {
+  color: #2522BA;
+}
+
 .design__slide {
   width: auto !important;
 }
