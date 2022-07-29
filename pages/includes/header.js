@@ -36,7 +36,7 @@ const Header = () => {
                     <button onClick={() => handleSidebar()} className={ sideBarHandler ? "header__burger js-header-burger active" : "header__burger js-header-burger" }>
                         <span></span>
                     </button>
-                    <a className="header__logo" href="/">
+                    <a className="header__logo" href="./">
                         <img className="header__pic" src="logo/logoEdited.png" alt="" />
                     </a>
                     <div className={ sideBarHandler ? "header__wrap js-header-wrap visible" : "header__wrap js-header-wrap" }>
