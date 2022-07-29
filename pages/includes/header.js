@@ -3,10 +3,15 @@ import Head from 'next/head'
 
 const Header = () => {
     const [headerSearchBar, setHeaderSearchBar] = useState(false);
+    const [sideBarHandler, setSideBarHandler] = useState(false);
 
     const headerSearch = () => {
         const searchBarShowHide = headerSearchBar ? false : true;
         setHeaderSearchBar(searchBarShowHide);
+    }
+
+    const handleSidebar = () => {
+        sideBarHandler ? setSideBarHandler(false) : setSideBarHandler(true);
     }
 
     return (
@@ -28,17 +33,17 @@ const Header = () => {
             </Head>
             <div className="header js-header" id="header">
                 <div className="header__center center">
-                    <button className="header__burger js-header-burger">
+                    <button onClick={() => handleSidebar()} className={ sideBarHandler ? "header__burger js-header-burger active" : "header__burger js-header-burger" }>
                         <span></span>
                     </button>
-                    <a className="header__logo" href="#">
-                        <img className="header__pic" src="/img/logo.svg" alt="" />
+                    <a className="header__logo" href="/">
+                        <img className="header__pic" src="logo/logoEdited.png" alt="" />
                     </a>
-                    <div className="header__wrap js-header-wrap">
+                    <div className={ sideBarHandler ? "header__wrap js-header-wrap visible" : "header__wrap js-header-wrap" }>
                         <nav className="header__nav">
                             <a className="header__item" href="#features">Features</a>
                             <a className="header__item" href="#plan">Pricing</a>
-                            <a className="header__item" href="#">Tours</a>
+                            <a className="header__item" href="./contact">Contact</a>
                             <div className="header__item js-header-item">
                                 <a className="header__head js-header-head" href="#">
                                     Explore

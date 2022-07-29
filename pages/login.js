@@ -6,9 +6,9 @@ const Login = () => {
             <div className="entry entry_variants">
                 <div className="entry__center center">
                     <div className="entry__head">
-                        <a className="entry__logo" href="index.html">
-                            <img className="entry__pic entry__pic_white" src="img/logo-white.svg" alt="" />
-                            <img className="entry__pic entry__pic_black" src="img/logo.svg" alt="" />
+                        <a className="entry__logo" href="/">
+                            <img className="entry__pic entry__pic_white" src="logo/logoEdited.png" alt="" />
+                            <img className="entry__pic entry__pic_black" src="logo/logoEdited.png" alt="" />
                         </a>
                         <a className="entry__link" href="#">
                             Not a member?

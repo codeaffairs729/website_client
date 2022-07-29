@@ -79,3 +79,146 @@ a {
 .design__link:hover {
   color: inherit;
 }
+
+.access__btn {
+  position: static;
+  min-width: 100%;
+  height: 72px;
+  margin-top: 16px;
+}
+
+.contact__logo {
+  display: inline-block;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 145px;
+  margin-right: auto;
+  font-size: 0;
+  width: 200px;
+}
+
+.contact__head {
+  display: block;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.contact__row {
+  justify-content: center;
+}
+
+.contact__center {
+  max-width: 760px;
+}
+
+.contact__circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.contact__circles .contact__circle:first-child {
+  left: -24px;
+  top: 200px;
+  width: 48px;
+  height: 48px;
+  background: #FFDC60;
+}
+
+.contact__circles .contact__circle:nth-child(2) {
+  top: -17px;
+  right: 220px;
+  width: 32px;
+  height: 32px;
+  background: #FAB8C4;
+}
+
+.contact__cloud {
+  position: absolute;
+  left: 4%;
+  top: 220px;
+  width: 162px;
+  font-size: 0;
+}
+
+.contact_cloud_2 {
+  position: absolute;
+  right: 7%;
+  top: 70px;
+  width: 100px;
+  font-size: 0;
+}
+
+.contact__bucket {
+  position: absolute;
+  top: 320px;
+  right: 120px;
+}
+
+.contact_bucket_pic {
+  width: 300px;
+}
+
+.contact_circle_2 {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.contact_circles_2 .contact_circle_2:first-child {
+  top: 540px;
+  left: calc(50% - 500px);
+  width: 24px;
+  height: 24px;
+  background: #fff;
+}
+
+.contact_circles_2 .contact_circle_2:nth-child(2) {
+  right: calc(50% - 580px);
+  bottom: 270px;
+  width: 67px;
+  height: 67px;
+  background: #5956E9;
+}
+
+.contact_circles_2 .contact_circle_2:nth-child(3) {
+  right: calc(50% - 448px);
+  bottom: -25px;
+  width: 215px;
+  height: 215px;
+  background: #FAB8C4;
+  z-index: -3;
+}
+
+.contact_circles_2 .contact_circle_2:nth-child(4) {
+  right: calc(50% - 553px);
+  bottom: 453px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+}
+
+.contact_arrow_pic {
+  width: 270px;
+}
+
+.contact__arrow {
+  position: absolute;
+  bottom: 170px;
+  left: 150px;
+}
+
+.field_text_area {
+  height: 130px;
+  padding-top: 24px;
+}
+
+.contact_solo {
+  background: #F5F5F5;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .contact__logo {
+    width: 145px;
+    margin: 0;
+  }
+}
