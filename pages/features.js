@@ -53,7 +53,7 @@ const Features = () => {
                                                     (Nginx/Apache),
                                                     <span style={{color: "#71caaf"}}>Mail Servers</span>
                                                     <span id="service1Dots">...
-                                                        <a href="javascript:;" onclick="read_more_function('service1')" style={{color: "#71caaf"}}><b>more</b>
+                                                        <a href="javascript:;" style={{color: "#71caaf"}}><b>more</b>
                                                         </a>
                                                     </span>
                                                     <span id="service1" style={{display: "none"}}>
@@ -65,7 +65,7 @@ const Features = () => {
                                                         <span style={{color: "#71caaf"}}>Heroku/Amazon S3/Digital Ocean</span>
                                                         (Hosting),
                                                         <span style={{color: "#71caaf"}}>Github/Bitbucket/Gitlab</span>(Git), DevOps
-                                                        <a href="javascript:;" onclick="read_more_function('service1')" style={{color: "#71caaf"}}><b>less</b>
+                                                        <a href="javascript:;" style={{color: "#71caaf"}}><b>less</b>
                                                         </a>
                                                     </span>
                                                 </p>
@@ -80,7 +80,7 @@ const Features = () => {
                                             <div className="features__preview">
                                                 {/* <img className="features__pic" src="img/calendar.png" alt="" /> */}
                                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 252 252" style={{fill: "#2980b9"}}>
-                                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style={{mixBlendMode: "normal"}}>
+                                                    <g fill="none" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{mixBlendMode: "normal"}}>
                                                         <path d="M0,252v-252h252v252z" fill="none"></path>
                                                         <g>
                                                             <g id="surface1">
@@ -146,7 +146,7 @@ const Features = () => {
                                                 <p>Related Expertise:
                                                     <span style={{color: "#fce9bc"}}>Minning, Block-chain,</span>
                                                     <span id="service2Dots">...
-                                                        <a href="javascript:;" onclick="read_more_function('service2')" style={{color: "#fce9bc"}}><b>more</b>
+                                                        <a href="javascript:;" style={{color: "#fce9bc"}}><b>more</b>
                                                         </a>
                                                     </span>
                                                     <span id="service2" style={{display: "none"}}>
@@ -157,7 +157,7 @@ const Features = () => {
                                                         <span style={{color: "#fce9bc"}}>POS</span>
                                                         (proof of stake),
                                                         <span style={{color: "#fce9bc"}}>Public/Private keys, Smart contract,Smrat Signature</span>
-                                                        <a href="javascript:;" onclick="read_more_function('service2')" style={{color: "#fce9bc"}}><b>less</b>
+                                                        <a href="javascript:;" style={{color: "#fce9bc"}}><b>less</b>
                                                         </a>
                                                     </span>
                                                 </p>
@@ -178,12 +178,12 @@ const Features = () => {
                                                 <p>Related Expertise:
                                                     <span style={{color: "#ed7899"}}>Radiant CMS,Adva CMS,Casein CMS,Locomotive CMS, django CMS, Spina</span>
                                                     <span id="service3Dots">...
-                                                        <a href="javascript:;" onclick="read_more_function('service3')" style={{color: "#ed7899"}}><b>more</b>
+                                                        <a href="javascript:;" style={{color: "#ed7899"}}><b>more</b>
                                                         </a>
                                                     </span>
                                                     <span id="service3" style={{display: "none"}}>
                                                         <span style={{color: "#ed7899"}}> CMS,Fat Free CRM, Wordpress, Redmine, bonsaiERP, Accounting Platform, Payroll Development, Zoho/Salesfore CRM , Point Of Sale Systems, Corporate CRM/ERP Systems</span>
-                                                        <a href="javascript:;" onclick="read_more_function('service3')" style={{color: "#ed7899"}}><b>less</b>
+                                                        <a href="javascript:;" style={{color: "#ed7899"}}><b>less</b>
                                                         </a>
                                                     </span>
                                                 </p>
@@ -204,12 +204,12 @@ const Features = () => {
                                                 <p> Related Expertise:
                                                     <span style={{color: "#f8e390"}}> SEO, SMM, ORM, Leads Generation, Ads Reveniew, Facebook Leads</span>
                                                     <span id="service4Dots">...
-                                                        <a href="javascript:;" onclick="read_more_function('service4')" style={{color: "#f8e390"}}><b>more</b>
+                                                        <a href="javascript:;" style={{color: "#f8e390"}}><b>more</b>
                                                         </a>
                                                     </span>
                                                     <span id="service4" style={{display: "none"}}>
                                                         <span style={{color: "#f8e390"}}> Generation, Keywords Resaerch, Website Analysis, Link Building, Youtube Video Ranking</span>
-                                                        <a href="javascript:;" onclick="read_more_function('service4')" style={{color: "#f8e390"}}><b>less</b>
+                                                        <a href="javascript:;" style={{color: "#f8e390"}}><b>less</b>
                                                         </a>
                                                     </span>
                                                 </p>

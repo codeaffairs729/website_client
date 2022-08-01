@@ -71,7 +71,7 @@ const Header = () => {
                                                         <div className="header__preview">
                                                             {/* <img className="header__pic" src="img/camera.png" alt="" /> */}
                                                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 252 252" style={{fill: "#2980b9"}}>
-                                                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style={{mixBlendMode: "normal"}}>
+                                                                <g fill="none" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{mixBlendMode: "normal"}}>
                                                                     <path d="M0,252v-252h252v252z" fill="none"></path>
                                                                     <g>
                                                                         <g id="surface1">
@@ -270,16 +270,16 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="header__search js-header-search" >
-                        <a className="header__open" href="https://www.facebook.com/CodeGarageTech" target="_blank">
+                        <a className="header__open" href="https://www.facebook.com/CodeGarageTech" >
                             <img className="icon icon-header-img" src="/images/fb35.png" alt="" />
                         </a>
-                        <a className="header__open" href="https://twitter.com/CodeGarageTech" target="_blank">
+                        <a className="header__open" href="https://twitter.com/CodeGarageTech" >
                             <img className="icon icon-header-img" src="/images/tw35.png" alt="" />
                         </a>
-                        <a className="header__open" href="https://www.linkedin.com/company/codegaragetech" target="_blank">
+                        <a className="header__open" href="https://www.linkedin.com/company/codegaragetech" >
                             <img className="icon icon-header-img" src="/images/lin35.png" alt="" />
                         </a>
-                        <a className="header__open" href="https://www.instagram.com/codegaragetech/" target="_blank">
+                        <a className="header__open" href="https://www.instagram.com/codegaragetech/" >
                             <img className="icon icon-header-img" src="/images/instagram.png" alt="" />
                         </a>
                         {/* <button onClick={() => headerSearch()} className="header__open js-header-open">
