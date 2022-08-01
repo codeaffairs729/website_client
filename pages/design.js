@@ -48,12 +48,13 @@ const Design = () => {
                         <div className="design__circle js-rellax" data-rellax-speed=".5"></div>
                     </div>
                     <div className="design__body">
-                        <a className="design__scroll" href="#">
+                        <h3 style={{ marginBottom: "10px", display: "inline-flex", marginBottom: "80px", fontWeight: "500", letterSpacing: "-.04em" }}>Our Portfolio</h3>
+                        {/* <a className="design__scroll" href="#">
                             <div className="design__icon">
                                 <img className="design__pic" src="img/scroll.svg" alt="" />
                             </div>
-                            <div className="design__text">Using Collab</div>
-                        </a>
+                            <div className="design__text">Our Portfolio</div>
+                        </a> */}
                         <div className="design__container">
                             <Slider className="design__slider js-design-slider" {...designSettings}>
                                 <div className="design__slide" data-aos="animation-translate-y" data-aos-delay="0">

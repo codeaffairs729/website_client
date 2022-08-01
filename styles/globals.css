@@ -33,9 +33,104 @@ a {
   margin-top: auto;
 }
 
+/* Header Component CSS Start */
 .header__btn.btn:hover {
   color: #0a58ca;
 }
+
+.icon-header-img{
+  height: 35px;
+  width: 35px;
+}
+
+.header_explore_pic {
+  width: auto !important;
+}
+
+.header__col:first-child .header__box:first-child .header__preview {
+  top: -7px;
+  left: -18px;
+  width: auto;
+}
+
+.header__col:first-child .header__box:nth-child(2) .header__preview {
+  top: -7px;
+  left: -10px;
+  width: auto;
+}
+
+.header__col:first-child .header__box:nth-child(3) .header__preview {
+  top: -10px;
+  left: -12px;
+  width: auto;
+}
+
+.header__col:first-child .header__box:nth-child(4) .header__preview {
+  top: -7px;
+  left: -18px;
+  width: auto;
+}
+
+.header__col:first-child .header__box:nth-child(5) .header__preview {
+  top: -7px;
+  left: -18px;
+  width: auto;
+}
+
+.header__col:first-child .header__box:nth-child(6) .header__preview {
+  top: -7px;
+  left: -18px;
+  width: auto;
+}
+
+.header__col:first-child .header__box:nth-child(7) .header__preview {
+  top: -7px;
+  left: -40px;
+  width: auto;
+}
+
+.header__col:nth-child(2) .header__box:nth-child(3) .header__preview {
+  top: -10px;
+  left: -8px;
+  width: 110px;
+}
+
+.header__col:nth-child(2) .header__box:nth-child(4) .header__preview {
+  top: -10px;
+  left: -8px;
+  width: 110px;
+}
+
+.header__col:nth-child(2) .header__box:nth-child(5) .header__preview {
+  top: -10px;
+  left: -8px;
+  width: 110px;
+}
+
+.header__col:nth-child(2) .header__box:nth-child(6) .header__preview {
+  top: -10px;
+  left: -8px;
+  width: 110px;
+}
+
+.header__col:nth-child(2) .header__box:nth-child(7) .header__preview {
+  top: -10px;
+  left: -8px;
+  width: 110px;
+}
+
+.header__col:nth-child(2) .header__box:nth-child(8) .header__preview {
+  top: -10px;
+  left: -8px;
+  width: 110px;
+}
+
+.header__col:nth-child(3) .header__box:nth-child(3) .header__preview {
+  top: 0px;
+  left: -3px;
+  width: 70px;
+}
+/* Header Component CSS End */
 
 .btn_purple {
   background: #5956E9;
@@ -216,9 +311,116 @@ a {
   z-index: 0;
 }
 
+/* Main Component CSS Start */
+/* .main__preview:nth-child(4) {
+  bottom: 125px;
+  width: 180px;
+  right: 60px;
+}
+
+.main__preview:nth-child(5) {
+  width: 768px;
+}
+
+.main__view[data-aos] .main__preview:nth-child(4) {
+  -webkit-transform: translate(40px, 40px);
+  -ms-transform: translate(40px, 40px);
+  transform: translate(40px, 40px);
+}
+
+.main__view[data-aos] .main__preview:nth-child(5) {
+  -webkit-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
+}
+
+.main__view[data-aos].aos-animate .main__preview:nth-child(4) {
+  -webkit-transition-delay: .3s;
+  -o-transition-delay: .3s;
+  transition-delay: .3s;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.main__view[data-aos].aos-animate .main__preview:nth-child(5) {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+} */
+/* Main Component CSS End */
+
+/* Features Component CSS Start */
+.features__pic {
+  width: auto;
+}
+/* Features Component CSS End */
+
+.whatsapp-btn-outer {
+  display: inline-block;
+  padding: 16px;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+.whatsapp-btn {
+  width: 70px;
+}
+
+.main__title {
+  font-size: 60px;
+  line-height: 1.1;
+}
+
+@media only screen and (max-width: 1023px) {
+  .main__title {
+    font-size: 50px;
+    line-height: 1.1;
+  }
+  /* Main Component CSS Start */
+  /* .main__preview:nth-child(4) {
+    width: 200px;
+  }
+
+  .main__preview:nth-child(5) {
+    width: 700px;
+  } */
+  /* Main Component CSS End */
+}
+
 @media only screen and (max-width: 767px) {
   .contact__logo {
     width: 145px;
     margin: 0;
   }
+
+  .main__title {
+    font-size: 40px;
+    line-height: 1.5;
+  }
+
+  /* Main Component CSS Start */
+  /* .main__preview:nth-child(4) {
+    right: calc(50% - 125px);
+    bottom: 35px;
+    width: 130px;
+  }
+  
+  .main__preview:nth-child(5) {
+    width: auto;
+    margin: 0 -90px 0 -42px;
+    text-align: center;
+  }
+
+  .main__preview:nth-child(5) .main__pic {
+    max-width: 420px;
+  } */
+  /* Main Component CSS End */
 }

@@ -8,27 +8,27 @@ const Main = () => {
                 <Header />
                 <div className="main__center center">
                     <div className="main__wrap">
-                        <h1 className={`main__title title title_big`} data-aos>
+                        <h1 className="main__title title title_big" data-aos>
                             <span className="title__box">
-                                <span className="title__text">Create </span>
+                                <span className="title__text">Web Development</span>
                             </span>
                             <span className="title__box">
                                 <span className="title__text">
-                                    <span className="title__line">Like</span>
+                                    <span className="title__line">Mobile Apps</span>
                                 </span>
                             </span>
                             <span className="title__box">
-                                <span className="title__text">Never</span>
+                                <span className="title__text">UI / UX</span>
                             </span>
                             <span className="title__box">
                                 <span className="title__text">
-                                    Before
+                                    Digital Marketing
                                     <span className="title__color">.</span>
                                 </span>
                             </span>
                         </h1>
                         <div className="main__info info" data-aos="animation-scale-y" data-aos-delay="400">
-                            Create, build, collaborate and ship products faster. Good bye code! 👋
+                            We build valuable solution with code
                         </div>
                         <div className="main__control" data-aos="animation-scale-y" data-aos-delay="550">
                             <a className="main__btn btn btn_purple" href="./login">Get Started</a>
@@ -58,6 +58,9 @@ const Main = () => {
                         <div className="main__preview">
                             <img className="main__pic" src="img/mouse.png" alt="" />
                         </div>
+                        {/* <div className="main__preview">
+                            <img className="main__pic js-parallax" data-scale="1.5" data-orientation="up" src="img/main-pic-2.png" alt="" />
+                        </div> */}
                         <div className="main__preview">
                             <img className="main__pic" src="img/main-pic-3.png" alt="" />
                         </div>

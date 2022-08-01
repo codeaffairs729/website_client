@@ -28,6 +28,9 @@ export default function Home() {
   return (
     <>
       <div className="page">
+        <a href="https://api.whatsapp.com/send?phone=918146394889" className="whatsapp-btn-outer" title='Contact Us on whatsapp' >
+          <img className="whatsapp-btn" src="/images/whatsapp3.png" alt="" />
+        </a>
         <Main />
         <Features />
         <Access />
