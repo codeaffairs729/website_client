@@ -19,14 +19,14 @@ const Contact = () => {
     return (
         <div className="page">
             <div className="entry entry_solo contact_solo">
-                <div className="entry__center center">
+                <div className="entry__center center contact-entry-center">
                     <div className="entry__head contact__head">
                         <a className="entry__logo contact__logo" href="./">
                             <img className="entry__pic entry__pic_white" src="logo/logoEdited.png" alt="CodeGarage Tech" />
                             <img className="entry__pic entry__pic_black" src="logo/logoEdited.png" alt="CodeGarage Tech" />
                         </a>
                     </div>
-                    <div className="entry__body">
+                    <div className="entry__body contact_body">
                         <div className="like">
                             <div className="like__center contact__center center">
                                 <div className="like__container" style={{padding: "55px 38px"}}>
@@ -40,7 +40,7 @@ const Contact = () => {
                                             <div className="entry__field field">
                                                 <div className="field__label">Name</div>
                                                 <div className="field__wrap">
-                                                    <div className="field__icon">
+                                                    <div className="field__icon contact-field-icon">
                                                         {
                                                             nameIcon
                                                             ? <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,13 +53,13 @@ const Contact = () => {
                                                             </svg>
                                                         }
                                                     </div>
-                                                    <input onFocus={() => changeNameIcon(1)} onBlur={() => changeNameIcon(0)} className="field__input" type="text" name="name" placeholder="Name" />
+                                                    <input onFocus={() => changeNameIcon(1)} onBlur={() => changeNameIcon(0)} className="field__input contact-field-input" type="text" name="name" placeholder="Name" />
                                                 </div>
                                             </div>
                                             <div className="entry__field field">
                                                 <div className="field__label">Email</div>
                                                 <div className="field__wrap">
-                                                    <div className="field__icon">
+                                                    <div className="field__icon contact-field-icon">
                                                         {
                                                             emailIcon
                                                             ? <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,7 +71,7 @@ const Contact = () => {
                                                             : <img className="field__pic" src="img/sending-mail.svg" alt="" />
                                                         }
                                                     </div>
-                                                    <input onFocus={() => changeEmailIcon(1)} onBlur={() => changeEmailIcon(0)} className="field__input" type="email" name="email" placeholder="Email" />
+                                                    <input onFocus={() => changeEmailIcon(1)} onBlur={() => changeEmailIcon(0)} className="field__input contact-field-input" type="email" name="email" placeholder="Email" />
                                                 </div>
                                             </div>
                                             <div className="entry__field field">
@@ -79,7 +79,7 @@ const Contact = () => {
                                                     <div className="field__label">Message</div>
                                                 </div>
                                                 <div className="field__wrap">
-                                                    <div className="field__icon">
+                                                    <div className="field__icon contact-field-icon">
                                                         {
                                                             messageIcon
                                                             ? <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +95,7 @@ const Contact = () => {
                                                     <textarea onFocus={() => changeMessageIcon(1)} onBlur={() => changeMessageIcon(0)} className="field__input field_text_area" name="message" placeholder="Message" />
                                                 </div>
                                             </div>
-                                            <button className="entry__btn btn btn_purple" type="submit" >Send Now</button>
+                                            <button className="entry__btn btn btn_purple contact-submit-btn" type="submit" >Send Now</button>
                                         </form>
                                     </div>
                                     <div className="contact__circles">
@@ -119,12 +119,12 @@ const Contact = () => {
                 <div className="contact_cloud_2">
                     <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="" />
                 </div>
-                <div className="contact__bucket" >
+                {/* <div className="contact__bucket" >
                     <img className="contact_bucket_pic" src="img/popup-pic-2.png" alt="" />
                 </div>
                 <div className="contact__arrow" >
                     <img className="contact_arrow_pic" src="img/cursor-1.png" alt="" />
-                </div>
+                </div> */}
                 <div className="contact_circles_2">
                     <div className="contact_circle_2"></div>
                     <div className="contact_circle_2"></div>

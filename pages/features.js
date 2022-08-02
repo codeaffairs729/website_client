@@ -4,6 +4,10 @@ import Slider from "react-slick";
 const Features = () => {
     const [currentSlideNumber, setCurrentSlideNumber] = useState(0);
     const [totalslides, setTotalSlides] = useState(0);
+    const [wadMoreLess, setWadMoreLess] = useState(false);
+    const [bcMoreLess, setBcMoreLess] = useState(false);
+    const [ccesMoreLess, setCcesMoreLess] = useState(false);
+    const [dmMoreLess, setDmMoreLess] = useState(false);
 
     const settings = {
         slidesToShow: 2,
@@ -24,6 +28,22 @@ const Features = () => {
             }
         ]
     };
+
+    const wadSeeMoreLess = (e) => {
+        e == 1 ? setWadMoreLess(true) : setWadMoreLess(false);
+    }
+
+    const bcSeeMoreLess = (e) => {
+        e == 1 ? setBcMoreLess(true) : setBcMoreLess(false);
+    }
+
+    const ccesSeeMoreLess = (e) => {
+        e == 1 ? setCcesMoreLess(true) : setCcesMoreLess(false);
+    }
+
+    const dmSeeMoreLess = (e) => {
+        e == 1 ? setDmMoreLess(true) : setDmMoreLess(false);
+    }
 
     return (
         <>
@@ -52,11 +72,12 @@ const Features = () => {
                                                     <span style={{color: "#71caaf"}}>Ruby on Rails,SAAS, Python/Django/Flask, ReactJs/ES6,Web Servers</span>
                                                     (Nginx/Apache),
                                                     <span style={{color: "#71caaf"}}>Mail Servers</span>
-                                                    <span id="service1Dots">...
-                                                        <a href="javascript:;" style={{color: "#71caaf"}}><b>more</b>
+                                                    <span style={ wadMoreLess ? {display: "none"} : {display: ""} } id="service1Dots">...
+                                                        <a href="javascript:void(0)" onClick={() => wadSeeMoreLess(1)} style={{color: "#71caaf"}}>
+                                                            <b>more</b>
                                                         </a>
                                                     </span>
-                                                    <span id="service1" style={{display: "none"}}>
+                                                    <span id="service1" style={ wadMoreLess ? {display: ""} : {display: "none"} } >
                                                         (Sendgrid/Mandrill/Mailgun),
                                                         <span style={{color: "#71caaf"}}>MySQL/PSQL/sqlite3</span>
                                                         (SQL dbs),
@@ -65,12 +86,14 @@ const Features = () => {
                                                         <span style={{color: "#71caaf"}}>Heroku/Amazon S3/Digital Ocean</span>
                                                         (Hosting),
                                                         <span style={{color: "#71caaf"}}>Github/Bitbucket/Gitlab</span>(Git), DevOps
-                                                        <a href="javascript:;" style={{color: "#71caaf"}}><b>less</b>
+                                                        <br/>
+                                                        <a href="javascript:void(0)" onClick={() => wadSeeMoreLess(0)} style={{color: "#71caaf"}}>
+                                                            <b>less</b>
                                                         </a>
                                                     </span>
                                                 </p>
                                             </div>
-                                            <a className="features__link" href="#">Find out more</a>
+                                            {/* <a className="features__link" href="#">Find out more</a> */}
                                         </div>
                                     </div>
                                 </div>
@@ -113,7 +136,7 @@ const Features = () => {
                                                 <p>Not just mobile apps, we build user-friendly Experiances.Apps that resolve real-life problems, that got featured over store, and generate revenue.</p>
                                                 <p> Related Expertise: <span style={{color: "#dda549"}}>Native & Hybrid Apps, iPhone, Swift, Go Lang, React-Native, Ionic, Android, Mobile Games</span></p>
                                             </div>
-                                            <a className="features__link" href="#">Find out more</a>
+                                            {/* <a className="features__link" href="#">Find out more</a> */}
                                         </div>
                                     </div>
                                 </div>
@@ -130,7 +153,7 @@ const Features = () => {
                                                     <span style={{color: "#4dac87"}}>Spree Commerce, Magento, Shopify, Sharetribe, WooCommerce</span>
                                                 </p>
                                             </div>
-                                            <a className="features__link" href="#">Find out more</a>
+                                            {/* <a className="features__link" href="#">Find out more</a> */}
                                         </div>
                                     </div>
                                 </div>
@@ -145,11 +168,12 @@ const Features = () => {
                                                 <p>A Blockchain is secured by system design and is an example of a distributed computing system.It is suitable for the identity management transaction processing. Yes, We have expertise to develop and take care of secure distributed system.</p>
                                                 <p>Related Expertise:
                                                     <span style={{color: "#fce9bc"}}>Minning, Block-chain,</span>
-                                                    <span id="service2Dots">...
-                                                        <a href="javascript:;" style={{color: "#fce9bc"}}><b>more</b>
+                                                    <span style={ bcMoreLess ? {display: "none"} : {display: ""} } id="service2Dots">...
+                                                        <a href="javascript:void(0)" onClick={() => bcSeeMoreLess(1)} style={{color: "#fce9bc"}}>
+                                                            <b>more</b>
                                                         </a>
                                                     </span>
-                                                    <span id="service2" style={{display: "none"}}>
+                                                    <span id="service2" style={ bcMoreLess ? {display: ""} : {display: "none"} } >
                                                         <span style={{color: "#fce9bc"}}>Distributed and central ledger, Fork, Halving, Hashrate, Multisig, Mining, P2P</span>
                                                         (peer to peer),
                                                         <span style={{color: "#fce9bc"}}>POW</span>
@@ -157,12 +181,14 @@ const Features = () => {
                                                         <span style={{color: "#fce9bc"}}>POS</span>
                                                         (proof of stake),
                                                         <span style={{color: "#fce9bc"}}>Public/Private keys, Smart contract,Smrat Signature</span>
-                                                        <a href="javascript:;" style={{color: "#fce9bc"}}><b>less</b>
+                                                        <br/>
+                                                        <a href="javascript:void(0)" onClick={() => bcSeeMoreLess(0)} style={{color: "#fce9bc"}}>
+                                                            <b>less</b>
                                                         </a>
                                                     </span>
                                                 </p>
                                             </div>
-                                            <a className="features__link" href="#">Find out more</a>
+                                            {/* <a className="features__link" href="#">Find out more</a> */}
                                         </div>
                                     </div>
                                 </div>
@@ -177,18 +203,21 @@ const Features = () => {
                                                 <p> These kind of systems are of same standard and functionalities in almost all the industires. Though we prefer it platform based but also we develop custom systems as per your requirements. </p>
                                                 <p>Related Expertise:
                                                     <span style={{color: "#ed7899"}}>Radiant CMS,Adva CMS,Casein CMS,Locomotive CMS, django CMS, Spina</span>
-                                                    <span id="service3Dots">...
-                                                        <a href="javascript:;" style={{color: "#ed7899"}}><b>more</b>
+                                                    <span style={ ccesMoreLess ? {display: "none"} : {display: ""} } id="service3Dots">...
+                                                        <a href="javascript:void(0)" onClick={() => ccesSeeMoreLess(1)} style={{color: "#ed7899"}}>
+                                                            <b>more</b>
                                                         </a>
                                                     </span>
-                                                    <span id="service3" style={{display: "none"}}>
+                                                    <span id="service3" style={ ccesMoreLess ? {display: ""} : {display: "none"} } >
                                                         <span style={{color: "#ed7899"}}> CMS,Fat Free CRM, Wordpress, Redmine, bonsaiERP, Accounting Platform, Payroll Development, Zoho/Salesfore CRM , Point Of Sale Systems, Corporate CRM/ERP Systems</span>
-                                                        <a href="javascript:;" style={{color: "#ed7899"}}><b>less</b>
+                                                        <br/>
+                                                        <a href="javascript:void(0)" onClick={() => ccesSeeMoreLess(0)} style={{color: "#ed7899"}}>
+                                                            <b>less</b>
                                                         </a>
                                                     </span>
                                                 </p>
                                             </div>
-                                            <a className="features__link" href="#">Find out more</a>
+                                            {/* <a className="features__link" href="#">Find out more</a> */}
                                         </div>
                                     </div>
                                 </div>
@@ -203,18 +232,21 @@ const Features = () => {
                                                 <p>We don't dimension on any quality of value. Our unparalleled <span style={{color: "#f8e390"}}>Search Engine Optimization</span> administrations will without a doubt get you noticed globally! </p>
                                                 <p> Related Expertise:
                                                     <span style={{color: "#f8e390"}}> SEO, SMM, ORM, Leads Generation, Ads Reveniew, Facebook Leads</span>
-                                                    <span id="service4Dots">...
-                                                        <a href="javascript:;" style={{color: "#f8e390"}}><b>more</b>
+                                                    <span style={ dmMoreLess ? {display: "none"} : {display: ""} } id="service4Dots">...
+                                                        <a href="javascript:void(0)" onClick={() => dmSeeMoreLess(1)} style={{color: "#f8e390"}}>
+                                                            <b>more</b>
                                                         </a>
                                                     </span>
-                                                    <span id="service4" style={{display: "none"}}>
+                                                    <span id="service4" style={ dmMoreLess ? {display: ""} : {display: "none"} } >
                                                         <span style={{color: "#f8e390"}}> Generation, Keywords Resaerch, Website Analysis, Link Building, Youtube Video Ranking</span>
-                                                        <a href="javascript:;" style={{color: "#f8e390"}}><b>less</b>
+                                                        <br/>
+                                                        <a href="javascript:void(0)" onClick={() => dmSeeMoreLess(0)} style={{color: "#f8e390"}}>
+                                                            <b>less</b>
                                                         </a>
                                                     </span>
                                                 </p>
                                             </div>
-                                            <a className="features__link" href="#">Find out more</a>
+                                            {/* <a className="features__link" href="#">Find out more</a> */}
                                         </div>
                                     </div>
                                 </div>
@@ -236,7 +268,7 @@ const Features = () => {
                                                     <span style={{color: "#ed7899"}}>Tizen, Android, IOS, SMIL, XML</span>
                                                 </p>
                                             </div>
-                                            <a className="features__link" href="#">Find out more</a>
+                                            {/* <a className="features__link" href="#">Find out more</a> */}
                                         </div>
                                     </div>
                                 </div>

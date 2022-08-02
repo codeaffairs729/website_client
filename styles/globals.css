@@ -182,6 +182,7 @@ a {
   margin-top: 16px;
 }
 
+/* Contact Component CSS Start */
 .contact__logo {
   display: inline-block;
   -ms-flex-negative: 0;
@@ -303,13 +304,26 @@ a {
 
 .field_text_area {
   height: 130px;
-  padding-top: 24px;
+  padding-top: 10px;
 }
 
 .contact_solo {
   background: #F5F5F5;
   z-index: 0;
 }
+
+.contact-field-icon {
+  top: 12px;
+}
+
+.contact-field-input {
+  height: 50px;
+}
+
+.contact-submit-btn {
+  height: 60px;
+}
+/* Contact Component CSS End */
 
 /* Main Component CSS Start */
 /* .main__preview:nth-child(4) {
@@ -371,7 +385,7 @@ a {
 }
 
 .whatsapp-btn {
-  width: 70px;
+  width: 50px;
 }
 
 .main__title {
@@ -379,11 +393,98 @@ a {
   line-height: 1.1;
 }
 
+/* Layout Component CSS Start */
+.layout-pic-react {
+  position: absolute;
+  left: 316px;
+  width: 130px;
+  top: 133px;
+}
+
+.layout-pic-andoid {
+  position: absolute;
+  bottom: 16%;
+  left: 38%;
+}
+
+.layout-pic-python {
+  position: absolute;
+  bottom: 25%;
+  left: 52%;
+}
+
+.layout-pic-node {
+  position: absolute;
+  top: 84px;
+  right: 45px;
+}
+
+.layout-pic-php {
+  position: absolute;
+  top: 48px;
+  left: 62px;
+  width: 75px;
+}
+
+.layout-pic-ror {
+  position: absolute;
+  bottom: 51px;
+  right: 13px;
+  width: 80px;
+}
+/* Layout Component CSS End */
+
 @media only screen and (max-width: 1023px) {
   .main__title {
     font-size: 50px;
     line-height: 1.1;
   }
+
+  .contact__arrow {
+    position: absolute;
+    bottom: 200px;
+    left: -10px;
+  }
+
+  .contact_arrow_pic {
+    width: 180px;
+  }
+
+  /* Layout Component CSS Start */
+  .layout-pic-react {
+    left: 299px;
+    width: 110px;
+    top: 128px;
+  }
+
+  .layout-pic-andoid {
+    width: 60px;
+  }
+
+  .layout-pic-python {
+    bottom: 23%;
+    width: 50px;
+  }
+
+  .layout-pic-node {
+    top: 55px;
+    right: 25px;
+    width: 40px;
+  }
+
+  .layout-pic-php {
+    top: 20px;
+    left: 29px;
+    width: 65px;
+  }
+
+  .layout-pic-ror {
+    bottom: 28px;
+    right: 2px;
+    width: 55px;
+  }
+  /* Layout Component CSS End */
+
   /* Main Component CSS Start */
   /* .main__preview:nth-child(4) {
     width: 200px;
@@ -396,15 +497,75 @@ a {
 }
 
 @media only screen and (max-width: 767px) {
+  .main__title {
+    font-size: 40px;
+    line-height: 1.5;
+  }
+
+  /* Contact Component CSS Start */
   .contact__logo {
     width: 145px;
     margin: 0;
   }
 
-  .main__title {
-    font-size: 40px;
-    line-height: 1.5;
+  .contact__arrow {
+    position: absolute;
+    bottom: 270px;
+    left: -25px;
+    z-index: 2;
   }
+
+  .contact_arrow_pic {
+    width: 100px;
+  }
+
+  .contact_body {
+    z-index: 1;
+  }
+
+  .contact__head {
+    padding-bottom: 0;
+  }
+
+  .field_text_area {
+    height: 100px;
+  }
+  /* Contact Component CSS End */
+
+  /* Layout Component CSS Start */
+  .layout-pic-react {
+    left: 240px;
+    width: 100px;
+    top: 100px;
+  }
+
+  .layout-pic-andoid {
+    width: 50px;
+  }
+
+  .layout-pic-python {
+    bottom: 23%;
+    width: 45px;
+  }
+
+  .layout-pic-node {
+    top: 45px;
+    right: 22px;
+    width: 30px;
+  }
+
+  .layout-pic-php {
+    top: 12px;
+    left: 19px;
+    width: 60px;
+  }
+
+  .layout-pic-ror {
+    bottom: 18px;
+    right: 0;
+    width: 50px;
+  }
+  /* Layout Component CSS End */
 
   /* Main Component CSS Start */
   /* .main__preview:nth-child(4) {
@@ -423,4 +584,10 @@ a {
     max-width: 420px;
   } */
   /* Main Component CSS End */
+}
+
+@media only screen and (max-height: 767px) {
+  .contact-entry-center {
+    height: 100%;
+  }
 }
