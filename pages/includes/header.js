@@ -23,8 +23,8 @@ const Header = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
                 <meta name="format-detection" content="telephone=no"/>
                 <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png"/>
-                <link rel="icon" type="image/png" sizes="32x32" href="/logo/Favicon_2.png"/>
-                <link rel="icon" type="image/png" sizes="16x16" href="/logo/Favicon_2.png"/>
+                <link rel="icon" type="image/png" sizes="32x32" href="/logo/favicon_white.jpg"/>
+                <link rel="icon" type="image/png" sizes="16x16" href="/logo/favicon_white.jpg"/>
                 <link rel="manifest" href="img/site.webmanifest"/>
                 <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5"/>
                 <meta name="msapplication-TileColor" content="#da532c"/>
@@ -42,12 +42,9 @@ const Header = () => {
                     <div className={ sideBarHandler ? "header__wrap js-header-wrap visible" : "header__wrap js-header-wrap" }>
                         <nav className="header__nav">
                             <a className="header__item" href="./">Home</a>
-                            <a className="header__item" href="#">About Us</a>
-                            <a className="header__item" href="./contact">Contact Us</a>
-                            <a className="header__item" href="#">Careers</a>
                             <div className="header__item js-header-item">
                                 <a className="header__head js-header-head" href="#">
-                                    Explore
+                                    Solutions
                                     <svg className="icon icon-arrow-down">
                                         <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                                     </svg>
@@ -113,7 +110,7 @@ const Header = () => {
                                                             <div className="header__text">Workspace reimagined</div>
                                                         </div>
                                                     </a>
-                                                    <a className="header__box" href="#">
+                                                    {/* <a className="header__box" href="#">
                                                         <div className="header__preview">
                                                             <img className="header__pic" src="/images/CRP.png" alt="" />
                                                         </div>
@@ -148,7 +145,7 @@ const Header = () => {
                                                             <div className="header__info">Smart Gadget Apps</div>
                                                             <div className="header__text">Workspace reimagined</div>
                                                         </div>
-                                                    </a>
+                                                    </a> */}
                                                 </div>
                                             </div>
                                             <div className="header__col">
@@ -181,7 +178,7 @@ const Header = () => {
                                                         <div className="header__text">Advanced color picker</div>
                                                         </div>
                                                     </a>
-                                                    <a className="header__box" href="#">
+                                                    {/* <a className="header__box" href="#">
                                                         <div className="header__preview">
                                                         <img className="header__pic" src="img/fill.png" alt="" />
                                                         </div>
@@ -225,7 +222,7 @@ const Header = () => {
                                                         <div className="header__info">Python</div>
                                                         <div className="header__text">Advanced color picker</div>
                                                         </div>
-                                                    </a>
+                                                    </a> */}
                                                 </div>
                                             </div>
                                             <div className="header__col">
@@ -264,13 +261,15 @@ const Header = () => {
                                     </div>
                                 </div>
                             </div>
+                            <a className="header__item" href="#">Career</a>
                         </nav>
                         <div className="header__photo">
                             <img className="header__pic" src="img/menu-pic.png" alt="" />
                         </div>
                     </div>
                     <div className="header__search js-header-search" >
-                        <a className="header__open" href="https://www.facebook.com/CodeGarageTech" >
+                        {/* Social Media Icons */}
+                        {/* <a className="header__open" href="https://www.facebook.com/CodeGarageTech" >
                             <img className="icon icon-header-img" src="/images/fb35.png" alt="" />
                         </a>
                         <a className="header__open" href="https://twitter.com/CodeGarageTech" >
@@ -281,7 +280,9 @@ const Header = () => {
                         </a>
                         <a className="header__open" href="https://www.instagram.com/codegaragetech/" >
                             <img className="icon icon-header-img" src="/images/instagram.png" alt="" />
-                        </a>
+                        </a> */}
+                        {/* Social Media Icons */}
+
                         {/* <button onClick={() => headerSearch()} className="header__open js-header-open">
                             <svg className="icon icon-search">
                                 <use xlinkHref="img/sprite.svg#icon-search"></use>
@@ -298,7 +299,7 @@ const Header = () => {
                             <input className="header__input" type="text" placeholder="Search ..." />
                         </div>
                     </div> */}
-                    {/* <a className="header__btn btn btn_pink" href='./login' >Get Started</a> */}
+                    <a className="header__btn btn btn_pink" href='./contact' >Contact Us</a>
                 </div>
                 <div className="header__bg js-header-bg"></div>
             </div>

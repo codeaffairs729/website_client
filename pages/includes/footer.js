@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="footer__row">
                 <div className="footer__col">
                     <a className="footer__logo" href="#">
-                        <img className="footer__pic" src="img/logo-dark.svg" alt="" />
+                        <img className="footer__pic" src="logo/logoEdited.png" alt="" />
                     </a>
                 </div>
                 <div className="footer__col js-footer-col">
@@ -55,7 +55,7 @@ const Footer = () => {
             </div>
             <div className="footer__bottom">
                 <a className="footer__company" href="#">
-                    <img className="footer__pic" src="img/ui8.svg" alt="" />
+                    <img className="footer__pic footer-icon" src="/logo/favicon_white.jpg" alt="" />
                 </a>
                 <div className="footer__copyright">© 2020, UI8 LLC.</div>
                 <a className="footer__scroll js-link-scroll" href="#header">

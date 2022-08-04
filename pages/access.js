@@ -17,14 +17,19 @@ const Access = () => {
               </div>
             </div>
             <div className="access__wrap" data-aos="animation-scale-y">
-              <div className="access__info">Ready to get started? <br/>Sign up with your email</div>
+              <div className="access__info">
+                Ready to get started?
+                <br/>
+                Share your email to get started.
+              </div>
               <form className="access__form">
                 <div className="access__field">
                   <input className="access__input" type="email" placeholder="Email address" />
                   <div className="access__icon">
                     <img className="access__pic" src="img/sending-mail.svg" alt="" />
                   </div>
-                </div><button className="access__btn btn btn_purple" type="submit">Get Started</button>
+                </div>
+                <button className="access__btn btn btn_purple" type="submit">Contact Me</button>
               </form>
             </div>
           </div>

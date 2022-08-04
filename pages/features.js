@@ -16,7 +16,8 @@ const Features = () => {
         prevArrow: <button type="button" className="slick-prev"><svg className="icon icon-arrow-prev"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="img/sprite.svg#icon-arrow-prev"></use></svg></button>,
         nextArrow: <button type="button" className="slick-next"><svg className="icon icon-arrow-next"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="img/sprite.svg#icon-arrow-next"></use></svg></button>,
         dots: false,
-        infinite: false,
+        infinite: true,
+        autoplay: true,
         speed: 600,
         afterChange: current => setCurrentSlideNumber(current),
         responsive: [
@@ -50,16 +51,50 @@ const Features = () => {
             <div id="features" className="features js-features">
                 <div className="features__center center">
                     <div className="features__head" data-aos="animation-scale-y">
-                        <div className="features__stage stage">Our Services</div>
+                        <div className="features__stage stage">About Us</div>
                         <div className="features__box">
-                            <h2 className="features__title title">The world’s most powerful design tool.</h2>
-                            <div className="features__info info">Simultaneously design, code and collaborate with your team all from one place.</div>
+                            <h2 className="features__title title">
+                                We’re Top Ranked
+                                Service Provider
+                                On Upwork
+                            </h2>
+                            <div className="features__info info">
+                                Our services focus on Mobility Solutions, Web Application Development, Cloud Solutions, IoT, AR/VR, Blockchain, Artificial Intelligence & Machine Learning, Predictive Analytics & Big Data Solutions, and several other trending and emerging technologies.
+                            </div>
                         </div>
                     </div>
                     <div className="features__body">
                         <div className="features__container">
                             <Slider className="features__slider js-features-slider" {...settings}>
                                 <div>
+                                    <div className="features__slide" data-aos="animation-scale-y">
+                                        <div className="features__details">
+                                            <div className="features__preview">
+                                                <img className="features__pic" src="img/camera.png" alt="" />
+                                            </div>
+                                            <div className="features__category">World Class Design Team</div>
+                                            <div className="features__text">
+                                                With more than 20 years of experience in designing for startups to Fortune 500 companies.
+                                            </div>
+                                            <a className="features__link" href="#">Find out more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="features__slide" data-aos="animation-scale-y" data-aos-delay="200">
+                                        <div className="features__details">
+                                            <div className="features__preview">
+                                                <img className="features__pic" src="img/calendar.png" alt="" />
+                                            </div>
+                                            <div className="features__category">Enterprise Grade Build</div>
+                                            <div className="features__text">
+                                                Leveraging modern approaches to web development, we bring front-end, back-end, and architecture together to meet your business needs.
+                                            </div>
+                                            <a className="features__link" href="#">Find out more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* <div>
                                     <div className="features__slide" data-aos="animation-scale-y">
                                         <div className="features__details">
                                             <div className="features__preview">
@@ -93,7 +128,7 @@ const Features = () => {
                                                     </span>
                                                 </p>
                                             </div>
-                                            {/* <a className="features__link" href="#">Find out more</a> */}
+                                            <a className="features__link" href="#">Find out more</a>
                                         </div>
                                     </div>
                                 </div>
@@ -101,7 +136,6 @@ const Features = () => {
                                     <div className="features__slide" data-aos="animation-scale-y" data-aos-delay="200">
                                         <div className="features__details">
                                             <div className="features__preview">
-                                                {/* <img className="features__pic" src="img/calendar.png" alt="" /> */}
                                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 252 252" style={{fill: "#2980b9"}}>
                                                     <g fill="none" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{mixBlendMode: "normal"}}>
                                                         <path d="M0,252v-252h252v252z" fill="none"></path>
@@ -136,7 +170,7 @@ const Features = () => {
                                                 <p>Not just mobile apps, we build user-friendly Experiances.Apps that resolve real-life problems, that got featured over store, and generate revenue.</p>
                                                 <p> Related Expertise: <span style={{color: "#dda549"}}>Native & Hybrid Apps, iPhone, Swift, Go Lang, React-Native, Ionic, Android, Mobile Games</span></p>
                                             </div>
-                                            {/* <a className="features__link" href="#">Find out more</a> */}
+                                            <a className="features__link" href="#">Find out more</a>
                                         </div>
                                     </div>
                                 </div>
@@ -153,7 +187,7 @@ const Features = () => {
                                                     <span style={{color: "#4dac87"}}>Spree Commerce, Magento, Shopify, Sharetribe, WooCommerce</span>
                                                 </p>
                                             </div>
-                                            {/* <a className="features__link" href="#">Find out more</a> */}
+                                            <a className="features__link" href="#">Find out more</a>
                                         </div>
                                     </div>
                                 </div>
@@ -188,7 +222,7 @@ const Features = () => {
                                                     </span>
                                                 </p>
                                             </div>
-                                            {/* <a className="features__link" href="#">Find out more</a> */}
+                                            <a className="features__link" href="#">Find out more</a>
                                         </div>
                                     </div>
                                 </div>
@@ -217,7 +251,7 @@ const Features = () => {
                                                     </span>
                                                 </p>
                                             </div>
-                                            {/* <a className="features__link" href="#">Find out more</a> */}
+                                            <a className="features__link" href="#">Find out more</a>
                                         </div>
                                     </div>
                                 </div>
@@ -246,7 +280,7 @@ const Features = () => {
                                                     </span>
                                                 </p>
                                             </div>
-                                            {/* <a className="features__link" href="#">Find out more</a> */}
+                                            <a className="features__link" href="#">Find out more</a>
                                         </div>
                                     </div>
                                 </div>
@@ -268,15 +302,15 @@ const Features = () => {
                                                     <span style={{color: "#ed7899"}}>Tizen, Android, IOS, SMIL, XML</span>
                                                 </p>
                                             </div>
-                                            {/* <a className="features__link" href="#">Find out more</a> */}
+                                            <a className="features__link" href="#">Find out more</a>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </Slider>
                         </div>
                         <div className="features__status js-features-status">
                             <span className="status__number">0{currentSlideNumber + 1}</span>
-                            <span className="status__all">07</span>
+                            <span className="status__all">02</span>
                         </div>
                     </div>
                 </div>

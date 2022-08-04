@@ -10,34 +10,36 @@ const Main = () => {
                     <div className="main__wrap">
                         <h1 className="main__title title title_big" data-aos>
                             <span className="title__box">
-                                <span className="title__text">Web Development</span>
+                                <span className="title__text">Development</span>
                             </span>
                             <span className="title__box">
                                 <span className="title__text">
-                                    <span className="title__line">Mobile Apps</span>
+                                    <span className="title__line">UI / UX</span>
                                 </span>
                             </span>
                             <span className="title__box">
-                                <span className="title__text">UI / UX</span>
+                                <span className="title__text">Devops</span>
                             </span>
                             <span className="title__box">
                                 <span className="title__text">
-                                    Digital Marketing
+                                    BlockChain
                                     <span className="title__color">.</span>
                                 </span>
                             </span>
                         </h1>
                         <div className="main__info info" data-aos="animation-scale-y" data-aos-delay="400">
-                            We build valuable solution with code
+                            End-to-End Digital
+                            <br/>
+                            Transformation Services
                         </div>
                         <div className="main__control" data-aos="animation-scale-y" data-aos-delay="550">
-                            <a className="main__btn btn btn_purple" href="./login">Get Started</a>
-                            <a className="main__link" href="#">
+                            <a className="main__btn btn btn_purple" href="./login">Get in Touch</a>
+                            {/* <a className="main__link" href="#">
                                 <div className="main__icon">
                                     <img className="main__pic" src="img/play.svg" alt="" />
                                 </div>
                                 <div className="main__text">See It In Action!</div>
-                            </a>
+                            </a> */}
                         </div>
                         <div className="main__scroll" data-aos="animation-scale-y" data-aos-delay="650">
                             <a className="main__link" href="#">
@@ -62,7 +64,7 @@ const Main = () => {
                             <img className="main__pic js-parallax" data-scale="1.5" data-orientation="up" src="img/main-pic-2.png" alt="" />
                         </div> */}
                         <div className="main__preview">
-                            <img className="main__pic" src="img/main-pic-3.png" alt="" />
+                            <img className="main__pic" src="images/main-pic-3.png" alt="" />
                         </div>
                     </div>
                     <div className="main__circles">
