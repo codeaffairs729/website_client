@@ -5,16 +5,15 @@ const Access = () => {
     <>
         <div className="access">
           <div className="access__center center">
-            <div className="access__view" data-aos data-aos-delay="300">
+            <div className="access__view connect__view" data-aos data-aos-delay="300">
               <div className="access__preview">
-                <img className="access__pic" src="img/access-pic-2.png" alt="" />
+                <img className="access__pic connect__pic" src="images/connect.png" alt="" />
+                <img className="access__pic sphere__pic" src="images/Sphere.png" alt="" />
+                {/* <img className="access__pic" src="images/connect.svg" alt="" /> */}
               </div>
-              <div className="access__preview">
-                <img className="access__pic js-parallax" data-scale="1.5" data-orientation="up" src="img/access-pic-1.png" alt="" />
-              </div>
-              <div className="access__preview">
-                <img className="access__pic js-parallax" data-scale="1.5" data-orientation="down" src="img/main-pic-2.png" alt="" />
-              </div>
+              {/* <div className="access__preview">
+                <img className="access__pic" src="images/Sphere.png" alt="" />
+              </div> */}
             </div>
             <div className="access__wrap" data-aos="animation-scale-y">
               <div className="access__info">
