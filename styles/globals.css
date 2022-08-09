@@ -462,8 +462,45 @@ a {
 
 .layout-pic-swift {
   position: absolute;
-  top: 44%;
-  left: 45%;
+  top: -60px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.layouts_pic_figma {
+  margin-top: 35px;
+  margin-left: -55px;
+  width: 80%;
+}
+
+.Play_button_preview {
+  text-align: center;
+}
+
+.Play_button_img {
+  width: 50%;
+}
+
+.layout-pic-MongoDB {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.layout-pic-message {
+  position: absolute;
+  top: 150px;
+  left: 5px;
+  width: 100%;
+}
+
+.layout-pic-android_3 {
+  position: absolute;
+  top: 190px;
 }
 /* Layout Component CSS End */
 
@@ -514,9 +551,9 @@ a {
     width: 55px;
   }
 
-  .layout-pic-swift {
+  /* .layout-pic-swift {
     left: 54%;
-  }
+  } */
 
   .layout-pic-ror_top_2 {
     left: 35px;
@@ -526,6 +563,28 @@ a {
   .layout-pic-ror_bottom_2 {
     left: 53px;
     top: 40px;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .Play_button_img {
+    position: absolute;
+    left: 25px;
+    top: 5px;
+    width: 60%;
+  }
+
+  .layout-pic-MongoDB {
+    margin: 0;
+    left: 62px;
+    top: 45px;
+  }
+
+  .layout-pic-android_3 {
+    top: 180px;
+    right: 30px;
   }
   /* Layout Component CSS End */
 }
@@ -581,10 +640,10 @@ a {
     width: 55px;
   }
 
-  .layout-pic-swift {
+  /* .layout-pic-swift {
     top: 44%;
     left: 54%;
-  }
+  } */
 
   .layout-pic-ror_top_2 {
     left: 28px;
@@ -596,6 +655,27 @@ a {
     width: 55px;
     left: 28px;
     top: 15px;
+  }
+
+  .layouts_pic_figma {
+    margin-left: -93px;
+  }
+
+  .Play_button_img {
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    width: 60%;
+  }
+
+  .layout-pic-MongoDB {
+    margin: 0;
+    left: 22px;
+    top: 60px;
+  }
+
+  .layout-pic-android_3 {
+    top: 180px;
   }
   /* Layout Component CSS End */
 
@@ -689,8 +769,7 @@ a {
   }
 
   .layout-pic-swift {
-    top: 44%;
-    left: 54%;
+    top: -45px;
     width: 35px;
   }
 
@@ -704,6 +783,31 @@ a {
     left: 21px;
     top: 12px;
     width: 45px;
+  }
+
+  .layouts_pic_figma {
+    margin-top: 10px;
+    margin-left: -130px;
+  }
+
+  .layout-pic-MongoDB {
+    left: 12px;
+    top: -60px;
+  }
+
+  .Play_button_img {
+    bottom: 0;
+    top: unset;
+  }
+
+  .layout-pic-message {
+    top: 30px;
+    left: 0px;
+  }
+
+  .layout-pic-android_3 {
+    top: 45px;
+    right: 0;
   }
   /* Layout Component CSS End */
 
