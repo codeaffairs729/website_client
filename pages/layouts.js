@@ -194,31 +194,31 @@ const Layouts = () => {
           <div className="layouts__view" data-aos>
             <div className="layouts__preview">
               <img className="layouts__pic" src="img/layouts-pic-1.png" alt="" />
-              <img className="layout-pic-react" src="/images/react_3.png" alt="" />
-              <img className="layout-pic-andoid" src="/images/node_3.png" alt="" />
-              <img className="layout-pic-python" src="/images/python.png" alt="" />
-              <img className="layout-pic-swift" src="images/swift_2.png" alt="" />
+              <img className="layout-pic-react" src="/images/react_3.png" alt="" data-bs-toggle="tooltip" title="React" />
+              <img className="layout-pic-andoid" src="/images/node_3.png" alt="" data-bs-toggle="tooltip" title="NodeJS" />
+              <img className="layout-pic-python" src="/images/python.png" alt="" data-bs-toggle="tooltip" title="Python" />
+              <img className="layout-pic-swift" src="images/swift_2.png" alt="" data-bs-toggle="tooltip" title="Swift" />
             </div>
             <div className="layouts__preview Play_button_preview">
               {/* <img className="layouts__pic" src="images/layouts-pic-2.png" alt="" /> */}
               <img className="Play_button_img" src="images/Play_button.png" alt="" />
               {/* <img className="" src="images/layouts-pic-2.png" alt="" /> */}
 
-              <img className="layout-pic-MongoDB" src="/images/MongoDB.png" alt="" />
+              <img className="layout-pic-MongoDB" src="/images/MongoDB.png" alt="" data-bs-toggle="tooltip" title="MongoDB" />
 
               <img className="layout-pic-message" src="images/Message.png" alt="" />
-              <img className="layout-pic-android_3" src="/images/android_3.png" alt="" />
+              <img className="layout-pic-android_3" src="/images/android_3.png" alt="" data-bs-toggle="tooltip" title="Android" />
             </div>
             <div className="layouts__preview">
               <img className="layouts__pic" src="img/layouts-pic-3.png" alt="" />
             </div>
             <div className="layouts__preview">
               <img className="layouts__pic" src="img/layouts-pic-4.png" alt="" />
-              <img className="layout-pic-ror_top_2" src="/images/ror_top_2.png" alt="" />
-              <img className="layout-pic-ror_bottom_2" src="/images/ror_bottom_2.png" alt="" />
+              <img className="layout-pic-ror_top_2" src="/images/ror_top_2.png" alt="" data-bs-toggle="tooltip" title="Ruby On Rails" />
+              <img className="layout-pic-ror_bottom_2" src="/images/ror_bottom_2.png" alt="" data-bs-toggle="tooltip" title="Ruby On Rails" />
             </div>
             <div className="layouts__preview">
-              <img className="layouts__pic layouts_pic_figma" src="images/figma.png" alt="" />
+              <img className="layouts__pic layouts_pic_figma" src="images/figma.png" alt="" data-bs-toggle="tooltip" title="Figma" />
             </div>
           </div>
         </div>

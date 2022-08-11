@@ -142,6 +142,15 @@ a {
 .header__nav {
   justify-content: center;
 }
+
+.header-solutions-icon {
+  width: 100%;
+}
+
+.header-solutions-outer {
+  margin-bottom: 35px;
+  font-weight: 500;
+}
 /* Header Component CSS End */
 
 .btn_purple {
@@ -334,9 +343,15 @@ a {
 }
 /* Contact Component CSS End */
 
+/* Footer Component CSS Start */
 .footer-icon {
   width: 40px;
 }
+
+.footer-social-menu {
+  flex-direction: unset;
+}
+/* Footer Component CSS End */
 
 /* Main Component CSS Start */
 /* .main__preview:nth-child(4) {
@@ -384,17 +399,7 @@ a {
 /* Features Component CSS End */
 
 .whatsapp-btn-outer {
-  display: inline-block;
-  padding: 16px;
-  border-radius: 8px;
-  color: #fff;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-size: 16px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 99999;
+  display: none;
 }
 
 .whatsapp-btn {
@@ -831,6 +836,20 @@ a {
   
   .connect__view {
     margin: 0 0 0 0;
+  }
+
+  .whatsapp-btn-outer {
+    display: inline-block;
+    padding: 16px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99999;
   }
 }
 
