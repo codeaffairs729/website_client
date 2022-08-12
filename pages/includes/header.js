@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
+import Slider from "react-slick";
 
 const Header = () => {
     const [headerSearchBar, setHeaderSearchBar] = useState(false);
@@ -13,6 +14,17 @@ const Header = () => {
     const handleSidebar = () => {
         sideBarHandler ? setSideBarHandler(false) : setSideBarHandler(true);
     }
+
+    const settings = {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        infinite: true,
+        autoplay: true,
+        vertical: true,
+        verticalSwiping: true
+    };
 
     return (
         <>
@@ -55,93 +67,231 @@ const Header = () => {
                                             <div className="col-lg-4" style={{borderRight: "1px solid rgba(153, 159, 174, 0.2)", paddingLeft: "62px", paddingRight: "30px"}} >
                                                 <div className="header__category">Services</div>
                                                 <div className="row" >
-                                                    <div className="col-lg-12 header-solutions-outer" >
-                                                        <div className="row" >
-                                                            <div className="col-lg-2" >
-                                                                <img className="header-solutions-icon" src="images/computer-front-color.png" alt="" />
-                                                            </div>
-                                                            <div className="col-lg-10" >
-                                                                <div className="header__info">Web App Development</div>
-                                                                <div className="header__text">Smart automation system</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-lg-12 header-solutions-outer" >
-                                                        <div className="row" >
-                                                            <div className="col-lg-2" >
-                                                                <img className="header-solutions-icon" src="images/mobile-front-color.png" alt="" />
-                                                            </div>
-                                                            <div className="col-lg-10" >
-                                                                <div className="header__info">Mobile App Development</div>
-                                                                <div className="header__text">Work with various media formats</div>
+                                                    <Slider {...settings}>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="images/computer-front-color.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">Web App Development</div>
+                                                                    <div className="header__text">Smart automation system</div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div className="col-lg-12 header-solutions-outer" >
-                                                        <div className="row" >
-                                                            <div className="col-lg-2" >
-                                                                <img className="header-solutions-icon" src="images/bag-front-color.png" alt="" />
-                                                            </div>
-                                                            <div className="col-lg-10" >
-                                                                <div className="header__info">E - commerce</div>
-                                                                <div className="header__text">Workspace reimagined</div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="images/mobile-front-color.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">Mobile App Development</div>
+                                                                    <div className="header__text">Work with various media formats</div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="images/bag-front-color.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">E - commerce</div>
+                                                                    <div className="header__text">Workspace reimagined</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="images/CRP.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">BlockChain/Cryptocurrency</div>
+                                                                    <div className="header__text">Workspace reimagined</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="images/crm-erp.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">CRM/CMS/ERP Systems</div>
+                                                                    <div className="header__text">Workspace reimagined</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="images/DM3.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">Digital Marketing</div>
+                                                                    <div className="header__text">Workspace reimagined</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="images/SGT.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">Smart Gadget Apps</div>
+                                                                    <div className="header__text">Workspace reimagined</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </Slider>
                                                 </div>
                                             </div>
                                             <div className="col-lg-4" style={{borderRight: "1px solid rgba(153, 159, 174, 0.2)", paddingLeft: "62px", paddingRight: "30px"}} >
                                                 <div className="header__category">Technologies</div>
                                                 <div className="row" >
-                                                    <div className="col-lg-12 header-solutions-outer" >
-                                                        <div className="row" >
-                                                            <div className="col-lg-2" >
-                                                                <img className="header-solutions-icon" src="images/ror1.png" alt="" />
-                                                            </div>
-                                                            <div className="col-lg-10" >
-                                                                <div className="header__info">Ruby on Rails</div>
-                                                                <div className="header__text">24/7 Live Support</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-lg-12 header-solutions-outer" >
-                                                        <div className="row" >
-                                                            <div className="col-lg-2" >
-                                                                <img className="header-solutions-icon" src="images/node_2.png" alt="" />
-                                                            </div>
-                                                            <div className="col-lg-10" >
-                                                                <div className="header__info">Node.js</div>
-                                                                <div className="header__text">Advanced color picker</div>
+                                                    <Slider {...settings}>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="images/ror1.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">Ruby on Rails</div>
+                                                                    <div className="header__text">24/7 Live Support</div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div className="col-lg-12 header-solutions-outer" >
-                                                        <div className="row" >
-                                                            <div className="col-lg-2" >
-                                                                <img className="header-solutions-icon" src="images/android_2.png" alt="" />
-                                                            </div>
-                                                            <div className="col-lg-10" >
-                                                                <div className="header__info">Android</div>
-                                                                <div className="header__text">Advanced color picker</div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="images/node_2.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">Node.js</div>
+                                                                    <div className="header__text">Advanced color picker</div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">Android</div>
+                                                                    <div className="header__text">Advanced color picker</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">Javascript</div>
+                                                                    <div className="header__text">Advanced color picker</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">React</div>
+                                                                    <div className="header__text">Advanced color picker</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">Tizen</div>
+                                                                    <div className="header__text">Advanced color picker</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">PHP</div>
+                                                                    <div className="header__text">Advanced color picker</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">Python</div>
+                                                                    <div className="header__text">Advanced color picker</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </Slider>
                                                 </div>
                                             </div>
                                             <div className="col-lg-4" style={{paddingLeft: "62px", paddingRight: "30px"}} >
-                                                <div className="header__category">Features</div>
+                                                <div className="header__category">Portfolio</div>
                                                 <div className="row" >
-                                                    <div className="col-lg-12 header-solutions-outer" >
-                                                        <div className="row" >
-                                                            <div className="col-lg-2" >
-                                                                <img className="header-solutions-icon" src="img/clock.png" alt="" />
-                                                            </div>
-                                                            <div className="col-lg-10" >
-                                                                <div className="header__info">Deadline</div>
-                                                                <div className="header__text">See who’s behind the magic</div>
+                                                    <Slider {...settings}>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="img/clock.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">Deadline</div>
+                                                                    <div className="header__text">See who’s behind the magic</div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="img/clock.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">Deadline</div>
+                                                                    <div className="header__text">See who’s behind the magic</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="img/clock.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">Deadline</div>
+                                                                    <div className="header__text">See who’s behind the magic</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="img/clock.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">Deadline</div>
+                                                                    <div className="header__text">See who’s behind the magic</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </Slider>
                                                 </div>
                                             </div>
 
@@ -259,7 +409,7 @@ const Header = () => {
                                                             </div>
                                                         </div>
                                                     </div> */}
-                                                    {/* <a className="header__box" href="#">
+                                                    <a className="header__box" href="#">
                                                         <div className="header__preview">
                                                         <img className="header__pic" src="img/fill.png" alt="" />
                                                         </div>
@@ -303,7 +453,7 @@ const Header = () => {
                                                         <div className="header__info">Python</div>
                                                         <div className="header__text">Advanced color picker</div>
                                                         </div>
-                                                    </a> */}
+                                                    </a>
                                                 {/* </div>
                                             </div> */}
                                             {/* <div className="header__col">
@@ -380,7 +530,7 @@ const Header = () => {
                             <input className="header__input" type="text" placeholder="Search ..." />
                         </div>
                     </div> */}
-                    <a className="header__btn btn btn_pink" href='./contact' >Contact Us</a>
+                    <a className="header__btn btn btn_pink" href='./contact' >Get in Touch</a>
                 </div>
                 <div className="header__bg js-header-bg"></div>
             </div>

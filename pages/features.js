@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Slider from "react-slick";
+import Typewriter from 'typewriter-effect';
 
 const Features = () => {
     const [currentSlideNumber, setCurrentSlideNumber] = useState(0);
@@ -56,7 +57,13 @@ const Features = () => {
                             <h2 className="features__title title">
                                 We’re Top Ranked
                                 Service Provider
-                                On Upwork
+                                On <Typewriter
+                                    options={{
+                                        strings: ['Upwork', 'Clutch.io', 'People per Hour'],
+                                        autoStart: true,
+                                        loop: true,
+                                    }}
+                                />
                             </h2>
                             <div className="features__info info">
                                 Our services focus on Mobility Solutions, Web Application Development, Cloud Solutions, IoT, AR/VR, Blockchain, Artificial Intelligence & Machine Learning, Predictive Analytics & Big Data Solutions, and several other trending and emerging technologies.

@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './includes/header'
+import Typewriter from 'typewriter-effect';
 
 const Main = () => {
     return (
@@ -10,18 +11,24 @@ const Main = () => {
                     <div className="main__wrap">
                         <h1 className="main__title title title_big" data-aos>
                             <span className="title__box">
-                                <span className="title__text">Development</span>
+                                <span className="title__text"><Typewriter
+                                    options={{
+                                        strings: ['Development'],
+                                        autoStart: true,
+                                        loop: true,
+                                    }}
+                                /></span>
                             </span>
                             <span className="title__box">
                                 <span className="title__text">
-                                    <span className="title__line">UI / UX</span>
+                                    <span className="title__line" style={{fontSize: "50px"}}>UI / UX</span>
                                 </span>
                             </span>
                             <span className="title__box">
-                                <span className="title__text">Devops</span>
+                                <span className="title__text" style={{fontSize: "50px"}}>Devops</span>
                             </span>
                             <span className="title__box">
-                                <span className="title__text">
+                                <span className="title__text" style={{fontSize: "50px"}}>
                                     BlockChain
                                     <span className="title__color">.</span>
                                 </span>
@@ -29,7 +36,7 @@ const Main = () => {
                         </h1>
                         <div className="main__info info" data-aos="animation-scale-y" data-aos-delay="400">
                             End-to-End Digital
-                            <br/>
+                            <br />
                             Transformation Services
                         </div>
                         <div className="main__control" data-aos="animation-scale-y" data-aos-delay="550">
