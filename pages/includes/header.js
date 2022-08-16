@@ -104,7 +104,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-2" >
-                                                                    <img className="header-solutions-icon" src="images/CRP.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/blockchain.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-10" >
                                                                     <div className="header__info">BlockChain/Cryptocurrency</div>
@@ -115,7 +115,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-2" >
-                                                                    <img className="header-solutions-icon" src="images/crm-erp.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/crm.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-10" >
                                                                     <div className="header__info">CRM/CMS/ERP Systems</div>
@@ -126,7 +126,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-2" >
-                                                                    <img className="header-solutions-icon" src="images/DM3.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/digitalMarketing.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-10" >
                                                                     <div className="header__info">Digital Marketing</div>
@@ -137,7 +137,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-2" >
-                                                                    <img className="header-solutions-icon" src="images/SGT.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/smart_gadgets.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-10" >
                                                                     <div className="header__info">Smart Gadget Apps</div>
@@ -166,7 +166,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-2" >
-                                                                    <img className="header-solutions-icon" src="images/node_2.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/node.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-10" >
                                                                     <div className="header__info">Node.js</div>
@@ -188,7 +188,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-2" >
-                                                                    <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/node_2.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-10" >
                                                                     <div className="header__info">Javascript</div>
@@ -199,7 +199,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-2" >
-                                                                    <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/react_3.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-10" >
                                                                     <div className="header__info">React</div>
@@ -210,7 +210,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-2" >
-                                                                    <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/tizen-512.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-10" >
                                                                     <div className="header__info">Tizen</div>
@@ -221,7 +221,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-2" >
-                                                                    <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/php_2.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-10" >
                                                                     <div className="header__info">PHP</div>
@@ -232,10 +232,43 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-2" >
-                                                                    <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/python_2.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-10" >
                                                                     <div className="header__info">Python</div>
+                                                                    <div className="header__text">Advanced color picker</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="images/FIGMA.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">Figma</div>
+                                                                    <div className="header__text">Advanced color picker</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="images/MongoDB.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">MongoDB</div>
+                                                                    <div className="header__text">Advanced color picker</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-2" >
+                                                                    <img className="header-solutions-icon" src="images/swift.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-10" >
+                                                                    <div className="header__info">Swift</div>
                                                                     <div className="header__text">Advanced color picker</div>
                                                                 </div>
                                                             </div>
