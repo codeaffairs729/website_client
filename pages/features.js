@@ -59,7 +59,7 @@ const Features = () => {
                                 Service Provider
                                 On <Typewriter
                                     options={{
-                                        strings: ['Upwork', 'Clutch.io', 'People per Hour'],
+                                        strings: ['Upwork', 'Clutch.co', 'People per Hour'],
                                         autoStart: true,
                                         loop: true,
                                     }}

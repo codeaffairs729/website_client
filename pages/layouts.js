@@ -18,11 +18,34 @@ const Layouts = () => {
         <div className="layouts__center center">
           <div className="layouts__wrap">
             <div className="layouts__head" data-aos="animation-scale-y">
-              <h2 className="layouts__title title">Technologies We Use<span className="title__color">.</span></h2>
+              <div className="layouts__stage stage">Think No Limits</div>
+              <h2 className="layouts__title title">On Demand Technologies<span className="title__color">.</span></h2>
             </div>
-            {/* <div className="layouts__info info" data-aos="animation-scale-y">Easily create truly responsive components while deploying production-ready code.</div> */}
+            <div className="layouts__info info" data-aos="animation-scale-y">
+              From our software engineering excellence to our world-class design practice, we constantly seek out and develop exciting new ways to tackle complex problems.
+            </div>
+            <div className="layouts__list">
+              <div className="layouts__item" data-aos="animation-scale-y">
+                <div className="layouts__icon">
+                  <img className="layouts__pic" src="img/layout-1.svg" alt="" />
+                </div>
+                <div className="layouts__text">We ease complex business need through our Software solutions</div>
+              </div>
+              <div className="layouts__item" data-aos="animation-scale-y">
+                <div className="layouts__icon">
+                  <img className="layouts__pic" src="img/layout-2.svg" alt="" />
+                </div>
+                <div className="layouts__text">Distributed ledgers that help you maintain immutable data</div>
+              </div>
+              <div className="layouts__item" data-aos="animation-scale-y">
+                <div className="layouts__icon">
+                  <img className="layouts__pic" src="img/layout-3.svg" alt="" />
+                </div>
+                <div className="layouts__text">Our experience tailor mindful IoT solutions for your needs</div>
+              </div>
+            </div>
 
-            <Slider {...settings}>
+            {/* <Slider {...settings}>
               <div>
                 <div className="row" >
                   <div className="col-lg-3 col-md-3 col-sm-3 col-3" >
@@ -83,7 +106,7 @@ const Layouts = () => {
                   </div>
                 </div>
               </div>
-            </Slider>
+            </Slider> */}
 
             {/* <div className="row" data-aos="animation-scale-y">
               <Slider {...settings}>

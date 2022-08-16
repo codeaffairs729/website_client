@@ -7,7 +7,8 @@ const Access = () => {
           <div className="access__center center">
             <div className="access__view connect__view" data-aos data-aos-delay="300">
               <div className="access__preview">
-                <img className="access__pic connect__pic" src="images/connect.png" alt="" />
+                <img className="access__pic access-main-cloud" src="img/cloud.png" alt="" />
+                {/* <img className="access__pic connect__pic" src="images/connect.png" alt="" /> */}
                 <img className="access__pic sphere__pic" src="images/Sphere.png" alt="" />
                 {/* <img className="access__pic" src="images/connect.svg" alt="" /> */}
               </div>
@@ -17,9 +18,9 @@ const Access = () => {
             </div>
             <div className="access__wrap" data-aos="animation-scale-y">
               <div className="access__info">
-                Ready to get started?
+                Ready to make your app live on
                 <br/>
-                Share your email to get started.
+                cloud?
               </div>
               <form className="access__form">
                 <div className="access__field">
@@ -39,7 +40,7 @@ const Access = () => {
           </div>
           <div className="access__clouds">
             <div className="access__cloud">
-              <img className="access__pic js-parallax" data-scale="1.5" data-orientation="left" src="img/cloud.png" alt="" />
+              {/* <img className="access__pic js-parallax" data-scale="1.5" data-orientation="left" src="img/cloud.png" alt="" /> */}
             </div>
             <div className="access__cloud">
               <img className="access__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="" />

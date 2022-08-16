@@ -70,10 +70,10 @@ const Header = () => {
                                                     <Slider {...settings}>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/computer-front-color.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">Web App Development</div>
                                                                     <div className="header__text">Smart automation system</div>
                                                                 </div>
@@ -81,10 +81,10 @@ const Header = () => {
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/mobile-front-color.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">Mobile App Development</div>
                                                                     <div className="header__text">Work with various media formats</div>
                                                                 </div>
@@ -92,10 +92,10 @@ const Header = () => {
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/bag-front-color.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">E - commerce</div>
                                                                     <div className="header__text">Workspace reimagined</div>
                                                                 </div>
@@ -103,10 +103,10 @@ const Header = () => {
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/blockchain.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">BlockChain/Cryptocurrency</div>
                                                                     <div className="header__text">Workspace reimagined</div>
                                                                 </div>
@@ -114,10 +114,10 @@ const Header = () => {
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/crm.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">CRM/CMS/ERP Systems</div>
                                                                     <div className="header__text">Workspace reimagined</div>
                                                                 </div>
@@ -125,10 +125,10 @@ const Header = () => {
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/digitalMarketing.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">Digital Marketing</div>
                                                                     <div className="header__text">Workspace reimagined</div>
                                                                 </div>
@@ -136,10 +136,10 @@ const Header = () => {
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/smart_gadgets.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">Smart Gadget Apps</div>
                                                                     <div className="header__text">Workspace reimagined</div>
                                                                 </div>
@@ -154,10 +154,10 @@ const Header = () => {
                                                     <Slider {...settings}>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/ror1.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">Ruby on Rails</div>
                                                                     <div className="header__text">24/7 Live Support</div>
                                                                 </div>
@@ -165,10 +165,10 @@ const Header = () => {
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/node.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">Node.js</div>
                                                                     <div className="header__text">Advanced color picker</div>
                                                                 </div>
@@ -176,10 +176,10 @@ const Header = () => {
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/android_2.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">Android</div>
                                                                     <div className="header__text">Advanced color picker</div>
                                                                 </div>
@@ -187,10 +187,10 @@ const Header = () => {
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/node_2.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">Javascript</div>
                                                                     <div className="header__text">Advanced color picker</div>
                                                                 </div>
@@ -198,10 +198,10 @@ const Header = () => {
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/react_3.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">React</div>
                                                                     <div className="header__text">Advanced color picker</div>
                                                                 </div>
@@ -209,10 +209,10 @@ const Header = () => {
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/tizen-512.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">Tizen</div>
                                                                     <div className="header__text">Advanced color picker</div>
                                                                 </div>
@@ -220,10 +220,10 @@ const Header = () => {
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/php_2.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">PHP</div>
                                                                     <div className="header__text">Advanced color picker</div>
                                                                 </div>
@@ -231,10 +231,10 @@ const Header = () => {
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/python_2.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">Python</div>
                                                                     <div className="header__text">Advanced color picker</div>
                                                                 </div>
@@ -242,10 +242,10 @@ const Header = () => {
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/FIGMA.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">Figma</div>
                                                                     <div className="header__text">Advanced color picker</div>
                                                                 </div>
@@ -253,10 +253,10 @@ const Header = () => {
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/MongoDB.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">MongoDB</div>
                                                                     <div className="header__text">Advanced color picker</div>
                                                                 </div>
@@ -264,10 +264,10 @@ const Header = () => {
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/swift.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">Swift</div>
                                                                     <div className="header__text">Advanced color picker</div>
                                                                 </div>
@@ -282,10 +282,10 @@ const Header = () => {
                                                     <Slider {...settings}>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="img/clock.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">Deadline</div>
                                                                     <div className="header__text">See who’s behind the magic</div>
                                                                 </div>
@@ -293,10 +293,10 @@ const Header = () => {
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="img/clock.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">Deadline</div>
                                                                     <div className="header__text">See who’s behind the magic</div>
                                                                 </div>
@@ -304,10 +304,10 @@ const Header = () => {
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="img/clock.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">Deadline</div>
                                                                     <div className="header__text">See who’s behind the magic</div>
                                                                 </div>
@@ -315,10 +315,10 @@ const Header = () => {
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
-                                                                <div className="col-lg-2" >
+                                                                <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="img/clock.png" alt="" />
                                                                 </div>
-                                                                <div className="col-lg-10" >
+                                                                <div className="col-lg-9" >
                                                                     <div className="header__info">Deadline</div>
                                                                     <div className="header__text">See who’s behind the magic</div>
                                                                 </div>

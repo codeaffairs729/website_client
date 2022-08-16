@@ -36,7 +36,7 @@ export default function Home() {
         <Access />
         <Layouts />
         <Like />
-        <Plan />
+        {/* <Plan /> */}
         <Work />
         <Teams />
         <Speed />

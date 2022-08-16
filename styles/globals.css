@@ -144,7 +144,8 @@ a {
 }
 
 .header-solutions-icon {
-  width: 100%;
+  /* width: 100%; */
+  height: 40px;
 }
 
 .header-solutions-outer {
@@ -200,7 +201,106 @@ a {
   height: 82px;
 }
 
-/* Contact Component CSS Start */
+/* Design Component CSS Start */
+/* design-slide-pink */
+.design-slide-pink {
+  background: #FFEDDC;
+  width: auto !important;
+  margin: 0 20px;
+  padding: 40px 10px 10px;
+  border-radius: 24px;
+}
+
+.design-slide-pink .design__view {
+  background: #FAB8C4;
+}
+
+.design-slide-pink .design__preview {
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  transform: translate(-50%, -50%);
+}
+
+.design-slide-pink .design__info {
+  margin-bottom: 23px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -.045em;
+}
+/* design-slide-pink */
+
+/* design-slide-blue */
+.design-slide-blue {
+  background: #DBDEFF;
+  width: auto !important;
+  margin: 0 20px;
+  padding: 40px 10px 10px;
+  border-radius: 24px;
+}
+
+.design-slide-blue .design__view {
+  background: #5956E9;
+}
+
+.design-slide-blue .design__preview {
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  transform: translate(-50%, -50%);
+}
+
+.design-slide-blue .design__info {
+  margin-bottom: 23px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -.045em;
+}
+
+.design-slide-blue .design__link {
+  color: #5956E9;
+}
+
+.design-slide-blue .design__link .icon {
+  fill: #5956E9;
+}
+/* design-slide-blue */
+
+/* design-slide-green */
+.design-slide-green {
+  background: #DBF8FF;
+  width: auto !important;
+  margin: 0 20px;
+  padding: 40px 10px 10px;
+  border-radius: 24px;
+}
+
+.design-slide-green .design__view {
+  background: #90C8FC;
+}
+
+.design-slide-green .design__preview {
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  transform: translate(-50%, -50%);
+}
+
+.design-slide-green .design__info {
+  margin-bottom: 23px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -.045em;
+}
+/* design-slide-green */
+/* Design Component CSS End */
+
 .contact__logo {
   display: inline-block;
   -ms-flex-negative: 0;
@@ -468,9 +568,9 @@ a {
 .layout-pic-swift {
   position: absolute;
   top: -60px;
-  left: 0;
-  right: 0;
-  margin: auto;
+  left: 45%;
+  /* right: 0;
+  margin: auto; */
 }
 
 .layouts_pic_figma {
@@ -523,6 +623,11 @@ a {
   width: 30%;
   top: 225px;
   right: -95px;
+}
+
+.access-main-cloud {
+  width: 80%;
+  margin-top: 50px;
 }
 /* Access Component CSS End */
 @media only screen and (max-width: 1199px) {
@@ -851,6 +956,13 @@ a {
     right: 0;
     z-index: 99999;
   }
+
+  /* Access Component CSS Start */
+  .access-main-cloud {
+    width: 70%;
+    margin-bottom: 137px;
+  }
+  /* Access Component CSS End */
 }
 
 @media only screen and (max-height: 767px) {
