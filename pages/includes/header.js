@@ -166,7 +166,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/node.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/node_2.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Node.js</div>
@@ -188,7 +188,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/node_2.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/javascript.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Javascript</div>
@@ -221,7 +221,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/php_2.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/php1.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">PHP</div>

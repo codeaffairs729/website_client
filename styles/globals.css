@@ -626,10 +626,91 @@ a {
 }
 
 .access-main-cloud {
-  width: 80%;
-  margin-top: 50px;
+  width: 65%;
+  margin-top: 80px;
+}
+
+.access-salesforce-cloud {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+  width: 100px;
+  z-index: 4;
+}
+
+.access-google-cloud {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.access-cloud-1 {
+  width: 114px !important;
+}
+
+.access-rackspace-cloud {
+  width: 100%;
+}
+
+.access-aws-cloud-outer {
+  bottom: 190px;
+  width: 114px;
+  left: 20%;
+}
+
+.access-ball-yellow {
+  bottom: 50% !important;
+}
+
+.access-ball-white-leftbottom {
+  left: calc(50% - 480px) !important;
+  bottom: 32% !important;
+}
+
+.access__circle:first-child {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8) !important;
+}
+
+.access__circle:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8) !important;
+}
+
+.access__circle:nth-child(3) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8) !important;
+}
+
+.access-azure-cloud {
+  position: absolute;
+  bottom: 28px;
+  right: -18px;
+  width: 40px;
+}
+
+.access-heroku-cloud-outer {
+  top: 25%;
+  right: 10%;
+  width: 114px;
+}
+
+.access-heroku-cloud {
+  width: 70%;
+}
+
+.access-heading {
+  position: absolute;
+  top: 60%;
+  left: 29%;
 }
 /* Access Component CSS End */
+
 @media only screen and (max-width: 1199px) {
   /* Layout Component CSS Start */
   .layout-pic-react {
@@ -798,6 +879,31 @@ a {
     width: 700px;
   } */
   /* Main Component CSS End */
+
+  /* Access Component CSS Start */
+  .access-salesforce-cloud {
+    right: 10%;
+    top: 35%;
+  }
+
+  .access-heroku-cloud-outer {
+    top: 15%;
+    right: 5%;
+    width: 114px;
+  }
+
+  .access__ball:nth-child(5) {
+    left: calc(50% - 390px);
+  }
+
+  .access-ball-yellow {
+    bottom: 35% !important;
+  }
+
+  .access-heading {
+    left: 30%;
+  }
+  /* Access Component CSS End */
 }
 
 @media only screen and (max-width: 767px) {
@@ -959,8 +1065,67 @@ a {
 
   /* Access Component CSS Start */
   .access-main-cloud {
+    margin-top: 50px;
     width: 70%;
     margin-bottom: 137px;
+  }
+
+  .access__cloud:first-child {
+    left: 20%;
+  }
+
+  .access__circle:first-child {
+    top: 172px;
+    width: 286px;
+    height: 286px;
+    transform: translateX(-50%) scale(1) !important;
+  }
+
+  .access__circle:nth-child(2) {
+    top: 160px;
+    width: 311px;
+    height: 311px;
+    transform: translateX(-50%) scale(1) !important;
+  }
+
+  .access-aws-cloud-outer {
+    bottom: 67%;
+    left: -20px;
+  }
+
+  .access-salesforce-cloud {
+    right: 0;
+    top: 30%;
+  }
+
+  .access__cloud:nth-child(2) {
+    top: 460px;
+    right: 20%;
+    width: 114px;
+  }
+
+  .access__ball:nth-child(5) {
+    left: calc(50% - 180px);
+    top: 415px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .sphere__pic {
+    width: 35%;
+    top: 200px;
+    right: -25px;
+  }
+
+  .access-azure-cloud {
+    bottom: 107px;
+    right: 35px;
+    width: 35px;
+  }
+
+  .access-heading {
+    top: 35%;
+    left: 25%;
   }
   /* Access Component CSS End */
 }

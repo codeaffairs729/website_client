@@ -10,6 +10,8 @@ const Access = () => {
                 <img className="access__pic access-main-cloud" src="img/cloud.png" alt="" />
                 {/* <img className="access__pic connect__pic" src="images/connect.png" alt="" /> */}
                 <img className="access__pic sphere__pic" src="images/Sphere.png" alt="" />
+                <img className="access-azure-cloud" src="images/azure.png" alt="" />
+                <h2 className="access-heading" >Cloud Services</h2>
                 {/* <img className="access__pic" src="images/connect.svg" alt="" /> */}
               </div>
               {/* <div className="access__preview">
@@ -18,9 +20,7 @@ const Access = () => {
             </div>
             <div className="access__wrap" data-aos="animation-scale-y">
               <div className="access__info">
-                Ready to make your app live on
-                <br/>
-                cloud?
+                Ready to make your app live?
               </div>
               <form className="access__form">
                 <div className="access__field">
@@ -29,7 +29,7 @@ const Access = () => {
                     <img className="access__pic" src="img/sending-mail.svg" alt="" />
                   </div>
                 </div>
-                <button className="access__btn btn btn_purple" type="submit">Contact Me</button>
+                <button className="access__btn btn btn_purple" type="submit">Contact Us</button>
               </form>
             </div>
           </div>
@@ -39,22 +39,35 @@ const Access = () => {
             <div className="access__circle" data-aos data-aos-delay="200" data-aos-offset="300"></div>
           </div>
           <div className="access__clouds">
-            <div className="access__cloud">
-              {/* <img className="access__pic js-parallax" data-scale="1.5" data-orientation="left" src="img/cloud.png" alt="" /> */}
+            <div className="access__cloud access-cloud-1">
+              <img className="access__pic js-parallax" data-scale="1.5" data-orientation="left" src="img/cloud.png" alt="" />
+              <img className="access-google-cloud" data-scale="1.5" data-orientation="left" src="images/digitalocean.png" alt="" />
             </div>
             <div className="access__cloud">
               <img className="access__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="" />
+              <img className="access-google-cloud" data-scale="1.5" data-orientation="right" src="images/google-cloud-1.png" alt="" />
+            </div>
+            <div className="access__cloud access-aws-cloud-outer">
+              <img className="access__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="" />
+              <img className="access-google-cloud" data-scale="1.5" data-orientation="right" src="images/aws.png" alt="" />
+            </div>
+            <div className="access__cloud access-heroku-cloud-outer">
+              <img className="access__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="" />
+              <img className="access-google-cloud access-heroku-cloud" data-scale="1.5" data-orientation="right" src="images/heroku.png" alt="" />
             </div>
           </div>
           <div className="access__balls">
             <div className="access__ball"></div>
+            <div className="access__ball access-ball-white-leftbottom"></div>
             <div className="access__ball"></div>
             <div className="access__ball"></div>
-            <div className="access__ball"></div>
-            <div className="access__ball js-rellax" data-rellax-speed="-1"></div>
+            <div className="access__ball js-rellax access-ball-yellow" data-rellax-speed="-1">
+              <img className="access-google-cloud access-rackspace-cloud" src="images/rackspace.png" alt="" />
+            </div>
             <div className="access__ball"></div>
             <div className="access__ball js-rellax" data-rellax-speed="1"></div>
           </div>
+          <img className="access-salesforce-cloud" src="images/salesforce.png" alt="" />
         </div>
     </>
   )
