@@ -10,11 +10,11 @@ const Main = () => {
                 <div className="main__center center">
                     <div className="main__wrap">
                         <h1 className="main__title title title_big" data-aos>
-                            <span className="title__box">
+                            <span className="title__box dev-title">
                                 <span className="title__text">
                                     <Typewriter
                                         options={{
-                                            strings: ['Development'],
+                                            strings: ['Development', 'Software Engineering', 'Designing', 'App Monitoring', 'Web Solutions', 'Mobile Solutions', 'CRM Solutions', 'CSM Solutions', 'Cloud Services', 'Consulting'],
                                             autoStart: true,
                                             loop: true,
                                         }}

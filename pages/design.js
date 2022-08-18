@@ -85,7 +85,7 @@ const Design = () => {
                                         </div> */}
                                     </div>
                                     <div className="design__details">
-                                        <div className="design__category">Build</div>
+                                        <div className="design__category">Design</div>
                                         <div className="design__info">Stock architect</div>
                                         <div className="design__text">
                                             Using the Component Builder with your projects.
@@ -105,7 +105,7 @@ const Design = () => {
                                         </div> */}
                                     </div>
                                     <div className="design__details">
-                                        <div className="design__category">Ship</div>
+                                        <div className="design__category">Design</div>
                                         <div className="design__info">Withrelay</div>
                                         <div className="design__text">
                                             Deploy your projects more efficiently for web &amp; mobile.
@@ -145,7 +145,7 @@ const Design = () => {
                                         </div> */}
                                     </div>
                                     <div className="design__details">
-                                        <div className="design__category">Build</div>
+                                        <div className="design__category">Design</div>
                                         <div className="design__info">Buyma</div>
                                         <div className="design__text">
                                             Using the Component Builder with your projects.
@@ -178,7 +178,7 @@ const Design = () => {
                                         </a>
                                     </div>
                                 </div>
-                                <div className="design-slide-blue" data-aos="animation-translate-y">
+                                <div className="design-slide-pink" data-aos="animation-translate-y">
                                     <div className="design__view design-view-welcome-bg">
                                         {/* <div className="design__preview">
                                             <img className="design__pic" src="images/welcomeAi.png" alt="" />
@@ -191,6 +191,22 @@ const Design = () => {
                                             Use the smart color picker to easily select and apply colors.
                                         </div>
                                         <a className="design__link" href="https://welcome.ai/">
+                                            See More
+                                            <svg className="icon icon-arrow-right">
+                                                <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="design-slide-blue" data-aos="animation-translate-y">
+                                    <div className="design__view design-view-bzigo-bg"></div>
+                                    <div className="design__details">
+                                        <div className="design__category">Design</div>
+                                        <div className="design__info">Bzigo</div>
+                                        <div className="design__text">
+                                            Use the smart color picker to easily select and apply colors.
+                                        </div>
+                                        <a className="design__link" href="https://bzigo.com/">
                                             See More
                                             <svg className="icon icon-arrow-right">
                                                 <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>

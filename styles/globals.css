@@ -346,6 +346,12 @@ a {
   background-size: cover !important;
   background-position-x: center !important;
 }
+
+.design-view-bzigo-bg {
+  background: url('../public/images/bzigo-web.png') no-repeat !important;
+  background-size: cover !important;
+  background-position-x: center !important;
+}
 /* Design Component CSS End */
 
 .contact__logo {
@@ -680,8 +686,8 @@ a {
 
 .access-salesforce-cloud {
   position: absolute;
-  top: 40%;
-  right: 20%;
+  top: 10%;
+  right: 30%;
   width: 100px;
   z-index: 4;
 }
@@ -718,19 +724,19 @@ a {
 }
 
 .access__circle:first-child {
-  top: 50%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.8) !important;
 }
 
 .access__circle:nth-child(2) {
-  top: 50%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.8) !important;
 }
 
 .access__circle:nth-child(3) {
-  top: 50%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.8) !important;
 }
@@ -753,9 +759,142 @@ a {
 }
 
 .access-heading {
-  position: absolute;
+  /* position: absolute;
   top: 60%;
-  left: 29%;
+  left: 29%; */
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  width: 180PX;
+  transform: translate(-50%, -50%);
+}
+
+.access {
+  padding: 100px 0 0;
+}
+
+.access__cloud:first-child {
+  top: 150px;
+  left: calc(50% - 320px);
+}
+
+.digitalocean-floating {
+  transform: translatey(0px);
+	animation: digitalocean-floating 6s ease-in-out infinite;
+}
+
+.gcloud-floating {
+  transform: translatey(0px);
+	animation: gcloud-floating 6s ease-in-out infinite;
+}
+
+.aws-floating {
+  transform: translatey(0px);
+	animation: aws-floating 6s ease-in-out infinite;
+}
+
+.heroku-floating {
+  transform: translatey(0px);
+	animation: heroku-floating 6s ease-in-out infinite;
+}
+
+.salesforce-floating {
+  transform: translatey(0px);
+	animation: salesforce-floating 6s ease-in-out infinite;
+}
+
+.rackspace-floating {
+  transform: translatey(0px);
+	animation: rackspace-floating 6s ease-in-out infinite;
+}
+
+.sphere-floating {
+  transform: translatey(0px);
+	animation: sphere-floating 6s ease-in-out infinite;
+}
+
+@keyframes digitalocean-floating {
+  0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes gcloud-floating {
+  0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes aws-floating {
+  0% {
+		transform: translatey(-20px);
+	}
+	50% {
+		transform: translatey(0px);
+	}
+	100% {
+		transform: translatey(-20px);
+	}
+}
+
+@keyframes heroku-floating {
+  0% {
+		transform: translatey(-20px);
+	}
+	50% {
+		transform: translatey(0px);
+	}
+	100% {
+		transform: translatey(-20px);
+	}
+}
+
+@keyframes salesforce-floating {
+  0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translateX(20px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+@keyframes rackspace-floating {
+  0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translateX(-20px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+@keyframes sphere-floating {
+  0% {
+		transform: translateX(20px);
+	}
+	50% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateX(20px);
+	}
 }
 /* Access Component CSS End */
 
@@ -930,8 +1069,8 @@ a {
 
   /* Access Component CSS Start */
   .access-salesforce-cloud {
-    right: 10%;
-    top: 35%;
+    right: 25%;
+    top: 5%;
   }
 
   .access-heroku-cloud-outer {
@@ -945,11 +1084,11 @@ a {
   }
 
   .access-ball-yellow {
-    bottom: 35% !important;
+    bottom: 42% !important;
   }
 
   .access-heading {
-    left: 30%;
+    /* left: 30%; */
   }
   /* Access Component CSS End */
 }
@@ -1119,6 +1258,7 @@ a {
   }
 
   .access__cloud:first-child {
+    top: 70px;
     left: 20%;
   }
 
@@ -1172,8 +1312,14 @@ a {
   }
 
   .access-heading {
-    top: 35%;
-    left: 25%;
+    /* top: 35%;
+    left: 25%; */
+    top: 38%;
+    width: 140px;
+  }
+
+  .access {
+    padding: 180px 0 80px;
   }
   /* Access Component CSS End */
 }
@@ -1182,4 +1328,12 @@ a {
   .contact-entry-center {
     height: 100%;
   }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Main Component CSS Start */
+  .dev-title {
+    font-size: 48px;
+  }
+  /* Main Component CSS End */
 }
