@@ -59,10 +59,10 @@ const Design = () => {
                         <div className="design__container">
                             <Slider className="design__slider js-design-slider" {...designSettings}>
                                 <div className="design-slide-pink" data-aos="animation-translate-y" data-aos-delay="0">
-                                    <div className="design__view">
-                                        <div className="design__preview">
+                                    <div className="design__view design-view-ucview-bg" >
+                                        {/* <div className="design__preview">
                                             <img className="design__pic" src="images/ucview.png" alt="" />
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <div className="design__details">
                                         <div className="design__category">Design</div>
@@ -79,10 +79,10 @@ const Design = () => {
                                     </div>
                                 </div>
                                 <div className="design-slide-blue" data-aos="animation-translate-y" data-aos-delay="200">
-                                    <div className="design__view">
-                                        <div className="design__preview">
+                                    <div className="design__view design-view-stockarchitect-bg">
+                                        {/* <div className="design__preview">
                                             <img className="design__pic" src="images/stockarchitect.png" alt="" />
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <div className="design__details">
                                         <div className="design__category">Build</div>
@@ -99,10 +99,10 @@ const Design = () => {
                                     </div>
                                 </div>
                                 <div className="design-slide-green" data-aos="animation-translate-y" data-aos-delay="400">
-                                    <div className="design__view">
-                                        <div className="design__preview">
+                                    <div className="design__view design-view-withrelay-bg">
+                                        {/* <div className="design__preview">
                                             <img className="design__pic" src="images/withrelay.png" alt="" />
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <div className="design__details">
                                         <div className="design__category">Ship</div>
@@ -119,10 +119,10 @@ const Design = () => {
                                     </div>
                                 </div>
                                 <div className="design-slide-pink" data-aos="animation-translate-y">
-                                    <div className="design__view">
-                                        <div className="design__preview">
+                                    <div className="design__view design-view-videochatapro-bg">
+                                        {/* <div className="design__preview">
                                             <img className="design__pic" src="images/videochatapro.png" alt="" />
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <div className="design__details">
                                         <div className="design__category">Design</div>
@@ -139,10 +139,10 @@ const Design = () => {
                                     </div>
                                 </div>
                                 <div className="design-slide-blue" data-aos="animation-translate-y">
-                                    <div className="design__view">
-                                        <div className="design__preview">
+                                    <div className="design__view design-view-buyma-bg">
+                                        {/* <div className="design__preview">
                                             <img className="design__pic" src="images/buyma.png" alt="" />
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <div className="design__details">
                                         <div className="design__category">Build</div>
@@ -159,10 +159,10 @@ const Design = () => {
                                     </div>
                                 </div>
                                 <div className="design-slide-green" data-aos="animation-translate-y" data-aos-delay="0">
-                                    <div className="design__view">
-                                        <div className="design__preview">
+                                    <div className="design__view design-view-fintrakk-bg">
+                                        {/* <div className="design__preview">
                                             <img className="design__pic" src="images/fintrakk.png" alt="" />
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <div className="design__details">
                                         <div className="design__category">Design</div>
@@ -179,10 +179,10 @@ const Design = () => {
                                     </div>
                                 </div>
                                 <div className="design-slide-blue" data-aos="animation-translate-y">
-                                    <div className="design__view">
-                                        <div className="design__preview">
+                                    <div className="design__view design-view-welcome-bg">
+                                        {/* <div className="design__preview">
                                             <img className="design__pic" src="images/welcomeAi.png" alt="" />
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <div className="design__details">
                                         <div className="design__category">Design</div>

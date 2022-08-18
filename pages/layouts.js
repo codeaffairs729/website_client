@@ -15,7 +15,7 @@ const Layouts = () => {
   return (
     <>
       <div className="layouts">
-        <div className="layouts__center center">
+        <div className="layouts__center center" id="layouts">
           <div className="layouts__wrap">
             <div className="layouts__head" data-aos="animation-scale-y">
               <div className="layouts__stage stage">Think No Limits</div>

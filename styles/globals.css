@@ -152,6 +152,11 @@ a {
   margin-bottom: 35px;
   font-weight: 500;
 }
+
+.header-solutions-outer .col-lg-3 {
+  display: flex;
+  justify-content: center;
+}
 /* Header Component CSS End */
 
 .btn_purple {
@@ -205,7 +210,7 @@ a {
 /* design-slide-pink */
 .design-slide-pink {
   background: #FFEDDC;
-  width: auto !important;
+  width: -webkit-fill-available !important;
   margin: 0 20px;
   padding: 40px 10px 10px;
   border-radius: 24px;
@@ -235,7 +240,7 @@ a {
 /* design-slide-blue */
 .design-slide-blue {
   background: #DBDEFF;
-  width: auto !important;
+  width: -webkit-fill-available !important;
   margin: 0 20px;
   padding: 40px 10px 10px;
   border-radius: 24px;
@@ -273,7 +278,7 @@ a {
 /* design-slide-green */
 .design-slide-green {
   background: #DBF8FF;
-  width: auto !important;
+  width: -webkit-fill-available !important;
   margin: 0 20px;
   padding: 40px 10px 10px;
   border-radius: 24px;
@@ -299,6 +304,48 @@ a {
   letter-spacing: -.045em;
 }
 /* design-slide-green */
+
+.design-view-ucview-bg {
+  background: url('../public/images/ucview.png') no-repeat !important;
+  background-size: cover !important;
+  background-position-x: center !important;
+}
+
+.design-view-stockarchitect-bg {
+  background: url('../public/images/stockarchitect.png') no-repeat !important;
+  background-size: cover !important;
+  background-position-x: center !important;
+}
+
+.design-view-withrelay-bg {
+  background: url('../public/images/withrelay.png') no-repeat !important;
+  background-size: cover !important;
+  background-position-x: center !important;
+}
+
+.design-view-videochatapro-bg {
+  background: url('../public/images/videochatapro.png') no-repeat !important;
+  background-size: cover !important;
+  background-position-x: center !important;
+}
+
+.design-view-buyma-bg {
+  background: url('../public/images/buyma.png') no-repeat !important;
+  background-size: cover !important;
+  background-position-x: center !important;
+}
+
+.design-view-fintrakk-bg {
+  background: url('../public/images/fintrakk.png') no-repeat !important;
+  background-size: cover !important;
+  background-position-x: center !important;
+}
+
+.design-view-welcome-bg {
+  background: url('../public/images/welcomeAi.png') no-repeat !important;
+  background-size: cover !important;
+  background-position-x: center !important;
+}
 /* Design Component CSS End */
 
 .contact__logo {
@@ -493,9 +540,10 @@ a {
 /* Main Component CSS End */
 
 /* Features Component CSS Start */
-/* .features__pic {
+.features__pic {
   width: auto;
-} */
+  height: 70px;
+}
 /* Features Component CSS End */
 
 .whatsapp-btn-outer {

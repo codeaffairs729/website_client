@@ -55,7 +55,7 @@ const Header = () => {
                         <nav className="header__nav">
                             <a className="header__item" href="./">Home</a>
                             <div className="header__item js-header-item">
-                                <a className="header__head js-header-head" href="#">
+                                <a className="header__head js-header-head" href="javascript:void(0)">
                                     Solutions
                                     <svg className="icon icon-arrow-down">
                                         <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
@@ -65,7 +65,7 @@ const Header = () => {
                                     <div className="header__center center">
                                         <div className="header__row">
                                             <div className="col-lg-4" style={{borderRight: "1px solid rgba(153, 159, 174, 0.2)", paddingLeft: "62px", paddingRight: "30px"}} >
-                                                <div className="header__category">Services</div>
+                                                <div className="header__category"><a href="#services" >Services</a></div>
                                                 <div className="row" >
                                                     <Slider {...settings}>
                                                         <div className="col-lg-12 header-solutions-outer" >
@@ -149,7 +149,7 @@ const Header = () => {
                                                 </div>
                                             </div>
                                             <div className="col-lg-4" style={{borderRight: "1px solid rgba(153, 159, 174, 0.2)", paddingLeft: "62px", paddingRight: "30px"}} >
-                                                <div className="header__category">Technologies</div>
+                                                <div className="header__category"><a href="#layouts" >Technologies</a></div>
                                                 <div className="row" >
                                                     <Slider {...settings}>
                                                         <div className="col-lg-12 header-solutions-outer" >
@@ -442,7 +442,7 @@ const Header = () => {
                                                             </div>
                                                         </div>
                                                     </div> */}
-                                                    <a className="header__box" href="#">
+                                                    {/* <a className="header__box" href="#">
                                                         <div className="header__preview">
                                                         <img className="header__pic" src="img/fill.png" alt="" />
                                                         </div>
@@ -486,7 +486,7 @@ const Header = () => {
                                                         <div className="header__info">Python</div>
                                                         <div className="header__text">Advanced color picker</div>
                                                         </div>
-                                                    </a>
+                                                    </a> */}
                                                 {/* </div>
                                             </div> */}
                                             {/* <div className="header__col">

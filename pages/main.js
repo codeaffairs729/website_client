@@ -41,7 +41,7 @@ const Main = () => {
                             <br />
                             Transformation Services
                         </div>
-                        <div className="main__control" data-aos="animation-scale-y" data-aos-delay="550">
+                        <div style={{marginLeft: "2rem"}} className="main__control" data-aos="animation-scale-y" data-aos-delay="550">
                             <a className="main__btn btn btn_purple" href="./login">Get in Touch</a>
                             {/* <a className="main__link" href="#">
                                 <div className="main__icon">
@@ -50,7 +50,7 @@ const Main = () => {
                                 <div className="main__text">See It In Action!</div>
                             </a> */}
                         </div>
-                        <div className="main__scroll" data-aos="animation-scale-y" data-aos-delay="650">
+                        <div style={{marginLeft: "2rem"}} className="main__scroll" data-aos="animation-scale-y" data-aos-delay="650">
                             <a className="main__link" href="#">
                                 <div className="main__icon">
                                     <img className="main__pic" src="img/scroll.svg" alt="" />
