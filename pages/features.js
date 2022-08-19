@@ -115,7 +115,7 @@ const Features = () => {
                                                     (Nginx/Apache),
                                                     <span style={{color: "#71caaf"}}>Mail Servers</span>
                                                     <span style={ wadMoreLess ? {display: "none"} : {display: ""} } id="service1Dots">...
-                                                        <a href="javascript:void(0)" onClick={() => wadSeeMoreLess(1)} style={{color: "#71caaf"}}>
+                                                        <a href="#" onClick={() => wadSeeMoreLess(1)} style={{color: "#71caaf"}}>
                                                             <b>more</b>
                                                         </a>
                                                     </span>
@@ -129,7 +129,7 @@ const Features = () => {
                                                         (Hosting),
                                                         <span style={{color: "#71caaf"}}>Github/Bitbucket/Gitlab</span>(Git), DevOps
                                                         <br/>
-                                                        <a href="javascript:void(0)" onClick={() => wadSeeMoreLess(0)} style={{color: "#71caaf"}}>
+                                                        <a href="#" onClick={() => wadSeeMoreLess(0)} style={{color: "#71caaf"}}>
                                                             <b>less</b>
                                                         </a>
                                                     </span>
@@ -183,7 +183,7 @@ const Features = () => {
                                                 <p>Related Expertise:
                                                     <span style={{color: "#fce9bc"}}>Minning, Block-chain,</span>
                                                     <span style={ bcMoreLess ? {display: "none"} : {display: ""} } id="service2Dots">...
-                                                        <a href="javascript:void(0)" onClick={() => bcSeeMoreLess(1)} style={{color: "#fce9bc"}}>
+                                                        <a href="#" onClick={() => bcSeeMoreLess(1)} style={{color: "#fce9bc"}}>
                                                             <b>more</b>
                                                         </a>
                                                     </span>
@@ -196,7 +196,7 @@ const Features = () => {
                                                         (proof of stake),
                                                         <span style={{color: "#fce9bc"}}>Public/Private keys, Smart contract,Smrat Signature</span>
                                                         <br/>
-                                                        <a href="javascript:void(0)" onClick={() => bcSeeMoreLess(0)} style={{color: "#fce9bc"}}>
+                                                        <a href="#" onClick={() => bcSeeMoreLess(0)} style={{color: "#fce9bc"}}>
                                                             <b>less</b>
                                                         </a>
                                                     </span>
@@ -218,14 +218,14 @@ const Features = () => {
                                                 <p>Related Expertise:
                                                     <span style={{color: "#ed7899"}}>Radiant CMS,Adva CMS,Casein CMS,Locomotive CMS, django CMS, Spina</span>
                                                     <span style={ ccesMoreLess ? {display: "none"} : {display: ""} } id="service3Dots">...
-                                                        <a href="javascript:void(0)" onClick={() => ccesSeeMoreLess(1)} style={{color: "#ed7899"}}>
+                                                        <a href="#" onClick={() => ccesSeeMoreLess(1)} style={{color: "#ed7899"}}>
                                                             <b>more</b>
                                                         </a>
                                                     </span>
                                                     <span id="service3" style={ ccesMoreLess ? {display: ""} : {display: "none"} } >
                                                         <span style={{color: "#ed7899"}}> CMS,Fat Free CRM, Wordpress, Redmine, bonsaiERP, Accounting Platform, Payroll Development, Zoho/Salesfore CRM , Point Of Sale Systems, Corporate CRM/ERP Systems</span>
                                                         <br/>
-                                                        <a href="javascript:void(0)" onClick={() => ccesSeeMoreLess(0)} style={{color: "#ed7899"}}>
+                                                        <a href="#" onClick={() => ccesSeeMoreLess(0)} style={{color: "#ed7899"}}>
                                                             <b>less</b>
                                                         </a>
                                                     </span>
@@ -247,14 +247,14 @@ const Features = () => {
                                                 <p> Related Expertise:
                                                     <span style={{color: "#f8e390"}}> SEO, SMM, ORM, Leads Generation, Ads Reveniew, Facebook Leads</span>
                                                     <span style={ dmMoreLess ? {display: "none"} : {display: ""} } id="service4Dots">...
-                                                        <a href="javascript:void(0)" onClick={() => dmSeeMoreLess(1)} style={{color: "#f8e390"}}>
+                                                        <a href="#" onClick={() => dmSeeMoreLess(1)} style={{color: "#f8e390"}}>
                                                             <b>more</b>
                                                         </a>
                                                     </span>
                                                     <span id="service4" style={ dmMoreLess ? {display: ""} : {display: "none"} } >
                                                         <span style={{color: "#f8e390"}}> Generation, Keywords Resaerch, Website Analysis, Link Building, Youtube Video Ranking</span>
                                                         <br/>
-                                                        <a href="javascript:void(0)" onClick={() => dmSeeMoreLess(0)} style={{color: "#f8e390"}}>
+                                                        <a href="#" onClick={() => dmSeeMoreLess(0)} style={{color: "#f8e390"}}>
                                                             <b>less</b>
                                                         </a>
                                                     </span>

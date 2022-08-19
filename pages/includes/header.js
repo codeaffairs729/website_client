@@ -55,7 +55,7 @@ const Header = () => {
                         <nav className="header__nav">
                             <a className="header__item" href="./">Home</a>
                             <div className="header__item js-header-item">
-                                <a className="header__head js-header-head" href="javascript:void(0)">
+                                <a className="header__head js-header-head" href="#">
                                     Solutions
                                     <svg className="icon icon-arrow-down">
                                         <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>

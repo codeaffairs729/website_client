@@ -10,11 +10,11 @@ const Main = () => {
                 <div className="main__center center">
                     <div className="main__wrap">
                         <h1 className="main__title title title_big" data-aos>
-                            <span className="title__box dev-title">
+                            <span className="title__box dev-title mb-3">
                                 <span className="title__text">
                                     <Typewriter
                                         options={{
-                                            strings: ['Development', 'Software Engineering', 'Designing', 'App Monitoring', 'Web Solutions', 'Mobile Solutions', 'CRM Solutions', 'CSM Solutions', 'Cloud Services', 'Consulting'],
+                                            strings: ['Development', 'Software Engineering', 'Designing', 'App Monitoring', 'Web Solutions', 'Mobile Solutions', 'CRM Solutions', 'CMS Solutions', 'Cloud Services', 'Consulting'],
                                             autoStart: true,
                                             loop: true,
                                         }}
@@ -22,12 +22,16 @@ const Main = () => {
                                 </span>
                             </span>
                             <span className="title__box">
-                                <span className="title__text">
-                                    <span className="title__line" style={{fontSize: "40px", marginLeft: "2rem"}}>UI / UX</span>
+                                <span className="title__text" style={{fontSize: "40px", marginLeft: "2rem"}}>
+                                    <span className="title__line" >
+                                        UI / UX
+                                    </span>
                                 </span>
                             </span>
                             <span className="title__box">
-                                <span className="title__text" style={{fontSize: "40px", marginLeft: "2rem"}}>Devops</span>
+                                <span className="title__text" style={{fontSize: "40px", marginLeft: "2rem"}}>
+                                    Devops
+                                </span>
                             </span>
                             <span className="title__box">
                                 <span className="title__text" style={{fontSize: "40px", marginLeft: "2rem"}}>

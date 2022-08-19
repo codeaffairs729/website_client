@@ -210,7 +210,7 @@ a {
 /* design-slide-pink */
 .design-slide-pink {
   background: #FFEDDC;
-  width: -webkit-fill-available !important;
+  /* width: -webkit-fill-available !important; */
   margin: 0 20px;
   padding: 40px 10px 10px;
   border-radius: 24px;
@@ -240,7 +240,7 @@ a {
 /* design-slide-blue */
 .design-slide-blue {
   background: #DBDEFF;
-  width: -webkit-fill-available !important;
+  /* width: -webkit-fill-available !important; */
   margin: 0 20px;
   padding: 40px 10px 10px;
   border-radius: 24px;
@@ -278,7 +278,7 @@ a {
 /* design-slide-green */
 .design-slide-green {
   background: #DBF8FF;
-  width: -webkit-fill-available !important;
+  /* width: -webkit-fill-available !important; */
   margin: 0 20px;
   padding: 40px 10px 10px;
   border-radius: 24px;
@@ -351,6 +351,10 @@ a {
   background: url('../public/images/bzigo-web.png') no-repeat !important;
   background-size: cover !important;
   background-position-x: center !important;
+}
+
+.design__slider .slick-slide {
+  padding-right: 40px;
 }
 /* Design Component CSS End */
 
@@ -543,6 +547,11 @@ a {
   -ms-transform: translateY(0);
   transform: translateY(0);
 } */
+
+.title__line:before {
+  bottom: 12px;
+  height: 4px;
+}
 /* Main Component CSS End */
 
 /* Features Component CSS Start */
@@ -1334,6 +1343,7 @@ a {
   /* Main Component CSS Start */
   .dev-title {
     font-size: 48px;
+    width: max-content;
   }
   /* Main Component CSS End */
 }
