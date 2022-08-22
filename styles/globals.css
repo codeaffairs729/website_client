@@ -157,6 +157,14 @@ a {
   display: flex;
   justify-content: center;
 }
+
+.header-solutions-outer .col-lg-9 {
+  margin: auto;
+}
+
+.header-solutions-outer .header__info {
+  font-size: 16px;
+}
 /* Header Component CSS End */
 
 .btn_purple {
@@ -908,38 +916,59 @@ a {
 /* Access Component CSS End */
 
 /* Work Component CSS Start */
-.work-img-bulb {
+.work-img-bulb-outer {
   position: absolute;
-  top: 5%;
-  left: 5%;
+  top: -15px;
+  right: -55px;
+  text-align: center;
+}
+
+.work-img-bulb {
   width: 70px;
 }
 
-.work-img-msg {
+.work-img-bulb-text {
+  font-weight: 700;
+  color: #000000;
+  opacity: 0.4;
+  font-size: 15px;
+}
+
+.work-img-msg-outer {
   position: absolute;
-  top: 5%;
-  left: 20%;
+  top: 25%;
+  left: -35px;
+  text-align: center;
+}
+
+.work-img-msg {
   width: 70px;
 }
 
 .work-img-Float {
   position: absolute;
-  top: 10%;
-  left: 35%;
+  top: -35px;
+  left: 0;
+  right: 0;
+  margin: auto;
   width: 70px;
 }
 
-.work-img-Group {
+.work-img-Group-outer {
   position: absolute;
-  top: 20%;
-  left: 55%;
-  width: 70px;
+  top: 25%;
+  right: -30px;
+  text-align: center;
+}
+
+.work-img-Group {
+  height: 70px;
 }
 
 .work-img-rocket {
   position: absolute;
-  top: 40%;
-  left: 55%;
+  bottom: 0;
+  right: 20px;
   width: 70px;
 }
 
@@ -950,25 +979,69 @@ a {
   width: 70px;
 }
 
-.work-img-chart {
+.work-img-chart-outer {
   position: absolute;
-  top: 55%;
-  left: 55%;
+  bottom: -80px;
+  left: 20px;
+  text-align: center;
+}
+
+.work-img-chart {
   width: 70px;
 }
 
-.work-img-money {
+.work-img-money-outer {
   position: absolute;
-  top: 65%;
-  left: 85%;
+  top: 70%;
+  right: 25%;
+  text-align: center;
+}
+
+.work-img-money {
   width: 70px;
 }
 
 .work__hand {
   position: absolute !important;
-  top: 60px !important;
-  left: 0 !important;
+  top: 30% !important;
+  left: 15% !important;
   width: 80px !important;
+}
+
+.work-circle-white {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: white;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.work-text-left {
+  position: absolute;
+  top: 45%;
+  left: 15%;
+}
+
+.work-text-right {
+  position: absolute;
+  right: 10%;
+}
+
+.work-text-right-btn {
+  background-color: #5552EA;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  font-weight: 500;
+}
+
+.work {
+  padding: 50px 0 0;
+  height: 700px;
 }
 /* Work Component CSS End */
 
@@ -981,6 +1054,26 @@ a {
   -webkit-box-orient: vertical;
 }
 /* Teams Component CSS End */
+
+.package__preview {
+  width: 100%;
+  margin: auto;
+  padding-top: 0;
+}
+
+.package__preview .package__pic {
+  width: 100%;
+}
+
+.package-preview-mobile {
+  display: flex;
+  justify-content: center;
+}
+
+.package-pic-mobile {
+  height: 100%;
+  width: auto !important;
+}
 
 @media only screen and (max-width: 1199px) {
   /* Layout Component CSS Start */

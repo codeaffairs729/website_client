@@ -3,17 +3,39 @@ import React from 'react'
 const Work = () => {
   return (
     <div className="work">
+      <h5 className='work-text-left'>From Your Idea<br/>to your Revenue</h5>
+      <div className='work-text-right' >
+        <h4>Confusion in your<br/>Million Dollar Idea?</h4>
+        <div className='work-text-right-btn' >Get Free Consultation</div>
+      </div>
       <div className="work__hand" data-aos data-aos-duration="800" data-aos-offset="0">
         <img className="work__pic js-parallax" data-scale="1.2" data-orientation="down" src="img/hand-2.png" alt="" />
+        <div className="work-img-bulb-outer" >
+          <img className="work-img-bulb" src="images/bulb-front-color.png" alt="" />
+          <p className='work-img-bulb-text' >Your Idea</p>
+        </div>
       </div>
-      <img className="work-img-bulb" src="images/bulb-front-color.png" alt="" />
-      <img className="work-img-msg" src="images/chat-text-front-clay.png" alt="" />
-      <img className="work-img-Float" src="images/Float.png" alt="" />
-      <img className="work-img-Group" src="images/Group.png" alt="" />
-      <img className="work-img-rocket" src="images/rocket-iso-color.png" alt="" />
-      <img className="work-img-megaphone" src="images/megaphone-front-color.png" alt="" />
-      <img className="work-img-chart" src="images/chart-front-color.png" alt="" />
-      <img className="work-img-money" src="images/money-front-color.png" alt="" />
+      <div className='work-circle-white' >
+        <div className="work-img-msg-outer" >
+          <img className="work-img-msg" src="images/chat-text-front-clay.png" alt="" />
+          <p className='work-img-bulb-text' >Discussion &<br/>Consultation</p>
+        </div>
+        <img className="work-img-Float" src="images/Float.png" alt="" />
+        <div className="work-img-Group-outer" >
+          <img className="work-img-Group" src="images/Group.png" alt="" />
+          <p className='work-img-bulb-text' >Development</p>
+        </div>
+        <img className="work-img-rocket" src="images/rocket-iso-color.png" alt="" />
+        <div className="work-img-chart-outer" >
+          <img className="work-img-chart" src="images/chart-front-color.png" alt="" />
+          <p className='work-img-bulb-text' >Monitoring<br/>&<br/>Future planning</p>
+        </div>
+      </div>
+      {/* <img className="work-img-megaphone" src="images/megaphone-front-color.png" alt="" /> */}
+      <div className="work-img-money-outer" >
+        <img className="work-img-money" src="images/money-front-color.png" alt="" />
+        <p className='work-img-bulb-text' >Your Revenue</p>
+      </div>
       {/* <div className="work__center center">
         <div className="work__head">
           <div className="work__stage stage">Collaboration Redefined</div>

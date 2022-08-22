@@ -18,30 +18,30 @@ const Layouts = () => {
         <div className="layouts__center center" id="layouts">
           <div className="layouts__wrap">
             <div className="layouts__head" data-aos="animation-scale-y">
-              <div className="layouts__stage stage">Think No Limits</div>
-              <h2 className="layouts__title title">On Demand Technologies<span className="title__color">.</span></h2>
+              <div className="layouts__stage stage">Our Tools & Technologies</div>
+              <h2 className="layouts__title title">Find best fit for your IT Product<span className="title__color">.</span></h2>
             </div>
             <div className="layouts__info info" data-aos="animation-scale-y">
-              From our software engineering excellence to our world-class design practice, we constantly seek out and develop exciting new ways to tackle complex problems.
+              From our software engineering excellence to our world-class design practice, we constantly seek out and develop optimistic new techniques to tackle complex problems.
             </div>
             <div className="layouts__list">
               <div className="layouts__item" data-aos="animation-scale-y">
                 <div className="layouts__icon">
                   <img className="layouts__pic" src="img/layout-1.svg" alt="" />
                 </div>
-                <div className="layouts__text">We ease complex business need through our Software solutions</div>
+                <div className="layouts__text">We advice technologies that suits your idea.</div>
               </div>
               <div className="layouts__item" data-aos="animation-scale-y">
                 <div className="layouts__icon">
                   <img className="layouts__pic" src="img/layout-2.svg" alt="" />
                 </div>
-                <div className="layouts__text">Distributed ledgers that help you maintain immutable data</div>
+                <div className="layouts__text">Get rid of expensive & slow tech stack with fast & advance technologies.</div>
               </div>
               <div className="layouts__item" data-aos="animation-scale-y">
                 <div className="layouts__icon">
                   <img className="layouts__pic" src="img/layout-3.svg" alt="" />
                 </div>
-                <div className="layouts__text">Our experience tailor mindful IoT solutions for your needs</div>
+                <div className="layouts__text">Keep your application fast, scalable and reliable with optimum combination.</div>
               </div>
             </div>
 

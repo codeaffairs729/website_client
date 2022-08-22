@@ -75,7 +75,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Web App Development</div>
-                                                                    <div className="header__text">Smart automation system</div>
+                                                                    {/* <div className="header__text">Smart automation system</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -86,7 +86,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Mobile App Development</div>
-                                                                    <div className="header__text">Work with various media formats</div>
+                                                                    {/* <div className="header__text">Work with various media formats</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -97,7 +97,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">E - commerce</div>
-                                                                    <div className="header__text">Workspace reimagined</div>
+                                                                    {/* <div className="header__text">Workspace reimagined</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -108,7 +108,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">BlockChain/Cryptocurrency</div>
-                                                                    <div className="header__text">Workspace reimagined</div>
+                                                                    {/* <div className="header__text">Workspace reimagined</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -119,7 +119,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">CRM/CMS/ERP Systems</div>
-                                                                    <div className="header__text">Workspace reimagined</div>
+                                                                    {/* <div className="header__text">Workspace reimagined</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -130,7 +130,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Digital Marketing</div>
-                                                                    <div className="header__text">Workspace reimagined</div>
+                                                                    {/* <div className="header__text">Workspace reimagined</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -141,7 +141,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Smart Gadget Apps</div>
-                                                                    <div className="header__text">Workspace reimagined</div>
+                                                                    {/* <div className="header__text">Workspace reimagined</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -159,7 +159,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Ruby on Rails</div>
-                                                                    <div className="header__text">24/7 Live Support</div>
+                                                                    {/* <div className="header__text">24/7 Live Support</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -170,7 +170,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Node.js</div>
-                                                                    <div className="header__text">Advanced color picker</div>
+                                                                    {/* <div className="header__text">Advanced color picker</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -181,7 +181,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Android</div>
-                                                                    <div className="header__text">Advanced color picker</div>
+                                                                    {/* <div className="header__text">Advanced color picker</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -192,7 +192,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Javascript</div>
-                                                                    <div className="header__text">Advanced color picker</div>
+                                                                    {/* <div className="header__text">Advanced color picker</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -203,7 +203,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">React</div>
-                                                                    <div className="header__text">Advanced color picker</div>
+                                                                    {/* <div className="header__text">Advanced color picker</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -214,7 +214,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Tizen</div>
-                                                                    <div className="header__text">Advanced color picker</div>
+                                                                    {/* <div className="header__text">Advanced color picker</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -225,7 +225,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">PHP</div>
-                                                                    <div className="header__text">Advanced color picker</div>
+                                                                    {/* <div className="header__text">Advanced color picker</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -236,7 +236,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Python</div>
-                                                                    <div className="header__text">Advanced color picker</div>
+                                                                    {/* <div className="header__text">Advanced color picker</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -247,7 +247,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Figma</div>
-                                                                    <div className="header__text">Advanced color picker</div>
+                                                                    {/* <div className="header__text">Advanced color picker</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -258,7 +258,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">MongoDB</div>
-                                                                    <div className="header__text">Advanced color picker</div>
+                                                                    {/* <div className="header__text">Advanced color picker</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -269,7 +269,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Swift</div>
-                                                                    <div className="header__text">Advanced color picker</div>
+                                                                    {/* <div className="header__text">Advanced color picker</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -287,7 +287,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Deadline</div>
-                                                                    <div className="header__text">See who’s behind the magic</div>
+                                                                    {/* <div className="header__text">See who’s behind the magic</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -298,7 +298,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Deadline</div>
-                                                                    <div className="header__text">See who’s behind the magic</div>
+                                                                    {/* <div className="header__text">See who’s behind the magic</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -309,7 +309,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Deadline</div>
-                                                                    <div className="header__text">See who’s behind the magic</div>
+                                                                    {/* <div className="header__text">See who’s behind the magic</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -320,7 +320,7 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Deadline</div>
-                                                                    <div className="header__text">See who’s behind the magic</div>
+                                                                    {/* <div className="header__text">See who’s behind the magic</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>

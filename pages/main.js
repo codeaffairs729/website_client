@@ -14,7 +14,7 @@ const Main = () => {
                                 <span className="title__text">
                                     <Typewriter
                                         options={{
-                                            strings: ['Development', 'Software Engineering', 'Designing', 'App Monitoring', 'Web Solutions', 'Mobile Solutions', 'CRM Solutions', 'CMS Solutions', 'Cloud Services', 'Consulting'],
+                                            strings: ['Development', 'Software Engineering', 'Designing', 'App Monitoring', 'Web Solutions', 'Mobile Solutions', 'CRM Solutions', 'CMS Solutions', 'Cloud Services', 'Tech Consulting'],
                                             autoStart: true,
                                             loop: true,
                                         }}
@@ -55,12 +55,12 @@ const Main = () => {
                             </a> */}
                         </div>
                         <div style={{marginLeft: "2rem"}} className="main__scroll" data-aos="animation-scale-y" data-aos-delay="650">
-                            <a className="main__link" href="#">
+                            {/* <a className="main__link" href="#">
                                 <div className="main__icon">
                                     <img className="main__pic" src="img/scroll.svg" alt="" />
                                 </div>
                                 <div className="main__text">Scroll to explore</div>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                     <div className="main__view" data-aos>

@@ -20,6 +20,7 @@ const Package = () => {
         speed: 700,
         fade: true,
         adaptiveHeight: true,
+        // autoplay: true,
         responsive: [{
             breakpoint: 768,
             settings: {
@@ -44,7 +45,7 @@ const Package = () => {
                                                 </div>
                                                 <div className="package__text">Awesome feature</div>
                                             </div>
-                                            <h3 className="package__title title title_sm">Ultimate features</h3>
+                                            <h3 className="package__title title title_sm">UI/UX Services</h3>
                                             <div className="package__info">It’s easy to share designs across the organization, so team collaboration is fast and easy.</div>
                                             <div className="package__list">
                                                 <a className="package__link" href="#">
@@ -90,7 +91,7 @@ const Package = () => {
                                                 </div>
                                                 <div className="package__text">Awesome feature</div>
                                             </div>
-                                            <h3 className="package__title title title_sm">Standard features</h3>
+                                            <h3 className="package__title title title_sm">Web Development</h3>
                                             <div className="package__info">It’s easy to share designs across the organization, so team collaboration is fast and easy.</div>
                                             <div className="package__list">
                                                 <a className="package__link" href="#">
@@ -123,7 +124,7 @@ const Package = () => {
                                             </div>
                                         </div>
                                         <div className="package__preview">
-                                            <img className="package__pic" src="img/laptop.png" alt="" />
+                                            <img className="package__pic" src="images/Laptop.png" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -136,7 +137,7 @@ const Package = () => {
                                                 </div>
                                                 <div className="package__text">Awesome feature</div>
                                             </div>
-                                            <h3 className="package__title title title_sm">Ultimate features</h3>
+                                            <h3 className="package__title title title_sm">Mobile Solutions</h3>
                                             <div className="package__info">It’s easy to share designs across the organization, so team collaboration is fast and easy.</div>
                                             <div className="package__list">
                                                 <a className="package__link" href="#">
@@ -168,8 +169,8 @@ const Package = () => {
                                                 <a className="package__btn btn btn_purple" href="./login">Get Started</a>
                                             </div>
                                         </div>
-                                        <div className="package__preview">
-                                            <img className="package__pic" src="img/laptop.png" alt="" />
+                                        <div className="package__preview package-preview-mobile">
+                                            <img className="package__pic package-pic-mobile" src="images/Mobile.png" alt="" />
                                         </div>
                                     </div>
                                 </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Typewriter from 'typewriter-effect';
 
 const Partners = () => {
   return (
@@ -7,7 +8,17 @@ const Partners = () => {
             <div className="partners__head" data-aos="animation-scale-y">
               <div className="partners__stage stage">Clients</div>
               <div className="partners__details">
-                <h2 className="partners__title title">More than 68,219 designers use Collab.</h2>
+                <h2 className="partners__title title">
+                  We’re Top Ranked
+                  Service Provider
+                  On <Typewriter
+                      options={{
+                          strings: ['Upwork', 'Clutch.co', 'People per Hour'],
+                          autoStart: true,
+                          loop: true,
+                      }}
+                  />
+                </h2>
                 <div className="partners__info info">Design anything from simple icons to fully featured websites and applications.</div>
               </div>
             </div>
