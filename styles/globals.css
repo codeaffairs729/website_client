@@ -678,6 +678,10 @@ a {
   position: absolute;
   top: 190px;
 }
+
+.layouts {
+  padding: 100px 0 165px;
+}
 /* Layout Component CSS End */
 
 /* Access Component CSS Start */
@@ -913,6 +917,10 @@ a {
 		transform: translateX(20px);
 	}
 }
+
+.access {
+  margin-bottom: 200px;
+}
 /* Access Component CSS End */
 
 /* Work Component CSS Start */
@@ -939,6 +947,7 @@ a {
   top: 25%;
   left: -35px;
   text-align: center;
+  z-index: 1;
 }
 
 .work-img-msg {
@@ -952,6 +961,7 @@ a {
   right: 0;
   margin: auto;
   width: 70px;
+  z-index: 1;
 }
 
 .work-img-Group-outer {
@@ -959,6 +969,7 @@ a {
   top: 25%;
   right: -30px;
   text-align: center;
+  z-index: 1;
 }
 
 .work-img-Group {
@@ -970,6 +981,7 @@ a {
   bottom: 0;
   right: 20px;
   width: 70px;
+  z-index: 1;
 }
 
 .work-img-megaphone {
@@ -984,6 +996,7 @@ a {
   bottom: -80px;
   left: 20px;
   text-align: center;
+  z-index: 1;
 }
 
 .work-img-chart {
@@ -1018,6 +1031,7 @@ a {
   height: 300px;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+  z-index: 1;
 }
 
 .work-text-left {
@@ -1043,24 +1057,163 @@ a {
 .work {
   padding: 50px 0 0;
   height: 700px;
+  margin-bottom: 0;
 }
 
-.work-connection-line-1 {
+.work-connection-line-1-outer {
   position: absolute;
   left: 22%;
   top: 37%;
+}
+
+.work-connection-line-1 {
   width: 218px;
   transform: rotate(20deg);
-  border: 1px solid;
+  border: 1px solid black;
+}
+
+.work-connection-line-2-outer{
+  position: absolute;
+  right: 29%;
+  bottom: 27%;
 }
 
 .work-connection-line-2 {
-  position: absolute;
-  right: 27%;
-  bottom: 26%;
-  width: 200px;
+  width: 185px;
   transform: rotate(20deg);
-  border: 1px solid;
+  border: 1px solid black;
+}
+
+.work-link-ball-1 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: navy;
+  top: -26px;
+  left: 0;
+}
+
+.work-link-ball-2 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: navy;
+  top: -20px;
+  left: 0;
+}
+
+.work-link-ball-3 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: navy;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 0;
+}
+
+.work-link-ball-1-floating {
+  transform: translatey(0px);
+	animation: work-link-ball-1-floating 3s ease-in-out infinite;
+}
+
+@keyframes work-link-ball-1-floating {
+  0% {
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translate(218px, 80px);
+	}
+}
+
+.work-link-ball-2-floating {
+  transform: translatey(0px);
+	animation: work-link-ball-2-floating 3s ease-in-out infinite;
+}
+
+@keyframes work-link-ball-2-floating {
+  0% {
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translate(190px, 70px);
+	}
+}
+
+.work-link-ball-3-floating {
+  transform: translateY(0px);
+	animation: work-link-ball-3-floating 3s ease-in-out infinite;
+}
+
+@keyframes work-link-ball-3-floating {
+  0% {
+		transform: rotate(15deg) translateX(-150px);
+	}
+	100% {
+		transform: rotate(90deg) translateX(-150px);
+	}
+}
+
+.work-link-ball-4-floating {
+  transform: translateY(0px);
+	animation: work-link-ball-4-floating 3s ease-in-out infinite;
+}
+
+@keyframes work-link-ball-4-floating {
+  0% {
+		transform: rotate(0deg) translateY(-150px);
+	}
+	100% {
+		transform: rotate(73deg) translateY(-150px);
+	}
+}
+
+.work-link-ball-5-floating {
+  transform: translateY(0px);
+	animation: work-link-ball-5-floating 3s ease-in-out infinite;
+}
+
+@keyframes work-link-ball-5-floating {
+  0% {
+		transform: rotate(-17deg) translateX(150px);
+	}
+	100% {
+		transform: rotate(50deg) translateX(150px);
+	}
+}
+
+.work-link-ball-6-floating {
+  transform: translateY(0px);
+	animation: work-link-ball-6-floating 3s ease-in-out infinite;
+}
+
+@keyframes work-link-ball-6-floating {
+  0% {
+		transform: rotate(-40deg) translateY(150px);
+	}
+	100% {
+		transform: rotate(35deg) translateY(150px);
+	}
+}
+
+.work-link-ball-7-floating {
+  transform: translateY(0px);
+	animation: work-link-ball-7-floating 3s ease-in-out infinite;
+}
+
+@keyframes work-link-ball-7-floating {
+  0% {
+		transform: rotate(35deg) translateY(150px);
+	}
+	100% {
+		transform: rotate(105deg) translateY(150px);
+	}
 }
 /* Work Component CSS End */
 

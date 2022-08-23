@@ -15,7 +15,10 @@ const Work = () => {
           <p className='work-img-bulb-text' >Your Idea</p>
         </div>
       </div>
-      <hr className="work-connection-line-1" />
+      <div className='work-connection-line-1-outer' >
+        <hr className="work-connection-line-1" />
+        <span className='work-link-ball-1 work-link-ball-1-floating' ></span>
+      </div>
       <div className='work-circle-white' >
         <div className="work-img-msg-outer" >
           <img className="work-img-msg" src="images/chat-text-front-clay.png" alt="" />
@@ -31,8 +34,16 @@ const Work = () => {
           <img className="work-img-chart" src="images/chart-front-color.png" alt="" />
           <p className='work-img-bulb-text' >Monitoring<br/>&<br/>Future planning</p>
         </div>
+        <span className='work-link-ball-3 work-link-ball-3-floating' ></span>
+        <span className='work-link-ball-3 work-link-ball-4-floating' ></span>
+        <span className='work-link-ball-3 work-link-ball-5-floating' ></span>
+        <span className='work-link-ball-3 work-link-ball-6-floating' ></span>
+        <span className='work-link-ball-3 work-link-ball-7-floating' ></span>
       </div>
-      <hr className="work-connection-line-2" />
+      <div className='work-connection-line-2-outer' >
+        <hr className="work-connection-line-2" />
+        <span className='work-link-ball-2 work-link-ball-2-floating' ></span>
+      </div>
       {/* <img className="work-img-megaphone" src="images/megaphone-front-color.png" alt="" /> */}
       <div className="work-img-money-outer" >
         <img className="work-img-money" src="images/money-front-color.png" alt="" />

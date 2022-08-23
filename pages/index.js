@@ -33,16 +33,17 @@ export default function Home() {
         </a>
         <Main />
         <Features />
-        <Access />
-        <Layouts />
-        <Like />
-        {/* <Plan /> */}
         <Work />
-        <Teams />
-        <Speed />
-        <Package />
-        <Demo />
+        <Layouts />
+        <Access />
         <Design />
+        <Teams />
+        <Package />
+
+        <Like />
+        <Plan />
+        <Speed />
+        <Demo />
         <Details />
         <Tool />
         <Roadmap />
