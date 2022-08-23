@@ -15,6 +15,7 @@ const Work = () => {
           <p className='work-img-bulb-text' >Your Idea</p>
         </div>
       </div>
+      <hr className="work-connection-line-1" />
       <div className='work-circle-white' >
         <div className="work-img-msg-outer" >
           <img className="work-img-msg" src="images/chat-text-front-clay.png" alt="" />
@@ -31,6 +32,7 @@ const Work = () => {
           <p className='work-img-bulb-text' >Monitoring<br/>&<br/>Future planning</p>
         </div>
       </div>
+      <hr className="work-connection-line-2" />
       {/* <img className="work-img-megaphone" src="images/megaphone-front-color.png" alt="" /> */}
       <div className="work-img-money-outer" >
         <img className="work-img-money" src="images/money-front-color.png" alt="" />

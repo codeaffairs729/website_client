@@ -1012,7 +1012,8 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  background: white;
+  /* background: white; */
+  border: 1px solid black;
   width: 300px;
   height: 300px;
   transform: translate(-50%, -50%);
@@ -1042,6 +1043,24 @@ a {
 .work {
   padding: 50px 0 0;
   height: 700px;
+}
+
+.work-connection-line-1 {
+  position: absolute;
+  left: 22%;
+  top: 37%;
+  width: 218px;
+  transform: rotate(20deg);
+  border: 1px solid;
+}
+
+.work-connection-line-2 {
+  position: absolute;
+  right: 27%;
+  bottom: 26%;
+  width: 200px;
+  transform: rotate(20deg);
+  border: 1px solid;
 }
 /* Work Component CSS End */
 

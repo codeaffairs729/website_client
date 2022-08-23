@@ -92,11 +92,11 @@ const Teams = () => {
                                             <div className="teams__slide" data-aos="animation-scale-y" data-aos-delay="200">
                                                 <div className="teams__line" style={{backgroundColor: "#FAB8C4"}}></div>
                                                 <div className="teams__text">
-                                                    Team did a great job for our front end tasks. They are knowledgeable and worked fast and efficiently in completing the tasks.
+                                                    Solid work. Can't go wrong.
                                                 </div>
                                                 <div className="teams__user">
                                                     <div className="teams__box">
-                                                        <div className="teams__man">- Fran</div>
+                                                        <div className="teams__man">- Sean Adler</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -118,11 +118,11 @@ const Teams = () => {
                                             <div className="teams__slide">
                                                 <div className="teams__line" style={{backgroundColor: "#5956E9"}}></div>
                                                 <div className="teams__text">
-                                                    Solid work. Can't go wrong.
+                                                    Team did a great job for our front end tasks. They are knowledgeable and worked fast and efficiently in completing the tasks.
                                                 </div>
                                                 <div className="teams__user">
                                                     <div className="teams__box">
-                                                        <div className="teams__man">- Sean Adler</div>
+                                                        <div className="teams__man">- Fran</div>
                                                     </div>
                                                 </div>
                                             </div>
