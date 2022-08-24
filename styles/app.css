@@ -8790,7 +8790,7 @@ body:not(.touch-device) .header__item:hover .header__body {
     height: auto;
   }
   .header__head .icon {
-    display: none;
+    /* display: none; */
   }
   .header__body {
     display: none;

@@ -6,7 +6,8 @@ const Work = () => {
       <h5 className='work-text-left'>From Your Idea<br/>to your Revenue</h5>
       <div className='work-text-right' >
         <h4>Confusion in your<br/>Million Dollar Idea?</h4>
-        <div className='work-text-right-btn' >Get Free Consultation</div>
+        {/* <div className='work-text-right-btn' >Get Free Consultation</div> */}
+        <button className='btn btn-primary work-text-right-btn' >Get Free Consultation</button>
       </div>
       <div className="work__hand" data-aos data-aos-duration="800" data-aos-offset="0">
         <img className="work__pic js-parallax" data-scale="1.2" data-orientation="down" src="img/hand-2.png" alt="" />

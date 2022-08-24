@@ -22,30 +22,30 @@ const Main = () => {
                                 </span>
                             </span>
                             <span className="title__box">
-                                <span className="title__text" style={{fontSize: "40px", marginLeft: "2rem"}}>
+                                <span className="title__text ms-3" >
                                     <span className="title__line" >
                                         UI / UX
                                     </span>
                                 </span>
                             </span>
                             <span className="title__box">
-                                <span className="title__text" style={{fontSize: "40px", marginLeft: "2rem"}}>
+                                <span className="title__text ms-3" >
                                     Devops
                                 </span>
                             </span>
                             <span className="title__box">
-                                <span className="title__text" style={{fontSize: "40px", marginLeft: "2rem"}}>
+                                <span className="title__text ms-3" >
                                     BlockChain
                                     <span className="title__color">.</span>
                                 </span>
                             </span>
                         </h1>
-                        <div style={{marginLeft: "2rem"}} className="main__info info" data-aos="animation-scale-y" data-aos-delay="400">
+                        <div className="main__info info ms-3" data-aos="animation-scale-y" data-aos-delay="400">
                             End-to-End Digital
                             <br />
                             Transformation Services
                         </div>
-                        <div style={{marginLeft: "2rem"}} className="main__control" data-aos="animation-scale-y" data-aos-delay="550">
+                        <div className="main__control ms-3" data-aos="animation-scale-y" data-aos-delay="550">
                             <a className="main__btn btn btn_purple" href="./login">Get in Touch</a>
                             {/* <a className="main__link" href="#">
                                 <div className="main__icon">
@@ -54,7 +54,7 @@ const Main = () => {
                                 <div className="main__text">See It In Action!</div>
                             </a> */}
                         </div>
-                        <div style={{marginLeft: "2rem"}} className="main__scroll" data-aos="animation-scale-y" data-aos-delay="650">
+                        <div className="main__scroll ms-3" data-aos="animation-scale-y" data-aos-delay="650">
                             {/* <a className="main__link" href="#">
                                 <div className="main__icon">
                                     <img className="main__pic" src="img/scroll.svg" alt="" />

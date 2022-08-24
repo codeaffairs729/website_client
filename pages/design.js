@@ -29,25 +29,6 @@ const Design = () => {
         <>
             <div className="design">
                 <div className="design__center center">
-                    <div className="design__wrap" data-aos="animation-translate-y">
-                        <div className="design__stage stage">Design accordlogy</div>
-                        <h2 className="design__title title">
-                            Enrich your design workflow
-                            <span className="title__color">.</span>
-                        </h2>
-                        <div className="design__info info">Design anything from simple icons to fully featured websites and applications.</div>
-                    </div>
-                    <div className="design__hand" data-aos data-aos-duration="600">
-                        <img className="design__pic" src="img/hand-4.png" alt="" />
-                    </div>
-                    <div className="design__bg" data-aos data-aos-delay="400">
-                        <img className="design__pic" src="img/design-pic.png" alt="" />
-                    </div>
-                    <div className="design__circles">
-                        <div className="design__circle js-rellax" data-rellax-speed="1"></div>
-                        <div className="design__circle"></div>
-                        <div className="design__circle js-rellax" data-rellax-speed=".5"></div>
-                    </div>
                     <div className="design__body">
                         <h1 style={{ marginBottom: "10px", display: "inline-flex", marginBottom: "80px", fontWeight: "500", letterSpacing: "-.04em" }}>See our work</h1>
                         {/* <a className="design__scroll" href="#">
