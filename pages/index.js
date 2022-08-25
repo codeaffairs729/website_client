@@ -40,7 +40,7 @@ export default function Home() {
         <Teams />
         <Package />
 
-        <Like />
+        {/* <Like />
         <Plan />
         <Speed />
         <Demo />
@@ -51,7 +51,7 @@ export default function Home() {
         <Partners />
         <Quality />
         <Showcase />
-        <Offer />
+        <Offer /> */}
         <Footer />
       </div>
     </>

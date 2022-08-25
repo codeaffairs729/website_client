@@ -1270,6 +1270,114 @@ a {
 .package__title {
   width: max-content;
 }
+
+.package-yellow-circle {
+  background-color: #FFDC60;
+  height: 170px;
+  width: 170px;
+  position: absolute;
+  top: 2%;
+  right: 8%;
+  border-radius: 50%;
+}
+
+.package-pic-figma {
+  position: absolute;
+  top: 10%;
+  right: 35%;
+  width: 120px;
+}
+
+.package-pic-diamond {
+  position: absolute;
+  top: 28%;
+  right: 28%;
+  width: 60px;
+}
+
+.package-pic-image_32 {
+  position: absolute;
+  bottom: 29%;
+  right: 28%;
+  width: 65px;
+}
+
+.package-pic-image_31 {
+  position: absolute;
+  bottom: 1%;
+  right: 38%;
+  width: 80px;
+}
+
+.package-pic-shopify {
+  position: absolute;
+  bottom: 82%;
+  left: 50%;
+  width: 100px;
+}
+
+.package-pic-angular {
+  position: absolute;
+  bottom: 80%;
+  right: 22%;
+  width: 44px;
+}
+
+.package-pic-react {
+  position: absolute;
+  bottom: 73%;
+  right: 6%;
+  width: 60px;
+}
+
+.package-pic-image_30 {
+  position: absolute;
+  bottom: 60%;
+  left: 49%;
+  width: 60px;
+}
+
+.package-pic-nodejs {
+  position: absolute;
+  bottom: 31%;
+  right: 9%;
+  width: 44px;
+}
+
+.package-pic-ror {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  width: 44px;
+}
+
+.package-pic-android {
+  position: absolute;
+  width: 70px;
+  bottom: 79%;
+  right: 23%;
+}
+
+.package-pic-flutter {
+  position: absolute;
+  width: 40px;
+  bottom: 63%;
+  left: 60%;
+}
+
+.package-pic-react_2 {
+  position: absolute;
+  width: 75px;
+  bottom: 56%;
+  right: 19%;
+}
+
+.package-pic-swift {
+  position: absolute;
+  width: 60px;
+  bottom: 45%;
+  left: 59%;
+}
 /* Package Component CSS End */
 
 @media only screen and (max-width: 1199px) {
@@ -1339,6 +1447,12 @@ a {
     right: 30px;
   }
   /* Layout Component CSS End */
+
+  /* Package Component CSS Start */
+  .package__title {
+    font-size: 40px;
+  }
+  /* Package Component CSS End */
 }
 
 @media only screen and (max-width: 1023px) {
@@ -1465,6 +1579,82 @@ a {
   /* Package Component CSS Start */
   .package__title {
     font-size: 50px;
+  }
+
+  .package-pic-figma {
+    top: auto;
+    bottom: 30%;
+    right: 65%;
+    width: 70px;
+  }
+  
+  .package-pic-diamond {
+    top: auto;
+    bottom: 27%;
+    right: 48%;
+    width: 55px;
+  }
+  
+  .package-pic-image_32 {
+    bottom: 7%;
+    right: 48%;
+  }
+  
+  .package-pic-image_31 {
+    bottom: 0;
+    left: 20%;
+  }
+
+  .package-pic-shopify {
+    bottom: 38%;
+    left: 15%;
+  }
+  
+  .package-pic-angular {
+    bottom: 37%;
+    right: 35%;
+  }
+  
+  .package-pic-react {
+    bottom: 33%;
+    right: 11%;
+  }
+  
+  .package-pic-image_30 {
+    bottom: 25%;
+    left: 11%;
+  }
+  
+  .package-pic-nodejs {
+    bottom: 9%;
+    right: 15%;
+  }
+  
+  .package-pic-ror {
+    bottom: 5%;
+    left: 15%;
+  }
+
+  .package-pic-android {
+    width: 65px;
+    bottom: 37%;
+    right: 39%;
+  }
+  
+  .package-pic-flutter {
+    width: 40px;
+    bottom: 30%;
+    left: 31%;
+  }
+  
+  .package-pic-react_2 {
+    bottom: 23%;
+    right: 33%;
+  }
+  
+  .package-pic-swift {
+    bottom: 17%;
+    left: 29%;
   }
   /* Package Component CSS End */
 }
@@ -1713,6 +1903,89 @@ a {
   /* Package Component CSS Start */
   .package__title {
     font-size: 40px;
+  }
+
+  .package__preview .package__pic {
+    height: 226px;
+  }
+
+  .package-pic-figma {
+    top: auto;
+    bottom: 28%;
+    right: 63%;
+    width: 40px;
+  }
+  
+  .package-pic-diamond {
+    top: auto;
+    bottom: 26%;
+    right: 47%;
+    width: 30px;
+  }
+  
+  .package-pic-image_32 {
+    bottom: 11%;
+    right: 46%;
+    width: 35px;
+  }
+  
+  .package-pic-image_31 {
+    bottom: 3%;
+    left: 20%;
+    width: 60px;
+  }
+
+  .package-pic-shopify {
+    bottom: 34%;
+    width: 80px;
+  }
+  
+  .package-pic-angular {
+    bottom: 32%;
+    width: 40px;
+  }
+  
+  .package-pic-react {
+    bottom: 28%;
+    width: 50px;
+  }
+  
+  .package-pic-image_30 {
+    width: 40px;
+  }
+  
+  .package-pic-nodejs {
+    bottom: 13%;
+    width: 35px;
+  }
+  
+  .package-pic-ror {
+    bottom: 10%;
+    width: 35px;
+  }
+
+  .package-pic-android {
+    width: 40px;
+    bottom: 33%;
+    right: 38%;
+  }
+  
+  .package-pic-flutter {
+    width: 30px;
+    bottom: 27%;
+    left: 29%;
+  }
+  
+  .package-pic-react_2 {
+    width: 40px;
+    bottom: 23%;
+    right: 32%;
+  }
+  
+  .package-pic-swift {
+    width: 40px;
+    bottom: 18%;
+    left: 27%;
   }
   /* Package Component CSS End */
 }

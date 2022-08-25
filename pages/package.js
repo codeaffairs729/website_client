@@ -20,7 +20,7 @@ const Package = () => {
         speed: 700,
         fade: true,
         adaptiveHeight: true,
-        // autoplay: true,
+        autoplay: true,
         responsive: [{
             breakpoint: 768,
             settings: {
@@ -63,7 +63,7 @@ const Package = () => {
                                             </div>
                                             <div className="package__btns">
                                                 <div className="package__arrows">
-                                                    <button className="package__arrow js-package-prev">
+                                                    {/* <button className="package__arrow js-package-prev">
                                                         <svg className="icon icon-arrow-prev">
                                                             <use xlinkHref="img/sprite.svg#icon-arrow-prev"></use>
                                                         </svg>
@@ -72,13 +72,17 @@ const Package = () => {
                                                         <svg className="icon icon-arrow-next">
                                                             <use xlinkHref="img/sprite.svg#icon-arrow-next"></use>
                                                         </svg>
-                                                    </button>
+                                                    </button> */}
                                                 </div>
                                                 <a className="package__btn btn btn_purple" href="./login">Get Started</a>
                                             </div>
                                         </div>
                                         <div className="package__preview">
                                             <img className="package__pic" src="img/laptop.png" alt="" />
+                                            <img className="package-pic-figma" src="images/FIGMA.png" alt="" />
+                                            <img className="package-pic-diamond" src="images/sketch-new.png" alt="" />
+                                            <img className="package-pic-image_32" src="images/image_32.png" alt="" />
+                                            <img className="package-pic-image_31" src="images/image_31.png" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -109,7 +113,7 @@ const Package = () => {
                                             </div>
                                             <div className="package__btns">
                                                 <div className="package__arrows">
-                                                    <button className="package__arrow js-package-prev">
+                                                    {/* <button className="package__arrow js-package-prev">
                                                         <svg className="icon icon-arrow-prev">
                                                             <use xlinkHref="img/sprite.svg#icon-arrow-prev"></use>
                                                         </svg>
@@ -118,13 +122,19 @@ const Package = () => {
                                                         <svg className="icon icon-arrow-next">
                                                             <use xlinkHref="img/sprite.svg#icon-arrow-next"></use>
                                                         </svg>
-                                                    </button>
+                                                    </button> */}
                                                 </div>
                                                 <a className="package__btn btn btn_purple" href="./login">Get Started</a>
                                             </div>
                                         </div>
                                         <div className="package__preview">
                                             <img className="package__pic" src="images/Laptop.png" alt="" />
+                                            <img className="package-pic-shopify" src="images/shopify.png" alt="" />
+                                            <img className="package-pic-angular" src="images/angular.png" alt="" />
+                                            <img className="package-pic-react" src="images/react_2.png" alt="" />
+                                            <img className="package-pic-image_30" src="images/image_30.png" alt="" />
+                                            <img className="package-pic-nodejs" src="images/node_2.png" alt="" />
+                                            <img className="package-pic-ror" src="images/ror_orig.png" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -155,7 +165,7 @@ const Package = () => {
                                             </div>
                                             <div className="package__btns">
                                                 <div className="package__arrows">
-                                                    <button className="package__arrow js-package-prev">
+                                                    {/* <button className="package__arrow js-package-prev">
                                                         <svg className="icon icon-arrow-prev">
                                                             <use xlinkHref="img/sprite.svg#icon-arrow-prev"></use>
                                                         </svg>
@@ -164,13 +174,17 @@ const Package = () => {
                                                         <svg className="icon icon-arrow-next">
                                                             <use xlinkHref="img/sprite.svg#icon-arrow-next"></use>
                                                         </svg>
-                                                    </button>
+                                                    </button> */}
                                                 </div>
                                                 <a className="package__btn btn btn_purple" href="./login">Get Started</a>
                                             </div>
                                         </div>
                                         <div className="package__preview package-preview-mobile">
-                                            <img className="package__pic package-pic-mobile" src="images/Mobile.png" alt="" />
+                                            <img className="package__pic package-pic-mobile" src="images/Mobile_1.png" alt="" />
+                                            <img className="package-pic-android" src="images/android_4.png" alt="" />
+                                            <img className="package-pic-flutter" src="images/flutter.png" alt="" />
+                                            <img className="package-pic-react_2" src="images/react_2.png" alt="" />
+                                            <img className="package-pic-swift" src="images/swift_1.png" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -184,6 +198,7 @@ const Package = () => {
                             <div className="package__circle"></div>
                             <div className="package__circle"></div>
                         </div>
+                        <div className='package-yellow-circle' ></div>
                     </div>
                 </div>
             </div>
