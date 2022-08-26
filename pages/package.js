@@ -128,7 +128,7 @@ const Package = () => {
                                             </div>
                                         </div>
                                         <div className="package__preview">
-                                            <img className="package__pic" src="images/Laptop.png" alt="" />
+                                            <img className="package__pic package-pic-slide2" src="images/Laptop.png" alt="" />
                                             <img className="package-pic-shopify" src="images/shopify.png" alt="" />
                                             <img className="package-pic-angular" src="images/angular.png" alt="" />
                                             <img className="package-pic-react" src="images/react_2.png" alt="" />

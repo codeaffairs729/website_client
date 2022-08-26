@@ -87,7 +87,7 @@ const Teams = () => {
                         </div>
                         <div className="teams__col">
                             <div className="teams__container">
-                                <div className='row mb-5'>
+                                <div className='row'>
                                     <div className='col-lg-6' >
                                         <Slider className="teams__slider js-teams-slider" {...settingsRight} >
                                             <div className='row teams-cmnt-row' >

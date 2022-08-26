@@ -1253,10 +1253,12 @@ a {
   width: 100%;
   margin: auto;
   padding-top: 0;
+  position: relative;
 }
 
 .package__preview .package__pic {
-  height: 400px;
+  /* height: 400px; */
+  width: 100%;
 }
 
 .package-preview-mobile {
@@ -1285,100 +1287,105 @@ a {
 
 .package-pic-figma {
   position: absolute;
-  top: 10%;
-  right: 35%;
+  top: -8%;
+  left: 23%;
   width: 120px;
 }
 
 .package-pic-diamond {
   position: absolute;
-  top: 28%;
-  right: 28%;
+  top: 18%;
+  left: 44%;
   width: 60px;
 }
 
 .package-pic-image_32 {
   position: absolute;
-  bottom: 29%;
-  right: 28%;
+  bottom: 19%;
+  left: 44%;
   width: 65px;
 }
 
 .package-pic-image_31 {
   position: absolute;
-  bottom: 1%;
-  right: 38%;
-  width: 80px;
+  bottom: -12%;
+  left: 25%;
+  width: 45px;
 }
 
 .package-pic-shopify {
   position: absolute;
-  bottom: 82%;
-  left: 50%;
+  top: 3%;
+  left: 21%;
   width: 100px;
 }
 
 .package-pic-angular {
   position: absolute;
-  bottom: 80%;
-  right: 22%;
+  top: 7%;
+  right: 35%;
   width: 44px;
 }
 
 .package-pic-react {
   position: absolute;
-  bottom: 73%;
-  right: 6%;
+  top: 14%;
+  right: 16%;
   width: 60px;
 }
 
 .package-pic-image_30 {
   position: absolute;
-  bottom: 60%;
-  left: 49%;
+  top: 30%;
+  left: 18%;
   width: 60px;
 }
 
 .package-pic-nodejs {
   position: absolute;
-  bottom: 31%;
-  right: 9%;
+  bottom: 22%;
+  right: 19%;
   width: 44px;
 }
 
 .package-pic-ror {
   position: absolute;
-  bottom: 25%;
-  left: 50%;
+  bottom: 15%;
+  left: 22%;
   width: 44px;
 }
 
 .package-pic-android {
   position: absolute;
-  width: 70px;
-  bottom: 79%;
-  right: 23%;
+  width: 60px;
+  top: -7%;
+  right: 42%;
 }
 
 .package-pic-flutter {
   position: absolute;
   width: 40px;
-  bottom: 63%;
-  left: 60%;
+  top: 12%;
+  left: 30%;
 }
 
 .package-pic-react_2 {
   position: absolute;
-  width: 75px;
-  bottom: 56%;
-  right: 19%;
+  width: 65px;
+  top: 24%;
+  right: 33%;
 }
 
 .package-pic-swift {
   position: absolute;
-  width: 60px;
-  bottom: 45%;
-  left: 59%;
+  width: 70px;
+  top: 43%;
+  left: 27%;
+}
+
+.package-pic-slide2 {
+  margin-top: 54px;
+  margin-bottom: 15px;
 }
 /* Package Component CSS End */
 
@@ -1584,79 +1591,76 @@ a {
   }
 
   .package-pic-figma {
-    top: auto;
-    bottom: 30%;
-    right: 65%;
+    top: 5%;
+    left: 25%;
     width: 70px;
   }
   
-  .package-pic-diamond {
-    top: auto;
-    bottom: 27%;
-    right: 48%;
+  /* .package-pic-diamond {
+    left: 295px;
     width: 55px;
-  }
+  } */
   
-  .package-pic-image_32 {
+  /* .package-pic-image_32 {
     bottom: 7%;
     right: 48%;
-  }
+  } */
   
   .package-pic-image_31 {
     bottom: 0;
-    left: 20%;
   }
 
   .package-pic-shopify {
-    bottom: 38%;
-    left: 15%;
+    top: -12%;
   }
   
   .package-pic-angular {
-    bottom: 37%;
-    right: 35%;
+    top: -7%;
   }
   
   .package-pic-react {
-    bottom: 33%;
-    right: 11%;
+    top: 0;
   }
   
   .package-pic-image_30 {
-    bottom: 25%;
-    left: 11%;
+    top: 20%;
   }
   
-  .package-pic-nodejs {
-    bottom: 9%;
-    right: 15%;
-  }
+  /* .package-pic-nodejs {
+    bottom: 75px;
+  } */
   
-  .package-pic-ror {
-    bottom: 5%;
-    left: 15%;
-  }
+  /* .package-pic-ror {
+    bottom: 45px;
+  } */
 
   .package-pic-android {
     width: 65px;
-    bottom: 37%;
-    right: 39%;
   }
   
   .package-pic-flutter {
     width: 40px;
-    bottom: 30%;
     left: 31%;
+  }
+
+  .package-pic-mobile {
+    max-height: 400px !important;
+    height: 393px;
   }
   
   .package-pic-react_2 {
-    bottom: 23%;
-    right: 33%;
+    width: 70px;
   }
   
   .package-pic-swift {
-    bottom: 17%;
+    width: 60px;
+    top: 45%;
     left: 29%;
+  }
+
+  .package-pic-slide2 {
+    margin-top: 74px;
+    margin-bottom: 15px;
   }
   /* Package Component CSS End */
 }
@@ -1907,48 +1911,38 @@ a {
     font-size: 40px;
   }
 
-  .package__preview .package__pic {
+  /* .package__preview .package__pic {
     height: 226px;
-  }
+  } */
 
   .package-pic-figma {
-    top: auto;
-    bottom: 28%;
-    right: 63%;
     width: 40px;
   }
   
   .package-pic-diamond {
-    top: auto;
-    bottom: 26%;
-    right: 47%;
+    left: 45%;
     width: 30px;
   }
   
   .package-pic-image_32 {
-    bottom: 11%;
-    right: 46%;
     width: 35px;
   }
   
   .package-pic-image_31 {
-    bottom: 3%;
-    left: 20%;
-    width: 60px;
+    left: 22%;
+    width: 40px;
   }
 
   .package-pic-shopify {
-    bottom: 34%;
+    top: -18%;
     width: 80px;
   }
   
   .package-pic-angular {
-    bottom: 32%;
-    width: 40px;
+    width: 30px;
   }
   
   .package-pic-react {
-    bottom: 28%;
     width: 50px;
   }
   
@@ -1957,37 +1951,41 @@ a {
   }
   
   .package-pic-nodejs {
-    bottom: 13%;
     width: 35px;
   }
   
   .package-pic-ror {
-    bottom: 10%;
     width: 35px;
   }
 
   .package-pic-android {
     width: 40px;
-    bottom: 33%;
-    right: 38%;
+    top: -8%;
+    right: 40%;
   }
   
   .package-pic-flutter {
     width: 30px;
-    bottom: 27%;
     left: 29%;
   }
   
   .package-pic-react_2 {
     width: 40px;
-    bottom: 23%;
-    right: 32%;
   }
   
   .package-pic-swift {
     width: 40px;
-    bottom: 18%;
+    top: 43%;
     left: 27%;
+  }
+
+  .package-pic-mobile {
+    height: 226px;
+  }
+
+  .package-pic-slide2 {
+    margin-top: 55px;
+    margin-bottom: 10px;
   }
   /* Package Component CSS End */
 
@@ -1996,6 +1994,12 @@ a {
     height: 300px;
   }
   /* Teams Component CSS End */
+}
+
+@media only screen and (max-height: 767px) {
+  .contact-entry-center {
+    height: 100%;
+  }
 }
 
 @media only screen and (max-height: 767px) {
