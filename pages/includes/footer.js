@@ -99,18 +99,18 @@ const Footer = () => {
                                 <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                             </svg>
                         </div>
-                        <div className="footer__menu js-footer-menu footer-social-menu" style={ socialIcons ? { display: "block" } : { display: "none" }} >
+                        <div className="footer__menu js-footer-menu footer-social-menu justify-content-evenly" style={ socialIcons ? { display: "block" } : { display: "none" }} >
                             <a className="footer__link" href="https://www.facebook.com/CodeGarageTech">
-                                <img className="icon icon-header-img" src="/images/fb35.png" alt="" />
+                                <img className="icon icon-header-img" src="images/Facebook3d.png" alt="" />
                             </a>
                             <a className="footer__link" href="https://twitter.com/CodeGarageTech">
-                                <img className="icon icon-header-img" src="/images/tw35.png" alt="" />
+                                <img className="icon icon-header-img" src="images/Twitter3d.png" alt="" />
                             </a>
                             <a className="footer__link" href="https://www.linkedin.com/company/codegaragetech">
-                                <img className="icon icon-header-img" src="/images/lin35.png" alt="" />
+                                <img className="icon icon-header-img" src="images/LinkedIn3d.png" alt="" />
                             </a>
                             <a className="footer__link" href="https://www.instagram.com/codegaragetech/">
-                                <img className="icon icon-header-img" src="/images/instagram.png" alt="" />
+                                <img className="icon icon-header-img" src="images/Instagram3d.png" alt="" />
                             </a>
                         </div>
                     </div>

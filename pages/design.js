@@ -52,7 +52,7 @@ const Design = () => {
                                             Use the smart color picker to easily select and apply colors.
                                         </div>
                                         <a className="design__link" href="https://www.ucview.com/">
-                                            See More
+                                            Visit
                                             <svg className="icon icon-arrow-right">
                                                 <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                                             </svg>
@@ -72,7 +72,7 @@ const Design = () => {
                                             Using the Component Builder with your projects.
                                         </div>
                                         <a className="design__link" href="https://stockarchitect.com/">
-                                            See More
+                                            Visit
                                             <svg className="icon icon-arrow-right">
                                                 <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                                             </svg>
@@ -92,7 +92,7 @@ const Design = () => {
                                             Deploy your projects more efficiently for web &amp; mobile.
                                         </div>
                                         <a className="design__link" href="https://www.withrelay.com/">
-                                            See More
+                                            Visit
                                             <svg className="icon icon-arrow-right">
                                                 <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                                             </svg>
@@ -112,7 +112,7 @@ const Design = () => {
                                             Use the smart color picker to easily select and apply colors.
                                         </div>
                                         <a className="design__link" href="https://videochatapro.com/">
-                                            See More
+                                            Visit
                                             <svg className="icon icon-arrow-right">
                                                 <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                                             </svg>
@@ -132,7 +132,7 @@ const Design = () => {
                                             Using the Component Builder with your projects.
                                         </div>
                                         <a className="design__link" href="https://www.buyma.us/">
-                                            See More
+                                            Visit
                                             <svg className="icon icon-arrow-right">
                                                 <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                                             </svg>
@@ -152,7 +152,7 @@ const Design = () => {
                                             Use the smart color picker to easily select and apply colors.
                                         </div>
                                         <a className="design__link" href="https://fintrakk.com/">
-                                            See More
+                                            Visit
                                             <svg className="icon icon-arrow-right">
                                                 <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                                             </svg>
@@ -172,7 +172,7 @@ const Design = () => {
                                             Use the smart color picker to easily select and apply colors.
                                         </div>
                                         <a className="design__link" href="https://welcome.ai/">
-                                            See More
+                                            Visit
                                             <svg className="icon icon-arrow-right">
                                                 <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                                             </svg>
@@ -188,7 +188,7 @@ const Design = () => {
                                             Use the smart color picker to easily select and apply colors.
                                         </div>
                                         <a className="design__link" href="https://bzigo.com/">
-                                            See More
+                                            Visit
                                             <svg className="icon icon-arrow-right">
                                                 <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                                             </svg>

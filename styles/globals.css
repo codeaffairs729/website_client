@@ -364,6 +364,10 @@ a {
 .design__slider .slick-slide {
   padding-right: 40px;
 }
+
+.design__link {
+  letter-spacing: unset;
+}
 /* Design Component CSS End */
 
 .contact__logo {
@@ -592,15 +596,15 @@ a {
 
 .layout-pic-andoid {
   position: absolute;
-  bottom: 15%;
-  left: 37%;
+  bottom: 16%;
+  left: 38%;
   width: 30px;
 }
 
 .layout-pic-python {
   position: absolute;
-  bottom: 161px;
-  left: 430px;
+  bottom: 159px;
+  left: 428px;
   width: 40px;
 }
 
@@ -1222,18 +1226,16 @@ a {
 /* Teams Component CSS Start */
 .teams-cmnt-text {
   overflow: hidden;
-  text-overflow: ellipsis;
+  /* text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;
-}
-
-.teams-cmnt-text {
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical; */
   font-family: 'DM Sans', sans-serif;
   font-size: 24px;
   letter-spacing: -.025em;
   line-height: 1.25;
   color: #292930;
+  height: 200px;
 }
 
 .teams-cmnt-author {
@@ -1988,6 +1990,12 @@ a {
     left: 27%;
   }
   /* Package Component CSS End */
+
+  /* Teams Component CSS Start */
+  .teams-main-title {
+    height: 300px;
+  }
+  /* Teams Component CSS End */
 }
 
 @media only screen and (max-height: 767px) {
