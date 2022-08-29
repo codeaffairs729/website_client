@@ -48,9 +48,9 @@ const Package = () => {
                                             <h3 className="package__title title title_sm">UI/UX Services</h3>
                                             <div className="package__info">It’s easy to share designs across the organization, so team collaboration is fast and easy.</div>
                                             <div className="package__list">
-                                                <a className="package__link" href="#">
+                                                {/* <a className="package__link" href="#">
                                                     <div className="package__icon">
-                                                    <img className="package__pic" src="img/layout-1.svg" alt="" />
+                                                        <img className="package__pic" src="img/layout-1.svg" alt="" />
                                                     </div>
                                                     <div className="package__text">Awesome website</div>
                                                 </a>
@@ -59,7 +59,12 @@ const Package = () => {
                                                         <img className="package__pic" src="img/layout-3.svg" alt="" />
                                                     </div>
                                                     <div className="package__text">Stunning interface</div>
-                                                </a>
+                                                </a> */}
+                                                <ul className="package-list" data-aos="animation-scale-y" data-aos-delay="200">
+                                                    <li>Collab Cloud</li>
+                                                    <li>Collab Design</li>
+                                                    <li>Collab Share</li>
+                                                </ul>
                                             </div>
                                             <div className="package__btns">
                                                 <div className="package__arrows">
@@ -98,7 +103,7 @@ const Package = () => {
                                             <h3 className="package__title title title_sm">Web Development</h3>
                                             <div className="package__info">It’s easy to share designs across the organization, so team collaboration is fast and easy.</div>
                                             <div className="package__list">
-                                                <a className="package__link" href="#">
+                                                {/* <a className="package__link" href="#">
                                                     <div className="package__icon">
                                                         <img className="package__pic" src="img/layout-1.svg" alt="" />
                                                     </div>
@@ -109,7 +114,12 @@ const Package = () => {
                                                         <img className="package__pic" src="img/layout-3.svg" alt="" />
                                                     </div>
                                                     <div className="package__text">Stunning interface</div>
-                                                </a>
+                                                </a> */}
+                                                <ul className="package-list" data-aos="animation-scale-y" data-aos-delay="200">
+                                                    <li>Collab Cloud</li>
+                                                    <li>Collab Design</li>
+                                                    <li>Collab Share</li>
+                                                </ul>
                                             </div>
                                             <div className="package__btns">
                                                 <div className="package__arrows">
@@ -150,7 +160,7 @@ const Package = () => {
                                             <h3 className="package__title title title_sm">Mobile Solutions</h3>
                                             <div className="package__info">It’s easy to share designs across the organization, so team collaboration is fast and easy.</div>
                                             <div className="package__list">
-                                                <a className="package__link" href="#">
+                                                {/* <a className="package__link" href="#">
                                                     <div className="package__icon">
                                                         <img className="package__pic" src="img/layout-1.svg" alt="" />
                                                     </div>
@@ -161,7 +171,12 @@ const Package = () => {
                                                         <img className="package__pic" src="img/layout-3.svg" alt="" />
                                                     </div>
                                                     <div className="package__text">Stunning interface</div>
-                                                </a>
+                                                </a> */}
+                                                <ul className="package-list" data-aos="animation-scale-y" data-aos-delay="200">
+                                                    <li>Collab Cloud</li>
+                                                    <li>Collab Design</li>
+                                                    <li>Collab Share</li>
+                                                </ul>
                                             </div>
                                             <div className="package__btns">
                                                 <div className="package__arrows">
