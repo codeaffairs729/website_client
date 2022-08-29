@@ -12,9 +12,10 @@ const Main = () => {
                         <h1 className="main__title title title_big" data-aos>
                             <span className="title__box dev-title mb-3">
                                 <span className="title__text">
+                                {/* 'Development', 'Software Engineering', 'Designing', 'App Monitoring', 'Web Solutions', 'Mobile Solutions', 'CRM Solutions', 'CMS Solutions', 'Cloud Services', 'Tech Consulting' */}
                                     <Typewriter
                                         options={{
-                                            strings: ['Development', 'Software Engineering', 'Designing', 'App Monitoring', 'Web Solutions', 'Mobile Solutions', 'CRM Solutions', 'CMS Solutions', 'Cloud Services', 'Tech Consulting'],
+                                            strings: ['Development', 'Software Engineering', 'Designing', 'App Monitoring', 'CRM Solutions', 'CMS Solutions', 'Cloud Services', 'Tech Consulting'],
                                             autoStart: true,
                                             loop: true,
                                         }}
@@ -24,18 +25,18 @@ const Main = () => {
                             <span className="title__box">
                                 <span className="title__text ms-3" >
                                     <span className="title__line" >
-                                        UI / UX
+                                        Web Services
                                     </span>
                                 </span>
                             </span>
                             <span className="title__box">
                                 <span className="title__text ms-3" >
-                                    Devops
+                                    Android / IOS
                                 </span>
                             </span>
                             <span className="title__box">
                                 <span className="title__text ms-3" >
-                                    BlockChain
+                                    UI / UX Designing
                                     <span className="title__color">.</span>
                                 </span>
                             </span>

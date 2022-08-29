@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
 import Slider from "react-slick";
+import Link from 'next/link';
 
 const Header = () => {
     const [headerSearchBar, setHeaderSearchBar] = useState(false);
     const [sideBarHandler, setSideBarHandler] = useState(false);
+    const [autoplay1, setAutoplay1] = useState(true);
+    const [autoplay2, setAutoplay2] = useState(true);
+    const [autoplay3, setAutoplay3] = useState(true);
 
     const headerSearch = () => {
         const searchBarShowHide = headerSearchBar ? false : true;
@@ -15,15 +19,57 @@ const Header = () => {
         sideBarHandler ? setSideBarHandler(false) : setSideBarHandler(true);
     }
 
-    const settings = {
+    // useEffect(() => {
+    //     const timer1 = setTimeout(() => {
+    //         setAutoplay1(true);
+    //         console.log(autoplay1);
+    //     }, 1000);
+
+    //     const timer2 = setTimeout(() => {
+    //         setAutoplay2(true);
+    //         console.log(autoplay2);
+    //     }, 3000);
+
+    //     const timer3 = setTimeout(() => {
+    //         setAutoplay3(true);
+    //         console.log(autoplay3);
+    //     }, 5000);
+    // }, []);
+
+    const servicesSettings = {
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
         dots: false,
         infinite: true,
-        autoplay: true,
+        autoplay: autoplay1,
         vertical: true,
-        verticalSwiping: true
+        verticalSwiping: true,
+        autoplaySpeed: 3000
+    };
+
+    const technologiesSettings = {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        infinite: true,
+        autoplay: autoplay2,
+        vertical: true,
+        verticalSwiping: true,
+        autoplaySpeed: 3000
+    };
+
+    const portfolioSettings = {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        infinite: true,
+        autoplay: autoplay3,
+        vertical: true,
+        verticalSwiping: true,
+        autoplaySpeed: 3000
     };
 
     return (
@@ -45,9 +91,9 @@ const Header = () => {
             </Head>
             <div className="header js-header" id="header">
                 <div className="header__center center">
-                    <button onClick={() => handleSidebar()} className={ sideBarHandler ? "header__burger js-header-burger active" : "header__burger js-header-burger" }>
+                    {/* <button onClick={() => handleSidebar()} className={ sideBarHandler ? "header__burger js-header-burger active" : "header__burger js-header-burger" }>
                         <span></span>
-                    </button>
+                    </button> */}
                     <a className="header__logo" href="./">
                         <img className="header__pic" src="logo/logoEdited.png" alt="" />
                     </a>
@@ -56,7 +102,7 @@ const Header = () => {
                             <a className="header__item" href="./">Home</a>
                             <div className="header__item js-header-item">
                                 <a className="header__head js-header-head" href="#">
-                                    Solutions
+                                    Services
                                     <svg className="icon icon-arrow-down">
                                         <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                                     </svg>
@@ -65,17 +111,67 @@ const Header = () => {
                                     <div className="header__center center">
                                         <div className="header__row">
                                             <div className="col-lg-4" style={{borderRight: "1px solid rgba(153, 159, 174, 0.2)", paddingLeft: "62px", paddingRight: "30px"}} >
-                                                <div className="header__category"><a href="#services" >Services</a></div>
+                                                <div className="header__category"><a href="#services" >Web Solutions</a></div>
                                                 <div className="row" >
-                                                    <Slider {...settings}>
+                                                    <Slider {...servicesSettings}>
                                                         <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-3" >
+                                                                    <img className="header-solutions-icon" src="images/ror1.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-9" >
+                                                                    <div className="header__info">Ruby on Rails Development</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-3" >
+                                                                    <img className="header-solutions-icon" src="images/react_3.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-9" >
+                                                                    <div className="header__info">React Development</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-3" >
+                                                                    <img className="header-solutions-icon" src="images/vuejs.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-9" >
+                                                                    <div className="header__info">Vue.js Development</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-3" >
+                                                                    <img className="header-solutions-icon" src="images/node_2.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-9" >
+                                                                    <div className="header__info">Node.js Development</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-3" >
+                                                                    <img className="header-solutions-icon" src="images/laravel.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-9" >
+                                                                    <div className="header__info">Laravel Development</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        {/* <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/computer-front-color.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Web App Development</div>
-                                                                    {/* <div className="header__text">Smart automation system</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -86,7 +182,6 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Mobile App Development</div>
-                                                                    {/* <div className="header__text">Work with various media formats</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -97,7 +192,6 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">E - commerce</div>
-                                                                    {/* <div className="header__text">Workspace reimagined</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -108,7 +202,6 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">BlockChain/Cryptocurrency</div>
-                                                                    {/* <div className="header__text">Workspace reimagined</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -119,7 +212,6 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">CRM/CMS/ERP Systems</div>
-                                                                    {/* <div className="header__text">Workspace reimagined</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -130,7 +222,6 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Digital Marketing</div>
-                                                                    {/* <div className="header__text">Workspace reimagined</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -141,36 +232,33 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Smart Gadget Apps</div>
-                                                                    {/* <div className="header__text">Workspace reimagined</div> */}
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> */}
                                                     </Slider>
                                                 </div>
                                             </div>
                                             <div className="col-lg-4" style={{borderRight: "1px solid rgba(153, 159, 174, 0.2)", paddingLeft: "62px", paddingRight: "30px"}} >
-                                                <div className="header__category"><a href="#layouts" >Technologies</a></div>
+                                                <div className="header__category"><a href="#layouts" >Mobile Solutions</a></div>
                                                 <div className="row" >
-                                                    <Slider {...settings}>
+                                                    <Slider {...technologiesSettings}>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/ror1.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/android_2.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
-                                                                    <div className="header__info">Ruby on Rails</div>
-                                                                    {/* <div className="header__text">24/7 Live Support</div> */}
+                                                                    <div className="header__info">Android App Development</div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/node_2.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/ios.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
-                                                                    <div className="header__info">Node.js</div>
-                                                                    {/* <div className="header__text">Advanced color picker</div> */}
+                                                                    <div className="header__info">IOS App Development</div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -180,30 +268,27 @@ const Header = () => {
                                                                     <img className="header-solutions-icon" src="images/android_2.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
-                                                                    <div className="header__info">Android</div>
-                                                                    {/* <div className="header__text">Advanced color picker</div> */}
+                                                                    <div className="header__info">React Native Development</div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-3" >
+                                                                    <img className="header-solutions-icon" src="images/flutter.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-9" >
+                                                                    <div className="header__info">Flutter</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        {/* <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/javascript.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Javascript</div>
-                                                                    {/* <div className="header__text">Advanced color picker</div> */}
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-12 header-solutions-outer" >
-                                                            <div className="row" >
-                                                                <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/react_3.png" alt="" />
-                                                                </div>
-                                                                <div className="col-lg-9" >
-                                                                    <div className="header__info">React</div>
-                                                                    {/* <div className="header__text">Advanced color picker</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -214,7 +299,6 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Tizen</div>
-                                                                    {/* <div className="header__text">Advanced color picker</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -225,7 +309,6 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">PHP</div>
-                                                                    {/* <div className="header__text">Advanced color picker</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -236,7 +319,6 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Python</div>
-                                                                    {/* <div className="header__text">Advanced color picker</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -247,7 +329,6 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Figma</div>
-                                                                    {/* <div className="header__text">Advanced color picker</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -258,7 +339,6 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">MongoDB</div>
-                                                                    {/* <div className="header__text">Advanced color picker</div> */}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -269,25 +349,33 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Swift</div>
-                                                                    {/* <div className="header__text">Advanced color picker</div> */}
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> */}
                                                     </Slider>
                                                 </div>
                                             </div>
                                             <div className="col-lg-4" style={{paddingLeft: "62px", paddingRight: "30px"}} >
-                                                <div className="header__category">Portfolio</div>
+                                                <div className="header__category">Miscellaneous</div>
                                                 <div className="row" >
-                                                    <Slider {...settings}>
+                                                    <Slider {...portfolioSettings}>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="img/clock.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
-                                                                    <div className="header__info">Deadline</div>
-                                                                    {/* <div className="header__text">See who’s behind the magic</div> */}
+                                                                    <div className="header__info">UI / UX</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-3" >
+                                                                    <img className="header-solutions-icon" src="images/bag-front-color.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-9" >
+                                                                    <div className="header__info">E-commerce Solutions</div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -297,8 +385,7 @@ const Header = () => {
                                                                     <img className="header-solutions-icon" src="img/clock.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
-                                                                    <div className="header__info">Deadline</div>
-                                                                    {/* <div className="header__text">See who’s behind the magic</div> */}
+                                                                    <div className="header__info">Content Management System</div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -308,8 +395,7 @@ const Header = () => {
                                                                     <img className="header-solutions-icon" src="img/clock.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
-                                                                    <div className="header__info">Deadline</div>
-                                                                    {/* <div className="header__text">See who’s behind the magic</div> */}
+                                                                    <div className="header__info">Customer Relationship Management</div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -319,213 +405,29 @@ const Header = () => {
                                                                     <img className="header-solutions-icon" src="img/clock.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
-                                                                    <div className="header__info">Deadline</div>
-                                                                    {/* <div className="header__text">See who’s behind the magic</div> */}
+                                                                    <div className="header__info">Internet Marketing</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 header-solutions-outer" >
+                                                            <div className="row" >
+                                                                <div className="col-lg-3" >
+                                                                    <img className="header-solutions-icon" src="img/clock.png" alt="" />
+                                                                </div>
+                                                                <div className="col-lg-9" >
+                                                                    <div className="header__info">Deployment and Host Management</div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </Slider>
                                                 </div>
                                             </div>
-
-                                            {/* <div className="header__col">
-                                                <div className="header__category">Services</div>
-                                                <div className="header__menu">
-                                                    <div className="row" >
-                                                        <div className="col-lg-12 header-solutions-outer" >
-                                                            <div className="row" >
-                                                                <div className="col-lg-2" >
-                                                                    <img className="header-solutions-icon" src="images/computer-front-color.png" alt="" />
-                                                                </div>
-                                                                <div className="col-lg-10" >
-                                                                    <div className="header__info">Web App Development</div>
-                                                                    <div className="header__text">Smart automation system</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-12 header-solutions-outer" >
-                                                            <div className="row" >
-                                                                <div className="col-lg-2" >
-                                                                    <img className="header-solutions-icon" src="images/mobile-front-color.png" alt="" />
-                                                                </div>
-                                                                <div className="col-lg-10" >
-                                                                    <div className="header__info">Mobile App Development</div>
-                                                                    <div className="header__text">Work with various media formats</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-12 header-solutions-outer" >
-                                                            <div className="row" >
-                                                                <div className="col-lg-2" >
-                                                                    <img className="header-solutions-icon" src="images/bag-front-color.png" alt="" />
-                                                                </div>
-                                                                <div className="col-lg-10" >
-                                                                    <div className="header__info">E - commerce</div>
-                                                                    <div className="header__text">Workspace reimagined</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div> */}
-                                                    {/* <a className="header__box" href="#">
-                                                        <div className="header__preview">
-                                                            <img className="header__pic" src="/images/CRP.png" alt="" />
-                                                        </div>
-                                                        <div className="header__deetails">
-                                                            <div className="header__info">BlockChain/Cryptocurrency</div>
-                                                            <div className="header__text">Workspace reimagined</div>
-                                                        </div>
-                                                    </a>
-                                                    <a className="header__box" href="#">
-                                                        <div className="header__preview">
-                                                            <img className="header__pic" src="/images/crm-erp.png" alt="" />
-                                                        </div>
-                                                        <div className="header__deetails">
-                                                            <div className="header__info">CRM/CMS/ERP Systems</div>
-                                                            <div className="header__text">Workspace reimagined</div>
-                                                        </div>
-                                                    </a>
-                                                    <a className="header__box" href="#">
-                                                        <div className="header__preview">
-                                                            <img className="header__pic" src="/images/DM3.png" alt="" />
-                                                        </div>
-                                                        <div className="header__deetails">
-                                                            <div className="header__info">Digital Marketing</div>
-                                                            <div className="header__text">Workspace reimagined</div>
-                                                        </div>
-                                                    </a>
-                                                    <a className="header__box" href="#">
-                                                        <div className="header__preview">
-                                                            <img className="header__pic" src="/images/SGT.png" alt="" />
-                                                        </div>
-                                                        <div className="header__deetails">
-                                                            <div className="header__info">Smart Gadget Apps</div>
-                                                            <div className="header__text">Workspace reimagined</div>
-                                                        </div>
-                                                    </a> */}
-                                                {/* </div>
-                                            </div> */}
-                                            {/* <div className="header__col">
-                                                <div className="header__category">Technologies</div>
-                                                <div className="header__menu">
-                                                    <div className="row" >
-                                                        <div className="col-lg-12 header-solutions-outer" >
-                                                            <div className="row" >
-                                                                <div className="col-lg-2" >
-                                                                    <img className="header-solutions-icon" src="images/ror1.png" alt="" />
-                                                                </div>
-                                                                <div className="col-lg-10" >
-                                                                    <div className="header__info">Ruby on Rails</div>
-                                                                    <div className="header__text">24/7 Live Support</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-12 header-solutions-outer" >
-                                                            <div className="row" >
-                                                                <div className="col-lg-2" >
-                                                                    <img className="header-solutions-icon" src="images/node_2.png" alt="" />
-                                                                </div>
-                                                                <div className="col-lg-10" >
-                                                                    <div className="header__info">Node.js</div>
-                                                                    <div className="header__text">Advanced color picker</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-12 header-solutions-outer" >
-                                                            <div className="row" >
-                                                                <div className="col-lg-2" >
-                                                                    <img className="header-solutions-icon" src="images/android_2.png" alt="" />
-                                                                </div>
-                                                                <div className="col-lg-10" >
-                                                                    <div className="header__info">Android</div>
-                                                                    <div className="header__text">Advanced color picker</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div> */}
-                                                    {/* <a className="header__box" href="#">
-                                                        <div className="header__preview">
-                                                        <img className="header__pic" src="img/fill.png" alt="" />
-                                                        </div>
-                                                        <div className="header__deetails">
-                                                        <div className="header__info">Javascript</div>
-                                                        <div className="header__text">Advanced color picker</div>
-                                                        </div>
-                                                    </a>
-                                                    <a className="header__box" href="#">
-                                                        <div className="header__preview">
-                                                        <img className="header__pic" src="img/fill.png" alt="" />
-                                                        </div>
-                                                        <div className="header__deetails">
-                                                        <div className="header__info">React</div>
-                                                        <div className="header__text">Advanced color picker</div>
-                                                        </div>
-                                                    </a>
-                                                    <a className="header__box" href="#">
-                                                        <div className="header__preview">
-                                                        <img className="header__pic" src="img/fill.png" alt="" />
-                                                        </div>
-                                                        <div className="header__deetails">
-                                                        <div className="header__info">Tizen</div>
-                                                        <div className="header__text">Advanced color picker</div>
-                                                        </div>
-                                                    </a>
-                                                    <a className="header__box" href="#">
-                                                        <div className="header__preview">
-                                                        <img className="header__pic" src="img/fill.png" alt="" />
-                                                        </div>
-                                                        <div className="header__deetails">
-                                                        <div className="header__info">PHP</div>
-                                                        <div className="header__text">Advanced color picker</div>
-                                                        </div>
-                                                    </a>
-                                                    <a className="header__box" href="#">
-                                                        <div className="header__preview">
-                                                        <img className="header__pic" src="img/fill.png" alt="" />
-                                                        </div>
-                                                        <div className="header__deetails">
-                                                        <div className="header__info">Python</div>
-                                                        <div className="header__text">Advanced color picker</div>
-                                                        </div>
-                                                    </a> */}
-                                                {/* </div>
-                                            </div> */}
-                                            {/* <div className="header__col">
-                                                <div className="header__category">Features</div>
-                                                <div className="header__menu">
-                                                    <a className="header__box" href="#">
-                                                        <div className="header__preview">
-                                                            <img className="header__pic" src="img/clock.png" alt="" />
-                                                        </div>
-                                                        <div className="header__deetails">
-                                                            <div className="header__info">Deadline</div>
-                                                            <div className="header__text">See who’s behind the magic</div>
-                                                        </div>
-                                                    </a>
-                                                    <a className="header__box" href="#">
-                                                        <div className="header__preview">
-                                                            <img className="header__pic" src="img/bell-flat.png" alt="" />
-                                                        </div>
-                                                        <div className="header__deetails">
-                                                            <div className="header__info">Daily Updates</div>
-                                                            <div className="header__text">What we’re working on</div>
-                                                        </div>
-                                                    </a>
-                                                    <a className="header__box" href="#">
-                                                        <div className="header__preview">
-                                                            <img className="header__pic" src="img/bell-flat.png" alt="" />
-                                                        </div>
-                                                        <div className="header__deetails">
-                                                            <div className="header__info">Analysis</div>
-                                                            <div className="header__text">What we’re working on</div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <a className="header__item" href="#">Career</a>
+                            <a className="header__item" href="#portfolio">Portfolio</a>
+                            <a className="header__item" href="./aboutUs">About Us</a>
                         </nav>
                         <div className="header__photo">
                             <img className="header__pic" src="img/menu-pic.png" alt="" />
@@ -563,7 +465,11 @@ const Header = () => {
                             <input className="header__input" type="text" placeholder="Search ..." />
                         </div>
                     </div> */}
-                    <a className="header__btn btn btn_pink" href='./contact' >Get in Touch</a>
+                    <Link href='./contact' >
+                        <a className="header__btn btn btn_pink" target="_blank"  >
+                            Get in Touch
+                        </a>
+                    </Link>
                 </div>
                 <div className="header__bg js-header-bg"></div>
             </div>

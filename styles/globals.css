@@ -583,7 +583,7 @@ a {
 
 .main__title {
   font-size: 40px;
-  line-height: 1.1;
+  line-height: 1.5;
   font-weight: bold;
 }
 
@@ -1388,6 +1388,78 @@ a {
   margin-bottom: 15px;
 }
 /* Package Component CSS End */
+
+/* About Us Component CSS Start */
+.about-area-1 {
+  background-color: #5956E9;
+  margin-top: 150px;
+  margin-bottom: 70px;
+  border-radius: 0px 0px 40px 40px;
+  font-family: 'DM Sans';
+}
+
+.about-area-1-outer-row {
+  padding: 100px 0px;
+  color: #FFFFFF;
+}
+
+.about-area-1-outer {
+  line-height: 5;
+}
+
+.about-area-1-outer h1 {
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: -0.025em;
+}
+
+.about-area-1-btn {
+  color: #2522BA;
+  filter: drop-shadow(0px 14px 20px rgba(35, 34, 87, 0.4)) drop-shadow(0px 48px 48px rgba(0, 0, 0, 0.12));
+  padding: 0px 50px;
+}
+
+.about-area-1-btn:hover {
+  color: #2522BA;
+}
+
+.about-area-2 {
+  font-family: 'DM Sans';
+  background: url('../public/images/Vector_332.png') no-repeat;
+  background-size: cover;
+}
+
+.about-area-2-grey-circle {
+  height: 390px;
+  width: 390px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  position: relative;
+}
+
+.about-area-2-heading {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: -0.025em;
+}
+
+.about-area-2-cam-pic {
+  position: absolute;
+  left: 0;
+  bottom: 25%;
+  width: 80px;
+}
+
+.about-area-2-outer-row {
+  padding: 130px 0;
+}
+
+.about-area-1-para {
+  line-height: 1.5;
+}
+/* About Us Component CSS End */
 
 @media only screen and (max-width: 1199px) {
   /* Layout Component CSS Start */

@@ -63,7 +63,7 @@ const Package = () => {
                                             </div>
                                             <div className="package__btns">
                                                 <div className="package__arrows">
-                                                    {/* <button className="package__arrow js-package-prev">
+                                                    <button className="package__arrow js-package-prev">
                                                         <svg className="icon icon-arrow-prev">
                                                             <use xlinkHref="img/sprite.svg#icon-arrow-prev"></use>
                                                         </svg>
@@ -72,7 +72,7 @@ const Package = () => {
                                                         <svg className="icon icon-arrow-next">
                                                             <use xlinkHref="img/sprite.svg#icon-arrow-next"></use>
                                                         </svg>
-                                                    </button> */}
+                                                    </button>
                                                 </div>
                                                 <a className="package__btn btn btn_purple" href="./login">Get Started</a>
                                             </div>
@@ -113,7 +113,7 @@ const Package = () => {
                                             </div>
                                             <div className="package__btns">
                                                 <div className="package__arrows">
-                                                    {/* <button className="package__arrow js-package-prev">
+                                                    <button className="package__arrow js-package-prev">
                                                         <svg className="icon icon-arrow-prev">
                                                             <use xlinkHref="img/sprite.svg#icon-arrow-prev"></use>
                                                         </svg>
@@ -122,7 +122,7 @@ const Package = () => {
                                                         <svg className="icon icon-arrow-next">
                                                             <use xlinkHref="img/sprite.svg#icon-arrow-next"></use>
                                                         </svg>
-                                                    </button> */}
+                                                    </button>
                                                 </div>
                                                 <a className="package__btn btn btn_purple" href="./login">Get Started</a>
                                             </div>
@@ -165,7 +165,7 @@ const Package = () => {
                                             </div>
                                             <div className="package__btns">
                                                 <div className="package__arrows">
-                                                    {/* <button className="package__arrow js-package-prev">
+                                                    <button className="package__arrow js-package-prev">
                                                         <svg className="icon icon-arrow-prev">
                                                             <use xlinkHref="img/sprite.svg#icon-arrow-prev"></use>
                                                         </svg>
@@ -174,7 +174,7 @@ const Package = () => {
                                                         <svg className="icon icon-arrow-next">
                                                             <use xlinkHref="img/sprite.svg#icon-arrow-next"></use>
                                                         </svg>
-                                                    </button> */}
+                                                    </button>
                                                 </div>
                                                 <a className="package__btn btn btn_purple" href="./login">Get Started</a>
                                             </div>
