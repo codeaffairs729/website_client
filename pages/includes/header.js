@@ -101,19 +101,81 @@ const Header = () => {
                         <nav className="header__nav">
                             <a className="header__item" href="./">Home</a>
                             <div className="header__item js-header-item">
-                                <a className="header__head js-header-head" href="#">
+                                <a className="header__head" href="#">
                                     Services
                                     <svg className="icon icon-arrow-down">
                                         <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                                     </svg>
                                 </a>
                                 <div className="header__body js-header-body">
-                                    <div className="header__center center">
-                                        <div className="header__row">
-                                            <div className="col-lg-4" style={{borderRight: "1px solid rgba(153, 159, 174, 0.2)", paddingLeft: "62px", paddingRight: "30px"}} >
-                                                <div className="header__category"><a href="#services" >Web Solutions</a></div>
+                                    <div className="header__center center header-dropdown-body">
+                                        <div className="header__row row">
+                                            <div className="col-lg-4 col-md-4 col-sm-4" >
+                                                <div className="header__category">
+                                                    <a href="#services" >Web Solutions</a>
+                                                </div>
                                                 <div className="row" >
-                                                    <Slider {...servicesSettings}>
+                                                    <div className="col-lg-12 header-solutions-outer" >
+                                                        <div className="row" >
+                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                                <img className="header-solutions-icon" src="images/ror1.png" alt="" />
+                                                            </div>
+                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                                <div className="header__info">Ruby on Rails Development</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-12 header-solutions-outer" >
+                                                        <div className="row" >
+                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                                <img className="header-solutions-icon" src="images/react_3.png" alt="" />
+                                                            </div>
+                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                                <div className="header__info">React / Next.js Development</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-12 header-solutions-outer" >
+                                                        <div className="row" >
+                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                                <img className="header-solutions-icon" src="images/vuejs.png" alt="" />
+                                                            </div>
+                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                                <div className="header__info">Vue.js / NuxtJs Development</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-12 header-solutions-outer" >
+                                                        <div className="row" >
+                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                                <img className="header-solutions-icon" src="images/node_2.png" alt="" />
+                                                            </div>
+                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                                <div className="header__info">Node.js Development</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-12 header-solutions-outer" >
+                                                        <div className="row" >
+                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                                <img className="header-solutions-icon" src="images/laravel.png" alt="" />
+                                                            </div>
+                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                                <div className="header__info">Laravel Development</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-12 header-solutions-outer" >
+                                                        <div className="row" >
+                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                                <img className="header-solutions-icon" src="images/shopify_icon.png" alt="" />
+                                                            </div>
+                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                                <div className="header__info">Shopify</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    {/* <Slider {...servicesSettings}>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
@@ -130,7 +192,7 @@ const Header = () => {
                                                                     <img className="header-solutions-icon" src="images/react_3.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
-                                                                    <div className="header__info">React Development</div>
+                                                                    <div className="header__info">React / Next.js Development</div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -140,7 +202,7 @@ const Header = () => {
                                                                     <img className="header-solutions-icon" src="images/vuejs.png" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
-                                                                    <div className="header__info">Vue.js Development</div>
+                                                                    <div className="header__info">Vue.js / NuxtJs Development</div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -163,7 +225,7 @@ const Header = () => {
                                                                     <div className="header__info">Laravel Development</div>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> */}
 
                                                         {/* <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
@@ -235,13 +297,53 @@ const Header = () => {
                                                                 </div>
                                                             </div>
                                                         </div> */}
-                                                    </Slider>
+                                                    {/* </Slider> */}
                                                 </div>
                                             </div>
-                                            <div className="col-lg-4" style={{borderRight: "1px solid rgba(153, 159, 174, 0.2)", paddingLeft: "62px", paddingRight: "30px"}} >
+                                            <div className="col-lg-4 col-md-4 col-sm-4" >
                                                 <div className="header__category"><a href="#layouts" >Mobile Solutions</a></div>
                                                 <div className="row" >
-                                                    <Slider {...technologiesSettings}>
+                                                    <div className="col-lg-12 header-solutions-outer" >
+                                                        <div className="row" >
+                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                                <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                            </div>
+                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                                <div className="header__info">Android App Development</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-12 header-solutions-outer" >
+                                                        <div className="row" >
+                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                                <img className="header-solutions-icon" src="images/ios.png" alt="" />
+                                                            </div>
+                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                                <div className="header__info">IOS App Development</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-12 header-solutions-outer" >
+                                                        <div className="row" >
+                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                                <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                            </div>
+                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                                <div className="header__info">React Native Development</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-12 header-solutions-outer" >
+                                                        <div className="row" >
+                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                                <img className="header-solutions-icon" src="images/flutter.png" alt="" />
+                                                            </div>
+                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                                <div className="header__info">Flutter</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    {/* <Slider {...technologiesSettings}>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
@@ -281,7 +383,7 @@ const Header = () => {
                                                                     <div className="header__info">Flutter</div>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> */}
                                                         {/* <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
@@ -352,13 +454,73 @@ const Header = () => {
                                                                 </div>
                                                             </div>
                                                         </div> */}
-                                                    </Slider>
+                                                    {/* </Slider> */}
                                                 </div>
                                             </div>
-                                            <div className="col-lg-4" style={{paddingLeft: "62px", paddingRight: "30px"}} >
+                                            <div className="col-lg-4 col-md-4 col-sm-4" >
                                                 <div className="header__category">Miscellaneous</div>
                                                 <div className="row" >
-                                                    <Slider {...portfolioSettings}>
+                                                    <div className="col-lg-12 header-solutions-outer" >
+                                                        <div className="row" >
+                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                                <img className="header-solutions-icon" src="img/clock.png" alt="" />
+                                                            </div>
+                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                                <div className="header__info">UI / UX</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-12 header-solutions-outer" >
+                                                        <div className="row" >
+                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                                <img className="header-solutions-icon" src="images/bag-front-color.png" alt="" />
+                                                            </div>
+                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                                <div className="header__info">E-commerce Solutions</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-12 header-solutions-outer" >
+                                                        <div className="row" >
+                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                                <img className="header-solutions-icon" src="img/clock.png" alt="" />
+                                                            </div>
+                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                                <div className="header__info">Content Management System</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-12 header-solutions-outer" >
+                                                        <div className="row" >
+                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                                <img className="header-solutions-icon" src="img/clock.png" alt="" />
+                                                            </div>
+                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                                <div className="header__info">Customer Relationship Management</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-12 header-solutions-outer" >
+                                                        <div className="row" >
+                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                                <img className="header-solutions-icon" src="img/clock.png" alt="" />
+                                                            </div>
+                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                                <div className="header__info">Internet Marketing</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-12 header-solutions-outer" >
+                                                        <div className="row" >
+                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                                <img className="header-solutions-icon" src="img/clock.png" alt="" />
+                                                            </div>
+                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                                <div className="header__info">Deployment and Host Management</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    {/* <Slider {...portfolioSettings}>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
@@ -419,14 +581,14 @@ const Header = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </Slider>
+                                                    </Slider> */}
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <a className="header__item" href="#portfolio">Portfolio</a>
+                            <a className="header__item" href="./#portfolio">Portfolio</a>
                             <a className="header__item" href="./aboutUs">About Us</a>
                         </nav>
                         <div className="header__photo">

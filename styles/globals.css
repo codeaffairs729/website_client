@@ -145,26 +145,49 @@ a {
 
 .header-solutions-icon {
   /* width: 100%; */
-  height: 40px;
+  /* height: 40px; */
+  height: 14px;
 }
 
 .header-solutions-outer {
-  margin-bottom: 35px;
-  font-weight: 500;
+  margin-bottom: 5px;
+  /* margin-bottom: 35px;
+  font-weight: 500; */
 }
 
-.header-solutions-outer .col-lg-3 {
+/* .header-solutions-outer .col-lg-3 {
   display: flex;
   justify-content: center;
 }
 
 .header-solutions-outer .col-lg-9 {
   margin: auto;
+} */
+
+.header-solutions-outer .col-lg-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-solutions-outer .col-lg-11 {
+  margin: auto;
 }
 
 .header-solutions-outer .header__info {
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: 14px;
 }
+
+.header-dropdown-body {
+  max-width: 1050px;
+}
+
+/* .header__row .col-lg-4 {
+  border-right: 1px solid rgba(153, 159, 174, 0.2);
+  padding-left: 62px;
+  padding-right: 30px;
+} */
 /* Header Component CSS End */
 
 .btn_purple {
@@ -563,6 +586,10 @@ a {
 .title__line:before {
   bottom: 12px;
   height: 4px;
+}
+
+.main-subheadings-span {
+  font-size: 25px;
 }
 /* Main Component CSS End */
 
@@ -1408,12 +1435,20 @@ a {
   background-size: 9px 7px;
 }
 
-.package-list li:nth-child(2n+1):before {
+.package-list li:first-child:before {
+  background-color: #FFDC60;
+}
+
+.package-list li:nth-child(2):before {
   background-color: #FAB8C4;
 }
 
 .package-list li:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.package-subslider-img {
+  width: 100%;
 }
 /* Package Component CSS End */
 
@@ -2121,4 +2156,10 @@ a {
     display: none;
   }
   /* Header Component CSS End */
+}
+
+@media only screen and (max-width: 1365px) {
+  .header__row {
+    padding: 55px 30px;
+  }
 }
