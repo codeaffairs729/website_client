@@ -15,7 +15,7 @@ const Main = () => {
                                 {/* 'Development', 'Software Engineering', 'Designing', 'App Monitoring', 'Web Solutions', 'Mobile Solutions', 'CRM Solutions', 'CMS Solutions', 'Cloud Services', 'Tech Consulting' */}
                                     <Typewriter
                                         options={{
-                                            strings: ['Development', 'Software Engineering', 'Designing', 'App Monitoring', 'CRM Solutions', 'CMS Solutions', 'Cloud Services', 'Tech Consulting'],
+                                            strings: ['Software Engineering', 'App Monitoring', 'CRM Solutions', 'CMS Solutions', 'App Deployment', 'Tech Consulting', 'Cloud Management'],
                                             autoStart: true,
                                             loop: true,
                                         }}
@@ -25,18 +25,18 @@ const Main = () => {
                             <span className="title__box">
                                 <span className="title__text ms-3" >
                                     <span className="title__line" >
-                                        Web Services
+                                        Web <span className='main-subheadings-span' >Solutions</span>
                                     </span>
                                 </span>
                             </span>
-                            <span className="title__box">
-                                <span className="title__text ms-3" >
-                                    Android / IOS
+                            <span className="title__box main-android-title-box">
+                                <span className="title__text ms-3 main-android-title-text" >
+                                    Android / IOS <span className='main-subheadings-span' >Development</span>
                                 </span>
                             </span>
                             <span className="title__box">
                                 <span className="title__text ms-3" >
-                                    UI / UX Designing
+                                    UI / UX <span className='main-subheadings-span' >Designing</span>
                                     <span className="title__color">.</span>
                                 </span>
                             </span>
@@ -78,7 +78,7 @@ const Main = () => {
                             <img className="main__pic js-parallax" data-scale="1.5" data-orientation="up" src="img/main-pic-2.png" alt="" />
                         </div> */}
                         <div className="main__preview">
-                            <img className="main__pic" src="images/main-pic-3.png" alt="" />
+                            <img className="main__pic" src="images/desktop-asset.png" alt="" />
                         </div>
                     </div>
                     <div className="main__circles">

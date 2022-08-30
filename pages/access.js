@@ -11,7 +11,7 @@ const Access = () => {
                 {/* <img className="access__pic connect__pic" src="images/connect.png" alt="" /> */}
                 <img className="access__pic sphere__pic sphere-floating" src="images/Sphere.png" alt="" />
                 <img className="access-azure-cloud sphere-floating" src="images/azure.png" alt="" />
-                <img className="access-heading" src="images/Cloud Services.png" alt="" />
+                <img className="access-heading" src="images/Cloud_Management.png" alt="" />
                 {/* <h2 className="access-heading" >Cloud Services</h2> */}
                 {/* <img className="access__pic" src="images/connect.svg" alt="" /> */}
               </div>

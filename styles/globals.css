@@ -589,7 +589,15 @@ a {
 }
 
 .main-subheadings-span {
-  font-size: 25px;
+  font-size: 20px;
+}
+
+.main-android-title-box {
+  display: inline;
+}
+
+.main-android-title-text {
+  width: max-content;
 }
 /* Main Component CSS End */
 

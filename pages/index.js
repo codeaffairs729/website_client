@@ -32,16 +32,16 @@ export default function Home() {
           <img className="whatsapp-btn" src="images/WhatsApp.png" alt="" />
         </a>
         <Main />
+        <Package />
         {/* <Features /> */}
         <Work />
         <Layouts />
         <Access />
         <Design />
         <Teams />
-        <Package />
 
-        {/* <Like />
-        <Plan />
+        <Like />
+        {/* <Plan />
         <Speed />
         <Demo />
         <Details />
