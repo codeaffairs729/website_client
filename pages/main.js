@@ -12,12 +12,21 @@ const Main = () => {
                         <h1 className="main__title title title_big" data-aos>
                             <span className="title__box dev-title mb-3">
                                 <span className="title__text">
-                                {/* 'Development', 'Software Engineering', 'Designing', 'App Monitoring', 'Web Solutions', 'Mobile Solutions', 'CRM Solutions', 'CMS Solutions', 'Cloud Services', 'Tech Consulting' */}
+                                    {/* 'Development', 'Software Engineering', 'Designing', 'App Monitoring', 'Web Solutions', 'Mobile Solutions', 'CRM Solutions', 'CMS Solutions', 'Cloud Services', 'Tech Consulting' */}
                                     <Typewriter
                                         options={{
-                                            strings: ['Software Engineering', 'App Monitoring', 'CRM Solutions', 'CMS Solutions', 'App Deployment', 'Tech Consulting', 'Cloud Management'],
+                                            strings: [
+                                                '<span style="color: #FFDC60" >Software Engineering</span>',
+                                                '<span style="color: #FAB8C4" >App Monitoring</span>',
+                                                '<span style="color: #5956E9" >CRM Solutions</span>',
+                                                '<span style="color: #FFDC60" >CMS Solutions</span>',
+                                                '<span style="color: #FAB8C4" >App Deployment</span>',
+                                                '<span style="color: #5956E9" >Tech Consulting</span>',
+                                                '<span style="color: #FFDC60" >Cloud Management</span>'
+                                            ],
                                             autoStart: true,
                                             loop: true,
+                                            cursor: ''
                                         }}
                                     />
                                 </span>
@@ -42,9 +51,9 @@ const Main = () => {
                             </span>
                         </h1>
                         <div className="main__info info ms-3" data-aos="animation-scale-y" data-aos-delay="400">
-                            End-to-End Digital
+                            We build valuable solutions
                             <br />
-                            Transformation Services
+                            with code.
                         </div>
                         <div className="main__control ms-3" data-aos="animation-scale-y" data-aos-delay="550">
                             <a className="main__btn btn btn_purple" href="./login">Get in Touch</a>
