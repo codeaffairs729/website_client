@@ -142,13 +142,22 @@ const Teams = () => {
                                             </div>
                                             <div className='row teams-cmnt-row' >
                                                 <div className='col-lg-12 mt-5 teams-cmnt-text'>
-                                                    There appears to be no topics that this team cannot quickly understand and become proficient and provide desired result in a very short time frame.
-                                                    {/* They consider many ways to resolve our issues, considering multiple aspects as well (ie. Performance, accuracy, simplicity).
+                                                    Team consider many ways to resolve our issues, considering multiple aspects as well (ie. Performance, accuracy, simplicity). Their feedback is documented and easy to understand.
+                                                    {/* There appears to be no topics that this team cannot quickly understand and become proficient and provide desired result in a very short time frame.
+                                                    They consider many ways to resolve our issues, considering multiple aspects as well (ie. Performance, accuracy, simplicity).
                                                     Their feedback is documented and easy to understand.
                                                     They thoroughly tests all of their work which reduces the amount of time spent by ourselves during acceptance phases.
                                                     They quickly grasps business processes and business issues.
                                                     They provide a close follow-up by directly contacting us which shows that they are dedicated to complete tasks.
                                                     I look forward to work with em on challenging subjects which, for sure, will become successes again. */}
+                                                </div>
+                                                <div className='col-lg-12 mb-5 teams-cmnt-author'>
+                                                    - Samba Thibo
+                                                </div>
+                                            </div>
+                                            <div className='row teams-cmnt-row' >
+                                                <div className='col-lg-12 mt-5 teams-cmnt-text'>
+                                                    They quickly grasps business processes and business issues. They provide a close follow-up by directly contacting us which shows that they are dedicated to complete tasks.
                                                 </div>
                                                 <div className='col-lg-12 mb-5 teams-cmnt-author'>
                                                     - Samba Thibo

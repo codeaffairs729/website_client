@@ -240,7 +240,7 @@ const Layouts = () => {
               <img className="layout-pic-ror_top_2" src="/images/ror_top_2.png" alt="" data-bs-toggle="tooltip" title="Ruby On Rails" />
               <img className="layout-pic-ror_bottom_2" src="/images/ror_bottom_2.png" alt="" data-bs-toggle="tooltip" title="Ruby On Rails" />
             </div>
-            <div className="layouts__preview">
+            <div className="layouts__preview layouts-preview-figma">
               <img className="layouts__pic layouts_pic_figma" src="images/figma.png" alt="" data-bs-toggle="tooltip" title="Figma" />
             </div>
           </div>

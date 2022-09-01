@@ -65,14 +65,12 @@ const Footer = () => {
                             </svg>
                         </div>
                         <div className="footer__menu js-footer-menu" style={ technologies ? { display: "block" } : { display: "none" }} >
-                            <a className="footer__link" href="#">Ruby on Rails</a>
-                            <a className="footer__link" href="#">Node.js</a>
-                            <a className="footer__link" href="#">Android</a>
-                            <a className="footer__link" href="#">Javascript</a>
-                            <a className="footer__link" href="#">React</a>
-                            <a className="footer__link" href="#">Tizen</a>
-                            <a className="footer__link" href="#">PHP</a>
-                            <a className="footer__link" href="#">Python</a>
+                            <span className="footer__link" >Ruby on Rails</span>
+                            <span className="footer__link" >NodeJs</span>
+                            <span className="footer__link" >React Native</span>
+                            <span className="footer__link" >Laravel</span>
+                            <span className="footer__link" >React / Next</span>
+                            <span className="footer__link" >Vue / Nuxt</span>
                         </div>
                     </div>
                     <div onClick={() => showContactUs()} className={ contactUs ? "footer__col js-footer-col active" : "footer__col js-footer-col" } >
@@ -99,7 +97,7 @@ const Footer = () => {
                                 <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                             </svg>
                         </div>
-                        <div className="footer__menu js-footer-menu footer-social-menu justify-content-evenly" style={ socialIcons ? { display: "block" } : { display: "none" }} >
+                        <div className="footer__menu js-footer-menu footer-social-menu justify-content-evenly" style={ socialIcons ? { display: "flex" } : { display: "none" }} >
                             <a className="footer__link" href="https://www.facebook.com/CodeGarageTech">
                                 <img className="icon icon-header-img" src="images/Facebook3d.png" alt="" />
                             </a>

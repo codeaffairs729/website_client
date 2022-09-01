@@ -16,13 +16,13 @@ const Main = () => {
                                     <Typewriter
                                         options={{
                                             strings: [
-                                                '<span style="color: #FFDC60" >Software Engineering</span>',
-                                                '<span style="color: #FAB8C4" >App Monitoring</span>',
+                                                '<span style="color: #5956E9" >Software Engineering</span>',
+                                                '<span style="color: #5956E9" >App Monitoring</span>',
                                                 '<span style="color: #5956E9" >CRM Solutions</span>',
-                                                '<span style="color: #FFDC60" >CMS Solutions</span>',
-                                                '<span style="color: #FAB8C4" >App Deployment</span>',
+                                                '<span style="color: #5956E9" >CMS Solutions</span>',
+                                                '<span style="color: #5956E9" >App Deployment</span>',
                                                 '<span style="color: #5956E9" >Tech Consulting</span>',
-                                                '<span style="color: #FFDC60" >Cloud Management</span>'
+                                                '<span style="color: #5956E9" >Cloud Management</span>'
                                             ],
                                             autoStart: true,
                                             loop: true,

@@ -117,60 +117,60 @@ const Header = () => {
                                                 <div className="row" >
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/ror1.png" alt="" />
                                                             </div>
-                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
                                                                 <div className="header__info">Ruby on Rails Development</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/react_3.png" alt="" />
                                                             </div>
-                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
                                                                 <div className="header__info">React / Next.js Development</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/vuejs.png" alt="" />
                                                             </div>
-                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
                                                                 <div className="header__info">Vue.js / NuxtJs Development</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/node_2.png" alt="" />
                                                             </div>
-                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
                                                                 <div className="header__info">Node.js Development</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/laravel.png" alt="" />
                                                             </div>
-                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
                                                                 <div className="header__info">Laravel Development</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/shopify_icon.png" alt="" />
                                                             </div>
-                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
                                                                 <div className="header__info">Shopify</div>
                                                             </div>
                                                         </div>
@@ -305,40 +305,40 @@ const Header = () => {
                                                 <div className="row" >
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/android_2.png" alt="" />
                                                             </div>
-                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
                                                                 <div className="header__info">Android App Development</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/ios.png" alt="" />
                                                             </div>
-                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
                                                                 <div className="header__info">IOS App Development</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/android_2.png" alt="" />
                                                             </div>
-                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
                                                                 <div className="header__info">React Native Development</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/flutter.png" alt="" />
                                                             </div>
-                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
                                                                 <div className="header__info">Flutter</div>
                                                             </div>
                                                         </div>
@@ -462,60 +462,60 @@ const Header = () => {
                                                 <div className="row" >
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="img/clock.png" alt="" />
                                                             </div>
-                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
                                                                 <div className="header__info">UI / UX</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/bag-front-color.png" alt="" />
                                                             </div>
-                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
                                                                 <div className="header__info">E-commerce Solutions</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="img/clock.png" alt="" />
                                                             </div>
-                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
                                                                 <div className="header__info">Content Management System</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="img/clock.png" alt="" />
                                                             </div>
-                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
                                                                 <div className="header__info">Customer Relationship Management</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="img/clock.png" alt="" />
                                                             </div>
-                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
                                                                 <div className="header__info">Internet Marketing</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className="col-lg-1 col-md-2 col-sm-2" >
+                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="img/clock.png" alt="" />
                                                             </div>
-                                                            <div className="col-lg-11 col-md-10 col-sm-10" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
                                                                 <div className="header__info">Deployment and Host Management</div>
                                                             </div>
                                                         </div>

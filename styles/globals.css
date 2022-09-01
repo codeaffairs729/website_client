@@ -164,11 +164,11 @@ a {
   margin: auto;
 } */
 
-.header-solutions-outer .col-lg-1 {
+/* .header-solutions-outer .col-lg-1 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .header-solutions-outer .col-lg-11 {
   margin: auto;
@@ -177,6 +177,7 @@ a {
 .header-solutions-outer .header__info {
   /* font-size: 16px; */
   font-size: 14px;
+  margin-bottom: 0;
 }
 
 .header-dropdown-body {
@@ -188,6 +189,10 @@ a {
   padding-left: 62px;
   padding-right: 30px;
 } */
+
+.header__row {
+  padding: 55px 30px;
+}
 /* Header Component CSS End */
 
 .btn_purple {
@@ -543,6 +548,14 @@ a {
 .footer-social-menu {
   flex-direction: unset;
 }
+
+.footer__category {
+  margin-bottom: 20px;
+}
+
+.footer__link:not(:last-child) {
+  margin-bottom: 10px;
+}
 /* Footer Component CSS End */
 
 /* Main Component CSS Start */
@@ -685,8 +698,12 @@ a {
 
 .layouts_pic_figma {
   margin-top: 35px;
-  margin-left: -55px;
-  width: 80%;
+  margin-left: 0;
+  width: 100%;
+}
+
+.layouts__preview:nth-child(5) {
+  width: 256px;
 }
 
 .Play_button_preview {
@@ -1456,7 +1473,7 @@ a {
 }
 
 .package-subslider-img {
-  width: 100%;
+  width: 80px;
 }
 /* Package Component CSS End */
 
@@ -1658,10 +1675,9 @@ a {
     width: 55px;
   }
 
-  /* .layout-pic-swift {
-    top: 44%;
-    left: 54%;
-  } */
+  .layout-pic-swift {
+    left: 52%;
+  }
 
   .layout-pic-ror_top_2 {
     left: 28px;
@@ -1676,7 +1692,7 @@ a {
   }
 
   .layouts_pic_figma {
-    margin-left: -93px;
+    margin-left: 30px;
   }
 
   .Play_button_img {
@@ -1950,6 +1966,10 @@ a {
     font-size: 35px;
     width: max-content;
   }
+
+  .main__circle:nth-child(6) {
+    background: #FFDC60;
+  }
   /* Main Component CSS End */
   
   .connect__view {
@@ -2137,6 +2157,9 @@ a {
     height: 300px;
   }
   /* Teams Component CSS End */
+
+  /* Footer Component CSS Start */
+  /* Footer Component CSS End */
 }
 
 @media only screen and (max-height: 767px) {
@@ -2167,7 +2190,7 @@ a {
 }
 
 @media only screen and (max-width: 1365px) {
-  .header__row {
+  /* .header__row {
     padding: 55px 30px;
-  }
+  } */
 }
