@@ -29,19 +29,35 @@ const Layouts = () => {
                 <div className="layouts__icon">
                   <img className="layouts__pic" src="img/layout-1.svg" alt="" />
                 </div>
-                <div className="layouts__text">We advice technologies that suits your idea.</div>
+                <div className="layouts__text">
+                  We advice technologies that
+                  <br/>
+                  suits your idea.
+                </div>
               </div>
               <div className="layouts__item" data-aos="animation-scale-y">
                 <div className="layouts__icon">
                   <img className="layouts__pic" src="img/layout-2.svg" alt="" />
                 </div>
-                <div className="layouts__text">Get rid of expensive & slow tech stack with fast & advance technologies.</div>
+                <div className="layouts__text">
+                  Get rid of expensive & slow
+                  <br/>
+                  tech stack with fast &
+                  <br/>
+                  advance technologies.
+                </div>
               </div>
               <div className="layouts__item" data-aos="animation-scale-y">
                 <div className="layouts__icon">
                   <img className="layouts__pic" src="img/layout-3.svg" alt="" />
                 </div>
-                <div className="layouts__text">Keep your application fast, scalable and reliable with optimum combination.</div>
+                <div className="layouts__text">
+                  Keep your application fast,
+                  <br/>
+                  scalable and reliable with
+                  <br/>
+                  optimum combination.
+                </div>
               </div>
             </div>
 

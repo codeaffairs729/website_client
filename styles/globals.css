@@ -1711,6 +1711,10 @@ a {
   .layout-pic-android_3 {
     top: 180px;
   }
+
+  .layouts__preview:nth-child(5) {
+    width: 180px;
+  }
   /* Layout Component CSS End */
 
   /* Main Component CSS Start */
@@ -1921,7 +1925,7 @@ a {
 
   .layouts_pic_figma {
     margin-top: 10px;
-    margin-left: -130px;
+    margin-left: 0px;
   }
 
   .layout-pic-MongoDB {
@@ -1942,6 +1946,10 @@ a {
   .layout-pic-android_3 {
     top: 45px;
     right: 0;
+  }
+
+  .layouts__preview:nth-child(5) {
+    width: 160px;
   }
   /* Layout Component CSS End */
 
