@@ -1379,11 +1379,6 @@ a {
   width: 100%;
 }
 
-.package-preview-mobile {
-  display: flex;
-  justify-content: center;
-}
-
 .package-pic-mobile {
   height: 100%;
   width: auto !important;
@@ -1501,10 +1496,10 @@ a {
   left: 27%;
 }
 
-.package-pic-slide2 {
+/* .package-pic-slide2 {
   margin-top: 54px;
   margin-bottom: 15px;
-}
+} */
 
 .package-list li {
   position: relative;
@@ -1539,18 +1534,18 @@ a {
 }
 
 .package-subslider-img {
-  width: 80px;
+  width: 50px;
 }
 
 .package__slider .slick-prev {
   position: absolute;
-  top: -8%;
+  top: -7.5%;
   left: 0;
 }
 
 .package__slider .slick-next {
   position: absolute;
-  top: -8%;
+  top: -7.5%;
   left: 5%;
 }
 
@@ -1571,7 +1566,12 @@ a {
 }
 
 .package__slider .slick-arrow:hover {
-  background: #5956E9;
+  /* background: #5956E9; */
+  background: #FFDC60;
+}
+
+.package__slider .slick-list {
+  height: auto !important;
 }
 /* Package Component CSS End */
 
@@ -2013,8 +2013,8 @@ a {
   }
 
   .package-pic-mobile {
-    max-height: 400px !important;
-    height: 393px;
+    max-height: 363px !important;
+    height: 363px;
   }
   
   .package-pic-react_2 {
@@ -2027,10 +2027,10 @@ a {
     left: 29%;
   }
 
-  .package-pic-slide2 {
+  /* .package-pic-slide2 {
     margin-top: 74px;
     margin-bottom: 15px;
-  }
+  } */
   /* Package Component CSS End */
 
   /* Trophies Component CSS Start */
@@ -2363,13 +2363,13 @@ a {
   }
 
   .package-pic-mobile {
-    height: 226px;
+    height: 202px;
   }
 
-  .package-pic-slide2 {
+  /* .package-pic-slide2 {
     margin-top: 55px;
     margin-bottom: 10px;
-  }
+  } */
   /* Package Component CSS End */
 
   /* Teams Component CSS Start */

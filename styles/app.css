@@ -4856,7 +4856,8 @@ body:not(.touch-device) .header__item:hover .header__body {
 }
 
 .package__info {
-  max-width: 250px;
+  /* max-width: 250px; */
+  max-width: unset;
   margin-bottom: 50px;
   color: #999FAE;
 }
@@ -4970,7 +4971,8 @@ body:not(.touch-device) .header__item:hover .header__body {
 .package__preview .package__pic {
   width: auto;
   max-width: 100%;
-  max-height: 400px;
+  /* max-height: 400px; */
+  max-height: 363px;
 }
 
 .package__circles .package__circle:first-child {
