@@ -37,10 +37,11 @@ export default function Home() {
         <Work />
         <Layouts />
         <Access />
+        <Partners />
         <Design />
         <Teams />
-
         <Like />
+
         {/* <Plan />
         <Speed />
         <Demo />
@@ -48,7 +49,6 @@ export default function Home() {
         <Tool />
         <Roadmap />
         <Accord />
-        <Partners />
         <Quality />
         <Showcase />
         <Offer /> */}

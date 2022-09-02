@@ -51,9 +51,7 @@ const Main = () => {
                             </span>
                         </h1>
                         <div className="main__info info ms-3" data-aos="animation-scale-y" data-aos-delay="400">
-                            We build valuable solutions
-                            <br />
-                            with code.
+                            We build valuable solutions with code.
                         </div>
                         <div className="main__control ms-3" data-aos="animation-scale-y" data-aos-delay="550">
                             <a className="main__btn btn btn_purple" href="./login">Get in Touch</a>

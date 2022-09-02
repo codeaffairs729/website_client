@@ -9,11 +9,19 @@ const Like = () => {
           <div className="like__container">
             <div className="like__wrap">
               <h2 className="like__title title" data-aos="animation-scale-x">
-                Reliable Solutions
-                {/* <span className="title__color">!</span> */}
+                Why Code Garage
+                <span className="title__color">?</span>
               </h2>
               <div className="like__text" data-aos="animation-scale-x" data-aos-delay="150">
-                <p>Provide intelligent solutions breaking any form of complexity through our extensive experience.</p>
+                <p>
+                  Let us take care of your problems.
+                </p>
+                <ul className="like-list" data-aos="animation-scale-y" data-aos-delay="200">
+                    <li>Quality 1</li>
+                    <li>Quality 2</li>
+                    <li>Quality 3</li>
+                    <li>Quality 4</li>
+                </ul>
               </div>
               <div className="like__btn" data-aos="animation-scale-x" data-aos-delay="300">
                 <button className="btn btn_purple" onClick={() => { Router.push('./contact') }} >See Our Work</button>
