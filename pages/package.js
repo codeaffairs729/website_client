@@ -1,7 +1,67 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
 import Slider from "react-slick";
+import SubSlider from "../components/index/services/subSlider";
 
 const Package = () => {
+    const designIcons = [
+        ["Figma","images/FIGMA.png"],
+        ["Miro", "images/FIGMA.png"],
+        ["Sketch", "images/FIGMA.png"],
+        ["Adobe Xd","images/FIGMA.png"],
+        ["Framer","images/FIGMA.png"],
+        ["Ant Design", "images/FIGMA.png"],
+        ["Material UI","images/FIGMA.png"],
+        ["Tailwind", "images/FIGMA.png"],
+        ["Booststrap", "images/FIGMA.png"]
+    ]
+
+    const webIcons = [
+        ["Ruby on Rails", "images/ror_orig.png"],
+        ["ReactJs", "images/react_2.png"],
+        ["NextJs", ""],
+        ["VueJs", "images/vuejs.png"],
+        ["NuxtJs", ""],
+        ["NodeJs", "images/node_2.png"],
+        ["Laravel", "images/laravel.png"],
+        ["Shopify", "images/shopify.png"],
+        ["Wordpress", ""]
+    ]
+
+    const mobileIcons = [
+        ["React Native", "images/react_native.png"],
+        ["Ionic", ""],
+        ["Flutter", "images/flutter.png"],
+        ["iOS Native", ""],
+        ["Android Native","images/android_4.png"]
+    ]
+
+    const slider1 = useRef(null);
+    const subSlider1 = useRef(null);
+    const subSlider2 = useRef(null);
+    const subSlider3 = useRef(null);
+
+    const play = () => {
+        slider1.slickPlay();
+    }
+
+    const pause = () => {
+        slider1.slickPause();
+    }
+
+    const subSliderPause = () => {
+        slider1.slickPause();
+        subSlider1.slickPause();
+        subSlider2.slickPause();
+        subSlider3.slickPause();
+    }
+
+    const subSliderPlay = () => {
+        slider1.slickPlay();
+        subSlider1.slickPlay();
+        subSlider2.slickPlay();
+        subSlider3.slickPlay();
+    }
+
     const packageSettings = {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -17,11 +77,19 @@ const Package = () => {
                     <use xlinkHref="img/sprite.svg#icon-arrow-next"></use>
                 </svg>
             </button>,
-        speed: 700,
+        speed: 2000,
         fade: true,
         adaptiveHeight: true,
-        // autoplay: true,
+        autoplay: true,
+        pauseOnHover: false,
         responsive: [{
+            breakpoint: 1199,
+            settings: {
+                dots: false,
+                arrows: false
+            }
+        },
+        {
             breakpoint: 768,
             settings: {
                 dots: false
@@ -32,11 +100,27 @@ const Package = () => {
     const packageSubsliderSettings = {
         dots: false,
         arrows: false,
+        prevArrow: <button>
+                <svg className="icon icon-arrow-prev">
+                    <use xlinkHref="img/sprite.svg#icon-arrow-prev"></use>
+                </svg>
+            </button>,
+        nextArrow: <button>
+                <svg className="icon icon-arrow-next">
+                    <use xlinkHref="img/sprite.svg#icon-arrow-next"></use>
+                </svg>
+            </button>,
         infinite: true,
         speed: 700,
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
     };
 
     return (
@@ -45,11 +129,13 @@ const Package = () => {
                 <div className="package__center center">
                     <div className="package__container">
                         <div className="package__wrap">
-                            <Slider className="package__slider js-package-slider" {...packageSettings}>
+                            {/* <button className="btn btn-dark" style={{ zIndex: "2", position: "relative" }} onClick={() => play()} >Play</button>
+                            <button className="btn btn-dark" style={{ zIndex: "2", position: "relative" }} onClick={() => pause()} >Pause</button> */}
+                            <Slider ref={(newSlider1) => { slider1 = newSlider1} } className="package__slider js-package-slider" {...packageSettings}>
                                 <div className="package__slide">
                                     <div className="package__row row">
                                         <div className="col-lg-5">
-                                            <div className="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
+                                            <div onMouseOver={() => pause()} onMouseOut={() => play()} className="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
                                                 <div className="package__category">
                                                     <div className="package__icon">
                                                         <img className="package__pic" src="img/smile-2.svg" alt=""/>
@@ -99,58 +185,27 @@ const Package = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-lg-7" style={{ margin: "auto" }} >
+                                        <div className="col-lg-7 d-flex justify-content-center" >
                                             <div className="package__preview row">
-                                                <div className='col-lg-12' >
-                                                    <img className="package__pic" src="images/laptop_4.png" alt="" />
+                                                <div className='col-lg-12 d-flex justify-content-center align-items-center' >
+                                                    <img onMouseOver={() => pause()} onMouseOut={() => play()} className="package__pic" src="images/laptop_4.png" alt="" />
 
                                                     {/* <img className="package-pic-figma" src="images/FIGMA.png" alt="" />
                                                     <img className="package-pic-diamond" src="images/sketch-new.png" alt="" />
                                                     <img className="package-pic-image_32" src="images/image_32.png" alt="" />
                                                     <img className="package-pic-image_31" src="images/image_31.png" alt="" /> */}
                                                 </div>
-                                                <div className='col-lg-12 py-3' >
-                                                    <Slider {...packageSubsliderSettings} >
-                                                        <div className='row'>
-                                                            <div className='col-lg-12 d-flex justify-content-center' >
-                                                                <img className="package-subslider-img" src="images/FIGMA.png" alt="" />
-                                                            </div>
-                                                            <div className='col-lg-12 py-3' >
-                                                                <h6>Figma</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className='row'>
-                                                            <div className='col-lg-12 d-flex justify-content-center' >
-                                                                <img className="package-subslider-img" src="images/FIGMA.png" alt="" />
-                                                            </div>
-                                                            <div className='col-lg-12 py-3' >
-                                                                <h6>Figma</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className='row'>
-                                                            <div className='col-lg-12 d-flex justify-content-center' >
-                                                                <img className="package-subslider-img" src="images/FIGMA.png" alt="" />
-                                                            </div>
-                                                            <div className='col-lg-12 py-3' >
-                                                                <h6>Figma</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className='row'>
-                                                            <div className='col-lg-12 d-flex justify-content-center' >
-                                                                <img className="package-subslider-img" src="images/FIGMA.png" alt="" />
-                                                            </div>
-                                                            <div className='col-lg-12 py-3' >
-                                                                <h6>Figma</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className='row'>
-                                                            <div className='col-lg-12 d-flex justify-content-center' >
-                                                                <img className="package-subslider-img" src="images/FIGMA.png" alt="" />
-                                                            </div>
-                                                            <div className='col-lg-12 py-3' >
-                                                                <h6>Figma</h6>
-                                                            </div>
-                                                        </div>
+                                                <div onMouseOver={() => subSliderPause()} onMouseOut={() => subSliderPlay()} className='col-lg-10 m-auto subSliderIcons' >
+                                                    <Slider ref={(newSubSlider1) => { subSlider1 = newSubSlider1}} className="package-subslider d-flex align-items-center" {...packageSubsliderSettings} >
+                                                        {
+                                                            designIcons.map((element, index) => {
+                                                                return <SubSlider
+                                                                    key={index}
+                                                                    techImage={element[1]}
+                                                                    techName={element[0]}
+                                                                />
+                                                            })
+                                                        }
                                                     </Slider>
                                                 </div>
                                             </div>
@@ -160,7 +215,7 @@ const Package = () => {
                                 <div className="package__slide">
                                     <div className="package__row row">
                                         <div className="col-lg-5">
-                                            <div className="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
+                                            <div onMouseOver={() => pause()} onMouseOut={() => play()} className="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
                                                 <div className="package__category">
                                                     <div className="package__icon">
                                                         <img className="package__pic" src="images/frame.png" alt="" style={{ height: "24px", width: "auto" }} />
@@ -212,10 +267,10 @@ const Package = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-lg-7" style={{ margin: "auto" }} >
+                                        <div className="col-lg-7 d-flex justify-content-center" >
                                             <div className="package__preview row">
-                                                <div className='col-lg-12' >
-                                                    <img className="package__pic package-pic-slide2" src="images/laptop_3.png" alt="" />
+                                                <div className='col-lg-12 d-flex justify-content-center align-items-center' >
+                                                    <img onMouseOver={() => pause()} onMouseOut={() => play()} className="package__pic package-pic-slide2" src="images/laptop_3.png" alt="" />
 
                                                     {/* <img className="package-pic-shopify" src="images/shopify.png" alt="" />
                                                     <img className="package-pic-angular" src="images/angular.png" alt="" />
@@ -224,48 +279,17 @@ const Package = () => {
                                                     <img className="package-pic-nodejs" src="images/node_2.png" alt="" />
                                                     <img className="package-pic-ror" src="images/ror_orig.png" alt="" /> */}
                                                 </div>
-                                                <div className='col-lg-12 py-3' >
-                                                    <Slider {...packageSubsliderSettings} >
-                                                        <div className='row'>
-                                                            <div className='col-lg-12 d-flex justify-content-center' >
-                                                                <img className="package-subslider-img" src="images/FIGMA.png" alt="" />
-                                                            </div>
-                                                            <div className='col-lg-12 py-3' >
-                                                                <h6>Figma</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className='row'>
-                                                            <div className='col-lg-12 d-flex justify-content-center' >
-                                                                <img className="package-subslider-img" src="images/FIGMA.png" alt="" />
-                                                            </div>
-                                                            <div className='col-lg-12 py-3' >
-                                                                <h6>Figma</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className='row'>
-                                                            <div className='col-lg-12 d-flex justify-content-center' >
-                                                                <img className="package-subslider-img" src="images/FIGMA.png" alt="" />
-                                                            </div>
-                                                            <div className='col-lg-12 py-3' >
-                                                                <h6>Figma</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className='row'>
-                                                            <div className='col-lg-12 d-flex justify-content-center' >
-                                                                <img className="package-subslider-img" src="images/FIGMA.png" alt="" />
-                                                            </div>
-                                                            <div className='col-lg-12 py-3' >
-                                                                <h6>Figma</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className='row'>
-                                                            <div className='col-lg-12 d-flex justify-content-center' >
-                                                                <img className="package-subslider-img" src="images/FIGMA.png" alt="" />
-                                                            </div>
-                                                            <div className='col-lg-12 py-3' >
-                                                                <h6>Figma</h6>
-                                                            </div>
-                                                        </div>
+                                                <div onMouseOver={() => subSliderPause()} onMouseOut={() => subSliderPlay()} className='col-lg-10 m-auto subSliderIcons' >
+                                                    <Slider ref={(newSubSlider2) => { subSlider2 = newSubSlider2}} {...packageSubsliderSettings} className="package-subslider d-flex align-items-center" >
+                                                        {
+                                                            webIcons.map((element, index) => {
+                                                                return <SubSlider
+                                                                    key={index}
+                                                                    techImage={element[1]}
+                                                                    techName={element[0]}
+                                                                />
+                                                            })
+                                                        }
                                                     </Slider>
                                                 </div>
                                             </div>
@@ -275,7 +299,7 @@ const Package = () => {
                                 <div className="package__slide">
                                     <div className="package__row row">
                                         <div className="col-lg-5">
-                                            <div className="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
+                                            <div onMouseOver={() => pause()} onMouseOut={() => play()} className="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
                                                 <div className="package__category">
                                                     <div className="package__icon">
                                                         <img className="package__pic" src="images/mobile-front-color.png" alt="" style={{ height: "24px", width: "auto" }} />
@@ -324,58 +348,27 @@ const Package = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-lg-7" style={{ margin: "auto" }} >
+                                        <div className="col-lg-7 d-flex justify-content-center" >
                                             <div className="package__preview row package-preview-mobile">
-                                                <div className='col-lg-12 d-flex justify-content-center' >
-                                                    <img className="package__pic package-pic-mobile" src="images/mobile_2.png" alt="" />
+                                                <div className='col-lg-12 d-flex justify-content-center align-items-center' >
+                                                    <img onMouseOver={() => pause()} onMouseOut={() => play()} className="package__pic package-pic-mobile" src="images/mobile_2.png" alt="" />
 
                                                     {/* <img className="package-pic-android" src="images/android_4.png" alt="" />
                                                     <img className="package-pic-flutter" src="images/flutter.png" alt="" />
                                                     <img className="package-pic-react_2" src="images/react_2.png" alt="" />
                                                     <img className="package-pic-swift" src="images/swift_1.png" alt="" /> */}
                                                 </div>
-                                                <div className='col-lg-12 py-3' >
-                                                    <Slider {...packageSubsliderSettings} >
-                                                        <div className='row'>
-                                                            <div className='col-lg-12 d-flex justify-content-center' >
-                                                                <img className="package-subslider-img" src="images/FIGMA.png" alt="" />
-                                                            </div>
-                                                            <div className='col-lg-12 py-3' >
-                                                                <h6>Figma</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className='row'>
-                                                            <div className='col-lg-12 d-flex justify-content-center' >
-                                                                <img className="package-subslider-img" src="images/FIGMA.png" alt="" />
-                                                            </div>
-                                                            <div className='col-lg-12 py-3' >
-                                                                <h6>Figma</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className='row'>
-                                                            <div className='col-lg-12 d-flex justify-content-center' >
-                                                                <img className="package-subslider-img" src="images/FIGMA.png" alt="" />
-                                                            </div>
-                                                            <div className='col-lg-12 py-3' >
-                                                                <h6>Figma</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className='row'>
-                                                            <div className='col-lg-12 d-flex justify-content-center' >
-                                                                <img className="package-subslider-img" src="images/FIGMA.png" alt="" />
-                                                            </div>
-                                                            <div className='col-lg-12 py-3' >
-                                                                <h6>Figma</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className='row'>
-                                                            <div className='col-lg-12 d-flex justify-content-center' >
-                                                                <img className="package-subslider-img" src="images/FIGMA.png" alt="" />
-                                                            </div>
-                                                            <div className='col-lg-12 py-3' >
-                                                                <h6>Figma</h6>
-                                                            </div>
-                                                        </div>
+                                                <div onMouseOver={() => subSliderPause()} onMouseOut={() => subSliderPlay()} className='col-lg-10 m-auto subSliderIcons' >
+                                                    <Slider ref={(newSubSlider3) => { subSlider3 = newSubSlider3}} {...packageSubsliderSettings} className="package-subslider d-flex align-items-center">
+                                                        {
+                                                            mobileIcons.map((element, index) => {
+                                                                return <SubSlider
+                                                                    key={index}
+                                                                    techImage={element[1]}
+                                                                    techName={element[0]}
+                                                                />
+                                                            })
+                                                        }
                                                     </Slider>
                                                 </div>
                                             </div>

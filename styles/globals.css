@@ -147,6 +147,8 @@ a {
   /* width: 100%; */
   /* height: 40px; */
   height: 14px;
+  /* -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); */
 }
 
 .header-solutions-outer {
@@ -1369,7 +1371,7 @@ a {
 /* Package Component CSS End */
 .package__preview {
   width: 100%;
-  margin: auto;
+  /* margin: auto; */
   padding-top: 0;
   position: relative;
 }
@@ -1534,26 +1536,36 @@ a {
 }
 
 .package-subslider-img {
-  width: 50px;
+  height: 50px;
 }
 
 .package__slider .slick-prev {
   position: absolute;
   top: -7.5%;
   left: 0;
+  background: #FAB8C4;
+}
+
+.package__slider .slick-prev:hover {
+  background: #FAB8C4;
 }
 
 .package__slider .slick-next {
   position: absolute;
   top: -7.5%;
-  left: 5%;
+  left: 33%;
+  background: #5956E9;
+}
+
+.package__slider .slick-next:hover {
+  background: #5956E9;
 }
 
 .package__slider .slick-arrow {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #FAB8C4;
+  /* background: #FAB8C4; */
   font-size: 0;
   -webkit-transition: all .25s;
   -o-transition: all .25s;
@@ -1565,13 +1577,59 @@ a {
   fill: #fff;
 }
 
-.package__slider .slick-arrow:hover {
+/* .package__slider .slick-arrow:hover { */
   /* background: #5956E9; */
-  background: #FFDC60;
-}
+  /* background: #FFDC60;
+} */
 
 .package__slider .slick-list {
   height: auto !important;
+}
+
+.package-subslider .slick-prev {
+  position: unset;
+  top: 0;
+  left: 0;
+  background: #FAB8C4;
+}
+
+.package-subslider .slick-prev:hover {
+  background: #FAB8C4;
+}
+
+.package-subslider .slick-next {
+  position: unset;
+  top: 0;
+  left: 0;
+  background: #5956E9;
+}
+
+.package-subslider .slick-next:hover {
+  background: #5956E9;
+}
+
+.package-subslider .slick-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* background: #FAB8C4; */
+  font-size: 0;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+
+.package-subslider .slick-arrow .icon {
+  font-size: 12px;
+  fill: #fff;
+}
+
+.package-subslider .slick-list {
+  width: 100% !important;
+}
+
+.package {
+  z-index: 2;
 }
 /* Package Component CSS End */
 
@@ -1827,6 +1885,14 @@ a {
   .package__title {
     font-size: 40px;
   }
+
+  .package__slider {
+    margin-right: 0;
+  }
+
+  .subSliderIcons {
+    padding-top: 2rem;
+  }
   /* Package Component CSS End */
 }
 
@@ -2031,6 +2097,10 @@ a {
     margin-top: 74px;
     margin-bottom: 15px;
   } */
+
+  .subSliderIcons {
+    padding-top: 1.5rem;
+  }
   /* Package Component CSS End */
 
   /* Trophies Component CSS Start */
@@ -2370,6 +2440,10 @@ a {
     margin-top: 55px;
     margin-bottom: 10px;
   } */
+
+  .package__row {
+    padding-bottom: 0;
+  }
   /* Package Component CSS End */
 
   /* Teams Component CSS Start */

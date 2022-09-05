@@ -17,12 +17,12 @@ const Main = () => {
                                         options={{
                                             strings: [
                                                 '<span style="color: #5956E9" >Software Engineering</span>',
-                                                '<span style="color: #5956E9" >App Monitoring</span>',
+                                                '<span style="color: #5956E9" >Tech Consultation</span>',
+                                                '<span style="color: #5956E9" >Cloud Management</span>',
                                                 '<span style="color: #5956E9" >CRM Solutions</span>',
                                                 '<span style="color: #5956E9" >CMS Solutions</span>',
-                                                '<span style="color: #5956E9" >App Deployment</span>',
-                                                '<span style="color: #5956E9" >Tech Consulting</span>',
-                                                '<span style="color: #5956E9" >Cloud Management</span>'
+                                                '<span style="color: #5956E9" >E-com Solutions</span>',
+                                                '<span style="color: #5956E9" >Digital Marketing</span>'
                                             ],
                                             autoStart: true,
                                             loop: true,
