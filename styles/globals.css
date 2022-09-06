@@ -2515,6 +2515,10 @@ a {
     display: none;
   }
   /* Header Component CSS End */
+
+  .package__title {
+    width: max-content;
+  }
 }
 
 @media only screen and (max-width: 1365px) {
