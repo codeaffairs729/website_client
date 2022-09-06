@@ -178,7 +178,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/shopify_icon.png" alt="" />
+                                                                <img className="header-solutions-icon" src="icons/wordpress.png" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
                                                                 <div className="header__info">Wordpress</div>
@@ -356,7 +356,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/flutter.png" alt="" />
+                                                                <img className="header-solutions-icon" src="icons/ionic.png" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
                                                                 <div className="header__info">Ionic</div>
