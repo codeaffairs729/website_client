@@ -10,58 +10,72 @@ const Work = () => {
           {/* <div className='work-text-right-btn' >Get Free Consultation</div> */}
           <button className='btn btn-primary work-text-right-btn' >Get Free Consultation</button>
         </div>
-        <div className="work__hand" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0">
+        {/* <div className="work__hand" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0">
           <img className="work__pic js-parallax" data-scale="1.2" data-orientation="down" src="img/hand-2.png" alt="" />
           <div className="work-img-bulb-outer" >
             <img className="work-img-bulb" src="images/bulb-front-color.png" alt="" />
             <p className='work-img-bulb-text' >Your Idea</p>
           </div>
-        </div>
-        <div className='work-arrow-1-outer' data-aos="fade-up" data-aos-duration="800" data-aos-offset="0" >
-          <img className='work-arrow-1-img' src='images/arrow-1.png' alt='' />
-        </div>
+        </div> */}
+        {/* <div className='work-arrow-1-outer' data-aos="fade-up" data-aos-duration="800" data-aos-offset="0" >
+          <img className='work-arrow-1-img' src='images/work-arrow-1.png' alt='' />
+        </div> */}
         {/* <div className='work-connection-line-1-outer' data-aos="fade-up" data-aos-duration="800" data-aos-offset="0" >
           <hr className="work-connection-line-1" />
           <span className='work-link-ball-1 work-link-ball-1-floating' ></span>
         </div> */}
         <div className='work-circle-white' >
+          <div className="work__hand" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0">
+            <img className="work__pic js-parallax" data-scale="1.2" data-orientation="down" src="img/hand-2.png" alt="" />
+            <div className="work-img-bulb-outer" >
+              <img className="work-img-bulb" src="images/bulb-front-color.png" alt="" />
+              {/* <p className='work-img-bulb-text' >Your Idea</p> */}
+            </div>
+          </div>
           <div className="work-img-msg-outer" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0" >
             <img className="work-img-msg" src="images/chat-text-front-clay.png" alt="" />
-            <p className='work-img-bulb-text' >Discussion &<br/>Consultation</p>
+            {/* <p className='work-img-bulb-text' >Discussion &<br/>Consultation</p> */}
           </div>
           <img className="work-img-Float" src="images/Float.png" alt="" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0" />
           <div className="work-img-Group-outer" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0" >
             <img className="work-img-Group" src="images/Group.png" alt="" />
-            <p className='work-img-bulb-text' >Development</p>
+            {/* <p className='work-img-bulb-text' >Development</p> */}
           </div>
           <img className="work-img-rocket" src="images/rocket-iso-color.png" alt="" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0" />
           <div className="work-img-chart-outer" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0" >
             <img className="work-img-chart" src="images/chart-front-color.png" alt="" />
-            <p className='work-img-bulb-text' >Monitoring<br/>&<br/>Future planning</p>
+            {/* <p className='work-img-bulb-text' >Monitoring<br/>&<br/>Future planning</p> */}
           </div>
           {/* <span className='work-link-ball-3 work-link-ball-3-floating' ></span>
           <span className='work-link-ball-3 work-link-ball-4-floating' ></span>
           <span className='work-link-ball-3 work-link-ball-5-floating' ></span>
           <span className='work-link-ball-3 work-link-ball-6-floating' ></span>
           <span className='work-link-ball-3 work-link-ball-7-floating' ></span> */}
-          <img className='work-arrow-2-img' src='images/arrow-2.png' alt='' />
-          <img className='work-arrow-3-img' src='images/arrow-3.png' alt='' />
-          <img className='work-arrow-4-img' src='images/arrow-4.png' alt='' />
-          <img className='work-arrow-5-img' src='images/arrow-5.png' alt='' />
-          <img className='work-arrow-6-img' src='images/arrow-6.png' alt='' />
+          <img className='work-arrow-1-img' src='images/work-arrow-1.png' alt='' />
+          <img className='work-arrow-2-img' src='images/work-arrow-2.png' alt='' />
+          <img className='work-arrow-3-img' src='images/work-arrow-3.png' alt='' />
+          <img className='work-arrow-4-img' src='images/work-arrow-4.png' alt='' />
+          <img className='work-arrow-5-img' src='images/work-arrow-6.png' alt='' />
+          <img className='work-arrow-6-img' src='images/work-arrow-7.png' alt='' />
+          <img className='work-arrow-7-img' src='images/work-arrow-5.png' alt='' />
+
+          <div className="work-img-money-outer" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0" >
+            <img className="work-img-money" src="images/work-money.png" alt="" />
+            {/* <p className='work-img-bulb-text' >Your Revenue</p> */}
+          </div>
         </div>
         {/* <div className='work-connection-line-2-outer' >
           <hr className="work-connection-line-2" />
           <span className='work-link-ball-2 work-link-ball-2-floating' ></span>
         </div> */}
         {/* <img className="work-img-megaphone" src="images/megaphone-front-color.png" alt="" /> */}
-        <div className='work-arrow-7-outer' data-aos="fade-up" data-aos-duration="800" data-aos-offset="0" >
-          <img className='work-arrow-7-img' src='images/arrow-1.png' alt='' />
-        </div>
-        <div className="work-img-money-outer" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0" >
-          <img className="work-img-money" src="images/money-front-color.png" alt="" />
+        {/* <div className='work-arrow-7-outer' data-aos="fade-up" data-aos-duration="800" data-aos-offset="0" >
+          <img className='work-arrow-7-img' src='images/work-arrow-5.png' alt='' />
+        </div> */}
+        {/* <div className="work-img-money-outer" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0" >
+          <img className="work-img-money" src="images/work-money.png" alt="" />
           <p className='work-img-bulb-text' >Your Revenue</p>
-        </div>
+        </div> */}
         {/* <div className="showcase__center center">
           <div className="showcase__wrap">
             <div className="showcase__top" data-aos="animation-scale-y">

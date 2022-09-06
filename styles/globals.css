@@ -1002,8 +1002,8 @@ a {
 
 .work-img-msg-outer {
   position: absolute;
-  top: 25%;
-  left: -35px;
+  top: -4%;
+  left: 10px;
   text-align: center;
   z-index: 1;
 }
@@ -1014,18 +1014,16 @@ a {
 
 .work-img-Float {
   position: absolute;
-  top: -35px;
-  left: 0;
-  right: 0;
-  margin: auto;
+  top: -25px;
+  right: 11%;
   width: 70px;
   z-index: 1;
 }
 
 .work-img-Group-outer {
   position: absolute;
-  top: 25%;
-  right: -30px;
+  top: 50%;
+  right: -25px;
   text-align: center;
   z-index: 1;
 }
@@ -1036,8 +1034,10 @@ a {
 
 .work-img-rocket {
   position: absolute;
-  bottom: 0;
-  right: 20px;
+  bottom: -26px;
+  right: 0;
+  left: 0;
+  margin: auto;
   width: 70px;
   z-index: 1;
 }
@@ -1051,8 +1051,8 @@ a {
 
 .work-img-chart-outer {
   position: absolute;
-  bottom: -80px;
-  left: 20px;
+  bottom: 63px;
+  left: -28px;
   text-align: center;
   z-index: 1;
 }
@@ -1063,8 +1063,8 @@ a {
 
 .work-img-money-outer {
   position: absolute;
-  top: 70%;
-  right: 25%;
+  bottom: -50%;
+  right: -20%;
   text-align: center;
   z-index: 1;
 }
@@ -1075,8 +1075,8 @@ a {
 
 .work__hand {
   position: absolute !important;
-  top: 34% !important;
-  left: 15% !important;
+  top: 0% !important;
+  left: -85% !important;
   width: 80px !important;
 }
 
@@ -1085,7 +1085,7 @@ a {
   top: 50%;
   left: 50%;
   /* background: white; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 300px;
   height: 300px;
   transform: translate(-50%, -50%);
@@ -1286,60 +1286,67 @@ a {
   z-index: 0;
 }
 
-.work-arrow-1-outer {
+/* .work-arrow-1-outer {
   position: absolute;
-  top: 38%;
-  left: 22%;
-}
+  top: 220px;
+  left: 330px;
+} */
 
 .work-arrow-1-img {
-  width: 200px;
+  position: absolute;
+  width: 180px;
+  top: 7%;
+  left: -56%;
 }
 
-.work-arrow-7-outer {
+/* .work-arrow-7-outer {
   position: absolute;
-  bottom: 14%;
-  right: 28%;
+  bottom: 10%;
+  right: 39%;
   z-index: 1;
-}
+} */
 
 .work-arrow-7-img {
-  width: 200px;
+  position: absolute;
+  width: 150px;
+  right: 0%;
+  bottom: -40%;
 }
 
 .work-arrow-2-img {
   position: absolute;
   top: -4%;
-  left: 0;
-  width: 120px;
+  left: 17%;
+  width: 150px;
 }
 
 .work-arrow-3-img {
   position: absolute;
-  top: -10%;
-  right: 0;
-  width: 120px;
+  top: 5%;
+  right: -13px;
+  width: 80px;
 }
 
 .work-arrow-4-img {
   position: absolute;
-  right: -8%;
-  bottom: 6%;
+  right: 2%;
+  bottom: -3%;
   width: 120px;
+  transform: rotate(7deg);
 }
 
 .work-arrow-5-img {
   position: absolute;
-  bottom: -12%;
-  left: 32%;
-  width: 140px;
+  bottom: -3%;
+  left: 7%;
+  width: 130px;
 }
 
 .work-arrow-6-img {
   position: absolute;
-  left: -9%;
-  bottom: 5%;
-  width: 120px;
+  left: -3%;
+  bottom: 31%;
+  width: 40px;
 }
 /* Work Component CSS End */
 
@@ -2117,6 +2124,23 @@ a {
   .subSliderIcons {
     padding-top: 1.5rem;
   }
+
+  .work-arrow-1-outer {
+    top: 32%;
+    left: 11.5%;
+  }
+
+  /* .work__hand {
+    left: 0% !important;
+  } */
+
+  .work-arrow-7-outer {
+    right: 34%;
+  }
+
+  /* .work-img-money-outer {
+    right: 25%;
+  } */
   /* Package Component CSS End */
 
   /* Trophies Component CSS Start */
@@ -2471,6 +2495,62 @@ a {
 
   .title-ui-ux {
     max-width: 240px;
+  }
+
+  /* .work-arrow-1-outer {
+    top: 20%;
+    left: 11.5%;
+    transform: rotate(50deg) !important;
+  } */
+
+  .work-arrow-1-img {
+    top: -25%;
+    left: -18%;
+    transform: rotate(90deg) !important;
+    width: 120px;
+  }
+
+  /* .work-arrow-1-outer {
+    top: 17%;
+    left: -2%;
+    transform: rotate(90deg) !important;
+  } */
+
+  .work__pic {
+    width: 60%;
+  }
+
+  .work-img-bulb {
+    width: 60px;
+  }
+
+  .work__hand {
+    top: -45% !important;
+    left: -15% !important;
+  }
+
+  .work-img-bulb-outer {
+    right: -15px;
+  }
+
+  /* .work-arrow-7-outer {
+    bottom: 13%;
+    right: 20%;
+  } */
+
+  .work-arrow-7-img {
+    right: 10%;
+    bottom: -35%;
+    width: 120px;
+  }
+
+  .work-img-money-outer {
+    bottom: -45%;
+    right: -5%;
+  }
+
+  .work-img-money {
+    width: 50px;
   }
   /* Package Component CSS End */
 
