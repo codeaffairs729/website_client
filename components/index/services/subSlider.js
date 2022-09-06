@@ -8,8 +8,8 @@ const SubSlider = (props) => {
                 <div className='col-lg-12 d-flex justify-content-center' >
                     <img className="package-subslider-img" src={techImage} alt={techName} />
                 </div>
-                <div className='col-lg-12 py-3' >
-                    <h6>{techName}</h6>
+                <div className='col-lg-12 package-subslider-name' >
+                    <h6 className='package-subslider-h6' >{techName}</h6>
                 </div>
             </div>
         </>

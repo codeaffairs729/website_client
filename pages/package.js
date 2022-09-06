@@ -4,35 +4,36 @@ import SubSlider from "../components/index/services/subSlider";
 
 const Package = () => {
     const designIcons = [
-        ["Figma","images/FIGMA.png"],
-        ["Miro", "images/FIGMA.png"],
-        ["Sketch", "images/FIGMA.png"],
-        ["Adobe Xd","images/FIGMA.png"],
-        ["Framer","images/FIGMA.png"],
-        ["Ant Design", "images/FIGMA.png"],
-        ["Material UI","images/FIGMA.png"],
-        ["Tailwind", "images/FIGMA.png"],
-        ["Booststrap", "images/FIGMA.png"]
+        ["Figma","icons/figma.png"],
+        ["Miro", "icons/miro.png"],
+        ["Sketch", "icons/sketch_1.png"],
+        ["Adobe Xd","icons/adobe_xd.png"],
+        ["Framer","icons/framer.png"],
+        ["Ant Design", "icons/ant-design.png"],
+        ["Material UI","icons/material_ui.png"],
+        ["Tailwind", "icons/tailwind.png"],
+        ["Booststrap", "icons/bootstrap_1.png"],
+        ["Principle", "icons/principle.png"]
     ]
 
     const webIcons = [
-        ["Ruby on Rails", "images/ror_orig.png"],
-        ["ReactJs", "images/react_2.png"],
-        ["NextJs", ""],
-        ["VueJs", "images/vuejs.png"],
-        ["NuxtJs", ""],
-        ["NodeJs", "images/node_2.png"],
-        ["Laravel", "images/laravel.png"],
+        ["Ruby on Rails", "icons/rails.png"],
+        ["ReactJs", "icons/reactjs.png"],
+        ["NextJs", "icons/nextjs.png"],
+        ["VueJs", "icons/vuejs.png"],
+        ["NuxtJs", "icons/nuxtjs.png"],
+        ["NodeJs", "icons/nodejs.png"],
+        ["Laravel", "icons/laravel.png"],
         ["Shopify", "images/shopify.png"],
-        ["Wordpress", ""]
+        ["Wordpress", "icons/wordpress.png"]
     ]
 
     const mobileIcons = [
-        ["React Native", "images/react_native.png"],
-        ["Ionic", ""],
+        ["React Native", "icons/reactjs.png"],
+        ["Ionic", "icons/ionic.png"],
         ["Flutter", "images/flutter.png"],
-        ["iOS Native", ""],
-        ["Android Native","images/android_4.png"]
+        ["Swift / iOS", "icons/swift.png"],
+        ["Android","images/android_4.png"]
     ]
 
     const slider1 = useRef(null);
@@ -86,13 +87,15 @@ const Package = () => {
             breakpoint: 1199,
             settings: {
                 dots: false,
-                arrows: false
+                arrows: false,
+                pauseOnHover: true
             }
         },
         {
             breakpoint: 768,
             settings: {
-                dots: false
+                dots: false,
+                pauseOnHover: true
             }
         }]
     };
@@ -138,16 +141,13 @@ const Package = () => {
                                             <div onMouseOver={() => pause()} onMouseOut={() => play()} className="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
                                                 <div className="package__category">
                                                     <div className="package__icon">
-                                                        <img className="package__pic" src="img/smile-2.svg" alt=""/>
+                                                        <img className="package__pic" src="images/content-management-system.png" alt=""/>
                                                     </div>
                                                     <div className="package__text">What we do</div>
                                                 </div>
-                                                <h3 className="package__title title title_sm">UI/UX Services</h3>
+                                                <h3 className="package__title title title_sm title-ui-ux">UI/UX Services</h3>
                                                 <div className="package__info">
-                                                    {/* It’s easy to share designs across the organization, so team collaboration is fast and easy. */}
-                                                    Not just mobile apps, we build user-friendly mobile experience on iOS and Android platforms.
-                                                    We have developed Awesome apps for our clients.
-                                                    Apps that resolve real-life problems, that got featured over store, and generate revenue.
+                                                    Driven by the values of empathy & impact, we are thriving towards this vision. From research backed design decisions to jaw dropping pixels, It's a no brainer to cook your idea in our lab.
                                                 </div>
                                                 <div className="package__list">
                                                     {/* <a className="package__link" href="#">
@@ -168,8 +168,11 @@ const Package = () => {
                                                         <li>Interactive Prototyping</li>
                                                     </ul>
                                                 </div>
-                                                <div className="package__btns">
-                                                    <div className="package__arrows">
+                                                <div className='row'>
+                                                    <a className="package__btn btn btn_purple" href="./login">Get Started</a>
+                                                </div>
+                                                {/* <div className="package__btns">
+                                                    <div className="package__arrows"> */}
                                                         {/* <button className="package__arrow js-package-prev">
                                                             <svg className="icon icon-arrow-prev">
                                                                 <use xlinkHref="img/sprite.svg#icon-arrow-prev"></use>
@@ -180,9 +183,9 @@ const Package = () => {
                                                                 <use xlinkHref="img/sprite.svg#icon-arrow-next"></use>
                                                             </svg>
                                                         </button> */}
-                                                    </div>
+                                                    {/* </div>
                                                     <a className="package__btn btn btn_purple" href="./login">Get Started</a>
-                                                </div>
+                                                </div> */}
                                             </div>
                                         </div>
                                         <div className="col-lg-7 d-flex justify-content-center" >
@@ -227,9 +230,10 @@ const Package = () => {
                                                     {/* We develop web solutions on all scales.
                                                     Its development of systems that take care of your valuable processes.
                                                     We develop User friendly and reliable applications that helps to solve the problems in almost every field. */}
-                                                    Not just mobile apps, we build user-friendly mobile experience on iOS and Android platforms.
+                                                    {/* Not just mobile apps, we build user-friendly mobile experience on iOS and Android platforms.
                                                     We have developed Awesome apps for our clients.
-                                                    Apps that resolve real-life problems, that got featured over store, and generate revenue.
+                                                    Apps that resolve real-life problems, that got featured over store, and generate revenue. */}
+                                                    It's the development of systems that take care of your valuable processes. We develop user friendly, reliable & scalable applications that help to boost productivity in your field and generate revenue.
                                                 </div>
                                                 <div className="package__list">
                                                     {/* <a className="package__link" href="#">
@@ -250,8 +254,11 @@ const Package = () => {
                                                         <li>Secure</li>
                                                     </ul>
                                                 </div>
-                                                <div className="package__btns">
-                                                    <div className="package__arrows">
+                                                <div className='row'>
+                                                    <a className="package__btn btn btn_purple" href="./login">Get Started</a>
+                                                </div>
+                                                {/* <div className="package__btns">
+                                                    <div className="package__arrows"> */}
                                                         {/* <button className="package__arrow js-package-prev">
                                                             <svg className="icon icon-arrow-prev">
                                                                 <use xlinkHref="img/sprite.svg#icon-arrow-prev"></use>
@@ -262,9 +269,9 @@ const Package = () => {
                                                                 <use xlinkHref="img/sprite.svg#icon-arrow-next"></use>
                                                             </svg>
                                                         </button> */}
-                                                    </div>
+                                                    {/* </div>
                                                     <a className="package__btn btn btn_purple" href="./login">Get Started</a>
-                                                </div>
+                                                </div> */}
                                             </div>
                                         </div>
                                         <div className="col-lg-7 d-flex justify-content-center" >
@@ -308,9 +315,10 @@ const Package = () => {
                                                 </div>
                                                 <h3 className="package__title title title_sm">Mobile Solutions</h3>
                                                 <div className="package__info">
-                                                    Not just mobile apps, we build user-friendly mobile experience on iOS and Android platforms.
+                                                    {/* Not just mobile apps, we build user-friendly mobile experience on iOS and Android platforms.
                                                     We have developed Awesome apps for our clients.
-                                                    Apps that resolve real-life problems, that got featured over store, and generate revenue.
+                                                    Apps that resolve real-life problems, that got featured over store, and generate revenue. */}
+                                                    Not just mobile apps, we build user-friendly mobile experience. We develop apps that resolve real-life problems, that got featured over store, that dominate with values in the market.
                                                 </div>
                                                 <div className="package__list">
                                                     {/* <a className="package__link" href="#">
@@ -331,8 +339,11 @@ const Package = () => {
                                                         <li>Progressive</li>
                                                     </ul>
                                                 </div>
-                                                <div className="package__btns">
-                                                    <div className="package__arrows">
+                                                <div className='row'>
+                                                    <a className="package__btn btn btn_purple" href="./login">Get Started</a>
+                                                </div>
+                                                {/* <div className="package__btns">
+                                                    <div className="package__arrows"> */}
                                                         {/* <button className="package__arrow js-package-prev">
                                                             <svg className="icon icon-arrow-prev">
                                                                 <use xlinkHref="img/sprite.svg#icon-arrow-prev"></use>
@@ -343,9 +354,9 @@ const Package = () => {
                                                                 <use xlinkHref="img/sprite.svg#icon-arrow-next"></use>
                                                             </svg>
                                                         </button> */}
-                                                    </div>
+                                                    {/* </div>
                                                     <a className="package__btn btn btn_purple" href="./login">Get Started</a>
-                                                </div>
+                                                </div> */}
                                             </div>
                                         </div>
                                         <div className="col-lg-7 d-flex justify-content-center" >
