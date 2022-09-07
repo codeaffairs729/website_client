@@ -740,6 +740,10 @@ a {
 .layouts {
   padding: 100px 0 165px;
 }
+
+.layouts__view {
+  z-index: 1;
+}
 /* Layout Component CSS End */
 
 /* Access Component CSS Start */
@@ -996,8 +1000,9 @@ a {
 .work-img-bulb-text {
   font-weight: 700;
   color: #000000;
-  opacity: 0.4;
+  opacity: 0.7;
   font-size: 15px;
+  position: absolute;
 }
 
 .work-img-msg-outer {
@@ -1012,12 +1017,20 @@ a {
   width: 70px;
 }
 
-.work-img-Float {
+.work-img-msg-text {
+  right: -80%;
+  bottom: -35%;
+}
+
+.work-img-Float-outer {
   position: absolute;
   top: -25px;
   right: 11%;
-  width: 70px;
   z-index: 1;
+}
+
+.work-img-Float {
+  width: 70px;
 }
 
 .work-img-Group-outer {
@@ -1032,14 +1045,28 @@ a {
   height: 70px;
 }
 
-.work-img-rocket {
+.work-img-Group-text {
+  right: -200%;
+  bottom: 40%;
+}
+
+.work-img-rocket-outer {
   position: absolute;
   bottom: -26px;
   right: 0;
   left: 0;
   margin: auto;
-  width: 70px;
   z-index: 1;
+  text-align: center;
+}
+
+.work-img-rocket {
+  width: 70px;
+}
+
+.work-img-rocket-text {
+  right: 0;
+  left: 0;
 }
 
 .work-img-megaphone {
@@ -1059,6 +1086,11 @@ a {
 
 .work-img-chart {
   width: 70px;
+}
+
+.work-img-chart-text {
+  bottom: 10%;
+  left: -100%;
 }
 
 .work-img-money-outer {
@@ -1090,13 +1122,14 @@ a {
   height: 300px;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .work-text-left {
   position: absolute;
   top: 75%;
   left: 10%;
+  z-index: 2;
 }
 
 .work-text-right {
@@ -1113,6 +1146,15 @@ a {
   /* padding: 5px; */
   height: 40px;
   font-weight: 500;
+  background-color: #FAB8C4;
+  border-color: #FAB8C4;
+  color: #2522BA;
+}
+
+.work-text-right-btn:hover {
+  background-color: #FAB8C4;
+  border-color: #FAB8C4;
+  color: #2522BA;
 }
 
 .work {
@@ -1280,11 +1322,12 @@ a {
 
 .work-process {
   height: 700px;
+  overflow: visible;
 }
 
-.showcase-big-circle {
+/* .showcase-big-circle {
   z-index: 0;
-}
+} */
 
 /* .work-arrow-1-outer {
   position: absolute;
@@ -1332,7 +1375,7 @@ a {
   right: 2%;
   bottom: -3%;
   width: 120px;
-  transform: rotate(7deg);
+  transform: rotate(7deg) !important;
 }
 
 .work-arrow-5-img {
@@ -2496,7 +2539,24 @@ a {
   .title-ui-ux {
     max-width: 240px;
   }
+  /* Package Component CSS End */
 
+  /* Teams Component CSS Start */
+  .teams-main-title {
+    height: 300px;
+  }
+  /* Teams Component CSS End */
+
+  /* Footer Component CSS Start */
+  /* Footer Component CSS End */
+
+  /* Trophies Component CSS Start */
+  .trophies-cols {
+    margin-bottom: 50px;
+  }
+  /* Trophies Component CSS End */
+
+  /* Work Component CSS Start */
   /* .work-arrow-1-outer {
     top: 20%;
     left: 11.5%;
@@ -2552,22 +2612,30 @@ a {
   .work-img-money {
     width: 50px;
   }
-  /* Package Component CSS End */
 
-  /* Teams Component CSS Start */
-  .teams-main-title {
-    height: 300px;
+  .work-img-chart-text {
+    bottom: 40%;
+    left: 100%;
   }
-  /* Teams Component CSS End */
 
-  /* Footer Component CSS Start */
-  /* Footer Component CSS End */
-
-  /* Trophies Component CSS Start */
-  .trophies-cols {
-    margin-bottom: 50px;
+  .work-img-Group-text {
+    right: 105%;
+    bottom: 60%;
   }
-  /* Trophies Component CSS End */
+
+  .work-text-left {
+    position: absolute;
+    top: 7%;
+    left: 45%;
+  }
+
+  .work-text-right {
+    position: absolute;
+    right: 45%;
+    bottom: 5%;
+    z-index: 2;
+  }
+  /* Work Component CSS End */
 }
 
 @media only screen and (max-height: 767px) {
