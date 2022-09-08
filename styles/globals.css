@@ -273,6 +273,10 @@ a {
   line-height: 1.1;
   letter-spacing: -.045em;
 }
+
+.design__view {
+  border-radius: 10%;
+}
 /* design-slide-pink */
 
 /* design-slide-blue */
@@ -461,6 +465,14 @@ a {
   font-size: 0;
 }
 
+.contact_cloud_3 {
+  position: absolute;
+  right: 3%;
+  top: 45%;
+  width: 130px;
+  z-index: 1;
+}
+
 .contact__bucket {
   position: absolute;
   top: 320px;
@@ -539,6 +551,18 @@ a {
 
 .contact-submit-btn {
   height: 60px;
+}
+
+.contact-skype-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+}
+
+.contact-title {
+  font-size: 43px !important;
 }
 /* Contact Component CSS End */
 
@@ -1801,6 +1825,10 @@ a {
   background-color: #5956E9;
 }
 
+.like-list li:nth-child(4):before {
+  background-color: #48b2cc;
+}
+
 .like-list li:not(:last-child) {
   margin-bottom: 16px;
 }
@@ -1872,11 +1900,12 @@ a {
 }
 
 .partners-pic {
-  height: 34px;
+  height: 25%;
 }
 
 .partners {
   margin-bottom: 100px;
+  overflow: visible;
 }
 /* Trophies Component CSS End */
 
@@ -2191,6 +2220,10 @@ a {
   .trophies-text {
     font-size: 24px;
   }
+
+  .partners-pic {
+    height: 18%;
+  }
   /* Trophies Component CSS End */
 }
 
@@ -2227,6 +2260,32 @@ a {
 
   .field_text_area {
     height: 100px;
+  }
+
+  .contact__cloud {
+    position: absolute;
+    left: 2%;
+    top: 200px;
+    width: 100px;
+    font-size: 0;
+    z-index: 1;
+  }
+
+  .contact_cloud_2 {
+    position: absolute;
+    right: 7%;
+    top: 70px;
+    width: 100px;
+    font-size: 0;
+    z-index: 1;
+  }
+
+  .contact_cloud_3 {
+    position: absolute;
+    right: 3%;
+    top: 27%;
+    width: 100px;
+    z-index: 1;
   }
   /* Contact Component CSS End */
 

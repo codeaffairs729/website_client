@@ -30,7 +30,11 @@ const Access = () => {
                     <img className="access__pic" src="img/sending-mail.svg" alt="" />
                   </div>
                 </div>
-                <button className="access__btn btn btn_purple" type="submit">Contact Us</button>
+                <button className="access__btn btn btn_purple" type="submit">
+                  Request
+                  <br/>
+                  Contact
+                </button>
               </form>
             </div>
           </div>

@@ -117,7 +117,7 @@ const Footer = () => {
                     <a className="footer__company" href="#">
                         <img className="footer__pic footer-icon" src="/logo/favicon_white.jpg" alt="" />
                     </a>
-                    <div className="footer__copyright">© 2020, UI8 LLC.</div>
+                    <div className="footer__copyright">© 2022, All Rights Reserved.</div>
                     <a className="footer__scroll js-link-scroll" href="#header">
                         <div className="footer__icon">
                             <img className="footer__pic" src="img/scroll.svg" alt="" />

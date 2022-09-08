@@ -5,10 +5,12 @@ import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 const Contact = () => {
     const [nameIcon, setNameIcon] = useState(false);
+    const [phoneIcon, setPhoneIcon] = useState(false);
     const [emailIcon, setEmailIcon] = useState(false);
     const [messageIcon, setMessageIcon] = useState(false);
 
     const [name, setName] = useState("");
+    const [phone, setPhone] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
@@ -24,6 +26,10 @@ const Contact = () => {
 
     const changeMessageIcon = (e) => {
         e == 1 ? setMessageIcon(true) : setMessageIcon(false);
+    }
+
+    const changePhoneIcon = (e) => {
+        e == 1 ? setPhoneIcon(true) : setPhoneIcon(false);
     }
 
     const handleSubmit = (e) => {
@@ -75,6 +81,7 @@ const Contact = () => {
             },
             body: JSON.stringify({
                 name: name,
+                phone: phone,
                 email: email,
                 message: message,
                 gRecaptchaToken: gReCaptchaToken,
@@ -120,11 +127,11 @@ const Contact = () => {
                         </div>
                         <div className="entry__body contact_body">
                             <div className="like">
-                                <div className="like__center contact__center center">
+                                <div className="like__center contact__center center p-0">
                                     <div className="like__container" style={{padding: "55px 38px"}}>
                                         <div className="entry__row contact__row">
                                             <form className="entry__form" onSubmit={handleSubmit} >
-                                                <div className="entry__title title title_sm text-center">
+                                                <div className="entry__title title title_sm text-center contact-title">
                                                     Get in touch
                                                     <span className="title__color">.</span>
                                                 </div>
@@ -146,6 +153,19 @@ const Contact = () => {
                                                             }
                                                         </div>
                                                         <input onFocus={() => changeNameIcon(1)} onBlur={() => changeNameIcon(0)} onChange={(e)=> setName(e.target.value)} className="field__input contact-field-input" type="text" name="name" placeholder="Name" required />
+                                                    </div>
+                                                </div>
+                                                <div className="entry__field field">
+                                                    <div className="field__label">Phone Number</div>
+                                                    <div className="field__wrap">
+                                                        <div className="field__icon contact-field-icon">
+                                                            {
+                                                                phoneIcon
+                                                                ? <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill="#5956E9" d="M12.2 10c-1.1-.1-1.7 1.4-2.5 1.8C8.4 12.5 6 10 6 10S3.5 7.6 4.1 6.3c.5-.8 2-1.4 1.9-2.5-.1-1-2.3-4.6-3.4-3.6C.2 2.4 0 3.3 0 5.1c-.1 3.1 3.9 7 3.9 7 .4.4 3.9 4 7 3.9 1.8 0 2.7-.2 4.9-2.6 1-1.1-2.5-3.3-3.6-3.4z"/></svg>
+                                                                : <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill="#444" d="M12.2 10c-1.1-.1-1.7 1.4-2.5 1.8C8.4 12.5 6 10 6 10S3.5 7.6 4.1 6.3c.5-.8 2-1.4 1.9-2.5-.1-1-2.3-4.6-3.4-3.6C.2 2.4 0 3.3 0 5.1c-.1 3.1 3.9 7 3.9 7 .4.4 3.9 4 7 3.9 1.8 0 2.7-.2 4.9-2.6 1-1.1-2.5-3.3-3.6-3.4z"/></svg>
+                                                            }
+                                                        </div>
+                                                        <input onFocus={() => changePhoneIcon(1)} onBlur={() => changePhoneIcon(0)} onChange={(e)=> setPhone(e.target.value)} className="field__input contact-field-input" type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required />
                                                     </div>
                                                 </div>
                                                 <div className="entry__field field">
@@ -204,11 +224,22 @@ const Contact = () => {
                     <div className="entry__bg">
                         <img className="entry__pic" src="img/entry-circle.svg" alt="" />
                     </div>
-                    <div className="contact__cloud">
-                        <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="" />
+                    <div className="contact__cloud heroku-floating">
+                        <a href="https://api.whatsapp.com/send?phone=918146394889" title='Contact Us on whatsapp' >
+                            <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="" />
+                            <img className="contact-skype-icon" data-scale="1.5" data-orientation="right" src="icons/whatsapp.png" alt="" />
+                        </a>
                     </div>
-                    <div className="contact_cloud_2">
+                    <div className="contact_cloud_2 salesforce-floating">
                         <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="" />
+                        <img className="contact-skype-icon" data-scale="1.5" data-orientation="right" src="icons/gmail.png" alt="" />
+                    </div>
+
+                    <div className="contact_cloud_3 digitalocean-floating">
+                        <a href="skype:example123?chat">
+                            <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="" />
+                            <img className="contact-skype-icon" data-scale="1.5" data-orientation="right" src="icons/skype.png" alt="" />
+                        </a>
                     </div>
                     {/* <div className="contact__bucket" >
                         <img className="contact_bucket_pic" src="img/popup-pic-2.png" alt="" />

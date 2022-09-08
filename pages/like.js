@@ -16,16 +16,16 @@ const Like = () => {
                 <p>
                   Let us take care of your problems.
                 </p>
-                <ul className="like-list" data-aos="animation-scale-y" data-aos-delay="200">
-                    <li>Quality 1</li>
-                    <li>Quality 2</li>
-                    <li>Quality 3</li>
-                    <li>Quality 4</li>
+                <ul className="like-list text-start d-inline-block" data-aos="animation-scale-y" data-aos-delay="200">
+                    <li>Transparency</li>
+                    <li>Availability</li>
+                    <li>Process Oriented Work</li>
+                    <li>Upto Date on IT Trends</li>
                 </ul>
               </div>
-              <div className="like__btn" data-aos="animation-scale-x" data-aos-delay="300">
+              {/* <div className="like__btn" data-aos="animation-scale-x" data-aos-delay="300">
                 <button className="btn btn_purple" onClick={() => { Router.push('./contact') }} >See Our Work</button>
-              </div>
+              </div> */}
             </div>
             <div className="like__preview" data-aos>
               <img className="like__pic" src="img/hand-1.png" alt="" />

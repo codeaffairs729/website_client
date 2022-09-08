@@ -54,7 +54,7 @@ const Main = () => {
                             We build valuable solutions with code.
                         </div>
                         <div className="main__control ms-3" data-aos="animation-scale-y" data-aos-delay="550">
-                            <a className="main__btn btn btn_purple" href="./login">Get in Touch</a>
+                            <a className="main__btn btn btn_purple" href="./contact">Get in Touch</a>
                             {/* <a className="main__link" href="#">
                                 <div className="main__icon">
                                     <img className="main__pic" src="img/play.svg" alt="" />
