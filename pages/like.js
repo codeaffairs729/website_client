@@ -13,9 +13,9 @@ const Like = () => {
                 <span className="title__color">?</span>
               </h2>
               <div className="like__text" data-aos="animation-scale-x" data-aos-delay="150">
-                <p>
+                {/* <p>
                   Let us take care of your problems.
-                </p>
+                </p> */}
                 <ul className="like-list text-start d-inline-block" data-aos="animation-scale-y" data-aos-delay="200">
                     <li>Transparency</li>
                     <li>Availability</li>

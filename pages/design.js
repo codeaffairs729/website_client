@@ -30,7 +30,7 @@ const Design = () => {
             <div id="portfolio" className="design">
                 <div className="design__center center">
                     <div className="design__body">
-                        <h1 style={{ marginBottom: "10px", display: "inline-flex", marginBottom: "80px", fontWeight: "500", letterSpacing: "-.04em" }}>See our work</h1>
+                        <h1 style={{ marginBottom: "10px", display: "inline-flex", marginBottom: "80px", fontWeight: "500", letterSpacing: "-.04em" }}>See Our Work</h1>
                         {/* <a className="design__scroll" href="#">
                             <div className="design__icon">
                                 <img className="design__pic" src="img/scroll.svg" alt="" />
@@ -47,7 +47,7 @@ const Design = () => {
                                     </div>
                                     <div className="design__details">
                                         <div className="design__category">Design</div>
-                                        <div className="design__info">ucview</div>
+                                        <div className="design__info">Ucview</div>
                                         <div className="design__text">
                                             Use the smart color picker to easily select and apply colors.
                                         </div>
@@ -67,7 +67,7 @@ const Design = () => {
                                     </div>
                                     <div className="design__details">
                                         <div className="design__category">Design</div>
-                                        <div className="design__info">Stock architect</div>
+                                        <div className="design__info">Stock Architect</div>
                                         <div className="design__text">
                                             Using the Component Builder with your projects.
                                         </div>

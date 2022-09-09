@@ -12,9 +12,9 @@ const Partners = () => {
                   <img className='trophies-img' src='images/Calendar.png' alt='' />
                 </div>
                 <div className='col-lg-12 text-center trophies-text' >
-                  7+ years
+                  7+ Years
                   <br/>
-                  of excellence
+                  Of Excellence
                 </div>
               </div>
             </div>
@@ -94,7 +94,7 @@ const Partners = () => {
           </div>
         </div>
         <div className="partners__preview" data-aos data-aos-duration="1000">
-          <img className="partners__pic" src="img/partners-pic.svg" alt="" />
+          <img className="partners__pic" src="images/logos-circle.png" alt="" />
         </div>
         {/* <div className="partners__circle js-rellax" data-rellax-speed=".6"></div> */}
       </div>

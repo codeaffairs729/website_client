@@ -313,7 +313,7 @@ const Package = () => {
                                                     </div>
                                                     <div className="package__text">What we do</div>
                                                 </div>
-                                                <h3 className="package__title title title_sm">Mobile Solutions</h3>
+                                                <h3 className="package__title title title_sm title-ui-ux">Mobile Solutions</h3>
                                                 <div className="package__info">
                                                     {/* Not just mobile apps, we build user-friendly mobile experience on iOS and Android platforms.
                                                     We have developed Awesome apps for our clients.

@@ -131,7 +131,7 @@ const Header = () => {
                                                                 <img className="header-solutions-icon" src="images/react_3.png" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
-                                                                <div className="header__info">React / Next.js Development</div>
+                                                                <div className="header__info">React / NextJs Development</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -141,7 +141,7 @@ const Header = () => {
                                                                 <img className="header-solutions-icon" src="images/vuejs.png" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
-                                                                <div className="header__info">Vue.js / NuxtJs Development</div>
+                                                                <div className="header__info">VueJs / NuxtJs Development</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -151,7 +151,7 @@ const Header = () => {
                                                                 <img className="header-solutions-icon" src="images/node_2.png" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
-                                                                <div className="header__info">Node.js Development</div>
+                                                                <div className="header__info">NodeJs Development</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -609,6 +609,7 @@ const Header = () => {
                                 </div>
                             </div>
                             <a className="header__item" href="./#portfolio">Portfolio</a>
+                            <a className="header__item" href="./careers">Careers</a>
                             <a className="header__item" href="./aboutUs">About Us</a>
                         </nav>
                         <div className="header__photo">

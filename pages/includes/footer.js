@@ -69,8 +69,8 @@ const Footer = () => {
                             <span className="footer__link" >NodeJs</span>
                             <span className="footer__link" >React Native</span>
                             <span className="footer__link" >Laravel</span>
-                            <span className="footer__link" >React / Next</span>
-                            <span className="footer__link" >Vue / Nuxt</span>
+                            <span className="footer__link" >ReactJs / NextJs</span>
+                            <span className="footer__link" >VueJs / NuxtJs</span>
                         </div>
                     </div>
                     <div onClick={() => showContactUs()} className={ contactUs ? "footer__col js-footer-col active" : "footer__col js-footer-col" } >

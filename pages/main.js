@@ -21,8 +21,9 @@ const Main = () => {
                                                 '<span style="color: #5956E9" >Cloud Management</span>',
                                                 '<span style="color: #5956E9" >CRM Solutions</span>',
                                                 '<span style="color: #5956E9" >CMS Solutions</span>',
-                                                '<span style="color: #5956E9" >E-Com Solutions</span>',
-                                                '<span style="color: #5956E9" >Digital Marketing</span>'
+                                                '<span style="color: #5956E9" >E-comm Solutions</span>',
+                                                '<span style="color: #5956E9" >Digital Marketing</span>',
+                                                '<span style="color: #5956E9" >IT Staffing</span>'
                                             ],
                                             autoStart: true,
                                             loop: true,
@@ -46,12 +47,12 @@ const Main = () => {
                             <span className="title__box">
                                 <span className="title__text ms-3" >
                                     UI / UX <span className='main-subheadings-span' >Designing</span>
-                                    <span className="title__color">.</span>
+                                    {/* <span className="title__color">.</span> */}
                                 </span>
                             </span>
                         </h1>
-                        <div className="main__info info ms-3" data-aos="animation-scale-y" data-aos-delay="400">
-                            We build valuable solutions with code.
+                        <div className="main__info info ms-3 main-info" data-aos="animation-scale-y" data-aos-delay="400">
+                            We Build Valuable Solutions With Code
                         </div>
                         <div className="main__control ms-3" data-aos="animation-scale-y" data-aos-delay="550">
                             <a className="main__btn btn btn_purple" href="./contact">Get in Touch</a>

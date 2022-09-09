@@ -195,6 +195,10 @@ a {
 .header__row {
   padding: 55px 30px;
 }
+
+.header__category {
+  margin-bottom: 15px;
+}
 /* Header Component CSS End */
 
 .btn_purple {
@@ -638,6 +642,11 @@ a {
 .main-android-title-text {
   width: max-content;
 }
+
+.main__info {
+  font-size: 20px;
+  max-width: 100%;
+}
 /* Main Component CSS End */
 
 /* Features Component CSS Start */
@@ -767,6 +776,10 @@ a {
 
 .layouts__view {
   z-index: 1;
+}
+
+.layouts-item {
+  max-width: 400px;
 }
 /* Layout Component CSS End */
 
@@ -1073,6 +1086,8 @@ a {
 .work-img-Group-text {
   right: -200%;
   bottom: 40%;
+  color: white;
+  opacity: 1;
 }
 
 .work-img-rocket-outer {
@@ -1415,6 +1430,11 @@ a {
   left: -3%;
   bottom: 31%;
   width: 40px;
+}
+
+.work-img-money-text {
+  color: white;
+  opacity: 1;
 }
 /* Work Component CSS End */
 
@@ -1908,6 +1928,26 @@ a {
   overflow: visible;
 }
 /* Trophies Component CSS End */
+
+/* Career Component CSS Start */
+.career-outer {
+  margin-top: 150px;
+  margin-bottom: 70px;
+}
+
+.career-cv-img {
+  width: 100%;
+}
+
+.career-submit-btn {
+  height: 50px;
+  width: 100%;
+}
+
+.entry__field:first-child {
+  margin-top: 32px;
+}
+/* Career Component CSS End */
 
 @media only screen and (max-width: 1199px) {
   /* Layout Component CSS Start */
@@ -2681,6 +2721,7 @@ a {
   .work-img-Group-text {
     right: 105%;
     bottom: 60%;
+    color: black;
   }
 
   .work-text-left {

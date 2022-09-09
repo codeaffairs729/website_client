@@ -21,11 +21,11 @@ const Access = () => {
             </div>
             <div className="access__wrap" data-aos="animation-scale-y">
               <div className="access__info">
-                Ready to make your app live?
+                Ready To Make Your App Live?
               </div>
               <form className="access__form">
                 <div className="access__field">
-                  <input className="access__input" type="email" placeholder="Email address" />
+                  <input className="access__input" type="email" placeholder="Your Email Address" />
                   <div className="access__icon">
                     <img className="access__pic" src="img/sending-mail.svg" alt="" />
                   </div>

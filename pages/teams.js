@@ -78,7 +78,7 @@ const Teams = () => {
                             On
                             <Typewriter
                                 options={{
-                                    strings: ['Upwork', 'Clutch.co', 'People per Hour'],
+                                    strings: ['Upwork', 'Clutch.co', 'People Per Hour'],
                                     autoStart: true,
                                     loop: true,
                                 }}
@@ -87,7 +87,7 @@ const Teams = () => {
                     </div>
                     <div className="teams__body">
                         <div className="teams__col" data-aos="animation-scale-y">
-                            <h3 className="teams__title title title_sm">What others are&nbsp;saying</h3>
+                            <h3 className="teams__title title title_sm">What Others Are&nbsp;Saying</h3>
                         </div>
                         <div className="teams__col">
                             <div className="teams__container">

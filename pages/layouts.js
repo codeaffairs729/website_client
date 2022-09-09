@@ -19,44 +19,37 @@ const Layouts = () => {
           <div className="layouts__wrap">
             <div className="layouts__head" data-aos="animation-scale-y">
               <div className="layouts__stage stage">Our Tools & Technologies</div>
-              <h2 className="layouts__title title">Find best fit for your IT Product<span className="title__color">.</span></h2>
+              <h2 className="layouts__title title">
+                Find Best Fit For Your IT Product
+                <span className="title__color">.</span>
+              </h2>
             </div>
             <div className="layouts__info info" data-aos="animation-scale-y">
               From our software engineering excellence to our world-class design practice, we constantly seek out and develop optimistic new techniques to tackle complex problems.
             </div>
             <div className="layouts__list">
-              <div className="layouts__item" data-aos="animation-scale-y">
+              <div className="layouts__item layouts-item" data-aos="animation-scale-y">
                 <div className="layouts__icon">
                   <img className="layouts__pic" src="img/layout-1.svg" alt="" />
                 </div>
                 <div className="layouts__text">
-                  We advice technologies that
-                  <br/>
-                  suits your idea.
+                  We advice technologies that suits your idea.
                 </div>
               </div>
-              <div className="layouts__item" data-aos="animation-scale-y">
+              <div className="layouts__item layouts-item" data-aos="animation-scale-y">
                 <div className="layouts__icon">
                   <img className="layouts__pic" src="img/layout-2.svg" alt="" />
                 </div>
                 <div className="layouts__text">
-                  Get rid of expensive & slow
-                  <br/>
-                  tech stack with fast &
-                  <br/>
-                  advance technologies.
+                  Get rid of expensive & slow tech stack with fast & advance technologies.
                 </div>
               </div>
-              <div className="layouts__item" data-aos="animation-scale-y">
+              <div className="layouts__item layouts-item" data-aos="animation-scale-y">
                 <div className="layouts__icon">
                   <img className="layouts__pic" src="img/layout-3.svg" alt="" />
                 </div>
                 <div className="layouts__text">
-                  Keep your application fast,
-                  <br/>
-                  scalable and reliable with
-                  <br/>
-                  optimum combination.
+                  Keep your application fast, scalable and reliable with optimum combination.
                 </div>
               </div>
             </div>
