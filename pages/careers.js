@@ -6,6 +6,21 @@ const Careers = () => {
   return (
     <>
         <Header />
+        <div className='container-fluid career-area-1 px-5' >
+            <div className='row career-area-1-row' >
+                <div className='col-lg-12 career-area-1-col1' >
+                    <h1 className='career-area-1-heading' >
+                        Extraordinary Products Require Exceptional People
+                    </h1>
+                    <p className='career-area-1-para py-3' >
+                        We offer flexible pricing options for freelancers and design teams.
+                    </p>
+                    <button className='btn btn-primary bg-white career-area-1-btn px-5' >
+                        Join The Exceptionals
+                    </button>
+                </div>
+            </div>
+        </div>
         <div className='container career-outer' >
             <div className='row' >
                 <div className='col-lg-6' >

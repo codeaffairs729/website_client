@@ -1770,6 +1770,7 @@ a {
 }
 
 .about-area-1-btn {
+  font-family: 'Poppins';
   color: #2522BA;
   filter: drop-shadow(0px 14px 20px rgba(35, 34, 87, 0.4)) drop-shadow(0px 48px 48px rgba(0, 0, 0, 0.12));
   padding: 0px 50px;
@@ -1779,10 +1780,17 @@ a {
   color: #2522BA;
 }
 
+.about-area-1-para {
+  line-height: 27px;
+  font-family: 'Poppins';
+  font-size: 18px;
+}
+
 .about-area-2 {
   font-family: 'DM Sans';
   background: url('../public/images/Vector_332.png') no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .about-area-2-grey-circle {
@@ -1800,6 +1808,11 @@ a {
   letter-spacing: -0.025em;
 }
 
+.about-area-2-para {
+  font-family: 'Poppins';
+  font-size: 18px;
+}
+
 .about-area-2-cam-pic {
   position: absolute;
   left: 0;
@@ -1811,8 +1824,63 @@ a {
   padding: 130px 0;
 }
 
-.about-area-1-para {
-  line-height: 1.5;
+.about-area-2-circle1 {
+  background-color: #FAB8C4;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -5%;
+  left: 10%;
+  border-radius: 50%;
+}
+
+.about-area-2-circle2 {
+  background-color: #5956E9;
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  border-radius: 50%;
+}
+
+.about-area-2-cube {
+  position: absolute;
+  top: 3%;
+  right: -2%;
+  width: 100px;
+}
+
+.about-area-3-outer-row {
+  background-color: #27272E;
+  color: white;
+  border-radius: 30px;
+  border-top: 10px solid #939397;
+  border-bottom: 10px solid #939397;
+}
+
+.about-area-3-heading {
+  font-family: 'DM Sans';
+  font-size: 60px;
+}
+
+.about-area-3-para {
+  font-family: 'Poppins';
+  font-size: 18px;
+}
+
+.about-area-3-img {
+  background-color: #D9D9D9;
+  height: 300px;
+  width: 500px;
+  border-top: 10px solid #939397;
+  border-left: 10px solid #939397;
+  border-radius: 20px;
+}
+
+.about-area-3-images {
+  width: 100%;
+  border-radius: 50%;
 }
 /* About Us Component CSS End */
 
@@ -1930,6 +1998,42 @@ a {
 /* Trophies Component CSS End */
 
 /* Career Component CSS Start */
+.career-area-1 {
+  margin-top: 150px;
+  margin-bottom: 70px;
+}
+
+.career-area-1-row {
+  background-color: #EBEBEB;
+  border-radius: 0 0 40px 40px;
+}
+
+.career-area-1-heading {
+  font-family: 'DM Sans';
+  font-size: 70px;
+  letter-spacing: -0.025em;
+}
+
+.career-area-1-para {
+  font-family: 'Poppins';
+  font-size: 18px;
+}
+
+.career-area-1-col1 {
+  padding: 6rem 4rem;
+}
+
+.career-area-1-btn {
+  filter: drop-shadow(0px 14px 20px rgba(35, 34, 87, 0.4)) drop-shadow(0px 48px 48px rgba(0, 0, 0, 0.12));
+  font-family: 'Poppins';
+  color: #2522BA;
+  border: white;
+}
+
+.career-area-1-btn:hover {
+  color: #2522BA;
+}
+
 .career-outer {
   margin-top: 150px;
   margin-bottom: 70px;
@@ -2265,6 +2369,20 @@ a {
     height: 18%;
   }
   /* Trophies Component CSS End */
+
+  /* About Us Component CSS Start */
+  .about-area-1-outer h1 {
+    font-size: 50px;
+  }
+
+  .about-area-2-heading {
+    margin-top: 20px;
+  }
+
+  .about-area-3-img {
+    margin-top: 20px;
+  }
+  /* About Us Component CSS End */
 }
 
 @media only screen and (max-width: 767px) {
@@ -2737,6 +2855,42 @@ a {
     z-index: 2;
   }
   /* Work Component CSS End */
+
+  /* About Us Component CSS Start */
+  .about-area-1-outer {
+    margin-top: 30px;
+  }
+
+  .about-area-2-grey-circle {
+    height: 300px;
+    width: 300px;
+  }
+
+  .about-area-2-heading {
+    margin-top: 30px;
+  }
+
+  .about-area-3 {
+    padding: 0 !important;
+  }
+
+  .about-area-3-heading {
+    font-size: 40px;
+  }
+
+  .about-area-3-outer-row {
+    padding: 25px !important;
+  }
+
+  .about-area-3-para {
+    overflow-wrap: anywhere;
+  }
+
+  .about-area-3-img {
+    width: 100%;
+    margin-top: 20px;
+  }
+  /* About Us Component CSS End */
 }
 
 @media only screen and (max-height: 767px) {
