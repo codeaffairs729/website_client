@@ -1791,6 +1791,7 @@ a {
   background: url('../public/images/Vector_332.png') no-repeat;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .about-area-2-grey-circle {
@@ -1829,7 +1830,7 @@ a {
   height: 50px;
   width: 50px;
   position: absolute;
-  top: -5%;
+  top: 0;
   left: 10%;
   border-radius: 50%;
 }
