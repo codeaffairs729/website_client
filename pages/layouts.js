@@ -21,7 +21,7 @@ const Layouts = () => {
               <div className="layouts__stage stage">Our Tools & Technologies</div>
               <h2 className="layouts__title title">
                 Find Best Fit For Your IT Product
-                <span className="title__color">.</span>
+                {/* <span className="title__color">.</span> */}
               </h2>
             </div>
             <div className="layouts__info info" data-aos="animation-scale-y">
