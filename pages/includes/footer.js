@@ -53,7 +53,7 @@ const Footer = () => {
                                 <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                             </svg>
                         </div>
-                        <div className="footer__menu js-footer-menu" style={ aboutUs ? { display: "block" } : { display: "none" }} >
+                        <div className="footer__menu" style={ aboutUs ? { display: "block" } : { display: "none" }} >
                             We're one of the first class development and consulting organization situated in Mohali India. We’re in business just like you - we understand how stressful it can be to work on projects with outside vendors, especially when large budgets are involved.
                         </div>
                     </div>
@@ -64,7 +64,7 @@ const Footer = () => {
                                 <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                             </svg>
                         </div>
-                        <div className="footer__menu js-footer-menu" style={ technologies ? { display: "block" } : { display: "none" }} >
+                        <div className="footer__menu" style={ technologies ? { display: "block" } : { display: "none" }} >
                             <span className="footer__link" >Ruby on Rails</span>
                             <span className="footer__link" >NodeJs</span>
                             <span className="footer__link" >React Native</span>
@@ -80,7 +80,7 @@ const Footer = () => {
                                 <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                             </svg>
                         </div>
-                        <div className="footer__menu js-footer-menu" style={ contactUs ? { display: "block" } : { display: "none" }} >
+                        <div className="footer__menu" style={ contactUs ? { display: "block" } : { display: "none" }} >
                             <a className="footer__link" href="#">+0172-4783676</a>
                             <a className="footer__link" href="#">+91-7589103409</a>
                             <a className="footer__link" href="#">codegaragetech@123</a>
@@ -97,7 +97,7 @@ const Footer = () => {
                                 <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                             </svg>
                         </div>
-                        <div className="footer__menu js-footer-menu footer-social-menu justify-content-evenly" style={ socialIcons ? { display: "flex" } : { display: "none" }} >
+                        <div className="footer__menu footer-social-menu justify-content-evenly" style={ socialIcons ? { display: "flex" } : { display: "none" }} >
                             <a className="footer__link" href="https://www.facebook.com/CodeGarageTech">
                                 <img className="icon icon-header-img" src="images/Facebook3d.png" alt="" />
                             </a>

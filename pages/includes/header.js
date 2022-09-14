@@ -76,7 +76,7 @@ const Header = () => {
         <>
             <Head>
                 <meta charSet="utf-8" />
-                <title>CodeGarageTech</title>
+                <title>Code Garage Tech - Top Software Development Agency In USA & India</title>
                 <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
                 <meta name="format-detection" content="telephone=no"/>
@@ -87,7 +87,7 @@ const Header = () => {
                 <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5"/>
                 <meta name="msapplication-TileColor" content="#da532c"/>
                 <meta name="theme-color" content="#ffffff"/>
-                <meta name="description" content="CodeGarageTech"/>
+                <meta name="description" content="We are top custom software developer team in USA & India. We work on Ruby On Rails, NodeJs / NestJs, ReactJs / NextJs, VueJS / NuxtJs, Laravel and Shopify."/>
             </Head>
             <div className="header js-header" id="header">
                 <div className="header__center center">
@@ -353,7 +353,7 @@ const Header = () => {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div className="col-lg-12 header-solutions-outer" >
+                                                    {/* <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="icons/ionic.png" alt="" />
@@ -362,7 +362,7 @@ const Header = () => {
                                                                 <div className="header__info">Ionic</div>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    </div> */}
                                                     {/* <Slider {...technologiesSettings}>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
@@ -475,6 +475,39 @@ const Header = () => {
                                                             </div>
                                                         </div> */}
                                                     {/* </Slider> */}
+                                                </div>
+                                                <div className="header__category mt-3">DEVOPS</div>
+                                                <div className="row" >
+                                                    <div className="col-lg-12 header-solutions-outer" >
+                                                        <div className="row" >
+                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                                <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                            </div>
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                                <div className="header__info">Option 1</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-12 header-solutions-outer" >
+                                                        <div className="row" >
+                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                                <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                            </div>
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                                <div className="header__info">Option 2</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-12 header-solutions-outer" >
+                                                        <div className="row" >
+                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                                <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                            </div>
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                                <div className="header__info">Option 3</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div className="col-lg-4 col-md-4 col-sm-4" >

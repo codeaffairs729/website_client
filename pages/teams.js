@@ -11,7 +11,7 @@ const Teams = () => {
         prevArrow: <button type="button" className="slick-prev"><svg className="icon icon-arrow-prev"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="img/sprite.svg#icon-arrow-prev"></use></svg></button>,
         nextArrow: <button type="button" className="slick-next"><svg className="icon icon-arrow-next"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="img/sprite.svg#icon-arrow-next"></use></svg></button>,
         speed: 700,
-        // autoplay: true,
+        autoplay: true,
         rows: 2,
         responsive: [{
             breakpoint: 1200,
@@ -29,7 +29,7 @@ const Teams = () => {
         speed: 700,
         autoplay: true,
         rtl: true,
-        autoplaySpeed: 1000
+        autoplaySpeed: 2000
     };
 
     const settingsUp = {
@@ -41,7 +41,7 @@ const Teams = () => {
         autoplay: true,
         vertical: true,
         verticalSwiping: true,
-        autoplaySpeed: 1500
+        autoplaySpeed: 3000
     };
 
     const settingsDown = {
@@ -53,7 +53,7 @@ const Teams = () => {
         autoplay: true,
         vertical: true,
         verticalSwiping: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 4000
     };
 
     const settingsLeft = {
@@ -63,7 +63,7 @@ const Teams = () => {
         arrows: false,
         speed: 700,
         autoplay: true,
-        autoplaySpeed: 2500
+        autoplaySpeed: 5000
     };
 
     return (

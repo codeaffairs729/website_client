@@ -406,6 +406,10 @@ a {
 .design__link {
   letter-spacing: unset;
 }
+
+.design__text {
+  text-align: justify;
+}
 /* Design Component CSS End */
 
 .contact__logo {
@@ -585,6 +589,10 @@ a {
 
 .footer__link:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.footer__menu {
+  text-align: justify;
 }
 /* Footer Component CSS End */
 
@@ -1451,6 +1459,7 @@ a {
   line-height: 1.25;
   color: #292930;
   height: 200px;
+  text-align: justify;
 }
 
 .teams-cmnt-author {
@@ -1742,6 +1751,10 @@ a {
 .package-subslider-h6 {
   font-weight: 400;
 }
+
+.package__info {
+  text-align: justify;
+}
 /* Package Component CSS End */
 
 /* About Us Component CSS Start */
@@ -1870,6 +1883,11 @@ a {
   font-size: 18px;
 }
 
+.about-area-3-circle-outer {
+  height: 350px;
+  position: relative;
+}
+
 .about-area-3-img {
   background-color: #D9D9D9;
   height: 300px;
@@ -1882,6 +1900,27 @@ a {
 .about-area-3-images {
   width: 100%;
   border-radius: 50%;
+}
+
+.about-area-circle {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.about-area-3-circle1 {
+  background-color: #D9D9D9;
+  height: 180px;
+  width: 180px;
+  bottom: 0;
+  left: 0;
+}
+
+.about-area-3-circle2 {
+  background-color: #333333;
+  height: 230px;
+  width: 230px;
+  top: 0;
+  right: 0;
 }
 /* About Us Component CSS End */
 

@@ -54,9 +54,11 @@ function AboutUs() {
                     <div className='col-lg-6 about-area-3-para' >
                         We offer flexible pricing options for freelancers and design teams. sadssafafasasasdjkasdkjasndasndandnasjkdnaksjd asndjkandjkandasndsa dsajd sajd asj das dasd ajdjassdda d asdasj dajs dja dja djas dasjd ahjs d asdjas d asjd asdajd ad
                     </div>
-                    <div className='col-lg-6' >
-                        <div className='about-area-3-img' ></div>
+                    <div className='col-lg-6 about-area-3-circle-outer' >
+                        {/* <div className='about-area-3-img' ></div> */}
                         {/* <img className='' src='' alt='' /> */}
+                        <div className='about-area-circle about-area-3-circle1' ></div>
+                        <div className='about-area-circle about-area-3-circle2' ></div>
                     </div>
                 </div>
             </div>
