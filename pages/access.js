@@ -8,16 +8,16 @@ const Access = () => {
   const { executeRecaptcha } = useGoogleReCaptcha();
 
   const handleSubmit = (e) => {
-      e.preventDefault();
+    e.preventDefault();
 
-      if (!executeRecaptcha) {
-          console.log("Execute recaptcha not yet available");
-          return;
-      }
-      executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
-          // console.log(gReCaptchaToken, "response Google reCaptcha server");
-          submitEnquiryForm(gReCaptchaToken);
-      });
+    if (!executeRecaptcha) {
+      console.log("Execute recaptcha not yet available");
+      return;
+    }
+    executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
+      // console.log(gReCaptchaToken, "response Google reCaptcha server");
+      submitEnquiryForm(gReCaptchaToken);
+    });
   };
 
   const submitEnquiryForm = (gReCaptchaToken) => {
@@ -28,10 +28,10 @@ const Access = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        name: "",
-        phone: "",
+        name: "Anonymous",
+        phone: "NA",
         email: email,
-        message: "",
+        message: "Enquiry",
         gRecaptchaToken: gReCaptchaToken
       }),
     })

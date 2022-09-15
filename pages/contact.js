@@ -1,8 +1,9 @@
-import React, { useCallback, useState } from 'react'
+import React, { useState } from 'react'
 import Head from 'next/head'
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import GenericModal from '../components/genericModal';
 
 const Contact = () => {
     const [nameIcon, setNameIcon] = useState(false);
@@ -14,6 +15,11 @@ const Contact = () => {
     const [phone, setPhone] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+
+    const [genModalshow, setGenModalshow] = useState(false);
+    const handleModalShow = () => {
+        setGenModalshow(true);
+    }
 
     const { executeRecaptcha } = useGoogleReCaptcha();
 
@@ -41,7 +47,6 @@ const Contact = () => {
             return;
         }
         executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
-            // console.log(gReCaptchaToken, "response Google reCaptcha server");
             submitEnquiryForm(gReCaptchaToken);
         });
     };
@@ -64,7 +69,6 @@ const Contact = () => {
         .then((res) => res.json())
         .then((res) => {
             if (res?.status === "success") {
-                // console.log(res?.message);
                 setName("");
                 setPhone("");
                 setEmail("");
@@ -78,10 +82,7 @@ const Contact = () => {
                     draggable: true,
                     progress: undefined,
                 });
-                // setNotification(res?.message);
             } else {
-                // console.log(res?.message);
-                // setNotification(res?.message);
                 toast.error('Error! Email Not Sent', {
                     position: "top-right",
                     autoClose: 5000,
@@ -139,7 +140,7 @@ const Contact = () => {
                                             <form className="entry__form" onSubmit={handleSubmit} >
                                                 <div className="entry__title title title_sm text-center contact-title">
                                                     Get in touch
-                                                    <span className="title__color">.</span>
+                                                    {/* <span className="title__color">.</span> */}
                                                 </div>
                                                 <div className="entry__info text-center">Enter your detail below</div>
                                                 <div className="entry__field field">
@@ -237,8 +238,10 @@ const Contact = () => {
                         </a>
                     </div>
                     <div className="contact_cloud_2 salesforce-floating">
-                        <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="" />
-                        <img className="contact-skype-icon" data-scale="1.5" data-orientation="right" src="icons/gmail.png" alt="" />
+                        <a href="#" title='Quick Contact' onClick={handleModalShow} >
+                            <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="" />
+                            <img className="contact-skype-icon" data-scale="1.5" data-orientation="right" src="icons/gmail.png" alt="" />
+                        </a>
                     </div>
 
                     <div className="contact_cloud_3 digitalocean-floating">
@@ -261,6 +264,43 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+            <GenericModal
+                genModalshow={genModalshow}
+                modalHeaderShow={true}
+                modalBodyShow={true}
+                modalFooterShow={false}
+                modalTitle={"Quick Contact"}
+                modalBody={<div className='row' >
+                    <div className='col-lg-12' >
+                        <form onSubmit={handleSubmit} >
+                            {/* <h2 className="text-center my-4">
+                                Quick Contact
+                            </h2> */}
+                            <div className="entry__field field">
+                                <div className="field__wrap">
+                                    <div className="field__icon contact-field-icon">
+                                        {
+                                            emailIcon
+                                            ? <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Stockholm-icons / Communication / Sending mail">
+                                            <path id="Combined Shape" opacity="0.3" fillRule="evenodd" clipRule="evenodd" d="M3 6C2.44772 6 2 6.44772 2 7C2 7.55228 2.44772 8 3 8H5C5.55228 8 6 7.55228 6 7C6 6.44772 5.55228 6 5 6H3ZM0 12C0 11.4477 0.447715 11 1 11H5C5.55228 11 6 11.4477 6 12C6 12.5523 5.55228 13 5 13H1C0.447715 13 0 12.5523 0 12ZM3 17C3 16.4477 3.44772 16 4 16H5C5.55228 16 6 16.4477 6 17C6 17.5523 5.55228 18 5 18H4C3.44772 18 3 17.5523 3 17Z" fill="#5956E9"/>
+                                            <path id="Combined Shape_2" fillRule="evenodd" clipRule="evenodd" d="M10 6C8.89543 6 8 6.89543 8 8V16C8 17.1046 8.89543 18 10 18H22C23.1046 18 24 17.1046 24 16V8C24 6.89543 23.1046 6 22 6H10ZM21.9257 8.31565C21.7632 8.02389 21.3868 7.91473 21.0849 8.07183L16 10.7186L10.9151 8.07183C10.6132 7.91473 10.2368 8.02389 10.0743 8.31565C9.91179 8.6074 10.0247 8.97127 10.3265 9.12837L15.7057 11.9283C15.8894 12.0239 16.1106 12.0239 16.2943 11.9283L21.6735 9.12837C21.9753 8.97127 22.0882 8.6074 21.9257 8.31565Z" fill="#5956E9"/>
+                                            </g>
+                                            </svg>
+                                            : <img className="field__pic" src="img/sending-mail.svg" alt="" />
+                                        }
+                                    </div>
+                                    <input onFocus={() => changeEmailIcon(1)} onBlur={() => changeEmailIcon(0)} 
+                                    onChange={(e)=> setEmail(e.target.value)} className="field__input contact-field-input" type="email" name="email" placeholder="Your Email Address" value={email} required />
+                                </div>
+                            </div>
+                            <div className="mb-4 text-end">
+                                <button className="entry__btn btn btn_purple contact-submit-btn btn-sm mb-3" type="submit" >Send Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>}
+            />
         </>
     )
 }

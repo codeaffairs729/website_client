@@ -476,7 +476,7 @@ const Header = () => {
                                                         </div> */}
                                                     {/* </Slider> */}
                                                 </div>
-                                                <div className="header__category mt-3">DEVOPS</div>
+                                                <div className="header__category mt-3">DevOps</div>
                                                 <div className="row" >
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
@@ -484,7 +484,7 @@ const Header = () => {
                                                                 <img className="header-solutions-icon" src="images/android_2.png" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
-                                                                <div className="header__info">Option 1</div>
+                                                                <div className="header__info">Automation</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -494,17 +494,17 @@ const Header = () => {
                                                                 <img className="header-solutions-icon" src="images/android_2.png" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
-                                                                <div className="header__info">Option 2</div>
+                                                                <div className="header__info">CI/CD</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                                <img className="header-solutions-icon" src="img/cloud.png" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
-                                                                <div className="header__info">Option 3</div>
+                                                                <div className="header__info">Cloud Engineering</div>
                                                             </div>
                                                         </div>
                                                     </div>
