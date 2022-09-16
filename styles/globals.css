@@ -585,14 +585,67 @@ a {
 
 .footer__category {
   margin-bottom: 20px;
+  color: #333333;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 48px;
 }
 
 .footer__link:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.footer__menu {
+/* .footer__menu {
   text-align: justify;
+} */
+
+.footer-bottom {
+  background-color: #27272E;
+  padding: 26px 125px;
+}
+
+.footer__col {
+  flex: unset;
+  padding-right: 30px;
+}
+
+.footer-category-cgt-name {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #333333;
+}
+
+.footer-link-about {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.footer-link-contact {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer-link-technology {
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 16px;
+  color: #999999;
+}
+
+.footer-tech-img {
+  height: 20px;
+}
+
+.footer {
+  border-top: 1px solid #CDCDCD;
 }
 /* Footer Component CSS End */
 
@@ -2663,6 +2716,17 @@ a {
     left: 48%;
   }
   /* Career Component CSS End */
+
+  /* Footer Component CSS Start */
+  .footer-bottom {
+    padding: 26px 40px;
+  }
+
+  .footer-category-cgt-name {
+    font-size: 25px;
+    margin-top: 8px;
+  }
+  /* Footer Component CSS End */
 }
 
 @media only screen and (max-width: 767px) {
@@ -3046,6 +3110,9 @@ a {
   /* Teams Component CSS End */
 
   /* Footer Component CSS Start */
+  .footer-bottom {
+    padding: 26px 20px;
+  }
   /* Footer Component CSS End */
 
   /* Trophies Component CSS Start */
