@@ -23,7 +23,7 @@ const Careers = () => {
             </div>
         </div>
 
-        <div className='container-fluid career-area-1 px-5' >
+        <div className='container-fluid career-area-2 px-5' >
             <div className='row' >
                 <div className='col-lg-4' >
                     <img className='' src='' alt='' />
@@ -66,8 +66,6 @@ const Careers = () => {
                     We offer flexible pricing options for freelancers and design teams. sadssafafasasasdjkasdkjasndasndandnasjkdnaksjd asndjkandjkandasndsa dsajd sajd asj das dasd ajdjassdda d asdasj dajs dja dja djas dasjd ahjs d asdjas d asjd asdajd ad
                 </div>
                 <div className='col-lg-6 career-area-3-circle-outer' >
-                    {/* <div className='career-area-3-img' ></div> */}
-                    {/* <img className='' src='' alt='' /> */}
                     <div className='about-area-circle career-area-3-circle1' ></div>
                     <img className='career-area-3-cursor' src='img/cursor.png' alt='' />
                     <div className='about-area-circle career-area-3-circle2' ></div>
@@ -77,7 +75,7 @@ const Careers = () => {
             <img className='career-area-3-line-circle' src='images/career-line-circle.png' alt='' />
         </div>
 
-        <div className='container-fluid career-area-1 px-5' >
+        <div className='container-fluid career-area-4 px-5' >
             <div className='row justify-content-center align-items-center career-area-4-row' >
                 <h2 className='career-area-4-heading' >
                     Our Best Perks Are
@@ -91,11 +89,64 @@ const Careers = () => {
             </div>
         </div>
 
+        <div className='container-fluid career-area-5' >
+            <div className='container career-area-5-container' >
+                <div className='row' >
+                    <div className='col-lg-12 pb-5'>
+                        <h2 className='text-center career-area-5-heading' >
+                            Watch Out For
+                        </h2>
+                    </div>
+                </div>
+                <div className='row' >
+                    <div className='col-lg-4 col-md-4 px-4 career-area-5-gray-box-outer' >
+                        <div className='career-area-5-gray-box py-5' >
+                            <h2 className='text-center career-area-5-sub-heading mb-3' >
+                                6
+                            </h2>
+                            <p className='text-center career-area-5-para' >best clutch score</p>
+                        </div>
+                    </div>
+                    <div className='col-lg-4 col-md-4 px-4 career-area-5-gray-box-outer' >
+                        <div className='career-area-5-gray-box py-5' >
+                            <h2 className='text-center career-area-5-sub-heading mb-3' >
+                                80%
+                            </h2>
+                            <p className='text-center career-area-5-para' >best clutch score</p>
+                        </div>
+                    </div>
+                    <div className='col-lg-4 col-md-4 px-4 career-area-5-gray-box-outer' >
+                        <div className='career-area-5-gray-box py-5' >
+                            <h2 className='text-center career-area-5-sub-heading mb-3' >
+                                9/10
+                            </h2>
+                            <p className='text-center career-area-5-para' >best clutch score</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className='container-fluid career-area-6' >
+            <div className='row text-center career-area-6-row' >
+                <div className='col-lg-12' >
+                    <h2 className='career-area-6-heading' >
+                        Do You Think this can be
+                        <br />
+                        the place for you?
+                    </h2>
+                </div>
+                <div className='col-lg-12' >
+                    <a className="btn btn_pink mt-5" target="_blank" href="/contact">Get in Touch</a>
+                </div>
+            </div>
+        </div>
 
 
 
 
-        <div className='container career-outer' >
+
+        {/* <div className='container career-outer' >
             <div className='row' >
                 <div className='col-lg-6' >
                     <h1>Searching for a Job?</h1>
@@ -175,7 +226,7 @@ const Careers = () => {
                     </form>
                 </div>
             </div>
-        </div>
+        </div> */}
         <Footer />
     </>
   )
