@@ -11,14 +11,18 @@ const Contact = () => {
     const [emailIcon, setEmailIcon] = useState(false);
     const [messageIcon, setMessageIcon] = useState(false);
 
-    const [name, setName] = useState("");
-    const [phone, setPhone] = useState("");
+    const [name, setName] = useState("Anonymous");
+    const [phone, setPhone] = useState("NA");
     const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
+    const [message, setMessage] = useState("Enquiry");
 
     const [genModalshow, setGenModalshow] = useState(false);
     const handleModalShow = () => {
         setGenModalshow(true);
+    }
+
+    const handleModalClose = () => {
+        setGenModalshow(false);
     }
 
     const { executeRecaptcha } = useGoogleReCaptcha();
@@ -52,6 +56,7 @@ const Contact = () => {
     };
 
     const submitEnquiryForm = (gReCaptchaToken) => {
+        debugger
         fetch("/api/contact", {
             method: "POST",
             headers: {
@@ -73,6 +78,7 @@ const Contact = () => {
                 setPhone("");
                 setEmail("");
                 setMessage("");
+                setGenModalshow(false);
                 toast.success('Success! Email Sent Successful', {
                     position: "top-right",
                     autoClose: 5000,
@@ -159,7 +165,7 @@ const Contact = () => {
                                                                 </svg>
                                                             }
                                                         </div>
-                                                        <input onFocus={() => changeNameIcon(1)} onBlur={() => changeNameIcon(0)} onChange={(e)=> setName(e.target.value)} className="field__input contact-field-input" type="text" name="name" placeholder="Name" value={name} required />
+                                                        <input onFocus={() => changeNameIcon(1)} onBlur={() => changeNameIcon(0)} onChange={(e)=> setName(e.target.value)} className="field__input contact-field-input" type="text" name="name" placeholder="Name" required />
                                                     </div>
                                                 </div>
                                                 <div className="entry__field field">
@@ -172,7 +178,7 @@ const Contact = () => {
                                                                 : <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill="#444" d="M12.2 10c-1.1-.1-1.7 1.4-2.5 1.8C8.4 12.5 6 10 6 10S3.5 7.6 4.1 6.3c.5-.8 2-1.4 1.9-2.5-.1-1-2.3-4.6-3.4-3.6C.2 2.4 0 3.3 0 5.1c-.1 3.1 3.9 7 3.9 7 .4.4 3.9 4 7 3.9 1.8 0 2.7-.2 4.9-2.6 1-1.1-2.5-3.3-3.6-3.4z"/></svg>
                                                             }
                                                         </div>
-                                                        <input onFocus={() => changePhoneIcon(1)} onBlur={() => changePhoneIcon(0)} onChange={(e)=> setPhone(e.target.value)} className="field__input contact-field-input" type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" value={phone} required />
+                                                        <input onFocus={() => changePhoneIcon(1)} onBlur={() => changePhoneIcon(0)} onChange={(e)=> setPhone(e.target.value)} className="field__input contact-field-input" type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required />
                                                     </div>
                                                 </div>
                                                 <div className="entry__field field">
@@ -191,7 +197,7 @@ const Contact = () => {
                                                             }
                                                         </div>
                                                         <input onFocus={() => changeEmailIcon(1)} onBlur={() => changeEmailIcon(0)} 
-                                                        onChange={(e)=> setEmail(e.target.value)} className="field__input contact-field-input" type="email" name="email" placeholder="Email" value={email} required />
+                                                        onChange={(e)=> setEmail(e.target.value)} className="field__input contact-field-input" type="email" name="email" placeholder="Email" required />
                                                     </div>
                                                 </div>
                                                 <div className="entry__field field">
@@ -212,7 +218,7 @@ const Contact = () => {
                                                                 </svg>
                                                             }
                                                         </div>
-                                                        <textarea onFocus={() => changeMessageIcon(1)} onBlur={() => changeMessageIcon(0)} onChange={(e)=> setMessage(e.target.value)}  className="field__input field_text_area" name="message" placeholder="Message" value={message} required />
+                                                        <textarea onFocus={() => changeMessageIcon(1)} onBlur={() => changeMessageIcon(0)} onChange={(e)=> setMessage(e.target.value)}  className="field__input field_text_area" name="message" placeholder="Message" required />
                                                     </div>
                                                 </div>
                                                 <button className="entry__btn btn btn_purple contact-submit-btn" type="submit" >Send Now</button>
@@ -266,38 +272,33 @@ const Contact = () => {
             </div>
             <GenericModal
                 genModalshow={genModalshow}
+                handleModalClose={handleModalClose}
+                handleSubmit={handleSubmit}
                 modalHeaderShow={true}
                 modalBodyShow={true}
                 modalFooterShow={false}
                 modalTitle={"Quick Contact"}
-                modalBody={<div className='row' >
-                    <div className='col-lg-12' >
-                        <form onSubmit={handleSubmit} >
-                            {/* <h2 className="text-center my-4">
-                                Quick Contact
-                            </h2> */}
-                            <div className="entry__field field">
-                                <div className="field__wrap">
-                                    <div className="field__icon contact-field-icon">
-                                        {
-                                            emailIcon
-                                            ? <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g id="Stockholm-icons / Communication / Sending mail">
-                                            <path id="Combined Shape" opacity="0.3" fillRule="evenodd" clipRule="evenodd" d="M3 6C2.44772 6 2 6.44772 2 7C2 7.55228 2.44772 8 3 8H5C5.55228 8 6 7.55228 6 7C6 6.44772 5.55228 6 5 6H3ZM0 12C0 11.4477 0.447715 11 1 11H5C5.55228 11 6 11.4477 6 12C6 12.5523 5.55228 13 5 13H1C0.447715 13 0 12.5523 0 12ZM3 17C3 16.4477 3.44772 16 4 16H5C5.55228 16 6 16.4477 6 17C6 17.5523 5.55228 18 5 18H4C3.44772 18 3 17.5523 3 17Z" fill="#5956E9"/>
-                                            <path id="Combined Shape_2" fillRule="evenodd" clipRule="evenodd" d="M10 6C8.89543 6 8 6.89543 8 8V16C8 17.1046 8.89543 18 10 18H22C23.1046 18 24 17.1046 24 16V8C24 6.89543 23.1046 6 22 6H10ZM21.9257 8.31565C21.7632 8.02389 21.3868 7.91473 21.0849 8.07183L16 10.7186L10.9151 8.07183C10.6132 7.91473 10.2368 8.02389 10.0743 8.31565C9.91179 8.6074 10.0247 8.97127 10.3265 9.12837L15.7057 11.9283C15.8894 12.0239 16.1106 12.0239 16.2943 11.9283L21.6735 9.12837C21.9753 8.97127 22.0882 8.6074 21.9257 8.31565Z" fill="#5956E9"/>
-                                            </g>
-                                            </svg>
-                                            : <img className="field__pic" src="img/sending-mail.svg" alt="" />
-                                        }
-                                    </div>
-                                    <input onFocus={() => changeEmailIcon(1)} onBlur={() => changeEmailIcon(0)} 
-                                    onChange={(e)=> setEmail(e.target.value)} className="field__input contact-field-input" type="email" name="email" placeholder="Your Email Address" value={email} required />
-                                </div>
+                modalBody={<div>
+                    <div className="entry__field field">
+                        <div className="field__wrap">
+                            <div className="field__icon contact-field-icon">
+                                {
+                                    emailIcon
+                                    ? <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Stockholm-icons / Communication / Sending mail">
+                                    <path id="Combined Shape" opacity="0.3" fillRule="evenodd" clipRule="evenodd" d="M3 6C2.44772 6 2 6.44772 2 7C2 7.55228 2.44772 8 3 8H5C5.55228 8 6 7.55228 6 7C6 6.44772 5.55228 6 5 6H3ZM0 12C0 11.4477 0.447715 11 1 11H5C5.55228 11 6 11.4477 6 12C6 12.5523 5.55228 13 5 13H1C0.447715 13 0 12.5523 0 12ZM3 17C3 16.4477 3.44772 16 4 16H5C5.55228 16 6 16.4477 6 17C6 17.5523 5.55228 18 5 18H4C3.44772 18 3 17.5523 3 17Z" fill="#5956E9"/>
+                                    <path id="Combined Shape_2" fillRule="evenodd" clipRule="evenodd" d="M10 6C8.89543 6 8 6.89543 8 8V16C8 17.1046 8.89543 18 10 18H22C23.1046 18 24 17.1046 24 16V8C24 6.89543 23.1046 6 22 6H10ZM21.9257 8.31565C21.7632 8.02389 21.3868 7.91473 21.0849 8.07183L16 10.7186L10.9151 8.07183C10.6132 7.91473 10.2368 8.02389 10.0743 8.31565C9.91179 8.6074 10.0247 8.97127 10.3265 9.12837L15.7057 11.9283C15.8894 12.0239 16.1106 12.0239 16.2943 11.9283L21.6735 9.12837C21.9753 8.97127 22.0882 8.6074 21.9257 8.31565Z" fill="#5956E9"/>
+                                    </g>
+                                    </svg>
+                                    : <img className="field__pic" src="img/sending-mail.svg" alt="" />
+                                }
                             </div>
-                            <div className="mb-4 text-end">
-                                <button className="entry__btn btn btn_purple contact-submit-btn btn-sm mb-3" type="submit" >Send Now</button>
-                            </div>
-                        </form>
+                            <input onFocus={() => changeEmailIcon(1)} onBlur={() => changeEmailIcon(0)} 
+                            onChange={(e)=> setEmail(e.target.value)} className="field__input contact-field-input" type="email" name="email" placeholder="Your Email Address" required />
+                        </div>
+                    </div>
+                    <div className="mb-4 text-end">
+                        <button className="entry__btn btn btn_purple contact-submit-btn btn-sm mb-3" type="submit" >Send Now</button>
                     </div>
                 </div>}
             />

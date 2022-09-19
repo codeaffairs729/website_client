@@ -51,10 +51,12 @@ const Main = () => {
                                 </span>
                             </span>
                         </h1>
-                        <div className="main__info info ms-3 main-info" data-aos="animation-scale-y" data-aos-delay="400">
+                        {/* <div className="main__info info ms-3 main-info" data-aos="animation-scale-y" data-aos-delay="400"> */}
+                        <div className="main__info info ms-3 main-info" >
                             We Build Valuable Solutions With Code
                         </div>
-                        <div className="main__control ms-3" data-aos="animation-scale-y" data-aos-delay="550">
+                        {/* <div className="main__control ms-3" data-aos="animation-scale-y" data-aos-delay="550"> */}
+                        <div className="main__control ms-3" >
                             <a className="main__btn btn btn_purple" href="./contact">Get in Touch</a>
                             {/* <a className="main__link" href="#">
                                 <div className="main__icon">

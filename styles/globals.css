@@ -2453,7 +2453,7 @@ gap: 32px; */
 /* Generic Modal Component CSS Start */
 .modal-content {
   border-radius: 40px;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 .genModalCrossBtn {
@@ -2770,8 +2770,12 @@ gap: 32px; */
   /* Package Component CSS End */
 
   /* Trophies Component CSS Start */
+  .trophies-img {
+    height: 80px;
+  }
+
   .trophies-text {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .partners-pic {
