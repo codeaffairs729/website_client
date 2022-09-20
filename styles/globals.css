@@ -555,6 +555,7 @@ a {
 
 .contact-field-input {
   height: 50px;
+  border-radius: 15px;
 }
 
 .contact-submit-btn {
@@ -1982,6 +1983,10 @@ a {
   border-radius: 50%;
 }
 
+.about-area-4-side-col {
+  margin-bottom: 2rem;
+}
+
 .about-area-4-main-img {
   width: 100%;
   border-radius: 50%;
@@ -2457,9 +2462,27 @@ gap: 32px; */
 .entry__field:first-child {
   margin-top: 32px;
 }
+
+.job-apply-upImg-text {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  color: #5956E9;
+}
+
+.job-apply-upImg-link:hover {
+  color: #5956E9;
+  cursor: pointer;
+}
 /* Career Component CSS End */
 
 /* Generic Modal Component CSS Start */
+.modal-header {
+  border-bottom: none;
+  padding-top: 2.5rem;
+}
+
 .modal-content {
   border-radius: 40px;
   /* width: fit-content; */
@@ -2467,7 +2490,12 @@ gap: 32px; */
 
 .genModalCrossBtn {
   position: absolute;
-  right: 5%;
+  right: 7%;
+  top: 7%;
+}
+
+.quick-contact-field {
+  margin-top: 0 !important;
 }
 /* Generic Modal Component CSS End */
 
@@ -3508,4 +3536,10 @@ gap: 32px; */
   /* .header__row {
     padding: 55px 30px;
   } */
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 400px;
+  }
 }

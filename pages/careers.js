@@ -1,11 +1,101 @@
-import React from 'react'
-import Header from './includes/header'
-import Footer from './includes/footer'
+import React, { useState, useRef } from 'react'
+import Header from './includes/header';
+import Footer from './includes/footer';
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import GenericModal from '../components/genericModal';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Careers = () => {
+    const [email, setEmail] = useState("");
+    const [jobPosition, setJobPosition] = useState("");
+    const [experience, setExperience] = useState("");
+    // const [resume, setResume] = useState("");
+
+    const image = useRef(null);
+
+    const [genModalshow, setGenModalshow] = useState(false);
+    const handleModalShow = () => {
+        setGenModalshow(true);
+    }
+
+    const handleModalClose = () => {
+        setGenModalshow(false);
+    }
+
+    const { executeRecaptcha } = useGoogleReCaptcha();
+
+    const handleSubmit = (e) => {
+        debugger
+        e.preventDefault();
+
+        if (!executeRecaptcha) {
+            console.log("Execute recaptcha not yet available");
+            return;
+        }
+        executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
+            submitEnquiryForm(gReCaptchaToken);
+        });
+    };
+
+    const submitEnquiryForm = (gReCaptchaToken) => {
+        debugger
+        fetch("/api/applyForJob", {
+            method: "POST",
+            headers: {
+                Accept: "application/json, text/plain, */*",
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                email: email,
+                jobPosition: jobPosition,
+                experience: experience,
+                gRecaptchaToken: gReCaptchaToken
+            }),
+        })
+        .then((res) => res.json())
+        .then((res) => {
+            if (res?.status === "success") {
+                setEmail("");
+                setJobPosition("");
+                setExperience("");
+                setGenModalshow(false);
+                toast.success('Success! Email Sent Successful', {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
+            } else {
+                toast.error('Error! Email Not Sent', {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
+            }
+        });
+    };
   return (
     <>
         <Header />
+        <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+        /><ToastContainer />
         <div className='container-fluid career-area-1 px-5' >
             <div className='row career-area-1-row rounded-pill' >
                 <div className='col-lg-12 career-area-1-col1' >
@@ -137,96 +227,67 @@ const Careers = () => {
                     </h2>
                 </div>
                 <div className='col-lg-12' >
-                    <a className="btn btn_pink mt-5" target="_blank" href="/contact">Get in Touch</a>
+                    <button className="btn btn_pink mt-5" onClick={handleModalShow} >Apply Now</button>
                 </div>
             </div>
         </div>
 
-
-
-
-
-        {/* <div className='container career-outer' >
-            <div className='row' >
-                <div className='col-lg-6' >
-                    <h1>Searching for a Job?</h1>
+        <GenericModal
+            genModalshow={genModalshow}
+            handleModalClose={handleModalClose}
+            handleSubmit={handleSubmit}
+            modalHeaderShow={true}
+            modalBodyShow={true}
+            modalFooterShow={false}
+            modalTitle={"Enter Your Details Below"}
+            modalBody={<div>
+                <input onChange={(e)=> setEmail(e.target.value)} className="form-control contact-field-input mb-4" type="email" name="email" placeholder="Your Email ID" required />
+                <select className='form-control contact-field-input mb-4' onChange={(e)=> setJobPosition(e.target.value)} name="jobPosition" required >
+                    <option value="none" >What job are you applying for?</option>
+                    <option value="Ruby on Rails">Ruby on Rails Developer</option>
+                    <option value="Python Developer">Python Developer</option>
+                    <option value="Python/Django Developer">Python/Django Developer</option>
+                    <option value="Python/Flask Developer">Python/Flask Developer</option>
+                    <option value="Mern Stack Developer">Mern Stack Developer</option>
+                    <option value="Full Stack Developer">Full Stack Developer</option>
+                    <option value="React Js Developer">React Js Developer</option>
+                    <option value="Node Js Developer">Node Js Developer</option>
+                    <option value="Web Developer">Web Developer</option>
+                    <option value="Web Designer">Web Designer</option>
+                    <option value="Mobile/Web Developer">Mobile/Web Developer</option>
+                    <option value="Internet Marketing Expert">Internet Marketing Expert</option>
+                    <option value="SEO Analyst">SEO Analyst</option>
+                </select>
+                <select className='form-control contact-field-input mb-4' onChange={(e)=> setExperience(e.target.value)} name="experience" required >
+                    <option value="none" >Your Work Experience?</option>
+                    <option value="Internship">Internship</option>
+                    <option value="Fresher">Fresher</option>
+                    <option value="1 year">1 year</option>
+                    <option value="2 years">2 years</option>
+                    <option value="3 years">3 years</option>
+                    <option value="4 years">4 years</option>
+                    <option value="5 years">5 years</option>
+                    <option value="5+ years">5+ years</option>
+                </select>
+                <div className='job-apply-upImg-text d-flex mb-4' >
+                    <a className='job-apply-upImg-link' onClick={() => image.click()} >
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_1102_2677" style={{maskType: "alpha"}} maskUnits="userSpaceOnUse" x="5" y="3" width="14" height="18">
+                            <path fillRule="evenodd" clipRule="evenodd" d="M14 16.2961H10C9.45 16.2961 9 15.8461 9 15.2961V10.2961H7.41C6.52 10.2961 6.08 9.2161 6.71 8.5861L11.3 3.9961C11.4868 3.80885 11.7405 3.70361 12.005 3.70361C12.2695 3.70361 12.5232 3.80885 12.71 3.9961L17.3 8.5861C17.93 9.2161 17.48 10.2961 16.59 10.2961H15V15.2961C15 15.8461 14.55 16.2961 14 16.2961ZM18 18.2961H6C5.45 18.2961 5 18.7461 5 19.2961C5 19.8461 5.45 20.2961 6 20.2961H18C18.55 20.2961 19 19.8461 19 19.2961C19 18.7461 18.55 18.2961 18 18.2961Z" fill="black"/>
+                            </mask>
+                            <g mask="url(#mask0_1102_2677)">
+                            <rect width="24" height="24" fill="#5956E9"/>
+                            </g>
+                        </svg>
+                        <span className='' >Upload Resume</span>
+                    </a>
                 </div>
-                <div className='col-lg-6' >
-                    <h1>Please fill in the following form</h1>
+                <input ref={(selectImage) => { image = selectImage} } className='d-none' name='resume' id='resume' type='file' />
+                <div className="mb-4 text-end">
+                    <button className="entry__btn btn btn_purple contact-submit-btn btn-sm mb-3 w-100" type="submit" >Send Now</button>
                 </div>
-                <div className='col-lg-6' >
-                    <img className='career-cv-img' src='images/cv1.jpg' alt='' />
-                </div>
-                <div className='col-lg-6' >
-                    <form>
-                        <div className='form-group entry__field field' >
-                            <input className='form-control contact-field-input' type="text" name="name" placeholder='Name' required />
-                        </div>
-                        <div className='form-group entry__field field' >
-                            <input className='form-control contact-field-input' type="email" name="email" placeholder='Enter Your Email' required />
-                        </div>
-                        <div className='form-group entry__field field' >
-                            <input className='form-control contact-field-input' type="tel" name="phone" placeholder='Enter Phone Number' pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required />
-                        </div>
-                        <div className='form-group entry__field field' >
-                            <div className="field__label">Please select a job position*</div>
-                            <select className='form-control contact-field-input' required >
-                                <option value="none"  disabled hidden>--Select--</option>
-                                <option value="Ruby on Rails">Ruby on Rails Developer</option>
-                                <option value="Python Developer">Python Developer</option>
-                                <option value="Python/Django Developer">Python/Django Developer</option>
-                                <option value="Python/Flask Developer">Python/Flask Developer</option>
-                                <option value="Mern Stack Developer">Mern Stack Developer</option>
-                                <option value="Full Stack Developer">Full Stack Developer</option>
-                                <option value="React Js Developer">React Js Developer</option>
-                                <option value="Node Js Developer">Node Js Developer</option>
-                                <option value="Web Developer">Web Developer</option>
-                                <option value="Web Designer">Web Designer</option>
-                                <option value="Mobile/Web Developer">Mobile/Web Developer</option>
-                                <option value="Internet Marketing Expert">Internet Marketing Expert</option>
-                                <option value="SEO Analyst">SEO Analyst</option>
-                            </select>
-                        </div>
-                        <div className='form-group entry__field field' >
-                            <div className="field__label">Your work experience*</div>
-                            <select className='form-control contact-field-input' required >
-                                <option value="none"  disabled hidden>--Select--</option>
-                                <option value="Internship">Internship</option>
-                                <option value="Fresher">Fresher</option>
-                                <option value="1 year">1 year</option>
-                                <option value="2 years">2 years</option>
-                                <option value="3 years">3 years</option>
-                                <option value="4 years">4 years</option>
-                                <option value="5 years">5 years</option>
-                                <option value="5+ years">5+ years</option>
-                            </select>
-                        </div>
-                        <div className='form-group entry__field field' >
-                            <div className="field__label">Technologies*</div>
-                            <select className='form-control contact-field-input' required >
-                                <option value="none"  disabled hidden>--Select--</option>
-                                <option value="React/Redux Native"> React/Redux Native</option>
-                                <option value="Python/Django/Flask">Python/Django/Flask</option>
-                                <option value="Ruby On Rails">Ruby On Rails</option>
-                                <option value="WordPress/PHP">WordPress/PHP</option>
-                                <option value="Scrapping">Web Scrapping</option>
-                                <option value="Automation">Automation</option>
-                                <option value="Angular/React/Backbone/Vue">Angular/React/Backbone/Vue</option>
-                                <option value="Node/Express Js">Node/Express Js</option>
-                                <option value="Multi-Technologies">Multi-Technologies</option>
-                                <option value="Android/Ios">Android/Ios</option>
-                            </select>
-                        </div>
-                        <div className='form-group entry__field field' >
-                            <input className='form-control contact-field-input' type="file" name="resume" required />
-                        </div>
-                        <div className='form-group entry__field field' >
-                            <button className='btn btn-primary career-submit-btn' >Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div> */}
+            </div>}
+        />
         <Footer />
     </>
   )

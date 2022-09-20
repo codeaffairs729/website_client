@@ -244,7 +244,7 @@ const Contact = () => {
                         </a>
                     </div>
                     <div className="contact_cloud_2 salesforce-floating">
-                        <a href="#" title='Quick Contact' onClick={handleModalShow} >
+                        <a style={{cursor: "pointer"}} title='Quick Contact' onClick={handleModalShow} >
                             <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="" />
                             <img className="contact-skype-icon" data-scale="1.5" data-orientation="right" src="icons/gmail.png" alt="" />
                         </a>
@@ -279,7 +279,7 @@ const Contact = () => {
                 modalFooterShow={false}
                 modalTitle={"Quick Contact"}
                 modalBody={<div>
-                    <div className="entry__field field">
+                    <div className="entry__field field quick-contact-field">
                         <div className="field__wrap">
                             <div className="field__icon contact-field-icon">
                                 {
@@ -298,7 +298,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="mb-4 text-end">
-                        <button className="entry__btn btn btn_purple contact-submit-btn btn-sm mb-3" type="submit" >Send Now</button>
+                        <button className="entry__btn btn btn_purple contact-submit-btn btn-sm mb-3 w-100" type="submit" >Send Now</button>
                     </div>
                 </div>}
             />
