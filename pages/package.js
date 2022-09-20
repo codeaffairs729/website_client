@@ -128,7 +128,7 @@ const Package = () => {
 
     return (
         <>
-            <div className="package js-package">
+            <div className="package package-main">
                 <div className="package__center center">
                     <div className="package__container">
                         <div className="package__wrap">

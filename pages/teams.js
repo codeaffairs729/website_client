@@ -68,7 +68,7 @@ const Teams = () => {
 
     return (
         <>
-            <div className="teams">
+            <div className="teams teams-main">
                 <div className="teams__center center">
                     <div className="teams__head" data-aos="animation-scale-y">
                         {/* <div className="teams__stage stage">Team Collaboration Redefined</div> */}

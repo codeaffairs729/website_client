@@ -1424,6 +1424,7 @@ a {
 .work-process {
   height: 700px;
   overflow: visible;
+  margin-bottom: 0;
 }
 
 /* .showcase-big-circle {
@@ -1500,6 +1501,10 @@ a {
 /* Work Component CSS End */
 
 /* Teams Component CSS Start */
+.teams-main {
+  margin-bottom: 100px
+}
+
 .teams-cmnt-text {
   overflow: hidden;
   /* text-overflow: ellipsis;
@@ -1526,6 +1531,10 @@ a {
 /* Teams Component CSS End */
 
 /* Package Component CSS End */
+.package-main {
+  margin-bottom: 0;
+}
+
 .package__preview {
   width: 100%;
   /* margin: auto; */
