@@ -13,7 +13,7 @@ const handler = (req, res) => {
                 // console.log(reCaptchaRes, "Response from Google reCaptcha verification API");
                 if (reCaptchaRes?.score > 0.5) {
                     // Save data to the database from here
-                    const { email, jobPosition, experience } = req.body;
+                    const { email, jobPosition, experience, resumeName, resumeType, resumeBase64 } = req.body;
 
                     const mail = require('@sendgrid/mail');
                     mail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -22,6 +22,7 @@ const handler = (req, res) => {
                         to: process.env.DEFAULT_TO_EMAIL,
                         from: process.env.DEFAULT_FROM_EMAIL,
                         subject: 'via CodeGarageTech',
+                        text: "Job Application",
                         html: `<p>
                                 Hi,<br>
                             </p>
@@ -35,13 +36,19 @@ const handler = (req, res) => {
 
                             <p>Regards,<br>
                             Codegaragetech</p>`,
+                        attachments: [{
+                            content: `${resumeBase64}`,
+                            filename: `${resumeName}`,
+                            type: `${resumeType}`,
+                            disposition: 'attachment'
+                        }],
                     }).then(() => {
                         res.status(200).json({ status: 'success' });
                         mail.send({
                             to: email,
                             from: process.env.DEFAULT_FROM_EMAIL,
                             subject: 'via CodeGarageTech',
-                            text: message,
+                            text: "Job Application",
                             html: `<p>
                                     Hi ${email},<br>
                                 </p>

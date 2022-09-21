@@ -14,7 +14,7 @@ const GenericModal = (props) => {
                   <div className="modal-body" style={ modalBodyShow ? {display: "block"} : {display: "none"} } >
                     <div className='row' >
                       <div className='col-lg-12 px-5' >
-                          <form onSubmit={props.handleSubmit} >
+                          <form onSubmit={props.handleSubmit} encType="multipart/form-data" method="post" >
                             {modalBody}
                           </form>
                       </div>

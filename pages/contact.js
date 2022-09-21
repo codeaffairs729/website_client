@@ -56,7 +56,6 @@ const Contact = () => {
     };
 
     const submitEnquiryForm = (gReCaptchaToken) => {
-        debugger
         fetch("/api/contact", {
             method: "POST",
             headers: {

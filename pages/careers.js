@@ -10,7 +10,11 @@ const Careers = () => {
     const [email, setEmail] = useState("");
     const [jobPosition, setJobPosition] = useState("");
     const [experience, setExperience] = useState("");
-    // const [resume, setResume] = useState("");
+    const [resume, setResume] = useState(null);
+    const [resumeName, setResumeName] = useState("");
+    const [resumeType, setResumeType] = useState("");
+    const [resumeBase64, setResumeBase64] = useState("");
+    const [createObjectURL, setCreateObjectURL] = useState(null);
 
     const image = useRef(null);
 
@@ -23,10 +27,36 @@ const Careers = () => {
         setGenModalshow(false);
     }
 
+    const uploadToClient = async (event) => {
+        if (event.target.files && event.target.files[0]) {
+            const file = event.target.files[0];
+            const base64 = await convertBase64(file);
+
+            setResumeName(file.name);
+            setResumeType(file.type);
+            setResumeBase64(base64.split(",")[1]);
+            setCreateObjectURL(URL.createObjectURL(file));
+        }
+    };
+
+    const convertBase64 = (file) => {
+        return new Promise((resolve, reject) => {
+            const fileReader = new FileReader();
+            fileReader.readAsDataURL(file);
+
+            fileReader.onload = () => {
+                resolve(fileReader.result);
+            };
+
+            fileReader.onerror = (error) => {
+                reject(error);
+            };
+        });
+    };
+
     const { executeRecaptcha } = useGoogleReCaptcha();
 
     const handleSubmit = (e) => {
-        debugger
         e.preventDefault();
 
         if (!executeRecaptcha) {
@@ -39,7 +69,6 @@ const Careers = () => {
     };
 
     const submitEnquiryForm = (gReCaptchaToken) => {
-        debugger
         fetch("/api/applyForJob", {
             method: "POST",
             headers: {
@@ -50,6 +79,9 @@ const Careers = () => {
                 email: email,
                 jobPosition: jobPosition,
                 experience: experience,
+                resumeName: resumeName,
+                resumeType: resumeType,
+                resumeBase64: resumeBase64,
                 gRecaptchaToken: gReCaptchaToken
             }),
         })
@@ -59,6 +91,11 @@ const Careers = () => {
                 setEmail("");
                 setJobPosition("");
                 setExperience("");
+                setResumeName("");
+                setResumeType("");
+                setResumeBase64("");
+                setResume(null);
+                setCreateObjectURL(null);
                 setGenModalshow(false);
                 toast.success('Success! Email Sent Successful', {
                     position: "top-right",
@@ -282,7 +319,7 @@ const Careers = () => {
                         <span className='' >Upload Resume</span>
                     </a>
                 </div>
-                <input ref={(selectImage) => { image = selectImage} } className='d-none' name='resume' id='resume' type='file' />
+                <input ref={(selectImage) => { image = selectImage} } onChange={uploadToClient} className='d-none' name='resume' id='resume' type='file' />
                 <div className="mb-4 text-end">
                     <button className="entry__btn btn btn_purple contact-submit-btn btn-sm mb-3 w-100" type="submit" >Send Now</button>
                 </div>
