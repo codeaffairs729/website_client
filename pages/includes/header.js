@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
 import Slider from "react-slick";
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const Header = () => {
     const [headerSearchBar, setHeaderSearchBar] = useState(false);
@@ -9,6 +10,10 @@ const Header = () => {
     const [autoplay1, setAutoplay1] = useState(true);
     const [autoplay2, setAutoplay2] = useState(true);
     const [autoplay3, setAutoplay3] = useState(true);
+
+    const [careerLink, setCareerLink] = useState(false);
+    const [aboutUsLink, setAboutUsLink] = useState(false);
+    const router = useRouter();
 
     const headerSearch = () => {
         const searchBarShowHide = headerSearchBar ? false : true;
@@ -19,7 +24,9 @@ const Header = () => {
         sideBarHandler ? setSideBarHandler(false) : setSideBarHandler(true);
     }
 
-    // useEffect(() => {
+    useEffect(() => {
+        setCareerLink(router.pathname == '/careers');
+        setAboutUsLink(router.pathname == '/aboutUs');
     //     const timer1 = setTimeout(() => {
     //         setAutoplay1(true);
     //         console.log(autoplay1);
@@ -34,7 +41,7 @@ const Header = () => {
     //         setAutoplay3(true);
     //         console.log(autoplay3);
     //     }, 5000);
-    // }, []);
+    }, []);
 
     const servicesSettings = {
         slidesToShow: 3,
@@ -642,8 +649,8 @@ const Header = () => {
                                 </div>
                             </div>
                             <a className="header__item" href="./#portfolio">Portfolio</a>
-                            <a className="header__item" href="./careers">Careers</a>
-                            <a className="header__item" href="./aboutUs">About Us</a>
+                            <a className={careerLink ? "header__item header-item" : "header__item"} href="./careers" >Careers</a>
+                            <a className={aboutUsLink ? "header__item header-item" : "header__item"} href="./aboutUs">About Us</a>
                         </nav>
                         <div className="header__photo">
                             <img className="header__pic" src="img/menu-pic.png" alt="" />

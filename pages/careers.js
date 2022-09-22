@@ -158,7 +158,7 @@ const Careers = () => {
                         <p className='career-area-1-para py-3' >
                             We offer flexible pricing options for freelancers and design teams.
                         </p>
-                        <button className='btn btn-primary bg-white career-area-1-btn px-5' >
+                        <button onClick={handleModalShow} className='btn btn-primary bg-white career-area-1-btn px-5' >
                             Join The Exceptionals
                         </button>
                     </div>
@@ -336,7 +336,7 @@ const Careers = () => {
                             <span>Upload Resume</span>
                         </a>
                     </div>
-                    <input ref={(selectImage) => { image = selectImage} } onChange={uploadToClient} className='d-none' name='resume' id='resume' type='file' value={resume} />
+                    <input ref={(selectImage) => { image = selectImage}} onChange={uploadToClient} className='d-none' name='resume' id='resume' type='file' value={resume} />
                     <div className="mb-4 text-end">
                         <button ref={(submitBtnRef) => { submitBtn = submitBtnRef}} className="entry__btn btn btn_purple contact-submit-btn btn-sm mb-3 w-100" type="submit" >Send Now</button>
                     </div>

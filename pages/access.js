@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react'
+import React, { useCallback, useState, useRef } from 'react'
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Access = () => {
   const [email, setEmail] = useState("");
   const { executeRecaptcha } = useGoogleReCaptcha();
+  const submitBtn = useRef(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,6 +22,8 @@ const Access = () => {
   };
 
   const submitEnquiryForm = (gReCaptchaToken) => {
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> Loading...';
     fetch("/api/contact", {
       method: "POST",
       headers: {
@@ -40,6 +43,10 @@ const Access = () => {
       if (res?.status === "success") {
         // console.log(res?.message);
         setEmail("");
+
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = 'Request Contact';
+
         toast.success('Success! Email Sent Successful', {
           position: "top-right",
           autoClose: 5000,
@@ -53,6 +60,9 @@ const Access = () => {
       } else {
         // console.log(res?.message);
         // setNotification(res?.message);
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = 'Request Contact';
+
         toast.error('Error! Email Not Sent', {
           position: "top-right",
           autoClose: 5000,
@@ -106,10 +116,8 @@ const Access = () => {
                   <img className="access__pic" src="img/sending-mail.svg" alt="" />
                 </div>
               </div>
-              <button className="access__btn btn btn_purple" type="submit">
-                Request
-                <br/>
-                Contact
+              <button ref={(submitBtnRef) => { submitBtn = submitBtnRef}} className="access__btn btn btn_purple" type="submit">
+                Request Contact
               </button>
             </form>
           </div>

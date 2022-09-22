@@ -199,6 +199,14 @@ a {
 .header__category {
   margin-bottom: 15px;
 }
+
+body:not(.touch-device) .header-item[href] {
+  color: #292930;
+}
+
+body:not(.touch-device) .header-item[href]:before {
+  width: 100%;
+}
 /* Header Component CSS End */
 
 .btn_purple {
