@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import Head from 'next/head'
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { ToastContainer, toast } from 'react-toastify';
@@ -11,10 +11,13 @@ const Contact = () => {
     const [emailIcon, setEmailIcon] = useState(false);
     const [messageIcon, setMessageIcon] = useState(false);
 
-    const [name, setName] = useState("Anonymous");
-    const [phone, setPhone] = useState("NA");
+    const [name, setName] = useState("");
+    const [phone, setPhone] = useState("");
     const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("Enquiry");
+    const [message, setMessage] = useState("");
+
+    const submitBtn = useRef(null);
+    const submitModalBtn = useRef(null);
 
     const [genModalshow, setGenModalshow] = useState(false);
     const handleModalShow = () => {
@@ -43,6 +46,13 @@ const Contact = () => {
         e == 1 ? setPhoneIcon(true) : setPhoneIcon(false);
     }
 
+    const handleModalEmail = (e) => {
+        setName("Anonymous");
+        setPhone("NA");
+        setEmail(e.target.value);
+        setMessage("Enquiry");
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -56,6 +66,11 @@ const Contact = () => {
     };
 
     const submitEnquiryForm = (gReCaptchaToken) => {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> Loading...';
+
+        submitModalBtn.disabled = true;
+        submitModalBtn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> Loading...';
         fetch("/api/contact", {
             method: "POST",
             headers: {
@@ -78,20 +93,33 @@ const Contact = () => {
                 setEmail("");
                 setMessage("");
                 setGenModalshow(false);
+
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Send Now';
+
+                submitModalBtn.disabled = false;
+                submitModalBtn.innerHTML = 'Send Now';
+
                 toast.success('Success! Email Sent Successful', {
                     position: "top-right",
                     autoClose: 5000,
-                    hideProgressBar: false,
+                    hideProgressBar: true,
                     closeOnClick: true,
                     pauseOnHover: true,
                     draggable: true,
                     progress: undefined,
                 });
             } else {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Send Now';
+
+                submitModalBtn.disabled = false;
+                submitModalBtn.innerHTML = 'Send Now';
+
                 toast.error('Error! Email Not Sent', {
                     position: "top-right",
                     autoClose: 5000,
-                    hideProgressBar: false,
+                    hideProgressBar: true,
                     closeOnClick: true,
                     pauseOnHover: true,
                     draggable: true,
@@ -120,7 +148,7 @@ const Contact = () => {
             <ToastContainer
                 position="top-right"
                 autoClose={5000}
-                hideProgressBar={false}
+                hideProgressBar={true}
                 newestOnTop={false}
                 closeOnClick
                 rtl={false}
@@ -164,7 +192,7 @@ const Contact = () => {
                                                                 </svg>
                                                             }
                                                         </div>
-                                                        <input onFocus={() => changeNameIcon(1)} onBlur={() => changeNameIcon(0)} onChange={(e)=> setName(e.target.value)} className="field__input contact-field-input" type="text" name="name" placeholder="Name" required />
+                                                        <input onFocus={() => changeNameIcon(1)} onBlur={() => changeNameIcon(0)} onChange={(e)=> setName(e.target.value)} className="field__input contact-field-input" type="text" name="name" placeholder="Name" value={name} required />
                                                     </div>
                                                 </div>
                                                 <div className="entry__field field">
@@ -177,7 +205,7 @@ const Contact = () => {
                                                                 : <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill="#444" d="M12.2 10c-1.1-.1-1.7 1.4-2.5 1.8C8.4 12.5 6 10 6 10S3.5 7.6 4.1 6.3c.5-.8 2-1.4 1.9-2.5-.1-1-2.3-4.6-3.4-3.6C.2 2.4 0 3.3 0 5.1c-.1 3.1 3.9 7 3.9 7 .4.4 3.9 4 7 3.9 1.8 0 2.7-.2 4.9-2.6 1-1.1-2.5-3.3-3.6-3.4z"/></svg>
                                                             }
                                                         </div>
-                                                        <input onFocus={() => changePhoneIcon(1)} onBlur={() => changePhoneIcon(0)} onChange={(e)=> setPhone(e.target.value)} className="field__input contact-field-input" type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required />
+                                                        <input onFocus={() => changePhoneIcon(1)} onBlur={() => changePhoneIcon(0)} onChange={(e)=> setPhone(e.target.value)} className="field__input contact-field-input" type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" value={phone} required />
                                                     </div>
                                                 </div>
                                                 <div className="entry__field field">
@@ -196,7 +224,7 @@ const Contact = () => {
                                                             }
                                                         </div>
                                                         <input onFocus={() => changeEmailIcon(1)} onBlur={() => changeEmailIcon(0)} 
-                                                        onChange={(e)=> setEmail(e.target.value)} className="field__input contact-field-input" type="email" name="email" placeholder="Email" required />
+                                                        onChange={(e)=> setEmail(e.target.value)} className="field__input contact-field-input" type="email" name="email" placeholder="Email" value={email} required />
                                                     </div>
                                                 </div>
                                                 <div className="entry__field field">
@@ -217,10 +245,10 @@ const Contact = () => {
                                                                 </svg>
                                                             }
                                                         </div>
-                                                        <textarea onFocus={() => changeMessageIcon(1)} onBlur={() => changeMessageIcon(0)} onChange={(e)=> setMessage(e.target.value)}  className="field__input field_text_area" name="message" placeholder="Message" required />
+                                                        <textarea onFocus={() => changeMessageIcon(1)} onBlur={() => changeMessageIcon(0)} onChange={(e)=> setMessage(e.target.value)}  className="field__input field_text_area" name="message" placeholder="Message" value={message} required />
                                                     </div>
                                                 </div>
-                                                <button className="entry__btn btn btn_purple contact-submit-btn" type="submit" >Send Now</button>
+                                                <button ref={(submitBtnRef) => { submitBtn = submitBtnRef}} className="entry__btn btn btn_purple contact-submit-btn" type="submit" >Send Now</button>
                                             </form>
                                         </div>
                                         <div className="contact__circles">
@@ -293,11 +321,11 @@ const Contact = () => {
                                 }
                             </div>
                             <input onFocus={() => changeEmailIcon(1)} onBlur={() => changeEmailIcon(0)} 
-                            onChange={(e)=> setEmail(e.target.value)} className="field__input contact-field-input" type="email" name="email" placeholder="Your Email Address" required />
+                            onChange={(e) => handleModalEmail(e)} className="field__input contact-field-input" type="email" name="email" placeholder="Your Email Address" value={email} required />
                         </div>
                     </div>
                     <div className="mb-4 text-end">
-                        <button className="entry__btn btn btn_purple contact-submit-btn btn-sm mb-3 w-100" type="submit" >Send Now</button>
+                        <button ref={(submitModalBtnRef) => { submitModalBtn = submitModalBtnRef}} className="entry__btn btn btn_purple contact-submit-btn btn-sm mb-3 w-100" type="submit" >Send Now</button>
                     </div>
                 </div>}
             />

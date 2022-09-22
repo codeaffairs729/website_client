@@ -43,7 +43,7 @@ const Access = () => {
         toast.success('Success! Email Sent Successful', {
           position: "top-right",
           autoClose: 5000,
-          hideProgressBar: false,
+          hideProgressBar: true,
           closeOnClick: true,
           pauseOnHover: true,
           draggable: true,
@@ -56,7 +56,7 @@ const Access = () => {
         toast.error('Error! Email Not Sent', {
           position: "top-right",
           autoClose: 5000,
-          hideProgressBar: false,
+          hideProgressBar: true,
           closeOnClick: true,
           pauseOnHover: true,
           draggable: true,
@@ -71,7 +71,7 @@ const Access = () => {
       <ToastContainer
         position="top-right"
         autoClose={5000}
-        hideProgressBar={false}
+        hideProgressBar={true}
         newestOnTop={false}
         closeOnClick
         rtl={false}
