@@ -336,7 +336,7 @@ const Careers = () => {
                             <span>Upload Resume</span>
                         </a>
                     </div>
-                    <input ref={(selectImage) => { image = selectImage}} onChange={uploadToClient} className='d-none' name='resume' id='resume' type='file' value={resume} />
+                    <input ref={(selectImage) => { image = selectImage}} onChange={uploadToClient} className='d-none' name='resume' id='resume' type='file' value={resume} accept=".doc, .docx, .pdf" />
                     <div className="mb-4 text-end">
                         <button ref={(submitBtnRef) => { submitBtn = submitBtnRef}} className="entry__btn btn btn_purple contact-submit-btn btn-sm mb-3 w-100" type="submit" >Send Now</button>
                     </div>
