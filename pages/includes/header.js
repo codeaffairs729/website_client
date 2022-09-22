@@ -98,9 +98,9 @@ const Header = () => {
             </Head>
             <div className="header js-header" id="header">
                 <div className="header__center center">
-                    {/* <button onClick={() => handleSidebar()} className={ sideBarHandler ? "header__burger js-header-burger active" : "header__burger js-header-burger" }>
+                    <button onClick={() => handleSidebar()} className={ sideBarHandler ? "header__burger js-header-burger active" : "header__burger js-header-burger" }>
                         <span></span>
-                    </button> */}
+                    </button>
                     <a className="header__logo" href="./">
                         <img className="header__pic" src="logo/logoEdited.png" alt="" />
                     </a>

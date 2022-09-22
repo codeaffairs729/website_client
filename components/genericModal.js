@@ -4,7 +4,7 @@ const GenericModal = (props) => {
   const { genModalshow, modalHeaderShow, modalBodyShow, modalFooterShow, modalTitle, modalBody } = props
   return (
     <>
-      <div className="modal" id="myModal" style={ genModalshow ? {display: "block"} : {display: "none"} } >
+      <div className={`modal fade ${ genModalshow ? "show" : "" }`} id="myModal" >
           <div className="modal-dialog">
               <div className="modal-content">
                   <div className="modal-header justify-content-center" style={ modalHeaderShow ? {display: "flex"} : {display: "none"} } >

@@ -2505,6 +2505,40 @@ gap: 32px; */
 .quick-contact-field {
   margin-top: 0 !important;
 }
+
+.show {
+  display: block;
+}
+
+.modal.fade.show .modal-dialog {
+  animation: fadein 0.3s ease-out;
+}
+
+@keyframes fadein {
+	from {
+		opacity:0;
+    transform: translate(0, -50px);
+	}
+	to {
+		opacity:1;
+    transform: none;
+	}
+}
+
+.modal.fade .modal-dialog {
+  animation: fadeout 0.3s ease-out;
+}
+
+@keyframes fadeout {
+	from {
+		opacity:1;
+    transform: none;
+	}
+	to {
+		opacity:0;
+    transform: translate(0, -50px);
+	}
+}
 /* Generic Modal Component CSS End */
 
 @media only screen and (max-width: 1199px) {
