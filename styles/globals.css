@@ -3222,6 +3222,31 @@ gap: 32px; */
   .solutions-desktop-view {
     display: none;
   }
+
+  .header__head:before {
+    bottom: 0;
+  }
+
+  .service-menu-head {
+    display: inline-block;
+  }
+
+  .service-menu {
+    display: block;
+    position: unset;
+  }
+
+  .service-menu-header-item {
+    text-align: center;
+  }
+
+  .service-menu-header-category {
+    margin-top: 1rem;
+  }
+
+  .main {
+    overflow-y: scroll;
+  }
   /* Header Component CSS End */
 
   /* Package Component CSS Start */

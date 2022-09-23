@@ -10,6 +10,7 @@ const Header = () => {
     const [autoplay1, setAutoplay1] = useState(true);
     const [autoplay2, setAutoplay2] = useState(true);
     const [autoplay3, setAutoplay3] = useState(true);
+    const [serviceMenu, setServiceMenu] = useState(false);
 
     const [careerLink, setCareerLink] = useState(false);
     const [aboutUsLink, setAboutUsLink] = useState(false);
@@ -22,6 +23,11 @@ const Header = () => {
 
     const handleSidebar = () => {
         sideBarHandler ? setSideBarHandler(false) : setSideBarHandler(true);
+        setServiceMenu(false);
+    }
+
+    const toggleSidebarInternalMenu = () => {
+        serviceMenu ? setServiceMenu(false) : setServiceMenu(true);
     }
 
     useEffect(() => {
@@ -107,87 +113,87 @@ const Header = () => {
                     <div className={ sideBarHandler ? "header__wrap js-header-wrap visible" : "header__wrap js-header-wrap" }>
                         <nav className="header__nav">
                             <a className="header__item" href="./">Home</a>
-                            <div className="header__item js-header-item">
-                                <a className="header__head" href="#">
+                            <div className={`header__item ${serviceMenu ? "service-menu-header-item" : "" }`}>
+                                <a className={`header__head ${serviceMenu ? "service-menu-head" : "" }`} href="#" onClick={toggleSidebarInternalMenu}>
                                     Services
                                     <svg className="icon icon-arrow-down">
                                         <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                                     </svg>
                                 </a>
-                                <div className="header__body js-header-body">
+                                <div className={`header__body ${serviceMenu ? "service-menu text-start" : "" }`}>
                                     <div className="header__center center header-dropdown-body">
                                         <div className="header__row row">
                                             <div className="col-lg-4 col-md-4 col-sm-4" >
-                                                <div className="header__category">
-                                                    <a href="#services" >Web Solutions</a>
+                                                <div className={`header__category ${serviceMenu ? "service-menu-header-item" : "" }`} >
+                                                    Web Solutions
                                                 </div>
                                                 <div className="row" >
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/ror1.png" alt="" />
                                                             </div>
-                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-11 ps-0 ms-0" >
                                                                 <div className="header__info">Ruby on Rails Development</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/react_3.png" alt="" />
                                                             </div>
-                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-11 ps-0 ms-0" >
                                                                 <div className="header__info">React / NextJs Development</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/vuejs.png" alt="" />
                                                             </div>
-                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-11 ps-0 ms-0" >
                                                                 <div className="header__info">VueJs / NuxtJs Development</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/node_2.png" alt="" />
                                                             </div>
-                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-11 ps-0 ms-0" >
                                                                 <div className="header__info">NodeJs Development</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/laravel.png" alt="" />
                                                             </div>
-                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-11 ps-0 ms-0" >
                                                                 <div className="header__info">Laravel Development</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/shopify_icon.png" alt="" />
                                                             </div>
-                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-11 ps-0 ms-0" >
                                                                 <div className="header__info">Shopify</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="icons/wordpress.png" alt="" />
                                                             </div>
-                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-11 ps-0 ms-0" >
                                                                 <div className="header__info">Wordpress</div>
                                                             </div>
                                                         </div>
@@ -318,44 +324,46 @@ const Header = () => {
                                                 </div>
                                             </div>
                                             <div className="col-lg-4 col-md-4 col-sm-4" >
-                                                <div className="header__category"><a href="#layouts" >Mobile Solutions</a></div>
+                                                <div className={`header__category ${serviceMenu ? "service-menu-header-item service-menu-header-category" : "" }`} >
+                                                    <a href="#layouts" >Mobile Solutions</a>
+                                                </div>
                                                 <div className="row" >
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/android_2.png" alt="" />
                                                             </div>
-                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-11 ps-0 ms-0" >
                                                                 <div className="header__info">Android App Development</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/ios.png" alt="" />
                                                             </div>
-                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-11 ps-0 ms-0" >
                                                                 <div className="header__info">IOS App Development</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/react_native.png" alt="" />
                                                             </div>
-                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-11 ps-0 ms-0" >
                                                                 <div className="header__info">React Native Development</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/flutter.png" alt="" />
                                                             </div>
-                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-11 ps-0 ms-0" >
                                                                 <div className="header__info">Flutter</div>
                                                             </div>
                                                         </div>
@@ -483,34 +491,34 @@ const Header = () => {
                                                         </div> */}
                                                     {/* </Slider> */}
                                                 </div>
-                                                <div className="header__category mt-3">DevOps</div>
+                                                <div className={`header__category mt-3 ${serviceMenu ? "service-menu-header-item" : "" }`} >DevOps</div>
                                                 <div className="row" >
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/android_2.png" alt="" />
                                                             </div>
-                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-11 ps-0 ms-0" >
                                                                 <div className="header__info">Automation</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/android_2.png" alt="" />
                                                             </div>
-                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-11 ps-0 ms-0" >
                                                                 <div className="header__info">CI/CD</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="img/cloud.png" alt="" />
                                                             </div>
-                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-11 ps-0 ms-0" >
                                                                 <div className="header__info">Cloud Engineering</div>
                                                             </div>
                                                         </div>
@@ -518,64 +526,64 @@ const Header = () => {
                                                 </div>
                                             </div>
                                             <div className="col-lg-4 col-md-4 col-sm-4" >
-                                                <div className="header__category">Miscellaneous</div>
+                                                <div className={`header__category ${serviceMenu ? "service-menu-header-item service-menu-header-category" : "" }`} >Miscellaneous</div>
                                                 <div className="row" >
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/content-management-system.png" alt="" />
                                                             </div>
-                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-11 ps-0 ms-0" >
                                                                 <div className="header__info">UI / UX</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/bag-front-color.png" alt="" />
                                                             </div>
-                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-11 ps-0 ms-0" >
                                                                 <div className="header__info">E-commerce Solutions</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/notebook-iso-color.png" alt="" />
                                                             </div>
-                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-11 ps-0 ms-0" >
                                                                 <div className="header__info">Content Management System</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/customer-relationship-management.png" alt="" />
                                                             </div>
-                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-11 ps-0 ms-0" >
                                                                 <div className="header__info">Customer Relationship Management</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/digital-marketing.png" alt="" />
                                                             </div>
-                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-11 ps-0 ms-0" >
                                                                 <div className="header__info">Digital Marketing (PPC, SEO, ORM)</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
-                                                            <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
+                                                            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="images/deployment-host-management.png" alt="" />
                                                             </div>
-                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
+                                                            <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-11 ps-0 ms-0" >
                                                                 <div className="header__info">Deployment and Host Management</div>
                                                             </div>
                                                         </div>
