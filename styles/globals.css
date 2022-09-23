@@ -3245,7 +3245,7 @@ gap: 32px; */
   }
 
   .main {
-    overflow-y: scroll;
+    padding: 120px 0 100px;
   }
   /* Header Component CSS End */
 
@@ -3449,6 +3449,10 @@ gap: 32px; */
   /* Work Component CSS End */
 
   /* About Us Component CSS Start */
+  .about-area-1 {
+    margin-top: 120px;
+  }
+
   .about-area-1-outer {
     margin-top: 30px;
   }
@@ -3487,11 +3491,9 @@ gap: 32px; */
 
   /* Career Component CSS Start */
   .career-area-1 {
-    overflow: hidden;
-  }
-
-  .career-area-1 {
     padding: 0 !important;
+    overflow: hidden;
+    margin-top: 120px;
   }
 
   .career-area-1-col1 {

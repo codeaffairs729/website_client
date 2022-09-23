@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import Head from 'next/head'
 import Slider from "react-slick";
 import Link from 'next/link';
@@ -11,6 +11,7 @@ const Header = () => {
     const [autoplay2, setAutoplay2] = useState(true);
     const [autoplay3, setAutoplay3] = useState(true);
     const [serviceMenu, setServiceMenu] = useState(false);
+    const header = useRef(null);
 
     const [careerLink, setCareerLink] = useState(false);
     const [aboutUsLink, setAboutUsLink] = useState(false);
@@ -21,13 +22,15 @@ const Header = () => {
         setHeaderSearchBar(searchBarShowHide);
     }
 
-    const handleSidebar = () => {
+    const handleSidebar = (e) => {
         sideBarHandler ? setSideBarHandler(false) : setSideBarHandler(true);
         setServiceMenu(false);
+        header.parentElement.style.overflowY = 'unset'
     }
 
     const toggleSidebarInternalMenu = () => {
         serviceMenu ? setServiceMenu(false) : setServiceMenu(true);
+        sideBarHandler ? header.parentElement.style.overflowY = 'scroll' : header.parentElement.style.overflowY = 'unset';
     }
 
     useEffect(() => {
@@ -102,9 +105,9 @@ const Header = () => {
                 <meta name="theme-color" content="#ffffff"/>
                 <meta name="description" content="We are top custom software developer team in USA & India. We work on Ruby On Rails, NodeJs / NestJs, ReactJs / NextJs, VueJS / NuxtJs, Laravel and Shopify."/>
             </Head>
-            <div className="header js-header" id="header">
+            <div ref={(headerRef) => { header = headerRef}} className="header js-header" id="header">
                 <div className="header__center center">
-                    <button onClick={() => handleSidebar()} className={ sideBarHandler ? "header__burger js-header-burger active" : "header__burger js-header-burger" }>
+                    <button onClick={(e) => handleSidebar(e)} className={ sideBarHandler ? "header__burger js-header-burger active" : "header__burger js-header-burger" }>
                         <span></span>
                     </button>
                     <a className="header__logo" href="./">
@@ -325,7 +328,7 @@ const Header = () => {
                                             </div>
                                             <div className="col-lg-4 col-md-4 col-sm-4" >
                                                 <div className={`header__category ${serviceMenu ? "service-menu-header-item service-menu-header-category" : "" }`} >
-                                                    <a href="#layouts" >Mobile Solutions</a>
+                                                    Mobile Solutions
                                                 </div>
                                                 <div className="row" >
                                                     <div className="col-lg-12 header-solutions-outer" >
