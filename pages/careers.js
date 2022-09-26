@@ -310,6 +310,8 @@ const Careers = () => {
                         <option value="Mobile/Web Developer">Mobile/Web Developer</option>
                         <option value="Internet Marketing Expert">Internet Marketing Expert</option>
                         <option value="SEO Analyst">SEO Analyst</option>
+                        <option value="Content Writer">Content Writer</option>
+                        <option value="Video Editor">Video Editor</option>
                     </select>
                     <select className='form-control contact-field-input mb-4' onChange={(e)=> setExperience(e.target.value)} name="experience" value={experience} required >
                         <option value="none" >Your Work Experience?</option>
