@@ -135,6 +135,11 @@ const Careers = () => {
             }
         });
     };
+
+    const handleCurrentOpenings = (val) => {
+        setJobPosition(val);
+        handleModalShow();
+    }
     return (
         <>
             <Header />
@@ -270,6 +275,88 @@ const Careers = () => {
                 </div>
             </div>
 
+            <div className='container-fluid career-area-7' >
+                <div className='container career-area-7-container' >
+                    <div className='row' >
+                        <div className='col-lg-12'>
+                            <h2 className='text-center career-area-7-heading' >
+                                Current Openings
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div className="career-area-7-cloud-1-outer rackspace-floating">
+                    <img className="career-area-7-cloud-1" src="img/cloud.png" alt="" />
+                    <p className='career-area-7-techName-hiring-1' >
+                        <span className='d-flex align-items-center' >
+                            <img className="career-area-7-tech-img me-2" src="images/fullStack.png" alt="" />
+                            <b className='text-start'>
+                                Full Stack
+                                <br/>
+                                Developer
+                            </b>
+                        </span>
+                        <button className='btn btn_yellow career-area-7-techName-hiring-btn-1 mt-2' onClick={() => handleCurrentOpenings('Full Stack Developer')} >Apply</button>
+                    </p>
+                </div>
+                <div className="career-area-7-cloud-2-outer digitalocean-floating">
+                    <img className="career-area-7-cloud-1" src="img/cloud.png" alt="" />
+                    <p className='career-area-7-techName-hiring-1' >
+                        <span className='d-flex align-items-center' >
+                            <img className="career-area-7-tech-img me-2" src="images/shopify_icon.png" alt="" />
+                            <b className='text-start' >
+                                Shopify
+                                <br/>
+                                Developer
+                            </b>
+                        </span>
+                        <button className='btn btn_purple career-area-7-techName-hiring-btn-1 mt-2' onClick={() => handleCurrentOpenings('Shopify Developer')} >Apply</button>
+                    </p>
+                </div>
+                <div className="career-area-7-cloud-3-outer salesforce-floating">
+                    <img className="career-area-7-cloud-1" src="img/cloud.png" alt="" />
+                    <p className='career-area-7-techName-hiring-1' >
+                        <span className='d-flex align-items-center' >
+                            <img className="career-area-7-tech-img me-2" src="images/python_2.png" alt="" />
+                            <b className='text-start' >
+                                Python
+                                <br/>
+                                Developer
+                            </b>
+                        </span>
+                        <button className='btn btn_pink career-area-7-techName-hiring-btn-1 mt-2' onClick={() => handleCurrentOpenings('Python Developer')} >Apply</button>
+                    </p>
+                </div>
+                <div className="career-area-7-cloud-4-outer aws-floating">
+                    <img className="career-area-7-cloud-1" src="img/cloud.png" alt="" />
+                    <p className='career-area-7-techName-hiring-1' >
+                        <span className='d-flex align-items-center' >
+                            <img className="career-area-7-tech-img me-2" src="icons/laravel.png" alt="" />
+                            <b className='text-start' >
+                                Laravel, PHP
+                                <br/>
+                                Developer
+                            </b>
+                        </span>
+                        <button className='btn btn_green career-area-7-techName-hiring-btn-1 mt-2' onClick={() => handleCurrentOpenings('Laravel/PHP Developer')} >Apply</button>
+                    </p>
+                </div>
+                <div className="career-area-7-cloud-5-outer aws-floating">
+                    <img className="career-area-7-cloud-1" src="img/cloud.png" alt="" />
+                    <p className='career-area-7-techName-hiring-1' >
+                        <span className='d-flex align-items-center' >
+                            <img className="career-area-7-tech-img me-2" src="images/seo-analyst.png" alt="" />
+                            <b className='text-start' >
+                                SEO
+                                <br/>
+                                Analyst
+                            </b>
+                        </span>
+                        <button className='btn btn-dark career-area-7-techName-hiring-btn-1 mt-2' onClick={() => handleCurrentOpenings('SEO Analyst')} >Apply</button>
+                    </p>
+                </div>
+            </div>
+
             <div className='container-fluid career-area-6' >
                 <div className='row text-center career-area-6-row' >
                     <div className='col-lg-12' >
@@ -312,6 +399,8 @@ const Careers = () => {
                         <option value="SEO Analyst">SEO Analyst</option>
                         <option value="Content Writer">Content Writer</option>
                         <option value="Video Editor">Video Editor</option>
+                        <option value="Laravel/PHP Developer">Laravel/PHP Developer</option>
+                        <option value="Shopify Developer">Shopify Developer</option>
                     </select>
                     <select className='form-control contact-field-input mb-4' onChange={(e)=> setExperience(e.target.value)} name="experience" value={experience} required >
                         <option value="none" >Your Work Experience?</option>
