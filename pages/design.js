@@ -47,9 +47,9 @@ const Design = () => {
                                     </div>
                                     <div className="design__details">
                                         <div className="design__category">Design</div>
-                                        <div className="design__info">Ucview</div>
+                                        <div className="design__info">UCView</div>
                                         <div className="design__text">
-                                            Use the smart color picker to easily select and apply colors.
+                                            UCView is a leading provider of digital signage software worldwide, offering world-class digital signage SaaS and servers based (with load balancing) and content management software that is reliable, simple to use, and cost-effective to operate. Our company’s mission is to enable the business convergence of digital display owners, advertisers and consumers.
                                         </div>
                                         <a className="design__link" href="https://www.ucview.com/">
                                             Visit
@@ -69,7 +69,7 @@ const Design = () => {
                                         <div className="design__category">Design</div>
                                         <div className="design__info">Stock Architect</div>
                                         <div className="design__text">
-                                            Using the Component Builder with your projects.
+                                            StockArchitect delivers stock market information from various sources in curated form to its users to help them take informed decisions before buying or selling stocks.
                                         </div>
                                         <a className="design__link" href="https://stockarchitect.com/">
                                             Visit
@@ -89,7 +89,7 @@ const Design = () => {
                                         <div className="design__category">Design</div>
                                         <div className="design__info">Withrelay</div>
                                         <div className="design__text">
-                                            Deploy your projects more efficiently for web &amp; mobile.
+                                            Send & receive text messages, set auto-responders, schedule notifications & accept payments using your existing business phone number in single conversation. It gives a virtual SMS phone number that your customers can text immediately.
                                         </div>
                                         <a className="design__link" href="https://www.withrelay.com/">
                                             Visit
@@ -107,9 +107,9 @@ const Design = () => {
                                     </div>
                                     <div className="design__details">
                                         <div className="design__category">Design</div>
-                                        <div className="design__info">Videochatapro</div>
+                                        <div className="design__info">VideoChatAPro</div>
                                         <div className="design__text">
-                                            Use the smart color picker to easily select and apply colors.
+                                            The Video Chat a Pro app, allows you to power your business on the go by instantly notifying you of free customer leads, allowing you to charge for video chat, optimize your business listing, manage employees, collect reviews, and more! The app allows you to manage your free lead forms and respond to paid customer video chat requests. Contractors and technicians specializing in plumbing, HVAC, landscaping, electrical, appliances, or automotive repair will get free customers on Video Chat a Pro.
                                         </div>
                                         <a className="design__link" href="https://videochatapro.com/">
                                             Visit
@@ -129,7 +129,7 @@ const Design = () => {
                                         <div className="design__category">Design</div>
                                         <div className="design__info">Buyma</div>
                                         <div className="design__text">
-                                            Using the Component Builder with your projects.
+                                            Buyma is a marketplace which provides premier & luxury brand items with a joy of shopping experience with trusted sellers in the globe.
                                         </div>
                                         <a className="design__link" href="https://www.buyma.us/">
                                             Visit
@@ -169,7 +169,7 @@ const Design = () => {
                                         <div className="design__category">Design</div>
                                         <div className="design__info">Welcome AI</div>
                                         <div className="design__text">
-                                            Use the smart color picker to easily select and apply colors.
+                                            Welcome.AI helps businesses to discover, learn and evaluate all the new and emerging AI technologies that are coming into the market today.
                                         </div>
                                         <a className="design__link" href="https://welcome.ai/">
                                             Visit
