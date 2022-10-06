@@ -2144,7 +2144,8 @@ body.no-scroll {
 }
 
 .header__logo .header__pic {
-  width: 145px;
+  /* width: 145px; */
+  width: 180px;
 }
 
 .header__burger {
@@ -8743,7 +8744,8 @@ body:not(.touch-device) .header__item:hover .header__body {
     margin: 0 auto;
   }
   .header__logo .header__pic {
-    width: 100px;
+    /* width: 100px; */
+    width: 160px;
   }
   .header__burger {
     display: inline-block;

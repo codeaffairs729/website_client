@@ -3064,6 +3064,12 @@ gap: 32px; */
     margin-top: 8px;
   }
   /* Footer Component CSS End */
+
+  /* Header Component CSS Start */
+  .header__logo .header__pic {
+    width: 145px;
+  }
+  /* Header Component CSS End */
 }
 
 @media only screen and (max-width: 767px) {
