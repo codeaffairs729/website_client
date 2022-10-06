@@ -8114,7 +8114,7 @@ body:not(.touch-device) .header__item:hover .header__body {
     line-height: 1.4;
   }
   .design__text {
-    max-width: 180px;
+    /* max-width: 180px; */
   }
   .design__link {
     margin-top: 20px;
@@ -10202,7 +10202,7 @@ body:not(.touch-device) .header__item:hover .header__body {
     max-width: 230px;
   }
   .design__text {
-    max-width: 180px;
+    /* max-width: 180px; */
   }
   .details__info {
     max-width: 230px;
