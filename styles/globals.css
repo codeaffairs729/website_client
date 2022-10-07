@@ -2080,6 +2080,10 @@ gap: 32px; */
 /* About Us Component CSS End */
 
 /* Like Component CSS Start */
+.like-list {
+  min-height: 250px;
+}
+
 .like-list li {
   position: relative;
   padding-left: 44px;

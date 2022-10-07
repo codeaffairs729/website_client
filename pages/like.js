@@ -10,21 +10,33 @@ const Like = () => {
   const likeOptionOneFunc = () => {
     const likeOptionOneStatus = likeOptionOne ? false : true;
     setLikeOptionOne(likeOptionOneStatus);
+    setLikeOptionTwo(false);
+    setLikeOptionThree(false);
+    setLikeOptionFour(false);
   }
 
   const likeOptionTwoFunc = () => {
     const likeOptionTwoStatus = likeOptionTwo ? false : true;
     setLikeOptionTwo(likeOptionTwoStatus);
+    setLikeOptionOne(false);
+    setLikeOptionThree(false);
+    setLikeOptionFour(false);
   }
 
   const likeOptionThreeFunc = () => {
     const likeOptionThreeStatus = likeOptionThree ? false : true;
     setLikeOptionThree(likeOptionThreeStatus);
+    setLikeOptionTwo(false);
+    setLikeOptionOne(false);
+    setLikeOptionFour(false);
   }
 
   const likeOptionFourFunc = () => {
     const likeOptionFourStatus = likeOptionFour ? false : true;
     setLikeOptionFour(likeOptionFourStatus);
+    setLikeOptionThree(false);
+    setLikeOptionTwo(false);
+    setLikeOptionOne(false);
   }
   return (
     <>
