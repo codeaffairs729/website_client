@@ -29,7 +29,7 @@ const Teams = () => {
         speed: 700,
         autoplay: true,
         rtl: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 5000
     };
 
     const settingsUp = {
@@ -41,7 +41,7 @@ const Teams = () => {
         autoplay: true,
         vertical: true,
         verticalSwiping: true,
-        autoplaySpeed: 3000
+        autoplaySpeed: 6000
     };
 
     const settingsDown = {
@@ -53,7 +53,7 @@ const Teams = () => {
         autoplay: true,
         vertical: true,
         verticalSwiping: true,
-        autoplaySpeed: 4000
+        autoplaySpeed: 7000
     };
 
     const settingsLeft = {
@@ -63,7 +63,7 @@ const Teams = () => {
         arrows: false,
         speed: 700,
         autoplay: true,
-        autoplaySpeed: 5000
+        autoplaySpeed: 8000
     };
 
     return (

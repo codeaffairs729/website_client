@@ -2115,6 +2115,17 @@ gap: 32px; */
 .like-list li:not(:last-child) {
   margin-bottom: 16px;
 }
+
+.like-options {
+  cursor: pointer;
+}
+
+.like-section-arrow {
+  display: inline-block;
+  margin-left: auto;
+  font-size: 10px;
+  transition: fill .25s;
+}
 /* Like Component CSS End */
 
 /* Testing Component CSS Start */
