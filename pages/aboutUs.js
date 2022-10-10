@@ -74,13 +74,25 @@ function AboutUs() {
                     <div className='row about-area-1-outer-row' >
                         <div className='col-lg-7 col-md-7 about-area-1-outer' >
                             <h1>
-                                The Team You’re Looking for
+                                We Clear Your Path,
+                                <br/>
+                                We help you succeed,
+                                <br/>
+                                We keep you successfull
                             </h1>
-                            <p className='about-area-1-para my-4' >We offer flexible pricing options for freelancers and design teams. </p>
+                            <p className='about-area-1-para my-4' >
+                                We offer flexible pricing options for freelancers and design teams. This
+                                sal kl fkls  klf  fkls fksl sfls fkls fs fs fs fskflsklf slf k fkwl fs fs fsfslkf skflsf s
+                                s fsfs fsfklsf kls fkls fkls fkls fkls fds fkls fs fklsd fkls fkl sf skfsdfklsd kf  fsff
+                                sl fsfs fksl fksl fkls fskl fs f.
+                            </p>
                             <button className='btn btn-primary bg-white about-area-1-btn' >Our Magic Potion</button>
                         </div>
-                        <div className='col-lg-5 col-md-5 about-area-1-outer bg-dark' >
-                            <img className='' src='' alt='' />
+                        <div className='col-lg-5 col-md-5 about-area-1-outer' >
+                            <img className='about-area-1-pic-1' src='aboutUsImages/team_pic_1.png' alt='' />
+                            <img className='about-area-1-pic-2' src='aboutUsImages/team_pic_2.png' alt='' />
+                            <img className='about-area-1-pic-3' src='aboutUsImages/team_pic_3.png' alt='' />
+                            <img className='about-area-1-pic-4' src='aboutUsImages/team_pic_4.png' alt='' />
                         </div>
                     </div>
                 </div>
@@ -88,14 +100,18 @@ function AboutUs() {
             <div className='container-fluid my-5 about-area-2'>
                 <div className='container' >
                     <div className='row about-area-2-outer-row'>
-                        <div className='col-lg-5 d-flex justify-content-center' >
-                            <div className="about-area-2-grey-circle" >
+                        <div className='col-lg-6 d-flex justify-content-center about-area-2-outer-col' >
+                            {/* <div className="about-area-2-grey-circle" >
                                 <img className="about-area-2-cam-pic" src="images/Camera _.png" alt="" />
-                            </div>
+                            </div> */}
+                            <img className='about-area-2-pic-1' src='aboutUsImages/team_pic_5.png' alt='' />
+                            <img className='about-area-2-pic-2' src='aboutUsImages/team_pic_6.png' alt='' />
+                            <img className='about-area-2-pic-3' src='aboutUsImages/team_pic_7.png' alt='' />
+                            <img className='about-area-2-pic-4' src='aboutUsImages/team_pic_8.png' alt='' />
                         </div>
-                        <div className='col-lg-7' >
+                        <div className='col-lg-6 about-area-2-text-area' >
                             <h2 className='about-area-2-heading mb-5' >
-                                Our Culture Defines Us
+                                Our Mission.....
                             </h2>
                             <p className='about-area-2-para' >
                                 We offer flexible pricing options for freelancers and design teams. sadssafafasasasdjkasdkjasndasndandnasjkdnaksjd asndjkandjkandasndsa dsajd sajd asj das dasd ajdjassdda d asdasj dajs dja dja djas dasjd ahjs d asdjas d asjd asdajd ad

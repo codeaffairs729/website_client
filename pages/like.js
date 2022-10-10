@@ -54,46 +54,46 @@ const Like = () => {
                 </p> */}
                 <ul className="like-list text-start d-inline-block w-100" data-aos="animation-scale-y" data-aos-delay="200">
                   <li>
-                    <a href={void(0)} onClick={() => likeOptionOneFunc()} className="like-options d-flex align-items-center" >
+                    <a data-bs-toggle="collapse" href="#collapseTransparency" role="button" aria-expanded="false" aria-controls="collapseTransparency" className="like-options d-flex align-items-center" >
                       Transparency
                       <svg className="icon icon-arrow-down like-section-arrow">
                         <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                       </svg>
                     </a>
-                    <div className={likeOptionOne ? "collapse show" : "collapse"} >
+                    <div className="collapse" id="collapseTransparency" >
                       Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                     </div>
                   </li>
                   <li>
-                    <a href={void(0)} onClick={() => likeOptionTwoFunc()} className="like-options d-flex align-items-center" >
+                    <a data-bs-toggle="collapse" href="#collapseAvailability" role="button" aria-expanded="false" aria-controls="collapseAvailability" className="like-options d-flex align-items-center" >
                       Availability
                       <svg className="icon icon-arrow-down like-section-arrow">
                         <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                       </svg>
                     </a>
-                    <div className={likeOptionTwo ? "collapse show" : "collapse"} >
+                    <div className="collapse" id="collapseAvailability" >
                       Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                     </div>
                   </li>
                   <li>
-                    <a href={void(0)} onClick={() => likeOptionThreeFunc()} className="like-options d-flex align-items-center" >
+                    <a data-bs-toggle="collapse" href="#collapseProcessOrientedWork" role="button" aria-expanded="false" aria-controls="collapseProcessOrientedWork" className="like-options d-flex align-items-center" >
                       Process Oriented Work
                       <svg className="icon icon-arrow-down like-section-arrow">
                         <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                       </svg>
                     </a>
-                    <div className={likeOptionThree ? "collapse show" : "collapse"} >
+                    <div className="collapse" id="collapseProcessOrientedWork" >
                       Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                     </div>
                   </li>
                   <li>
-                    <a href={void(0)} onClick={() => likeOptionFourFunc()} className="like-options d-flex align-items-center" >
+                    <a data-bs-toggle="collapse" href="#collapseUptoDateonITTrends" role="button" aria-expanded="false" aria-controls="collapseUptoDateonITTrends" className="like-options d-flex align-items-center" >
                       Upto Date on IT Trends
                       <svg className="icon icon-arrow-down like-section-arrow">
                         <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                       </svg>
                     </a>
-                    <div className={likeOptionFour ? "collapse show" : "collapse"} >
+                    <div className="collapse" id="collapseUptoDateonITTrends" >
                       Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                     </div>
                   </li>

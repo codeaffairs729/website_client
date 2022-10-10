@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Head from 'next/head'
+import Script from "next/script";
 import Slider from "react-slick";
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -105,6 +106,7 @@ const Header = () => {
                 <meta name="theme-color" content="#ffffff"/>
                 <meta name="description" content="We are top custom software developer team in USA & India. We work on Ruby On Rails, NodeJs / NestJs, ReactJs / NextJs, VueJS / NuxtJs, Laravel and Shopify."/>
             </Head>
+            <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" />
             <div ref={(headerRef) => { header = headerRef}} className="header js-header" id="header">
                 <div className="header__center center">
                     <button onClick={(e) => handleSidebar(e)} className={ sideBarHandler ? "header__burger js-header-burger active" : "header__burger js-header-burger" }>
