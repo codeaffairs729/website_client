@@ -2037,7 +2037,20 @@ body:not(.touch-device) .header-item[href]:before {
   background-color: #FFD9E0;
   position: relative;
   overflow: hidden;
-  height: 600px;
+  /* height: 600px; */
+}
+
+.about-area-3-h3 {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 2;
+}
+
+.about-area-3-pics {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 .about-area-3-outer-row {
@@ -2060,7 +2073,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-3-circle {
-  bottom: -70%;
+  bottom: -30%;
   right: -30%;
   height: 900px;
   width: 900px;

@@ -126,22 +126,93 @@ function AboutUs() {
             <div className='container-fluid px-5 my-5 about-area-3' >
                 <div className='row about-area-3-outer-row border-top-5 py-5' >
                     <div className='col-lg-12' >
-                        <h2 className='mb-4 about-area-3-heading' >
-                            Great Work Is Done
-                            <span className="title__color"> Together</span>
+                        <h2 className='mb-5 about-area-3-heading text-center' >
+                            Qualities
+                            {/* <span className="title__color"> Together</span> */}
                         </h2>
                     </div>
-                    <div className='col-lg-6 about-area-3-para' >
+                    <div className='col-lg-4 col-md-6 mb-5'>
+                        <div className='row' >
+                            <div className='col-lg-1' ></div>
+                            <div className='col-lg-10 text-center' >
+                                <img className='about-area-3-pics' src='aboutUsImages/qualities_1.png' alt='' />
+                                <h3 className='text-center about-area-3-h3' >Transparency</h3>
+                                <p className='text-start' >
+                                    lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah
+                                </p>
+                            </div>
+                            <div className='col-lg-1' ></div>
+                        </div>
+                    </div>
+                    <div className='col-lg-4 col-md-6 mb-5'>
+                        <div className='row' >
+                            <div className='col-lg-1' ></div>
+                            <div className='col-lg-10 text-center' >
+                                <img className='about-area-3-pics' src='aboutUsImages/qualities_2.png' alt='' />
+                                <h3 className='text-center about-area-3-h3' >Upto Date on Trends</h3>
+                                <p className='text-start' >
+                                    lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah
+                                </p>
+                            </div>
+                            <div className='col-lg-1' ></div>
+                        </div>
+                    </div>
+                    <div className='col-lg-4 col-md-6 mb-5'>
+                        <div className='row' >
+                            <div className='col-lg-1' ></div>
+                            <div className='col-lg-10 text-center' >
+                                <img className='about-area-3-pics' src='aboutUsImages/qualities_3.png' alt='' />
+                                <h3 className='text-center about-area-3-h3' >Process Oriented</h3>
+                                <p className='text-start' >
+                                    lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah
+                                </p>
+                            </div>
+                            <div className='col-lg-1' ></div>
+                        </div>
+                    </div>
+                    <div className='col-lg-4 col-md-6 mb-5'>
+                        <div className='row' >
+                            <div className='col-lg-1' ></div>
+                            <div className='col-lg-10 text-center' >
+                                <img className='about-area-3-pics' src='aboutUsImages/qualities_4.png' alt='' />
+                                <h3 className='text-center about-area-3-h3' >Flexible</h3>
+                                <p className='text-start' >
+                                    lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah
+                                </p>
+                            </div>
+                            <div className='col-lg-1' ></div>
+                        </div>
+                    </div>
+                    <div className='col-lg-4 col-md-6 mb-5'>
+                        <div className='row' >
+                            <div className='col-lg-1' ></div>
+                            <div className='col-lg-10 text-center' >
+                                <img className='about-area-3-pics' src='aboutUsImages/qualities_5.png' alt='' />
+                                <h3 className='text-center about-area-3-h3' >Support</h3>
+                                <p className='text-start' >
+                                    lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah
+                                </p>
+                            </div>
+                            <div className='col-lg-1' ></div>
+                        </div>
+                    </div>
+                    <div className='col-lg-4 mb-5'></div>
+
+
+
+
+
+                    {/* <div className='col-lg-6 about-area-3-para' >
                         We truly believe in a quote from the greatest marathon runner ever lived.
                         <br/><br/>
                         <span className='fw-bolder' >“100% of me is less than 1% of the team”</span> - Eliud Kipchoge 
                     </div>
-                    <div className='col-lg-6 about-area-3-circle-outer' >
+                    <div className='col-lg-6 about-area-3-circle-outer' > */}
                         {/* <div className='about-area-3-img' ></div> */}
                         {/* <img className='' src='' alt='' /> */}
                         {/* <div className='about-area-circle about-area-3-circle1' ></div>
                         <div className='about-area-circle about-area-3-circle2' ></div> */}
-                    </div>
+                    {/* </div> */}
                 </div>
                 <div className='about-area-circle about-area-3-circle' ></div>
             </div>
