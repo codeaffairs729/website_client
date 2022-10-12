@@ -125,7 +125,7 @@ function AboutUs() {
                 <div className='about-area-2-circle2' ></div>
                 <img className='about-area-2-cube' src='images/cube.png' alt='' />
             </div>
-            <div className='container-fluid px-5 my-5 about-area-3' >
+            <div className='container-fluid px-5 mt-5 about-area-3' >
                 <div className='row about-area-3-outer-row border-top-5 py-5' >
                     <div className='col-lg-12' >
                         <h2 className='mb-5 about-area-3-heading text-center' >
@@ -213,9 +213,9 @@ function AboutUs() {
                 </div>
                 <div className='about-area-circle about-area-3-circle' ></div>
             </div>
-            <div className='container-fluid my-5' >
+            {/* <div className='container-fluid my-5' >
                 <img className='w-100' src='images/map.jpg' alt='' />
-            </div>
+            </div> */}
             <Trophies />
             <div className='container my-5' >
                 <div className='row' >
