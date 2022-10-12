@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Header from './includes/header'
 import Footer from './includes/footer'
 import SideImages from '../components/sideImages'
+import Trophies from './trophies'
+import BuildingPicsSlider from './buildingPicsSlider'
 
 function AboutUs() {
     const [companyFacesDesc, setCompanyFacesDesc] = useState(0);
@@ -197,11 +199,6 @@ function AboutUs() {
                         </div>
                     </div>
                     <div className='col-lg-4 mb-5'></div>
-
-
-
-
-
                     {/* <div className='col-lg-6 about-area-3-para' >
                         We truly believe in a quote from the greatest marathon runner ever lived.
                         <br/><br/>
@@ -216,6 +213,10 @@ function AboutUs() {
                 </div>
                 <div className='about-area-circle about-area-3-circle' ></div>
             </div>
+            <div className='container-fluid my-5' >
+                <img className='w-100' src='images/map.jpg' alt='' />
+            </div>
+            <Trophies />
             <div className='container my-5' >
                 <div className='row' >
                     <div className='col-lg-12 text-center' >
@@ -265,6 +266,7 @@ function AboutUs() {
                     </div>
                 </div>
             </div>
+            <BuildingPicsSlider/>
             <div className='container-fluid about-area-5' >
                 <div className='container about-area-5-container' >
                     <div className='row' >

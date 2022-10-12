@@ -2732,6 +2732,12 @@ gap: 32px; */
 }
 /* Generic Modal Component CSS End */
 
+/* Building Pics Slider Component CSS Start */
+.building_slider .slick-center .building-slide {
+  padding: 0 !important;
+}
+/* Building Pics Slider Component CSS End */
+
 @media only screen and (max-width: 1199px) {
   /* Layout Component CSS Start */
   .layout-pic-react {
