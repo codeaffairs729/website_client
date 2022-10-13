@@ -1853,7 +1853,7 @@ body:not(.touch-device) .header-item[href]:before {
 /* About Us Component CSS Start */
 .about-area-1 {
   background-color: #5956E9;
-  margin-top: 150px;
+  /* margin-top: 150px; */
   margin-bottom: 70px;
   border-radius: 0px 0px 40px 40px;
   font-family: 'DM Sans';
@@ -1918,24 +1918,30 @@ body:not(.touch-device) .header-item[href]:before {
   position: absolute;
   top: 0%;
   right: 5%;
-  width: 320px;
-  border-radius: 8px;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  border: 5px solid #5BA79F;
 }
 
 .about-area-2-pic-3 {
   position: absolute;
-  bottom: -105%;
-  left: 0%;
-  width: 230px;
-  border-radius: 8px;
+  bottom: -40%;
+  left: -15%;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 5px solid #F8D88C;
 }
 
 .about-area-2-pic-4 {
   position: absolute;
-  bottom: -95%;
-  right: 5%;
-  width: 300px;
-  border-radius: 8px;
+  bottom: -162%;
+  right: 45%;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 5px solid #5956E9;
 }
 
 .about-area-1-outer h1 {
@@ -2155,11 +2161,93 @@ body:not(.touch-device) .header-item[href]:before {
   text-transform: uppercase;
 }
 
-/* display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 32px; */
+.about-area-6 {
+  border-top: 1px solid #CDCDCD;
+  margin-top: 150px;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.about-area-6-pics {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.about-area-6-pic-1 {
+  width: 82%;
+  border-radius: 12px;
+}
+
+.about-area-6-heading-outer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.about-area-6-circle-1 {
+  background-color: #5BA79F;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: 7%;
+  right: 5%;
+  border-radius: 50%;
+}
+
+.about-area-6-circle-2 {
+  background-color: #FAB8C4;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  border-radius: 50%;
+}
+
+.about-area-6-heading {
+  font-size: 50px;
+}
+
+.about-area-6-img-outer {
+  padding: 0;
+}
+
+.about-area-7 {
+  background-color: #F8D88C;
+}
+
+.about-area-7-heading {
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.about-area-7-pic-1-outer {
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.about-area-7-row {
+  padding-top: 5rem;
+}
+
+.about-area-7-left-outer {
+  padding-left: 5rem;
+}
+
+.about-area-7-para {
+  font-size: 20px;
+}
+
+.about-area-8 {
+  background-color: #FFD9E0;
+}
+
+.about-area-8-heading {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 60px;
+  padding-top: 5rem;
+}
 /* About Us Component CSS End */
 
 /* Like Component CSS Start */
@@ -2835,17 +2923,17 @@ gap: 32px; */
   }
 
   .about-area-2-pic-2 {
-    width: 235px;
+    /* width: 235px; */
   }
 
   .about-area-2-pic-3 {
-    bottom: -105%;
-    width: 200px;
+    /* bottom: -105%;
+    width: 200px; */
   }
 
   .about-area-2-pic-4 {
-    bottom: -40%;
-    width: 260px;
+    /* bottom: -40%; */
+    /* width: 260px; */
   }
   /* About Us Component CSS End */
 }
@@ -3123,19 +3211,18 @@ gap: 32px; */
   .about-area-2-pic-2 {
     top: -90%;
     z-index: 1;
-    width: 320px;
   }
 
   .about-area-2-pic-3 {
     bottom: -460%;
-    width: 200px;
     z-index: 1;
+    left: 0%;
   }
 
   .about-area-2-pic-4 {
     bottom: -470%;
     z-index: 1;
-    width: 300px;
+    right: 0%;
   }
 
   .about-area-2-heading {
@@ -3166,6 +3253,22 @@ gap: 32px; */
 
   .about-area-5-para {
     font-size: 25px;
+  }
+
+  .about-area-6-heading {
+    font-size: 40px;
+  }
+
+  .about-area-6-pic-1 {
+    width: 85%;
+  }
+
+  .about-area-7-left-outer {
+    padding-left: 3rem;
+  }
+
+  .about-area-7-heading {
+    font-size: 40px;
   }
   /* About Us Component CSS End */
 
@@ -3753,9 +3856,9 @@ gap: 32px; */
   /* Work Component CSS End */
 
   /* About Us Component CSS Start */
-  .about-area-1 {
+  /* .about-area-1 {
     margin-top: 120px;
-  }
+  } */
 
   .about-area-1-outer {
     margin-top: 30px;
@@ -3800,6 +3903,8 @@ gap: 32px; */
   .about-area-2-pic-2 {
     top: 5%;
     right: 0;
+    width: 230px;
+    height: 230px;
   }
 
   .about-area-2-pic-3 {
@@ -3807,7 +3912,7 @@ gap: 32px; */
   }
 
   .about-area-2-pic-4 {
-    bottom: 0;
+    bottom: 10%;
     right: 0;
   }
 
@@ -3840,6 +3945,36 @@ gap: 32px; */
 
   .about-area-5-heading {
     font-size: 40px;
+  }
+
+  .about-area-6 {
+    margin-top: 110px;
+  }
+
+  .about-area-6-heading-outer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .about-area-6-heading {
+    font-size: 30px;
+  }
+
+  .about-area-6-img-outer {
+    padding-left: 12px;
+  }
+
+  .about-area-6-pic-1 {
+    width: 100%;
+  }
+
+  .about-area-7-left-outer {
+    padding-left: 1rem;
+  }
+
+  .about-area-8-heading {
+    font-size: 35px;
+    padding-top: 2rem;
   }
   /* About Us Component CSS End */
 

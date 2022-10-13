@@ -71,34 +71,61 @@ function AboutUs() {
     return (
         <>
             <Header />
-            <div className='container-fluid about-area-1' >
-                <div className='container'>
-                    <div className='row about-area-1-outer-row' >
-                        <div className='col-lg-7 col-md-7 about-area-1-outer' >
-                            <h1>
-                                We Clear Your Path,
-                                <br/>
-                                We help you succeed,
-                                <br/>
-                                We keep you successfull
-                            </h1>
-                            <p className='about-area-1-para my-4' >
-                                We offer flexible pricing options for freelancers and design teams. This
-                                sal kl fkls  klf  fkls fksl sfls fkls fs fs fs fskflsklf slf k fkwl fs fs fsfslkf skflsf s
-                                s fsfs fsfklsf kls fkls fkls fkls fkls fds fkls fs fklsd fkls fkl sf skfsdfklsd kf  fsff
-                                sl fsfs fksl fksl fkls fskl fs f.
-                            </p>
-                            <button className='btn btn-primary bg-white about-area-1-btn' >Our Magic Potion</button>
-                        </div>
-                        <div className='col-lg-5 col-md-5 about-area-1-outer' >
-                            <img className='about-area-1-pic-1' src='aboutUsImages/team_pic_1.png' alt='' />
-                            <img className='about-area-1-pic-2' src='aboutUsImages/team_pic_2.png' alt='' />
-                            <img className='about-area-1-pic-3' src='aboutUsImages/team_pic_3.png' alt='' />
-                            <img className='about-area-1-pic-4' src='aboutUsImages/team_pic_4.png' alt='' />
+            <div className='container-fluid about-area-6' >
+                <div className='row' >
+                    <div className='col-lg-12 about-area-6-heading-outer' >
+                        <h1 className='text-center about-area-6-heading' >
+                            We Clear Your Path,
+                            <br/>
+                            <span className="title__color"> We help you succeed,</span>
+                            <br/>
+                            We keep you successfull
+                        </h1>
+                    </div>
+                    <div className='col-lg-12' >
+                        <div className='row' >
+                            <div className='col-lg-5 col-md-5 col-12 text-end' >
+                                <img className='about-area-6-pic-1' src='aboutUsImages/team_pic_2.png' alt='' />
+                            </div>
+                            <div className='col-lg-2 col-md-2 col-4' >
+                                <div className='row' >
+                                    <div className='col-lg-12 about-area-6-img-outer' >
+                                        <img className='about-area-6-pics' src='aboutUsImages/team_pic_1.png' alt='' />
+                                    </div>
+                                    <div className='col-lg-12 about-area-6-img-outer' >
+                                        <img className='about-area-6-pics' src='aboutUsImages/team_pic_3.png' alt='' />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-lg-5 col-md-5 col-8' >
+                                <img className='about-area-6-pic-1' src='aboutUsImages/team_pic_4.png' alt='' />
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div className='about-area-6-circle-1' ></div>
+                <div className='about-area-6-circle-2' ></div>
             </div>
+
+            <div className='container-fluid about-area-7' >
+                <div className='row about-area-7-row' >
+                    <div className='col-lg-7 col-md-6 about-area-7-left-outer' >
+                        <h2 className='about-area-7-heading mb-5' >
+                            Great Work Is Done
+                            <span className="title__color"> Together</span>
+                        </h2>
+                        <p className='about-area-7-para' >
+                            We truly believe in a quote from the greatest marathon runner ever lived.
+                            <br/><br/>
+                            <span className='fw-bolder' >“100% of me is less than 1% of the team”</span> - Eliud Kipchoge 
+                        </p>
+                    </div>
+                    <div className='col-lg-5 col-md-6 about-area-7-pic-1-outer d-flex' >
+                        <img className='w-100' src='aboutUsImages/team_pic_9.png' alt='' />
+                    </div>
+                </div>
+            </div>
+
             <div className='container-fluid my-5 about-area-2'>
                 <div className='container' >
                     <div className='row about-area-2-outer-row'>
@@ -106,7 +133,6 @@ function AboutUs() {
                             {/* <div className="about-area-2-grey-circle" >
                                 <img className="about-area-2-cam-pic" src="images/Camera _.png" alt="" />
                             </div> */}
-                            <img className='about-area-2-pic-1' src='aboutUsImages/team_pic_5.png' alt='' />
                             <img className='about-area-2-pic-2' src='aboutUsImages/team_pic_6.png' alt='' />
                             <img className='about-area-2-pic-3' src='aboutUsImages/team_pic_7.png' alt='' />
                             <img className='about-area-2-pic-4' src='aboutUsImages/team_pic_8.png' alt='' />
@@ -125,6 +151,37 @@ function AboutUs() {
                 <div className='about-area-2-circle2' ></div>
                 <img className='about-area-2-cube' src='images/cube.png' alt='' />
             </div>
+
+            <div className='container-fluid mt-5 about-area-8' >
+                <h2 className='text-center about-area-8-heading'>
+                    Global Connects
+                </h2>
+                <img className='w-100' src='aboutUsImages/global_connections.png' alt='' />
+            </div>
+
+            <div className='container-fluid about-area-1' >
+                <div className='container'>
+                    <div className='row about-area-1-outer-row' >
+                        <div className='col-lg-12 text-center about-area-1-outer' >
+                            <h1>Pillars We Stand Firm At</h1>
+                            {/* <p className='about-area-1-para my-4' >
+                                We offer flexible pricing options for freelancers and design teams. This
+                                sal kl fkls  klf  fkls fksl sfls fkls fs fs fs fskflsklf slf k fkwl fs fs fsfslkf skflsf s
+                                s fsfs fsfklsf kls fkls fkls fkls fkls fds fkls fs fklsd fkls fkl sf skfsdfklsd kf  fsff
+                                sl fsfs fksl fksl fkls fskl fs f.
+                            </p>
+                            <button className='btn btn-primary bg-white about-area-1-btn' >Our Magic Potion</button> */}
+                        </div>
+                        {/* <div className='col-lg-5 col-md-5 about-area-1-outer' >
+                            <img className='about-area-1-pic-1' src='aboutUsImages/team_pic_1.png' alt='' />
+                            <img className='about-area-1-pic-2' src='aboutUsImages/team_pic_2.png' alt='' />
+                            <img className='about-area-1-pic-3' src='aboutUsImages/team_pic_3.png' alt='' />
+                            <img className='about-area-1-pic-4' src='aboutUsImages/team_pic_4.png' alt='' />
+                        </div> */}
+                    </div>
+                </div>
+            </div>
+
             <div className='container-fluid px-5 mt-5 about-area-3' >
                 <div className='row about-area-3-outer-row border-top-5 py-5' >
                     <div className='col-lg-12' >
@@ -213,10 +270,8 @@ function AboutUs() {
                 </div>
                 <div className='about-area-circle about-area-3-circle' ></div>
             </div>
-            {/* <div className='container-fluid my-5' >
-                <img className='w-100' src='images/map.jpg' alt='' />
-            </div> */}
-            <Trophies />
+
+            {/* <Trophies /> */}
             <div className='container my-5' >
                 <div className='row' >
                     <div className='col-lg-12 text-center' >
