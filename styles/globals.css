@@ -607,6 +607,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .footer-social-menu {
+  display: flex !important;
   flex-direction: unset;
 }
 
@@ -623,9 +624,22 @@ body:not(.touch-device) .header-item[href]:before {
   margin-bottom: 10px;
 }
 
-/* .footer__menu {
-  text-align: justify;
-} */
+.footer__menu {
+  /* text-align: justify; */
+  display: block;
+  height: auto;
+  transition: all 0.26s ease-in-out;
+  transform-origin: top;
+  transform: scaleY(1);
+  /* transition: transform 0.26s ease-in-out; */
+}
+
+.hide {
+  max-height: 0;
+  transform: scaleY(0);
+  padding-top: 0;
+  overflow: hidden;
+}
 
 .footer-bottom {
   background-color: #27272E;
