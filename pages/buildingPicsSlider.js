@@ -10,11 +10,32 @@ const BuildingPicsSlider = () => {
         infinite: true,
         centerPadding: "100px",
         slidesToShow: 1,
-        speed: 500,
+        speed: 2000,
         arrows: true,
         prevArrow: <PrevButton />,
         nextArrow: <NextButton />,
-        variableWidth: true
+        autoplay: true,
+        variableWidth: true,
+        responsive: [{
+            breakpoint: 1199,
+            settings: {
+                dots: false,
+                arrows: false,
+                pauseOnHover: true,
+                variableWidth: false
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                dots: false,
+                arrows: false,
+                pauseOnHover: true,
+                variableWidth: false,
+                slidesToShow: 1,
+                centerPadding: "0px"
+            }
+        }]
     };
     return (
         <>
