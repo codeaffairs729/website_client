@@ -2245,6 +2245,27 @@ body:not(.touch-device) .header-item[href]:before {
   font-size: 60px;
   padding-top: 5rem;
 }
+
+.about-area-9 .slick-arrow {
+  background-color: #5956E9;
+  border-radius: 50%;
+  display: flex !important;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about-area-9 .slick-prev {
+  left: -25px;
+}
+
+.about-area-9 .slick-next {
+  right: -25px;
+}
 /* About Us Component CSS End */
 
 /* Like Component CSS Start */

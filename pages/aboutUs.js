@@ -85,7 +85,7 @@ function AboutUs() {
                     <div className='col-lg-12' >
                         <div className='row' >
                             <div className='col-lg-5 col-md-5 col-12 text-end' >
-                                <img className='about-area-6-pic-1' src='aboutUsImages/team_pic_2.png' alt='' />
+                                <img className='about-area-6-pic-1' src='aboutUsImages/team_pic_3.png' alt='' />
                             </div>
                             <div className='col-lg-2 col-md-2 col-4' >
                                 <div className='row' >
@@ -93,7 +93,7 @@ function AboutUs() {
                                         <img className='about-area-6-pics' src='aboutUsImages/team_pic_1.png' alt='' />
                                     </div>
                                     <div className='col-lg-12 about-area-6-img-outer' >
-                                        <img className='about-area-6-pics' src='aboutUsImages/team_pic_3.png' alt='' />
+                                        <img className='about-area-6-pics' src='aboutUsImages/team_pic_2.png' alt='' />
                                     </div>
                                 </div>
                             </div>
@@ -296,7 +296,13 @@ function AboutUs() {
                     <div className='col-lg-5 col-md-5' >
                         <div className='row' >
                             <div className='col-lg-12' >
-                                <img className='about-area-4-main-img' src={companyFacesDetail[companyFacesDesc][6]} alt='' />
+                                <div className='row' >
+                                    <div className='col-lg-1 col-md-12 col-1' ></div>
+                                    <div className='col-lg-10 col-md-12 col-10' >
+                                        <img className='about-area-4-main-img' src={companyFacesDetail[companyFacesDesc][6]} alt='' />
+                                    </div>
+                                    <div className='col-lg-1 col-md-12 col-1' ></div>
+                                </div>
                             </div>
                             <div className='col-lg-12 text-center' >
                                 <h5 className='about-area-4-main-name' >{companyFacesDetail[companyFacesDesc][0]}</h5>

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import PrevButton from "../components/prevButton";
+import NextButton from "../components/nextButton";
 
 const BuildingPicsSlider = () => {
     const settings = {
@@ -10,11 +12,13 @@ const BuildingPicsSlider = () => {
         slidesToShow: 1,
         speed: 500,
         arrows: true,
+        prevArrow: <PrevButton />,
+        nextArrow: <NextButton />,
         variableWidth: true
     };
     return (
         <>
-            <div className='container my-5' >
+            <div className='container my-5 about-area-9' >
                 <div className='row' >
                     <div className='col-lg-12 text-center' >
                         <h2 className='mb-5 about-area-4-heading' >

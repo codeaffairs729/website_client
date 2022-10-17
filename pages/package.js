@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react'
 import Slider from "react-slick";
 import SubSlider from "../components/index/services/subSlider";
+import PrevButton from '../components/prevButton';
+import NextButton from '../components/nextButton';
 
 const Package = () => {
     const designIcons = [
@@ -68,16 +70,8 @@ const Package = () => {
         slidesToScroll: 1,
         dots: false,
         arrows: true,
-        prevArrow: <button className="package__arrow js-package-prev">
-                <svg className="icon icon-arrow-prev">
-                    <use xlinkHref="img/sprite.svg#icon-arrow-prev"></use>
-                </svg>
-            </button>,
-        nextArrow: <button className="package__arrow js-package-next">
-                <svg className="icon icon-arrow-next">
-                    <use xlinkHref="img/sprite.svg#icon-arrow-next"></use>
-                </svg>
-            </button>,
+        prevArrow: <PrevButton />,
+        nextArrow: <NextButton />,
         speed: 2000,
         fade: true,
         adaptiveHeight: true,

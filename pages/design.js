@@ -1,5 +1,7 @@
 import React from 'react'
 import Slider from "react-slick";
+import PrevButton from '../components/prevButton';
+import NextButton from '../components/nextButton';
 
 const Design = () => {
     const designSettings = {
@@ -7,8 +9,8 @@ const Design = () => {
         slidesToScroll: 1,
         dots: false,
         arrows: true,
-        prevArrow: <button type="button" className="slick-prev"><svg className="icon icon-arrow-prev"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="img/sprite.svg#icon-arrow-prev"></use></svg></button>,
-        nextArrow: <button type="button" className="slick-next"><svg className="icon icon-arrow-next"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="img/sprite.svg#icon-arrow-next"></use></svg></button>,
+        prevArrow: <PrevButton />,
+        nextArrow: <NextButton />,
         speed: 700,
         infinite: true,
         autoplay: true,
