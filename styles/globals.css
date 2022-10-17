@@ -624,23 +624,6 @@ body:not(.touch-device) .header-item[href]:before {
   margin-bottom: 10px;
 }
 
-.footer__menu {
-  /* text-align: justify; */
-  display: block;
-  height: auto;
-  transition: all 0.26s ease-in-out;
-  transform-origin: top;
-  transform: scaleY(1);
-  /* transition: transform 0.26s ease-in-out; */
-}
-
-.hide {
-  max-height: 0;
-  transform: scaleY(0);
-  padding-top: 0;
-  overflow: hidden;
-}
-
 .footer-bottom {
   background-color: #27272E;
   padding: 26px 125px;
@@ -3778,6 +3761,23 @@ body:not(.touch-device) .header-item[href]:before {
   }
   .footer__col {
     padding-right: 0;
+  }
+
+  .footer__menu {
+    /* text-align: justify; */
+    display: block;
+    height: auto;
+    transition: all 0.26s ease-in-out;
+    transform-origin: top;
+    transform: scaleY(1);
+    /* transition: transform 0.26s ease-in-out; */
+  }
+
+  .hide {
+    max-height: 0;
+    transform: scaleY(0);
+    padding-top: 0;
+    overflow: hidden;
   }
   /* Footer Component CSS End */
 
