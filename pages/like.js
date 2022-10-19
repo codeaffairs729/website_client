@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import Router from 'next/router'
 
 const Like = () => {
+  const dropdowns = useRef(null);
+
   const [likeOptionOne, setLikeOptionOne] = useState(false);
   const [likeOptionTwo, setLikeOptionTwo] = useState(false);
   const [likeOptionThree, setLikeOptionThree] = useState(false);
@@ -38,6 +40,26 @@ const Like = () => {
     setLikeOptionTwo(false);
     setLikeOptionOne(false);
   }
+
+  useEffect(() => {
+    var dropdownsEle = dropdowns.getElementsByClassName("like-options");
+    var cnt = 0;
+    const interval = setInterval(() => {
+      for (let i = 0; i < dropdownsEle.length; i++) {
+        if(dropdownsEle[i].ariaExpanded == "true"){
+          dropdownsEle[i].click();
+        }
+      }
+      if(cnt < 4){
+        dropdownsEle[cnt].click();
+        cnt = cnt + 1;
+      } else {
+        dropdownsEle[0].click();
+        cnt = 1;
+      }
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <>
       <div className="like">
@@ -52,7 +74,7 @@ const Like = () => {
                 {/* <p>
                   Let us take care of your problems.
                 </p> */}
-                <ul className="like-list text-start d-inline-block w-100" data-aos="animation-scale-y" data-aos-delay="200">
+                <ul ref={(dropdownsRef) => { dropdowns = dropdownsRef}} className="like-list text-start d-inline-block w-100" data-aos="animation-scale-y" data-aos-delay="200">
                   <li>
                     <a data-bs-toggle="collapse" href="#collapseTransparency" role="button" aria-expanded="false" aria-controls="collapseTransparency" className="like-options d-flex align-items-center" >
                       Transparency
