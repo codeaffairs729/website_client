@@ -90,7 +90,7 @@ function AboutUs() {
                             <div className='col-lg-2 col-md-2 col-4' >
                                 <div className='row' >
                                     <div className='col-lg-12 about-area-6-img-outer' >
-                                        <img className='about-area-6-pics' src='aboutUsImages/team_pic_1.png' alt='' />
+                                        <img className='about-area-6-pics' src='aboutUsImages/team_pic_4.png' alt='' />
                                     </div>
                                     <div className='col-lg-12 about-area-6-img-outer' >
                                         <img className='about-area-6-pics' src='aboutUsImages/team_pic_2.png' alt='' />
@@ -98,7 +98,7 @@ function AboutUs() {
                                 </div>
                             </div>
                             <div className='col-lg-5 col-md-5 col-8' >
-                                <img className='about-area-6-pic-1' src='aboutUsImages/team_pic_4.png' alt='' />
+                                <img className='about-area-6-pic-1' src='aboutUsImages/team_pic_1.png' alt='' />
                             </div>
                         </div>
                     </div>
@@ -111,8 +111,8 @@ function AboutUs() {
                 <div className='row about-area-7-row' >
                     <div className='col-lg-7 col-md-6 about-area-7-left-outer' >
                         <h2 className='about-area-7-heading mb-5' >
-                            Great Work Is Done
-                            <span className="title__color"> Together</span>
+                            Our
+                            <span className="title__color about-area-7-heading-span"> Mission</span>
                         </h2>
                         <p className='about-area-7-para' >
                             We truly believe in a quote from the greatest marathon runner ever lived.
@@ -139,10 +139,13 @@ function AboutUs() {
                         </div>
                         <div className='col-lg-6 about-area-2-text-area' >
                             <h2 className='about-area-2-heading mb-5' >
-                                Our Mission.....
+                                Our History
                             </h2>
                             <p className='about-area-2-para' >
-                                We offer flexible pricing options for freelancers and design teams. sadssafafasasasdjkasdkjasndasndandnasjkdnaksjd asndjkandjkandasndsa dsajd sajd asj das dasd ajdjassdda d asdasj dajs dja dja djas dasjd ahjs d asdjas d asjd asdajd ad
+                                lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah.
+                            </p>
+                            <p className='about-area-2-para' >
+                                akdnd akj dan dkas dsas djka sdkja kd akjd akd a da da da djkakj sdjka daks sdkjas dsas dska dajkd adkj ajkd askjsd asd kj asdjkd a da da dkjas.
                             </p>
                         </div>
                     </div>
@@ -153,10 +156,109 @@ function AboutUs() {
             </div>
 
             <div className='container-fluid mt-5 about-area-8' >
-                <h2 className='text-center about-area-8-heading'>
-                    Global Connects
-                </h2>
-                <img className='w-100' src='aboutUsImages/global_connections.png' alt='' />
+                <div className='container about-area-8-container' >
+                    <h2 className='text-center about-area-8-heading'>
+                        Global Connects
+                    </h2>
+                    <img className='w-100' src='aboutUsImages/global_connections.png' alt='' />
+                </div>
+            </div>
+
+            <div className='container my-5' >
+                <div className='row' >
+                    <div className='col-lg-12 text-center' >
+                        <h2 className='mb-5 about-area-4-heading' >
+                            <span className="title__color">Minds </span>
+                            Behind The Magic
+                        </h2>
+                    </div>
+                    <div className='col-lg-2 col-md-2' >
+                        <div className='row about-area-4-sideImages-row' >
+                            {
+                                sideImgArr.map((element, index) => {
+                                    return <SideImages
+                                        key={index}
+                                        id={index}
+                                        sideImagesgUrl={element[0]}
+                                        SideImagesChangeHandle={SideImagesChangeHandle}
+                                    />
+                                })
+                            }
+                        </div>
+                    </div>
+                    <div className='col-lg-10 col-md-10' >
+                        <div className='row about-area-4-main-data-outer' >
+                            <div className='col-lg-6' >
+                                <div className='row' >
+                                    <div className='col-lg-1 col-md-12 col-1' ></div>
+                                    <div className='col-lg-10 col-md-12 col-10' >
+                                        <div className='about-area-4-main-img-outer' >
+                                            <img className='about-area-4-main-img' src={companyFacesDetail[companyFacesDesc][6]} alt='' />
+                                            <div className='about-area-4-main-img-shape-1' >
+                                                <div className='text-center about-area-4-main-img-text-area' >
+                                                    <h5 className='about-area-4-main-name' >{companyFacesDetail[companyFacesDesc][0]}</h5>
+                                                    <p className='about-area-4-main-designation' >{companyFacesDetail[companyFacesDesc][1]}</p>
+                                                </div>
+                                                <img className='w-100' src='/aboutUsImages/about-area-4-main-img-shape.png' alt='about-area-4-main-img-shape' />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='col-lg-1 col-md-12 col-1' ></div>
+                                </div>
+                            </div>
+                            {/* <div className='col-lg-12 text-center' >
+                                <h5 className='about-area-4-main-name' >{companyFacesDetail[companyFacesDesc][0]}</h5>
+                                <p className='about-area-4-main-designation' >{companyFacesDetail[companyFacesDesc][1]}</p>
+                            </div> */}
+                            {/* <div className='col-lg-12 d-flex justify-content-center pt-2' >
+                                <a href={companyFacesDetail[companyFacesDesc][4]} >
+                                    <img className='about-area-4-main-social-icon me-2' src="icons/twitter_white.png" alt='' />
+                                </a>
+                                <a href={companyFacesDetail[companyFacesDesc][5]} >
+                                    <img className='about-area-4-main-social-icon' src="icons/instagram_white.png" alt='' />
+                                </a>
+                            </div> */}
+                            <div className='col-lg-6 col-md-6 d-flex p-5' >
+                                <div className='row h-100' >
+                                    <div className='col-lg-12' >
+                                        <p className='about-area-4-main-para' >
+                                            <span className='fw-bolder' >About {companyFacesDetail[companyFacesDesc][2]}</span>
+                                            <br/><br/>
+                                            {companyFacesDetail[companyFacesDesc][3]}
+                                        </p>
+                                    </div>
+                                    <div className='col-lg-12 d-flex justify-content-end pt-2' >
+                                        <a href={companyFacesDetail[companyFacesDesc][4]} >
+                                            <img className='about-area-4-main-social-icon me-2' src="icons/twitter_black.png" alt='' />
+                                        </a>
+                                        <a href={companyFacesDetail[companyFacesDesc][5]} >
+                                            <img className='about-area-4-main-social-icon' src="icons/instagram_black.png" alt='' />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <div className='col-lg-5 col-md-5 d-flex p-5' >
+                        <div className='row h-100' >
+                            <div className='col-lg-12' >
+                                <p className='about-area-4-main-para' >
+                                    <span className='fw-bolder' >About {companyFacesDetail[companyFacesDesc][2]}</span>
+                                    <br/><br/>
+                                    {companyFacesDetail[companyFacesDesc][3]}
+                                </p>
+                            </div>
+                            <div className='col-lg-12 d-flex justify-content-end pt-2' >
+                                <a href={companyFacesDetail[companyFacesDesc][4]} >
+                                    <img className='about-area-4-main-social-icon me-2' src="icons/twitter_black.png" alt='' />
+                                </a>
+                                <a href={companyFacesDetail[companyFacesDesc][5]} >
+                                    <img className='about-area-4-main-social-icon' src="icons/instagram_black.png" alt='' />
+                                </a>
+                            </div>
+                        </div>
+                    </div> */}
+                </div>
             </div>
 
             <div className='container-fluid about-area-1' >
@@ -178,6 +280,36 @@ function AboutUs() {
                             <img className='about-area-1-pic-3' src='aboutUsImages/team_pic_3.png' alt='' />
                             <img className='about-area-1-pic-4' src='aboutUsImages/team_pic_4.png' alt='' />
                         </div> */}
+                        <div className='col-lg-12' >
+                            <div className='row' >
+                                <div className='col-lg-4' ></div>
+                            </div>
+                            <div className='row' >
+                                <div className='col-lg-2 text-center' >
+                                    <img className='about-area-1-icon-1' src='/icons/Union.png' alt='Union' />
+                                </div>
+                                <div className='col-lg-10 d-flex align-items-center' >
+                                    <p className='about-area-1-header-1' >
+                                        Transparency
+                                    </p>
+                                </div>
+                                <div className='col-lg-2' ></div>
+                                <div className='col-lg-10' >
+                                    <p className='about-area-1-para-1' >
+                                        ld aad kd akd ak dkas dka dk adad ak daskjd askds ak da dkda sdjkasals dadaadasd d kd asda da dasdkl asldalsdslkas dad
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-lg-6' ></div>
+                        <div className='col-lg-6' ></div>
+                        <div className='col-lg-6' ></div>
+                        <div className='col-lg-6' ></div>
+                        <div className='col-lg-6' ></div>
+                        <div className='col-lg-6' ></div>
+                        <div className='col-lg-6' ></div>
+                        <div className='col-lg-6' ></div>
+                        <div className='col-lg-6' ></div>
                     </div>
                 </div>
             </div>
@@ -272,61 +404,7 @@ function AboutUs() {
             </div>
 
             {/* <Trophies /> */}
-            <div className='container my-5' >
-                <div className='row' >
-                    <div className='col-lg-12 text-center' >
-                        <h2 className='mb-5 about-area-4-heading' >
-                            People Behind The Magic
-                        </h2>
-                    </div>
-                    <div className='col-lg-2 col-md-2' >
-                        <div className='row about-area-4-sideImages-row' >
-                            {
-                                sideImgArr.map((element, index) => {
-                                    return <SideImages
-                                        key={index}
-                                        id={index}
-                                        sideImagesgUrl={element[0]}
-                                        SideImagesChangeHandle={SideImagesChangeHandle}
-                                    />
-                                })
-                            }
-                        </div>
-                    </div>
-                    <div className='col-lg-5 col-md-5' >
-                        <div className='row' >
-                            <div className='col-lg-12' >
-                                <div className='row' >
-                                    <div className='col-lg-1 col-md-12 col-1' ></div>
-                                    <div className='col-lg-10 col-md-12 col-10' >
-                                        <img className='about-area-4-main-img' src={companyFacesDetail[companyFacesDesc][6]} alt='' />
-                                    </div>
-                                    <div className='col-lg-1 col-md-12 col-1' ></div>
-                                </div>
-                            </div>
-                            <div className='col-lg-12 text-center' >
-                                <h5 className='about-area-4-main-name' >{companyFacesDetail[companyFacesDesc][0]}</h5>
-                                <p className='about-area-4-main-designation' >{companyFacesDetail[companyFacesDesc][1]}</p>
-                            </div>
-                            <div className='col-lg-12 d-flex justify-content-center pt-2' >
-                                <a href={companyFacesDetail[companyFacesDesc][4]} >
-                                    <img className='about-area-4-main-social-icon me-2' src="icons/twitter_white.png" alt='' />
-                                </a>
-                                <a href={companyFacesDetail[companyFacesDesc][5]} >
-                                    <img className='about-area-4-main-social-icon' src="icons/instagram_white.png" alt='' />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='col-lg-5 col-md-5 d-flex p-5' >
-                        <p className='about-area-4-main-para' >
-                            <span className='fw-bolder' >About {companyFacesDetail[companyFacesDesc][2]}</span>
-                            <br/><br/>
-                            {companyFacesDetail[companyFacesDesc][3]}
-                        </p>
-                    </div>
-                </div>
-            </div>
+
             <BuildingPicsSlider/>
             <div className='container-fluid about-area-5' >
                 <div className='container about-area-5-container' >
