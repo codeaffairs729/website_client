@@ -9,11 +9,11 @@ function AboutUs() {
     const [companyFacesDesc, setCompanyFacesDesc] = useState(0);
 
     const sideImgArr = [
-        ["icons/adobe_xd.png"],
-        ["icons/miro.png"],
-        ["icons/adobe_xd.png"],
-        ["icons/miro.png"],
-        ["icons/adobe_xd.png"]
+        ["aboutUsImages/profpic.png"],
+        ["aboutUsImages/profpic.png"],
+        ["aboutUsImages/profpic.png"],
+        ["aboutUsImages/profpic.png"],
+        ["aboutUsImages/profpic.png"]
     ]
 
     const companyFacesDetail = [
@@ -24,7 +24,7 @@ function AboutUs() {
             "adsks salf ljk s jsndjcsjc;s cc sd;cnsdjc c cjaw mcamcsc s adsks salf ljk s jsndjcsjc;s cc sd;cnsdjc c cjaw mcamcsc s",
             "www.twitter.com",
             "www.instagram.com",
-            "icons/adobe_xd.png"
+            "aboutUsImages/profpic.png"
         ],
         [
             "Ankush Gupta",
@@ -33,7 +33,7 @@ function AboutUs() {
             "adsks salf ljk s jsndjcsjc;s cc sd;cnsdjc c cjaw mcamcsc s adsks salf ljk s jsndjcsjc;s cc sd;cnsdjc c cjaw mcamcsc s",
             "www.twitter.com",
             "www.instagram.com",
-            "icons/miro.png"
+            "aboutUsImages/profpic.png"
         ],
         [
             "Dixit Tiwari",
@@ -42,7 +42,7 @@ function AboutUs() {
             "adsks salf ljk s jsndjcsjc;s cc sd;cnsdjc c cjaw mcamcsc s adsks salf ljk s jsndjcsjc;s cc sd;cnsdjc c cjaw mcamcsc s",
             "www.twitter.com",
             "www.instagram.com",
-            "icons/adobe_xd.png"
+            "aboutUsImages/profpic.png"
         ],
         [
             "Harsh Tyagi",
@@ -51,7 +51,7 @@ function AboutUs() {
             "adsks salf ljk s jsndjcsjc;s cc sd;cnsdjc c cjaw mcamcsc s adsks salf ljk s jsndjcsjc;s cc sd;cnsdjc c cjaw mcamcsc s",
             "www.twitter.com",
             "www.instagram.com",
-            "icons/miro.png"
+            "aboutUsImages/profpic.png"
         ],
         [
             "Davinder Singh",
@@ -60,7 +60,7 @@ function AboutUs() {
             "adsks salf ljk s jsndjcsjc;s cc sd;cnsdjc c cjaw mcamcsc s adsks salf ljk s jsndjcsjc;s cc sd;cnsdjc c cjaw mcamcsc s",
             "www.twitter.com",
             "www.instagram.com",
-            "icons/adobe_xd.png"
+            "aboutUsImages/profpic.png"
         ]
     ]
 
@@ -124,9 +124,10 @@ function AboutUs() {
                         <img className='w-100' src='aboutUsImages/team_pic_9.png' alt='' />
                     </div>
                 </div>
+                <div className='about-area-7-circle-1' ></div>
             </div>
 
-            <div className='container-fluid my-5 about-area-2'>
+            <div className='container-fluid my-3 about-area-2'>
                 <div className='container' >
                     <div className='row about-area-2-outer-row'>
                         <div className='col-lg-6 d-flex justify-content-center about-area-2-outer-col' >
@@ -152,6 +153,8 @@ function AboutUs() {
                 </div>
                 <div className='about-area-2-circle1' ></div>
                 <div className='about-area-2-circle2' ></div>
+                <div className='about-area-2-circle3' ></div>
+                <div className='about-area-2-circle4' ></div>
                 <img className='about-area-2-cube' src='images/cube.png' alt='' />
             </div>
 
@@ -164,7 +167,7 @@ function AboutUs() {
                 </div>
             </div>
 
-            <div className='container my-5' >
+            <div className='container about-area-4' >
                 <div className='row' >
                     <div className='col-lg-12 text-center' >
                         <h2 className='mb-5 about-area-4-heading' >
@@ -172,7 +175,9 @@ function AboutUs() {
                             Behind The Magic
                         </h2>
                     </div>
-                    <div className='col-lg-2 col-md-2' >
+                </div>
+                <div className='row about-area-4-main-outer' >
+                    <div className='col-lg-1 col-md-2 text-center' >
                         <div className='row about-area-4-sideImages-row' >
                             {
                                 sideImgArr.map((element, index) => {
@@ -186,9 +191,9 @@ function AboutUs() {
                             }
                         </div>
                     </div>
-                    <div className='col-lg-10 col-md-10' >
+                    <div className='col-lg-11 col-md-10' >
                         <div className='row about-area-4-main-data-outer' >
-                            <div className='col-lg-6' >
+                            <div className='col-lg-6 col-md-6' >
                                 <div className='row' >
                                     <div className='col-lg-1 col-md-12 col-1' ></div>
                                     <div className='col-lg-10 col-md-12 col-10' >
@@ -218,12 +223,12 @@ function AboutUs() {
                                     <img className='about-area-4-main-social-icon' src="icons/instagram_white.png" alt='' />
                                 </a>
                             </div> */}
-                            <div className='col-lg-6 col-md-6 d-flex p-5' >
+                            <div className='col-lg-6 col-md-6 d-flex about-area-4-main-desc-outer' >
                                 <div className='row h-100' >
                                     <div className='col-lg-12' >
                                         <p className='about-area-4-main-para' >
                                             <span className='fw-bolder' >About {companyFacesDetail[companyFacesDesc][2]}</span>
-                                            <br/><br/>
+                                            <br/>
                                             {companyFacesDetail[companyFacesDesc][3]}
                                         </p>
                                     </div>
@@ -264,8 +269,8 @@ function AboutUs() {
             <div className='container-fluid about-area-1' >
                 <div className='container'>
                     <div className='row about-area-1-outer-row' >
-                        <div className='col-lg-12 text-center about-area-1-outer' >
-                            <h1>Pillars We Stand Firm At</h1>
+                        <div className='col-lg-12 text-center about-area-1-outer pb-5' >
+                            <p>Pillars We Stand Firm At</p>
                             {/* <p className='about-area-1-para my-4' >
                                 We offer flexible pricing options for freelancers and design teams. This
                                 sal kl fkls  klf  fkls fksl sfls fkls fs fs fs fskflsklf slf k fkwl fs fs fsfslkf skflsf s
@@ -280,47 +285,132 @@ function AboutUs() {
                             <img className='about-area-1-pic-3' src='aboutUsImages/team_pic_3.png' alt='' />
                             <img className='about-area-1-pic-4' src='aboutUsImages/team_pic_4.png' alt='' />
                         </div> */}
-                        <div className='col-lg-12' >
+                        <div className='col-lg-12 about-area-1-cols' >
                             <div className='row' >
-                                <div className='col-lg-4' ></div>
+                                <div className='col-lg-4 col-md-6' >
+                                    <div className='row' >
+                                        <div className='col-lg-2 col-md-2 col-2 text-center' >
+                                            <img className='about-area-1-icon-1 w-100' src='/icons/transparency.png' alt='Union' />
+                                        </div>
+                                        <div className='col-lg-10 col-md-10 col-10 d-flex align-items-center' >
+                                            <p className='about-area-1-header-1' >
+                                                Transparency
+                                            </p>
+                                        </div>
+                                        <div className='col-lg-2 col-md-2 col-2' ></div>
+                                        <div className='col-lg-10 col-md-10 col-10' >
+                                            <p className='about-area-1-para-1' >
+                                                ld aad kd akd ak dkas dka dk adad ak daskjd askds ak da dkda sdjkasals dadaadasd d kd asda da dasdkl asldalsdslkas dad
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='col-lg-8 col-md-6' ></div>
                             </div>
+                        </div>
+                        <div className='col-lg-12 about-area-1-cols' >
                             <div className='row' >
-                                <div className='col-lg-2 text-center' >
-                                    <img className='about-area-1-icon-1' src='/icons/Union.png' alt='Union' />
-                                </div>
-                                <div className='col-lg-10 d-flex align-items-center' >
-                                    <p className='about-area-1-header-1' >
-                                        Transparency
-                                    </p>
-                                </div>
-                                <div className='col-lg-2' ></div>
-                                <div className='col-lg-10' >
-                                    <p className='about-area-1-para-1' >
-                                        ld aad kd akd ak dkas dka dk adad ak daskjd askds ak da dkda sdjkasals dadaadasd d kd asda da dasdkl asldalsdslkas dad
-                                    </p>
+                                <div className='col-lg-8 col-md-6' ></div>
+                                <div className='col-lg-4 col-md-6' >
+                                    <div className='row' >
+                                        <div className='col-lg-2 col-md-2 col-2 text-center' >
+                                            <img className='about-area-1-icon-1 w-100' src='/icons/support.png' alt='Union' />
+                                        </div>
+                                        <div className='col-lg-10 col-md-10 col-10 d-flex align-items-center' >
+                                            <p className='about-area-1-header-1' >
+                                                Support
+                                            </p>
+                                        </div>
+                                        <div className='col-lg-2 col-md-2 col-2' ></div>
+                                        <div className='col-lg-10 col-md-10 col-10' >
+                                            <p className='about-area-1-para-1' >
+                                                ld aad kd akd ak dkas dka dk adad ak daskjd askds ak da dkda sdjkasals dadaadasd d kd asda da dasdkl asldalsdslkas dad
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className='col-lg-6' ></div>
-                        <div className='col-lg-6' ></div>
-                        <div className='col-lg-6' ></div>
-                        <div className='col-lg-6' ></div>
-                        <div className='col-lg-6' ></div>
-                        <div className='col-lg-6' ></div>
-                        <div className='col-lg-6' ></div>
-                        <div className='col-lg-6' ></div>
-                        <div className='col-lg-6' ></div>
+                        <div className='col-lg-12 about-area-1-cols' >
+                            <div className='row' >
+                                <div className='col-lg-4 col-md-6' >
+                                    <div className='row' >
+                                        <div className='col-lg-2 col-md-2 col-2 text-center' >
+                                            <img className='about-area-1-icon-1 w-100' src='/icons/future_ready_tech.png' alt='Union' />
+                                        </div>
+                                        <div className='col-lg-10 col-md-10 col-10 d-flex align-items-center' >
+                                            <p className='about-area-1-header-1' >
+                                                Future Ready Tech
+                                            </p>
+                                        </div>
+                                        <div className='col-lg-2 col-md-2 col-2' ></div>
+                                        <div className='col-lg-10 col-md-10 col-10' >
+                                            <p className='about-area-1-para-1' >
+                                                ld aad kd akd ak dkas dka dk adad ak daskjd askds ak da dkda sdjkasals dadaadasd d kd asda da dasdkl asldalsdslkas dad
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='col-lg-8 col-md-6' ></div>
+                            </div>
+                        </div>
+                        <div className='col-lg-12 about-area-1-cols' >
+                            <div className='row' >
+                                <div className='col-lg-8 col-md-6' ></div>
+                                <div className='col-lg-4 col-md-6' >
+                                    <div className='row' >
+                                        <div className='col-lg-2 col-md-2 col-2 text-center' >
+                                            <img className='about-area-1-icon-1 w-100' src='/icons/process_oriented_work.png' alt='Union' />
+                                        </div>
+                                        <div className='col-lg-10 col-md-10 col-10 d-flex align-items-center' >
+                                            <p className='about-area-1-header-1' >
+                                                Process Oriented Work
+                                            </p>
+                                        </div>
+                                        <div className='col-lg-2 col-md-2 col-2' ></div>
+                                        <div className='col-lg-10 col-md-10 col-10' >
+                                            <p className='about-area-1-para-1' >
+                                                ld aad kd akd ak dkas dka dk adad ak daskjd askds ak da dkda sdjkasals dadaadasd d kd asda da dasdkl asldalsdslkas dad
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-lg-12 about-area-1-cols' >
+                            <div className='row' >
+                                <div className='col-lg-4 col-md-6' >
+                                    <div className='row' >
+                                        <div className='col-lg-2 col-md-2 col-2 text-center' >
+                                            <img className='about-area-1-icon-1 w-100' src='/icons/flexible.png' alt='Union' />
+                                        </div>
+                                        <div className='col-lg-10 col-md-10 col-10 d-flex align-items-center' >
+                                            <p className='about-area-1-header-1' >
+                                                Flexible
+                                            </p>
+                                        </div>
+                                        <div className='col-lg-2 col-md-2 col-2' ></div>
+                                        <div className='col-lg-10 col-md-10 col-10' >
+                                            <p className='about-area-1-para-1' >
+                                                ld aad kd akd ak dkas dka dk adad ak daskjd askds ak da dkda sdjkasals dadaadasd d kd asda da dasdkl asldalsdslkas dad
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='col-lg-8 col-md-6' ></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div className='container-fluid px-5 mt-5 about-area-3' >
+            {/* <div className='container-fluid px-5 mt-5 about-area-3' >
                 <div className='row about-area-3-outer-row border-top-5 py-5' >
                     <div className='col-lg-12' >
                         <h2 className='mb-5 about-area-3-heading text-center' >
-                            Qualities
+                            Qualities */}
                             {/* <span className="title__color"> Together</span> */}
-                        </h2>
+                        {/* </h2>
                     </div>
                     <div className='col-lg-4 col-md-6 mb-5'>
                         <div className='row' >
@@ -387,7 +477,7 @@ function AboutUs() {
                             <div className='col-lg-1' ></div>
                         </div>
                     </div>
-                    <div className='col-lg-4 mb-5'></div>
+                    <div className='col-lg-4 mb-5'></div> */}
                     {/* <div className='col-lg-6 about-area-3-para' >
                         We truly believe in a quote from the greatest marathon runner ever lived.
                         <br/><br/>
@@ -399,13 +489,54 @@ function AboutUs() {
                         {/* <div className='about-area-circle about-area-3-circle1' ></div>
                         <div className='about-area-circle about-area-3-circle2' ></div> */}
                     {/* </div> */}
-                </div>
+                {/* </div>
                 <div className='about-area-circle about-area-3-circle' ></div>
-            </div>
-
-            {/* <Trophies /> */}
+            </div> */}
 
             <BuildingPicsSlider/>
+
+            <div className='container-fluid trophies bg-white about-us-trophies' >
+                <div className='container' >
+                    <div className='row' >
+                        <div className='col-lg-4 col-md-4 trophies-cols' data-aos="animation-scale-x-left">
+                            <div className='row' >
+                                <div className='col-lg-12 d-flex justify-content-center' >
+                                    <img className='trophies-img' src='images/Calendar.png' alt='' />
+                                </div>
+                                <div className='col-lg-12 text-center trophies-text' >
+                                    7+ Years
+                                    <br/>
+                                    Of Excellence
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-lg-4 col-md-4 trophies-cols' data-aos="animation-scale-y" >
+                            <div className='row' >
+                                <div className='col-lg-12 d-flex justify-content-center' >
+                                    <img className='trophies-img' src='images/trophy-front-clay.png' alt='' />
+                                </div>
+                                <div className='col-lg-12 text-center trophies-text' >
+                                    150+ Projects
+                                    <br/>
+                                    Delivered
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-lg-4 col-md-4' data-aos="animation-scale-x-right">
+                            <div className='row' >
+                                <div className='col-lg-12 d-flex justify-content-center' >
+                                    <img className='trophies-img' src='images/frame_2.png' alt='' />
+                                </div>
+                                <div className='col-lg-12 text-center trophies-text' >
+                                    120+ International
+                                    <br/>
+                                    Clients
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className='container-fluid about-area-5' >
                 <div className='container about-area-5-container' >
                     <div className='row' >
