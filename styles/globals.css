@@ -2174,8 +2174,7 @@ body:not(.touch-device) .header-item[href]:before {
   left: 0;
   right: 0;
   color: white;
-  /* bottom: 20px; */
-  bottom: 0;
+  bottom: 20px;
 }
 
 /* .about-area-4-main-img-shape-2 {
@@ -2192,16 +2191,17 @@ body:not(.touch-device) .header-item[href]:before {
   font-family: 'Poppins';
   font-weight: 700;
   font-size: 20px;
-  line-height: 1;
+  margin-bottom: 0;
 }
 
 .about-area-4-main-designation {
   font-family: 'Poppins';
   font-weight: 400;
   font-size: 13px;
-  line-height: 1;
+  line-height: 24px;
   letter-spacing: 0.33em;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 .about-area-4-main-social-icon {
