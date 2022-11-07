@@ -1946,7 +1946,7 @@ body:not(.touch-device) .header-item[href]:before {
 .about-area-2-pic-3 {
   position: absolute;
   bottom: -40%;
-  left: -15%;
+  left: -10%;
   width: 170px;
   height: 170px;
   border-radius: 50%;
@@ -1955,7 +1955,7 @@ body:not(.touch-device) .header-item[href]:before {
 
 .about-area-2-pic-4 {
   position: absolute;
-  bottom: -162%;
+  bottom: -370px;
   right: 45%;
   width: 220px;
   height: 220px;
@@ -2234,6 +2234,7 @@ body:not(.touch-device) .header-item[href]:before {
 
 .about-us-trophies {
   border-top: 1px solid #CDCDCD;
+  overflow: hidden;
 }
 
 .about-area-5 {
