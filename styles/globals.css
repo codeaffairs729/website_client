@@ -2191,7 +2191,6 @@ body:not(.touch-device) .header-item[href]:before {
   font-family: 'Poppins';
   font-weight: 700;
   font-size: 20px;
-  /* line-height: 48px; */
 }
 
 .about-area-4-main-designation {
