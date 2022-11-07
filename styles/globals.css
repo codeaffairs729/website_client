@@ -3085,7 +3085,7 @@ body:not(.touch-device) .header-item[href]:before {
   }
 
   .about-area-4-main-img-text-area {
-    bottom: 10px;
+    bottom: 5px;
   }
 
   .about-area-4-side-col {
@@ -3424,7 +3424,7 @@ body:not(.touch-device) .header-item[href]:before {
   }
 
   /* .about-area-4-main-img-text-area {
-    bottom: 10px;
+    bottom: 5px;
   } */
 
   .about-area-4-main-designation {
@@ -4164,9 +4164,9 @@ body:not(.touch-device) .header-item[href]:before {
     background: white;
   }
 
-  .about-area-4-main-img-text-area {
+  /* .about-area-4-main-img-text-area {
     bottom: 5px;
-  }
+  } */
 
   .about-area-5-heading {
     font-size: 40px;
