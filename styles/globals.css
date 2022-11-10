@@ -3420,7 +3420,7 @@ body:not(.touch-device) .header-item[href]:before {
   }
 
   .about-area-4-side-col {
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
   }
 
   /* .about-area-4-main-img-text-area {
