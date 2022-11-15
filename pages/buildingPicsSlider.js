@@ -50,7 +50,7 @@ const BuildingPicsSlider = () => {
         infinite: true,
         centerPadding: 0,
         slidesToShow: 3,
-        speed: 300,
+        speed: 500,
         arrows: false,
         prevArrow: <PrevButton />,
         nextArrow: <NextButton />,
