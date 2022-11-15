@@ -90,7 +90,7 @@ const BuildingPicsSlider = () => {
                         <Slider ref={(sliderDivRef) => { sliderDiv = sliderDivRef}} {...settings}>
                             {
                                 sliderImages.map((element, index) => {
-                                    return <div className={ imageIndex === index ? "building-slide activeSlide" : "building-slide" } >
+                                    return <div key={index} className={ imageIndex === index ? "building-slide activeSlide" : "building-slide" } >
                                         <img className='' src={element} alt={element} />
                                     </div>
                                 })
