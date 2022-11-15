@@ -2975,6 +2975,14 @@ body:not(.touch-device) .header-item[href]:before {
 /* Generic Modal Component CSS End */
 
 /* Building Pics Slider Component CSS Start */
+.about-area-9 .slick-slide {
+  position: relative;
+}
+
+.about-area-9 .slick-center {
+  z-index: 999;
+}
+
 .building-slide img {
   position: absolute;
   left: 50%;
@@ -3000,23 +3008,6 @@ body:not(.touch-device) .header-item[href]:before {
 .about-area-9 .slick-list {
   height: 500px;
 }
-
-/* .building-slide img {
-  height: 500px;
-  width: 100%;
-  margin: 0 auto;
-} */
-
-/* .building-slide {
-  transform: scale(0.7);
-  transition: transform 300ms;
-  opacity: 0.5;
-}
-
-.activeSlide {
-  transform: scale(1.5);
-  opacity: 1;
-} */
 
 .about-area-9-arrow-btn-div button:first-child {
   background-color: #27272E;
