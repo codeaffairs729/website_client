@@ -3159,6 +3159,12 @@ body:not(.touch-device) .header-item[href]:before {
     padding-right: 3rem;
   } */
   /* About Us Component CSS End */
+
+  /* Building Pics Slider Component CSS Start */
+  .building-slide img {
+    width: 500px;
+  }
+  /* Building Pics Slider Component CSS End */
 }
 
 @media only screen and (max-width: 1023px) {
