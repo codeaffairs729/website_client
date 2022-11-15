@@ -402,6 +402,7 @@ function AboutUs() {
                         </div>
                     </div>
                 </div>
+                <img className='about-area-1-line-circle' src='images/career-line-circle.png' alt='' />
             </div>
 
             {/* <div className='container-fluid px-5 mt-5 about-area-3' >

@@ -1854,6 +1854,7 @@ body:not(.touch-device) .header-item[href]:before {
   margin-bottom: 70px;
   /* border-radius: 0px 0px 40px 40px; */
   font-family: 'DM Sans';
+  position: relative;
 }
 
 .about-area-1-outer-row {
@@ -1918,6 +1919,13 @@ body:not(.touch-device) .header-item[href]:before {
   right: 0%;
   width: 200px;
   border-radius: 15px;
+}
+
+.about-area-1-line-circle {
+  position: absolute;
+  bottom: -30%;
+  right: 0;
+  width: 100%;
 }
 
 .about-area-2-outer-col {
@@ -2968,12 +2976,38 @@ body:not(.touch-device) .header-item[href]:before {
 
 /* Building Pics Slider Component CSS Start */
 .building-slide img {
-  height: 500px;
-  width: 100%;
-  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 700px;
+  border-radius: 20px;
 }
 
 .building-slide {
+  transform: scale(0.6);
+  transition: transform 300ms;
+  opacity: 0.5;
+  height: 500px;
+}
+
+.activeSlide {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.about-area-9 .slick-list {
+  height: 500px;
+}
+
+/* .building-slide img {
+  height: 500px;
+  width: 100%;
+  margin: 0 auto;
+} */
+
+/* .building-slide {
   transform: scale(0.7);
   transition: transform 300ms;
   opacity: 0.5;
@@ -2982,6 +3016,21 @@ body:not(.touch-device) .header-item[href]:before {
 .activeSlide {
   transform: scale(1.5);
   opacity: 1;
+} */
+
+.about-area-9-arrow-btn-div button:first-child {
+  background-color: #27272E;
+  margin-right: 10px;
+}
+
+.about-area-9-arrow-btn-div button {
+  background-color: #5956E9;
+  border-radius: 50%;
+  display: flex !important;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
 }
 /* Building Pics Slider Component CSS End */
 
@@ -3556,6 +3605,16 @@ body:not(.touch-device) .header-item[href]:before {
     width: 145px;
   }
   /* Header Component CSS End */
+
+  /* Building Pics Slider Component CSS Start */
+  .building-slide img {
+    width: 380px;
+  }
+
+  .building-slide, .about-area-9 .slick-list {
+    height: 370px;
+  }
+  /* Building Pics Slider Component CSS End */
 }
 
 @media only screen and (max-width: 767px) {
@@ -4323,6 +4382,16 @@ body:not(.touch-device) .header-item[href]:before {
     right: 3%;
   }
   /* Career Component CSS End */
+
+  /* Building Pics Slider Component CSS Start */
+  .building-slide img {
+    width: 320px;
+  }
+
+  .building-slide, .about-area-9 .slick-list {
+    height: 250px;
+  }
+  /* Building Pics Slider Component CSS End */
 }
 
 @media only screen and (max-height: 767px) {
