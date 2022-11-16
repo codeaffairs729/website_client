@@ -54,7 +54,7 @@ const BuildingPicsSlider = () => {
         arrows: false,
         prevArrow: <PrevButton />,
         nextArrow: <NextButton />,
-        autoplay: false,
+        autoplay: true,
         lazyLoad: true,
         beforeChange: (currentSlide, nextSlide) => setImageIndex(nextSlide),
         responsive: [{
