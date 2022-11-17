@@ -2319,7 +2319,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-6-img-outer {
-  padding: 0;
+  padding: 5px;
 }
 
 .about-area-7 {
@@ -4255,6 +4255,7 @@ body:not(.touch-device) .header-item[href]:before {
   }
 
   .about-area-6-img-outer {
+    padding: 0;
     padding-left: 12px;
   }
 
