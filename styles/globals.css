@@ -2537,11 +2537,13 @@ body:not(.touch-device) .header-item[href]:before {
   margin-top: 150px;
   margin-bottom: 70px;
   position: relative;
+  padding: 0 80px;
 }
 
 .career-area-1-row {
   background-color: #EBEBEB;
   position: relative;
+  background: linear-gradient(157.38deg, #EBEBEB 5.96%, rgba(235, 235, 235, 0) 72.91%);
 }
 
 .career-area-1-heading {
@@ -2573,17 +2575,34 @@ body:not(.touch-device) .header-item[href]:before {
 
 .career-area-1-circle {
   position: absolute;
-  background-color: #27272E;
+  background-color: #5956E9;
   height: 70px;
   width: 70px;
   left: 0;
   bottom: 90px;
 }
 
+.career-area-1-circle-2 {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  right: 0;
+  bottom: 0;
+  background: #27272E;
+}
+
 .career-area-2 {
   margin-top: 150px;
   margin-bottom: 70px;
   position: relative;
+  height: 850px;
+  padding: 0 80px;
+  /* overflow: hidden; */
+}
+
+.career-area-2-text-outer {
+  padding-left: 100px;
+  padding-right: 215px;
 }
 
 .career-area-2-heading {
@@ -2614,23 +2633,61 @@ body:not(.touch-device) .header-item[href]:before {
 
 .career-area-2-typing-icon {
   position: absolute;
-  bottom: 0%;
-  right: 0%;
   width: 90px;
+  right: 150px;
+  bottom: 0;
+  filter: drop-shadow(14px 20px 16px rgba(0, 0, 0, 0.25));
+}
+
+.career-area-2-img-1 {
+  position: absolute;
+  width: 310px;
+  left: 100px;
+  bottom: 0;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 32px;
+}
+
+.career-area-2-img-2 {
+  position: absolute;
+  width: 199px;
+  left: 525px;
+  top: 280px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 32px;
+}
+
+.career-area-2-img-3 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 315px;
+  left: 465px;
+  top: 640px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+  border-radius: 32px;
+}
+
+.career-area-2-img-4 {
+  position: absolute;
+  width: 533px;
+  right: 100px;
+  top: 350px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 32px;
 }
 
 .career-area-3 {
   position: relative;
   overflow: visible;
+  padding: 0 80px;
 }
 
 .career-area-3-outer-row {
-  background-color: #27272E;
-  color: white;
-  border-radius: 30px;
   border-top: 10px solid #939397;
   border-bottom: 10px solid #939397;
   position: relative;
+  background: #F5D485;
+  border-radius: 40px;
 }
 
 .career-area-3-heading {
@@ -2646,7 +2703,6 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .career-area-3-circle-outer {
-  height: 350px;
   position: relative;
 }
 
@@ -2657,6 +2713,12 @@ body:not(.touch-device) .header-item[href]:before {
   border-top: 10px solid #939397;
   border-left: 10px solid #939397;
   border-radius: 20px;
+}
+
+.career-area-3-img-rocket {
+  mix-blend-mode: luminosity;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.4));
+  width: 410px;
 }
 
 .career-area-3-images {
@@ -2682,19 +2744,33 @@ body:not(.touch-device) .header-item[href]:before {
 
 .career-area-3-cursor {
   position: absolute;
-  top: 50%;
-  left: 42%;
-  transform: translate(-50%, -50%);
-  width: 100px;
   z-index: 1;
+  width: 124px;
+  left: 530px;
+  bottom: -10px;
+}
+
+.career-area-3-cloud-1 {
+  position: absolute;
+  width: 150px;
+  right: 200px;
+  top: -35px;
+}
+
+.career-area-3-cloud-2 {
+  position: absolute;
+  width: 100px;
+  right: -50px;
+  bottom: 200px;
 }
 
 .career-area-3-circle3 {
   width: 45px;
   height: 45px;
   background-color: white;
-  bottom: 4%;
-  left: 2%;
+  bottom: 75px;
+  left: -20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .career-area-3-line-circle {
@@ -2707,6 +2783,7 @@ body:not(.touch-device) .header-item[href]:before {
   margin-top: 150px;
   margin-bottom: 70px;
   position: relative;
+  padding: 0 80px;
 }
 
 .career-area-4-heading {
@@ -2721,43 +2798,65 @@ body:not(.touch-device) .header-item[href]:before {
 
 .career-area-4-row {
   position: relative;
-  height: 700px;
+  height: 900px;
 }
 
 .career-area-4-circle1 {
   position: absolute;
-  background-color: #D9D9D9;
-  width: 150px;
-  height: 150px;
   top: 10%;
   left: 15%;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  background: url(/aboutUsImages/team_pic_7.png);
+  border: 5px solid #5956E9;
+  background-size: cover;
 }
 
 .career-area-4-circle2 {
   position: absolute;
-  background-color: #D9D9D9;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   top: 0%;
   right: 0%;
+  box-sizing: border-box;
+  background: url(/career_images/career-area-4-circle2.png);
+  border: 5px solid #27272E;
+  background-size: cover;
 }
 
 .career-area-4-circle3 {
   position: absolute;
-  background-color: #D9D9D9;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   left: 0%;
   bottom: 0%;
+  box-sizing: border-box;
+  background: url(/career_images/career-area-4-circle3.png);
+  border: 5px solid #5BA79F;
+  background-size: cover;
 }
 
 .career-area-4-circle4 {
   position: absolute;
-  background-color: #939397;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   right: 10%;
   bottom: 15%;
+  box-sizing: border-box;
+  background: url(/career_images/career-area-4-circle4.png);
+  border: 5px solid #F5D485;
+  background-size: cover;
+}
+
+.career-area-4-circle5 {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: -42px;
+  top: 300px;
+  background: #EAEAEC;
+  mix-blend-mode: normal;
 }
 
 .career-area-5 {
@@ -2884,6 +2983,98 @@ body:not(.touch-device) .header-item[href]:before {
 
 .career-area-7-tech-img {
   height: 30px;
+}
+
+.career-area-8 {
+  margin-top: 150px;
+  margin-bottom: 70px;
+  position: relative;
+  padding: 0 80px;
+}
+
+.career-area-8-img-1 {
+  width: 469px;
+  border-radius: 32px;
+}
+
+.career-area-8-img-2 {
+  width: 469px;
+  border-radius: 32px;
+}
+
+.career-area-8-heading {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+}
+
+.career-area-8-para {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.career-area-9 {
+  margin-top: 150px;
+  margin-bottom: 70px;
+  position: relative;
+  background: linear-gradient(108.79deg, #FAB8C4 12.21%, #F5D485 95.52%);
+}
+
+.career-area-9-heading {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: center;
+}
+
+.career-area-9-img-1 {
+  border-radius: 24px;
+}
+
+.career-area-9-img-2 {
+  border-radius: 24px;
+}
+
+.career-area-9-sub-heading {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.career-area-9-para {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.career-area-9-circle-1 {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  right: 25px;
+  top: 25px;
+  background: #5956E9;
+}
+
+.career-area-9-circle-2 {
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  left: -20px;
+  bottom: -32px;
+  background: #F5D485;
 }
 
 .career-outer {
@@ -3524,6 +3715,10 @@ body:not(.touch-device) .header-item[href]:before {
   /* About Us Component CSS End */
 
   /* Career Component CSS Start */
+  .career-area-2 {
+    height: 550px;
+  }
+
   .career-area-3-img {
     margin-top: 20px;
   }
@@ -3536,13 +3731,72 @@ body:not(.touch-device) .header-item[href]:before {
     font-size: 40px;
   }
 
+  .career-area-2-text-outer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .career-area-2-img-1 {
+    width: 200px;
+    left: 40px;
+  }
+
+  .career-area-2-img-2 {
+    width: 130px;
+    left: 290px;
+    top: 170px;
+  }
+
+  .career-area-2-img-3 {
+    width: 200px;
+    left: 260px;
+    top: 410px;
+  }
+
+  .career-area-2-img-4 {
+    width: 320px;
+    right: 40px;
+    top: 215px;
+  }
+
+  .career-area-2-typing-icon {
+    width: 70px;
+    right: 120px;
+  }
+
   .career-area-3-heading {
     font-size: 40px;
+  }
+
+  .career-area-3-cloud-1 {
+    width: 120px;
+    right: 110px;
+  }
+
+  .career-area-3-img-rocket {
+    width: 100%;
+  }
+
+  .career-area-3-cursor {
+    left: 48%;
+    width: 80px;
+  }
+
+  .career-area-3-cloud-2 {
+    bottom: 150px;
   }
 
   .career-area-4-heading {
     font-size: 50px;
     line-height: 70px;
+  }
+
+  .career-area-4-circle1 {
+    left: 0;
+  }
+
+  .career-area-4-circle4 {
+    right: 0;
   }
 
   .career-area-5-heading {
@@ -3555,10 +3809,6 @@ body:not(.touch-device) .header-item[href]:before {
 
   .career-area-6-heading {
     font-size: 50px;
-  }
-
-  .career-area-3-cursor {
-    left: 48%;
   }
 
   .career-area-7-heading {
@@ -3583,6 +3833,30 @@ body:not(.touch-device) .header-item[href]:before {
   
   .career-area-7-cloud-5-outer {
     right: 15%;
+  }
+
+  .career-area-8 {
+    padding: 0 40px;
+  }
+
+  .career-area-8-heading {
+    font-size: 40px;
+  }
+
+  .career-area-8-img-1 {
+    width: 100%;
+  }
+
+  .career-area-8-img-2 {
+    width: 100%;
+  }
+
+  .career-area-9 .p-5 {
+    padding: 1rem !important;
+  }
+
+  .career-area-9-heading {
+    font-size: 45px;
   }
   /* Career Component CSS End */
 
@@ -4288,12 +4562,51 @@ body:not(.touch-device) .header-item[href]:before {
     font-size: 30px;
   }
 
+  .career-area-2 {
+    padding: 0 40px;
+    height: 680px;
+    margin-top: 115px;
+  }
+
+  .career-area-2-img-1 {
+    width: 150px;
+    left: 25px;
+    bottom: 130px;
+  }
+
+  .career-area-2-img-2 {
+    width: 120px;
+    left: 225px;
+    top: 190px;
+  }
+
+  .career-area-2-img-3 {
+    width: 180px;
+    left: 193px;
+    top: 400px;
+  }
+
+  .career-area-2-img-4 {
+    width: 350px;
+    right: 22px;
+    top: 565px;
+  }
+
+  .career-area-2-heading {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  .career-area-2-typing-icon {
+    display: none;
+  }
+
   .career-area-3 {
     padding: 0 !important;
   }
 
   .career-area-3-heading {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .career-area-3-outer-row {
@@ -4313,14 +4626,34 @@ body:not(.touch-device) .header-item[href]:before {
     overflow: hidden;
   }
 
+  .career-area-3-img-rocket {
+    margin-top: 30px;
+  }
+
+  .career-area-3-cloud-1 {
+    display: none;
+  }
+
+  .career-area-3-cloud-2 {
+    display: none;
+  }
+
+  .career-area-3-cursor {
+    display: none;
+  }
+
   .career-area-4-circle1 {
     width: 125px;
     height: 125px;
     left: 0%;
   }
 
+  .career-area-4 {
+    padding: 0 25px;
+  }
+
   .career-area-4-heading {
-    font-size: 30px;
+    font-size: 35px;
     line-height: 60px;
   }
 
@@ -4338,6 +4671,10 @@ body:not(.touch-device) .header-item[href]:before {
     width: 130px;
     height: 130px;
     right: 0%;
+  }
+
+  .career-area-4-row {
+    height: 600px;
   }
 
   .career-area-5-heading {
@@ -4378,6 +4715,27 @@ body:not(.touch-device) .header-item[href]:before {
   
   .career-area-7-cloud-5-outer {
     right: 3%;
+  }
+
+  .career-area-8 {
+    margin-top: 70px;
+  }
+
+  .career-area-8-heading {
+    font-size: 35px;
+  }
+
+  .career-area-8-img-1 {
+    margin-bottom: 10px;
+  }
+
+  .career-area-8-img-2 {
+    margin: 20px 0px;
+  }
+
+  .career-area-9-heading {
+    font-size: 35px;
+    line-height: 50px;
   }
   /* Career Component CSS End */
 

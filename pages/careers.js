@@ -154,7 +154,28 @@ const Careers = () => {
                 draggable
                 pauseOnHover
             /><ToastContainer />
-            <div className='container-fluid career-area-1 px-5' >
+
+            <div className='container-fluid career-area-2' >
+                <div className='row' >
+                    <div className='col-lg-4 col-md-4' ></div>
+                    <div className='col-lg-8 col-md-8 career-area-2-text-outer' >
+                        <h2 className='career-area-2-heading' >
+                            We code & We know things!
+                        </h2>
+                        <p className='career-area-2-para' >
+                            akbddwdkndwn dnajnd jadw dwajd jkdaj da dda dd  da wdwdj d ad awj daw wdwa da dwad ad
+                        </p>
+                    </div>
+                </div>
+                {/* <div className='rounded-circle career-area-2-circle' ></div> */}
+                <img className='career-area-2-img-1' src='/career_images/career-area-2-img-1.png' alt='career-area-2-img-1.png' />
+                <img className='career-area-2-img-2' src='/career_images/career-area-2-img-2.png' alt='career-area-2-img-2.png' />
+                <img className='career-area-2-img-3' src='/career_images/career-area-2-img-3.png' alt='career-area-2-img-3.png' />
+                <img className='career-area-2-img-4' src='/career_images/career-area-2-img-4.png' alt='career-area-2-img-4.png' />
+                <img className='career-area-2-typing-icon' src='images/type.png' alt='' />
+            </div>
+
+            <div className='container-fluid career-area-1' >
                 <div className='row career-area-1-row rounded-pill' >
                     <div className='col-lg-12 career-area-1-col1' >
                         <h1 className='career-area-1-heading' >
@@ -168,73 +189,51 @@ const Careers = () => {
                         </button>
                     </div>
                     <div className='rounded-circle career-area-1-circle' ></div>
+                    <div className='rounded-circle career-area-1-circle-2' ></div>
                 </div>
             </div>
 
-            <div className='container-fluid career-area-2 px-5' >
-                <div className='row' >
-                    <div className='col-lg-4' >
-                        <img className='' src='' alt='' />
-                    </div>
-                    <div className='col-lg-8' >
-                        <div className='row' >
-                            <div className='col-lg-1' ></div>
-                            <div className='col-lg-9' >
-                                <h2 className='career-area-2-heading' >
-                                    We code & We know things!
-                                </h2>
-                                <p className='career-area-2-para' >
-                                    akbddwdkndwn dnajnd jadw dwajd jkdaj da dda dd  da wdwdj d ad awj daw wdwa da dwad ad
-                                </p>
-                            </div>
-                            <div className='col-lg-2' ></div>
-                        </div>
-                        <div className='row' >
-                            <div className='col-lg-5' >
-                                <img className='' src='' alt='' />
-                            </div>
-                            <div className='col-lg-7 career-area-2-img3-outer' >
-                                <img className='' src='' alt='' />
-                                <img className='career-area-2-typing-icon' src='images/type.png' alt='' />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className='rounded-circle career-area-2-circle' ></div>
-            </div>
-
-            <div className='container-fluid px-5 my-5 career-area-3' >
+            <div className='container-fluid my-5 career-area-3' >
                 <div className='row career-area-3-outer-row border-top-5 p-5' >
                     <div className='col-lg-12' >
                         <h1 className='mb-4 career-area-3-heading' >
-                            Hop on a hyper growth ride &gt;&gt;&gt;
+                            Hop on a hyper growth ride
+                            {/* &gt;&gt;&gt; */}
                         </h1>
                     </div>
-                    <div className='col-lg-6 career-area-3-para' >
-                        We offer flexible pricing options for freelancers and design teams. sadssafafasasasdjkasdkjasndasndandnasjkdnaksjd asndjkandjkandasndsa dsajd sajd asj das dasd ajdjassdda d asdasj dajs dja dja djas dasjd ahjs d asdjas d asjd asdajd ad
+                    <div className='col-lg-6 col-md-6 career-area-3-para d-flex align-items-center' >
+                        <p>
+                            We offer flexible pricing options for freelancers and design teams.
+                            sadss afafas as asdjkasd kjas ndasndan dnasjk dnaksjd asndj kandj ka nda sndsa dsajd sajd asj das dasd ajdja ssdda d asdasj dajs dja dja djas dasjd ahjs d asdjas d asjd asdajd ad
+                        </p>
                     </div>
-                    <div className='col-lg-6 career-area-3-circle-outer' >
-                        <div className='about-area-circle career-area-3-circle1' ></div>
+                    <div className='col-lg-6 col-md-6 career-area-3-circle-outer text-end' >
+                        <img className='career-area-3-img-rocket' src='/career_images/ROCKET.png' alt='ROCKET.png' />
+                        {/* <div className='about-area-circle career-area-3-circle1' ></div>
                         <img className='career-area-3-cursor' src='img/cursor.png' alt='' />
-                        <div className='about-area-circle career-area-3-circle2' ></div>
+                        <div className='about-area-circle career-area-3-circle2' ></div> */}
                     </div>
                     <div className='about-area-circle career-area-3-circle3' ></div>
+                    <img className='career-area-3-cursor' src='/img/cursor-1.png' alt='cursor-1.png' />
+                    <img className='career-area-3-cloud-1' src='/img/cloud.png' alt='cloud.png' />
+                    <img className='career-area-3-cloud-2' src='/img/cloud.png' alt='cloud.png' />
                 </div>
-                <img className='career-area-3-line-circle' src='images/career-line-circle.png' alt='' />
+                {/* <img className='career-area-3-line-circle' src='images/career-line-circle.png' alt='' /> */}
             </div>
 
-            <div className='container-fluid career-area-4 px-5' >
+            <div className='container-fluid career-area-4' >
                 <div className='row justify-content-center align-items-center career-area-4-row' >
                     <h2 className='career-area-4-heading' >
                         Our Best Perks Are
                         <br />
-                        People Themselves
+                        Pe<span className='text-danger' >o</span>ple Themselves
                     </h2>
                     <div className='rounded-circle career-area-4-circle1' ></div>
                     <div className='rounded-circle career-area-4-circle2' ></div>
                     <div className='rounded-circle career-area-4-circle3' ></div>
                     <div className='rounded-circle career-area-4-circle4' ></div>
                 </div>
+                <div className='rounded-circle career-area-4-circle5' ></div>
             </div>
 
             <div className='container-fluid career-area-5' >
@@ -275,7 +274,7 @@ const Careers = () => {
                 </div>
             </div>
 
-            <div className='container-fluid career-area-7' >
+            {/* <div className='container-fluid career-area-7' >
                 <div className='container career-area-7-container' >
                     <div className='row' >
                         <div className='col-lg-12'>
@@ -355,6 +354,75 @@ const Careers = () => {
                         <button className='btn btn-dark career-area-7-techName-hiring-btn-1 mt-2' onClick={() => handleCurrentOpenings('SEO Analyst')} >Apply</button>
                     </p>
                 </div>
+            </div> */}
+
+            <div className='container-fluid career-area-8' >
+                <div className='row' >
+                    <div className='col-lg-6 col-md-6 d-flex align-items-center' >
+                        <div className='career-area-8-text-div-1'>
+                            <h2 className='career-area-8-heading' >
+                                We’re Fun
+                            </h2>
+                            <p className='career-area-8-para' >
+                                Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos. Mazim nemore singulis an ius, nullam ornatus nam ei.
+                            </p>
+                        </div>
+                    </div>
+                    <div className='col-lg-6 col-md-6 d-flex justify-content-center' >
+                        <img className='career-area-8-img-2' src='/career_images/career-area-8-img-2.png' alt='career-area-8-img-2.png' />
+                    </div>
+                    <div className='col-lg-6 col-md-6 d-flex justify-content-center' >
+                        <img className='career-area-8-img-1' src='/career_images/career-area-8-img-1.png' alt='career-area-8-img-1.png' />
+                    </div>
+                    <div className='col-lg-6 col-md-6 d-flex align-items-center' >
+                        <div className='career-area-8-text-div-2'>
+                            <h2 className='career-area-8-heading' >
+                                We Celebrate
+                            </h2>
+                            <p className='career-area-8-para' >
+                                Et vim graeco principes. Cu dico nullam pri. Duo stet possim quaerendum eu, cum in invenire platonem. An animal assentior nam, sed qualisque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='container-fluid career-area-9' >
+                <div className='container py-5' >
+                    <div className='row' >
+                        <div className='col-lg-12' >
+                            <h2 className='career-area-9-heading' >More Reasons To Join Us</h2>
+                        </div>
+                        <div className='col-lg-6 col-md-6' >
+                            <div className='p-5 pb-4' >
+                                <img className='w-100 career-area-9-img-1' src='/career_images/career-area-9-img-1.png' alt='career-area-9-img-1.png' />
+                            </div>
+                            <div className='p-5 pt-0' >
+                                <h3 className='career-area-9-sub-heading mb-3' >
+                                    You get to work on latest technologies
+                                </h3>
+                                <p className='career-area-9-para' >
+                                    Quidam officiis similique sea ei, vel tollit indoctum efficiendi nihil tantas platonem eos.
+                                </p>
+                            </div>
+                        </div>
+                        <div className='col-lg-6 col-md-6' >
+                            <div className='p-5 pb-4' >
+                                <img className='w-100 career-area-9-img-2' src='/career_images/career-area-9-img-2.png' alt='career-area-9-img-2.png' />
+                            </div>
+                            <div className='p-5 pt-0' >
+                                <h3 className='career-area-9-sub-heading mb-3' >
+                                    Get surrounded with green environment
+                                </h3>
+                                <p className='career-area-9-para' >
+                                    Deseruisse definitionem his et, an has veri integre abhorreant, nam alii epicurei et.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='rounded-circle career-area-9-circle-1' ></div>
+                <div className='rounded-circle career-area-9-circle-2' ></div>
             </div>
 
             <div className='container-fluid career-area-6' >
