@@ -73,12 +73,10 @@ const Teams = () => {
                     <div className="teams__head" data-aos="animation-scale-y">
                         {/* <div className="teams__stage stage">Team Collaboration Redefined</div> */}
                         <h2 className="teams__title title teams-main-title">
-                            We’re Top Ranked
-                            Service Provider
-                            On
+                            We Create Websites that Build Momentum
                             <Typewriter
                                 options={{
-                                    strings: ['Upwork', 'Clutch.co', 'People Per Hour'],
+                                    strings: ['Getting your website right makes everything else easier.'],
                                     autoStart: true,
                                     loop: true,
                                 }}
@@ -87,7 +85,9 @@ const Teams = () => {
                     </div>
                     <div className="teams__body">
                         <div className="teams__col" data-aos="animation-scale-y">
-                            <h3 className="teams__title title title_sm">What Others Are&nbsp;Saying</h3>
+                            <h3 className="teams__title title title_sm">
+                                Here&nbsp;s What Our Elated Clients Have to Say!
+                            </h3>
                         </div>
                         <div className="teams__col">
                             <div className="teams__container">

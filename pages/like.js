@@ -76,47 +76,48 @@ const Like = () => {
                 </p> */}
                 <ul ref={(dropdownsRef) => { dropdowns = dropdownsRef}} className="like-list text-start d-inline-block w-100" data-aos="animation-scale-y" data-aos-delay="200">
                   <li>
-                    <a data-bs-toggle="collapse" href="#collapseTransparency" role="button" aria-expanded="false" aria-controls="collapseTransparency" className="like-options d-flex align-items-center" >
-                      Transparency
+                    <a data-bs-toggle="collapse" href="#collapseTransparency" role="button" aria-expanded="false" aria-controls="collapseTransparency" className="fw-bold like-options d-flex align-items-center" >
+                      Transparent Customized Service
                       <svg className="icon icon-arrow-down like-section-arrow">
                         <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                       </svg>
                     </a>
-                    <div className="collapse" id="collapseTransparency" >
-                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    <div className="collapse like-headline-description" id="collapseTransparency" >
+                    Every business has its own set of requirements, and we are here to fulfill those requirements with transparency. Code Garage Tech is devoted to providing one-of-a-kind solutions for each website design project and has assisted many customers in realizing their goals.
+
                     </div>
                   </li>
                   <li>
-                    <a data-bs-toggle="collapse" href="#collapseAvailability" role="button" aria-expanded="false" aria-controls="collapseAvailability" className="like-options d-flex align-items-center" >
-                      Availability
+                    <a data-bs-toggle="collapse" href="#collapseAvailability" role="button" aria-expanded="false" aria-controls="collapseAvailability" className="fw-bold like-options d-flex align-items-center" >
+                      An Adept Team
                       <svg className="icon icon-arrow-down like-section-arrow">
                         <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                       </svg>
                     </a>
-                    <div className="collapse" id="collapseAvailability" >
-                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    <div className="collapse like-headline-description" id="collapseAvailability" >
+                      We have a team of talented people who help your business reach new heights of success. Our Professional web developers are always available at your service to make your company's website look outstanding.
                     </div>
                   </li>
                   <li>
-                    <a data-bs-toggle="collapse" href="#collapseProcessOrientedWork" role="button" aria-expanded="false" aria-controls="collapseProcessOrientedWork" className="like-options d-flex align-items-center" >
-                      Process Oriented Work
+                    <a data-bs-toggle="collapse" href="#collapseProcessOrientedWork" role="button" aria-expanded="false" aria-controls="collapseProcessOrientedWork" className="fw-bold like-options d-flex align-items-center" >
+                      Development Scope
                       <svg className="icon icon-arrow-down like-section-arrow">
                         <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                       </svg>
                     </a>
-                    <div className="collapse" id="collapseProcessOrientedWork" >
-                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    <div className="collapse like-headline-description" id="collapseProcessOrientedWork" >
+                      We know that your website needs to grow as your business thrives. Hence, our web design solutions come with the flexibility of modifications that will aid your business in earning more revenue.
                     </div>
                   </li>
                   <li>
-                    <a data-bs-toggle="collapse" href="#collapseUptoDateonITTrends" role="button" aria-expanded="false" aria-controls="collapseUptoDateonITTrends" className="like-options d-flex align-items-center" >
-                      Upto Date on IT Trends
+                    <a data-bs-toggle="collapse" href="#collapseUptoDateonITTrends" role="button" aria-expanded="false" aria-controls="collapseUptoDateonITTrends" className="fw-bold like-options d-flex align-items-center" >
+                      Maintenance & Support
                       <svg className="icon icon-arrow-down like-section-arrow">
                         <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                       </svg>
                     </a>
                     <div className="collapse" id="collapseUptoDateonITTrends" >
-                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      Our team of professional developers offers support and maintenance services to enhance our client’s business life. At Code Garage Tech, our client's satisfaction is indispensable because we don't want them to face any kind of lag.
                     </div>
                   </li>
                 </ul>

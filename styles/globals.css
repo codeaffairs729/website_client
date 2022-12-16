@@ -892,7 +892,7 @@ body:not(.touch-device) .header-item[href]:before {
 .access-salesforce-cloud {
   position: absolute;
   top: 10%;
-  right: 30%;
+  right: 7%;
   width: 100px;
   z-index: 4;
 }
@@ -975,7 +975,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .access {
-  padding: 100px 0 0;
+  padding: 30px 0 0;
 }
 
 .access__cloud:first-child {
@@ -1540,7 +1540,7 @@ body:not(.touch-device) .header-item[href]:before {
   letter-spacing: -.025em;
   line-height: 1.25;
   color: #292930;
-  height: 200px;
+  height: 207px;
   text-align: justify;
 }
 
@@ -2406,7 +2406,7 @@ body:not(.touch-device) .header-item[href]:before {
 
 /* Like Component CSS Start */
 .like-list {
-  min-height: 250px;
+  min-height: 300px;
 }
 
 .like-list li {
@@ -2454,6 +2454,10 @@ body:not(.touch-device) .header-item[href]:before {
   margin-left: auto;
   font-size: 10px;
   transition: fill .25s;
+}
+
+.like-headline-description{
+  text-align: justify;
 }
 /* Like Component CSS End */
 
@@ -4184,6 +4188,10 @@ body:not(.touch-device) .header-item[href]:before {
   }
   /* Access Component CSS End */
 
+  .access-top-heading{
+    font-size: 2.5rem;
+    color: #2522BA;
+  }
   /* Header Component CSS Start */
   .solutions-desktop-view {
     display: none;

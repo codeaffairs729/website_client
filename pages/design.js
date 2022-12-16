@@ -32,7 +32,9 @@ const Design = () => {
             <div id="portfolio" className="design">
                 <div className="design__center center">
                     <div className="design__body">
-                        <h1 style={{ marginBottom: "10px", display: "inline-flex", marginBottom: "80px", fontWeight: "500", letterSpacing: "-.04em" }}>See Our Work</h1>
+                        <h1 style={{ marginBottom: "10px", display: "inline-flex", marginBottom: "80px", fontWeight: "500", letterSpacing: "-.04em" }}>
+                            We Build Delightful Experiences.
+                        </h1>
                         {/* <a className="design__scroll" href="#">
                             <div className="design__icon">
                                 <img className="design__pic" src="img/scroll.svg" alt="" />

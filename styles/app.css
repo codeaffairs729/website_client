@@ -2668,6 +2668,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   letter-spacing: 0;
   line-height: 1.5;
   color: #999FAE;
+  text-align: justify;
 }
 
 .stage {
@@ -8829,6 +8830,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   .info {
     font-size: 16px;
     line-height: 1.5;
+    text-align: justify;
   }
   .stage {
     font-size: 16px;
