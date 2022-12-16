@@ -25,7 +25,7 @@ const Layouts = () => {
               </h2>
             </div>
             <div className="layouts__info info" data-aos="animation-scale-y">
-              From our software engineering excellence to our world-class design practice, we constantly seek out and develop optimistic new techniques to tackle complex problems.
+              From our software engineering excellence to our top-class design practice, we continuously seek out as well as develop optimistic modern techniques to handle complex problems. 
             </div>
             <div className="layouts__list">
               <div className="layouts__item layouts-item" data-aos="animation-scale-y">
@@ -33,7 +33,7 @@ const Layouts = () => {
                   <img className="layouts__pic" src="img/layout-1.svg" alt="" />
                 </div>
                 <div className="layouts__text">
-                  We advice technologies that suits your idea.
+                  We implement those technologies that suit your idea.
                 </div>
               </div>
               <div className="layouts__item layouts-item" data-aos="animation-scale-y">
@@ -41,7 +41,7 @@ const Layouts = () => {
                   <img className="layouts__pic" src="img/layout-2.svg" alt="" />
                 </div>
                 <div className="layouts__text">
-                  Get rid of expensive & slow tech stack with fast & advance technologies.
+                  Get rid of expensive & slow tech stack with fast & advanced technologies.
                 </div>
               </div>
               <div className="layouts__item layouts-item" data-aos="animation-scale-y">
@@ -49,7 +49,7 @@ const Layouts = () => {
                   <img className="layouts__pic" src="img/layout-3.svg" alt="" />
                 </div>
                 <div className="layouts__text">
-                  Keep your application fast, scalable and reliable with optimum combination.
+                  Keep your application fast, scalable, and reliable with an optimum combination.
                 </div>
               </div>
             </div>

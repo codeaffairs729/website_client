@@ -4,6 +4,7 @@ const Work = () => {
   return (
     <>
       <div className="showcase work-process">
+        <h2 className='work-text-left-1 ms-5' >Our Approach</h2>
         <h2 className='work-text-left text-center'>From Your Idea<br/>To Your Revenue</h2>
         <div className='work-text-right text-center' >
           <h4>Confusion In Your<br/>Million Dollar Idea?</h4>

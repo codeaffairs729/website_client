@@ -91,6 +91,7 @@ const Access = () => {
       /><ToastContainer />
       <div className="access">
         <div className="access__center center">
+          <h2 className='' >Let's Build The Next Big Thing Together!</h2>
           <div className="access__view connect__view" data-aos data-aos-delay="300">
             <div className="access__preview">
               <img className="access__pic access-main-cloud" src="img/cloud.png" alt="" />

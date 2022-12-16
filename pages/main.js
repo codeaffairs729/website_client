@@ -52,10 +52,6 @@ const Main = () => {
                             </span>
                         </h1>
                         {/* <div className="main__info info ms-3 main-info" data-aos="animation-scale-y" data-aos-delay="400"> */}
-                        <div className="main__info info ms-3 main-info" >
-                            We Build Valuable Solutions With Code
-                        </div>
-                        {/* <div className="main__control ms-3" data-aos="animation-scale-y" data-aos-delay="550"> */}
                         <div className="main__control ms-3" >
                             <a className="main__btn btn btn_purple" href="./contact">Get in Touch</a>
                             {/* <a className="main__link" href="#">
@@ -65,6 +61,10 @@ const Main = () => {
                                 <div className="main__text">See It In Action!</div>
                             </a> */}
                         </div>
+                        <div className="main__info info ms-3 main-info" >
+                            We deliver result-oriented, customized services with an emphasis on building long-term relationships with our clients. Being a reliable software development and consulting company in India, we possess quality knowledge and tactics to bring it to life.
+                        </div>
+                        {/* <div className="main__control ms-3" data-aos="animation-scale-y" data-aos-delay="550"> */}
                         <div className="main__scroll ms-3" data-aos="animation-scale-y" data-aos-delay="650">
                             {/* <a className="main__link" href="#">
                                 <div className="main__icon">
