@@ -3474,8 +3474,8 @@ body:not(.touch-device) .header-item[href]:before {
 
   /* Access Component CSS Start */
   .access-salesforce-cloud {
-    right: 25%;
-    top: 5%;
+    right: 3%;
+    top: 3%;
   }
 
   .access-heroku-cloud-outer {
@@ -4117,8 +4117,8 @@ body:not(.touch-device) .header-item[href]:before {
 
   /* Access Component CSS Start */
   .access-main-cloud {
-    margin-top: 50px;
-    width: 70%;
+    margin-top: 17px;
+    width: 60%;
     margin-bottom: 137px;
   }
 
@@ -4166,7 +4166,7 @@ body:not(.touch-device) .header-item[href]:before {
 
   .sphere__pic {
     width: 35%;
-    top: 200px;
+    top: 145px;
     right: -25px;
   }
 
@@ -4179,7 +4179,7 @@ body:not(.touch-device) .header-item[href]:before {
   .access-heading {
     /* top: 35%;
     left: 25%; */
-    top: 38%;
+    top: 30%;
     width: 140px;
   }
 
@@ -4189,8 +4189,10 @@ body:not(.touch-device) .header-item[href]:before {
   /* Access Component CSS End */
 
   .access-top-heading{
-    font-size: 2.5rem;
     color: #2522BA;
+    position: relative;
+    font-size: 1.2rem;
+    top: -157px;
   }
   /* Header Component CSS Start */
   .solutions-desktop-view {
@@ -4430,15 +4432,23 @@ body:not(.touch-device) .header-item[href]:before {
 
   .work-text-left {
     position: absolute;
-    top: 7%;
-    left: 45%;
+    top: 85%;
+    left: 2%;
+    font-size: 1.2rem;
   }
 
   .work-text-right {
     position: absolute;
-    right: 45%;
+    right: 6%;
+    top:5%;
     bottom: 5%;
     z-index: 2;
+  }
+
+  .work-text-left-1{
+    position: relative;
+    top: -57px;
+    left: -35px;
   }
   /* Work Component CSS End */
 
