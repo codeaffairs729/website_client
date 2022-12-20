@@ -40,7 +40,6 @@ const Like = () => {
     setLikeOptionTwo(false);
     setLikeOptionOne(false);
   }
-
   useEffect(() => {
     var dropdownsEle = dropdowns.getElementsByClassName("like-options");
     var cnt = 0;

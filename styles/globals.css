@@ -2435,10 +2435,12 @@ body:not(.touch-device) .header-item[href]:before {
 
 .like-list li:nth-child(3):before {
   background-color: #5956E9;
+
 }
 
 .like-list li:nth-child(4):before {
   background-color: #48b2cc;
+
 }
 
 .like-list li:not(:last-child) {
@@ -2704,6 +2706,7 @@ body:not(.touch-device) .header-item[href]:before {
   font-family: 'Poppins';
   font-size: 18px;
   z-index: 1;
+  text-align: justify;
 }
 
 .career-area-3-circle-outer {

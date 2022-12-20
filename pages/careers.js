@@ -94,46 +94,46 @@ const Careers = () => {
                 gRecaptchaToken: gReCaptchaToken
             }),
         })
-        .then((res) => res.json())
-        .then((res) => {
-            if (res?.status === "success") {
-                setEmail("");
-                setJobPosition("");
-                setExperience("");
-                setResumeName("");
-                setResumeType("");
-                setResumeBase64("");
-                setResume("");
-                setCreateObjectURL("");
-                setGenModalshow(false);
+            .then((res) => res.json())
+            .then((res) => {
+                if (res?.status === "success") {
+                    setEmail("");
+                    setJobPosition("");
+                    setExperience("");
+                    setResumeName("");
+                    setResumeType("");
+                    setResumeBase64("");
+                    setResume("");
+                    setCreateObjectURL("");
+                    setGenModalshow(false);
 
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = 'Send Now';
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Send Now';
 
-                toast.success('Success! Email Sent Successful', {
-                    position: "top-right",
-                    autoClose: 5000,
-                    hideProgressBar: true,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                });
-            } else {
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = 'Send Now';
+                    toast.success('Success! Email Sent Successful', {
+                        position: "top-right",
+                        autoClose: 5000,
+                        hideProgressBar: true,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                    });
+                } else {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Send Now';
 
-                toast.error('Error! Email Not Sent', {
-                    position: "top-right",
-                    autoClose: 5000,
-                    hideProgressBar: true,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                });
-            }
-        });
+                    toast.error('Error! Email Not Sent', {
+                        position: "top-right",
+                        autoClose: 5000,
+                        hideProgressBar: true,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                    });
+                }
+            });
     };
 
     const handleCurrentOpenings = (val) => {
@@ -160,10 +160,10 @@ const Careers = () => {
                     <div className='col-lg-4 col-md-4' ></div>
                     <div className='col-lg-8 col-md-8 career-area-2-text-outer' >
                         <h2 className='career-area-2-heading' >
-                            We code & We know things!
+                            A Place Where Active Mode Is Always On!
                         </h2>
                         <p className='career-area-2-para' >
-                            akbddwdkndwn dnajnd jadw dwajd jkdaj da dda dd  da wdwdj d ad awj daw wdwa da dwad ad
+                            We are relaxed, energetic, & joyful. We are playful & have fun while doing serious & important work. Join us now!
                         </p>
                     </div>
                 </div>
@@ -179,10 +179,10 @@ const Careers = () => {
                 <div className='row career-area-1-row rounded-pill' >
                     <div className='col-lg-12 career-area-1-col1' >
                         <h1 className='career-area-1-heading' >
-                            Extraordinary Products Require Exceptional People
+                            Extraordinary People Require Extraordinary People
                         </h1>
                         <p className='career-area-1-para py-3' >
-                            We offer flexible pricing options for freelancers and design teams.
+                            We offer a refreshing ambiance where you can explore your caliber.
                         </p>
                         <button onClick={handleModalShow} className='btn btn-primary bg-white career-area-1-btn px-5' >
                             Join The Exceptionals
@@ -197,14 +197,13 @@ const Careers = () => {
                 <div className='row career-area-3-outer-row border-top-5 p-5' >
                     <div className='col-lg-12' >
                         <h1 className='mb-4 career-area-3-heading' >
-                            Hop on a hyper growth ride
+                            Hop on a Hyper Growth ride
                             {/* &gt;&gt;&gt; */}
                         </h1>
                     </div>
                     <div className='col-lg-6 col-md-6 career-area-3-para d-flex align-items-center' >
                         <p>
-                            We offer flexible pricing options for freelancers and design teams.
-                            sadss afafas as asdjkasd kjas ndasndan dnasjk dnaksjd asndj kandj ka nda sndsa dsajd sajd asj das dasd ajdja ssdda d asdasj dajs dja dja djas dasjd ahjs d asdjas d asjd asdajd ad
+                            We Experiment, Adapt & Continually Grow. You won't find a more dedicated, diligent team of professionals anywhere else who utilize Web & App development technology cheerfully. We want to see your career success and we pride ourselves on working hard to make sure it happens.
                         </p>
                     </div>
                     <div className='col-lg-6 col-md-6 career-area-3-circle-outer text-end' >
@@ -364,45 +363,35 @@ const Careers = () => {
                                 We’re Fun
                             </h2>
                             <p className='career-area-8-para' >
-                                Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos. Mazim nemore singulis an ius, nullam ornatus nam ei.
+                                Having a friendly workspace is all you need to be more productive and we at Code Garage Tech find fun in little things that make our day full of positive vibes.
                             </p>
                         </div>
                     </div>
                     <div className='col-lg-6 col-md-6 d-flex justify-content-center' >
                         <img className='career-area-8-img-2' src='/career_images/career-area-8-img-2.png' alt='career-area-8-img-2.png' />
                     </div>
-                    <div className='col-lg-6 col-md-6 d-flex justify-content-center' >
-                        <img className='career-area-8-img-1' src='/career_images/career-area-8-img-1.png' alt='career-area-8-img-1.png' />
-                    </div>
-                    <div className='col-lg-6 col-md-6 d-flex align-items-center' >
-                        <div className='career-area-8-text-div-2'>
-                            <h2 className='career-area-8-heading' >
-                                We Celebrate
-                            </h2>
-                            <p className='career-area-8-para' >
-                                Et vim graeco principes. Cu dico nullam pri. Duo stet possim quaerendum eu, cum in invenire platonem. An animal assentior nam, sed qualisque.
-                            </p>
-                        </div>
-                    </div>
+
                 </div>
             </div>
 
             <div className='container-fluid career-area-9' >
+
                 <div className='container py-5' >
+                    <div className='col-lg-12' >
+                        <h2 className='career-area-9-heading' >More Reasons To Join Us</h2>
+                    </div>
+                    {/* two image container */}
                     <div className='row' >
-                        <div className='col-lg-12' >
-                            <h2 className='career-area-9-heading' >More Reasons To Join Us</h2>
-                        </div>
                         <div className='col-lg-6 col-md-6' >
                             <div className='p-5 pb-4' >
                                 <img className='w-100 career-area-9-img-1' src='/career_images/career-area-9-img-1.png' alt='career-area-9-img-1.png' />
                             </div>
                             <div className='p-5 pt-0' >
                                 <h3 className='career-area-9-sub-heading mb-3' >
-                                    You get to work on latest technologies
+                                    An Organization Where Growth Is Guaranteed.
                                 </h3>
                                 <p className='career-area-9-para' >
-                                    Quidam officiis similique sea ei, vel tollit indoctum efficiendi nihil tantas platonem eos.
+                                    We are future-ready, and we assure you that you will discover the development of your skills swiftly after working with us.
                                 </p>
                             </div>
                         </div>
@@ -412,15 +401,21 @@ const Careers = () => {
                             </div>
                             <div className='p-5 pt-0' >
                                 <h3 className='career-area-9-sub-heading mb-3' >
-                                    Get surrounded with green environment
+                                    You Get To Work On The Latest Technologies.
                                 </h3>
                                 <p className='career-area-9-para' >
-                                    Deseruisse definitionem his et, an has veri integre abhorreant, nam alii epicurei et.
+                                    We don’t limit ourselves to only working on one technology,
+                                    we want you to prosper and gain success.
                                 </p>
                             </div>
                         </div>
                     </div>
+
+                    {/* End two image container */}
                 </div>
+
+
+
                 <div className='rounded-circle career-area-9-circle-1' ></div>
                 <div className='rounded-circle career-area-9-circle-2' ></div>
             </div>
@@ -449,8 +444,8 @@ const Careers = () => {
                 modalFooterShow={false}
                 modalTitle={"Enter Your Details Below"}
                 modalBody={<div>
-                    <input onChange={(e)=> setEmail(e.target.value)} className="form-control contact-field-input mb-4" type="email" name="email" placeholder="Your Email ID" value={email} required />
-                    <select className='form-control contact-field-input mb-4' onChange={(e)=> setJobPosition(e.target.value)} name="jobPosition" value={jobPosition} required >
+                    <input onChange={(e) => setEmail(e.target.value)} className="form-control contact-field-input mb-4" type="email" name="email" placeholder="Your Email ID" value={email} required />
+                    <select className='form-control contact-field-input mb-4' onChange={(e) => setJobPosition(e.target.value)} name="jobPosition" value={jobPosition} required >
                         <option value="none" >What job are you applying for?</option>
                         <option value="Ruby on Rails">Ruby on Rails Developer</option>
                         <option value="Python Developer">Python Developer</option>
@@ -470,7 +465,7 @@ const Careers = () => {
                         <option value="Laravel/PHP Developer">Laravel/PHP Developer</option>
                         <option value="Shopify Developer">Shopify Developer</option>
                     </select>
-                    <select className='form-control contact-field-input mb-4' onChange={(e)=> setExperience(e.target.value)} name="experience" value={experience} required >
+                    <select className='form-control contact-field-input mb-4' onChange={(e) => setExperience(e.target.value)} name="experience" value={experience} required >
                         <option value="none" >Your Work Experience?</option>
                         <option value="Internship">Internship</option>
                         <option value="Fresher">Fresher</option>
@@ -481,23 +476,23 @@ const Careers = () => {
                         <option value="5 years">5 years</option>
                         <option value="5+ years">5+ years</option>
                     </select>
-                    <p className={ fileAlert ? 'text-danger' : 'd-none' }>Please upload your resume*</p>
+                    <p className={fileAlert ? 'text-danger' : 'd-none'}>Please upload your resume*</p>
                     <div className='job-apply-upImg-text d-flex mb-4' >
                         <a className='job-apply-upImg-link' onClick={() => image.click()} >
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <mask id="mask0_1102_2677" style={{maskType: "alpha"}} maskUnits="userSpaceOnUse" x="5" y="3" width="14" height="18">
-                                <path fillRule="evenodd" clipRule="evenodd" d="M14 16.2961H10C9.45 16.2961 9 15.8461 9 15.2961V10.2961H7.41C6.52 10.2961 6.08 9.2161 6.71 8.5861L11.3 3.9961C11.4868 3.80885 11.7405 3.70361 12.005 3.70361C12.2695 3.70361 12.5232 3.80885 12.71 3.9961L17.3 8.5861C17.93 9.2161 17.48 10.2961 16.59 10.2961H15V15.2961C15 15.8461 14.55 16.2961 14 16.2961ZM18 18.2961H6C5.45 18.2961 5 18.7461 5 19.2961C5 19.8461 5.45 20.2961 6 20.2961H18C18.55 20.2961 19 19.8461 19 19.2961C19 18.7461 18.55 18.2961 18 18.2961Z" fill="black"/>
+                                <mask id="mask0_1102_2677" style={{ maskType: "alpha" }} maskUnits="userSpaceOnUse" x="5" y="3" width="14" height="18">
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M14 16.2961H10C9.45 16.2961 9 15.8461 9 15.2961V10.2961H7.41C6.52 10.2961 6.08 9.2161 6.71 8.5861L11.3 3.9961C11.4868 3.80885 11.7405 3.70361 12.005 3.70361C12.2695 3.70361 12.5232 3.80885 12.71 3.9961L17.3 8.5861C17.93 9.2161 17.48 10.2961 16.59 10.2961H15V15.2961C15 15.8461 14.55 16.2961 14 16.2961ZM18 18.2961H6C5.45 18.2961 5 18.7461 5 19.2961C5 19.8461 5.45 20.2961 6 20.2961H18C18.55 20.2961 19 19.8461 19 19.2961C19 18.7461 18.55 18.2961 18 18.2961Z" fill="black" />
                                 </mask>
                                 <g mask="url(#mask0_1102_2677)">
-                                <rect width="24" height="24" fill="#5956E9"/>
+                                    <rect width="24" height="24" fill="#5956E9" />
                                 </g>
                             </svg>
                             <span>Upload Resume</span>
                         </a>
                     </div>
-                    <input ref={(selectImage) => { image = selectImage}} onChange={uploadToClient} className='d-none' name='resume' id='resume' type='file' value={resume} accept=".doc, .docx, .pdf" />
+                    <input ref={(selectImage) => { image = selectImage }} onChange={uploadToClient} className='d-none' name='resume' id='resume' type='file' value={resume} accept=".doc, .docx, .pdf" />
                     <div className="mb-4 text-end">
-                        <button ref={(submitBtnRef) => { submitBtn = submitBtnRef}} className="entry__btn btn btn_purple contact-submit-btn btn-sm mb-3 w-100" type="submit" >Send Now</button>
+                        <button ref={(submitBtnRef) => { submitBtn = submitBtnRef }} className="entry__btn btn btn_purple contact-submit-btn btn-sm mb-3 w-100" type="submit" >Send Now</button>
                     </div>
                 </div>}
             />
