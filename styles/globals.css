@@ -1541,7 +1541,6 @@ body:not(.touch-device) .header-item[href]:before {
   line-height: 1.25;
   color: #292930;
   height: 207px;
-  text-align: justify;
 }
 
 .teams-cmnt-author {
@@ -1887,6 +1886,7 @@ body:not(.touch-device) .header-item[href]:before {
   line-height: 100%;
   letter-spacing: -0.025em;
   color: #FFFFFF;
+  text-align: justify;
 }
 
 .about-area-1-pic-1 {
@@ -2021,6 +2021,7 @@ body:not(.touch-device) .header-item[href]:before {
 .about-area-2-para {
   font-family: 'Poppins';
   font-size: 18px;
+  text-align: justify;
 }
 
 .about-area-2-cam-pic {
@@ -2350,6 +2351,7 @@ body:not(.touch-device) .header-item[href]:before {
 
 .about-area-7-para {
   font-size: 20px;
+  text-align: justify;
 }
 
 .about-area-7-heading-span {
@@ -2571,12 +2573,13 @@ body:not(.touch-device) .header-item[href]:before {
 .career-area-1-btn {
   filter: drop-shadow(0px 14px 20px rgba(35, 34, 87, 0.4)) drop-shadow(0px 48px 48px rgba(0, 0, 0, 0.12));
   font-family: 'Poppins';
-  color: #2522BA;
+  color: #f3f3f5;
   border: white;
+  
 }
 
 .career-area-1-btn:hover {
-  color: #2522BA;
+  color: #f7f7f7;
 }
 
 .career-area-1-circle {
@@ -2993,7 +2996,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .career-area-8 {
-  margin-top: 150px;
+  margin-top: 80px;
   margin-bottom: 70px;
   position: relative;
   padding: 0 80px;
@@ -3773,12 +3776,12 @@ body:not(.touch-device) .header-item[href]:before {
   .career-area-2-img-3 {
     width: 280px;
     left: 285px;
-    top: 410px;
+    top: 470px;
   }
 
   .career-area-2-img-4 {
     right: 40px;
-    top: 200px;
+    top: 245px;
   }
 
   .career-area-2-typing-icon {
@@ -4810,7 +4813,7 @@ body:not(.touch-device) .header-item[href]:before {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   /* Main Component CSS Start */
   .dev-title {
     font-size: 48px;
@@ -4827,6 +4830,19 @@ body:not(.touch-device) .header-item[href]:before {
   .package__title {
     width: max-content;
   }
+
+ 
+.career-area-2-img-2 {
+    width: 155px;
+    left: 35%;
+    top: 200px;
+}
+
+career-area-2-img-3 {
+  left: 323px;
+  top: 475px;
+}
+
 }
 
 @media only screen and (max-width: 1365px) {
@@ -4852,5 +4868,80 @@ body:not(.touch-device) .header-item[href]:before {
     padding-left: 5rem;
     padding-right: 5rem;
   }
+
+  .career-area-2-img-2 {
+    width: 200px;
+    left: 37%;
+    top: 272px;
+}
+
+career-area-2-img-4 {
+  position: absolute;
+  width: 38%;
+  right: 105px;
+  top: 290px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 32px;
+}
   /* About Us Component CSS End */
 }
+  @media only screen and (min-width: 1023px) {
+  /* About Us Component CSS Start */
+ 
+  .career-area-3-para {
+    line-height: 1.5rem;
+    position: relative;
+    top: -25px;
+    left: 60px;
+  }
+
+  .career-area-3-img-rocket {
+    width: 430px;
+    position: relative;
+    top: -10px;
+    left: -20px;
+  }
+  .career-area-3-heading{
+    position: relative;
+    top: 60px;
+    left: 60px;
+
+  }
+  .career-area-3-heading .mb-4{
+    margin-bottom: 0.5rem !important;
+
+  }
+  .career-area-3{
+    margin-left :3 rem;
+  }
+
+  .career-area-2-img-2 {
+    width: 180px;
+    left: 37%;
+    top: 322px;
+}
+
+.career-area-8-heading{
+  font-size: 52px;
+  margin-left: 17px;
+}
+.career-area-8-para{
+  margin-left: 17px;
+}
+}
+
+@media only screen and (max-width: 415px) and (min-width: 279px)  {
+  .career-area-2-heading {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.career-area-2-para {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 17px;
+  text-align: justify;
+}
+}
+
+

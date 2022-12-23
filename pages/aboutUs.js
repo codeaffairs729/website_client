@@ -76,9 +76,9 @@ function AboutUs() {
                     <div className='col-lg-12 about-area-6-heading-outer' >
                         <h1 className='text-center about-area-6-heading' >
                             We Clear Your Path,
-                            <br/>
+                            <br />
                             <span className="title__color"> We help you succeed,</span>
-                            <br/>
+                            <br />
                             We keep you successfull
                         </h1>
                     </div>
@@ -115,9 +115,10 @@ function AboutUs() {
                             <span className="title__color about-area-7-heading-span"> Mission</span>
                         </h2>
                         <p className='about-area-7-para' >
-                            We truly believe in a quote from the greatest marathon runner ever lived.
-                            <br/><br/>
-                            <span className='fw-bolder' >“100% of me is less than 1% of the team”</span> - Eliud Kipchoge 
+                            We're on a mission to make the IT world more awesome.<br /><br />
+                            We believe in empowering our client’s businesses by providing the most amazing outcomes.
+                            <br /><br />Our IT services emphasize delivering optimal solutions with top-notch services in web development, mobile development, and digital marketing. Providing overall satisfaction to clients is our pertinent priority and we aim to serve them with the best and most reliable solutions.
+                            <br /><br />
                         </p>
                     </div>
                     <div className='col-lg-5 col-md-6 about-area-7-pic-1-outer d-flex' >
@@ -143,11 +144,11 @@ function AboutUs() {
                                 Our History
                             </h2>
                             <p className='about-area-2-para' >
-                                lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah.
+                                In 2015, we established our agency to aid a few small enterprises to thrive, utilizing information technology. During our journey of 7 years, they have grown up with us.<br /><br />
+                                We build as well as scale your brand by crafting digital experiences that create lasting impact. We want to see your business succeed and we pride ourselves on working hard to make sure it happens.<br /><br />
+                                Code Garage was founded with an apparent idea in mind - to make brilliant software that influences and that we can be proud of.
                             </p>
-                            <p className='about-area-2-para' >
-                                akdnd akj dan dkas dsas djka sdkja kd akjd akd a da da da djkakj sdjka daks sdkjas dsas dska dajkd adkj ajkd askjsd asd kj asdjkd a da da dkjas.
-                            </p>
+
                         </div>
                     </div>
                 </div>
@@ -228,7 +229,7 @@ function AboutUs() {
                                     <div className='col-lg-12' >
                                         <p className='about-area-4-main-para' >
                                             <span className='fw-bolder' >About {companyFacesDetail[companyFacesDesc][2]}</span>
-                                            <br/>
+                                            <br />
                                             {companyFacesDetail[companyFacesDesc][3]}
                                         </p>
                                     </div>
@@ -300,7 +301,7 @@ function AboutUs() {
                                         <div className='col-lg-2 col-md-2 col-2' ></div>
                                         <div className='col-lg-10 col-md-10 col-10' >
                                             <p className='about-area-1-para-1' >
-                                                ld aad kd akd ak dkas dka dk adad ak daskjd askds ak da dkda sdjkasals dadaadasd d kd asda da dasdkl asldalsdslkas dad
+                                                We believe in transparency, and we want you to feel comfortable with us. We believe that everyone deserves the opportunity to be heard and understood—no matter where they are or what they do and that's why we work hard every day to make sure our services provide optimum outcomes.
                                             </p>
                                         </div>
                                     </div>
@@ -324,7 +325,7 @@ function AboutUs() {
                                         <div className='col-lg-2 col-md-2 col-2' ></div>
                                         <div className='col-lg-10 col-md-10 col-10' >
                                             <p className='about-area-1-para-1' >
-                                                ld aad kd akd ak dkas dka dk adad ak daskjd askds ak da dkda sdjkasals dadaadasd d kd asda da dasdkl asldalsdslkas dad
+                                                We provide 24*7 support because we know how important it is to have access to help when you need it. Our team will respond within minutes of receiving your request. We'll provide you with the information, advice, and support that you need to get back on track. We're here for you, so let us know if you ever need anything!
                                             </p>
                                         </div>
                                     </div>
@@ -346,8 +347,7 @@ function AboutUs() {
                                         <div className='col-lg-2 col-md-2 col-2' ></div>
                                         <div className='col-lg-10 col-md-10 col-10' >
                                             <p className='about-area-1-para-1' >
-                                                ld aad kd akd ak dkas dka dk adad ak daskjd askds ak da dkda sdjkasals dadaadasd d kd asda da dasdkl asldalsdslkas dad
-                                            </p>
+                                                Future-ready tech is about taking the best of what's already out there and combining it with the next wave of innovation. We help businesses to understand the new tech landscape by offering guidance, consultancy, and support.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -370,7 +370,7 @@ function AboutUs() {
                                         <div className='col-lg-2 col-md-2 col-2' ></div>
                                         <div className='col-lg-10 col-md-10 col-10' >
                                             <p className='about-area-1-para-1' >
-                                                ld aad kd akd ak dkas dka dk adad ak daskjd askds ak da dkda sdjkasals dadaadasd d kd asda da dasdkl asldalsdslkas dad
+                                                We ensure that the product or service you receive is of the highest quality and that’s why we believe in offering process-oriented work. Each step in process-oriented work is designed to help you get from point A to point B as quickly and efficiently as possible.
                                             </p>
                                         </div>
                                     </div>
@@ -392,7 +392,7 @@ function AboutUs() {
                                         <div className='col-lg-2 col-md-2 col-2' ></div>
                                         <div className='col-lg-10 col-md-10 col-10' >
                                             <p className='about-area-1-para-1' >
-                                                ld aad kd akd ak dkas dka dk adad ak daskjd askds ak da dkda sdjkasals dadaadasd d kd asda da dasdkl asldalsdslkas dad
+                                                We know that your business is as unique as you are. We're committed to helping you build the kind of working relationship that will help you achieve your goals. We love working with you, and we want you to feel like you're part of the team every step of the way!
                                             </p>
                                         </div>
                                     </div>
@@ -410,8 +410,8 @@ function AboutUs() {
                     <div className='col-lg-12' >
                         <h2 className='mb-5 about-area-3-heading text-center' >
                             Qualities */}
-                            {/* <span className="title__color"> Together</span> */}
-                        {/* </h2>
+            {/* <span className="title__color"> Together</span> */}
+            {/* </h2>
                     </div>
                     <div className='col-lg-4 col-md-6 mb-5'>
                         <div className='row' >
@@ -479,22 +479,22 @@ function AboutUs() {
                         </div>
                     </div>
                     <div className='col-lg-4 mb-5'></div> */}
-                    {/* <div className='col-lg-6 about-area-3-para' >
+            {/* <div className='col-lg-6 about-area-3-para' >
                         We truly believe in a quote from the greatest marathon runner ever lived.
                         <br/><br/>
                         <span className='fw-bolder' >“100% of me is less than 1% of the team”</span> - Eliud Kipchoge 
                     </div>
                     <div className='col-lg-6 about-area-3-circle-outer' > */}
-                        {/* <div className='about-area-3-img' ></div> */}
-                        {/* <img className='' src='' alt='' /> */}
-                        {/* <div className='about-area-circle about-area-3-circle1' ></div>
+            {/* <div className='about-area-3-img' ></div> */}
+            {/* <img className='' src='' alt='' /> */}
+            {/* <div className='about-area-circle about-area-3-circle1' ></div>
                         <div className='about-area-circle about-area-3-circle2' ></div> */}
-                    {/* </div> */}
-                {/* </div>
+            {/* </div> */}
+            {/* </div>
                 <div className='about-area-circle about-area-3-circle' ></div>
             </div> */}
 
-            <BuildingPicsSlider/>
+            <BuildingPicsSlider />
 
             <div className='container-fluid trophies bg-white about-us-trophies' >
                 <div className='container' >
@@ -506,7 +506,7 @@ function AboutUs() {
                                 </div>
                                 <div className='col-lg-12 text-center trophies-text' >
                                     7+ Years
-                                    <br/>
+                                    <br />
                                     Of Excellence
                                 </div>
                             </div>
@@ -518,7 +518,7 @@ function AboutUs() {
                                 </div>
                                 <div className='col-lg-12 text-center trophies-text' >
                                     150+ Projects
-                                    <br/>
+                                    <br />
                                     Delivered
                                 </div>
                             </div>
@@ -530,7 +530,7 @@ function AboutUs() {
                                 </div>
                                 <div className='col-lg-12 text-center trophies-text' >
                                     120+ International
-                                    <br/>
+                                    <br />
                                     Clients
                                 </div>
                             </div>
@@ -548,7 +548,7 @@ function AboutUs() {
                             <p className='about-area-5-para' >
                                 Let us know right away
                                 <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.8621 1L32 13.3636M32 13.3636L19.8621 25.7273M32 13.3636H1.19209e-07" stroke="black" strokeWidth="2"/>
+                                    <path d="M19.8621 1L32 13.3636M32 13.3636L19.8621 25.7273M32 13.3636H1.19209e-07" stroke="black" strokeWidth="2" />
                                 </svg>
                             </p>
                         </div>

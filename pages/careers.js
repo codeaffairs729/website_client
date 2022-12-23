@@ -5,6 +5,9 @@ import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import GenericModal from '../components/genericModal';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Careers = () => {
     const [email, setEmail] = useState("");
@@ -140,6 +143,24 @@ const Careers = () => {
         setJobPosition(val);
         handleModalShow();
     }
+
+    var settings = {
+        dots: true,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 415,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            }]
+    };
     return (
         <>
             <Header />
@@ -157,8 +178,8 @@ const Careers = () => {
 
             <div className='container-fluid career-area-2' >
                 <div className='row' >
-                    <div className='col-lg-4 col-md-4' ></div>
-                    <div className='col-lg-8 col-md-8 career-area-2-text-outer' >
+                    <div className='col-lg-3 col-md-3' ></div>
+                    <div className='col-lg-9 col-md-9 career-area-2-text-outer' >
                         <h2 className='career-area-2-heading' >
                             A Place Where Active Mode Is Always On!
                         </h2>
@@ -179,12 +200,12 @@ const Careers = () => {
                 <div className='row career-area-1-row rounded-pill' >
                     <div className='col-lg-12 career-area-1-col1' >
                         <h1 className='career-area-1-heading' >
-                            Extraordinary People Require Extraordinary People
+                            Extraordinary Problem Require Extraordinary People
                         </h1>
                         <p className='career-area-1-para py-3' >
                             We offer a refreshing ambiance where you can explore your caliber.
                         </p>
-                        <button onClick={handleModalShow} className='btn btn-primary bg-white career-area-1-btn px-5' >
+                        <button onClick={handleModalShow} className='btn bg-danger career-area-1-btn opacity-75 px-5' >
                             Join The Exceptionals
                         </button>
                     </div>
@@ -204,6 +225,7 @@ const Careers = () => {
                     <div className='col-lg-6 col-md-6 career-area-3-para d-flex align-items-center' >
                         <p>
                             We Experiment, Adapt & Continually Grow. You won't find a more dedicated, diligent team of professionals anywhere else who utilize Web & App development technology cheerfully. We want to see your career success and we pride ourselves on working hard to make sure it happens.
+                            Mark your part as an inclusive, collaborative, diverse, and supportive team. At Code Garage Tech, we push the boundaries to make your career go boom!
                         </p>
                     </div>
                     <div className='col-lg-6 col-md-6 career-area-3-circle-outer text-end' >
@@ -356,20 +378,39 @@ const Careers = () => {
             </div> */}
 
             <div className='container-fluid career-area-8' >
-                <div className='row' >
+                <div className='career-area-8-row row' >
                     <div className='col-lg-6 col-md-6 d-flex align-items-center' >
                         <div className='career-area-8-text-div-1'>
                             <h2 className='career-area-8-heading' >
                                 We’re Fun
                             </h2>
                             <p className='career-area-8-para' >
-                                Having a friendly workspace is all you need to be more productive and we at Code Garage Tech find fun in little things that make our day full of positive vibes.
+                                Having a friendly workspace is all you need to be more productive and we at Code Garage Tech find fun in little things that make our day full of positive vibes.We Lift Spirits by making our office environment lively with great music.
                             </p>
                         </div>
                     </div>
+
                     <div className='col-lg-6 col-md-6 d-flex justify-content-center' >
                         <img className='career-area-8-img-2' src='/career_images/career-area-8-img-2.png' alt='career-area-8-img-2.png' />
                     </div>
+                    <div className='d-flex flex-column-reverse flex-md-row'>
+                        <div className='m-2 col-lg-6 col-md-6 d-flex justify-content-center' >
+                            <img className='career-area-8-img-2' src='/aboutUsImages/qualities_4.png' alt='career-area-8-img-2.png' />
+                        </div>
+                        <div className='m-2 col-lg-6 col-md-6 d-flex align-items-center' >
+                            <div className='career-area-8-text-div-1'>
+                                <h2 className='career-area-8-heading' >
+                                    We're Process-Oriented
+                                </h2>
+                                <p className='career-area-8-para' >
+                                    At Code Garage tech, we value open, honest, and productive communications. We take pride in our work & always promote teamwork. We say what we mean & mean what we say!
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
 
                 </div>
             </div>
@@ -380,18 +421,20 @@ const Careers = () => {
                     <div className='col-lg-12' >
                         <h2 className='career-area-9-heading' >More Reasons To Join Us</h2>
                     </div>
-                    {/* two image container */}
-                    <div className='row' >
+                    <Slider {...settings}>
+                        {/* #First Slide */}
                         <div className='col-lg-6 col-md-6' >
                             <div className='p-5 pb-4' >
                                 <img className='w-100 career-area-9-img-1' src='/career_images/career-area-9-img-1.png' alt='career-area-9-img-1.png' />
                             </div>
                             <div className='p-5 pt-0' >
                                 <h3 className='career-area-9-sub-heading mb-3' >
-                                    An Organization Where Growth Is Guaranteed.
+                                    You Get To Work On The Latest Technologies.
                                 </h3>
                                 <p className='career-area-9-para' >
-                                    We are future-ready, and we assure you that you will discover the development of your skills swiftly after working with us.
+                                    We don’t limit ourselves to only working on one technology,
+                                    we want you to prosper and gain success.
+
                                 </p>
                             </div>
                         </div>
@@ -401,16 +444,71 @@ const Careers = () => {
                             </div>
                             <div className='p-5 pt-0' >
                                 <h3 className='career-area-9-sub-heading mb-3' >
-                                    You Get To Work On The Latest Technologies.
+                                    Get Surrounded By A Lush Green Environment
+                                    For greenery image
+
                                 </h3>
                                 <p className='career-area-9-para' >
-                                    We don’t limit ourselves to only working on one technology,
-                                    we want you to prosper and gain success.
+                                    Our office is situated in-between an opulent greenery so that you take benefit of nature while working with us.
                                 </p>
                             </div>
                         </div>
-                    </div>
+                        {/* #Second Slide */}
+                        <div className='col-lg-6 col-md-6' >
+                            <div className='p-5 pb-4' >
+                                <img className='w-100 career-area-9-img-1' src='/career_images/career-area-9-img-1.png' alt='career-area-9-img-1.png' />
+                            </div>
+                            <div className='p-5 pt-0' >
+                                <h3 className='career-area-9-sub-heading mb-3' >
+                                    We Always Have Game Time Friday
+                                </h3>
+                                <p className='career-area-9-para' >
+                                    We make the weekend a blast by playing exciting games every Friday evening.
 
+                                </p>
+                            </div>
+                        </div>
+                        <div className='col-lg-6 col-md-6' >
+                            <div className='p-5 pb-4' >
+                                <img className='w-100 career-area-9-img-2' src='/career_images/career-area-9-img-2.png' alt='career-area-9-img-2.png' />
+                            </div>
+                            <div className='p-5 pt-0' >
+                                <h3 className='career-area-9-sub-heading mb-3' >
+                                    We are future-ready
+                                </h3>
+                                <p className='career-area-9-para' >
+                                    We assure you that you will discover the development of your skills swiftly after working with us.
+                                </p>
+                            </div>
+                        </div>
+                        {/* #Third Slide */}
+                        <div className='col-lg-6 col-md-6' >
+                            <div className='p-5 pb-4' >
+                                <img className='w-100 career-area-9-img-1' src='/career_images/career-area-9-img-1.png' alt='career-area-9-img-1.png' />
+                            </div>
+                            <div className='p-5 pt-0' >
+                                <h3 className='career-area-9-sub-heading mb-3' >
+                                    We Celebrate Each Occasion With Enthusiasm.
+                                </h3>
+                                <p className='career-area-9-para' >
+                                    Celebrating festivals is our favorite part, whether it is national or international.
+                                </p>
+                            </div>
+                        </div>
+                        <div className='col-lg-6 col-md-6' >
+                            <div className='p-5 pb-4' >
+                                <img className='w-100 career-area-9-img-2' src='/career_images/career-area-9-img-2.png' alt='career-area-9-img-2.png' />
+                            </div>
+                            <div className='p-5 pt-0' >
+                                <h3 className='career-area-9-sub-heading mb-3' >
+                                    We Explore New Destinations
+                                </h3>
+                                <p className='career-area-9-para' >
+                                    We are spontaneous! We regularly go on exciting trips to make ourselves more productive.
+                                </p>
+                            </div>
+                        </div>
+                    </Slider>
                     {/* End two image container */}
                 </div>
 
