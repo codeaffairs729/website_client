@@ -94,7 +94,7 @@ const Like = () => {
                   <li
                   >
                     <div
-                      onMouseLeave={handleOnListLeave}
+                      onMouseOut={handleOnListLeave}
                       onMouseOver={handleOnMouseOverList}
                     >
                       <a
@@ -117,7 +117,7 @@ const Like = () => {
                   </li>
                   <li data-id="2" className='list-items'>
                     <div
-                      onMouseLeave={handleOnListLeave}
+                      onMouseOut={handleOnListLeave}
                       onMouseOver={handleOnMouseOverList}
                     >
                       <a
@@ -140,7 +140,7 @@ const Like = () => {
                   </li>
                   <li data-id="3" className='list-items'>
                     <div
-                      onMouseLeave={handleOnListLeave}
+                      onMouseOut={handleOnListLeave}
                       onMouseOver={handleOnMouseOverList}
                     >
                       <a
@@ -162,7 +162,7 @@ const Like = () => {
                   </li>
                   <li data-id="4" className='list-items'>
                     <div
-                      onMouseLeave={handleOnListLeave}
+                      onMouseOut={handleOnListLeave}
                       onMouseOver={handleOnMouseOverList}
                     >
                       <a

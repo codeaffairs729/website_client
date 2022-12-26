@@ -10228,4 +10228,14 @@ body:not(.touch-device) .header__item:hover .header__body {
   width: 140%;
 }
 
+.rating-container-followers img{
+  width: auto;
+  height: 64px;
+
+}
+
+.rating-container-followers-linkedin-text{
+  position: relative;
+    top: 15px;
+}
 /*# sourceMappingURL=app.css.map */

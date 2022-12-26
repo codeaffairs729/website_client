@@ -122,8 +122,8 @@ function AboutUs() {
                             <span className="title__color about-area-7-heading-span"> Mission</span>
                         </h2>
                         <p className='about-area-7-para' >
-                            We're on a mission to make the IT world more awesome.<br /><br />
-                            We believe in empowering our client’s businesses by providing the most amazing outcomes.
+                            We're on a mission to make the IT world more process-driven.<br /><br />
+                            We believe in empowering entrepreneurs by providing valuable software and deliver quality to society.
                             <br /><br />Our IT services emphasize delivering optimal solutions with top-notch services in web development, mobile development, and digital marketing. Providing overall satisfaction to clients is our pertinent priority and we aim to serve them with the best and most reliable solutions.
                             <br /><br />
                         </p>

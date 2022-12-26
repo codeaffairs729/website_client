@@ -9,6 +9,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Head from 'next/head';
+import { AiFillStar } from 'react-icons/ai'
+import { BsStarHalf } from 'react-icons/bs'
+
+
 
 const Careers = () => {
     const [email, setEmail] = useState("");
@@ -273,27 +277,54 @@ const Careers = () => {
                     </div>
                     <div className='row' >
                         <div className='col-lg-4 col-md-4 px-4 career-area-5-gray-box-outer' >
-                            <div className='career-area-5-gray-box py-5' >
-                                <h2 className='text-center career-area-5-sub-heading mb-3' >
-                                    6
-                                </h2>
-                                <p className='text-center career-area-5-para' >best clutch score</p>
+                            <div className='career-area-5-gray-box py-1' >
+
+                                <div className='rating-container-followers d-flex flex-column align-items-center'>
+                                    <p className='rating-container-followers-linkedin-text fs-5'>3000 + Followers</p>
+                                    <img src='/icons/Linkedin-Logo.png' />
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                        <div className='col-lg-4 col-md-4 px-4 career-area-5-gray-box-outer' >
+                            <div className='career-area-5-gray-box py-4' >
+
+                                <div className='rating-container d-flex justify-content-evenly'>
+                                    <div><img src='/icons/google-icon.png' /></div>
+                                    <div>
+                                        <div className='rating-container-headline fs-5'>Google</div>
+                                        <div>
+                                            <span className='Warning'><AiFillStar /></span>
+                                            <span className='Warning'><AiFillStar /></span>
+                                            <span className='Warning'><AiFillStar /></span>
+                                            <span className='Warning'><AiFillStar /></span>
+                                            <span className='Warning'><BsStarHalf /></span>
+                                        </div>
+                                    </div>
+                                    <div className='mt-1'>4.9/5</div>
+                                </div>
+
                             </div>
                         </div>
                         <div className='col-lg-4 col-md-4 px-4 career-area-5-gray-box-outer' >
-                            <div className='career-area-5-gray-box py-5' >
-                                <h2 className='text-center career-area-5-sub-heading mb-3' >
-                                    80%
-                                </h2>
-                                <p className='text-center career-area-5-para' >best clutch score</p>
-                            </div>
-                        </div>
-                        <div className='col-lg-4 col-md-4 px-4 career-area-5-gray-box-outer' >
-                            <div className='career-area-5-gray-box py-5' >
-                                <h2 className='text-center career-area-5-sub-heading mb-3' >
-                                    9/10
-                                </h2>
-                                <p className='text-center career-area-5-para' >best clutch score</p>
+                            <div className='career-area-5-gray-box py-4' >
+                                <div className='rating-container d-flex justify-content-evenly'>
+                                    <div><img src='/icons/glassdoor-icon-48.png' /></div>
+                                    <div>
+                                        <div className='rating-container-headline fs-5'>glassdoor</div>
+                                        <div>
+                                            <span className='Warning'><AiFillStar /></span>
+                                            <span className='Warning'><AiFillStar /></span>
+                                            <span className='Warning'><AiFillStar /></span>
+                                            <span className='Warning'><AiFillStar /></span>
+                                            <span className='Warning'><BsStarHalf /></span>
+                                        </div>
+                                    </div>
+                                    <div className='mt-1'>4.9/5</div>
+                                </div>
                             </div>
                         </div>
                     </div>
