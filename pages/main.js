@@ -1,12 +1,20 @@
 import React from 'react'
 import Header from './includes/header'
 import Typewriter from 'typewriter-effect';
+import Head from 'next/head';
 
 const Main = () => {
     return (
         <>
             <div className="main">
                 <Header />
+                <Head>
+                    <title>Custom Software Development Service Provider Company in India
+                    </title>
+                    <meta name="description" content="Looking for reliable Custom Web Development Services in India? Code Garage Tech is here! We offer scalable, robust, and quality services. Contact us now!
+" />
+                    <meta name="keywords" content="Software Development Company In India, Custom Web Development Services, Custom Web Development Company"></meta>
+                </Head>
                 <div className="main__center center">
                     <div className="main__wrap">
                         <h1 className="main__title title title_big" data-aos>

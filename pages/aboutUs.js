@@ -4,6 +4,7 @@ import Footer from './includes/footer'
 import SideImages from '../components/sideImages'
 import Trophies from './trophies'
 import BuildingPicsSlider from './buildingPicsSlider'
+import Head from 'next/head'
 
 function AboutUs() {
     const [companyFacesDesc, setCompanyFacesDesc] = useState(0);
@@ -71,6 +72,12 @@ function AboutUs() {
     return (
         <>
             <Header />
+            <Head>
+                <title>We are a preeminent Web Design And Development firm!</title>
+                <meta name="description" content="Code Garage Tech is the leading Custom Web App Development Company in India, providing you with world-class software solutions. Get in touch with us now!" />
+                <meta name="keywords" content="Custom Web App Development Company, Web Design And Development"></meta>
+
+            </Head>
             <div className='container-fluid about-area-6' >
                 <div className='row' >
                     <div className='col-lg-12 about-area-6-heading-outer' >

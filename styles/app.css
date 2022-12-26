@@ -7061,7 +7061,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 }
 
 .entry__pic {
-  width: 100%;
+  width: 90%;
 }
 
 .entry__pic_black {
@@ -10223,6 +10223,9 @@ body:not(.touch-device) .header__item:hover .header__body {
   .details__graphic {
     width: 100%;
   }
+}
+.entry__pic__entry__pic_white-size{
+  width: 140%;
 }
 
 /*# sourceMappingURL=app.css.map */

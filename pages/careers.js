@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Head from 'next/head';
 
 const Careers = () => {
     const [email, setEmail] = useState("");
@@ -175,7 +176,11 @@ const Careers = () => {
                 draggable
                 pauseOnHover
             /><ToastContainer />
-
+            <Head>
+                <title>Explore App Development Technology Jobs at Code Garage Tech!</title>
+                <meta name="description" content="We at Code Garage Tech offer reliable Web Development Technology jobs and be a part of our innovative and happy work culture! Give new wings to your career now." />
+                <meta name="keywords" content="Web Development Technology, App Development Technology"></meta>
+            </Head>
             <div className='container-fluid career-area-2' >
                 <div className='row' >
                     <div className='col-lg-3 col-md-3' ></div>
@@ -205,7 +210,7 @@ const Careers = () => {
                         <p className='career-area-1-para py-3' >
                             We offer a refreshing ambiance where you can explore your caliber.
                         </p>
-                        <button onClick={handleModalShow} className='btn bg-danger career-area-1-btn opacity-75 px-5' >
+                        <button onClick={handleModalShow} className='btn btn_pink career-area-1-btn px-5' >
                             Join The Exceptionals
                         </button>
                     </div>
@@ -385,7 +390,7 @@ const Careers = () => {
                                 We’re Fun
                             </h2>
                             <p className='career-area-8-para' >
-                                Having a friendly workspace is all you need to be more productive and we at Code Garage Tech find fun in little things that make our day full of positive vibes.We Lift Spirits by making our office environment lively with great music.
+                                Having a friendly workspace is all you need to be more productive and we at Code Garage Tech find fun in little things that make our day full of positive vibes. We Lift Spirits by making our office environment lively with great music. We believe that fun is essential to a good work environment. That's why we offer flexible hours, fun events, and challenging projects. We want you to feel like you're not just working—you're exuberant!
                             </p>
                         </div>
                     </div>

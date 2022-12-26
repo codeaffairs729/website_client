@@ -37,20 +37,20 @@ const Header = () => {
     useEffect(() => {
         setCareerLink(router.pathname == '/careers');
         setAboutUsLink(router.pathname == '/aboutUs');
-    //     const timer1 = setTimeout(() => {
-    //         setAutoplay1(true);
-    //         console.log(autoplay1);
-    //     }, 1000);
+        //     const timer1 = setTimeout(() => {
+        //         setAutoplay1(true);
+        //         console.log(autoplay1);
+        //     }, 1000);
 
-    //     const timer2 = setTimeout(() => {
-    //         setAutoplay2(true);
-    //         console.log(autoplay2);
-    //     }, 3000);
+        //     const timer2 = setTimeout(() => {
+        //         setAutoplay2(true);
+        //         console.log(autoplay2);
+        //     }, 3000);
 
-    //     const timer3 = setTimeout(() => {
-    //         setAutoplay3(true);
-    //         console.log(autoplay3);
-    //     }, 5000);
+        //     const timer3 = setTimeout(() => {
+        //         setAutoplay3(true);
+        //         console.log(autoplay3);
+        //     }, 5000);
     }, []);
 
     const servicesSettings = {
@@ -93,43 +93,43 @@ const Header = () => {
         <>
             <Head>
                 <meta charSet="utf-8" />
-                <title>Code Garage Tech - Top Software Development Agency In USA & India</title>
+                {/* <title>Custom Software Development Service Provider Company in India</title> */}
                 <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-                <meta name="format-detection" content="telephone=no"/>
-                <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png"/>
-                <link rel="icon" type="image/png" sizes="32x32" href="/logo/cgt_new_favicon.png"/>
-                <link rel="icon" type="image/png" sizes="16x16" href="/logo/cgt_new_favicon.png"/>
-                <link rel="manifest" href="img/site.webmanifest"/>
-                <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5"/>
-                <meta name="msapplication-TileColor" content="#da532c"/>
-                <meta name="theme-color" content="#ffffff"/>
-                <meta name="description" content="We are top custom software developer team in USA & India. We work on Ruby On Rails, NodeJs / NestJs, ReactJs / NextJs, VueJS / NuxtJs, Laravel and Shopify."/>
+                <meta name="format-detection" content="telephone=no" />
+                <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+                <link rel="icon" type="image/png" sizes="32x32" href="/logo/cgt_new_favicon.png" />
+                <link rel="icon" type="image/png" sizes="16x16" href="/logo/cgt_new_favicon.png" />
+                <link rel="manifest" href="img/site.webmanifest" />
+                <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5" />
+                <meta name="msapplication-TileColor" content="#da532c" />
+                <meta name="theme-color" content="#ffffff" />
+                {/* <meta name="description" content="Looking for reliable Custom Web Development Services in India? Code Garage Tech is here! We offer scalable, robust, and quality services. Contact us now!" /> */}
             </Head>
             <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" />
-            <div ref={(headerRef) => { header = headerRef}} className="header js-header" id="header">
+            <div ref={(headerRef) => { header = headerRef }} className="header js-header" id="header">
                 <div className="header__center center">
-                    <button onClick={(e) => handleSidebar(e)} className={ sideBarHandler ? "header__burger js-header-burger active" : "header__burger js-header-burger" }>
+                    <button onClick={(e) => handleSidebar(e)} className={sideBarHandler ? "header__burger js-header-burger active" : "header__burger js-header-burger"}>
                         <span></span>
                     </button>
                     <a className="header__logo" href="./">
                         <img className="header__pic" src="logo/cgt_new_logo_alt.png" alt="" />
                     </a>
-                    <div className={ sideBarHandler ? "header__wrap js-header-wrap visible" : "header__wrap js-header-wrap" }>
+                    <div className={sideBarHandler ? "header__wrap js-header-wrap visible" : "header__wrap js-header-wrap"}>
                         <nav className="header__nav">
                             <a className="header__item" href="./">Home</a>
-                            <div className={`header__item ${serviceMenu ? "service-menu-header-item" : "" }`}>
-                                <a className={`header__head ${serviceMenu ? "service-menu-head" : "" }`} href="#" onClick={toggleSidebarInternalMenu}>
+                            <div className={`header__item ${serviceMenu ? "service-menu-header-item" : ""}`}>
+                                <a className={`header__head ${serviceMenu ? "service-menu-head" : ""}`} href="#" onClick={toggleSidebarInternalMenu}>
                                     Services
                                     <svg className="icon icon-arrow-down">
                                         <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                                     </svg>
                                 </a>
-                                <div className={`header__body ${serviceMenu ? "service-menu text-start" : "" }`}>
+                                <div className={`header__body ${serviceMenu ? "service-menu text-start" : ""}`}>
                                     <div className="header__center center header-dropdown-body">
                                         <div className="header__row row">
                                             <div className="col-lg-4 col-md-4 col-sm-4" >
-                                                <div className={`header__category ${serviceMenu ? "service-menu-header-item" : "" }`} >
+                                                <div className={`header__category ${serviceMenu ? "service-menu-header-item" : ""}`} >
                                                     Web Solutions
                                                 </div>
                                                 <div className="row" >
@@ -255,7 +255,7 @@ const Header = () => {
                                                             </div>
                                                         </div> */}
 
-                                                        {/* <div className="col-lg-12 header-solutions-outer" >
+                                                    {/* <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/computer-front-color.png" alt="" />
@@ -329,7 +329,7 @@ const Header = () => {
                                                 </div>
                                             </div>
                                             <div className="col-lg-4 col-md-4 col-sm-4" >
-                                                <div className={`header__category ${serviceMenu ? "service-menu-header-item service-menu-header-category" : "" }`} >
+                                                <div className={`header__category ${serviceMenu ? "service-menu-header-item service-menu-header-category" : ""}`} >
                                                     Mobile Solutions
                                                 </div>
                                                 <div className="row" >
@@ -424,7 +424,7 @@ const Header = () => {
                                                                 </div>
                                                             </div>
                                                         </div> */}
-                                                        {/* <div className="col-lg-12 header-solutions-outer" >
+                                                    {/* <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="images/javascript.png" alt="" />
@@ -496,7 +496,7 @@ const Header = () => {
                                                         </div> */}
                                                     {/* </Slider> */}
                                                 </div>
-                                                <div className={`header__category mt-3 ${serviceMenu ? "service-menu-header-item" : "" }`} >DevOps</div>
+                                                <div className={`header__category mt-3 ${serviceMenu ? "service-menu-header-item" : ""}`} >DevOps</div>
                                                 <div className="row" >
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
@@ -531,7 +531,7 @@ const Header = () => {
                                                 </div>
                                             </div>
                                             <div className="col-lg-4 col-md-4 col-sm-4" >
-                                                <div className={`header__category ${serviceMenu ? "service-menu-header-item service-menu-header-category" : "" }`} >Miscellaneous</div>
+                                                <div className={`header__category ${serviceMenu ? "service-menu-header-item service-menu-header-category" : ""}`} >Miscellaneous</div>
                                                 <div className="row" >
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >

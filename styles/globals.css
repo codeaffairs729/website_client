@@ -2573,14 +2573,10 @@ body:not(.touch-device) .header-item[href]:before {
 .career-area-1-btn {
   filter: drop-shadow(0px 14px 20px rgba(35, 34, 87, 0.4)) drop-shadow(0px 48px 48px rgba(0, 0, 0, 0.12));
   font-family: 'Poppins';
-  color: #f3f3f5;
-  border: white;
-  
 }
 
-.career-area-1-btn:hover {
-  color: #f7f7f7;
-}
+/* .career-area-1-btn:hover {
+} */
 
 .career-area-1-circle {
   position: absolute;

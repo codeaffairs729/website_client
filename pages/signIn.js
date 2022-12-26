@@ -21,8 +21,8 @@ const SignIn = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
                 <meta name="format-detection" content="telephone=no"/>
                 <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png"/>
-                <link rel="icon" type="image/png" sizes="32x32" href="/logo/favicon_white.jpg"/>
-                <link rel="icon" type="image/png" sizes="16x16" href="/logo/favicon_white.jpg"/>
+                <link rel="icon" type="image/png" sizes="32x32" href="/logo/cgt_new_favicon.png"/>
+                <link rel="icon" type="image/png" sizes="16x16" href="/logo/cgt_new_favicon.png"/>
                 <link rel="manifest" href="img/site.webmanifest"/>
                 <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5"/>
                 <meta name="msapplication-TileColor" content="#da532c"/>

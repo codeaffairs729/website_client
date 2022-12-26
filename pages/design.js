@@ -2,6 +2,7 @@ import React from 'react'
 import Slider from "react-slick";
 import PrevButton from '../components/prevButton';
 import NextButton from '../components/nextButton';
+import Head from 'next/head';
 
 const Design = () => {
     const designSettings = {
@@ -29,6 +30,10 @@ const Design = () => {
 
     return (
         <>
+            {/* <Head>
+                <title>Check Out our Portfolio Here  - Code Garage Tech! </title>
+                <meta name="description" content="Discover Code Garage Tech’s portfolio! We feel pleasure in sharing our wonderful portfolio which is no less than an achievement for us! " />
+            </Head> */}
             <div id="portfolio" className="design">
                 <div className="design__center center">
                     <div className="design__body">
