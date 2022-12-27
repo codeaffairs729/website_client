@@ -2896,6 +2896,7 @@ body:not(.touch-device) .header-item[href]:before {
 .career-area-5-gray-box {
   background-color: #F1F2F1;
   border-radius: 32px;
+  min-height: 118px
 }
 
 .career-area-5-container {
