@@ -10,59 +10,50 @@ function AboutUs() {
     const [companyFacesDesc, setCompanyFacesDesc] = useState(0);
 
     const sideImgArr = [
-        ["aboutUsImages/profpic.png"],
-        ["aboutUsImages/profpic.png"],
-        ["aboutUsImages/profpic.png"],
-        ["aboutUsImages/profpic.png"],
-        ["aboutUsImages/profpic.png"]
+        ["aboutUsImages/about-img1.jpg"],
+        ["aboutUsImages/about-img2.jpg"],
+        ["aboutUsImages/about-img4.jpg"],
+        ["aboutUsImages/about-img3.jpg"]
     ]
 
     const companyFacesDetail = [
         [
-            "Mehak Singh",
+            "Mehakpal Singh",
             "Founder",
             "Mehak",
-            "adsks salf ljk s jsndjcsjc;s cc sd;cnsdjc c cjaw mcamcsc s adsks salf ljk s jsndjcsjc;s cc sd;cnsdjc c cjaw mcamcsc s",
+            "The guy, who established Code Garage Tech. He is a computer science engineer and has experience of more than a decade in software development. He encourages conformity with business rules & regulations and also ensures that the company's code of ethics is being followed.",
             "www.twitter.com",
             "www.instagram.com",
-            "aboutUsImages/profpic.png"
+            "aboutUsImages/about-img1.jpg"
         ],
         [
-            "Ankush Gupta",
-            "Developer",
-            "Ankush",
-            "adsks salf ljk s jsndjcsjc;s cc sd;cnsdjc c cjaw mcamcsc s adsks salf ljk s jsndjcsjc;s cc sd;cnsdjc c cjaw mcamcsc s",
+            "Poonam Thakur",
+            "HR Manager",
+            "Poonam",
+            "Poonam integrates and implements the technology via improved training, staffing, and communication with all the employees. Moreover, she also recommends approaches, business solutions, and processes to the management.",
             "www.twitter.com",
             "www.instagram.com",
-            "aboutUsImages/profpic.png"
+            "aboutUsImages/about-img2.jpg"
         ],
         [
-            "Dixit Tiwari",
-            "Developer",
-            "Dixit",
-            "adsks salf ljk s jsndjcsjc;s cc sd;cnsdjc c cjaw mcamcsc s adsks salf ljk s jsndjcsjc;s cc sd;cnsdjc c cjaw mcamcsc s",
+            "Naresh Bhatia",
+            "CA",
+            "Naresh",
+            "As a proactive and result-oriented finance professional, he has a strong track record of handling multiple assignments efficiently. He has 15 years of experience and is very diligent in handling Accounts & Finance, Direct & Indirect Tax, Internal Auditing, and Risk Assessment of the company.",
             "www.twitter.com",
             "www.instagram.com",
-            "aboutUsImages/profpic.png"
+            "aboutUsImages/about-img4.jpg"
         ],
         [
-            "Harsh Tyagi",
-            "Developer",
-            "Harsh",
-            "adsks salf ljk s jsndjcsjc;s cc sd;cnsdjc c cjaw mcamcsc s adsks salf ljk s jsndjcsjc;s cc sd;cnsdjc c cjaw mcamcsc s",
+            "Kannav Sharma",
+            "Lawyer",
+            "Kannav",
+            "Proud First generation lawyer. He joined the litigation to make a mark and help as many people as best of his capabilities. Kannav ensures the company’s strategies, actions, and processes comply relevantly with state, local, international, and federal laws.",
             "www.twitter.com",
             "www.instagram.com",
-            "aboutUsImages/profpic.png"
-        ],
-        [
-            "Davinder Singh",
-            "Developer",
-            "Davinder",
-            "adsks salf ljk s jsndjcsjc;s cc sd;cnsdjc c cjaw mcamcsc s adsks salf ljk s jsndjcsjc;s cc sd;cnsdjc c cjaw mcamcsc s",
-            "www.twitter.com",
-            "www.instagram.com",
-            "aboutUsImages/profpic.png"
+            "aboutUsImages/about-img3.jpg"
         ]
+
     ]
 
     const SideImagesChangeHandle = (index) => {
@@ -240,14 +231,14 @@ function AboutUs() {
                                             {companyFacesDetail[companyFacesDesc][3]}
                                         </p>
                                     </div>
-                                    <div className='col-lg-12 d-flex justify-content-end pt-2' >
+                                    {/* <div className='col-lg-12 d-flex justify-content-end pt-2' >
                                         <a href={companyFacesDetail[companyFacesDesc][4]} >
                                             <img className='about-area-4-main-social-icon me-2' src="icons/twitter_black.png" alt='' />
                                         </a>
                                         <a href={companyFacesDetail[companyFacesDesc][5]} >
                                             <img className='about-area-4-main-social-icon' src="icons/instagram_black.png" alt='' />
                                         </a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

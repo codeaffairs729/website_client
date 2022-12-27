@@ -1953,7 +1953,7 @@ body:not(.touch-device) .header-item[href]:before {
 
 .about-area-2-pic-3 {
   position: absolute;
-  bottom: -40%;
+  bottom: 2%;
   left: -10%;
   width: 170px;
   height: 170px;
@@ -1963,8 +1963,8 @@ body:not(.touch-device) .header-item[href]:before {
 
 .about-area-2-pic-4 {
   position: absolute;
-  bottom: -370px;
-  right: 45%;
+  bottom: -120px;
+  right: 20%;
   width: 220px;
   height: 220px;
   border-radius: 50%;
@@ -2208,7 +2208,7 @@ body:not(.touch-device) .header-item[href]:before {
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  letter-spacing: 0.33em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 0;
 }
@@ -2225,6 +2225,7 @@ body:not(.touch-device) .header-item[href]:before {
   line-height: 24px;
   letter-spacing: 1px;
   color: #333333;
+  text-align: justify;
 }
 
 .about-area-4-main-para span {
@@ -2850,7 +2851,7 @@ body:not(.touch-device) .header-item[href]:before {
   right: 10%;
   bottom: 15%;
   box-sizing: border-box;
-  background: url(/career_images/career-area-4-circle4.png);
+  background: url(/career_images/people_img4.jpg);
   border: 5px solid #F5D485;
   background-size: cover;
 }
@@ -3015,6 +3016,7 @@ body:not(.touch-device) .header-item[href]:before {
   font-weight: 700;
   font-size: 56px;
   line-height: 64px;
+  text-align: center;
 }
 
 .career-area-8-para {
@@ -3656,13 +3658,13 @@ body:not(.touch-device) .header-item[href]:before {
   }
 
   .about-area-2-pic-3 {
-    bottom: -460%;
+    bottom: -577%;
     z-index: 1;
     left: 0%;
   }
 
   .about-area-2-pic-4 {
-    bottom: -470%;
+    bottom: -592%;
     z-index: 1;
     right: 0%;
   }
@@ -3703,7 +3705,7 @@ body:not(.touch-device) .header-item[href]:before {
   .about-area-4-main-designation {
     font-weight: 500;
     font-size: 10px;
-    line-height: 20px;
+    line-height: 28px;
     letter-spacing: 1px;
   }
 

@@ -277,7 +277,7 @@ const Careers = () => {
                     </div>
                     <div className='row' >
                         <div className='col-lg-4 col-md-4 px-4 career-area-5-gray-box-outer' >
-                            <div className='career-area-5-gray-box py-1' >
+                            <div className='career-area-5-gray-box py-3' >
 
                                 <div className='rating-container-followers d-flex flex-column align-items-center'>
                                     <p className='rating-container-followers-linkedin-text fs-5'>3000 + Followers</p>
@@ -290,7 +290,7 @@ const Careers = () => {
 
 
                         <div className='col-lg-4 col-md-4 px-4 career-area-5-gray-box-outer' >
-                            <div className='career-area-5-gray-box py-4' >
+                            <div className='career-area-5-gray-box py-3' >
 
                                 <div className='rating-container d-flex justify-content-evenly'>
                                     <div><img src='/icons/google-icon.png' /></div>
@@ -310,7 +310,7 @@ const Careers = () => {
                             </div>
                         </div>
                         <div className='col-lg-4 col-md-4 px-4 career-area-5-gray-box-outer' >
-                            <div className='career-area-5-gray-box py-4' >
+                            <div className='career-area-5-gray-box py-3' >
                                 <div className='rating-container d-flex justify-content-evenly'>
                                     <div><img src='/icons/glassdoor-icon-48.png' /></div>
                                     <div>
@@ -459,9 +459,9 @@ const Careers = () => {
                     </div>
                     <Slider {...settings}>
                         {/* #First Slide */}
-                        <div className='col-lg-6 col-md-6' >
+                        <div className='col-lg-6 col-md-6'>
                             <div className='p-5 pb-4' >
-                                <img className='w-100 career-area-9-img-1' src='/career_images/career-area-9-img-1.png' alt='career-area-9-img-1.png' />
+                                <img className='w-100 career-area-9-img-1' src='/career_images/latest-tech-slide1.jpg' alt='career-area-9-img-1.png' />
                             </div>
                             <div className='p-5 pt-0' >
                                 <h3 className='career-area-9-sub-heading mb-3' >
@@ -492,7 +492,7 @@ const Careers = () => {
                         {/* #Second Slide */}
                         <div className='col-lg-6 col-md-6' >
                             <div className='p-5 pb-4' >
-                                <img className='w-100 career-area-9-img-1' src='/career_images/career-area-9-img-1.png' alt='career-area-9-img-1.png' />
+                                <img className='w-100 career-area-9-img-1' src='/career_images/career-area-4-circle5.png' alt='career-area-9-img-1.png' />
                             </div>
                             <div className='p-5 pt-0' >
                                 <h3 className='career-area-9-sub-heading mb-3' >
@@ -519,8 +519,8 @@ const Careers = () => {
                         </div>
                         {/* #Third Slide */}
                         <div className='col-lg-6 col-md-6' >
-                            <div className='p-5 pb-4' >
-                                <img className='w-100 career-area-9-img-1' src='/career_images/career-area-9-img-1.png' alt='career-area-9-img-1.png' />
+                            <div className='p-5 pb-4 img-fluid' >
+                                <img className='w-100 career-area-9-img-1' src='/career_images/we-celebrate.png' alt='career-area-9-img-1.png' />
                             </div>
                             <div className='p-5 pt-0' >
                                 <h3 className='career-area-9-sub-heading mb-3' >
@@ -533,7 +533,7 @@ const Careers = () => {
                         </div>
                         <div className='col-lg-6 col-md-6' >
                             <div className='p-5 pb-4' >
-                                <img className='w-100 career-area-9-img-2' src='/career_images/career-area-9-img-2.png' alt='career-area-9-img-2.png' />
+                                <img className='w-100 career-area-9-img-2' src='/career_images/explore-destination.jpg' alt='career-area-9-img-2.png' />
                             </div>
                             <div className='p-5 pt-0' >
                                 <h3 className='career-area-9-sub-heading mb-3' >
