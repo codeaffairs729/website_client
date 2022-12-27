@@ -439,7 +439,7 @@ const Careers = () => {
                                     We're Process-Oriented
                                 </h2>
                                 <p className='career-area-8-para' >
-                                    At Code Garage tech, we value open, honest, and productive communications. We take pride in our work & always promote teamwork. We say what we mean & mean what we say!
+                                    One of the most important things about our process is that we're focused on the client. We believe that great work doesn't just happen—it needs to be created by people who are passionate about it and committed to excellence.
                                 </p>
                             </div>
                         </div>

@@ -4730,6 +4730,7 @@ body:not(.touch-device) .header-item[href]:before {
 
   .career-area-5-gray-box-outer {
     margin-bottom: 2rem;
+    min-height: 118px;
   }
 
   .career-area-6-heading {

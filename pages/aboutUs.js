@@ -377,8 +377,7 @@ function AboutUs() {
                                         <div className='col-lg-2 col-md-2 col-2' ></div>
                                         <div className='col-lg-10 col-md-10 col-10' >
                                             <p className='about-area-1-para-1' >
-                                                We ensure that the product or service you receive is of the highest quality and that’s why we believe in offering process-oriented work. Each step in process-oriented work is designed to help you get from point A to point B as quickly and efficiently as possible.
-                                            </p>
+                                                We only focus on getting the job done. We're built on a system of processes, which means that each part of our business has its own defined role to play in helping us achieve our goals.                                            </p>
                                         </div>
                                     </div>
                                 </div>
