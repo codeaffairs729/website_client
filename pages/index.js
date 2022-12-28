@@ -23,14 +23,17 @@ import Showcase from './showcase'
 import Offer from './offer'
 
 import Footer from './includes/footer'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <>
       <div className="page">
-        <a href="https://api.whatsapp.com/send?phone=918146394889" className="whatsapp-btn-outer" title='Contact Us on whatsapp' >
+        <Link href="https://api.whatsapp.com/send?phone=918146394889">
+        <a  className="whatsapp-btn-outer" title='Contact Us on whatsapp' >
           <img className="whatsapp-btn" src="images/WhatsApp.png" alt="" />
         </a>
+        </Link>
         <Main />
         <Package />
         {/* <Features /> */}

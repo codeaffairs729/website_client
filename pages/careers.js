@@ -277,7 +277,7 @@ const Careers = () => {
                     </div>
                     <div className='row' >
                         <div className='col-lg-4 col-md-4 px-4 career-area-5-gray-box-outer' >
-                            <div className='career-area-5-gray-box py-3' >
+                            <div className='career-area-5-gray-box py-2' >
 
                                 <div className='rating-container-followers d-flex flex-column align-items-center'>
                                     <p className='rating-container-followers-linkedin-text fs-5'>3000 + Followers</p>
@@ -292,7 +292,7 @@ const Careers = () => {
                         <div className='col-lg-4 col-md-4 px-4 career-area-5-gray-box-outer' >
                             <div className='career-area-5-gray-box py-3' >
 
-                                <div className='rating-container d-flex justify-content-evenly'>
+                                <div className='rating-container py-3 d-flex justify-content-evenly'>
                                     <div><img src='/icons/google-icon.png' /></div>
                                     <div>
                                         <div className='rating-container-headline fs-5'>Google</div>
@@ -304,14 +304,14 @@ const Careers = () => {
                                             <span className='Warning'><BsStarHalf /></span>
                                         </div>
                                     </div>
-                                    <div className='mt-1'>4.9/5</div>
+                                    <div className='mt-3'>4.9/5</div>
                                 </div>
 
                             </div>
                         </div>
                         <div className='col-lg-4 col-md-4 px-4 career-area-5-gray-box-outer' >
                             <div className='career-area-5-gray-box py-3' >
-                                <div className='rating-container d-flex justify-content-evenly'>
+                                <div className='rating-container py-3 d-flex justify-content-evenly'>
                                     <div><img src='/icons/glassdoor-icon-48.png' /></div>
                                     <div>
                                         <div className='rating-container-headline fs-5'>glassdoor</div>
@@ -323,7 +323,7 @@ const Careers = () => {
                                             <span className='Warning'><BsStarHalf /></span>
                                         </div>
                                     </div>
-                                    <div className='mt-1'>4.9/5</div>
+                                    <div className='mt-3'>4.9/5</div>
                                 </div>
                             </div>
                         </div>
@@ -431,7 +431,7 @@ const Careers = () => {
                     </div>
                     <div className='d-flex flex-column-reverse flex-md-row'>
                         <div className='m-2 col-lg-6 col-md-6 d-flex justify-content-center' >
-                            <img className='career-area-8-img-2' src='/aboutUsImages/qualities_4.png' alt='career-area-8-img-2.png' />
+                            <img className='career-area-8-img-2' src='/career_images/career-area-8-img-22.jpg' alt='career-area-8-img-2.png' />
                         </div>
                         <div className='m-2 col-lg-6 col-md-6 d-flex align-items-center' >
                             <div className='career-area-8-text-div-1'>
@@ -461,7 +461,7 @@ const Careers = () => {
                         {/* #First Slide */}
                         <div className='col-lg-6 col-md-6'>
                             <div className='p-5 pb-4' >
-                                <img className='w-100 career-area-9-img-1' src='/career_images/latest-tech-slide1.jpg' alt='career-area-9-img-1.png' />
+                                <img className='w-100 career-area-9-img-1' src='/career_images/career-area-9-img-1.jpg' alt='career-area-9-img-1.png' />
                             </div>
                             <div className='p-5 pt-0' >
                                 <h3 className='career-area-9-sub-heading mb-3' >
@@ -492,7 +492,7 @@ const Careers = () => {
                         {/* #Second Slide */}
                         <div className='col-lg-6 col-md-6' >
                             <div className='p-5 pb-4' >
-                                <img className='w-100 career-area-9-img-1' src='/career_images/career-area-4-circle5.png' alt='career-area-9-img-1.png' />
+                                <img className='w-100 career-area-9-img-1' src='/career_images/career-area-9-img-3.png' alt='career-area-9-img-1.png' />
                             </div>
                             <div className='p-5 pt-0' >
                                 <h3 className='career-area-9-sub-heading mb-3' >
@@ -506,21 +506,20 @@ const Careers = () => {
                         </div>
                         <div className='col-lg-6 col-md-6' >
                             <div className='p-5 pb-4' >
-                                <img className='w-100 career-area-9-img-2' src='/career_images/career-area-9-img-2.png' alt='career-area-9-img-2.png' />
+                                <img className='w-100 career-area-9-img-2' src='/career_images/career-area-9-img-4.jpg' alt='career-area-9-img-2.png' />
                             </div>
                             <div className='p-5 pt-0' >
                                 <h3 className='career-area-9-sub-heading mb-3' >
-                                    We are future-ready
+                                    Regular Research-Based Seminars On The Latest Tech
                                 </h3>
                                 <p className='career-area-9-para' >
-                                    We assure you that you will discover the development of your skills swiftly after working with us.
-                                </p>
+                                    We don’t want you to lag behind that’s why we conduct monthly seminars to polish your skills on the latest tech & innovation.                                </p>
                             </div>
                         </div>
                         {/* #Third Slide */}
                         <div className='col-lg-6 col-md-6' >
                             <div className='p-5 pb-4 img-fluid' >
-                                <img className='w-100 career-area-9-img-1' src='/career_images/we-celebrate.png' alt='career-area-9-img-1.png' />
+                                <img className='w-100 career-area-9-img-1' src='/career_images/career-area-9-img-5.png' alt='career-area-9-img-1.png' />
                             </div>
                             <div className='p-5 pt-0' >
                                 <h3 className='career-area-9-sub-heading mb-3' >

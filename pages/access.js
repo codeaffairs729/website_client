@@ -112,12 +112,12 @@ const Access = () => {
             </div>
             <form className="access__form" onSubmit={handleSubmit} >
               <div className="access__field">
-                <input className="access__input" type="email" placeholder="Your Email Address" onChange={(e)=> setEmail(e.target.value)} value={email} />
+                <input className="access__input" type="email" placeholder="Your Email Address" onChange={(e)=> setEmail(e.target.value)} value={email} required/>
                 <div className="access__icon">
                   <img className="access__pic" src="img/sending-mail.svg" alt="" />
                 </div>
               </div>
-              <button ref={(submitBtnRef) => { submitBtn = submitBtnRef}} className="access__btn btn btn_purple" type="submit">
+              <button ref={(submitBtnRef) => { submitBtn = submitBtnRef}} className="access__btn btn btn_purple" type="submit" >
                 Request Contact
               </button>
             </form>

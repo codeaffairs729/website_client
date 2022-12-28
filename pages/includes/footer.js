@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import Link from 'next/link'
 
 const Footer = () => {
     const [aboutUs, setAboutUs] = useState(false);
@@ -13,7 +14,7 @@ const Footer = () => {
         //     let item = e.currentTarget,
         //         category = item.getElementsByClassName('js-footer-category'),
         //         menu = item.getElementsByClassName('js-footer-menu');
-            
+
         //     if(!category.className == 'active'){
         //         items.className = 'footer__col col-lg-4 col-md-4';
         //         items.getElementsByClassName('js-footer-menu').slideUp();
@@ -57,35 +58,35 @@ const Footer = () => {
     }
     return (
         <>
-            <div ref={(footerRef) => { footer = footerRef}} className="footer" style={{ overflow: "hidden" }}>
+            <div ref={(footerRef) => { footer = footerRef }} className="footer" style={{ overflow: "hidden" }}>
                 <div className="footer__center center">
                     <div className="footer__row pt-5">
-                        <div onClick={(e) => showAboutUs(e)} className={ aboutUs ? "footer__col col-lg-4 col-md-4 active" : "footer__col col-lg-4 col-md-4 js-footer-col"} >
+                        <div onClick={(e) => showAboutUs(e)} className={aboutUs ? "footer__col col-lg-4 col-md-4 active" : "footer__col col-lg-4 col-md-4 js-footer-col"} >
                             <div className="footer__category js-footer-category footer-category-cgt-name">
                                 Code Garage
                                 <svg className="icon icon-arrow-down">
                                     <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                                 </svg>
                             </div>
-                            <div className={`footer__menu js-footer-menu ${aboutUs ? "" : "hide" }`} >
+                            <div className={`footer__menu js-footer-menu ${aboutUs ? "" : "hide"}`} >
                                 <span className="footer__link footer-link-about" >Want to elevate your brand? Get in Touch!</span>
                                 <span className="footer__link footer-link-contact" >+91 758 910 3409</span>
                                 <span className="footer__link footer-link-contact" >hr@codegaragetech.com</span>
                                 <span className="footer__link footer-link-about" >
-                                    The Atrium Quarkcity,<br/>
-                                    industrial area, SAS-Nagar,<br/>
+                                    The Atrium Quarkcity,<br />
+                                    industrial area, SAS-Nagar,<br />
                                     Mohali, Punjab -160059
                                 </span>
                             </div>
                         </div>
-                        <div onClick={() => showTechnologies()} className={ technologies ? "footer__col col-lg-4 col-md-4 active" : "footer__col col-lg-4 col-md-4 js-footer-col"}>
+                        <div onClick={() => showTechnologies()} className={technologies ? "footer__col col-lg-4 col-md-4 active" : "footer__col col-lg-4 col-md-4 js-footer-col"}>
                             <div className="footer__category js-footer-category">
                                 Technologies We Work On
                                 <svg className="icon icon-arrow-down">
                                     <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                                 </svg>
                             </div>
-                            <div className={`footer__menu js-footer-menu ${technologies ? "" : "hide" }`} >
+                            <div className={`footer__menu js-footer-menu ${technologies ? "" : "hide"}`} >
                                 <div className='row' >
                                     <div className='col-lg-6 mb-4' >
                                         <div className='row' >
@@ -150,26 +151,34 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div onClick={() => showSocialIcons()} className={ socialIcons ? "footer__col col-lg-4 col-md-4 active" : "footer__col col-lg-4 col-md-4 js-footer-col" } >
+                        <div onClick={() => showSocialIcons()} className={socialIcons ? "footer__col col-lg-4 col-md-4 active" : "footer__col col-lg-4 col-md-4 js-footer-col"} >
                             <div className="footer__category js-footer-category">
                                 Check Us on Social Network
                                 <svg className="icon icon-arrow-down">
                                     <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                                 </svg>
                             </div>
-                            <div className={`footer__menu js-footer-menu footer-social-menu ${socialIcons ? "" : "hide" }`} >
-                                <a className="footer__link me-3" href="https://www.facebook.com/CodeGarageTech">
-                                    <img className="icon icon-header-img" src="images/Facebook3d.png" alt="" />
-                                </a>
-                                <a className="footer__link me-3" href="https://twitter.com/CodeGarageTech">
-                                    <img className="icon icon-header-img" src="images/Twitter3d.png" alt="" />
-                                </a>
-                                <a className="footer__link me-3" href="https://www.linkedin.com/company/codegaragetech">
-                                    <img className="icon icon-header-img" src="images/LinkedIn3d.png" alt="" />
-                                </a>
-                                <a className="footer__link" href="https://www.instagram.com/codegaragetech/">
-                                    <img className="icon icon-header-img" src="images/Instagram3d.png" alt="" />
-                                </a>
+                            <div className={`footer__menu js-footer-menu footer-social-menu ${socialIcons ? "" : "hide"}`} >
+                                <Link href="https://www.facebook.com/CodeGarageTech">
+                                    <a className="footer__link me-3" >
+                                        <img className="icon icon-header-img" src="images/Facebook3d.png" alt="" />
+                                    </a>
+                                </Link>
+                                <Link href="https://twitter.com/CodeGarageTech">
+                                    <a className="footer__link me-3" >
+                                        <img className="icon icon-header-img" src="images/Twitter3d.png" alt="" />
+                                    </a>
+                                </Link>
+                                <Link href="https://www.linkedin.com/company/codegaragetech">
+                                    <a className="footer__link me-3" >
+                                        <img className="icon icon-header-img" src="images/LinkedIn3d.png" alt="" />
+                                    </a>
+                                </Link>
+                                <Link href="https://www.instagram.com/codegaragetech/">
+                                    <a className="footer__link" >
+                                        <img className="icon icon-header-img" src="images/Instagram3d.png" alt="" />
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

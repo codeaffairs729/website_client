@@ -446,6 +446,8 @@ body:not(.touch-device) .header-item[href]:before {
   margin-right: auto;
   font-size: 0;
   width: 200px;
+  position: relative;
+    left: -25px;
 }
 
 .contact__head {
@@ -1886,7 +1888,6 @@ body:not(.touch-device) .header-item[href]:before {
   line-height: 100%;
   letter-spacing: -0.025em;
   color: #FFFFFF;
-  text-align: justify;
 }
 
 .about-area-1-pic-1 {
@@ -2050,8 +2051,8 @@ body:not(.touch-device) .header-item[href]:before {
   height: 90px;
   width: 90px;
   position: absolute;
-  bottom: 5%;
-  left: 50%;
+  bottom: 23%;
+  left: 20%;
   border-radius: 50%;
 }
 
@@ -3332,13 +3333,13 @@ body:not(.touch-device) .header-item[href]:before {
   }
 
   .about-area-2-pic-4 {
-    bottom: -125%;
+    bottom: -24%;
     /* bottom: -40%; */
     /* width: 260px; */
   }
 
   .about-area-4-main-img-text-area {
-    bottom: 5px;
+    bottom: -2px;
   }
 
   .about-area-4-side-col {
@@ -3934,6 +3935,8 @@ body:not(.touch-device) .header-item[href]:before {
   .contact__logo {
     width: 145px;
     margin: 0;
+    position: relative;
+    left: 0px;
   }
 
   .contact__arrow {
@@ -4841,6 +4844,11 @@ body:not(.touch-device) .header-item[href]:before {
 career-area-2-img-3 {
   left: 323px;
   top: 475px;
+}
+
+.about-area-2-circle2{
+  bottom: 2%;
+    left: 50%;
 }
 
 }

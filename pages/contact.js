@@ -4,6 +4,7 @@ import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import GenericModal from '../components/genericModal';
+import Link from 'next/link'
 
 const Contact = () => {
     const [nameIcon, setNameIcon] = useState(false);
@@ -161,17 +162,19 @@ const Contact = () => {
                 <div className="entry entry_solo contact_solo">
                     <div className="entry__center center contact-entry-center">
                         <div className="entry__head contact__head">
-                            <a className="entry__logo contact__logo" href="./">
-                                <img className="entry__pic entry__pic_white entry__pic__entry__pic_white-size" src="logo/cgt_new_logo_alt.png" alt="CodeGarage Tech" />
-                                <img className="entry__pic entry__pic_black" src="logo/cgt_new_logo_alt2.png" alt="CodeGarage Tech" />
-                            </a>
+                            <Link href="./">
+                                <a className="entry__logo contact__logo" >
+                                    <img className="entry__pic entry__pic_white entry__pic__entry__pic_white-size" src="logo/cgt_new_logo_alt.png" alt="CodeGarage Tech" />
+                                    <img className="entry__pic entry__pic_black" src="logo/cgt_new_logo_alt2.png" alt="CodeGarage Tech" />
+                                </a>
+                            </Link>
                         </div>
                         <div className="entry__body contact_body">
                             <div className="like">
                                 <div className="like__center contact__center center p-0">
                                     <div className="like__container" style={{ padding: "55px 38px" }}>
                                         <div className="entry__row contact__row">
-                                            <form className="entry__form" onSubmit={handleSubmit} >
+                                            <form className="entry__form d-flex flex-column align-items-center" onSubmit={handleSubmit} >
                                                 <div className="entry__title title title_sm text-center contact-title">
                                                     Get in touch
                                                     {/* <span className="title__color">.</span> */}
@@ -266,10 +269,12 @@ const Contact = () => {
                         <img className="entry__pic" src="img/entry-circle.svg" alt="" />
                     </div>
                     <div className="contact__cloud heroku-floating">
-                        <a href="https://api.whatsapp.com/send?phone=918146394889" title='Contact Us on whatsapp' >
-                            <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="" />
-                            <img className="contact-skype-icon" data-scale="1.5" data-orientation="right" src="icons/whatsapp.png" alt="" />
-                        </a>
+                        <Link href="https://api.whatsapp.com/send?phone=918146394889">
+                            <a title='Contact Us on whatsapp' >
+                                <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="" />
+                                <img className="contact-skype-icon" data-scale="1.5" data-orientation="right" src="icons/whatsapp.png" alt="" />
+                            </a>
+                        </Link>
                     </div>
                     <div className="contact_cloud_2 salesforce-floating">
                         <a style={{ cursor: "pointer" }} title='Quick Contact' onClick={handleModalShow} >
@@ -279,10 +284,12 @@ const Contact = () => {
                     </div>
 
                     <div className="contact_cloud_3 digitalocean-floating">
-                        <a href="skype:example123?chat">
-                            <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="" />
-                            <img className="contact-skype-icon" data-scale="1.5" data-orientation="right" src="icons/skype.png" alt="" />
-                        </a>
+                        <Link href="skype:example123?chat">
+                            <div>
+                                <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="" />
+                                <img className="contact-skype-icon" data-scale="1.5" data-orientation="right" src="icons/skype.png" alt="" />
+                            </div>
+                        </Link>
                     </div>
                     {/* <div className="contact__bucket" >
                         <img className="contact_bucket_pic" src="img/popup-pic-2.png" alt="" />

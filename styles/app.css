@@ -7120,7 +7120,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 .entry__form {
   width: 100%;
   max-width: 386px;
-  margin-right: 107px;
+  /* margin-right: 107px; */
 }
 
 .entry__form .entry__info {

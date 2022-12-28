@@ -5,6 +5,7 @@ import '../styles/app.css'
 import '../styles/globals.css'
 import "aos/dist/aos.css";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+import Link from 'next/link'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

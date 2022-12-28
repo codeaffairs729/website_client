@@ -112,12 +112,16 @@ const Header = () => {
                     <button onClick={(e) => handleSidebar(e)} className={sideBarHandler ? "header__burger js-header-burger active" : "header__burger js-header-burger"}>
                         <span></span>
                     </button>
-                    <a className="header__logo" href="./">
-                        <img className="header__pic" src="logo/cgt_new_logo_alt.png" alt="" />
-                    </a>
+                    <Link href="./">
+                        <a className="header__logo" >
+                            <img className="header__pic" src="logo/cgt_new_logo_alt.png" alt="" />
+                        </a>
+                    </Link>
                     <div className={sideBarHandler ? "header__wrap js-header-wrap visible" : "header__wrap js-header-wrap"}>
                         <nav className="header__nav">
-                            <a className="header__item" href="./">Home</a>
+                            <Link href="./">
+                                <a className="header__item">Home</a>
+                            </Link>
                             <div className={`header__item ${serviceMenu ? "service-menu-header-item" : ""}`}>
                                 <a className={`header__head ${serviceMenu ? "service-menu-head" : ""}`} href="#" onClick={toggleSidebarInternalMenu}>
                                     Services

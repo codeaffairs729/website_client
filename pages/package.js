@@ -3,16 +3,17 @@ import Slider from "react-slick";
 import SubSlider from "../components/index/services/subSlider";
 import PrevButton from '../components/prevButton';
 import NextButton from '../components/nextButton';
+import Link from 'next/link'
 
 const Package = () => {
     const designIcons = [
-        ["Figma","icons/figma.png"],
+        ["Figma", "icons/figma.png"],
         ["Miro", "icons/miro.png"],
         ["Sketch", "icons/sketch_1.png"],
-        ["Adobe Xd","icons/adobe_xd.png"],
-        ["Framer","icons/framer.png"],
+        ["Adobe Xd", "icons/adobe_xd.png"],
+        ["Framer", "icons/framer.png"],
         ["Ant Design", "icons/ant-design.png"],
-        ["Material UI","icons/material_ui.png"],
+        ["Material UI", "icons/material_ui.png"],
         ["Tailwind", "icons/tailwind.png"],
         ["Booststrap", "icons/bootstrap_1.png"],
         ["Principle", "icons/principle.png"]
@@ -35,7 +36,7 @@ const Package = () => {
         ["Ionic", "icons/ionic.png"],
         ["Flutter", "images/flutter.png"],
         ["Swift / iOS", "icons/swift.png"],
-        ["Android","images/android_4.png"]
+        ["Android", "images/android_4.png"]
     ]
 
     const slider1 = useRef(null);
@@ -98,15 +99,15 @@ const Package = () => {
         dots: false,
         arrows: false,
         prevArrow: <button>
-                <svg className="icon icon-arrow-prev">
-                    <use xlinkHref="img/sprite.svg#icon-arrow-prev"></use>
-                </svg>
-            </button>,
+            <svg className="icon icon-arrow-prev">
+                <use xlinkHref="img/sprite.svg#icon-arrow-prev"></use>
+            </svg>
+        </button>,
         nextArrow: <button>
-                <svg className="icon icon-arrow-next">
-                    <use xlinkHref="img/sprite.svg#icon-arrow-next"></use>
-                </svg>
-            </button>,
+            <svg className="icon icon-arrow-next">
+                <use xlinkHref="img/sprite.svg#icon-arrow-next"></use>
+            </svg>
+        </button>,
         infinite: true,
         speed: 700,
         slidesToShow: 4,
@@ -128,14 +129,14 @@ const Package = () => {
                         <div className="package__wrap">
                             {/* <button className="btn btn-dark" style={{ zIndex: "2", position: "relative" }} onClick={() => play()} >Play</button>
                             <button className="btn btn-dark" style={{ zIndex: "2", position: "relative" }} onClick={() => pause()} >Pause</button> */}
-                            <Slider ref={(newSlider1) => { slider1 = newSlider1} } className="package__slider js-package-slider" {...packageSettings}>
+                            <Slider ref={(newSlider1) => { slider1 = newSlider1 }} className="package__slider js-package-slider" {...packageSettings}>
                                 <div className="package__slide">
                                     <div className="package__row row">
                                         <div className="col-lg-5">
                                             <div onMouseOver={() => pause()} onMouseOut={() => play()} className="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
                                                 <div className="package__category">
                                                     <div className="package__icon">
-                                                        <img className="package__pic" src="images/content-management-system.png" alt=""/>
+                                                        <img className="package__pic" src="images/content-management-system.png" alt="" />
                                                     </div>
                                                     <div className="package__text">What we do</div>
                                                 </div>
@@ -163,11 +164,13 @@ const Package = () => {
                                                     </ul>
                                                 </div>
                                                 <div className='row'>
-                                                    <a className="package__btn btn btn_purple" href="./login">Get Started</a>
+                                                    <Link href="/contact">
+                                                        <a className="package__btn btn btn_purple">Get a Quote</a></Link>
+
                                                 </div>
                                                 {/* <div className="package__btns">
                                                     <div className="package__arrows"> */}
-                                                        {/* <button className="package__arrow js-package-prev">
+                                                {/* <button className="package__arrow js-package-prev">
                                                             <svg className="icon icon-arrow-prev">
                                                                 <use xlinkHref="img/sprite.svg#icon-arrow-prev"></use>
                                                             </svg>
@@ -177,8 +180,8 @@ const Package = () => {
                                                                 <use xlinkHref="img/sprite.svg#icon-arrow-next"></use>
                                                             </svg>
                                                         </button> */}
-                                                    {/* </div>
-                                                    <a className="package__btn btn btn_purple" href="./login">Get Started</a>
+                                                {/* </div>
+                                                    <a className="package__btn btn btn_purple" href="./login">Let's Connect</a>
                                                 </div> */}
                                             </div>
                                         </div>
@@ -193,7 +196,7 @@ const Package = () => {
                                                     <img className="package-pic-image_31" src="images/image_31.png" alt="" /> */}
                                                 </div>
                                                 <div onMouseOver={() => subSliderPause()} onMouseOut={() => subSliderPlay()} className='col-lg-10 m-auto subSliderIcons' >
-                                                    <Slider ref={(newSubSlider1) => { subSlider1 = newSubSlider1}} className="package-subslider d-flex align-items-center" {...packageSubsliderSettings} >
+                                                    <Slider ref={(newSubSlider1) => { subSlider1 = newSubSlider1 }} className="package-subslider d-flex align-items-center" {...packageSubsliderSettings} >
                                                         {
                                                             designIcons.map((element, index) => {
                                                                 return <SubSlider
@@ -249,11 +252,13 @@ const Package = () => {
                                                     </ul>
                                                 </div>
                                                 <div className='row'>
-                                                    <a className="package__btn btn btn_purple" href="./login">Get Started</a>
+                                                    <Link href="/contact" >
+                                                        <a className="package__btn btn btn_purple" >Get a Quote</a>
+                                                    </Link>
                                                 </div>
                                                 {/* <div className="package__btns">
                                                     <div className="package__arrows"> */}
-                                                        {/* <button className="package__arrow js-package-prev">
+                                                {/* <button className="package__arrow js-package-prev">
                                                             <svg className="icon icon-arrow-prev">
                                                                 <use xlinkHref="img/sprite.svg#icon-arrow-prev"></use>
                                                             </svg>
@@ -263,8 +268,8 @@ const Package = () => {
                                                                 <use xlinkHref="img/sprite.svg#icon-arrow-next"></use>
                                                             </svg>
                                                         </button> */}
-                                                    {/* </div>
-                                                    <a className="package__btn btn btn_purple" href="./login">Get Started</a>
+                                                {/* </div>
+                                                    <a className="package__btn btn btn_purple" href="./login">Let's Connect</a>
                                                 </div> */}
                                             </div>
                                         </div>
@@ -281,7 +286,7 @@ const Package = () => {
                                                     <img className="package-pic-ror" src="images/ror_orig.png" alt="" /> */}
                                                 </div>
                                                 <div onMouseOver={() => subSliderPause()} onMouseOut={() => subSliderPlay()} className='col-lg-10 m-auto subSliderIcons' >
-                                                    <Slider ref={(newSubSlider2) => { subSlider2 = newSubSlider2}} {...packageSubsliderSettings} className="package-subslider d-flex align-items-center" >
+                                                    <Slider ref={(newSubSlider2) => { subSlider2 = newSubSlider2 }} {...packageSubsliderSettings} className="package-subslider d-flex align-items-center" >
                                                         {
                                                             webIcons.map((element, index) => {
                                                                 return <SubSlider
@@ -334,11 +339,13 @@ const Package = () => {
                                                     </ul>
                                                 </div>
                                                 <div className='row'>
-                                                    <a className="package__btn btn btn_purple" href="./login">Get Started</a>
+                                                    <Link href="/contact">
+                                                        <a className="package__btn btn btn_purple" >Get a Quote</a>
+                                                    </Link>
                                                 </div>
                                                 {/* <div className="package__btns">
                                                     <div className="package__arrows"> */}
-                                                        {/* <button className="package__arrow js-package-prev">
+                                                {/* <button className="package__arrow js-package-prev">
                                                             <svg className="icon icon-arrow-prev">
                                                                 <use xlinkHref="img/sprite.svg#icon-arrow-prev"></use>
                                                             </svg>
@@ -348,8 +355,8 @@ const Package = () => {
                                                                 <use xlinkHref="img/sprite.svg#icon-arrow-next"></use>
                                                             </svg>
                                                         </button> */}
-                                                    {/* </div>
-                                                    <a className="package__btn btn btn_purple" href="./login">Get Started</a>
+                                                {/* </div>
+                                                    <a className="package__btn btn btn_purple" href="./login">Let's Connect</a>
                                                 </div> */}
                                             </div>
                                         </div>
@@ -364,7 +371,7 @@ const Package = () => {
                                                     <img className="package-pic-swift" src="images/swift_1.png" alt="" /> */}
                                                 </div>
                                                 <div onMouseOver={() => subSliderPause()} onMouseOut={() => subSliderPlay()} className='col-lg-10 m-auto subSliderIcons' >
-                                                    <Slider ref={(newSubSlider3) => { subSlider3 = newSubSlider3}} {...packageSubsliderSettings} className="package-subslider d-flex align-items-center">
+                                                    <Slider ref={(newSubSlider3) => { subSlider3 = newSubSlider3 }} {...packageSubsliderSettings} className="package-subslider d-flex align-items-center">
                                                         {
                                                             mobileIcons.map((element, index) => {
                                                                 return <SubSlider

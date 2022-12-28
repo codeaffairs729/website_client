@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './includes/header'
 import Typewriter from 'typewriter-effect';
 import Head from 'next/head';
+import Link from 'next/link'
 
 const Main = () => {
     return (
@@ -9,7 +10,7 @@ const Main = () => {
             <div className="main">
                 <Header />
                 <Head>
-                    <title>Custom Software Development Service Provider Company in India
+                    <title>Custom Software Development Service Provider in India & USA
                     </title>
                     <meta name="description" content="Looking for reliable Custom Web Development Services in India? Code Garage Tech is here! We offer scalable, robust, and quality services. Contact us now!
 " />
@@ -61,13 +62,15 @@ const Main = () => {
                         </h1>
                         {/* <div className="main__info info ms-3 main-info" data-aos="animation-scale-y" data-aos-delay="400"> */}
                         <div className="main__control ms-3" >
-                            <a className="main__btn btn btn_purple" href="./contact">Get in Touch</a>
+                            <Link href="./contact">
+                            <a className="main__btn btn btn_purple" >Get in Touch</a>
                             {/* <a className="main__link" href="#">
                                 <div className="main__icon">
                                     <img className="main__pic" src="img/play.svg" alt="" />
                                 </div>
                                 <div className="main__text">See It In Action!</div>
                             </a> */}
+                            </Link>
                         </div>
                         <div className="main__info info ms-3 main-info" >
                             We deliver result-oriented, customized services with an emphasis on building long-term relationships with our clients. Being a reliable software development and consulting company in India, we possess quality knowledge and tactics to bring it to life.

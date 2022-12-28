@@ -119,7 +119,7 @@ function AboutUs() {
                             <br /><br />
                         </p>
                     </div>
-                    <div className='col-lg-5 col-md-6 about-area-7-pic-1-outer d-flex' >
+                    <div className='col-lg-5 col-md-6 about-area-7-pic-1-outer d-flex align-items-center' >
                         <img className='w-100' src='aboutUsImages/team_pic_9.png' alt='' />
                     </div>
                 </div>
@@ -176,7 +176,7 @@ function AboutUs() {
                     </div>
                 </div>
                 <div className='row about-area-4-main-outer' >
-                    <div className='col-lg-1 col-md-2 text-center' >
+                    <div className='col-lg-1 col-md-2 text-center mt-4' >
                         <div className='row about-area-4-sideImages-row' >
                             {
                                 sideImgArr.map((element, index) => {

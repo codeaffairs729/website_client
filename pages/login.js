@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 
 const Login = () => {
     return (
@@ -9,24 +10,26 @@ const Login = () => {
                 <title>CodeGarageTech</title>
                 <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-                <meta name="format-detection" content="telephone=no"/>
-                <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png"/>
-                <link rel="icon" type="image/png" sizes="32x32" href="/logo/cgt_new_favicon.jpg"/>
-                <link rel="icon" type="image/png" sizes="16x16" href="/logo/cgt_new_favicon.jpg"/>
-                <link rel="manifest" href="img/site.webmanifest"/>
-                <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5"/>
-                <meta name="msapplication-TileColor" content="#da532c"/>
-                <meta name="theme-color" content="#ffffff"/>
-                <meta name="description" content="CodeGarageTech"/>
+                <meta name="format-detection" content="telephone=no" />
+                <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+                <link rel="icon" type="image/png" sizes="32x32" href="/logo/cgt_new_favicon.jpg" />
+                <link rel="icon" type="image/png" sizes="16x16" href="/logo/cgt_new_favicon.jpg" />
+                <link rel="manifest" href="img/site.webmanifest" />
+                <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5" />
+                <meta name="msapplication-TileColor" content="#da532c" />
+                <meta name="theme-color" content="#ffffff" />
+                <meta name="description" content="CodeGarageTech" />
             </Head>
             <div className="page">
                 <div className="entry entry_variants">
                     <div className="entry__center center">
                         <div className="entry__head">
-                            <a className="entry__logo" href="./">
-                                <img className="entry__pic entry__pic_white" src="logo/logoEdited.png" alt="" />
-                                <img className="entry__pic entry__pic_black" src="logo/logoEdited.png" alt="" />
-                            </a>
+                            <Link href="./">
+                                <a className="entry__logo" >
+                                    <img className="entry__pic entry__pic_white" src="logo/logoEdited.png" alt="" />
+                                    <img className="entry__pic entry__pic_black" src="logo/logoEdited.png" alt="" />
+                                </a>
+                            </Link>
                             <a className="entry__link" href="#">
                                 Not a member?
                             </a>

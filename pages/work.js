@@ -1,15 +1,20 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Work = () => {
   return (
     <>
       <div className="showcase work-process">
         <h2 className='work-text-left-1 ms-5' >Our Approach</h2>
-        <h2 className='work-text-left text-center'>From Your Idea<br/>To Your Revenue</h2>
+        <h2 className='work-text-left text-center'>From Your Idea<br />To Your Revenue</h2>
         <div className='work-text-right text-center' >
-          <h4>Confusion In Your<br/>Million Dollar Idea?</h4>
+          <h4>Confusion In Your<br />Million Dollar Idea?</h4>
           {/* <div className='work-text-right-btn' >Get Free Consultation</div> */}
-          <button className='btn btn-primary work-text-right-btn' >Get Free Consultation</button>
+          <Link href="/contact">
+            <a className="package__btn btn btn_purple" >
+              <button className='btn btn-primary work-text-right-btn' >Get Free Consultation</button>
+            </a>
+          </Link>
         </div>
         {/* <div className="work__hand" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0">
           <img className="work__pic js-parallax" data-scale="1.2" data-orientation="down" src="img/hand-2.png" alt="" />
@@ -36,7 +41,7 @@ const Work = () => {
 
           <div className="work-img-msg-outer" data-aos-anchor="#show-process" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800" data-aos-offset="0" >
             <img className="work-img-msg" src="images/chat-text-front-clay.png" alt="" />
-            <p className='work-img-bulb-text work-img-msg-text' >Discussion &<br/>Consultation</p>
+            <p className='work-img-bulb-text work-img-msg-text' >Discussion &<br />Consultation</p>
           </div>
 
           <div className="work-img-Float-outer" data-aos-anchor="#show-process" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800" data-aos-offset="0" >
@@ -50,7 +55,7 @@ const Work = () => {
           </div>
 
           <div className="work-img-rocket-outer" data-aos-anchor="#show-process" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="800" data-aos-offset="0" >
-            <img className="work-img-rocket" src="images/rocket-iso-color.png" alt=""  />
+            <img className="work-img-rocket" src="images/rocket-iso-color.png" alt="" />
             <p className='work-img-bulb-text work-img-rocket-text' >Launch</p>
           </div>
 
