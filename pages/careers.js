@@ -254,7 +254,8 @@ const Careers = () => {
             <div className='container-fluid career-area-4' >
                 <div className='row justify-content-center align-items-center career-area-4-row' >
                     <h2 className='career-area-4-heading' >
-                        Our office is situated in-between an opulent greenery and you can take benefit of nature while working with us.                        <br />
+                        Our Best Perks Are
+                        <br />
                         Pe<span className='text-danger' >o</span>ple Themselves
                     </h2>
                     <div className='rounded-circle career-area-4-circle1' ></div>
@@ -484,7 +485,8 @@ const Careers = () => {
 
                                 </h3>
                                 <p className='career-area-9-para' >
-                                    Our office is situated in-between an opulent greenery and you can take benefit of nature while working with us.                                </p>
+                                    Our office is situated in-between an opulent greenery and you can take benefit of nature while working with us.
+                                </p>
                             </div>
                         </div>
                         {/* #Second Slide */}

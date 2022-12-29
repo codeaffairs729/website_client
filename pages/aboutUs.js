@@ -20,7 +20,7 @@ function AboutUs() {
         [
             "Mehakpal Singh",
             "Founder",
-            "Mehak",
+            "Mehakpal",
             "The guy, who established Code Garage Tech. He is a computer science engineer and has experience of more than a decade in software development. He encourages conformity with business rules & regulations and also ensures that the company's code of ethics is being followed.",
             "www.twitter.com",
             "www.instagram.com",
@@ -37,7 +37,7 @@ function AboutUs() {
         ],
         [
             "Naresh Bhatia",
-            "CA",
+            "Chartered Accountants",
             "Naresh",
             "As a proactive and result-oriented finance professional, he has a strong track record of handling multiple assignments efficiently. He has 15 years of experience and is very diligent in handling Accounts & Finance, Direct & Indirect Tax, Internal Auditing, and Risk Assessment of the company.",
             "www.twitter.com",
@@ -114,7 +114,7 @@ function AboutUs() {
                         </h2>
                         <p className='about-area-7-para' >
                             We're on a mission to make the IT world more process-driven.<br /><br />
-                            We believe in empowering entrepreneurs by providing valuable software and deliver quality to society.
+                            We believe in empowering entrepreneurs by providing valuable software and delivering quality to society.
                             <br /><br />Our IT services emphasize delivering optimal solutions with top-notch services in web development, mobile development, and digital marketing. Providing overall satisfaction to clients is our pertinent priority and we aim to serve them with the best and most reliable solutions.
                             <br /><br />
                         </p>
@@ -160,7 +160,7 @@ function AboutUs() {
             <div className='container-fluid mt-5 about-area-8' >
                 <div className='container about-area-8-container' >
                     <h2 className='text-center about-area-8-heading'>
-                        Global Connects
+                        We Connect Globally
                     </h2>
                     <img className='w-100' src='aboutUsImages/global_connections.png' alt='' />
                 </div>
@@ -176,7 +176,7 @@ function AboutUs() {
                     </div>
                 </div>
                 <div className='row about-area-4-main-outer' >
-                    <div className='col-lg-1 col-md-2 text-center mt-4' >
+                    <div className='col-lg-1 col-md-2 text-center mt-4 d-flex flex-column justify-content-center' >
                         <div className='row about-area-4-sideImages-row' >
                             {
                                 sideImgArr.map((element, index) => {

@@ -2152,7 +2152,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-4-side-col {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .about-area-4-main-img-outer {
@@ -2205,7 +2205,7 @@ body:not(.touch-device) .header-item[href]:before {
 .about-area-4-main-designation {
   font-family: 'Poppins';
   font-weight: 400;
-  font-size: 13px;
+  font-size: 10px;
   line-height: 24px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
