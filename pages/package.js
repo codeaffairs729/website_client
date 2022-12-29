@@ -165,7 +165,7 @@ const Package = () => {
                                                 </div>
                                                 <div className='row'>
                                                     <Link href="/contact">
-                                                        <a className="package__btn btn btn_purple">Get a Quote</a></Link>
+                                                        <a target="_blank" className="package__btn btn btn_purple">Get a Quote</a></Link>
 
                                                 </div>
                                                 {/* <div className="package__btns">
@@ -253,7 +253,7 @@ const Package = () => {
                                                 </div>
                                                 <div className='row'>
                                                     <Link href="/contact" >
-                                                        <a className="package__btn btn btn_purple" >Get a Quote</a>
+                                                        <a target="_blank" className="package__btn btn btn_purple" >Get a Quote</a>
                                                     </Link>
                                                 </div>
                                                 {/* <div className="package__btns">
@@ -340,7 +340,7 @@ const Package = () => {
                                                 </div>
                                                 <div className='row'>
                                                     <Link href="/contact">
-                                                        <a className="package__btn btn btn_purple" >Get a Quote</a>
+                                                        <a  target="_blank" className="package__btn btn btn_purple" >Get a Quote</a>
                                                     </Link>
                                                 </div>
                                                 {/* <div className="package__btns">

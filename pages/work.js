@@ -11,8 +11,8 @@ const Work = () => {
           <h4>Confusion In Your<br />Million Dollar Idea?</h4>
           {/* <div className='work-text-right-btn' >Get Free Consultation</div> */}
           <Link href="/contact">
-            <a className="package__btn btn btn_purple" >
-              <button className='btn btn-primary work-text-right-btn' >Get Free Consultation</button>
+            <a target="_blank" className="package__btn btn btn_purple text-decoration-none" >
+              <button className='btn btn-primary work-text-right-btn ' >Get Free Consultation</button>
             </a>
           </Link>
         </div>

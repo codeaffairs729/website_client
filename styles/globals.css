@@ -2001,7 +2001,7 @@ body:not(.touch-device) .header-item[href]:before {
   background-size: cover;
   position: relative;
   overflow: hidden;
-  height: 750px;
+  height: 840px;
 }
 
 .about-area-2-grey-circle {
@@ -2032,9 +2032,7 @@ body:not(.touch-device) .header-item[href]:before {
   width: 80px;
 }
 
-.about-area-2-outer-row {
-  padding: 130px 0;
-}
+
 
 .about-area-2-circle1 {
   background-color: #FAB8C4;
@@ -2051,8 +2049,8 @@ body:not(.touch-device) .header-item[href]:before {
   height: 90px;
   width: 90px;
   position: absolute;
-  bottom: 23%;
-  left: 20%;
+  bottom: 50%;
+  left: 5%;
   border-radius: 50%;
 }
 
@@ -3327,13 +3325,13 @@ body:not(.touch-device) .header-item[href]:before {
   }
 
   .about-area-2-pic-3 {
-    left: -7%;
+    /* left: -7%; */
     /* bottom: -105%;
     width: 200px; */
   }
 
   .about-area-2-pic-4 {
-    bottom: -24%;
+    /* bottom: -24%; */
     /* bottom: -40%; */
     /* width: 260px; */
   }
@@ -3649,23 +3647,23 @@ body:not(.touch-device) .header-item[href]:before {
   }
 
   .about-area-2-pic-1 {
-    top: -90%;
+    /* top: -90%; */
     z-index: 1;
   }
 
   .about-area-2-pic-2 {
-    top: -90%;
+    /* top: -90%; */
     z-index: 1;
   }
 
   .about-area-2-pic-3 {
-    bottom: -577%;
+    /* bottom: -577%; */
     z-index: 1;
     left: 0%;
   }
 
   .about-area-2-pic-4 {
-    bottom: -592%;
+    /* bottom: -605%; */
     z-index: 1;
     right: 0%;
   }
@@ -4502,7 +4500,7 @@ body:not(.touch-device) .header-item[href]:before {
   }
 
   .about-area-2 {
-    height: 1000px;
+    height: 1228px;
   }
 
   .about-area-2-outer-col {
@@ -4822,6 +4820,10 @@ body:not(.touch-device) .header-item[href]:before {
     font-size: 48px;
     width: max-content;
   }
+
+  .main__info {
+    max-width: 330px;
+  }
   /* Main Component CSS End */
 
   /* Header Component CSS Start */
@@ -4841,10 +4843,10 @@ body:not(.touch-device) .header-item[href]:before {
     top: 200px;
 }
 
-career-area-2-img-3 {
+/* career-area-2-img-3 {
   left: 323px;
   top: 475px;
-}
+} */
 
 .about-area-2-circle2{
   bottom: 2%;
@@ -4895,7 +4897,11 @@ career-area-2-img-4 {
 }
   @media only screen and (min-width: 1023px) {
   /* About Us Component CSS Start */
- 
+
+  .about-area-2-outer-row {
+    padding: 125px 0;
+  }
+
   .career-area-3-para {
     line-height: 1.5rem;
     position: relative;
@@ -4938,10 +4944,14 @@ career-area-2-img-4 {
 }
 }
 
-@media only screen and (max-width: 415px) and (min-width: 279px)  {
+@media only screen and (min-width: 279px) and (max-width: 768px)  {
   .career-area-2-heading {
     font-size: 32px;
     margin-bottom: 5px;
+}
+
+.about-area-2-outer-row {
+  padding: 10px 0;
 }
 
 .career-area-2-para {
@@ -4951,5 +4961,29 @@ career-area-2-img-4 {
   text-align: justify;
 }
 }
+
+@media only screen and (min-width: 767px) and (max-width: 992px)  {
+  .about-area-2-outer-row {
+    padding-top: 148px;
+  }
+
+  .about-area-2-pic-2 {
+    top: -90%;
+    z-index: 1;
+  }
+
+  .about-area-2-pic-3 {
+    bottom: -577%;
+    z-index: 1;
+    left: 0%;
+  }
+
+  .about-area-2-pic-4 {
+    bottom: -594%;
+    z-index: 1;
+    right: 0%;
+  }
+}
+
 
 

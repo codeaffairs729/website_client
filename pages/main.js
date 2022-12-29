@@ -18,63 +18,64 @@ const Main = () => {
                 </Head>
                 <div className="main__center center">
                     <div className="main__wrap">
-                        <h1 className="main__title title title_big" data-aos>
-                            <span className="title__box dev-title mb-3">
-                                <span className="title__text">
-                                    {/* 'Development', 'Software Engineering', 'Designing', 'App Monitoring', 'Web Solutions', 'Mobile Solutions', 'CRM Solutions', 'CMS Solutions', 'Cloud Services', 'Tech Consulting' */}
-                                    <Typewriter
-                                        options={{
-                                            strings: [
-                                                '<span style="color: #5956E9" >Software Engineering</span>',
-                                                '<span style="color: #5956E9" >Tech Consultation</span>',
-                                                '<span style="color: #5956E9" >Cloud Management</span>',
-                                                '<span style="color: #5956E9" >CRM Solutions</span>',
-                                                '<span style="color: #5956E9" >CMS Solutions</span>',
-                                                '<span style="color: #5956E9" >E-comm Solutions</span>',
-                                                '<span style="color: #5956E9" >Digital Marketing</span>',
-                                                '<span style="color: #5956E9" >IT Staffing</span>'
-                                            ],
-                                            autoStart: true,
-                                            loop: true,
-                                            cursor: ''
-                                        }}
-                                    />
-                                </span>
-                            </span>
-                            <span className="title__box">
-                                <span className="title__text ms-3" >
-                                    <span className="title__line" >
-                                        Web <span className='main-subheadings-span' >Solutions</span>
+                        <div>
+                            <h1 className="main__title title title_big" data-aos>
+                                <span className="title__box dev-title mb-3">
+                                    <span className="title__text">
+                                        {/* 'Development', 'Software Engineering', 'Designing', 'App Monitoring', 'Web Solutions', 'Mobile Solutions', 'CRM Solutions', 'CMS Solutions', 'Cloud Services', 'Tech Consulting' */}
+                                        <Typewriter
+                                            options={{
+                                                strings: [
+                                                    '<span style="color: #5956E9" >Software Engineering</span>',
+                                                    '<span style="color: #5956E9" >Tech Consultation</span>',
+                                                    '<span style="color: #5956E9" >Cloud Management</span>',
+                                                    '<span style="color: #5956E9" >CRM Solutions</span>',
+                                                    '<span style="color: #5956E9" >CMS Solutions</span>',
+                                                    '<span style="color: #5956E9" >E-comm Solutions</span>',
+                                                    '<span style="color: #5956E9" >Digital Marketing</span>',
+                                                    '<span style="color: #5956E9" >IT Staffing</span>'
+                                                ],
+                                                autoStart: true,
+                                                loop: true,
+                                                cursor: ''
+                                            }}
+                                        />
                                     </span>
                                 </span>
-                            </span>
-                            <span className="title__box main-android-title-box">
-                                <span className="title__text ms-3 main-android-title-text" >
-                                    Android / IOS <span className='main-subheadings-span' >Development</span>
+                                <span className="title__box">
+                                    <span className="title__text ms-3" >
+                                        <span className="title__line" >
+                                            Web <span className='main-subheadings-span' >Solutions</span>
+                                        </span>
+                                    </span>
                                 </span>
-                            </span>
-                            <span className="title__box">
-                                <span className="title__text ms-3" >
-                                    UI / UX <span className='main-subheadings-span' >Designing</span>
-                                    {/* <span className="title__color">.</span> */}
+                                <span className="title__box main-android-title-box">
+                                    <span className="title__text ms-3 main-android-title-text" >
+                                        Android / IOS <span className='main-subheadings-span' >Development</span>
+                                    </span>
                                 </span>
-                            </span>
-                        </h1>
-                        {/* <div className="main__info info ms-3 main-info" data-aos="animation-scale-y" data-aos-delay="400"> */}
-                        <div className="main__control ms-3" >
-                            <Link href="./contact">
-                            <a className="main__btn btn btn_purple" >Get in Touch</a>
-                            {/* <a className="main__link" href="#">
+                                <span className="title__box">
+                                    <span className="title__text ms-3" >
+                                        UI / UX <span className='main-subheadings-span' >Designing</span>
+                                        {/* <span className="title__color">.</span> */}
+                                    </span>
+                                </span>
+                            </h1>
+                            {/* <div className="main__info info ms-3 main-info" data-aos="animation-scale-y" data-aos-delay="400"> */}
+                            <div className="main__control ms-3" >
+                                <Link href="./contact">
+                                    <a target="_blank" className="main__btn btn btn_purple" >Get in Touch</a>
+                                    {/* <a className="main__link" href="#">
                                 <div className="main__icon">
                                     <img className="main__pic" src="img/play.svg" alt="" />
                                 </div>
                                 <div className="main__text">See It In Action!</div>
                             </a> */}
-                            </Link>
-                        </div>
-                        <div className="main__info info ms-3 main-info" >
-                            We deliver result-oriented, customized services with an emphasis on building long-term relationships with our clients. Being a reliable software development and consulting company in India, we possess quality knowledge and tactics to bring it to life.
-                        </div>
+                                </Link>
+                            </div>
+                            <div className="main__info info ms-3 main-info" >
+                                We deliver result-oriented, customized services with an emphasis on building long-term relationships with our clients. Being a reliable software development and consulting company in India, we possess quality knowledge and tactics to bring it to life.
+                            </div>
                         {/* <div className="main__control ms-3" data-aos="animation-scale-y" data-aos-delay="550"> */}
                         <div className="main__scroll ms-3" data-aos="animation-scale-y" data-aos-delay="650">
                             {/* <a className="main__link" href="#">
@@ -84,6 +85,8 @@ const Main = () => {
                                 <div className="main__text">Scroll to explore</div>
                             </a> */}
                         </div>
+                        </div>
+                        {/* wrap div */}
                     </div>
                     <div className="main__view" data-aos>
                         <div className="main__preview">

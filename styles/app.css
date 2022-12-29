@@ -2695,7 +2695,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 
 .main__info {
   max-width: 320px;
-  margin-bottom: 40px;
+  margin-bottom: -15px;
 }
 
 .main__control {
@@ -2705,7 +2705,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 36px;
 }
 
 .main__control .main__icon {
@@ -2892,8 +2892,8 @@ body:not(.touch-device) .header__item:hover .header__body {
 }
 
 .main__circle:nth-child(4) {
-  left: 49.5%;
-  bottom: 253px;
+  left: 54.5%;
+  bottom: 240px;
   width: 32px;
   height: 32px;
   background: #5956E9;
@@ -8850,10 +8850,6 @@ body:not(.touch-device) .header__item:hover .header__body {
   }
   .main__info {
     max-width: 100%;
-    margin-bottom: 48px;
-  }
-  .main__control {
-    margin-bottom: 60px;
   }
   .main__btn {
     height: 64px;
@@ -10182,10 +10178,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   .main__info {
     max-width: 230px;
   }
-  .main__control {
-    margin-bottom: 113px;
-  }
-  .features__info {
+   .features__info {
     max-width: 250px;
   }
   .features__text {

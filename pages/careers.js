@@ -254,8 +254,7 @@ const Careers = () => {
             <div className='container-fluid career-area-4' >
                 <div className='row justify-content-center align-items-center career-area-4-row' >
                     <h2 className='career-area-4-heading' >
-                        Our Best Perks Are
-                        <br />
+                        Our office is situated in-between an opulent greenery and you can take benefit of nature while working with us.                        <br />
                         Pe<span className='text-danger' >o</span>ple Themselves
                     </h2>
                     <div className='rounded-circle career-area-4-circle1' ></div>
@@ -485,8 +484,7 @@ const Careers = () => {
 
                                 </h3>
                                 <p className='career-area-9-para' >
-                                    Our office is situated in-between an opulent greenery so that you take benefit of nature while working with us.
-                                </p>
+                                    Our office is situated in-between an opulent greenery and you can take benefit of nature while working with us.                                </p>
                             </div>
                         </div>
                         {/* #Second Slide */}
@@ -513,7 +511,7 @@ const Careers = () => {
                                     Regular Research-Based Seminars On The Latest Tech
                                 </h3>
                                 <p className='career-area-9-para' >
-                                    We don’t want you to lag behind that’s why we conduct monthly seminars to polish your skills on the latest tech & innovation.                                </p>
+                                    We don’t want you to lag behind that’s why we conduct monthly seminars to polish your skills.</p>
                             </div>
                         </div>
                         {/* #Third Slide */}
