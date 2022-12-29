@@ -162,7 +162,20 @@ function AboutUs() {
                     <h2 className='text-center about-area-8-heading'>
                         We Connect Globally
                     </h2>
-                    <img className='w-100' src='aboutUsImages/global_connections.png' alt='' />
+                    <img className='w-100' src='aboutUsImages/global_connections.png' alt=''
+                        useMap='#world-map'
+                    />
+                    <map name="world-map">
+                        <area shape="rect" coords="180,130,200,180" alt="North America" title="North America"
+                            style={{ cursor: 'pointer' }} />
+                        <area shape="rect" coords="480,160,500,210" alt="Europe" title="Europe" style={{ cursor: 'pointer' }} />
+                        <area shape="rect" coords="500,270,520,320" alt="India" title="Africa" style={{ cursor: 'pointer' }} />
+                        <area shape="rect" coords="630,170,650,220" alt="Asia" title="Asia" style={{ cursor: 'pointer' }} />
+                        <area shape="rect" coords="220,320,250,370" alt="South America" title="South America" style={{ cursor: 'pointer' }} />
+                        <area shape="rect" coords="780,380,810,430" alt="Australia" title="Australia" style={{ cursor: 'pointer' }} />
+
+
+                    </map>
                 </div>
             </div>
 

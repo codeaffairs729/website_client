@@ -70,7 +70,7 @@ const Footer = () => {
                             </div>
                             <div className={`footer__menu js-footer-menu ${aboutUs ? "" : "hide"}`} >
                                 <span className="footer__link footer-link-about" >Want to elevate your brand? Get in Touch!</span>
-                                <span className="footer__link footer-link-contact" >++91 82889 83623</span>
+                                <span className="footer__link footer-link-contact" >+91 82889 83623</span>
                                 <span className="footer__link footer-link-contact" >hr@codegaragetech.com</span>
                                 <span className="footer__link footer-link-about" >
                                     The Atrium Quarkcity,<br />

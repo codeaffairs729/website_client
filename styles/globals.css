@@ -2209,7 +2209,7 @@ body:not(.touch-device) .header-item[href]:before {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 0;
+  margin-bottom: 24px;
 }
 
 .about-area-4-main-social-icon {
@@ -2236,6 +2236,7 @@ body:not(.touch-device) .header-item[href]:before {
 .about-area-4-main-data-outer {
   background-image: linear-gradient(90deg, white 25%, #D9D9D9 50%);
   border-radius: 0px 15px 15px 0px;
+  min-height: 410px;
 }
 
 .about-area-4-main-desc-outer {
@@ -3024,7 +3025,7 @@ body:not(.touch-device) .header-item[href]:before {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #999999;
+  color: #343842;
 }
 
 .career-area-9 {
@@ -3337,7 +3338,7 @@ body:not(.touch-device) .header-item[href]:before {
   }
 
   .about-area-4-main-img-text-area {
-    bottom: -2px;
+    bottom: 26px;
   }
 
   .about-area-4-side-col {
@@ -3704,8 +3705,9 @@ body:not(.touch-device) .header-item[href]:before {
   .about-area-4-main-designation {
     font-weight: 500;
     font-size: 10px;
-    line-height: 28px;
-    letter-spacing: 1px;
+    line-height: 12px;
+    letter-spacing: 0px;
+    margin-bottom: -12px;
   }
 
   .about-area-4-main-desc-outer {
@@ -4556,6 +4558,7 @@ body:not(.touch-device) .header-item[href]:before {
 
   .about-area-4-main-data-outer {
     background: white;
+    min-height: 410px;
   }
 
   /* .about-area-4-main-img-text-area {
@@ -4897,11 +4900,16 @@ career-area-2-img-4 {
 }
   @media only screen and (min-width: 1023px) {
   /* About Us Component CSS Start */
-
+  .about-area-4-main-img-text-area{
+    line-height: 0.5px;
+  } 
   .about-area-2-outer-row {
     padding: 125px 0;
   }
 
+  .about-area-4-main-img-text-area {
+    bottom: -9px;
+  }
   .career-area-3-para {
     line-height: 1.5rem;
     position: relative;
@@ -4960,6 +4968,13 @@ career-area-2-img-4 {
   font-size: 17px;
   text-align: justify;
 }
+
+.about-area-4-main-img-text-area {
+  bottom: 34px;
+}
+.about-area-4-main-designation{
+  font-size: 9px;
+}
 }
 
 @media only screen and (min-width: 767px) and (max-width: 992px)  {
@@ -4982,6 +4997,15 @@ career-area-2-img-4 {
     bottom: -594%;
     z-index: 1;
     right: 0%;
+  }
+  .about-area-4-main-img-text-area {
+    bottom: 35px;
+  }
+
+  .about-area-4-main-img-text-area{
+    font-size: 9px;
+    line-height: 15px;
+    letter-spacing: 0px;
   }
 }
 

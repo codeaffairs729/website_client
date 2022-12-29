@@ -420,7 +420,7 @@ const Careers = () => {
                             <h2 className='career-area-8-heading' >
                                 We’re Fun
                             </h2>
-                            <p className='career-area-8-para' >
+                            <p className='career-area-8-para mt-3' >
                                 Having a friendly workspace is all you need to be more productive and we at Code Garage Tech find fun in little things that make our day full of positive vibes. We Lift Spirits by making our office environment lively with great music. We believe that fun is essential to a good work environment. That's why we offer flexible hours, fun events, and challenging projects. We want you to feel like you're not just working—you're exuberant!
                             </p>
                         </div>
@@ -438,7 +438,7 @@ const Careers = () => {
                                 <h2 className='career-area-8-heading' >
                                     We're Process-Oriented
                                 </h2>
-                                <p className='career-area-8-para' >
+                                <p className='career-area-8-para mt-3' >
                                     One of the most important things about our process is that we're focused on the client. We believe that great work doesn't just happen—it needs to be created by people who are passionate about it and committed to excellence.
                                 </p>
                             </div>

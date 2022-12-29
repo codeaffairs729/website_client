@@ -2667,7 +2667,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   font-size: 18px;
   letter-spacing: 0;
   line-height: 1.5;
-  color: #999FAE;
+  color: #343842;
   text-align: justify;
 }
 
@@ -4867,7 +4867,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   /* max-width: 250px; */
   max-width: unset;
   margin-bottom: 50px;
-  color: #999FAE;
+  color: #343842;
 }
 
 .package__list {
@@ -5466,7 +5466,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 }
 
 .design__text {
-  color: #999FAE;
+  color: #343842;
 }
 
 .design__link {

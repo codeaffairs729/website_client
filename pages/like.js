@@ -134,7 +134,7 @@ const Like = () => {
                         </svg>
                       </a>
                       <div className="collapse like-headline-description" id="collapseAvailability" >
-                        We have a team of talented people who help your business reach new heights of success. Our Professional web developers are always available at your service to make your company's website look outstanding.
+                        We have a team of talented people who help your business reach new heights of success. Our Professional web & app developers are always available at your service to make your company's website look outstanding.
                       </div>
                     </div>
                   </li>
@@ -156,7 +156,7 @@ const Like = () => {
                         </svg>
                       </a>
                       <div className="collapse like-headline-description" id="collapseProcessOrientedWork" >
-                        We know that your website needs to grow as your business thrives. Hence, our web design solutions come with the flexibility of modifications that will aid your business in earning more revenue.
+                        We know that your website needs to grow as your business thrives. Hence, our software development solutions come with the flexibility of modifications that will aid your business in earning more revenue.
                       </div>
                     </div>
                   </li>
