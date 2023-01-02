@@ -12,7 +12,7 @@ const Work = () => {
           {/* <div className='work-text-right-btn' >Get Free Consultation</div> */}
           <Link href="/contact">
             <a target="_blank" className="package__btn btn btn_purple text-decoration-none" >
-              <button className='btn btn-primary work-text-right-btn ' >Get Free Consultation</button>
+              <button className='btn btn-primary work-text-right-btn ' >Get Assistance</button>
             </a>
           </Link>
         </div>

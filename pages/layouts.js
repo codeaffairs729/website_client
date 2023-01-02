@@ -25,7 +25,7 @@ const Layouts = () => {
               </h2>
             </div>
             <div className="layouts__info info" data-aos="animation-scale-y">
-              From our software engineering excellence to our top-class design practice, we continuously seek out as well as develop optimistic modern techniques to handle complex problems. 
+              From our software engineering excellence to our top-class design practice, we continuously seek out as well as develop optimistic modern techniques to handle complex problems.
             </div>
             <div className="layouts__list">
               <div className="layouts__item layouts-item" data-aos="animation-scale-y">
@@ -33,8 +33,7 @@ const Layouts = () => {
                   <img className="layouts__pic" src="img/layout-1.svg" alt="" />
                 </div>
                 <div className="layouts__text">
-                  We implement those technologies that suit your idea.
-                </div>
+                  We implement those technologies that suit the nature of your application.                </div>
               </div>
               <div className="layouts__item layouts-item" data-aos="animation-scale-y">
                 <div className="layouts__icon">

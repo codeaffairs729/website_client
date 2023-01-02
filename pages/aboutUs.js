@@ -5,6 +5,7 @@ import SideImages from '../components/sideImages'
 import Trophies from './trophies'
 import BuildingPicsSlider from './buildingPicsSlider'
 import Head from 'next/head'
+import Link from 'next/link'
 
 function AboutUs() {
     const [companyFacesDesc, setCompanyFacesDesc] = useState(0);
@@ -507,7 +508,10 @@ function AboutUs() {
             <BuildingPicsSlider />
 
             <div className='container-fluid trophies bg-white about-us-trophies' >
-                <div className='container' >
+                <div className='container d-flex flex-column' >
+                    <div className='about-area-headline-container'>
+                        <h2 className='text-center about-area-headline'>Code Garage Tech's Highlights</h2>
+                    </div>
                     <div className='row' >
                         <div className='col-lg-4 col-md-4 trophies-cols' data-aos="animation-scale-x-left">
                             <div className='row' >
@@ -555,12 +559,21 @@ function AboutUs() {
                             <h2 className='mb-5 about-area-5-heading' >
                                 Are you looking for a team just like us?
                             </h2>
-                            <p className='about-area-5-para' >
-                                Let us know right away
-                                <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.8621 1L32 13.3636M32 13.3636L19.8621 25.7273M32 13.3636H1.19209e-07" stroke="black" strokeWidth="2" />
-                                </svg>
-                            </p>
+                            <div className='d-flex flex-wrap align-items-content'>
+                                <p className='align-self-center about-area-5-para' >
+                                    Let us know right away
+                                    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.8621 1L32 13.3636M32 13.3636L19.8621 25.7273M32 13.3636H1.19209e-07" stroke="black" strokeWidth="2" />
+                                    </svg>
+                                </p>
+                                <Link href='./contact' >
+                                    <a className="header__btn btn btn_purple my-3" target="_blank"  >
+                                        Get in Touch
+                                    </a>
+                                </Link>
+
+                            </div>
+
                         </div>
                     </div>
                 </div>

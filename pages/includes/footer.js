@@ -69,7 +69,7 @@ const Footer = () => {
                                 </svg>
                             </div>
                             <div className={`footer__menu js-footer-menu ${aboutUs ? "" : "hide"}`} >
-                                <span className="footer__link footer-link-about" >Want to elevate your brand? Get in Touch!</span>
+                                <span className="footer__link footer-link-about" >Want to take your business online? Count on us, we offer the best software solutions to your business.</span>
                                 <span className="footer__link footer-link-contact" >+91 82889 83623</span>
                                 <span className="footer__link footer-link-contact" >hr@codegaragetech.com</span>
                                 <span className="footer__link footer-link-about" >
@@ -159,23 +159,23 @@ const Footer = () => {
                                 </svg>
                             </div>
                             <div className={`footer__menu js-footer-menu footer-social-menu ${socialIcons ? "" : "hide"}`} >
-                                <Link href="https://www.facebook.com/CodeGarageTech">
-                                    <a className="footer__link me-3" >
+                                <Link href="https://www.facebook.com/codegaragetech">
+                                    <a className="footer__link me-3" target='_blank'>
                                         <img className="icon icon-header-img" src="images/Facebook3d.png" alt="" />
                                     </a>
                                 </Link>
-                                <Link href="https://twitter.com/CodeGarageTech">
-                                    <a className="footer__link me-3" >
+                                <Link href="https://twitter.com/codegaragetech">
+                                    <a className="footer__link me-3" target='_blank'>
                                         <img className="icon icon-header-img" src="images/Twitter3d.png" alt="" />
                                     </a>
                                 </Link>
-                                <Link href="https://www.linkedin.com/company/codegaragetech">
-                                    <a className="footer__link me-3" >
+                                <Link href="https://www.linkedin.com/company/codegarage-tech/">
+                                    <a className="footer__link me-3" target='_blank'>
                                         <img className="icon icon-header-img" src="images/LinkedIn3d.png" alt="" />
                                     </a>
                                 </Link>
                                 <Link href="https://www.instagram.com/codegaragetech/">
-                                    <a className="footer__link" >
+                                    <a className="footer__link" target='_blank'>
                                         <img className="icon icon-header-img" src="images/Instagram3d.png" alt="" />
                                     </a>
                                 </Link>
@@ -184,7 +184,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer__bottom footer-bottom">
-                    <div className="footer__copyright">© Copyright 2022. CGT</div>
+                    <div className="footer__copyright">Copyright © 2023 CodeGarageTech Pvt. Ltd.</div>
                     <span className="footer__scroll" >
                         <div className="footer__text">All Right Reserved.</div>
                     </span>

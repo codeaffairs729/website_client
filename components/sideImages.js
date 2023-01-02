@@ -5,7 +5,10 @@ const SideImages = (props) => {
     return (
         <>
             <div className='col-lg-12 col-md-12 col-2 about-area-4-side-col' >
-                <a href={void(0)} onClick={props.SideImagesChangeHandle} >
+                <a
+                    href={void (0)} onClick={props.SideImagesChangeHandle}
+                    style={{ cursor: 'pointer' }}
+                >
                     <img className='about-area-4-side-img' id={id} src={sideImagesgUrl} alt='' />
                 </a>
             </div>

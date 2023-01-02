@@ -2668,7 +2668,6 @@ body:not(.touch-device) .header__item:hover .header__body {
   letter-spacing: 0;
   line-height: 1.5;
   color: #343842;
-  text-align: justify;
 }
 
 .stage {
@@ -8320,9 +8319,9 @@ body:not(.touch-device) .header__item:hover .header__body {
   .header__search {
     margin: 0;
   }
-  .header__btn.btn {
+  /* .header__btn.btn {
     display: none;
-  }
+  } */
   .header__bg.show {
     visibility: visible;
     opacity: 1;
@@ -8830,7 +8829,6 @@ body:not(.touch-device) .header__item:hover .header__body {
   .info {
     font-size: 16px;
     line-height: 1.5;
-    text-align: justify;
   }
   .stage {
     font-size: 16px;
@@ -10232,3 +10230,15 @@ body:not(.touch-device) .header__item:hover .header__body {
     top: 15px;
 }
 /*# sourceMappingURL=app.css.map */
+
+.about-area-headline{
+  font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: -0.025em;
+}
+.about-area-headline-container{
+    margin: auto;
+    position: relative;
+    top: -55px;
+}

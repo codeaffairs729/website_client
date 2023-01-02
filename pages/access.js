@@ -10,71 +10,82 @@ const Access = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    submitBtn.innerHTML = 'Request Submitted';
+    submitBtn.className = 'access__btn btn btn-success';
 
-    if (!executeRecaptcha) {
-      console.log("Execute recaptcha not yet available");
-      return;
-    }
-    executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
-      // console.log(gReCaptchaToken, "response Google reCaptcha server");
-      submitEnquiryForm(gReCaptchaToken);
-    });
+
+    setTimeout(function () {
+      submitBtn.className = 'access__btn btn btn-primary';
+      submitBtn.innerHTML = 'Request Contact';
+      setEmail("");
+
+    }, 2000)
+
+    // if (!executeRecaptcha) {
+    //   console.log("Execute recaptcha not yet available");
+
+    //   return;
+    // }
+    // executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
+    //   // console.log(gReCaptchaToken, "response Google reCaptcha server");
+    //   submitEnquiryForm(gReCaptchaToken);
+    // });
   };
 
-  const submitEnquiryForm = (gReCaptchaToken) => {
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> Loading...';
-    fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name: "Anonymous",
-        phone: "NA",
-        email: email,
-        message: "Enquiry",
-        gRecaptchaToken: gReCaptchaToken
-      }),
-    })
-    .then((res) => res.json())
-    .then((res) => {
-      if (res?.status === "success") {
-        // console.log(res?.message);
-        setEmail("");
+  // const submitEnquiryForm = (gReCaptchaToken) => {
+  //   // submitBtn.disabled = true;
+  //   // submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> Loading...';
+  //   // fetch("/api/contact", {
+  //   //   method: "POST",
+  //   //   headers: {
+  //   //     Accept: "application/json, text/plain, */*",
+  //   //     "Content-Type": "application/json",
+  //   //   },
+  //   //   body: JSON.stringify({
+  //   //     name: "Anonymous",
+  //   //     phone: "NA",
+  //   //     email: email,
+  //   //     message: "Enquiry",
+  //   //     gRecaptchaToken: gReCaptchaToken
+  //   //   }),
+  //   // })
+  //   //   .then((res) => res.json())
+  //   //   .then((res) => {
+  //   //     if (res?.status === "success") {
+  //   //       // console.log(res?.message);
+  //   //       setEmail("");
 
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = 'Request Contact';
+  //   //       submitBtn.disabled = false;
+  //   //       submitBtn.innerHTML = 'Request Submitted';
 
-        toast.success('Success! Email Sent Successful', {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: true,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-        });
-        // setNotification(res?.message);
-      } else {
-        // console.log(res?.message);
-        // setNotification(res?.message);
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = 'Request Contact';
+  //   //       // toast.success('Success! Email Sent Successful', {
+  //   //       //   position: "top-right",
+  //   //       //   autoClose: 5000,
+  //   //       //   hideProgressBar: true,
+  //   //       //   closeOnClick: true,
+  //   //       //   pauseOnHover: true,
+  //   //       //   draggable: true,
+  //   //       //   progress: undefined,
+  //   //       // });
+  //   //       // setNotification(res?.message);
+  //   //     } else {
+  //   //       // console.log(res?.message);
+  //   //       // setNotification(res?.message);
+  //   //       submitBtn.disabled = false;
+  //   //       submitBtn.innerHTML = 'Request Contact';
 
-        toast.error('Error! Email Not Sent', {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: true,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-        });
-      }
-    });
-  };
+  //   //       // toast.error('Error! Email Not Sent', {
+  //   //       //   position: "top-right",
+  //   //       //   autoClose: 5000,
+  //   //       //   hideProgressBar: true,
+  //   //       //   closeOnClick: true,
+  //   //       //   pauseOnHover: true,
+  //   //       //   draggable: true,
+  //   //       //   progress: undefined,
+  //   //       // });
+  //   //     }
+  //   //   });
+  // };
 
   return (
     <>
@@ -91,7 +102,7 @@ const Access = () => {
       /><ToastContainer />
       <div className="access">
         <div className="access__center center">
-          <h2 className='access-top-heading' >Let's Build The Next Big Thing Together!</h2>
+          <h2 className='access-top-heading' >We Simplify and Streamline Each Step In Your App.</h2>
           <div className="access__view connect__view" data-aos data-aos-delay="300">
             <div className="access__preview">
               <img className="access__pic access-main-cloud" src="img/cloud.png" alt="" />
@@ -112,12 +123,12 @@ const Access = () => {
             </div>
             <form className="access__form" onSubmit={handleSubmit} >
               <div className="access__field">
-                <input className="access__input" type="email" placeholder="Your Email Address" onChange={(e)=> setEmail(e.target.value)} value={email} required/>
+                <input className="access__input" type="email" placeholder="Your Email Address" onChange={(e) => setEmail(e.target.value)} value={email} required />
                 <div className="access__icon">
                   <img className="access__pic" src="img/sending-mail.svg" alt="" />
                 </div>
               </div>
-              <button ref={(submitBtnRef) => { submitBtn = submitBtnRef}} className="access__btn btn btn_purple" type="submit" >
+              <button ref={(submitBtnRef) => { submitBtn = submitBtnRef }} className="request_connect_btn access__btn btn btn_purple" type="submit" >
                 Request Contact
               </button>
             </form>

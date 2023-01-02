@@ -74,7 +74,7 @@ const Main = () => {
                                 </Link>
                             </div>
                             <div className="main__info info ms-3 main-info" >
-                                We deliver result-oriented, customized services with an emphasis on building long-term relationships with our clients. Being a reliable software development and consulting company in India, we possess quality knowledge and tactics to bring it to life.
+                            We deliver result-oriented, customized services with an emphasis on providing value. Being a reliable as well as professional software development & consulting company, we possess quality knowledge and tactics to bring it to life.
                             </div>
                         {/* <div className="main__control ms-3" data-aos="animation-scale-y" data-aos-delay="550"> */}
                         <div className="main__scroll ms-3" data-aos="animation-scale-y" data-aos-delay="650">
