@@ -8319,9 +8319,9 @@ body:not(.touch-device) .header__item:hover .header__body {
   .header__search {
     margin: 0;
   }
-  /* .header__btn.btn {
+  .header__btn.btn {
     display: none;
-  } */
+  }
   .header__bg.show {
     visibility: visible;
     opacity: 1;
@@ -10241,4 +10241,42 @@ body:not(.touch-device) .header__item:hover .header__body {
     margin: auto;
     position: relative;
     top: -55px;
+}
+
+.about-area-5-contact__btn.btn{
+    min-width: 130px;
+}
+.about-area-5-contact__btn:hover{
+  background-color: #0a58ca;
+}
+
+/* company description css */
+.company-desc-area-1{
+  /*  */
+}
+
+.company-desc-area-2{
+  height: 841px;
+  width: 560px;
+}
+
+.form-container{
+  height: 841px;
+  width: 560px;
+}
+
+.form-container-btn.btn{
+  height: 48px;
+  width: 333px;
+  border-radius: 0px;
+  background: #5956E9;
+  color: #FFFFFF;
+}
+.form-container-email-input{
+  height: 48px;
+  width: 333px;
+  color: 292930;
+}
+.slider-button-place{
+  z-index: 99;
 }

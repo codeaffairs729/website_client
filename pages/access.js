@@ -10,16 +10,10 @@ const Access = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    submitBtn.innerHTML = 'Request Submitted';
+    submitBtn.innerHTML = 'Submitted';
     submitBtn.className = 'access__btn btn btn-success';
+    setEmail("");
 
-
-    setTimeout(function () {
-      submitBtn.className = 'access__btn btn btn-primary';
-      submitBtn.innerHTML = 'Request Contact';
-      setEmail("");
-
-    }, 2000)
 
     // if (!executeRecaptcha) {
     //   console.log("Execute recaptcha not yet available");

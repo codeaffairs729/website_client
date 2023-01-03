@@ -87,10 +87,10 @@ const BuildingPicsSlider = () => {
                         </h2>
                     </div>
                     <div className="col-lg-12" >
-                        <Slider ref={(sliderDivRef) => { sliderDiv = sliderDivRef}} {...settings}>
+                        <Slider ref={(sliderDivRef) => { sliderDiv = sliderDivRef }} {...settings}>
                             {
                                 sliderImages.map((element, index) => {
-                                    return <div key={index} className={ imageIndex === index ? "building-slide activeSlide" : "building-slide" } >
+                                    return <div key={index} className={imageIndex === index ? "building-slide activeSlide" : "building-slide"} >
                                         <img className='' src={element} alt={element} />
                                     </div>
                                 })
