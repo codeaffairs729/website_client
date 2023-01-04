@@ -565,10 +565,8 @@ function AboutUs() {
                                     <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M19.8621 1L32 13.3636M32 13.3636L19.8621 25.7273M32 13.3636H1.19209e-07" stroke="black" strokeWidth="2" />
                                     </svg>
-                                    <Link href='./contact' >
-                                        <a className="about-area-5-contact__btn btn btn_purple my-3 mx-3" target="_blank"  >
-                                            Get in Touch
-                                        </a>
+                                    <Link href="./contact">
+                                        <a target="_blank" className="header__btn btn btn_pink" >Get in Touch</a>
                                     </Link>
                                 </p>
 

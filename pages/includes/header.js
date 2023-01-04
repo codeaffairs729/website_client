@@ -706,7 +706,7 @@ const Header = () => {
                         </div>
                     </div> */}
                     <Link href='./contact' >
-                        <a className="header__btn btn btn_pink" target="_blank"  >
+                        <a className="header__btn btn-none btn btn_pink" target="_blank"  >
                             Get in Touch
                         </a>
                     </Link>

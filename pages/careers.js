@@ -546,13 +546,9 @@ const Careers = () => {
                     </Slider>
                     {/* End two image container */}
                 </div>
-
-
-
                 <div className='rounded-circle career-area-9-circle-1' ></div>
                 <div className='rounded-circle career-area-9-circle-2' ></div>
             </div>
-
             <div className='container-fluid career-area-6' >
                 <div className='row text-center career-area-6-row' >
                     <div className='col-lg-12' >
@@ -563,7 +559,7 @@ const Careers = () => {
                         </h2>
                     </div>
                     <div className='col-lg-12' >
-                        <button className="btn btn_pink mt-5" onClick={handleModalShow} >Apply Now</button>
+                        <button className="btn btn_pink mt-5" onClick={handleModalShow} >Get in Touch</button>
                     </div>
                 </div>
             </div>

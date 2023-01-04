@@ -12,74 +12,77 @@ const Access = () => {
     e.preventDefault();
     submitBtn.innerHTML = 'Submitted';
     submitBtn.className = 'access__btn btn btn-success';
-    setEmail("");
+    // setEmail("");
 
 
-    // if (!executeRecaptcha) {
-    //   console.log("Execute recaptcha not yet available");
+    if (!executeRecaptcha) {
+      console.log("Execute recaptcha not yet available");
 
-    //   return;
-    // }
-    // executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
-    //   // console.log(gReCaptchaToken, "response Google reCaptcha server");
-    //   submitEnquiryForm(gReCaptchaToken);
-    // });
+      return;
+    }
+    executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
+      // console.log(gReCaptchaToken, "response Google reCaptcha server");
+      submitEnquiryForm(gReCaptchaToken);
+    });
   };
 
-  // const submitEnquiryForm = (gReCaptchaToken) => {
-  //   // submitBtn.disabled = true;
-  //   // submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> Loading...';
-  //   // fetch("/api/contact", {
-  //   //   method: "POST",
-  //   //   headers: {
-  //   //     Accept: "application/json, text/plain, */*",
-  //   //     "Content-Type": "application/json",
-  //   //   },
-  //   //   body: JSON.stringify({
-  //   //     name: "Anonymous",
-  //   //     phone: "NA",
-  //   //     email: email,
-  //   //     message: "Enquiry",
-  //   //     gRecaptchaToken: gReCaptchaToken
-  //   //   }),
-  //   // })
-  //   //   .then((res) => res.json())
-  //   //   .then((res) => {
-  //   //     if (res?.status === "success") {
-  //   //       // console.log(res?.message);
-  //   //       setEmail("");
+  const submitEnquiryForm = (gReCaptchaToken) => {
+    console.log(email);
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> Loading...';
 
-  //   //       submitBtn.disabled = false;
-  //   //       submitBtn.innerHTML = 'Request Submitted';
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: "Anonymous",
+        phone: "NA",
+        email: email,
+        message: "Enquiry",
+        gRecaptchaToken: gReCaptchaToken
+      }),
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        console.log(res);
+        if (res?.status === "success") {
+          console.log(res?.message);
+          setEmail("");
 
-  //   //       // toast.success('Success! Email Sent Successful', {
-  //   //       //   position: "top-right",
-  //   //       //   autoClose: 5000,
-  //   //       //   hideProgressBar: true,
-  //   //       //   closeOnClick: true,
-  //   //       //   pauseOnHover: true,
-  //   //       //   draggable: true,
-  //   //       //   progress: undefined,
-  //   //       // });
-  //   //       // setNotification(res?.message);
-  //   //     } else {
-  //   //       // console.log(res?.message);
-  //   //       // setNotification(res?.message);
-  //   //       submitBtn.disabled = false;
-  //   //       submitBtn.innerHTML = 'Request Contact';
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = 'Request Submitted';
 
-  //   //       // toast.error('Error! Email Not Sent', {
-  //   //       //   position: "top-right",
-  //   //       //   autoClose: 5000,
-  //   //       //   hideProgressBar: true,
-  //   //       //   closeOnClick: true,
-  //   //       //   pauseOnHover: true,
-  //   //       //   draggable: true,
-  //   //       //   progress: undefined,
-  //   //       // });
-  //   //     }
-  //   //   });
-  // };
+          toast.success('Success! Email Sent Successful', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+          setNotification(res?.message);
+        } else {
+          console.log(res?.message);
+          setNotification(res?.message);
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = 'Request Contact';
+
+          toast.error('Error! Email Not Sent', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+        }
+      });
+  };
 
   return (
     <>
