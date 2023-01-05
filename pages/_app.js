@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react'
 import AOS from "aos";
 import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/app.css'
+import '../styles/gen-form.css'
 import '../styles/globals.css'
 import "aos/dist/aos.css";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import Link from 'next/link'
+import '../styles/service.css'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

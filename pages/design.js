@@ -86,7 +86,7 @@ const Design = () => {
                                         </div> */}
                                     </div>
                                     <div className="design__details">
-                                        <div className="design__category">Digital Signage Store</div>
+                                        <div className="design__category">Digital Signage</div>
                                         <div className="design__info">UCView</div>
                                         <div className="design__text">
                                             UCView is a leading provider of digital signage software worldwide, offering world-class digital signage Saas and servers based (with load balancing) and content management software that is reliable, simple to use, and cost-effective to operate.
@@ -108,7 +108,7 @@ const Design = () => {
                                         </div> */}
                                     </div>
                                     <div className="design__details">
-                                        <div className="design__category">Market Analysis App</div>
+                                        <div className="design__category">Stock Market Analysis</div>
                                         <div className="design__info">Stock Architect</div>
                                         <div className="design__text">
                                             Stock Architect delivers stock market information from various sources in the curated form to its users to help them take informed decisions before buying or selling stocks. You can now get real-time views from real investors and traders.                                         </div>
@@ -129,7 +129,7 @@ const Design = () => {
                                         </div> */}
                                     </div>
                                     <div className="design__details">
-                                        <div className="design__category">Messaging App</div>
+                                        <div className="design__category">Interactive Voice Response & Messaging</div>
                                         <div className="design__info">Withrelay</div>
                                         <div className="design__text">
                                             Send & receive text messages, set auto-responders, schedule notifications & accept payments using your existing business phone number in a single conversation. It gives a virtual SMS phone number that your customers can use to text immediately.                                        </div>
@@ -150,7 +150,7 @@ const Design = () => {
                                         </div> */}
                                     </div>
                                     <div className="design__details">
-                                        <div className="design__category">Video Chat Assistance App</div>
+                                        <div className="design__category">Video Chat Assistance</div>
                                         <div className="design__info">VideoChatAPro</div>
                                         <div className="design__text">
                                             With the help of Video Chat a Pro app you can get advice from skilled HVAC & landscaping professionals in real-time, it is super simple to download this app. This app power your business on the go by instantly notifying you of free customer leads, and much more.                                          </div>
@@ -171,7 +171,7 @@ const Design = () => {
                                         </div> */}
                                     </div>
                                     <div className="design__details">
-                                        <div className="design__category">Shopping App</div>
+                                        <div className="design__category">E-commerce</div>
                                         <div className="design__info">Buyma</div>
                                         <div className="design__text">
                                             Buyma is a shopping application that allows you to shop for a variety of products, including clothing, bags, and accessories. You can have access to limited collections of your favorite brands that may not be sold in your country.                                         </div>
@@ -192,7 +192,7 @@ const Design = () => {
                                         </div> */}
                                     </div>
                                     <div className="design__details">
-                                        <div className="design__category">Blogging</div>
+                                        <div className="design__category">Fintech</div>
                                         <div className="design__info">Fintrakk</div>
                                         <div className="design__text">
                                             Fintrakk is an application that offers knowledge about Finance, Investments, Stock Brokers, and Stock Market. You can explore important concepts, popular products or services, trading apps, and interesting investing ideas across the world.                                         </div>
@@ -213,7 +213,7 @@ const Design = () => {
                                         </div> */}
                                     </div>
                                     <div className="design__details">
-                                        <div className="design__category">Artificial Intelligence</div>
+                                        <div className="design__category">AI Blogs</div>
                                         <div className="design__info">Welcome AI</div>
                                         <div className="design__text">
                                             Welcome AI is an application that provides you with essential knowledge on Artificial Intelligence, emerging technologies, and changing industries. You can discover and learn about AI and emerging technologies within business today.                                        </div>
@@ -230,7 +230,7 @@ const Design = () => {
                                 <div className="design-slide-blue" data-aos="animation-translate-y">
                                     <div className="design__view design-view-bzigo-bg"></div>
                                     <div className="design__details">
-                                        <div className="design__category">Mosquito Detecting App</div>
+                                        <div className="design__category">IoT Technology</div>
                                         <div className="design__info">Bzigo</div>
                                         <div className="design__text">
                                             Bzigo is the first-ever device that actively detects and locates mosquitoes. Once a mosquito is detected, you receive a notification on your smartphone, and a laser marker shows the mosquito’s precise location, allowing you to easily eliminate it.                                        </div>
@@ -246,7 +246,7 @@ const Design = () => {
                                 </div>
 
                             </Slider>
-                            <div className='d-flex justify-content-end'>
+                            <div className='d-flex justify-content-start'>
                                 <SliderButton gotoNext={gotoNext} gotoPrev={gotoPrev} />
                             </div>
                         </div>
