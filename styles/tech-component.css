@@ -1,0 +1,32 @@
+
+.tech-container{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+padding: 0px;
+gap: 65px;
+}
+
+.tech-container-div{
+    width: 98px;
+    height: 162px;
+}
+
+.tech-container-img{
+width: 98px;
+height: 98px;
+
+}
+
+.tech-container-para{
+    margin-top: 16px;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 479px) {
+    .tech-container {
+        gap: 10px;
+    }
+}

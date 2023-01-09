@@ -33,7 +33,7 @@ const Layouts = () => {
                   <img className="layouts__pic" src="img/layout-1.svg" alt="" />
                 </div>
                 <div className="layouts__text">
-                  We implement those technologies that suit the nature of your application.                </div>
+                  We use those technologies that suit the nature of your application.                </div>
               </div>
               <div className="layouts__item layouts-item" data-aos="animation-scale-y">
                 <div className="layouts__icon">

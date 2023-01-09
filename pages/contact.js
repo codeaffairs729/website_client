@@ -179,7 +179,7 @@ const Contact = () => {
                                                     Get in touch
                                                     {/* <span className="title__color">.</span> */}
                                                 </div>
-                                                <div className="entry__info text-center">Enter your detail below</div>
+                                                <div className="entry__info text-center">Enter your details below</div>
                                                 <div className="entry__field field">
                                                     <div className="field__label">Name</div>
                                                     <div className="field__wrap">

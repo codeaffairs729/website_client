@@ -88,7 +88,6 @@ const Header = () => {
         verticalSwiping: true,
         autoplaySpeed: 3000
     };
-
     return (
         <>
             <Head>
@@ -134,7 +133,9 @@ const Header = () => {
                                         <div className="header__row row">
                                             <div className="col-lg-4 col-md-4 col-sm-4" >
                                                 <div className={`header__category ${serviceMenu ? "service-menu-header-item" : ""}`} >
+                                                    <Link href='/web-services'>
                                                     Web Solutions
+                                                    </Link>
                                                 </div>
                                                 <div className="row" >
                                                     <div className="col-lg-12 header-solutions-outer" >
@@ -334,7 +335,9 @@ const Header = () => {
                                             </div>
                                             <div className="col-lg-4 col-md-4 col-sm-4" >
                                                 <div className={`header__category ${serviceMenu ? "service-menu-header-item service-menu-header-category" : ""}`} >
+                                                <Link href='/mobile-solutions'>
                                                     Mobile Solutions
+                                                    </Link>
                                                 </div>
                                                 <div className="row" >
                                                     <div className="col-lg-12 header-solutions-outer" >
@@ -500,7 +503,9 @@ const Header = () => {
                                                         </div> */}
                                                     {/* </Slider> */}
                                                 </div>
-                                                <div className={`header__category mt-3 ${serviceMenu ? "service-menu-header-item" : ""}`} >DevOps</div>
+                                                <div className={`header__category mt-3 ${serviceMenu ? "service-menu-header-item" : ""}`} >
+                                                    DevOps
+                                                    </div>
                                                 <div className="row" >
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
@@ -535,7 +540,9 @@ const Header = () => {
                                                 </div>
                                             </div>
                                             <div className="col-lg-4 col-md-4 col-sm-4" >
-                                                <div className={`header__category ${serviceMenu ? "service-menu-header-item service-menu-header-category" : ""}`} >Miscellaneous</div>
+                                                <div className={`header__category ${serviceMenu ? "service-menu-header-item service-menu-header-category" : ""}`} >
+                                                    Miscellaneous
+                                                    </div>
                                                 <div className="row" >
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >

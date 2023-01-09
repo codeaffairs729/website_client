@@ -5,6 +5,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Access = () => {
   const [email, setEmail] = useState("");
+  const [notfication, setNotification] = useState("");
+
   const { executeRecaptcha } = useGoogleReCaptcha();
   const submitBtn = useRef(null);
 
@@ -27,7 +29,6 @@ const Access = () => {
   };
 
   const submitEnquiryForm = (gReCaptchaToken) => {
-    console.log(email);
     submitBtn.disabled = true;
     submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> Loading...';
 
@@ -52,18 +53,18 @@ const Access = () => {
           console.log(res?.message);
           setEmail("");
 
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = 'Request Submitted';
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = 'Submitted';
 
-          toast.success('Success! Email Sent Successful', {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: true,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
+          // toast.success('Success! Email Sent Successful', {
+          //   position: "top-right",
+          //   autoClose: 5000,
+          //   hideProgressBar: true,
+          //   closeOnClick: true,
+          //   pauseOnHover: true,
+          //   draggable: true,
+          //   progress: undefined,
+          // });
           setNotification(res?.message);
         } else {
           console.log(res?.message);
@@ -71,15 +72,15 @@ const Access = () => {
           submitBtn.disabled = false;
           submitBtn.innerHTML = 'Request Contact';
 
-          toast.error('Error! Email Not Sent', {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: true,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
+          // toast.error('Error! Email Not Sent', {
+          //   position: "top-right",
+          //   autoClose: 5000,
+          //   hideProgressBar: true,
+          //   closeOnClick: true,
+          //   pauseOnHover: true,
+          //   draggable: true,
+          //   progress: undefined,
+          // });
         }
       });
   };

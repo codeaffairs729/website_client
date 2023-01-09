@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import Link from 'next/link'
 import '../styles/service.css'
+import '../styles/tech-component.css'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
