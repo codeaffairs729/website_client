@@ -1,7 +1,5 @@
 import React from 'react'
-import ServiceForm from '../components/service'
-import CompanyDescription from '../components/company-description'
-
+import ServiceForm from '../../components/service';
 const techTitle='Mobile Solutions'
 const techImage="icons/service-icon/mobile-front-color.png"
 

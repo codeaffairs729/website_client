@@ -1,0 +1,366 @@
+/* utility class */
+.hire-h1 {
+  margin-top: 24px;
+  margin-bottom: 10px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 80px;
+  letter-spacing: -0.025em;
+  color: #292930;
+}
+
+.hire-h2 {
+  margin-top: 24px;
+  margin-bottom: 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 36px;
+  color: #333333;
+}
+
+.hire-h3 {
+  margin-top: 24px;
+  margin-bottom: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  color: #333333;
+}
+
+.hire-team-h3 {
+  margin-top: 24px;
+  margin-bottom: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  color: #333333;
+}
+
+.hire-team-header {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -0.025em;
+  color: #292930;
+  margin-bottom: 40px;
+}
+.hire-header {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -0.025em;
+  color: #292930;
+  margin-bottom: 30px;
+}
+.hire-p,
+li {
+  margin-bottom: 24px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.04em;
+  color: #292930;
+}
+
+.hire-container {
+  height: auto;
+  margin-inline: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 50px;
+}
+
+.hire-container-body {
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin-top: 200px;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+.hire-container-body-left {
+  flex-basis: 55%;
+  padding-left: 20px;
+}
+.hire-container-body-right {
+  max-width: 400px;
+}
+
+.hiring-models {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+.hiring-model {
+  width: 35%;
+}
+.hiring-model:nth-child(2){
+  border-left: 0.5px dotted slategrey;
+  padding-left: 15px;
+}
+
+.hiring-model:nth-child(3){
+  border-left: 0.5px dotted slategrey;
+  padding-left: 15px;  
+}
+
+.hire-free-banner {
+  min-height: 86px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: #fab8c4;
+  gap: 20px;
+  flex-basis: calc(25%-10px);
+}
+
+.hire-logo {
+  padding-block: 10px;
+  height: 46px;
+}
+
+/* .hire-container-body-left ul li::after {
+  content: "*";
+  width: 4px;
+  height: 0px;
+  display: block;
+ 
+  position: relative;
+  top: -33px;
+  left: -20px;
+} */
+p {
+  font-size: 18px;
+}
+
+.hire-container-body-content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  /* flex-wrap: wrap; */
+}
+
+.hire-container-body-left-content {
+  flex-basis: 60%;
+}
+
+.hire-container-body-right-content {
+  border-left: 1px dotted gray;
+  flex-basis: 35%;
+  padding-left: 10px;
+}
+
+.hire-container-body-right-content {
+  font-weight: bold;
+}
+.domain-list li {
+  padding-left: 35px;
+  padding-block: 10px;
+  font-size: 20px;
+}
+
+.body-list {
+  list-style-type: disc;
+  padding-left: 15px;
+  padding-block: 10px;
+}
+
+.hire-container-body-right {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.tick {
+  font-size: 30px;
+  color: darkgoldenrod;
+  padding-inline: 5px;
+}
+
+.hire-container-body-right {
+  border: 0.5px solid lightgray;
+  border-radius: 32px;
+  padding: 20px;
+}
+
+.small-text {
+  font-size: 14px;
+}
+@media screen and (max-width: 1024px) {
+  .hire-header {
+    font-size: 36px;
+  }
+  .hire-h2 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 991px) {
+
+  .hiring-model:nth-child(2){
+    border-left: none;
+    padding-left: 0px;
+  }
+  
+  .hiring-model:nth-child(3){
+    border-left: none;
+    padding-left: 0px;  
+  }
+
+  .hire-team-header {
+    font-size: 32px;
+    margin-bottom: 0px;
+  }
+  .hire-h2 {
+    font-size: 24px;
+  }
+  .hire-header {
+    font-size: 32px;
+  }
+  .hire-h3 {
+    font-size: 24px;
+  }
+  .hire-team-h3 {
+    font-size: 20px;
+  }
+  .hiring-models {
+    flex-direction: column;
+  }
+  .hiring-model {
+    width: 100%;
+  }
+
+  .hire-container {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 35px;
+  }
+
+  .hire-container-body-right-content {
+    border-left: none;
+  }
+  .hire-header {
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0px;
+  }
+  .hire-container-body {
+    flex-direction: column;
+  }
+
+  .hire-container-body-left {
+    width: 100%;
+  }
+
+  .hire-container-body-right {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hire-container-body-content {
+    flex-direction: column-reverse;
+  }
+
+  .hire-container-body-left-content {
+    width: 100%;
+    margin-top: -45px;
+  }
+
+  .hire-container-body {
+    margin-top: 110px;
+  }
+
+  .hire-container-body {
+    gap: 10px;
+  }
+
+  .hiring-models {
+    gap: 0px;
+  }
+
+  .hire-team-h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .hire-p,
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .hire-container-body-content {
+    margin-top: -25px;
+  }
+  .hire-team-header {
+    font-size: 28px;
+  }
+  .hire-header {
+    font-size: 28px;
+  }
+  .hire-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+  }
+  .hire-container-body-right {
+    width: 300px;
+  }
+
+  .domain-list li {
+    padding-left: 0px;
+  }
+  .hire-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hire-container-body-right-content {
+    border: none;
+  }
+
+  .hire-container-body-right {
+    border: none;
+  }
+  .hire-container-body {
+    gap: 0px;
+  }
+  .hire-p,
+  li {
+    font-size: 14px;
+    word-wrap: break-word;
+    /* text-align: start; */
+    /* display: flex;
+      justify-content: flex-start;
+      list-style-type: disc; */
+  }
+  .hire-container-body-left {
+    padding-left: 15px;
+    padding-top: 0px;
+  }
+
+  .hire-container-body-right {
+    padding: 0px;
+  }
+}
+
+
+/* hire team page */
+
+
+
+
+

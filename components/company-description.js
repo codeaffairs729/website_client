@@ -6,6 +6,7 @@ const CompanyDescription = () => {
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
     const [query, setQuery] = useState('');
+    const [buttonText,setButtonText]=useState('Send Now');
 
 
     const formFields = [
@@ -79,7 +80,7 @@ const CompanyDescription = () => {
         console.log(name,email,phone);
     }
     return (
-        <Form fields={formFields} title="Get Free Quote Now" submitFunc={submitFunc} />
+        <Form fields={formFields} title="Get Free Quote Now" buttonText={buttonText} submitFunc={submitFunc} />
     )
 }
 

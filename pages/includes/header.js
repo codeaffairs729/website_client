@@ -112,30 +112,32 @@ const Header = () => {
                         <span></span>
                     </button>
                     <Link href="./">
-                        <a className="header__logo" >
+                        <div style={{cursor:'pointer'}} className="header__logo" >
                             <img className="header__pic" src="logo/cgt_new_logo_alt.png" alt="" />
-                        </a>
+                        </div>
                     </Link>
                     <div className={sideBarHandler ? "header__wrap js-header-wrap visible" : "header__wrap js-header-wrap"}>
                         <nav className="header__nav">
                             <Link href="./">
-                                <a className="header__item">Home</a>
+                                <div style={{cursor:'pointer'}}className="header__item nav-css">Home</div>
                             </Link>
                             <div className={`header__item ${serviceMenu ? "service-menu-header-item" : ""}`}>
-                                <a className={`header__head ${serviceMenu ? "service-menu-head" : ""}`} href="#" onClick={toggleSidebarInternalMenu}>
+                                <Link href="#">
+                                <div style={{cursor:'pointer'}} className={`header__head ${serviceMenu ? "service-menu-head nav-css" : ""}`}  onClick={toggleSidebarInternalMenu}>
                                     Services
                                     <svg className="icon icon-arrow-down">
                                         <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                                     </svg>
-                                </a>
+                                </div>
+                                </Link>
                                 <div className={`header__body ${serviceMenu ? "service-menu text-start" : ""}`}>
                                     <div className="header__center center header-dropdown-body">
                                         <div className="header__row row">
                                             <div className="col-lg-4 col-md-4 col-sm-4" >
                                                 <div className={`header__category ${serviceMenu ? "service-menu-header-item" : ""}`} >
-                                                    <Link href='/web-services'>
+                                                    {/* <Link href='/services/web-services'> */}
                                                     Web Solutions
-                                                    </Link>
+                                                    {/* </Link> */}
                                                 </div>
                                                 <div className="row" >
                                                     <div className="col-lg-12 header-solutions-outer" >
@@ -335,9 +337,9 @@ const Header = () => {
                                             </div>
                                             <div className="col-lg-4 col-md-4 col-sm-4" >
                                                 <div className={`header__category ${serviceMenu ? "service-menu-header-item service-menu-header-category" : ""}`} >
-                                                <Link href='/mobile-solutions'>
+                                                {/* <Link href='/services/mobile-solutions'> */}
                                                     Mobile Solutions
-                                                    </Link>
+                                                    {/* </Link> */}
                                                 </div>
                                                 <div className="row" >
                                                     <div className="col-lg-12 header-solutions-outer" >
@@ -672,9 +674,15 @@ const Header = () => {
                                     </div>
                                 </div>
                             </div>
-                            <a className="header__item" href="./#portfolio">Portfolio</a>
-                            <a className={careerLink ? "header__item header-item" : "header__item"} href="./careers" >Careers</a>
-                            <a className={aboutUsLink ? "header__item header-item" : "header__item"} href="./aboutUs">About Us</a>
+                            <Link href="./#portfolio">
+                            <div style={{cursor:'pointer'}}className="header__item nav-css" >Portfolio</div>
+                            </Link>
+                            <Link href="./careers" >
+                            <div style={{cursor:'pointer'}} className={careerLink ? "header__item header-item" : "header__item nav-css"} >Careers</div>
+                            </Link>
+                            <Link href="./aboutUs" >
+                            <div style={{cursor:'pointer'}} className={aboutUsLink ? "header__item header-item" : "header__item nav-css"} >About Us</div>
+                            </Link>
                         </nav>
                         <div className="header__photo">
                             <img className="header__pic" src="img/menu-pic.png" alt="" />

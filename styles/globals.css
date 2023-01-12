@@ -1266,11 +1266,8 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .work-text-right-btn {
-  /* background-color: #5552EA;
-  color: white; */
   border-radius: 10px;
   text-align: center;
-  /* padding: 5px; */
   height: 40px;
   font-weight: 500;
   background-color: #FAB8C4;
