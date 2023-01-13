@@ -106,14 +106,14 @@ li {
 .hiring-model {
   width: 35%;
 }
-.hiring-model:nth-child(2){
+.hiring-model:nth-child(2) {
   border-left: 0.5px dotted slategrey;
   padding-left: 15px;
 }
 
-.hiring-model:nth-child(3){
+.hiring-model:nth-child(3) {
   border-left: 0.5px dotted slategrey;
-  padding-left: 15px;  
+  padding-left: 15px;
 }
 
 .hire-free-banner {
@@ -125,6 +125,8 @@ li {
   background: #fab8c4;
   gap: 20px;
   flex-basis: calc(25%-10px);
+  position: relative;
+  overflow: hidden;
 }
 
 .hire-logo {
@@ -132,6 +134,19 @@ li {
   height: 46px;
 }
 
+.top-rated {
+  font-weight: 800;
+  font-size: 14px;
+  max-height: 40px;
+  width: 147px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 23px;
+  left: -18px;
+  transform: rotate(-46deg);
+}
 /* .hire-container-body-left ul li::after {
   content: "*";
   width: 4px;
@@ -209,15 +224,14 @@ p {
   }
 }
 @media screen and (max-width: 991px) {
-
-  .hiring-model:nth-child(2){
+  .hiring-model:nth-child(2) {
     border-left: none;
     padding-left: 0px;
   }
-  
-  .hiring-model:nth-child(3){
+
+  .hiring-model:nth-child(3) {
     border-left: none;
-    padding-left: 0px;  
+    padding-left: 0px;
   }
 
   .hire-team-header {
@@ -357,10 +371,4 @@ p {
   }
 }
 
-
 /* hire team page */
-
-
-
-
-

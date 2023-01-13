@@ -4,6 +4,7 @@ import Slider from "react-slick";
 const techTitle = "Hire a Team ";
 const techImage = "../../public/icons/hire-icon/Frame.png";
 import HireForm from "../components/hire";
+import Head from 'next/head'
 
 
 
@@ -235,6 +236,7 @@ const content5 = () => (
 
 const bannerComponent = () => (
   <div className="hire-container hire-free-banner">
+    <div className="top-rated shadow p-3 mb-5 bg-warning rounded text-dark">Top rated</div>
     <img className="hire-logo" src="icons/hire/good-firms-logo.png" />
     <img
       className="hire-logo"

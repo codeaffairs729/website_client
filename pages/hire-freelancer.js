@@ -1,6 +1,8 @@
 import React from "react";
 import { RxCheck } from "react-icons/rx";
 import Slider from "react-slick";
+import Head from 'next/head'
+
 
 const techTitle =
   "Hire Certified and Professional Software Developers or DevOps Engineers";
@@ -319,8 +321,6 @@ const content3 = () => (
   </>
 );
 
-
-
 var settings = {
   dots: false,
   infinite: true,
@@ -375,13 +375,14 @@ var settings = {
 
 const bannerComponent = () => (
   <Slider {...settings}>
-      {bannerImage.map((e,i) => (
-        <div className="nav-logo-slider" key={i}>
-          <img src={e.path} alt="" />
-          <p className="small-text">{e.name}</p>
-        </div>
-      ))}
-      </Slider>)
+    {bannerImage.map((e, i) => (
+      <div className="nav-logo-slider" key={i}>
+        <img src={e.path} alt="" />
+        <p className="small-text">{e.name}</p>
+      </div>
+    ))}
+  </Slider>
+);
 
 const content4 = () => <div></div>;
 const content5 = () => <div></div>;

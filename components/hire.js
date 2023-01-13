@@ -23,8 +23,8 @@ const HireForm = ({
       <div className="hire-container">
         <div className="hire-container-body">
           {contentHeader()}
-          <div className="hire-container-body-right">
-            <ScheduleForm title={"Schedule Meeting"}/>
+          <div className="hire-container-body-right ">
+            <ScheduleForm title={"Schedule Meeting"} />
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@ const HireForm = ({
 
         {content3()}
       </div>
-     
+
       <Footer />
     </>
   );
