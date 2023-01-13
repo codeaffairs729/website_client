@@ -178,9 +178,9 @@ const ScheduleForm = ({ title }) => {
       render: () => {
         return (
           <input
-            type="email*"
+            type="email"
             className="form-container-input-field"
-            placeholder="Your email"
+            placeholder="Your email*"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required

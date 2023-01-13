@@ -375,8 +375,8 @@ var settings = {
 
 const bannerComponent = () => (
   <Slider {...settings}>
-      {bannerImage.map((e) => (
-        <div className="nav-logo-slider">
+      {bannerImage.map((e,i) => (
+        <div className="nav-logo-slider" key={i}>
           <img src={e.path} alt="" />
           <p className="small-text">{e.name}</p>
         </div>
