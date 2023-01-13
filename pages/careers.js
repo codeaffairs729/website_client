@@ -29,14 +29,12 @@ const Careers = () => {
     const submitBtn = useRef(null);
 
     const [genModalshow, setGenModalshow] = useState(false);
-    const handleModalShow = () => {
+        const handleModalShow = () => {
         setGenModalshow(true);
     }
-
     const handleModalClose = () => {
         setGenModalshow(false);
     }
-
     const uploadToClient = async (event) => {
         if (event.target.files && event.target.files[0]) {
             const file = event.target.files[0];

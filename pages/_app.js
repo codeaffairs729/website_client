@@ -10,6 +10,7 @@ import Link from 'next/link'
 import '../styles/service.css'
 import '../styles/tech-component.css'
 import '../styles/hire.css'
+import '../styles/assisstanceModel.css'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

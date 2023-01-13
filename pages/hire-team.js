@@ -4,9 +4,7 @@ import Slider from "react-slick";
 const techTitle = "Hire a Team ";
 const techImage = "../../public/icons/hire-icon/Frame.png";
 import HireForm from "../components/hire";
-import Head from 'next/head'
-
-
+import Head from "next/head";
 
 const contentHeader = () => {
   return (
@@ -17,11 +15,13 @@ const contentHeader = () => {
         <p className="hire-p">
           Code Garage Tech has helped numerous businesses envision and also
           implement successful projects in various development frameworks and
-          languages since 2015. <br/><br/>We have strong links to the local talent pool,
-          and we have highly skilled developers who are eager to add value to
-          your organization. Our developers are fully flexible and can meet any
-          requirements, including long-term projects to provide vital support
-          during the whole process.
+          languages since 2015. <br />
+          <br />
+          We have strong links to the local talent pool, and we have highly
+          skilled developers who are eager to add value to your organization.
+          Our developers are fully flexible and can meet any requirements,
+          including long-term projects to provide vital support during the whole
+          process.
         </p>
       </div>
     </>
@@ -236,7 +236,9 @@ const content5 = () => (
 
 const bannerComponent = () => (
   <div className="hire-container hire-free-banner">
-    <div className="top-rated shadow p-3 mb-5 bg-warning rounded text-dark">Top rated</div>
+    <div className="top-rated shadow bg-warning rounded text-dark">
+      Top rated on
+    </div>
     <img className="hire-logo" src="icons/hire/good-firms-logo.png" />
     <img
       className="hire-logo"
@@ -247,24 +249,36 @@ const bannerComponent = () => (
   </div>
 );
 
-
 const content1 = () => <div></div>;
 const content2 = () => <div></div>;
 const content3 = () => <div></div>;
 const HireTeam = () => {
   return (
-    <HireForm
-      content1={content1}
-      content2={content2}
-      content3={content3}
-      content4={content4}
-      content5={content5}
-      techTitle={techTitle}
-      techImage={techImage}
-      // bannerImage={bannerImage}
-      bannerComponent={bannerComponent}
-      contentHeader={contentHeader}
-    />
+    <>
+      <Head>
+        <title>
+          Hire a team of Adept Software Developers - Code Garage Tech
+        </title>
+        <meta
+          name="description"
+          content="Hire a team of adept and dedicated software developers from Code Garage Tech. We use a result-driven and innovative approach to help your business grow. 
+"
+        />
+      </Head>
+      <HireForm
+        content1={content1}
+        content2={content2}
+        content3={content3}
+        content4={content4}
+        content5={content5}
+        techTitle={techTitle}
+        techImage={techImage}
+        // bannerImage={bannerImage}
+        bannerComponent={bannerComponent}
+        contentHeader={contentHeader}
+        requestOrigin={'Requested from Hire a team page'}
+      />
+    </>
   );
 };
 

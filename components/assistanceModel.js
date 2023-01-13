@@ -1,13 +1,13 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef } from 'react'
 import "bootstrap/dist/css/bootstrap.css";
-import Form from "./genForm";
+import ScheduleMeetingForm from "./scheduleMeetingForm";
 import "react-datetime/css/react-datetime.css";
 import Datetime from "react-datetime";
 import { BsCalendar2Date } from "react-icons/bs";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { ToastContainer, toast } from "react-toastify";
 
-const ScheduleForm = ({ title, requestOrigin }) => {
+const AssistanceForm = ({ title,requestOrigin }) => {
   const image = useRef(null);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -70,8 +70,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
       return;
     }
     submitBtn.disabled = true;
-    submitBtn.innerHTML =
-      '<span class="spinner-border spinner-border-sm"></span> Loading...';
+    submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> Loading...';
     fetch("/api/scheduleMeeting", {
       method: "POST",
       headers: {
@@ -88,7 +87,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
         resumeType: resumeType,
         resumeBase64: resumeBase64,
         gRecaptchaToken: gReCaptchaToken,
-        requestOrigin: requestOrigin,
+        requestOrigin:requestOrigin
       }),
     })
       .then((res) => res.json())
@@ -100,9 +99,10 @@ const ScheduleForm = ({ title, requestOrigin }) => {
           setPhone("");
           setQuery("");
           setDate("");
-          submitBtn.innerHTML = "SEND NOW";
+          submitBtn.innerHTML='SEND NOW'
+          
           submitBtn.disabled = false;
-          submitBtn.innerHTML = "Send Now";
+          submitBtn.innerHTML = 'Send Now';
 
           toast.success("Success! Email Sent Successful", {
             position: "top-right",
@@ -115,7 +115,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
           });
         } else {
           submitBtn.disabled = false;
-          submitBtn.innerHTML = "Send Now";
+          submitBtn.innerHTML = 'Send Now';
 
           toast.error("Error! Email Not Sent", {
             position: "top-right",
@@ -153,7 +153,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
         return (
           <input
             type="text"
-            className="form-container-input-field"
+            className="assist-form-container-input-field"
             placeholder="Name*"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -184,7 +184,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
         return (
           <input
             type="email"
-            className="form-container-input-field"
+            className="assist-form-container-input-field"
             placeholder="Your email*"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -215,7 +215,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
         return (
           <input
             type="tel"
-            className="form-container-input-field"
+            className="assist-form-container-input-field"
             placeholder="Your phone*"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
@@ -229,9 +229,9 @@ const ScheduleForm = ({ title, requestOrigin }) => {
 
       render: () => {
         return (
-          <div className="date-time">
+          <div className="assist-date-time">
             <Datetime
-              className="date-value"
+              className="assist-date-value"
               initialValue={"Select a date and time*"}
               selected={date}
               onChange={(date) => setDate(date)}
@@ -244,7 +244,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
     {
       icon: (
         <svg
-          className="text-area-icon"
+          className="assist-text-area-icon"
           width="18"
           height="19"
           viewBox="0 0 18 19"
@@ -264,7 +264,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
       render: () => {
         return (
           <textarea
-            type="form-text-area"
+            type="assist-form-text-area"
             className=""
             placeholder="Write your query.."
             value={query}
@@ -321,7 +321,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
               image = selectImage;
             }}
             onChange={uploadToClient}
-            className="d-none"
+            className="attachment d-none"
             name="resume"
             id="resume"
             type="file"
@@ -338,12 +338,10 @@ const ScheduleForm = ({ title, requestOrigin }) => {
     console.log(name, email, phone, date, query);
   };
 
-  const submitButton = () => (
+  const submitButton = () =>(
     <button
-      ref={(submitBtnRef) => {
-        submitBtn = submitBtnRef;
-      }}
-      className="form-container-input-btn"
+    ref={(submitBtnRef) => { submitBtn = submitBtnRef }}
+      className="assist-form-container-input-btn"
       type="submit"
       onClick={handleSubmit}
     >
@@ -351,7 +349,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
     </button>
   );
   return (
-    <Form
+    <ScheduleMeetingForm
       fields={formFields}
       title={title}
       buttonText={buttonText}
@@ -361,4 +359,4 @@ const ScheduleForm = ({ title, requestOrigin }) => {
   );
 };
 
-export default ScheduleForm;
+export default AssistanceForm;

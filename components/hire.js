@@ -15,6 +15,7 @@ const HireForm = ({
   bannerImage,
   techTitle,
   techImage,
+  requestOrigin,
 }) => {
   return (
     <>
@@ -24,7 +25,7 @@ const HireForm = ({
         <div className="hire-container-body">
           {contentHeader()}
           <div className="hire-container-body-right ">
-            <ScheduleForm title={"Schedule Meeting"} />
+            <ScheduleForm title={"Schedule a Meeting"} requestOrigin={requestOrigin} />
           </div>
         </div>
       </div>

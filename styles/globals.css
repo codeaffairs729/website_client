@@ -1273,6 +1273,7 @@ body:not(.touch-device) .header-item[href]:before {
   background-color: #FAB8C4;
   border-color: #FAB8C4;
   color: #2522BA;
+  transition: all 0.025s;
 }
 
 .work-text-right-btn:hover {

@@ -1,6 +1,6 @@
-import React, {useState}from 'react'
+import React, {useState,useRef}from 'react'
 
-const GenForm = ({ fields, title, submitFunc ,buttonText}) => {
+const GenForm = ({ fields, title, submitFunc ,buttonText,submitButton}) => {
     // const [name,setName]=useState('');
     // const [email,setEmail]=useState('');es
     // const [phone,setPhone]=useState('');
@@ -20,11 +20,7 @@ const GenForm = ({ fields, title, submitFunc ,buttonText}) => {
                         )
                     }
                     </div>
-                        <button 
-                            className="form-container-input-btn"
-                            type="submit"
-                            onClick={submitFunc}
-                            >{buttonText}</button>
+                        {submitButton()}
                 </div>
 
             </div>

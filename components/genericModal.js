@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ScheduleForm from "./schedule";
 
 const GenericModal = (props) => {
   const { genModalshow, modalHeaderShow, modalBodyShow, modalFooterShow, modalTitle, modalBody } = props

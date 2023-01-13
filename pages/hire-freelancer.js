@@ -51,31 +51,25 @@ const contentHeader = () => {
             <span className="tick">
               <RxCheck />
             </span>
-            Developing software and using open source codebases
+            Adept in creating a MVP/Prototype in initial phase so that you can have a demo of your products or services before launch and made changes accordingly 
           </li>
           <li>
             <span className="tick">
               <RxCheck />
             </span>
-            Following security and compliance protocols
+            Build scalable and robust desktop, mobile and web applications
           </li>
           <li>
             <span className="tick">
               <RxCheck />
             </span>
-            Applying hands-on knowledge of testing automation
+            Full cycle managed DevOps
           </li>
           <li>
             <span className="tick">
               <RxCheck />
             </span>
-            Conducting agile project planning and management
-          </li>
-          <li>
-            <span className="tick">
-              <RxCheck />
-            </span>
-            Developing expert competencies in systems analysis
+            Use Hassle-free time tracking software with transparent billing
           </li>
         </ul>
       </div>
@@ -284,12 +278,6 @@ const content3 = () => (
           <span className="tick">
             <RxCheck />
           </span>
-          Node.js
-        </li>
-        <li>
-          <span className="tick">
-            <RxCheck />
-          </span>
           Ruby on Rails
         </li>
         <li>
@@ -388,6 +376,17 @@ const content4 = () => <div></div>;
 const content5 = () => <div></div>;
 const HireFreelancer = () => {
   return (
+    <>
+     <Head>
+        <title>
+        Hire a freelancer software developer - Code Garage Tech
+        </title>
+        <meta
+          name="description"
+          content="Hire a professional and experienced freelancer software developer from Code Garage Tech to take your business to the new heights of success in this digital era!
+"
+        />
+      </Head>
     <HireForm
       content1={content1}
       content2={content2}
@@ -398,7 +397,10 @@ const HireFreelancer = () => {
       techTitle={techTitle}
       techImage={techImage}
       contentHeader={contentHeader}
+      requestOrigin={'Requested from Hire a freelancer page'}
+
     />
+    </>
   );
 };
 

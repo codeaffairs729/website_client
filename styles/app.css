@@ -10921,7 +10921,7 @@ top: 7641px; */
   padding-inline: 10px;
 }
 .freelancer-main__btn:nth-child(1){
-  background: #5956e9;
+  background: #93CAAF;
   padding-inline: 28px;
 
 }
@@ -10953,4 +10953,15 @@ border-bottom: 3px solid blue;
   -webkit-transition: color 0.25s;
   -o-transition: color 0.25s;
   transition: color 0.25s;
+}
+
+@media screen and (max-width:479px){
+  .freelancer-main__btn{
+    font: size 12px;
+  }
+}
+
+.schedule-form{
+  z-index: 999;
+
 }
