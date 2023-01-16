@@ -54,20 +54,20 @@ const Details = () => {
                     </div>
                     <div className="details__graphic">
                         <div className="details__mobile">
-                            <img className="details__pic" src="img/mobile.svg" alt="" />
+                            <img className="details__pic" src="img/mobile.webp" alt="" />
                             <div className="details__box">
                                 <div className="details__chart" data-aos data-aos-offset="0" data-aos-delay="300" data-aos-duration="1000">
-                                    <img className="details__pic" src="img/chart.svg" alt="" />
+                                    <img className="details__pic" src="img/chart.webp" alt="" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="details__hand">
-                    <img className="details__pic js-parallax" data-scale="1.2" data-orientation="up" src="img/hand-5.png" alt="" />
+                    <img className="details__pic js-parallax" data-scale="1.2" data-orientation="up" src="img/hand-5.webp" alt="" />
                 </div>
                 <div className="details__line">
-                    <img className="details__pic" src="img/line-2.svg" alt="" />
+                    <img className="details__pic" src="img/line-2.webp" alt="" />
                 </div>
                 <div className="details__circles">
                     <div className="details__circle"></div>

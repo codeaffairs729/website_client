@@ -3,31 +3,25 @@ import Slider from "react-slick";
 const Banner = () => {
   const bannerImage = [
     {
-      path: "../public/images/video-chat-a-pro.png",
+      path: "/images/video-chat-a-pro.webp",
     },
     {
-      path: "../public/images/welcomeAi.png",
+      path: "/images/desmania-design.webp",
     },
     {
-      path: "../public/images/",
+      path: "/images/video-chat-a-pro.webp",
     },
     {
-      path: "images/desmania-design.png",
+      path: "/images/vaayu.webp",
     },
     {
-      path: "images/video-chat-a-pro.png",
+      path: "/images/domino-data-lab.webp",
     },
     {
-      path: "images/vaayu.png",
+      path: "/images/ucview_2.webp",
     },
     {
-      path: "images/domino-data-lab.png",
-    },
-    {
-      path: "images/ucview_2.png",
-    },
-    {
-      path: "images/golden-circle-app.png",
+      path: "/images/golden-circle-app.webp",
     },
   ];
 
@@ -92,7 +86,6 @@ const Banner = () => {
         </picture>
       ))}
 
-      <img src="../public/icons/service-icon/Frame.png" />
     </Slider>
   );
 };

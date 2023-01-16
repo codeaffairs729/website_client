@@ -77,7 +77,7 @@ const Features = () => {
                                     <div className="features__slide" data-aos="animation-scale-y">
                                         <div className="features__details">
                                             <div className="features__preview">
-                                                <img className="features__pic" src="img/camera.png" alt="" />
+                                                <img className="features__pic" src="img/camera.webp" alt="" />
                                             </div>
                                             <div className="features__category">World Class Design Team</div>
                                             <div className="features__text">
@@ -91,7 +91,7 @@ const Features = () => {
                                     <div className="features__slide" data-aos="animation-scale-y" data-aos-delay="200">
                                         <div className="features__details">
                                             <div className="features__preview">
-                                                <img className="features__pic" src="img/calendar.png" alt="" />
+                                                <img className="features__pic" src="img/calendar.webp" alt="" />
                                             </div>
                                             <div className="features__category">Enterprise Grade Build</div>
                                             <div className="features__text">
@@ -105,7 +105,7 @@ const Features = () => {
                                     <div className="features__slide" data-aos="animation-scale-y">
                                         <div className="features__details">
                                             <div className="features__preview">
-                                                <img className="features__pic" src="images/computer-front-color.png" alt="" />
+                                                <img className="features__pic" src="images/computer-front-color.webp" alt="" />
                                             </div>
                                             <div className="features__category">Web App Development</div>
                                             <div className="features__text">
@@ -143,7 +143,7 @@ const Features = () => {
                                     <div className="features__slide" data-aos="animation-scale-y" data-aos-delay="200">
                                         <div className="features__details">
                                             <div className="features__preview">
-                                                <img className="features__pic" src="images/mobile-front-color.png" alt="" />
+                                                <img className="features__pic" src="images/mobile-front-color.webp" alt="" />
                                             </div>
                                             <div className="features__category">Mobile App Development</div>
                                             <div className="features__text">
@@ -158,7 +158,7 @@ const Features = () => {
                                     <div className="features__slide">
                                         <div className="features__details">
                                             <div className="features__preview">
-                                                <img className="features__pic" src="images/bag-front-color.png" alt=""/>
+                                                <img className="features__pic" src="images/bag-front-color.webp" alt=""/>
                                             </div>
                                             <div className="features__category">E - commerce</div>
                                             <div className="features__text">
@@ -175,7 +175,7 @@ const Features = () => {
                                     <div className="features__slide">
                                         <div className="features__details">
                                             <div className="features__preview">
-                                                <img className="features__pic" src="images/blockchain.png" alt="" />
+                                                <img className="features__pic" src="images/blockchain.webp" alt="" />
                                             </div>
                                             <div className="features__category">BlockChain/Cryptocurrency</div>
                                             <div className="features__text">
@@ -210,7 +210,7 @@ const Features = () => {
                                     <div className="features__slide">
                                         <div className="features__details">
                                             <div className="features__preview">
-                                                <img className="features__pic" src="images/crm.png" alt="" />
+                                                <img className="features__pic" src="images/crm.webp" alt="" />
                                             </div>
                                             <div className="features__category">CRM/CMS/ERP Systems</div>
                                             <div className="features__text">
@@ -239,7 +239,7 @@ const Features = () => {
                                     <div className="features__slide">
                                         <div className="features__details">
                                             <div className="features__preview">
-                                                <img className="features__pic" src="images/digitalMarketing.png" alt="" />
+                                                <img className="features__pic" src="images/digitalMarketing.webp" alt="" />
                                             </div>
                                             <div className="features__category">Digital Marketing</div>
                                             <div className="features__text">
@@ -268,7 +268,7 @@ const Features = () => {
                                     <div className="features__slide">
                                         <div className="features__details">
                                             <div className="features__preview">
-                                                <img className="features__pic" src="images/smart_gadgets.png" alt="" />
+                                                <img className="features__pic" src="images/smart_gadgets.webp" alt="" />
                                             </div>
                                             <div className="features__category">Smart Gadget Apps</div>
                                             <div className="features__text">
@@ -296,7 +296,7 @@ const Features = () => {
                 </div>
                 <div className="features__circle js-rellax" data-rellax-speed="-.7"></div>
                 <div className="features__bg" data-aos data-aos-duration="1000">
-                    <img className="features__pic" src="img/features-pic-1.svg" alt="" />
+                    <img className="features__pic" src="img/features-pic-1.webp" alt="" />
                 </div>
             </div>
         </>

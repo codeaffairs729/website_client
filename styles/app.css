@@ -4322,7 +4322,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 }
 
 .plan__item:first-child .plan__list li:before {
-  background-image: url("/img/list-icon-1.svg");
+  background-image: url("/img/list-icon-1.webp");
 }
 
 .plan__item:nth-child(2) {
@@ -4420,7 +4420,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   left: 0;
   width: 24px;
   height: 24px;
-  background: url("/img/list-icon-2.svg") no-repeat 0 0/100% auto;
+  background: url("/img/list-icon-2.webp") no-repeat 0 0/100% auto;
 }
 
 .plan__list li:not(:last-child) {
@@ -6621,7 +6621,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   left: 0;
   width: 24px;
   height: 24px;
-  background: url("/img/list-icon-2.svg") no-repeat 50% 50%/100% auto;
+  background: url("/img/list-icon-2.webp") no-repeat 50% 50%/100% auto;
 }
 
 .accord__desc li:not(:last-child) {
@@ -7069,7 +7069,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   overflow: hidden;
   padding: 72px;
   border-radius: 40px;
-  background: url("/img/bg-offer.png") no-repeat 50% 50% / cover;
+  background: url("/img/bg-offer.webp") no-repeat 50% 50% / cover;
   color: #fff;
 }
 
@@ -7903,7 +7903,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 }
 
 .mfp-bg {
-  background: url("/img/bg-popup.png") no-repeat 50% 20% / cover;
+  background: url("/img/bg-popup.webp") no-repeat 50% 20% / cover;
 }
 
 .mfp-zoom-in .popup {

@@ -188,7 +188,7 @@ const Like = () => {
               </div> */}
             </div>
             <div className="like__preview" data-aos>
-              <img className="like__pic" src="img/hand-1.png" alt="" />
+              <img className="like__pic" src="img/hand-1.webp" alt="" />
             </div>
             <div className="like__circle"></div>
             <div className="like__circles">

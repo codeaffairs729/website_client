@@ -96,11 +96,11 @@ const Header = () => {
                 <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
                 <meta name="format-detection" content="telephone=no" />
-                <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
-                <link rel="icon" type="image/png" sizes="32x32" href="/logo/cgt_new_favicon.png" />
-                <link rel="icon" type="image/png" sizes="16x16" href="/logo/cgt_new_favicon.png" />
+                <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.webp" />
+                <link rel="icon" type="image.webp" sizes="32x32" href="/logo/cgt_new_favicon.webp" />
+                <link rel="icon" type="image.webp" sizes="16x16" href="/logo/cgt_new_favicon.webp" />
                 <link rel="manifest" href="img/site.webmanifest" />
-                <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5" />
+                <link rel="mask-icon" href="img/safari-pinned-tab.webp" color="#5bbad5" />
                 <meta name="msapplication-TileColor" content="#da532c" />
                 <meta name="theme-color" content="#ffffff" />
                 {/* <meta name="description" content="Looking for reliable Custom Web Development Services in India? Code Garage Tech is here! We offer scalable, robust, and quality services. Contact us now!" /> */}
@@ -113,7 +113,7 @@ const Header = () => {
                     </button>
                     <Link href="./">
                         <div style={{cursor:'pointer'}} className="header__logo" >
-                            <img className="header__pic" src="logo/cgt_new_logo_alt.png" alt="" />
+                            <img className="header__pic" src="logo/cgt_new_logo_alt.webp" alt="" />
                         </div>
                     </Link>
                     <div className={sideBarHandler ? "header__wrap js-header-wrap visible" : "header__wrap js-header-wrap"}>
@@ -143,7 +143,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/ror1.png" alt="" />
+                                                                <img className="header-solutions-icon" src="images/ror1.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-10 ps-0 ms-0" >
                                                                 <div className="header__info">Ruby on Rails Development</div>
@@ -153,7 +153,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/react_3.png" alt="" />
+                                                                <img className="header-solutions-icon" src="images/react_3.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-10 ps-0 ms-0" >
                                                                 <div className="header__info">React / NextJs Development</div>
@@ -163,7 +163,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/vuejs.png" alt="" />
+                                                                <img className="header-solutions-icon" src="images/vuejs.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-10 ps-0 ms-0" >
                                                                 <div className="header__info">VueJs / NuxtJs Development</div>
@@ -173,7 +173,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/node_2.png" alt="" />
+                                                                <img className="header-solutions-icon" src="images/node_2.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-10 ps-0 ms-0" >
                                                                 <div className="header__info">NodeJs Development</div>
@@ -183,7 +183,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/laravel.png" alt="" />
+                                                                <img className="header-solutions-icon" src="images/laravel.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-10 ps-0 ms-0" >
                                                                 <div className="header__info">Laravel Development</div>
@@ -193,7 +193,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/shopify_icon.png" alt="" />
+                                                                <img className="header-solutions-icon" src="images/shopify_icon.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-10 ps-0 ms-0" >
                                                                 <div className="header__info">Shopify</div>
@@ -203,7 +203,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="icons/wordpress.png" alt="" />
+                                                                <img className="header-solutions-icon" src="icons/wordpress.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-10 ps-0 ms-0" >
                                                                 <div className="header__info">Wordpress</div>
@@ -214,7 +214,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/ror1.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/ror1.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Ruby on Rails Development</div>
@@ -224,7 +224,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/react_3.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/react_3.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">React / Next.js Development</div>
@@ -234,7 +234,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/vuejs.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/vuejs.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Vue.js / NuxtJs Development</div>
@@ -244,7 +244,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/node_2.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/node_2.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Node.js Development</div>
@@ -254,7 +254,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/laravel.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/laravel.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Laravel Development</div>
@@ -265,7 +265,7 @@ const Header = () => {
                                                     {/* <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/computer-front-color.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/computer-front-color.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Web App Development</div>
@@ -275,7 +275,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/mobile-front-color.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/mobile-front-color.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Mobile App Development</div>
@@ -285,7 +285,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/bag-front-color.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/bag-front-color.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">E - commerce</div>
@@ -295,7 +295,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/blockchain.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/blockchain.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">BlockChain/Cryptocurrency</div>
@@ -305,7 +305,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/crm.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/crm.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">CRM/CMS/ERP Systems</div>
@@ -315,7 +315,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/digitalMarketing.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/digitalMarketing.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Digital Marketing</div>
@@ -325,7 +325,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/smart_gadgets.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/smart_gadgets.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Smart Gadget Apps</div>
@@ -345,7 +345,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                                <img className="header-solutions-icon" src="images/android_2.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-10 ps-0 ms-0" >
                                                                 <div className="header__info">Android App Development</div>
@@ -355,7 +355,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/ios.png" alt="" />
+                                                                <img className="header-solutions-icon" src="images/ios.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-10 ps-0 ms-0" >
                                                                 <div className="header__info">IOS App Development</div>
@@ -365,7 +365,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/react_native.png" alt="" />
+                                                                <img className="header-solutions-icon" src="images/react_native.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-10 ps-0 ms-0" >
                                                                 <div className="header__info">React Native Development</div>
@@ -375,7 +375,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/flutter.png" alt="" />
+                                                                <img className="header-solutions-icon" src="images/flutter.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-10 ps-0 ms-0" >
                                                                 <div className="header__info">Flutter</div>
@@ -385,7 +385,7 @@ const Header = () => {
                                                     {/* <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="icons/ionic.png" alt="" />
+                                                                <img className="header-solutions-icon" src="icons/ionic.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 ps-0 ms-0" >
                                                                 <div className="header__info">Ionic</div>
@@ -396,7 +396,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/android_2.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Android App Development</div>
@@ -406,7 +406,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/ios.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/ios.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">IOS App Development</div>
@@ -416,7 +416,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/android_2.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">React Native Development</div>
@@ -426,7 +426,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/flutter.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/flutter.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Flutter</div>
@@ -436,7 +436,7 @@ const Header = () => {
                                                     {/* <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/javascript.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/javascript.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Javascript</div>
@@ -446,7 +446,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/tizen-512.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/tizen-512.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Tizen</div>
@@ -456,7 +456,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/php1.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/php1.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">PHP</div>
@@ -466,7 +466,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/python_2.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/python_2.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Python</div>
@@ -476,7 +476,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/FIGMA.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/FIGMA.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Figma</div>
@@ -486,7 +486,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/MongoDB.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/MongoDB.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">MongoDB</div>
@@ -496,7 +496,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/swift.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/swift.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Swift</div>
@@ -512,7 +512,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                                <img className="header-solutions-icon" src="images/android_2.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-10 ps-0 ms-0" >
                                                                 <div className="header__info">Automation</div>
@@ -522,7 +522,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/android_2.png" alt="" />
+                                                                <img className="header-solutions-icon" src="images/android_2.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-10 ps-0 ms-0" >
                                                                 <div className="header__info">CI/CD</div>
@@ -532,7 +532,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="img/cloud.png" alt="" />
+                                                                <img className="header-solutions-icon" src="img/cloud.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-10 ps-0 ms-0" >
                                                                 <div className="header__info">Cloud Engineering</div>
@@ -549,7 +549,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/content-management-system.png" alt="" />
+                                                                <img className="header-solutions-icon" src="images/content-management-system.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-10 ps-0 ms-0" >
                                                                 <div className="header__info">UI / UX</div>
@@ -559,7 +559,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/bag-front-color.png" alt="" />
+                                                                <img className="header-solutions-icon" src="images/bag-front-color.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-10 ps-0 ms-0" >
                                                                 <div className="header__info">E-commerce Solutions</div>
@@ -569,7 +569,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/notebook-iso-color.png" alt="" />
+                                                                <img className="header-solutions-icon" src="images/notebook-iso-color.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-10 ps-0 ms-0" >
                                                                 <div className="header__info">Content Management System</div>
@@ -579,7 +579,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/customer-relationship-management.png" alt="" />
+                                                                <img className="header-solutions-icon" src="images/customer-relationship-management.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-10 ps-0 ms-0" >
                                                                 <div className="header__info">Customer Relationship Management</div>
@@ -589,7 +589,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/digital-marketing.png" alt="" />
+                                                                <img className="header-solutions-icon" src="images/digital-marketing.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-10 ps-0 ms-0" >
                                                                 <div className="header__info">Digital Marketing (PPC, SEO, ORM)</div>
@@ -599,7 +599,7 @@ const Header = () => {
                                                     <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center" >
-                                                                <img className="header-solutions-icon" src="images/deployment-host-management.png" alt="" />
+                                                                <img className="header-solutions-icon" src="images/deployment-host-management.webp" alt="" />
                                                             </div>
                                                             <div className="col-xl-10 col-lg-11 col-md-10 col-sm-10 col-10 ps-0 ms-0" >
                                                                 <div className="header__info">Deployment and Host Management</div>
@@ -610,7 +610,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="img/clock.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="img/clock.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">UI / UX</div>
@@ -620,7 +620,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="images/bag-front-color.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="images/bag-front-color.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">E-commerce Solutions</div>
@@ -630,7 +630,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="img/clock.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="img/clock.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Content Management System</div>
@@ -640,7 +640,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="img/clock.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="img/clock.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Customer Relationship Management</div>
@@ -650,7 +650,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="img/clock.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="img/clock.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Internet Marketing</div>
@@ -660,7 +660,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="img/clock.png" alt="" />
+                                                                    <img className="header-solutions-icon" src="img/clock.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Deployment and Host Management</div>
@@ -685,22 +685,22 @@ const Header = () => {
                             </Link>
                         </nav>
                         <div className="header__photo">
-                            <img className="header__pic" src="img/menu-pic.png" alt="" />
+                            <img className="header__pic" src="img/menu-pic.webp" alt="" />
                         </div>
                     </div>
                     <div className="header__search js-header-search" >
                         {/* Social Media Icons */}
                         {/* <a className="header__open" href="https://www.facebook.com/CodeGarageTech" >
-                            <img className="icon icon-header-img" src="/images/fb35.png" alt="" />
+                            <img className="icon icon-header-img" src="/images/fb35.webp" alt="" />
                         </a>
                         <a className="header__open" href="https://twitter.com/CodeGarageTech" >
-                            <img className="icon icon-header-img" src="/images/tw35.png" alt="" />
+                            <img className="icon icon-header-img" src="/images/tw35.webp" alt="" />
                         </a>
                         <a className="header__open" href="https://www.linkedin.com/company/codegaragetech" >
-                            <img className="icon icon-header-img" src="/images/lin35.png" alt="" />
+                            <img className="icon icon-header-img" src="/images/lin35.webp" alt="" />
                         </a>
                         <a className="header__open" href="https://www.instagram.com/codegaragetech/" >
-                            <img className="icon icon-header-img" src="/images/instagram.png" alt="" />
+                            <img className="icon icon-header-img" src="/images/instagram.webp" alt="" />
                         </a> */}
                         {/* Social Media Icons */}
 

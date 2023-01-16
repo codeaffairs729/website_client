@@ -26,33 +26,33 @@ const Partners = () => {
           </div> */}
           <div className="partners__list">
             <div className="partners__item" data-aos>
-              <img className="partners__pic partners-pic" src="images/video-chat-a-pro.png" alt="" />
+              <img className="partners__pic partners-pic" src="images/video-chat-a-pro.webp" alt="" />
             </div>
             <div className="partners__item" data-aos data-aos-delay="450">
-              <img className="partners__pic partners-pic" src="images/welcomeAi_2.png" alt="" />
+              <img className="partners__pic partners-pic" src="images/welcomeAi_2.webp" alt="" />
             </div>
             <div className="partners__item" data-aos data-aos-delay="150">
-              <img className="partners__pic partners-pic" src="images/bzigo.png" alt="" />
+              <img className="partners__pic partners-pic" src="images/bzigo.webp" alt="" />
             </div>
             <div className="partners__item" data-aos>
-              <img className="partners__pic partners-pic" src="images/desmania-design.png" alt="" />
+              <img className="partners__pic partners-pic" src="images/desmania-design.webp" alt="" />
             </div>
             <div className="partners__item" data-aos data-aos-delay="450">
-              <img className="partners__pic partners-pic" src="images/vaayu.png" alt="" />
+              <img className="partners__pic partners-pic" src="images/vaayu.webp" alt="" />
             </div>
             <div className="partners__item" data-aos data-aos-delay="150">
-              <img className="partners__pic partners-pic" src="images/domino-data-lab.png" alt="" />
+              <img className="partners__pic partners-pic" src="images/domino-data-lab.webp" alt="" />
             </div>
             <div className="partners__item" data-aos data-aos-delay="300">
-              <img className="partners__pic partners-pic" src="images/ucview_2.png" alt="" />
+              <img className="partners__pic partners-pic" src="images/ucview_2.webp" alt="" />
             </div>
             <div className="partners__item" data-aos data-aos-delay="300">
-              <img className="partners__pic partners-pic" src="images/golden-circle-app.png" alt="" />
+              <img className="partners__pic partners-pic" src="images/golden-circle-app.webp" alt="" />
             </div>
           </div>
         </div>
         <div className="partners__preview" data-aos data-aos-duration="1000">
-          <img className="partners__pic" src="images/logos-circle.png" alt="" />
+          <img className="partners__pic" src="images/logos-circle.webp" alt="" />
         </div>
         {/* <div className="partners__circle js-rellax" data-rellax-speed=".6"></div> */}
       </div>

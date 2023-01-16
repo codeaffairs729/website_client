@@ -2,7 +2,7 @@ import React from "react";
 import { RxCheck } from "react-icons/rx";
 import Slider from "react-slick";
 const techTitle = "Hire a Team ";
-const techImage = "../../public/icons/hire-icon/Frame.png";
+const techImage = "../../public/icons/hire-icon/Frame.webp";
 import HireForm from "../components/hire";
 import Head from "next/head";
 
@@ -239,13 +239,13 @@ const bannerComponent = () => (
     <div className="top-rated shadow bg-warning rounded text-dark">
       Top rated on
     </div>
-    <img className="hire-logo" src="icons/hire/good-firms-logo.png" />
+    <img className="hire-logo" src="icons/hire/good-firms-logo.webp" />
     <img
       className="hire-logo"
-      src="icons/hire/upwork-logo-png-transparent.png"
+      src="icons/hire/upwork-logo-png-transparent.webp"
     />
-    <img className="hire-logo" src="icons/hire/clutch_logo.png" />
-    <img className="hire-logo" src="icons/hire/PeoplePerHour_logo.png" />
+    <img className="hire-logo" src="icons/hire/clutch_logo.webp" />
+    <img className="hire-logo" src="icons/hire/PeoplePerHour_logo.webp" />
   </div>
 );
 

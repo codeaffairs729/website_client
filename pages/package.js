@@ -7,36 +7,36 @@ import Link from 'next/link'
 
 const Package = () => {
     const designIcons = [
-        ["Figma", "icons/figma.png"],
-        ["Miro", "icons/miro.png"],
-        ["Sketch", "icons/sketch_1.png"],
-        ["Adobe Xd", "icons/adobe_xd.png"],
-        ["Framer", "icons/framer.png"],
-        ["Ant Design", "icons/ant-design.png"],
-        ["Material UI", "icons/material_ui.png"],
-        ["Tailwind", "icons/tailwind.png"],
-        ["Booststrap", "icons/bootstrap_1.png"],
-        ["Principle", "icons/principle.png"]
+        ["Figma", "icons/figma.webp"],
+        ["Miro", "icons/miro.webp"],
+        ["Sketch", "icons/sketch_1.webp"],
+        ["Adobe Xd", "icons/adobe_xd.webp"],
+        ["Framer", "icons/framer.webp"],
+        ["Ant Design", "icons/ant-design.webp"],
+        ["Material UI", "icons/material_ui.webp"],
+        ["Tailwind", "icons/tailwind.webp"],
+        ["Booststrap", "icons/bootstrap_1.webp"],
+        ["Principle", "icons/principle.webp"]
     ]
 
     const webIcons = [
-        ["Ruby on Rails", "icons/rails.png"],
-        ["ReactJs", "icons/reactjs.png"],
-        ["NextJs", "icons/nextjs.png"],
-        ["VueJs", "icons/vuejs.png"],
-        ["NuxtJs", "icons/nuxtjs.png"],
-        ["NodeJs", "icons/nodejs.png"],
-        ["Laravel", "icons/laravel.png"],
-        ["Shopify", "images/shopify.png"],
-        ["Wordpress", "icons/wordpress.png"]
+        ["Ruby on Rails", "icons/rails.webp"],
+        ["ReactJs", "icons/reactjs.webp"],
+        ["NextJs", "icons/nextjs.webp"],
+        ["VueJs", "icons/vuejs.webp"],
+        ["NuxtJs", "icons/nuxtjs.webp"],
+        ["NodeJs", "icons/nodejs.webp"],
+        ["Laravel", "icons/laravel.webp"],
+        ["Shopify", "images/shopify.webp"],
+        ["Wordpress", "icons/wordpress.webp"]
     ]
 
     const mobileIcons = [
-        ["React Native", "icons/reactjs.png"],
-        ["Ionic", "icons/ionic.png"],
-        ["Flutter", "images/flutter.png"],
-        ["Swift / iOS", "icons/swift.png"],
-        ["Android", "images/android_4.png"]
+        ["React Native", "icons/reactjs.webp"],
+        ["Ionic", "icons/ionic.webp"],
+        ["Flutter", "images/flutter.webp"],
+        ["Swift / iOS", "icons/swift.webp"],
+        ["Android", "images/android_4.webp"]
     ]
 
     const slider1 = useRef(null);
@@ -136,7 +136,7 @@ const Package = () => {
                                             <div onMouseOver={() => pause()} onMouseOut={() => play()} className="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
                                                 <div className="package__category">
                                                     <div className="package__icon">
-                                                        <img className="package__pic" src="images/content-management-system.png" alt="" />
+                                                        <img className="package__pic" src="images/content-management-system.webp" alt="" />
                                                     </div>
                                                     <div className="package__text">What we do</div>
                                                 </div>
@@ -147,13 +147,13 @@ const Package = () => {
                                                 <div className="package__list">
                                                     {/* <a className="package__link" href="#">
                                                         <div className="package__icon">
-                                                            <img className="package__pic" src="img/layout-1.svg" alt="" />
+                                                            <img className="package__pic" src="img/layout-1.webp" alt="" />
                                                         </div>
                                                         <div className="package__text">Awesome website</div>
                                                     </a>
                                                     <a className="package__link" href="#">
                                                         <div className="package__icon">
-                                                            <img className="package__pic" src="img/layout-3.svg" alt="" />
+                                                            <img className="package__pic" src="img/layout-3.webp" alt="" />
                                                         </div>
                                                         <div className="package__text">Stunning interface</div>
                                                     </a> */}
@@ -188,12 +188,12 @@ const Package = () => {
                                         <div className="col-lg-7 d-flex justify-content-center" >
                                             <div className="package__preview row">
                                                 <div className='col-lg-12 d-flex justify-content-center align-items-center' >
-                                                    <img onMouseOver={() => pause()} onMouseOut={() => play()} className="package__pic" src="images/laptop_4.png" alt="" />
+                                                    <img onMouseOver={() => pause()} onMouseOut={() => play()} className="package__pic" src="images/laptop_4.webp" alt="" />
 
-                                                    {/* <img className="package-pic-figma" src="images/FIGMA.png" alt="" />
-                                                    <img className="package-pic-diamond" src="images/sketch-new.png" alt="" />
-                                                    <img className="package-pic-image_32" src="images/image_32.png" alt="" />
-                                                    <img className="package-pic-image_31" src="images/image_31.png" alt="" /> */}
+                                                    {/* <img className="package-pic-figma" src="images/FIGMA.webp" alt="" />
+                                                    <img className="package-pic-diamond" src="images/sketch-new.webp" alt="" />
+                                                    <img className="package-pic-image_32" src="images/image_32.webp" alt="" />
+                                                    <img className="package-pic-image_31" src="images/image_31.webp" alt="" /> */}
                                                 </div>
                                                 <div onMouseOver={() => subSliderPause()} onMouseOut={() => subSliderPlay()} className='col-lg-10 m-auto subSliderIcons' >
                                                     <Slider ref={(newSubSlider1) => { subSlider1 = newSubSlider1 }} className="package-subslider d-flex align-items-center" {...packageSubsliderSettings} >
@@ -218,7 +218,7 @@ const Package = () => {
                                             <div onMouseOver={() => pause()} onMouseOut={() => play()} className="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
                                                 <div className="package__category">
                                                     <div className="package__icon">
-                                                        <img className="package__pic" src="images/frame.png" alt="" style={{ height: "24px", width: "auto" }} />
+                                                        <img className="package__pic" src="images/frame.webp" alt="" style={{ height: "24px", width: "auto" }} />
                                                     </div>
                                                     <div className="package__text">What we do</div>
                                                 </div>
@@ -235,13 +235,13 @@ const Package = () => {
                                                 <div className="package__list">
                                                     {/* <a className="package__link" href="#">
                                                         <div className="package__icon">
-                                                            <img className="package__pic" src="img/layout-1.svg" alt="" />
+                                                            <img className="package__pic" src="img/layout-1.webp" alt="" />
                                                         </div>
                                                         <div className="package__text">Awesome website</div>
                                                     </a>
                                                     <a className="package__link" href="#">
                                                         <div className="package__icon">
-                                                            <img className="package__pic" src="img/layout-3.svg" alt="" />
+                                                            <img className="package__pic" src="img/layout-3.webp" alt="" />
                                                         </div>
                                                         <div className="package__text">Stunning interface</div>
                                                     </a> */}
@@ -276,14 +276,14 @@ const Package = () => {
                                         <div className="col-lg-7 d-flex justify-content-center" >
                                             <div className="package__preview row">
                                                 <div className='col-lg-12 d-flex justify-content-center align-items-center' >
-                                                    <img onMouseOver={() => pause()} onMouseOut={() => play()} className="package__pic package-pic-slide2" src="images/laptop_3.png" alt="" />
+                                                    <img onMouseOver={() => pause()} onMouseOut={() => play()} className="package__pic package-pic-slide2" src="images/laptop_3.webp" alt="" />
 
-                                                    {/* <img className="package-pic-shopify" src="images/shopify.png" alt="" />
-                                                    <img className="package-pic-angular" src="images/angular.png" alt="" />
-                                                    <img className="package-pic-react" src="images/react_2.png" alt="" />
-                                                    <img className="package-pic-image_30" src="images/image_30.png" alt="" />
-                                                    <img className="package-pic-nodejs" src="images/node_2.png" alt="" />
-                                                    <img className="package-pic-ror" src="images/ror_orig.png" alt="" /> */}
+                                                    {/* <img className="package-pic-shopify" src="images/shopify.webp" alt="" />
+                                                    <img className="package-pic-angular" src="images/angular.webp" alt="" />
+                                                    <img className="package-pic-react" src="images/react_2.webp" alt="" />
+                                                    <img className="package-pic-image_30" src="images/image_30.webp" alt="" />
+                                                    <img className="package-pic-nodejs" src="images/node_2.webp" alt="" />
+                                                    <img className="package-pic-ror" src="images/ror_orig.webp" alt="" /> */}
                                                 </div>
                                                 <div onMouseOver={() => subSliderPause()} onMouseOut={() => subSliderPlay()} className='col-lg-10 m-auto subSliderIcons' >
                                                     <Slider ref={(newSubSlider2) => { subSlider2 = newSubSlider2 }} {...packageSubsliderSettings} className="package-subslider d-flex align-items-center" >
@@ -308,7 +308,7 @@ const Package = () => {
                                             <div onMouseOver={() => pause()} onMouseOut={() => play()} className="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
                                                 <div className="package__category">
                                                     <div className="package__icon">
-                                                        <img className="package__pic" src="images/mobile-front-color.png" alt="" style={{ height: "24px", width: "auto" }} />
+                                                        <img className="package__pic" src="images/mobile-front-color.webp" alt="" style={{ height: "24px", width: "auto" }} />
                                                     </div>
                                                     <div className="package__text">What we do</div>
                                                 </div>
@@ -322,13 +322,13 @@ const Package = () => {
                                                 <div className="package__list">
                                                     {/* <a className="package__link" href="#">
                                                         <div className="package__icon">
-                                                            <img className="package__pic" src="img/layout-1.svg" alt="" />
+                                                            <img className="package__pic" src="img/layout-1.webp" alt="" />
                                                         </div>
                                                         <div className="package__text">Awesome website</div>
                                                     </a>
                                                     <a className="package__link" href="#">
                                                         <div className="package__icon">
-                                                            <img className="package__pic" src="img/layout-3.svg" alt="" />
+                                                            <img className="package__pic" src="img/layout-3.webp" alt="" />
                                                         </div>
                                                         <div className="package__text">Stunning interface</div>
                                                     </a> */}
@@ -363,12 +363,12 @@ const Package = () => {
                                         <div className="col-lg-7 d-flex justify-content-center" >
                                             <div className="package__preview row package-preview-mobile">
                                                 <div className='col-lg-12 d-flex justify-content-center align-items-center' >
-                                                    <img onMouseOver={() => pause()} onMouseOut={() => play()} className="package__pic package-pic-mobile" src="images/mobile_2.png" alt="" />
+                                                    <img onMouseOver={() => pause()} onMouseOut={() => play()} className="package__pic package-pic-mobile" src="images/mobile_2.webp" alt="" />
 
-                                                    {/* <img className="package-pic-android" src="images/android_4.png" alt="" />
-                                                    <img className="package-pic-flutter" src="images/flutter.png" alt="" />
-                                                    <img className="package-pic-react_2" src="images/react_2.png" alt="" />
-                                                    <img className="package-pic-swift" src="images/swift_1.png" alt="" /> */}
+                                                    {/* <img className="package-pic-android" src="images/android_4.webp" alt="" />
+                                                    <img className="package-pic-flutter" src="images/flutter.webp" alt="" />
+                                                    <img className="package-pic-react_2" src="images/react_2.webp" alt="" />
+                                                    <img className="package-pic-swift" src="images/swift_1.webp" alt="" /> */}
                                                 </div>
                                                 <div onMouseOver={() => subSliderPause()} onMouseOut={() => subSliderPlay()} className='col-lg-10 m-auto subSliderIcons' >
                                                     <Slider ref={(newSubSlider3) => { subSlider3 = newSubSlider3 }} {...packageSubsliderSettings} className="package-subslider d-flex align-items-center">
@@ -389,7 +389,7 @@ const Package = () => {
                                 </div>
                             </Slider>
                             <div className="package__line">
-                                <img className="package__pic" src="img/line-1.svg" alt="" />
+                                <img className="package__pic" src="img/line-1.webp" alt="" />
                             </div>
                             <div className="package__circle" data-aos data-aos-duration="600"></div>
                         </div>

@@ -65,12 +65,12 @@ const Design = () => {
 
                 <div className="design__center center">
                     <div className="design__body">
-                        <h1 style={{ marginBottom: "10px", display: "inline-flex", marginBottom: "80px", fontWeight: "500", letterSpacing: "-.04em" }}>
+                        <h2 className='h1' style={{ marginBottom: "10px", display: "inline-flex", marginBottom: "80px", fontWeight: "500", letterSpacing: "-.04em" }}>
                             We Build Delightful Experiences.
-                        </h1>
+                        </h2>
                         {/* <a className="design__scroll" href="#">
                             <div className="design__icon">
-                                <img className="design__pic" src="img/scroll.svg" alt="" />
+                                <img className="design__pic" src="img/scroll.webp" alt="" />
                             </div>
                             <div className="design__text">Our Portfolio</div>
                         </a> */}
@@ -82,7 +82,7 @@ const Design = () => {
                                 <div className="design-slide-pink" data-aos="animation-translate-y" data-aos-delay="0">
                                     <div className="design__view design-view-ucview-bg" >
                                         {/* <div className="design__preview">
-                                            <img className="design__pic" src="images/ucview.png" alt="" />
+                                            <img className="design__pic" src="images/ucview.webp" alt="" />
                                         </div> */}
                                     </div>
                                     <div className="design__details">
@@ -104,7 +104,7 @@ const Design = () => {
                                 <div className="design-slide-blue" data-aos="animation-translate-y" data-aos-delay="200">
                                     <div className="design__view design-view-stockarchitect-bg">
                                         {/* <div className="design__preview">
-                                            <img className="design__pic" src="images/stockarchitect.png" alt="" />
+                                            <img className="design__pic" src="images/stockarchitect.webp" alt="" />
                                         </div> */}
                                     </div>
                                     <div className="design__details">
@@ -125,7 +125,7 @@ const Design = () => {
                                 <div className="design-slide-green" data-aos="animation-translate-y" data-aos-delay="400">
                                     <div className="design__view design-view-withrelay-bg">
                                         {/* <div className="design__preview">
-                                            <img className="design__pic" src="images/withrelay.png" alt="" />
+                                            <img className="design__pic" src="images/withrelay.webp" alt="" />
                                         </div> */}
                                     </div>
                                     <div className="design__details">
@@ -146,7 +146,7 @@ const Design = () => {
                                 <div className="design-slide-pink" data-aos="animation-translate-y">
                                     <div className="design__view design-view-videochatapro-bg">
                                         {/* <div className="design__preview">
-                                            <img className="design__pic" src="images/videochatapro.png" alt="" />
+                                            <img className="design__pic" src="images/videochatapro.webp" alt="" />
                                         </div> */}
                                     </div>
                                     <div className="design__details">
@@ -167,7 +167,7 @@ const Design = () => {
                                 <div className="design-slide-blue" data-aos="animation-translate-y">
                                     <div className="design__view design-view-buyma-bg">
                                         {/* <div className="design__preview">
-                                            <img className="design__pic" src="images/buyma.png" alt="" />
+                                            <img className="design__pic" src="images/buyma.webp" alt="" />
                                         </div> */}
                                     </div>
                                     <div className="design__details">
@@ -188,7 +188,7 @@ const Design = () => {
                                 <div className="design-slide-green" data-aos="animation-translate-y" data-aos-delay="0">
                                     <div className="design__view design-view-fintrakk-bg">
                                         {/* <div className="design__preview">
-                                            <img className="design__pic" src="images/fintrakk.png" alt="" />
+                                            <img className="design__pic" src="images/fintrakk.webp" alt="" />
                                         </div> */}
                                     </div>
                                     <div className="design__details">
@@ -209,7 +209,7 @@ const Design = () => {
                                 <div className="design-slide-pink" data-aos="animation-translate-y">
                                     <div className="design__view design-view-welcome-bg">
                                         {/* <div className="design__preview">
-                                            <img className="design__pic" src="images/welcomeAi.png" alt="" />
+                                            <img className="design__pic" src="images/welcomeAi.webp" alt="" />
                                         </div> */}
                                     </div>
                                     <div className="design__details">

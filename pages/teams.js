@@ -298,7 +298,7 @@ const Teams = () => {
                                         </div>
                                         <div className="teams__user"> */}
                                             {/* <div className="teams__ava">
-                                                <img className="teams__pic" src="img/ui8.png" alt="" />
+                                                <img className="teams__pic" src="img/ui8.webp" alt="" />
                                             </div> */}
                                             {/* <div className="teams__box">
                                                 <div className="teams__man">- Fran</div> */}
@@ -314,7 +314,7 @@ const Teams = () => {
                                         </div>
                                         <div className="teams__user"> */}
                                             {/* <div className="teams__ava">
-                                                <img className="teams__pic" src="img/ava-1.png" alt="" />
+                                                <img className="teams__pic" src="img/ava-1.webp" alt="" />
                                             </div> */}
                                             {/* <div className="teams__box">
                                                 <div className="teams__man">- Kiren Sreekumar</div> */}
@@ -330,7 +330,7 @@ const Teams = () => {
                                         </div>
                                         <div className="teams__user"> */}
                                             {/* <div className="teams__ava">
-                                                <img className="teams__pic" src="img/ui8.png" alt="" />
+                                                <img className="teams__pic" src="img/ui8.webp" alt="" />
                                             </div> */}
                                             {/* <div className="teams__box">
                                                 <div className="teams__man">- Sean Adler</div> */}
@@ -352,7 +352,7 @@ const Teams = () => {
                                         </div>
                                         <div className="teams__user"> */}
                                             {/* <div className="teams__ava">
-                                                <img className="teams__pic" src="img/ava-1.png" alt="" />
+                                                <img className="teams__pic" src="img/ava-1.webp" alt="" />
                                             </div> */}
                                             {/* <div className="teams__box">
                                                 <div className="teams__man">- Samba Thibo</div> */}
@@ -368,7 +368,7 @@ const Teams = () => {
                                         </div>
                                         <div className="teams__user"> */}
                                             {/* <div className="teams__ava">
-                                                <img className="teams__pic" src="img/ava-1.png" alt="" />
+                                                <img className="teams__pic" src="img/ava-1.webp" alt="" />
                                             </div> */}
                                             {/* <div className="teams__box">
                                                 <div className="teams__man">- Jack Fischman</div> */}
@@ -384,7 +384,7 @@ const Teams = () => {
                                         </div>
                                         <div className="teams__user"> */}
                                             {/* <div className="teams__ava">
-                                                <img className="teams__pic" src="img/ava-1.png" alt="" />
+                                                <img className="teams__pic" src="img/ava-1.webp" alt="" />
                                             </div> */}
                                             {/* <div className="teams__box">
                                                 <div className="teams__man">- Johnny Palomares</div> */}
@@ -400,7 +400,7 @@ const Teams = () => {
                                         </div>
                                         <div className="teams__user"> */}
                                             {/* <div className="teams__ava">
-                                                <img className="teams__pic" src="img/ava-1.png" alt="" />
+                                                <img className="teams__pic" src="img/ava-1.webp" alt="" />
                                             </div> */}
                                             {/* <div className="teams__box">
                                                 <div className="teams__man">- J De Leon</div> */}

@@ -98,7 +98,7 @@ const Main = () => {
               >
                 {/* <a className="main__link" href="#">
                                 <div className="main__icon">
-                                    <img className="main__pic" src="img/scroll.svg" alt="" />
+                                    <img className="main__pic" src="img/scroll.webp" alt="" />
                                 </div>
                                 <div className="main__text">Scroll to explore</div>
                             </a> */}
@@ -112,7 +112,7 @@ const Main = () => {
                 className="main__pic js-parallax"
                 data-scale="1.5"
                 data-orientation="down"
-                src="img/main-pic-1.png"
+                src="img/main-pic-1.webp"
                 alt=""
               />
             </div>
@@ -121,20 +121,20 @@ const Main = () => {
                 className="main__pic js-parallax"
                 data-scale="1.5"
                 data-orientation="up"
-                src="img/main-pic-2.png"
+                src="img/main-pic-2.webp"
                 alt=""
               />
             </div>
             <div className="main__preview">
-              <img className="main__pic" src="img/mouse.png" alt="" />
+              <img className="main__pic" src="img/mouse.webp" alt="" />
             </div>
             {/* <div className="main__preview">
-                            <img className="main__pic js-parallax" data-scale="1.5" data-orientation="up" src="img/main-pic-2.png" alt="" />
+                            <img className="main__pic js-parallax" data-scale="1.5" data-orientation="up" src="img/main-pic-2.webp" alt="" />
                         </div> */}
             <div className="main__preview">
               <img
                 className="main__pic"
-                src="images/desktop-asset.png"
+                src="images/desktop-asset.webp"
                 alt=""
               />
             </div>

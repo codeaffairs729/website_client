@@ -11,10 +11,10 @@ function AboutUs() {
     const [companyFacesDesc, setCompanyFacesDesc] = useState(0);
 
     const sideImgArr = [
-        ["aboutUsImages/about-img1.jpg"],
-        ["aboutUsImages/about-img2.jpg"],
-        ["aboutUsImages/about-img4.jpg"],
-        ["aboutUsImages/about-img3.jpg"]
+        ["aboutUsImages/about-img1.webp"],
+        ["aboutUsImages/about-img2.webp"],
+        ["aboutUsImages/about-img4.webp"],
+        ["aboutUsImages/about-img3.webp"]
     ]
 
     const companyFacesDetail = [
@@ -25,7 +25,7 @@ function AboutUs() {
             "The guy, who established Code Garage Tech. He is a computer science engineer and has experience of more than a decade in software development. He encourages conformity with business rules & regulations and also ensures that the company's code of ethics is being followed.",
             "www.twitter.com",
             "www.instagram.com",
-            "aboutUsImages/about-img1.jpg"
+            "aboutUsImages/about-img1.webp"
         ],
         [
             "Poonam Thakur",
@@ -34,7 +34,7 @@ function AboutUs() {
             "Poonam integrates and implements the technology via improved training, staffing, and communication with all the employees. Moreover, she also recommends approaches, business solutions, and processes to the management.",
             "www.twitter.com",
             "www.instagram.com",
-            "aboutUsImages/about-img2.jpg"
+            "aboutUsImages/about-img2.webp"
         ],
         [
             "Naresh Bhatia",
@@ -43,7 +43,7 @@ function AboutUs() {
             "As a proactive and result-oriented finance professional, he has a strong track record of handling multiple assignments efficiently. He has 15 years of experience and is very diligent in handling Accounts & Finance, Direct & Indirect Tax, Internal Auditing, and Risk Assessment of the company.",
             "www.twitter.com",
             "www.instagram.com",
-            "aboutUsImages/about-img4.jpg"
+            "aboutUsImages/about-img4.webp"
         ],
         [
             "Kannav Sharma",
@@ -52,7 +52,7 @@ function AboutUs() {
             "Proud First generation lawyer. He joined the litigation to make a mark and help as many people as best of his capabilities. Kannav ensures the company’s strategies, actions, and processes comply relevantly with state, local, international, and federal laws.",
             "www.twitter.com",
             "www.instagram.com",
-            "aboutUsImages/about-img3.jpg"
+            "aboutUsImages/about-img3.webp"
         ]
 
     ]
@@ -84,20 +84,20 @@ function AboutUs() {
                     <div className='col-lg-12' >
                         <div className='row' >
                             <div className='col-lg-5 col-md-5 col-12 text-end' >
-                                <img className='about-area-6-pic-1' src='aboutUsImages/team_pic_3.png' alt='' />
+                                <img className='about-area-6-pic-1' src='aboutUsImages/team_pic_3.webp' alt='' />
                             </div>
                             <div className='col-lg-2 col-md-2 col-4' >
                                 <div className='row' >
                                     <div className='col-lg-12 about-area-6-img-outer' >
-                                        <img className='about-area-6-pics' src='aboutUsImages/team_pic_4.png' alt='' />
+                                        <img className='about-area-6-pics' src='aboutUsImages/team_pic_4.webp' alt='' />
                                     </div>
                                     <div className='col-lg-12 about-area-6-img-outer' >
-                                        <img className='about-area-6-pics' src='aboutUsImages/team_pic_2.png' alt='' />
+                                        <img className='about-area-6-pics' src='aboutUsImages/team_pic_2.webp' alt='' />
                                     </div>
                                 </div>
                             </div>
                             <div className='col-lg-5 col-md-5 col-8' >
-                                <img className='about-area-6-pic-1' src='aboutUsImages/team_pic_1.png' alt='' />
+                                <img className='about-area-6-pic-1' src='aboutUsImages/team_pic_1.webp' alt='' />
                             </div>
                         </div>
                     </div>
@@ -121,7 +121,7 @@ function AboutUs() {
                         </p>
                     </div>
                     <div className='col-lg-5 col-md-6 about-area-7-pic-1-outer d-flex align-items-center' >
-                        <img className='w-100' src='aboutUsImages/team_pic_9.png' alt='' />
+                        <img className='w-100' src='aboutUsImages/team_pic_9.webp' alt='' />
                     </div>
                 </div>
                 <div className='about-area-7-circle-1' ></div>
@@ -132,11 +132,11 @@ function AboutUs() {
                     <div className='row about-area-2-outer-row'>
                         <div className='col-lg-6 d-flex justify-content-center about-area-2-outer-col' >
                             {/* <div className="about-area-2-grey-circle" >
-                                <img className="about-area-2-cam-pic" src="images/Camera _.png" alt="" />
+                                <img className="about-area-2-cam-pic" src="images/Camera _.webp" alt="" />
                             </div> */}
-                            <img className='about-area-2-pic-2' src='aboutUsImages/team_pic_6.png' alt='' />
-                            <img className='about-area-2-pic-3' src='aboutUsImages/team_pic_7.png' alt='' />
-                            <img className='about-area-2-pic-4' src='aboutUsImages/team_pic_8.png' alt='' />
+                            <img className='about-area-2-pic-2' src='aboutUsImages/team_pic_6.webp' alt='' />
+                            <img className='about-area-2-pic-3' src='aboutUsImages/team_pic_7.webp' alt='' />
+                            <img className='about-area-2-pic-4' src='aboutUsImages/team_pic_8.webp' alt='' />
                         </div>
                         <div className='col-lg-6 about-area-2-text-area' >
                             <h2 className='about-area-2-heading mb-5' >
@@ -155,7 +155,7 @@ function AboutUs() {
                 <div className='about-area-2-circle2' ></div>
                 <div className='about-area-2-circle3' ></div>
                 <div className='about-area-2-circle4' ></div>
-                <img className='about-area-2-cube' src='images/cube.png' alt='' />
+                <img className='about-area-2-cube' src='images/cube.webp' alt='' />
             </div>
 
             <div className='container-fluid mt-5 about-area-8' >
@@ -163,7 +163,7 @@ function AboutUs() {
                     <h2 className='text-center about-area-8-heading'>
                         We Connect Globally
                     </h2>
-                    <img className='w-100' src='aboutUsImages/global_connections.png' alt=''
+                    <img className='w-100' src='aboutUsImages/global_connections.webp' alt=''
                         useMap='#world-map'
                     />
                     <map name="world-map">
@@ -217,7 +217,7 @@ function AboutUs() {
                                                     <h5 className='about-area-4-main-name' >{companyFacesDetail[companyFacesDesc][0]}</h5>
                                                     <p className='about-area-4-main-designation' >{companyFacesDetail[companyFacesDesc][1]}</p>
                                                 </div>
-                                                <img className='w-100' src='/aboutUsImages/about-area-4-main-img-shape.png' alt='about-area-4-main-img-shape' />
+                                                <img className='w-100' src='/aboutUsImages/about-area-4-main-img-shape.webp' alt='about-area-4-main-img-shape' />
                                             </div>
                                         </div>
                                     </div>
@@ -230,10 +230,10 @@ function AboutUs() {
                             </div> */}
                             {/* <div className='col-lg-12 d-flex justify-content-center pt-2' >
                                 <a href={companyFacesDetail[companyFacesDesc][4]} >
-                                    <img className='about-area-4-main-social-icon me-2' src="icons/twitter_white.png" alt='' />
+                                    <img className='about-area-4-main-social-icon me-2' src="icons/twitter_white.webp" alt='' />
                                 </a>
                                 <a href={companyFacesDetail[companyFacesDesc][5]} >
-                                    <img className='about-area-4-main-social-icon' src="icons/instagram_white.png" alt='' />
+                                    <img className='about-area-4-main-social-icon' src="icons/instagram_white.webp" alt='' />
                                 </a>
                             </div> */}
                             <div className='col-lg-6 col-md-6 d-flex about-area-4-main-desc-outer' >
@@ -247,10 +247,10 @@ function AboutUs() {
                                     </div>
                                     {/* <div className='col-lg-12 d-flex justify-content-end pt-2' >
                                         <a href={companyFacesDetail[companyFacesDesc][4]} >
-                                            <img className='about-area-4-main-social-icon me-2' src="icons/twitter_black.png" alt='' />
+                                            <img className='about-area-4-main-social-icon me-2' src="icons/twitter_black.webp" alt='' />
                                         </a>
                                         <a href={companyFacesDetail[companyFacesDesc][5]} >
-                                            <img className='about-area-4-main-social-icon' src="icons/instagram_black.png" alt='' />
+                                            <img className='about-area-4-main-social-icon' src="icons/instagram_black.webp" alt='' />
                                         </a>
                                     </div> */}
                                 </div>
@@ -268,10 +268,10 @@ function AboutUs() {
                             </div>
                             <div className='col-lg-12 d-flex justify-content-end pt-2' >
                                 <a href={companyFacesDetail[companyFacesDesc][4]} >
-                                    <img className='about-area-4-main-social-icon me-2' src="icons/twitter_black.png" alt='' />
+                                    <img className='about-area-4-main-social-icon me-2' src="icons/twitter_black.webp" alt='' />
                                 </a>
                                 <a href={companyFacesDetail[companyFacesDesc][5]} >
-                                    <img className='about-area-4-main-social-icon' src="icons/instagram_black.png" alt='' />
+                                    <img className='about-area-4-main-social-icon' src="icons/instagram_black.webp" alt='' />
                                 </a>
                             </div>
                         </div>
@@ -293,17 +293,17 @@ function AboutUs() {
                             <button className='btn btn-primary bg-white about-area-1-btn' >Our Magic Potion</button> */}
                         </div>
                         {/* <div className='col-lg-5 col-md-5 about-area-1-outer' >
-                            <img className='about-area-1-pic-1' src='aboutUsImages/team_pic_1.png' alt='' />
-                            <img className='about-area-1-pic-2' src='aboutUsImages/team_pic_2.png' alt='' />
-                            <img className='about-area-1-pic-3' src='aboutUsImages/team_pic_3.png' alt='' />
-                            <img className='about-area-1-pic-4' src='aboutUsImages/team_pic_4.png' alt='' />
+                            <img className='about-area-1-pic-1' src='aboutUsImages/team_pic_1.webp' alt='' />
+                            <img className='about-area-1-pic-2' src='aboutUsImages/team_pic_2.webp' alt='' />
+                            <img className='about-area-1-pic-3' src='aboutUsImages/team_pic_3.webp' alt='' />
+                            <img className='about-area-1-pic-4' src='aboutUsImages/team_pic_4.webp' alt='' />
                         </div> */}
                         <div className='col-lg-12 about-area-1-cols' >
                             <div className='row' >
                                 <div className='col-lg-4 col-md-6' >
                                     <div className='row' >
                                         <div className='col-lg-2 col-md-2 col-2 text-center' >
-                                            <img className='about-area-1-icon-1 w-100' src='/icons/transparency.png' alt='Union' />
+                                            <img className='about-area-1-icon-1 w-100' src='/icons/transparency.webp' alt='Union' />
                                         </div>
                                         <div className='col-lg-10 col-md-10 col-10 d-flex align-items-center' >
                                             <p className='about-area-1-header-1' >
@@ -327,7 +327,7 @@ function AboutUs() {
                                 <div className='col-lg-4 col-md-6' >
                                     <div className='row' >
                                         <div className='col-lg-2 col-md-2 col-2 text-center' >
-                                            <img className='about-area-1-icon-1 w-100' src='/icons/support.png' alt='Union' />
+                                            <img className='about-area-1-icon-1 w-100' src='/icons/support.webp' alt='Union' />
                                         </div>
                                         <div className='col-lg-10 col-md-10 col-10 d-flex align-items-center' >
                                             <p className='about-area-1-header-1' >
@@ -349,7 +349,7 @@ function AboutUs() {
                                 <div className='col-lg-4 col-md-6' >
                                     <div className='row' >
                                         <div className='col-lg-2 col-md-2 col-2 text-center' >
-                                            <img className='about-area-1-icon-1 w-100' src='/icons/future_ready_tech.png' alt='Union' />
+                                            <img className='about-area-1-icon-1 w-100' src='/icons/future_ready_tech.webp' alt='Union' />
                                         </div>
                                         <div className='col-lg-10 col-md-10 col-10 d-flex align-items-center' >
                                             <p className='about-area-1-header-1' >
@@ -372,7 +372,7 @@ function AboutUs() {
                                 <div className='col-lg-4 col-md-6' >
                                     <div className='row' >
                                         <div className='col-lg-2 col-md-2 col-2 text-center' >
-                                            <img className='about-area-1-icon-1 w-100' src='/icons/process_oriented_work.png' alt='Union' />
+                                            <img className='about-area-1-icon-1 w-100' src='/icons/process_oriented_work.webp' alt='Union' />
                                         </div>
                                         <div className='col-lg-10 col-md-10 col-10 d-flex align-items-center' >
                                             <p className='about-area-1-header-1' >
@@ -393,7 +393,7 @@ function AboutUs() {
                                 <div className='col-lg-4 col-md-6' >
                                     <div className='row' >
                                         <div className='col-lg-2 col-md-2 col-2 text-center' >
-                                            <img className='about-area-1-icon-1 w-100' src='/icons/flexible.png' alt='Union' />
+                                            <img className='about-area-1-icon-1 w-100' src='/icons/flexible.webp' alt='Union' />
                                         </div>
                                         <div className='col-lg-10 col-md-10 col-10 d-flex align-items-center' >
                                             <p className='about-area-1-header-1' >
@@ -413,7 +413,7 @@ function AboutUs() {
                         </div>
                     </div>
                 </div>
-                <img className='about-area-1-line-circle' src='images/career-line-circle.png' alt='' />
+                <img className='about-area-1-line-circle' src='images/career-line-circle.webp' alt='' />
             </div>
 
             {/* <div className='container-fluid px-5 mt-5 about-area-3' >
@@ -428,7 +428,7 @@ function AboutUs() {
                         <div className='row' >
                             <div className='col-lg-1' ></div>
                             <div className='col-lg-10 text-center' >
-                                <img className='about-area-3-pics' src='aboutUsImages/qualities_1.png' alt='' />
+                                <img className='about-area-3-pics' src='aboutUsImages/qualities_1.webp' alt='' />
                                 <h3 className='text-center about-area-3-h3' >Transparency</h3>
                                 <p className='text-start' >
                                     lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah
@@ -441,7 +441,7 @@ function AboutUs() {
                         <div className='row' >
                             <div className='col-lg-1' ></div>
                             <div className='col-lg-10 text-center' >
-                                <img className='about-area-3-pics' src='aboutUsImages/qualities_2.png' alt='' />
+                                <img className='about-area-3-pics' src='aboutUsImages/qualities_2.webp' alt='' />
                                 <h3 className='text-center about-area-3-h3' >Upto Date on Trends</h3>
                                 <p className='text-start' >
                                     lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah
@@ -454,7 +454,7 @@ function AboutUs() {
                         <div className='row' >
                             <div className='col-lg-1' ></div>
                             <div className='col-lg-10 text-center' >
-                                <img className='about-area-3-pics' src='aboutUsImages/qualities_3.png' alt='' />
+                                <img className='about-area-3-pics' src='aboutUsImages/qualities_3.webp' alt='' />
                                 <h3 className='text-center about-area-3-h3' >Process Oriented</h3>
                                 <p className='text-start' >
                                     lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah
@@ -467,7 +467,7 @@ function AboutUs() {
                         <div className='row' >
                             <div className='col-lg-1' ></div>
                             <div className='col-lg-10 text-center' >
-                                <img className='about-area-3-pics' src='aboutUsImages/qualities_4.png' alt='' />
+                                <img className='about-area-3-pics' src='aboutUsImages/qualities_4.webp' alt='' />
                                 <h3 className='text-center about-area-3-h3' >Flexible</h3>
                                 <p className='text-start' >
                                     lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah
@@ -480,7 +480,7 @@ function AboutUs() {
                         <div className='row' >
                             <div className='col-lg-1' ></div>
                             <div className='col-lg-10 text-center' >
-                                <img className='about-area-3-pics' src='aboutUsImages/qualities_5.png' alt='' />
+                                <img className='about-area-3-pics' src='aboutUsImages/qualities_5.webp' alt='' />
                                 <h3 className='text-center about-area-3-h3' >Support</h3>
                                 <p className='text-start' >
                                     lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah lah Blah Blah
@@ -516,7 +516,7 @@ function AboutUs() {
                         <div className='col-lg-4 col-md-4 trophies-cols' data-aos="animation-scale-x-left">
                             <div className='row' >
                                 <div className='col-lg-12 d-flex justify-content-center' >
-                                    <img className='trophies-img' src='images/Calendar.png' alt='' />
+                                    <img className='trophies-img' src='images/Calendar.webp' alt='' />
                                 </div>
                                 <div className='col-lg-12 text-center trophies-text' >
                                     7+ Years
@@ -528,7 +528,7 @@ function AboutUs() {
                         <div className='col-lg-4 col-md-4 trophies-cols' data-aos="animation-scale-y" >
                             <div className='row' >
                                 <div className='col-lg-12 d-flex justify-content-center' >
-                                    <img className='trophies-img' src='images/trophy-front-clay.png' alt='' />
+                                    <img className='trophies-img' src='images/trophy-front-clay.webp' alt='' />
                                 </div>
                                 <div className='col-lg-12 text-center trophies-text' >
                                     150+ Projects
@@ -540,7 +540,7 @@ function AboutUs() {
                         <div className='col-lg-4 col-md-4' data-aos="animation-scale-x-right">
                             <div className='row' >
                                 <div className='col-lg-12 d-flex justify-content-center' >
-                                    <img className='trophies-img' src='images/frame_2.png' alt='' />
+                                    <img className='trophies-img' src='images/frame_2.webp' alt='' />
                                 </div>
                                 <div className='col-lg-12 text-center trophies-text' >
                                     120+ International

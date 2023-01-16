@@ -91,7 +91,7 @@ const Footer = () => {
                                     <div className='col-lg-6 mb-4' >
                                         <div className='row' >
                                             <div className='col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2 d-flex justify-content-center align-items-center' >
-                                                <img className='footer-tech-img' src='icons/ror.png' alt='' />
+                                                <img className='footer-tech-img' src='icons/ror.webp' alt='' />
                                             </div>
                                             <div className='col-lg-10 col-md-10 col-sm-10 col-xs-10 col-10' >
                                                 <span className="footer__link footer-link-technology" >Ruby on Rails</span>
@@ -101,7 +101,7 @@ const Footer = () => {
                                     <div className='col-lg-6 mb-4' >
                                         <div className='row' >
                                             <div className='col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2 d-flex justify-content-center align-items-center' >
-                                                <img className='footer-tech-img' src='images/node_2.png' alt='' />
+                                                <img className='footer-tech-img' src='images/node_2.webp' alt='' />
                                             </div>
                                             <div className='col-lg-10 col-md-10 col-sm-10 col-xs-10 col-10' >
                                                 <span className="footer__link footer-link-technology" >NodeJs</span>
@@ -111,7 +111,7 @@ const Footer = () => {
                                     <div className='col-lg-6 mb-4' >
                                         <div className='row' >
                                             <div className='col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2 d-flex justify-content-center align-items-center' >
-                                                <img className='footer-tech-img' src='icons/reactjs.png' alt='' />
+                                                <img className='footer-tech-img' src='icons/reactjs.webp' alt='' />
                                             </div>
                                             <div className='col-lg-10 col-md-10 col-sm-10 col-xs-10 col-10' >
                                                 <span className="footer__link footer-link-technology" >React Native</span>
@@ -121,7 +121,7 @@ const Footer = () => {
                                     <div className='col-lg-6 mb-4' >
                                         <div className='row' >
                                             <div className='col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2 d-flex justify-content-center align-items-center' >
-                                                <img className='footer-tech-img' src='icons/laravel.png' alt='' />
+                                                <img className='footer-tech-img' src='icons/laravel.webp' alt='' />
                                             </div>
                                             <div className='col-lg-10 col-md-10 col-sm-10 col-xs-10 col-10' >
                                                 <span className="footer__link footer-link-technology" >Laravel</span>
@@ -131,7 +131,7 @@ const Footer = () => {
                                     <div className='col-lg-6 mb-4' >
                                         <div className='row' >
                                             <div className='col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2 d-flex justify-content-center align-items-center' >
-                                                <img className='footer-tech-img' src='icons/reactjs.png' alt='' />
+                                                <img className='footer-tech-img' src='icons/reactjs.webp' alt='' />
                                             </div>
                                             <div className='col-lg-10 col-md-10 col-sm-10 col-xs-10 col-10' >
                                                 <span className="footer__link footer-link-technology" >ReactJs / NextJs</span>
@@ -141,7 +141,7 @@ const Footer = () => {
                                     <div className='col-lg-6 mb-4' >
                                         <div className='row' >
                                             <div className='col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2 d-flex justify-content-center align-items-center' >
-                                                <img className='footer-tech-img' src='icons/vuejs.png' alt='' />
+                                                <img className='footer-tech-img' src='icons/vuejs.webp' alt='' />
                                             </div>
                                             <div className='col-lg-10 col-md-10 col-sm-10 col-xs-10 col-10' >
                                                 <span className="footer__link footer-link-technology" >VueJs / NuxtJs</span>
@@ -161,22 +161,22 @@ const Footer = () => {
                             <div className={`footer__menu js-footer-menu footer-social-menu ${socialIcons ? "" : "hide"}`} >
                                 <Link href="https://www.facebook.com/codegaragetech">
                                     <a className="footer__link me-3" target='_blank'>
-                                        <img className="icon icon-header-img" src="images/Facebook3d.png" alt="" />
+                                        <img className="icon icon-header-img" src="images/Facebook3d.webp" alt="" />
                                     </a>
                                 </Link>
                                 <Link href="https://twitter.com/codegaragetech">
                                     <a className="footer__link me-3" target='_blank'>
-                                        <img className="icon icon-header-img" src="images/Twitter3d.png" alt="" />
+                                        <img className="icon icon-header-img" src="images/Twitter3d.webp" alt="" />
                                     </a>
                                 </Link>
                                 <Link href="https://www.linkedin.com/company/codegarage-tech/">
                                     <a className="footer__link me-3" target='_blank'>
-                                        <img className="icon icon-header-img" src="images/LinkedIn3d.png" alt="" />
+                                        <img className="icon icon-header-img" src="images/LinkedIn3d.webp" alt="" />
                                     </a>
                                 </Link>
                                 <Link href="https://www.instagram.com/codegaragetech/">
                                     <a className="footer__link" target='_blank'>
-                                        <img className="icon icon-header-img" src="images/Instagram3d.png" alt="" />
+                                        <img className="icon icon-header-img" src="images/Instagram3d.webp" alt="" />
                                     </a>
                                 </Link>
                             </div>

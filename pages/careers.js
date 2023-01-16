@@ -196,11 +196,11 @@ const Careers = () => {
                     </div>
                 </div>
                 {/* <div className='rounded-circle career-area-2-circle' ></div> */}
-                <img className='career-area-2-img-1' src='/career_images/career-area-2-img-1.png' alt='career-area-2-img-1.png' />
-                <img className='career-area-2-img-2' src='/career_images/career-area-2-img-2.png' alt='career-area-2-img-2.png' />
-                <img className='career-area-2-img-3' src='/career_images/career-area-2-img-3.png' alt='career-area-2-img-3.png' />
-                <img className='career-area-2-img-4' src='/career_images/career-area-2-img-4.png' alt='career-area-2-img-4.png' />
-                <img className='career-area-2-typing-icon' src='images/type.png' alt='' />
+                <img className='career-area-2-img-1' src='/career_images/career-area-2-img-1.webp' alt='career-area-2-img-1.webp' />
+                <img className='career-area-2-img-2' src='/career_images/career-area-2-img-2.webp' alt='career-area-2-img-2.webp' />
+                <img className='career-area-2-img-3' src='/career_images/career-area-2-img-3.webp' alt='career-area-2-img-3.webp' />
+                <img className='career-area-2-img-4' src='/career_images/career-area-2-img-4.webp' alt='career-area-2-img-4.webp' />
+                <img className='career-area-2-typing-icon' src='images/type.webp' alt='' />
             </div>
 
             <div className='container-fluid career-area-1' >
@@ -236,17 +236,17 @@ const Careers = () => {
                         </p>
                     </div>
                     <div className='col-lg-6 col-md-6 career-area-3-circle-outer text-end' >
-                        <img className='career-area-3-img-rocket' src='/career_images/ROCKET.png' alt='ROCKET.png' />
+                        <img className='career-area-3-img-rocket' src='/career_images/ROCKET.webp' alt='ROCKET.webp' />
                         {/* <div className='about-area-circle career-area-3-circle1' ></div>
-                        <img className='career-area-3-cursor' src='img/cursor.png' alt='' />
+                        <img className='career-area-3-cursor' src='img/cursor.webp' alt='' />
                         <div className='about-area-circle career-area-3-circle2' ></div> */}
                     </div>
                     <div className='about-area-circle career-area-3-circle3' ></div>
-                    <img className='career-area-3-cursor' src='/img/cursor-1.png' alt='cursor-1.png' />
-                    <img className='career-area-3-cloud-1' src='/img/cloud.png' alt='cloud.png' />
-                    <img className='career-area-3-cloud-2' src='/img/cloud.png' alt='cloud.png' />
+                    <img className='career-area-3-cursor' src='/img/cursor-1.webp' alt='cursor-1.webp' />
+                    <img className='career-area-3-cloud-1' src='/img/cloud.webp' alt='cloud.webp' />
+                    <img className='career-area-3-cloud-2' src='/img/cloud.webp' alt='cloud.webp' />
                 </div>
-                {/* <img className='career-area-3-line-circle' src='images/career-line-circle.png' alt='' /> */}
+                {/* <img className='career-area-3-line-circle' src='images/career-line-circle.webp' alt='' /> */}
             </div>
 
             <div className='container-fluid career-area-4' >
@@ -279,7 +279,7 @@ const Careers = () => {
 
                                 <div className='rating-container-followers d-flex flex-column align-items-center'>
                                     <p className='rating-container-followers-linkedin-text fs-5'>3000 + Followers</p>
-                                    <img src='/icons/Linkedin-Logo.png' />
+                                    <img src='/icons/Linkedin-Logo.webp' />
                                 </div>
 
 
@@ -291,7 +291,7 @@ const Careers = () => {
                             <div className='career-area-5-gray-box py-3' >
 
                                 <div className='rating-container py-3 d-flex justify-content-evenly'>
-                                    <div><img src='/icons/google-icon.png' /></div>
+                                    <div><img src='/icons/google-icon.webp' /></div>
                                     <div>
                                         <div className='rating-container-headline fs-5'>Google</div>
                                         <div>
@@ -310,7 +310,7 @@ const Careers = () => {
                         <div className='col-lg-4 col-md-4 px-4 career-area-5-gray-box-outer' >
                             <div className='career-area-5-gray-box py-3' >
                                 <div className='rating-container py-3 d-flex justify-content-evenly'>
-                                    <div><img src='/icons/glassdoor-icon-48.png' /></div>
+                                    <div><img src='/icons/glassdoor-icon-48.webp' /></div>
                                     <div>
                                         <div className='rating-container-headline fs-5'>glassdoor</div>
                                         <div>
@@ -340,10 +340,10 @@ const Careers = () => {
                     </div>
                 </div>
                 <div className="career-area-7-cloud-1-outer rackspace-floating">
-                    <img className="career-area-7-cloud-1" src="img/cloud.png" alt="" />
+                    <img className="career-area-7-cloud-1" src="img/cloud.webp" alt="" />
                     <p className='career-area-7-techName-hiring-1' >
                         <span className='d-flex align-items-center' >
-                            <img className="career-area-7-tech-img me-2" src="images/fullStack.png" alt="" />
+                            <img className="career-area-7-tech-img me-2" src="images/fullStack.webp" alt="" />
                             <b className='text-start'>
                                 Full Stack
                                 <br/>
@@ -354,10 +354,10 @@ const Careers = () => {
                     </p>
                 </div>
                 <div className="career-area-7-cloud-2-outer digitalocean-floating">
-                    <img className="career-area-7-cloud-1" src="img/cloud.png" alt="" />
+                    <img className="career-area-7-cloud-1" src="img/cloud.webp" alt="" />
                     <p className='career-area-7-techName-hiring-1' >
                         <span className='d-flex align-items-center' >
-                            <img className="career-area-7-tech-img me-2" src="images/shopify_icon.png" alt="" />
+                            <img className="career-area-7-tech-img me-2" src="images/shopify_icon.webp" alt="" />
                             <b className='text-start' >
                                 Shopify
                                 <br/>
@@ -368,10 +368,10 @@ const Careers = () => {
                     </p>
                 </div>
                 <div className="career-area-7-cloud-3-outer salesforce-floating">
-                    <img className="career-area-7-cloud-1" src="img/cloud.png" alt="" />
+                    <img className="career-area-7-cloud-1" src="img/cloud.webp" alt="" />
                     <p className='career-area-7-techName-hiring-1' >
                         <span className='d-flex align-items-center' >
-                            <img className="career-area-7-tech-img me-2" src="images/python_2.png" alt="" />
+                            <img className="career-area-7-tech-img me-2" src="images/python_2.webp" alt="" />
                             <b className='text-start' >
                                 Python
                                 <br/>
@@ -382,10 +382,10 @@ const Careers = () => {
                     </p>
                 </div>
                 <div className="career-area-7-cloud-4-outer aws-floating">
-                    <img className="career-area-7-cloud-1" src="img/cloud.png" alt="" />
+                    <img className="career-area-7-cloud-1" src="img/cloud.webp" alt="" />
                     <p className='career-area-7-techName-hiring-1' >
                         <span className='d-flex align-items-center' >
-                            <img className="career-area-7-tech-img me-2" src="icons/laravel.png" alt="" />
+                            <img className="career-area-7-tech-img me-2" src="icons/laravel.webp" alt="" />
                             <b className='text-start' >
                                 Laravel, PHP
                                 <br/>
@@ -396,10 +396,10 @@ const Careers = () => {
                     </p>
                 </div>
                 <div className="career-area-7-cloud-5-outer aws-floating">
-                    <img className="career-area-7-cloud-1" src="img/cloud.png" alt="" />
+                    <img className="career-area-7-cloud-1" src="img/cloud.webp" alt="" />
                     <p className='career-area-7-techName-hiring-1' >
                         <span className='d-flex align-items-center' >
-                            <img className="career-area-7-tech-img me-2" src="images/seo-analyst.png" alt="" />
+                            <img className="career-area-7-tech-img me-2" src="images/seo-analyst.webp" alt="" />
                             <b className='text-start' >
                                 SEO
                                 <br/>
@@ -425,11 +425,11 @@ const Careers = () => {
                     </div>
 
                     <div className='col-lg-6 col-md-6 d-flex justify-content-center' >
-                        <img className='career-area-8-img-2' src='/career_images/career-area-8-img-2.png' alt='career-area-8-img-2.png' />
+                        <img className='career-area-8-img-2' src='/career_images/career-area-8-img-2.webp' alt='career-area-8-img-2.webp' />
                     </div>
                     <div className='d-flex flex-column-reverse flex-md-row'>
                         <div className='m-2 col-lg-6 col-md-6 d-flex justify-content-center' >
-                            <img className='career-area-8-img-2' src='/career_images/career-area-8-img-22.jpg' alt='career-area-8-img-2.png' />
+                            <img className='career-area-8-img-2' src='/career_images/career-area-8-img-22.webp' alt='career-area-8-img-2.webp' />
                         </div>
                         <div className='m-2 col-lg-6 col-md-6 d-flex align-items-center' >
                             <div className='career-area-8-text-div-1'>
@@ -459,7 +459,7 @@ const Careers = () => {
                         {/* #First Slide */}
                         <div className='col-lg-6 col-md-6'>
                             <div className='p-5 pb-4' >
-                                <img className='w-100 career-area-9-img-1' src='/career_images/career-area-9-img-1.jpg' alt='career-area-9-img-1.png' />
+                                <img className='w-100 career-area-9-img-1' src='/career_images/career-area-9-img-1.webp' alt='career-area-9-img-1.webp' />
                             </div>
                             <div className='p-5 pt-0' >
                                 <h3 className='career-area-9-sub-heading mb-3' >
@@ -474,7 +474,7 @@ const Careers = () => {
                         </div>
                         <div className='col-lg-6 col-md-6' >
                             <div className='p-5 pb-4' >
-                                <img className='w-100 career-area-9-img-2' src='/career_images/career-area-9-img-2.png' alt='career-area-9-img-2.png' />
+                                <img className='w-100 career-area-9-img-2' src='/career_images/career-area-9-img-2.webp' alt='career-area-9-img-2.webp' />
                             </div>
                             <div className='p-5 pt-0' >
                                 <h3 className='career-area-9-sub-heading mb-3' >
@@ -490,7 +490,7 @@ const Careers = () => {
                         {/* #Second Slide */}
                         <div className='col-lg-6 col-md-6' >
                             <div className='p-5 pb-4' >
-                                <img className='w-100 career-area-9-img-1' src='/career_images/career-area-9-img-3.png' alt='career-area-9-img-1.png' />
+                                <img className='w-100 career-area-9-img-1' src='/career_images/career-area-9-img-3.webp' alt='career-area-9-img-1.webp' />
                             </div>
                             <div className='p-5 pt-0' >
                                 <h3 className='career-area-9-sub-heading mb-3' >
@@ -504,7 +504,7 @@ const Careers = () => {
                         </div>
                         <div className='col-lg-6 col-md-6' >
                             <div className='p-5 pb-4' >
-                                <img className='w-100 career-area-9-img-2' src='/career_images/career-area-9-img-4.jpg' alt='career-area-9-img-2.png' />
+                                <img className='w-100 career-area-9-img-2' src='/career_images/career-area-9-img-4.webp' alt='career-area-9-img-2.webp' />
                             </div>
                             <div className='p-5 pt-0' >
                                 <h3 className='career-area-9-sub-heading mb-3' >
@@ -517,7 +517,7 @@ const Careers = () => {
                         {/* #Third Slide */}
                         <div className='col-lg-6 col-md-6' >
                             <div className='p-5 pb-4 img-fluid' >
-                                <img className='w-100 career-area-9-img-1' src='/career_images/career-area-9-img-5.png' alt='career-area-9-img-1.png' />
+                                <img className='w-100 career-area-9-img-1' src='/career_images/career-area-9-img-5.webp' alt='career-area-9-img-1.webp' />
                             </div>
                             <div className='p-5 pt-0' >
                                 <h3 className='career-area-9-sub-heading mb-3' >
@@ -530,7 +530,7 @@ const Careers = () => {
                         </div>
                         <div className='col-lg-6 col-md-6' >
                             <div className='p-5 pb-4' >
-                                <img className='w-100 career-area-9-img-2' src='/career_images/explore-destination.jpg' alt='career-area-9-img-2.png' />
+                                <img className='w-100 career-area-9-img-2' src='/career_images/explore-destination.webp' alt='career-area-9-img-2.webp' />
                             </div>
                             <div className='p-5 pt-0' >
                                 <h3 className='career-area-9-sub-heading mb-3' >

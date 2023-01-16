@@ -14,14 +14,14 @@ const Speed = () => {
             </div>
           </div>
           <div className="speed__line">
-            <img className="speed__pic" src="img/line.svg" alt="" />
+            <img className="speed__pic" src="img/line.webp" alt="" />
           </div>
           <div className="speed__preview" data-aos>
             <div className="speed__graphic">
-              <img className="speed__pic" src="img/graphic.png" alt=""/>
+              <img className="speed__pic" src="img/graphic.webp" alt=""/>
             </div>
             <div className="speed__plant">
-              <img className="speed__pic js-parallax" data-scale="1.3" data-orientation="left" src="img/plant.png" alt="" />
+              <img className="speed__pic js-parallax" data-scale="1.3" data-orientation="left" src="img/plant.webp" alt="" />
             </div>
           </div>
           <div className="speed__circles">

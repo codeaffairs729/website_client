@@ -11,11 +11,11 @@ const Login = () => {
                 <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
                 <meta name="format-detection" content="telephone=no" />
-                <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
-                <link rel="icon" type="image/png" sizes="32x32" href="/logo/cgt_new_favicon.jpg" />
-                <link rel="icon" type="image/png" sizes="16x16" href="/logo/cgt_new_favicon.jpg" />
+                <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.webp" />
+                <link rel="icon" type="image.webp" sizes="32x32" href="/logo/cgt_new_favicon.webp" />
+                <link rel="icon" type="image.webp" sizes="16x16" href="/logo/cgt_new_favicon.webp" />
                 <link rel="manifest" href="img/site.webmanifest" />
-                <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5" />
+                <link rel="mask-icon" href="img/safari-pinned-tab.webp" color="#5bbad5" />
                 <meta name="msapplication-TileColor" content="#da532c" />
                 <meta name="theme-color" content="#ffffff" />
                 <meta name="description" content="CodeGarageTech" />
@@ -26,8 +26,8 @@ const Login = () => {
                         <div className="entry__head">
                             <Link href="./">
                                 <a className="entry__logo" >
-                                    <img className="entry__pic entry__pic_white" src="logo/logoEdited.png" alt="" />
-                                    <img className="entry__pic entry__pic_black" src="logo/logoEdited.png" alt="" />
+                                    <img className="entry__pic entry__pic_white" src="logo/logoEdited.webp" alt="" />
+                                    <img className="entry__pic entry__pic_black" src="logo/logoEdited.webp" alt="" />
                                 </a>
                             </Link>
                             <a className="entry__link" href="#">
@@ -41,7 +41,7 @@ const Login = () => {
                                     <div className="entry__title title title_sm">The world most powerful design tool.</div>
                                     <div className="entry__info">Create your own website with the Fastest Page Building Platform.</div>
                                     <div className="entry__hand">
-                                        <img className="entry__pic" src="img/entry-pic-1.png" alt="" />
+                                        <img className="entry__pic" src="img/entry-pic-1.webp" alt="" />
                                     </div>
                                 </div>
                                 <div className="entry__form">
@@ -52,7 +52,7 @@ const Login = () => {
                                     <div className="entry__info">Most powerful design tool.</div>
                                     <div className="entry__btns">
                                         <button className="entry__btn btn btn_border">
-                                            <img className="btn__pic" src="img/google.svg" alt="" />
+                                            <img className="btn__pic" src="img/google.webp" alt="" />
                                             <span className="btn__text">Sign in with Google</span>
                                         </button>
                                         <a className="entry__btn btn btn_purple" href="./signIn">Sign in with your email</a>
@@ -68,16 +68,16 @@ const Login = () => {
                             <a className="entry__author" href="#" >
                                 <div className="entry__text">A product by</div>
                                 <div className="entry__icon">
-                                    <img className="entry__pic" src="/logo/favicon_white.jpg" alt="" />
+                                    <img className="entry__pic" src="/logo/favicon_white.webp" alt="" />
                                 </div>
                             </a>
                         </div>
                     </div>
                     <div className="entry__bg">
-                        <img className="entry__pic" src="img/entry-circle.svg" alt="" />
+                        <img className="entry__pic" src="img/entry-circle.webp" alt="" />
                     </div>
                     <div className="entry__cube">
-                        <img className="entry__pic" src="img/cube.png" alt="" />
+                        <img className="entry__pic" src="img/cube.webp" alt="" />
                     </div>
                     <div className="entry__circles">
                         <div className="entry__circle"></div>

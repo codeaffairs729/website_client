@@ -12,17 +12,17 @@ const Quality = () => {
               <div className="quality__info info" data-aos="animation-scale-y" data-aos-delay="200">Easily create truly responsive components while deploying production-ready code.</div>
             </div>
             <div className="quality__line">
-              <img className="quality__pic" src="img/line-3.svg" alt="" />
+              <img className="quality__pic" src="img/line-3.webp" alt="" />
             </div>
             <div className="quality__preview">
-              <img className="quality__pic js-parallax" data-scale="1.2" data-orientation="left" src="img/lamp.png" alt="" />
+              <img className="quality__pic js-parallax" data-scale="1.2" data-orientation="left" src="img/lamp.webp" alt="" />
             </div>
           </div>
           <div className="quality__body">
             <div className="quality__col">
               <div className="quality__item" data-aos="animation-scale-x-left">
                 <div className="quality__icon">
-                  <img className="quality__pic" src="img/camera-big.png" alt="" />
+                  <img className="quality__pic" src="img/camera-big.webp" alt="" />
                 </div>
                 <div className="quality__details">
                   <div className="quality__category">Assets Library</div>
@@ -35,7 +35,7 @@ const Quality = () => {
             <div className="quality__col">
               <div className="quality__item" data-aos="animation-scale-x-right" data-aos-delay="200">
                 <div className="quality__icon">
-                  <img className="quality__pic" src="img/clock-big.png" alt="" />
+                  <img className="quality__pic" src="img/clock-big.webp" alt="" />
                 </div>
                 <div className="quality__details">
                   <div className="quality__category">Save Time</div>
@@ -48,7 +48,7 @@ const Quality = () => {
             <div className="quality__col">
               <div className="quality__item" data-aos="animation-scale-x-left">
                 <div className="quality__icon">
-                  <img className="quality__pic" src="img/cup-big.png" alt="" />
+                  <img className="quality__pic" src="img/cup-big.webp" alt="" />
                 </div>
                 <div className="quality__details">
                   <div className="quality__category">Relax</div>
@@ -61,7 +61,7 @@ const Quality = () => {
             <div className="quality__col">
               <div className="quality__item" data-aos="animation-scale-x-right" data-aos-delay="200">
                 <div className="quality__icon">
-                  <img className="quality__pic" src="img/chatbox-big.png" alt="" />
+                  <img className="quality__pic" src="img/chatbox-big.webp" alt="" />
                 </div>
                 <div className="quality__details">
                   <div className="quality__category">Support</div>

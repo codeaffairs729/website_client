@@ -9,7 +9,7 @@ const Trophies = () => {
                         <div className='col-lg-4 col-md-4 trophies-cols' data-aos="animation-scale-x-left">
                             <div className='row' >
                                 <div className='col-lg-12 d-flex justify-content-center' >
-                                    <img className='trophies-img' src='images/Calendar.png' alt='' />
+                                    <img className='trophies-img' src='images/Calendar.webp' alt='' />
                                 </div>
                                 <div className='col-lg-12 text-center trophies-text' >
                                     7+ Years
@@ -21,7 +21,7 @@ const Trophies = () => {
                         <div className='col-lg-4 col-md-4 trophies-cols' data-aos="animation-scale-y" >
                             <div className='row' >
                                 <div className='col-lg-12 d-flex justify-content-center' >
-                                    <img className='trophies-img' src='images/trophy-front-clay.png' alt='' />
+                                    <img className='trophies-img' src='images/trophy-front-clay.webp' alt='' />
                                 </div>
                                 <div className='col-lg-12 text-center trophies-text' >
                                     150+ Projects
@@ -33,7 +33,7 @@ const Trophies = () => {
                         <div className='col-lg-4 col-md-4' data-aos="animation-scale-x-right">
                             <div className='row' >
                                 <div className='col-lg-12 d-flex justify-content-center' >
-                                    <img className='trophies-img' src='images/frame_2.png' alt='' />
+                                    <img className='trophies-img' src='images/frame_2.webp' alt='' />
                                 </div>
                                 <div className='col-lg-12 text-center trophies-text' >
                                     120+ International

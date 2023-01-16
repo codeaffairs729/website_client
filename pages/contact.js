@@ -137,11 +137,11 @@ const Contact = () => {
                 <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
                 <meta name="format-detection" content="telephone=no" />
-                <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
-                <link rel="icon" type="image/png" sizes="32x32" href="/logo/cgt_new_favicon.png" />
-                <link rel="icon" type="image/png" sizes="16x16" href="/logo/cgt_new_favicon.png" />
+                <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.webp" />
+                <link rel="icon" type="image.webp" sizes="32x32" href="/logo/cgt_new_favicon.webp" />
+                <link rel="icon" type="image.webp" sizes="16x16" href="/logo/cgt_new_favicon.webp" />
                 <link rel="manifest" href="img/site.webmanifest" />
-                <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5" />
+                <link rel="mask-icon" href="img/safari-pinned-tab.webp" color="#5bbad5" />
                 <meta name="msapplication-TileColor" content="#da532c" />
                 <meta name="theme-color" content="#ffffff" />
                 <meta name="description" content="Please fill out the contact form to get in touch with us for your Web and App development needs. Our sales representative will get back to you soon." />
@@ -164,8 +164,8 @@ const Contact = () => {
                         <div className="entry__head contact__head">
                             <Link href="./">
                                 <a className="entry__logo contact__logo" >
-                                    <img className="entry__pic entry__pic_white entry__pic__entry__pic_white-size" src="logo/cgt_new_logo_alt.png" alt="CodeGarage Tech" />
-                                    <img className="entry__pic entry__pic_black" src="logo/cgt_new_logo_alt2.png" alt="CodeGarage Tech" />
+                                    <img className="entry__pic entry__pic_white entry__pic__entry__pic_white-size" src="logo/cgt_new_logo_alt.webp" alt="CodeGarage Tech" />
+                                    <img className="entry__pic entry__pic_black" src="logo/cgt_new_logo_alt2.webp" alt="CodeGarage Tech" />
                                 </a>
                             </Link>
                         </div>
@@ -224,7 +224,7 @@ const Contact = () => {
                                                                             <path id="Combined Shape_2" fillRule="evenodd" clipRule="evenodd" d="M10 6C8.89543 6 8 6.89543 8 8V16C8 17.1046 8.89543 18 10 18H22C23.1046 18 24 17.1046 24 16V8C24 6.89543 23.1046 6 22 6H10ZM21.9257 8.31565C21.7632 8.02389 21.3868 7.91473 21.0849 8.07183L16 10.7186L10.9151 8.07183C10.6132 7.91473 10.2368 8.02389 10.0743 8.31565C9.91179 8.6074 10.0247 8.97127 10.3265 9.12837L15.7057 11.9283C15.8894 12.0239 16.1106 12.0239 16.2943 11.9283L21.6735 9.12837C21.9753 8.97127 22.0882 8.6074 21.9257 8.31565Z" fill="#5956E9" />
                                                                         </g>
                                                                     </svg>
-                                                                    : <img className="field__pic" src="img/sending-mail.svg" alt="" />
+                                                                    : <img className="field__pic" src="img/sending-mail.webp" alt="" />
                                                             }
                                                         </div>
                                                         <input onFocus={() => changeEmailIcon(1)} onBlur={() => changeEmailIcon(0)}
@@ -266,36 +266,36 @@ const Contact = () => {
                         <div className="entry__foot"></div>
                     </div>
                     <div className="entry__bg">
-                        <img className="entry__pic" src="img/entry-circle.svg" alt="" />
+                        <img className="entry__pic" src="img/entry-circle.webp" alt="" />
                     </div>
                     <div className="contact__cloud heroku-floating">
                         <Link href="https://api.whatsapp.com/send?phone=918146394889">
                             <a title='Contact Us on whatsapp' >
-                                <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="" />
-                                <img className="contact-skype-icon" data-scale="1.5" data-orientation="right" src="icons/whatsapp.png" alt="" />
+                                <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.webp" alt="" />
+                                <img className="contact-skype-icon" data-scale="1.5" data-orientation="right" src="icons/whatsapp.webp" alt="" />
                             </a>
                         </Link>
                     </div>
                     <div className="contact_cloud_2 salesforce-floating">
                         <a style={{ cursor: "pointer" }} title='Quick Contact' onClick={handleModalShow} >
-                            <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="" />
-                            <img className="contact-skype-icon" data-scale="1.5" data-orientation="right" src="icons/gmail.png" alt="" />
+                            <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.webp" alt="" />
+                            <img className="contact-skype-icon" data-scale="1.5" data-orientation="right" src="icons/gmail.webp" alt="" />
                         </a>
                     </div>
 
                     <div className="contact_cloud_3 digitalocean-floating">
                         <Link href="skype:example123?chat">
                             <div>
-                                <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="" />
-                                <img className="contact-skype-icon" data-scale="1.5" data-orientation="right" src="icons/skype.png" alt="" />
+                                <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.webp" alt="" />
+                                <img className="contact-skype-icon" data-scale="1.5" data-orientation="right" src="icons/skype.webp" alt="" />
                             </div>
                         </Link>
                     </div>
                     {/* <div className="contact__bucket" >
-                        <img className="contact_bucket_pic" src="img/popup-pic-2.png" alt="" />
+                        <img className="contact_bucket_pic" src="img/popup-pic-2.webp" alt="" />
                     </div>
                     <div className="contact__arrow" >
-                        <img className="contact_arrow_pic" src="img/cursor-1.png" alt="" />
+                        <img className="contact_arrow_pic" src="img/cursor-1.webp" alt="" />
                     </div> */}
                     <div className="contact_circles_2">
                         <div className="contact_circle_2"></div>
@@ -325,7 +325,7 @@ const Contact = () => {
                                                 <path id="Combined Shape_2" fillRule="evenodd" clipRule="evenodd" d="M10 6C8.89543 6 8 6.89543 8 8V16C8 17.1046 8.89543 18 10 18H22C23.1046 18 24 17.1046 24 16V8C24 6.89543 23.1046 6 22 6H10ZM21.9257 8.31565C21.7632 8.02389 21.3868 7.91473 21.0849 8.07183L16 10.7186L10.9151 8.07183C10.6132 7.91473 10.2368 8.02389 10.0743 8.31565C9.91179 8.6074 10.0247 8.97127 10.3265 9.12837L15.7057 11.9283C15.8894 12.0239 16.1106 12.0239 16.2943 11.9283L21.6735 9.12837C21.9753 8.97127 22.0882 8.6074 21.9257 8.31565Z" fill="#5956E9" />
                                             </g>
                                         </svg>
-                                        : <img className="field__pic" src="img/sending-mail.svg" alt="" />
+                                        : <img className="field__pic" src="img/sending-mail.webp" alt="" />
                                 }
                             </div>
                             <input onFocus={() => changeEmailIcon(1)} onBlur={() => changeEmailIcon(0)}

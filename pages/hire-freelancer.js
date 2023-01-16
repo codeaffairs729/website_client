@@ -6,38 +6,38 @@ import Head from 'next/head'
 
 const techTitle =
   "Hire Certified and Professional Software Developers or DevOps Engineers";
-const techImage = "../../public/icons/hire-icon/Frame.png";
+const techImage = "../../public/icons/hire-icon/Frame.webp";
 import HireForm from "../components/hire";
 
 const bannerImage = [
-  { name: "Ruby on Rails", path: "icons/rails.png" },
-  { name: "ReactJs", path: "icons/reactjs.png" },
-  { name: "NextJs", path: "icons/nextjs.png" },
-  { name: "VueJs", path: "icons/vuejs.png" },
-  { name: "NuxtJs", path: "icons/nuxtjs.png" },
-  { name: "NodeJs", path: "icons/nodejs.png" },
-  { name: "Laravel", path: "icons/laravel.png" },
-  { name: "Shopify", path: "images/shopify.png" },
-  { name: "Wordpress", path: "icons/wordpress.png" },
-  { name: "React Native", path: "icons/reactjs.png" },
-  { name: "Ionic", path: "icons/ionic.png" },
-  { name: "Flutter", path: "images/flutter.png" },
-  { name: "Swift / iOS", path: "icons/swift.png" },
-  { name: "Android", path: "images/android_4.png" },
+  { name: "Ruby on Rails", path: "icons/rails.webp" },
+  { name: "ReactJs", path: "icons/reactjs.webp" },
+  { name: "NextJs", path: "icons/nextjs.webp" },
+  { name: "VueJs", path: "icons/vuejs.webp" },
+  { name: "NuxtJs", path: "icons/nuxtjs.webp" },
+  { name: "NodeJs", path: "icons/nodejs.webp" },
+  { name: "Laravel", path: "icons/laravel.webp" },
+  { name: "Shopify", path: "images/shopify.webp" },
+  { name: "Wordpress", path: "icons/wordpress.webp" },
+  { name: "React Native", path: "icons/reactjs.webp" },
+  { name: "Ionic", path: "icons/ionic.webp" },
+  { name: "Flutter", path: "images/flutter.webp" },
+  { name: "Swift / iOS", path: "icons/swift.webp" },
+  { name: "Android", path: "images/android_4.webp" },
 ];
 
 // const bannerImage = [
 //   {
-//     path: "icons/hire/clutch-co-vector-logo.svg",
+//     path: "icons/hire/clutch-co-vector-logo.webp",
 //   },
 //   {
-//     path: "icons/hire/goodfirms-logo-vector.svg",
+//     path: "icons/hire/goodfirms-logo-vector.webp",
 //   },
 //   {
-//     path: "icons/hire/peopleperhour-logo.svg",
+//     path: "icons/hire/peopleperhour-logo.webp",
 //   },
 //   {
-//     path: "icons/hire/upwork.svg",
+//     path: "icons/hire/upwork.webp",
 //   },
 // ];
 

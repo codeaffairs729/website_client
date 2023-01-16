@@ -19,19 +19,19 @@ const Offer = () => {
           </div>
           <div className="offer__view" data-aos data-aos-delay="400" data-aos-offset="0">
             <div className="offer__preview">
-              <img className="offer__pic" src="img/offer-pic-1.png" alt="" />
+              <img className="offer__pic" src="img/offer-pic-1.webp" alt="" />
             </div>
             <div className="offer__preview">
-              <img className="offer__pic" src="img/offer-pic-2.png" alt="" />
+              <img className="offer__pic" src="img/offer-pic-2.webp" alt="" />
             </div>
             <div className="offer__preview">
-              <img className="offer__pic" src="img/offer-pic-3.png" alt="" />
+              <img className="offer__pic" src="img/offer-pic-3.webp" alt="" />
             </div>
             <div className="offer__preview">
-              <img className="offer__pic" src="img/offer-pic-4.png" alt="" />
+              <img className="offer__pic" src="img/offer-pic-4.webp" alt="" />
             </div>
             <div className="offer__preview">
-              <img className="offer__pic" src="img/offer-pic-5.png" alt="" />
+              <img className="offer__pic" src="img/offer-pic-5.webp" alt="" />
             </div>
           </div>
         </div>

@@ -378,49 +378,49 @@ body:not(.touch-device) .header-item[href]:before {
 /* design-slide-green */
 
 .design-view-ucview-bg {
-  background: url('../public/images/ucview.png') no-repeat !important;
+  background: url('../public/images/ucview.webp') no-repeat !important;
   background-size: cover !important;
   background-position-x: center !important;
 }
 
 .design-view-stockarchitect-bg {
-  background: url('../public/images/stockarchitect.png') no-repeat !important;
+  background: url('../public/images/stockarchitect.webp') no-repeat !important;
   background-size: cover !important;
   background-position-x: center !important;
 }
 
 .design-view-withrelay-bg {
-  background: url('../public/images/withrelay.png') no-repeat !important;
+  background: url('../public/images/withrelay.webp') no-repeat !important;
   background-size: cover !important;
   background-position-x: center !important;
 }
 
 .design-view-videochatapro-bg {
-  background: url('../public/images/videochatapro.png') no-repeat !important;
+  background: url('../public/images/videochatapro.webp') no-repeat !important;
   background-size: cover !important;
   background-position-x: center !important;
 }
 
 .design-view-buyma-bg {
-  background: url('../public/images/buyma.png') no-repeat !important;
+  background: url('../public/images/buyma.webp') no-repeat !important;
   background-size: cover !important;
   background-position-x: center !important;
 }
 
 .design-view-fintrakk-bg {
-  background: url('../public/images/fintrakk.png') no-repeat !important;
+  background: url('../public/images/fintrakk.webp') no-repeat !important;
   background-size: cover !important;
   background-position-x: center !important;
 }
 
 .design-view-welcome-bg {
-  background: url('../public/images/welcomeAi.png') no-repeat !important;
+  background: url('../public/images/welcomeAi.webp') no-repeat !important;
   background-size: cover !important;
   background-position-x: center !important;
 }
 
 .design-view-bzigo-bg {
-  background: url('../public/images/bzigo-web.png') no-repeat !important;
+  background: url('../public/images/bzigo-web.webp') no-repeat !important;
   background-size: cover !important;
   background-position-x: center !important;
 }
@@ -1995,7 +1995,7 @@ body:not(.touch-device) .header-item[href]:before {
 
 .about-area-2 {
   font-family: 'DM Sans';
-  background: url('../public/images/Vector_332.png') no-repeat;
+  background: url('../public/images/Vector_332.webp') no-repeat;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -2811,7 +2811,7 @@ body:not(.touch-device) .header-item[href]:before {
   box-sizing: border-box;
   width: 200px;
   height: 200px;
-  background: url(/aboutUsImages/team_pic_7.png);
+  background: url(/aboutUsImages/team_pic_7.webp);
   border: 5px solid #5956E9;
   background-size: cover;
 }
@@ -2823,7 +2823,7 @@ body:not(.touch-device) .header-item[href]:before {
   top: 0%;
   right: 0%;
   box-sizing: border-box;
-  background: url(/career_images/career-area-4-circle2.png);
+  background: url(/career_images/career-area-4-circle2.webp);
   border: 5px solid #27272E;
   background-size: cover;
 }
@@ -2835,7 +2835,7 @@ body:not(.touch-device) .header-item[href]:before {
   left: 0%;
   bottom: 0%;
   box-sizing: border-box;
-  background: url(/career_images/career-area-4-circle3.png);
+  background: url(/career_images/career-area-4-circle3.webp);
   border: 5px solid #5BA79F;
   background-size: cover;
 }
@@ -2847,7 +2847,7 @@ body:not(.touch-device) .header-item[href]:before {
   right: 10%;
   bottom: 15%;
   box-sizing: border-box;
-  background: url(/career_images/people_img4.jpg);
+  background: url(/career_images/people_img4.webp);
   border: 5px solid #F5D485;
   background-size: cover;
 }

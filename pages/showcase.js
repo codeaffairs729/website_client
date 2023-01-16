@@ -14,7 +14,7 @@ const Showcase = () => {
             </div>
           </div>
           <div className="showcase__bg">
-            <img className="showcase__pic" src="img/showcase-circle.svg" alt="" />
+            <img className="showcase__pic" src="img/showcase-circle.webp" alt="" />
           </div>
           <div className="showcase__circles">
             <div className="showcase__circle"></div>
@@ -22,10 +22,10 @@ const Showcase = () => {
           </div>
           <div className="showcase__list">
             <div className="showcase__preview">
-              <img className="showcase__pic js-parallax" data-scale="1.3" data-orientation="right" src="img/group-1.png" alt="" />
+              <img className="showcase__pic js-parallax" data-scale="1.3" data-orientation="right" src="img/group-1.webp" alt="" />
             </div>
             <div className="showcase__preview">
-              <img className="showcase__pic js-parallax" data-scale="1.3" data-orientation="left" src="img/group-2.png" alt="" />
+              <img className="showcase__pic js-parallax" data-scale="1.3" data-orientation="left" src="img/group-2.webp" alt="" />
             </div>
           </div>
         </div>

@@ -16,10 +16,10 @@ const Roadmap = () => {
               </div>
               <div className="roadmap__view" data-aos>
                 <div className="roadmap__calendar">
-                  <img className="roadmap__pic" src="img/roadmap-pic.png" alt="" />
+                  <img className="roadmap__pic" src="img/roadmap-pic.webp" alt="" />
                 </div>
                 <div className="roadmap__bg">
-                  <img className="roadmap__pic js-parallax" data-scale="1.5" data-orientation="left" src="img/roadmap-pic-1.png" alt="" />
+                  <img className="roadmap__pic js-parallax" data-scale="1.5" data-orientation="left" src="img/roadmap-pic-1.webp" alt="" />
                 </div>
               </div>
             </div>
@@ -72,7 +72,7 @@ const Roadmap = () => {
             <div className="roadmap__circle"></div>
           </div>
           <div className="roadmap__preview" data-aos data-aos-duration="1000" data-aos-delay="300">
-            <img className="roadmap__pic" src="img/roadmap-pic-2.svg" alt="" />
+            <img className="roadmap__pic" src="img/roadmap-pic-2.webp" alt="" />
           </div>
         </div>
   )

@@ -40,7 +40,7 @@ const Plan = () => {
                   </svg></div>
                 <div className="plan__category">
                   <div className="plan__icon">
-                    <img className="plan__pic" src="img/smile-1.svg" alt="" />
+                    <img className="plan__pic" src="img/smile-1.webp" alt="" />
                   </div>
                   <div className="plan__text">Individual</div>
                 </div>
@@ -55,7 +55,7 @@ const Plan = () => {
               <div className="plan__item js-plan-item" style={ selectedPlan == 'standard' ? {display: "block"} : {display: "none"} } data-aos="animation-translate-y" data-aos-delay="200">
                 <div className="plan__category">
                   <div className="plan__icon">
-                    <img className="plan__pic" src="img/smile-2.svg" alt="" />
+                    <img className="plan__pic" src="img/smile-2.webp" alt="" />
                   </div>
                   <div className="plan__text">Small Team</div>
                 </div>
@@ -70,7 +70,7 @@ const Plan = () => {
               <div className="plan__item js-plan-item" style={ selectedPlan == 'ultimate' ? {display: "block"} : {display: "none"} } data-aos="animation-translate-y" data-aos-delay="400">
                 <div className="plan__category">
                   <div className="plan__icon">
-                    <img className="plan__pic" src="img/smile-2.svg" alt="" />
+                    <img className="plan__pic" src="img/smile-2.webp" alt="" />
                   </div>
                   <div className="plan__text">Large Team</div>
                 </div>
