@@ -11,7 +11,7 @@ const Tool = () => {
             <div className="tool__btn" data-aos="animation-scale-y" data-aos-delay="300"><a className="btn btn_white js-popup-open" href="#popup-contact" data-effect="mfp-zoom-in">Try free for 30 days</a></div>
           </div>
           <div className="tool__cloud">
-            <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.webp" alt="" />
+            <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.webp" alt="3D Cloud" />
           </div>
         </div>
       </div>

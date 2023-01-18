@@ -91,14 +91,12 @@ const Design = () => {
                                         <div className="design__text">
                                             UCView is a leading provider of digital signage software worldwide, offering world-class digital signage Saas and servers based (with load balancing) and content management software that is reliable, simple to use, and cost-effective to operate.
                                         </div>
-                                        <Link href="https://www.ucview.com/">
-                                            <a className="design__link" >
+                                            <a href="https://www.ucview.com/" className="design__link" >
                                                 Visit
                                                 <svg className="icon icon-arrow-right">
                                                     <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                                                 </svg>
                                             </a>
-                                        </Link>
                                     </div>
                                 </div>
                                 <div className="design-slide-blue" data-aos="animation-translate-y" data-aos-delay="200">
@@ -112,14 +110,12 @@ const Design = () => {
                                         <div className="design__info">Stock Architect</div>
                                         <div className="design__text">
                                             Stock Architect delivers stock market information from various sources in the curated form to its users to help them take informed decisions before buying or selling stocks. You can now get real-time views from real investors and traders.                                         </div>
-                                        <Link href="https://stockarchitect.com/">
-                                            <a className="design__link" >
+                                            <a className="design__link" href="https://stockarchitect.com/">
                                                 Visit
                                                 <svg className="icon icon-arrow-right">
                                                     <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                                                 </svg>
                                             </a>
-                                        </Link>
                                     </div>
                                 </div>
                                 <div className="design-slide-green" data-aos="animation-translate-y" data-aos-delay="400">
@@ -133,14 +129,12 @@ const Design = () => {
                                         <div className="design__info">Withrelay</div>
                                         <div className="design__text">
                                             Send & receive text messages, set auto-responders, schedule notifications & accept payments using your existing business phone number in a single conversation. It gives a virtual SMS phone number that your customers can use to text immediately.                                        </div>
-                                        <Link href="https://www.withrelay.com/">
-                                            <a className="design__link" >
+                                            <a className="design__link" href="https://www.withrelay.com/" >
                                                 Visit
                                                 <svg className="icon icon-arrow-right">
                                                     <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                                                 </svg>
                                             </a>
-                                        </Link>
                                     </div>
                                 </div>
                                 <div className="design-slide-pink" data-aos="animation-translate-y">
@@ -154,14 +148,12 @@ const Design = () => {
                                         <div className="design__info">VideoChatAPro</div>
                                         <div className="design__text">
                                             With the help of Video Chat a Pro app you can get advice from skilled HVAC & landscaping professionals in real-time, it is super simple to download this app. This app power your business on the go by instantly notifying you of free customer leads, and much more.                                          </div>
-                                        <Link href="https://videochatapro.com/">
                                             <a className="design__link" href="https://videochatapro.com/">
                                                 Visit
                                                 <svg className="icon icon-arrow-right">
                                                     <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                                                 </svg>
                                             </a>
-                                        </Link>
                                     </div>
                                 </div>
                                 <div className="design-slide-blue" data-aos="animation-translate-y">
@@ -175,14 +167,12 @@ const Design = () => {
                                         <div className="design__info">Buyma</div>
                                         <div className="design__text">
                                             Buyma is a shopping application that allows you to shop for a variety of products, including clothing, bags, and accessories. You can have access to limited collections of your favorite brands that may not be sold in your country.                                         </div>
-                                        <Link href="https://www.buyma.us/">
-                                            <a className="design__link" >
+                                            <a className="design__link" href="https://www.buyma.us/">
                                                 Visit
                                                 <svg className="icon icon-arrow-right">
                                                     <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                                                 </svg>
                                             </a>
-                                        </Link>
                                     </div>
                                 </div>
                                 <div className="design-slide-green" data-aos="animation-translate-y" data-aos-delay="0">
@@ -196,14 +186,12 @@ const Design = () => {
                                         <div className="design__info">Fintrakk</div>
                                         <div className="design__text">
                                             Fintrakk is an application that offers knowledge about Finance, Investments, Stock Brokers, and Stock Market. You can explore important concepts, popular products or services, trading apps, and interesting investing ideas across the world.                                         </div>
-                                        <Link href="https://fintrakk.com/">
                                             <a className="design__link" href="https://fintrakk.com/">
                                                 Visit
                                                 <svg className="icon icon-arrow-right">
                                                     <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                                                 </svg>
                                             </a>
-                                        </Link>
                                     </div>
                                 </div>
                                 <div className="design-slide-pink" data-aos="animation-translate-y">
@@ -217,14 +205,12 @@ const Design = () => {
                                         <div className="design__info">Welcome AI</div>
                                         <div className="design__text">
                                             Welcome AI is an application that provides you with essential knowledge on Artificial Intelligence, emerging technologies, and changing industries. You can discover and learn about AI and emerging technologies within business today.                                        </div>
-                                        <Link href="https://welcome.ai/">
                                             <a className="design__link" href="https://welcome.ai/">
                                                 Visit
                                                 <svg className="icon icon-arrow-right">
                                                     <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                                                 </svg>
                                             </a>
-                                        </Link>
                                     </div>
                                 </div>
                                 <div className="design-slide-blue" data-aos="animation-translate-y">
@@ -234,14 +220,12 @@ const Design = () => {
                                         <div className="design__info">Bzigo</div>
                                         <div className="design__text">
                                             Bzigo is the first-ever device that actively detects and locates mosquitoes. Once a mosquito is detected, you receive a notification on your smartphone, and a laser marker shows the mosquito’s precise location, allowing you to easily eliminate it.                                        </div>
-                                        <Link href="https://bzigo.com/">
                                             <a className="design__link" href="https://bzigo.com/">
                                                 Visit
                                                 <svg className="icon icon-arrow-right">
                                                     <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                                                 </svg>
                                             </a>
-                                        </Link>
                                     </div>
                                 </div>
 

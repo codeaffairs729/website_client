@@ -11,10 +11,10 @@ function AboutUs() {
     const [companyFacesDesc, setCompanyFacesDesc] = useState(0);
 
     const sideImgArr = [
-        ["aboutUsImages/about-img1.webp"],
-        ["aboutUsImages/about-img2.webp"],
-        ["aboutUsImages/about-img4.webp"],
-        ["aboutUsImages/about-img3.webp"]
+        ["aboutUsImages/about-img1.webp","Mehakpal Singh(Founder)"],
+        ["aboutUsImages/about-img2.webp","Poonam Thakur(HR Manager)"],
+        ["aboutUsImages/about-img4.webp","Naresh Bhatia(Chartered Accountant)"],
+        ["aboutUsImages/about-img3.webp","Kannav Sharma(Lawyer)"]
     ]
 
     const companyFacesDetail = [
@@ -85,20 +85,20 @@ function AboutUs() {
                     <div className='col-lg-12' >
                         <div className='row' >
                             <div className='col-lg-5 col-md-5 col-12 text-end' >
-                                <img className='about-area-6-pic-1' src='aboutUsImages/team_pic_3.webp' alt='' />
+                                <img className='about-area-6-pic-1' src='aboutUsImages/team_pic_3.webp' alt='Harsh, Dixit & Vishav' />
                             </div>
                             <div className='col-lg-2 col-md-2 col-4' >
                                 <div className='row' >
                                     <div className='col-lg-12 about-area-6-img-outer' >
-                                        <img className='about-area-6-pics' src='aboutUsImages/team_pic_4.webp' alt='' />
+                                        <img className='about-area-6-pics' src='aboutUsImages/team_pic_4.webp' alt='Harsh, Abhishek and Vishav' />
                                     </div>
                                     <div className='col-lg-12 about-area-6-img-outer' >
-                                        <img className='about-area-6-pics' src='aboutUsImages/team_pic_2.webp' alt='' />
+                                        <img className='about-area-6-pics' src='aboutUsImages/team_pic_2.webp' alt='Tanya' />
                                     </div>
                                 </div>
                             </div>
                             <div className='col-lg-5 col-md-5 col-8' >
-                                <img className='about-area-6-pic-1' src='aboutUsImages/team_pic_1.webp' alt='' />
+                                <img className='about-area-6-pic-1' src='aboutUsImages/team_pic_1.webp' alt='Udham, Ankush & Mehakpal(Boss)' />
                             </div>
                         </div>
                     </div>
@@ -122,7 +122,7 @@ function AboutUs() {
                         </p>
                     </div>
                     <div className='col-lg-5 col-md-6 about-area-7-pic-1-outer d-flex align-items-center' >
-                        <img className='w-100' src='aboutUsImages/team_pic_9.webp' alt='' />
+                        <img className='w-100' src='aboutUsImages/team_pic_9.webp' alt='Aim Board' />
                     </div>
                 </div>
                 <div className='about-area-7-circle-1' ></div>
@@ -135,9 +135,9 @@ function AboutUs() {
                             {/* <div className="about-area-2-grey-circle" >
                                 <img className="about-area-2-cam-pic" src="images/Camera _.webp" alt="" />
                             </div> */}
-                            <img className='about-area-2-pic-2' src='aboutUsImages/team_pic_6.webp' alt='' />
-                            <img className='about-area-2-pic-3' src='aboutUsImages/team_pic_7.webp' alt='' />
-                            <img className='about-area-2-pic-4' src='aboutUsImages/team_pic_8.webp' alt='' />
+                            <img className='about-area-2-pic-2' src='aboutUsImages/team_pic_6.webp' alt='Old CGT Team Members' />
+                            <img className='about-area-2-pic-3' src='aboutUsImages/team_pic_7.webp' alt='Old CGT Team ' />
+                            <img className='about-area-2-pic-4' src='aboutUsImages/team_pic_8.webp' alt='Vishav, Shubham & Tanya' />
                         </div>
                         <div className='col-lg-6 about-area-2-text-area' >
                             <h2 className='about-area-2-heading mb-5' >
@@ -156,7 +156,7 @@ function AboutUs() {
                 <div className='about-area-2-circle2' ></div>
                 <div className='about-area-2-circle3' ></div>
                 <div className='about-area-2-circle4' ></div>
-                <img className='about-area-2-cube' src='images/cube.webp' alt='' />
+                <img className='about-area-2-cube' src='images/cube.webp' alt='3D Cube' />
             </div>
 
             <div className='container-fluid mt-5 about-area-8' >
@@ -164,7 +164,7 @@ function AboutUs() {
                     <h2 className='text-center about-area-8-heading'>
                         We Connect Globally
                     </h2>
-                    <img className='w-100' src='aboutUsImages/global_connections.webp' alt=''
+                    <img className='w-100' src='aboutUsImages/global_connections.webp' alt='3D Global Map'
                         useMap='#world-map'
                     />
                     <map name="world-map">
@@ -198,6 +198,7 @@ function AboutUs() {
                                     return <SideImages
                                         key={index}
                                         id={index}
+                                        altImg={element[1]}
                                         sideImagesgUrl={element[0]}
                                         SideImagesChangeHandle={SideImagesChangeHandle}
                                     />
@@ -218,7 +219,7 @@ function AboutUs() {
                                                     <h5 className='about-area-4-main-name' >{companyFacesDetail[companyFacesDesc][0]}</h5>
                                                     <p className='about-area-4-main-designation' >{companyFacesDetail[companyFacesDesc][1]}</p>
                                                 </div>
-                                                <img className='w-100' src='/aboutUsImages/about-area-4-main-img-shape.webp' alt='about-area-4-main-img-shape' />
+                                                <img className='w-100' src='/aboutUsImages/about-area-4-main-img-shape.webp' alt='Background Shape' />
                                             </div>
                                         </div>
                                     </div>
@@ -304,7 +305,7 @@ function AboutUs() {
                                 <div className='col-lg-4 col-md-6' >
                                     <div className='row' >
                                         <div className='col-lg-2 col-md-2 col-2 text-center' >
-                                            <img className='about-area-1-icon-1 w-100' src='/icons/transparency.webp' alt='Union' />
+                                            <img className='about-area-1-icon-1 w-100' src='/icons/transparency.webp' alt='Transparency' />
                                         </div>
                                         <div className='col-lg-10 col-md-10 col-10 d-flex align-items-center' >
                                             <p className='about-area-1-header-1' >
@@ -328,7 +329,7 @@ function AboutUs() {
                                 <div className='col-lg-4 col-md-6' >
                                     <div className='row' >
                                         <div className='col-lg-2 col-md-2 col-2 text-center' >
-                                            <img className='about-area-1-icon-1 w-100' src='/icons/support.webp' alt='Union' />
+                                            <img className='about-area-1-icon-1 w-100' src='/icons/support.webp' alt='Support' />
                                         </div>
                                         <div className='col-lg-10 col-md-10 col-10 d-flex align-items-center' >
                                             <p className='about-area-1-header-1' >
@@ -350,7 +351,7 @@ function AboutUs() {
                                 <div className='col-lg-4 col-md-6' >
                                     <div className='row' >
                                         <div className='col-lg-2 col-md-2 col-2 text-center' >
-                                            <img className='about-area-1-icon-1 w-100' src='/icons/future_ready_tech.webp' alt='Union' />
+                                            <img className='about-area-1-icon-1 w-100' src='/icons/future_ready_tech.webp' alt='Future Ready Tech' />
                                         </div>
                                         <div className='col-lg-10 col-md-10 col-10 d-flex align-items-center' >
                                             <p className='about-area-1-header-1' >
@@ -373,7 +374,7 @@ function AboutUs() {
                                 <div className='col-lg-4 col-md-6' >
                                     <div className='row' >
                                         <div className='col-lg-2 col-md-2 col-2 text-center' >
-                                            <img className='about-area-1-icon-1 w-100' src='/icons/process_oriented_work.webp' alt='Union' />
+                                            <img className='about-area-1-icon-1 w-100' src='/icons/process_oriented_work.webp' alt='Process Oriented Work' />
                                         </div>
                                         <div className='col-lg-10 col-md-10 col-10 d-flex align-items-center' >
                                             <p className='about-area-1-header-1' >
@@ -394,7 +395,7 @@ function AboutUs() {
                                 <div className='col-lg-4 col-md-6' >
                                     <div className='row' >
                                         <div className='col-lg-2 col-md-2 col-2 text-center' >
-                                            <img className='about-area-1-icon-1 w-100' src='/icons/flexible.webp' alt='Union' />
+                                            <img className='about-area-1-icon-1 w-100' src='/icons/flexible.webp' alt='Flexible' />
                                         </div>
                                         <div className='col-lg-10 col-md-10 col-10 d-flex align-items-center' >
                                             <p className='about-area-1-header-1' >
@@ -414,7 +415,7 @@ function AboutUs() {
                         </div>
                     </div>
                 </div>
-                <img className='about-area-1-line-circle' src='images/career-line-circle.webp' alt='' />
+                <img className='about-area-1-line-circle' src='images/career-line-circle.webp' alt='Line & Circle' />
             </div>
 
             {/* <div className='container-fluid px-5 mt-5 about-area-3' >
@@ -517,7 +518,7 @@ function AboutUs() {
                         <div className='col-lg-4 col-md-4 trophies-cols' data-aos="animation-scale-x-left">
                             <div className='row' >
                                 <div className='col-lg-12 d-flex justify-content-center' >
-                                    <img className='trophies-img' src='images/Calendar.webp' alt='' />
+                                    <img className='trophies-img' src='images/Calendar.webp' alt='3D Calender' />
                                 </div>
                                 <div className='col-lg-12 text-center trophies-text' >
                                     7+ Years
@@ -529,7 +530,7 @@ function AboutUs() {
                         <div className='col-lg-4 col-md-4 trophies-cols' data-aos="animation-scale-y" >
                             <div className='row' >
                                 <div className='col-lg-12 d-flex justify-content-center' >
-                                    <img className='trophies-img' src='images/trophy-front-clay.webp' alt='' />
+                                    <img className='trophies-img' src='images/trophy-front-clay.webp' alt='3D Trophy Front Clay' />
                                 </div>
                                 <div className='col-lg-12 text-center trophies-text' >
                                     150+ Projects
@@ -566,9 +567,7 @@ function AboutUs() {
                                     <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M19.8621 1L32 13.3636M32 13.3636L19.8621 25.7273M32 13.3636H1.19209e-07" stroke="black" strokeWidth="2" />
                                     </svg>
-                                    <Link href="./contact">
-                                        <a target="_blank" className="header__btn btn btn_pink" >Get in Touch</a>
-                                    </Link>
+                                        <a href="./contact" target="_blank" className="header__btn btn btn_pink" >Get in Touch</a>
                                 </p>
 
 

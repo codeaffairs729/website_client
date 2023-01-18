@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import ServiceForm from "../../components/service";
-import HireForm from "../../components/hire";
+import TechComponent from "../../components/techComponent";
+import HireServiceLayout from "../../components/hireServiceLayout";
 import Banner from "../../components/banner";
 import Link from "next/link";
 import Head from "next/head";
 const techTitle = "Web Solutions";
-// const techImage = "/icons/service-icon/Frame.webp";
 import ScheduleForm from "../../components/schedule";
-
 
 // const contentHeader=()=><div></div>
 const contentHeader1 = () => {
@@ -19,14 +17,16 @@ const contentHeader1 = () => {
           <p className="hire-p text-danger mt-2">
             A Roadmap To The Emerging And Effective Web And CMS Development
           </p>
-          <Link href="/contact">
-            <a target="_blank" className="header__btn btn btn_purple mt-5">
-              Get in Touch
-            </a>
-          </Link>
+          <a
+            target="_blank"
+            href="/contact"
+            className="header__btn btn btn_purple mt-5"
+          >
+            Get in Touch
+          </a>
         </div>
         <div className="tech-service-body-left-right">
-          <img src="/icons/service-icon/Frame.webp" />
+          <img src="/icons/service-icon/Frame.webp" alt="" />
         </div>
       </div>
     </>
@@ -242,8 +242,7 @@ const content7 = () => (
   </>
 );
 
-
-const content6 = () => <ServiceForm />;
+const content6 = () => <TechComponent />;
 const content3 = () => (
   <div className="form-service">
     <ScheduleForm
@@ -255,7 +254,7 @@ const content3 = () => (
 const WebServices = () => {
   return (
     <>
-      <HireForm
+      <HireServiceLayout
         content1={content1}
         content3={content3}
         content6={content6}
@@ -263,7 +262,6 @@ const WebServices = () => {
         contentHeader1={contentHeader1}
         techTitle={techTitle}
         bannerComponent={Banner}
-        
       />
     </>
   );

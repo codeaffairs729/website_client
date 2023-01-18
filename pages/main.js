@@ -75,16 +75,12 @@ const Main = () => {
               </h1>
               {/* <div className="main__info info ms-3 main-info" data-aos="animation-scale-y" data-aos-delay="400"> */}
               <div className="freelancer-btn ms-3">
-                <Link href="./hire-freelancer">
-                  <a target="_blank" className="freelancer-main__btn">
+                  <a href="./hire-freelancer" target="_blank" className="freelancer-main__btn">
                     Hire a freelancer
                   </a>
-                </Link>
-                <Link href="./hire-team">
-                  <a target="_blank" className="freelancer-main__btn">
+                  <a href="./hire-team" target="_blank" className="freelancer-main__btn">
                     Hire a team
                   </a>
-                </Link>
               </div>
               <div className="main__info info ms-3 main-info">
                 We deliver result-oriented, customized services with an emphasis
@@ -115,7 +111,7 @@ const Main = () => {
                 data-scale="1.5"
                 data-orientation="down"
                 src="img/main-pic-1.webp"
-                alt=""
+                alt="3D Video Play Button Image"
               />
             </div>
             <div className="main__preview">
@@ -124,11 +120,11 @@ const Main = () => {
                 data-scale="1.5"
                 data-orientation="up"
                 src="img/main-pic-2.webp"
-                alt=""
+                alt="3D Main Profile PNG"
               />
             </div>
             <div className="main__preview">
-              <img className="main__pic" src="img/mouse.webp" alt="" />
+              <img className="main__pic" src="img/mouse.webp" alt="3D Mouse PNG" />
             </div>
             {/* <div className="main__preview">
                             <img className="main__pic js-parallax" data-scale="1.5" data-orientation="up" src="img/main-pic-2.webp" alt="" />
@@ -137,7 +133,7 @@ const Main = () => {
               <img
                 className="main__pic"
                 src="images/desktop-asset.webp"
-                alt=""
+                alt="3D Desktop Assets"
               />
             </div>
           </div>

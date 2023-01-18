@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ServiceForm from "../../components/service";
-import HireForm from "../../components/hire";
+import TechComponent from "../../components/techComponent";
+import HireServiceLayout from "../../components/hireServiceLayout";
 import Banner from "../../components/banner";
 import Link from "next/link";
 import Head from "next/head";
@@ -166,7 +166,7 @@ const content7 = () => (
   </>
 );
 
-const content6 = () => <div ><ServiceForm /></div>;
+const content6 = () => <div ><TechComponent /></div>;
 const content3 = () => (
   <div className="form-service">
     <ScheduleForm
@@ -184,7 +184,7 @@ const MobileSolutions = () => {
           href="https://www.codegaragetech.com/services/mobile-solutions"
         />
       </Head>
-      <HireForm
+      <HireServiceLayout
         content1={content1}
         content3={content3}
         content6={content6}

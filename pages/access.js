@@ -103,11 +103,11 @@ const Access = () => {
           <h2 className='access-top-heading' >We Simplify and Streamline Each Step In Your App.</h2>
           <div className="access__view connect__view" data-aos data-aos-delay="300">
             <div className="access__preview">
-              <img className="access__pic access-main-cloud" src="img/cloud.webp" alt="" />
+              <img className="access__pic access-main-cloud" src="img/cloud.webp" alt="3D Cloud" />
               {/* <img className="access__pic connect__pic" src="images/connect.webp" alt="" /> */}
-              <img className="access__pic sphere__pic sphere-floating" src="images/Sphere.webp" alt="" />
-              <img className="access-azure-cloud sphere-floating" src="images/azure.webp" alt="" />
-              <img className="access-heading" src="images/Cloud_Management.webp" alt="" />
+              <img className="access__pic sphere__pic sphere-floating" src="images/Sphere.webp" alt="3D Pnk Ball" />
+              <img className="access-azure-cloud sphere-floating" src="images/azure.webp" alt="Azure Image" />
+              <img className="access-heading" src="images/Cloud_Management.webp" alt="Cloud Management" />
               {/* <h2 className="access-heading" >Cloud Services</h2> */}
               {/* <img className="access__pic" src="images/connect.webp" alt="" /> */}
             </div>
@@ -123,7 +123,7 @@ const Access = () => {
               <div className="access__field">
                 <input className="access__input" type="email" placeholder="Your Email Address" onChange={(e) => setEmail(e.target.value)} value={email} required />
                 <div className="access__icon">
-                  <img className="access__pic" src="img/sending-mail.webp" alt="" />
+                  <img className="access__pic" src="img/sending-mail.webp" alt="Sending Mail PNG" />
                 </div>
               </div>
               <button ref={(submitBtnRef) => { submitBtn = submitBtnRef }} className="request_connect_btn access__btn btn btn_purple" type="submit" >
@@ -139,20 +139,20 @@ const Access = () => {
         </div>
         <div className="access__clouds">
           <div className="access__cloud access-cloud-1 digitalocean-floating">
-            <img className="access__pic js-parallax" data-scale="1.5" data-orientation="left" src="img/cloud.webp" alt="" />
-            <img className="access-google-cloud" data-scale="1.5" data-orientation="left" src="images/digitalocean.webp" alt="" />
+            <img className="access__pic js-parallax" data-scale="1.5" data-orientation="left" src="img/cloud.webp" alt="3D Cloud" />
+            <img className="access-google-cloud" data-scale="1.5" data-orientation="left" src="images/digitalocean.webp" alt="Digital Ocean PNG" />
           </div>
           <div className="access__cloud gcloud-floating">
-            <img className="access__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.webp" alt="" />
-            <img className="access-google-cloud" data-scale="1.5" data-orientation="right" src="images/google-cloud-1.webp" alt="" />
+            <img className="access__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.webp" alt="3D Cloud" />
+            <img className="access-google-cloud" data-scale="1.5" data-orientation="right" src="images/google-cloud-1.webp" alt="Google Cloud PNG" />
           </div>
           <div className="access__cloud access-aws-cloud-outer aws-floating">
-            <img className="access__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.webp" alt="" />
-            <img className="access-google-cloud" data-scale="1.5" data-orientation="right" src="images/aws.webp" alt="" />
+            <img className="access__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.webp" alt="3D Cloud" />
+            <img className="access-google-cloud" data-scale="1.5" data-orientation="right" src="images/aws.webp" alt="AWS - Logo" />
           </div>
           <div className="access__cloud access-heroku-cloud-outer heroku-floating">
             <img className="access__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.webp" alt="" />
-            <img className="access-google-cloud access-heroku-cloud" data-scale="1.5" data-orientation="right" src="images/heroku.webp" alt="" />
+            <img className="access-google-cloud access-heroku-cloud" data-scale="1.5" data-orientation="right" src="images/heroku.webp" alt="Heroku - Logo" />
           </div>
         </div>
         <div className="access__balls">
@@ -161,12 +161,12 @@ const Access = () => {
           <div className="access__ball"></div>
           <div className="access__ball"></div>
           <div className="access__ball js-rellax access-ball-yellow rackspace-floating" data-rellax-speed="-1">
-            <img className="access-google-cloud access-rackspace-cloud" src="images/rackspace.webp" alt="" />
+            <img className="access-google-cloud access-rackspace-cloud" src="images/rackspace.webp" alt="Rackspace - Logo" />
           </div>
           <div className="access__ball"></div>
           <div className="access__ball js-rellax" data-rellax-speed="1"></div>
         </div>
-        <img className="access-salesforce-cloud salesforce-floating" src="images/salesforce.webp" alt="" />
+        <img className="access-salesforce-cloud salesforce-floating" src="images/salesforce.webp" alt="Salesforce - Logo" />
       </div>
     </>
   )

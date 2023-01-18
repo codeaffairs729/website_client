@@ -6,24 +6,23 @@ import ScheduleForm from "../components/schedule";
 
 const techTitle =
   "Hire Certified and Professional Software Developers or DevOps Engineers";
-const techImage = "../../public/icons/hire-icon/Frame.webp";
-import HireForm from "../components/hire";
+import HireServiceLayout from "../components/hireServiceLayout";
 
 const bannerImage = [
-  { name: "Ruby on Rails", path: "icons/rails.webp" },
-  { name: "ReactJs", path: "icons/reactjs.webp" },
-  { name: "NextJs", path: "icons/nextjs.webp" },
-  { name: "VueJs", path: "icons/vuejs.webp" },
-  { name: "NuxtJs", path: "icons/nuxtjs.webp" },
-  { name: "NodeJs", path: "icons/nodejs.webp" },
-  { name: "Laravel", path: "icons/laravel.webp" },
-  { name: "Shopify", path: "images/shopify.webp" },
-  { name: "Wordpress", path: "icons/wordpress.webp" },
-  { name: "React Native", path: "icons/reactjs.webp" },
-  { name: "Ionic", path: "icons/ionic.webp" },
-  { name: "Flutter", path: "images/flutter.webp" },
-  { name: "Swift / iOS", path: "icons/swift.webp" },
-  { name: "Android", path: "images/android_4.webp" },
+  { name: "Ruby on Rails", path: "icons/rails.webp",altImg:'Rails PNG' },
+  { name: "ReactJs", path: "icons/reactjs.webp",altImg:'Reactjs Icon' },
+  { name: "NextJs", path: "icons/nextjs.webp" ,altImg:'Nextjs Icon'},
+  { name: "VueJs", path: "icons/vuejs.webp" ,altImg:'Vuejs Icon'},
+  { name: "NuxtJs", path: "icons/nuxtjs.webp",altImg:'Nuxtjs Icon' },
+  { name: "NodeJs", path: "icons/nodejs.webp",altImg:'Nodejs Icon' },
+  { name: "Laravel Icon", path: "icons/laravel.webp" ,altImg:''},
+  { name: "Shopify", path: "images/shopify.webp" ,altImg:'Shopify PNG Image'},
+  { name: "Wordpress", path: "icons/wordpress.webp",altImg:'Wordpress Icon' },
+  { name: "React Native", path: "icons/reactjs.webp",altImg:'Reactjs Icon' },
+  { name: "Ionic", path: "icons/ionic.webp",altImg:'Ionic Icon' },
+  { name: "Flutter", path: "images/flutter.webp",altImg:'Flutter PNG Image' },
+  { name: "Swift / iOS", path: "icons/swift.webp",altImg:'Swift Icon' },
+  { name: "Android", path: "images/android_4.webp" ,altImg:''},
 ];
 
 const contentHeader = () => {
@@ -360,7 +359,7 @@ const bannerComponent = () => (
   <Slider {...settings}>
     {bannerImage.map((e, i) => (
       <div className="nav-logo-slider" key={i}>
-        <img src={e.path} alt="" />
+        <img src={e.path} alt={e.altImg} />
         <p className="small-text">{e.name}</p>
       </div>
     ))}
@@ -383,13 +382,12 @@ const HireFreelancer = () => {
 "
         />
       </Head>
-      <HireForm
+      <HireServiceLayout
         content1={content1}
         content2={content2}
         content3={content3}
         bannerComponent={bannerComponent}
         techTitle={techTitle}
-        techImage={techImage}
         contentHeader={contentHeader}
         requestOrigin={"Requested from Hire a freelancer page"}
       />

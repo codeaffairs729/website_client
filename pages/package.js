@@ -7,35 +7,35 @@ import Link from 'next/link'
 
 const Package = () => {
     const designIcons = [
-        ["Figma", "icons/figma.webp"],
-        ["Miro", "icons/miro.webp"],
-        ["Sketch", "icons/sketch_1.webp"],
-        ["Adobe Xd", "icons/adobe_xd.webp"],
-        ["Framer", "icons/framer.webp"],
-        ["Ant Design", "icons/ant-design.webp"],
-        ["Material UI", "icons/material_ui.webp"],
-        ["Tailwind", "icons/tailwind.webp"],
-        ["Booststrap", "icons/bootstrap_1.webp"],
-        ["Principle", "icons/principle.webp"]
+        ["Figma Icon", "icons/figma.webp"],
+        ["Miro Icon", "icons/miro.webp"],
+        ["Sketch Icon", "icons/sketch_1.webp"],
+        ["Adobe XD Icon", "icons/adobe_xd.webp"],
+        ["Framer Icon", "icons/framer.webp"],
+        ["Ant Design Icon", "icons/ant-design.webp"],
+        ["Material UI Icon", "icons/material_ui.webp"],
+        ["Tailwind Icon", "icons/tailwind.webp"],
+        ["Bootstrap Icon", "icons/bootstrap_1.webp"],
+        ["Principle Icon", "icons/principle.webp"]
     ]
 
     const webIcons = [
-        ["Ruby on Rails", "icons/rails.webp"],
-        ["ReactJs", "icons/reactjs.webp"],
-        ["NextJs", "icons/nextjs.webp"],
-        ["VueJs", "icons/vuejs.webp"],
-        ["NuxtJs", "icons/nuxtjs.webp"],
-        ["NodeJs", "icons/nodejs.webp"],
-        ["Laravel", "icons/laravel.webp"],
-        ["Shopify", "images/shopify.webp"],
-        ["Wordpress", "icons/wordpress.webp"]
+        ["Rails PNG", "icons/rails.webp"],
+        ["Reactjs Icon", "icons/reactjs.webp"],
+        ["Nextjs Icon", "icons/nextjs.webp"],
+        ["Vuejs Icon", "icons/vuejs.webp"],
+        ["Nuxtjs Icon", "icons/nuxtjs.webp"],
+        ["Nodejs Icon", "icons/nodejs.webp"],
+        ["Laravel Icon", "icons/laravel.webp"],
+        ["Shopify PNG Image", "images/shopify.webp"],
+        ["Wordpress Icon", "icons/wordpress.webp"]
     ]
 
     const mobileIcons = [
-        ["React Native", "icons/reactjs.webp"],
-        ["Ionic", "icons/ionic.webp"],
-        ["Flutter", "images/flutter.webp"],
-        ["Swift / iOS", "icons/swift.webp"],
+        ["Reactjs Icon", "icons/reactjs.webp"],
+        ["Ionic Icon", "icons/ionic.webp"],
+        ["Flutter PNG Image", "images/flutter.webp"],
+        ["Swift Icon", "icons/swift.webp"],
         ["Android", "images/android_4.webp"]
     ]
 
@@ -136,7 +136,7 @@ const Package = () => {
                                             <div onMouseOver={() => pause()} onMouseOut={() => play()} className="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
                                                 <div className="package__category">
                                                     <div className="package__icon">
-                                                        <img className="package__pic" src="images/content-management-system.webp" alt="" />
+                                                        <img className="package__pic" src="images/content-management-system.webp" alt="3D Pencil" />
                                                     </div>
                                                     <div className="package__text">What we do</div>
                                                 </div>
@@ -164,8 +164,7 @@ const Package = () => {
                                                     </ul>
                                                 </div>
                                                 <div className='row'>
-                                                    <Link href="/contact">
-                                                        <a target="_blank" className="package__btn btn btn_purple">Get a Quote</a></Link>
+                                                        <a href="/contact" target="_blank" className="package__btn btn btn_purple">Get a Quote</a>
 
                                                 </div>
                                                 {/* <div className="package__btns">
@@ -188,7 +187,7 @@ const Package = () => {
                                         <div className="col-lg-7 d-flex justify-content-center" >
                                             <div className="package__preview row">
                                                 <div className='col-lg-12 d-flex justify-content-center align-items-center' >
-                                                    <img onMouseOver={() => pause()} onMouseOut={() => play()} className="package__pic" src="images/laptop_4.webp" alt="" />
+                                                    <img onMouseOver={() => pause()} onMouseOut={() => play()} className="package__pic" src="images/laptop_4.webp" alt="3D Laptop-1 PNG" />
 
                                                     {/* <img className="package-pic-figma" src="images/FIGMA.webp" alt="" />
                                                     <img className="package-pic-diamond" src="images/sketch-new.webp" alt="" />
@@ -218,7 +217,7 @@ const Package = () => {
                                             <div onMouseOver={() => pause()} onMouseOut={() => play()} className="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
                                                 <div className="package__category">
                                                     <div className="package__icon">
-                                                        <img className="package__pic" src="images/frame.webp" alt="" style={{ height: "24px", width: "auto" }} />
+                                                        <img className="package__pic" src="images/frame.webp" alt="3D Internet PNG" style={{ height: "24px", width: "auto" }} />
                                                     </div>
                                                     <div className="package__text">What we do</div>
                                                 </div>
@@ -252,9 +251,7 @@ const Package = () => {
                                                     </ul>
                                                 </div>
                                                 <div className='row'>
-                                                    <Link href="/contact" >
-                                                        <a target="_blank" className="package__btn btn btn_purple" >Get a Quote</a>
-                                                    </Link>
+                                                        <a href="/contact" target="_blank" className="package__btn btn btn_purple" >Get a Quote</a>
                                                 </div>
                                                 {/* <div className="package__btns">
                                                     <div className="package__arrows"> */}
@@ -276,14 +273,14 @@ const Package = () => {
                                         <div className="col-lg-7 d-flex justify-content-center" >
                                             <div className="package__preview row">
                                                 <div className='col-lg-12 d-flex justify-content-center align-items-center' >
-                                                    <img onMouseOver={() => pause()} onMouseOut={() => play()} className="package__pic package-pic-slide2" src="images/laptop_3.webp" alt="" />
+                                                    <img onMouseOver={() => pause()} onMouseOut={() => play()} className="package__pic package-pic-slide2" src="images/laptop_3.webp" alt="3D Laptop-2 PNG" />
 
                                                     {/* <img className="package-pic-shopify" src="images/shopify.webp" alt="" />
                                                     <img className="package-pic-angular" src="images/angular.webp" alt="" />
                                                     <img className="package-pic-react" src="images/react_2.webp" alt="" />
                                                     <img className="package-pic-image_30" src="images/image_30.webp" alt="" />
                                                     <img className="package-pic-nodejs" src="images/node_2.webp" alt="" />
-                                                    <img className="package-pic-ror" src="images/ror_orig.webp" alt="" /> */}
+                                                    <img className="package-pic-ror" src="images/ror_orig.webp" alt="Nodejs PNG Image" /> */}
                                                 </div>
                                                 <div onMouseOver={() => subSliderPause()} onMouseOut={() => subSliderPlay()} className='col-lg-10 m-auto subSliderIcons' >
                                                     <Slider ref={(newSubSlider2) => { subSlider2 = newSubSlider2 }} {...packageSubsliderSettings} className="package-subslider d-flex align-items-center" >
@@ -308,7 +305,7 @@ const Package = () => {
                                             <div onMouseOver={() => pause()} onMouseOut={() => play()} className="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
                                                 <div className="package__category">
                                                     <div className="package__icon">
-                                                        <img className="package__pic" src="images/mobile-front-color.webp" alt="" style={{ height: "24px", width: "auto" }} />
+                                                        <img className="package__pic" src="images/mobile-front-color.webp" alt="Mobile's Front PNG Image" style={{ height: "24px", width: "auto" }} />
                                                     </div>
                                                     <div className="package__text">What we do</div>
                                                 </div>
@@ -339,9 +336,7 @@ const Package = () => {
                                                     </ul>
                                                 </div>
                                                 <div className='row'>
-                                                    <Link href="/contact">
-                                                        <a  target="_blank" className="package__btn btn btn_purple" >Get a Quote</a>
-                                                    </Link>
+                                                        <a  href="/contact" target="_blank" className="package__btn btn btn_purple" >Get a Quote</a>
                                                 </div>
                                                 {/* <div className="package__btns">
                                                     <div className="package__arrows"> */}
@@ -363,7 +358,7 @@ const Package = () => {
                                         <div className="col-lg-7 d-flex justify-content-center" >
                                             <div className="package__preview row package-preview-mobile">
                                                 <div className='col-lg-12 d-flex justify-content-center align-items-center' >
-                                                    <img onMouseOver={() => pause()} onMouseOut={() => play()} className="package__pic package-pic-mobile" src="images/mobile_2.webp" alt="" />
+                                                    <img onMouseOver={() => pause()} onMouseOut={() => play()} className="package__pic package-pic-mobile" src="images/mobile_2.webp" alt="Mobile Graph PNG" />
 
                                                     {/* <img className="package-pic-android" src="images/android_4.webp" alt="" />
                                                     <img className="package-pic-flutter" src="images/flutter.webp" alt="" />
@@ -389,7 +384,7 @@ const Package = () => {
                                 </div>
                             </Slider>
                             <div className="package__line">
-                                <img className="package__pic" src="img/line-1.webp" alt="" />
+                                <img className="package__pic" src="img/line-1.webp" alt="Background Curve Line" />
                             </div>
                             <div className="package__circle" data-aos data-aos-duration="600"></div>
                         </div>

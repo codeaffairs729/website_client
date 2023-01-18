@@ -4,7 +4,7 @@ import Banner from "./banner";
 import Header from "../pages/includes/header";
 import Footer from "../pages/includes/footer";
 
-const HireForm = ({
+const HireServiceLayout = ({
   bannerComponent,
   contentHeader,
   contentHeader1,
@@ -47,4 +47,4 @@ const HireForm = ({
   );
 };
 
-export default HireForm;
+export default HireServiceLayout;

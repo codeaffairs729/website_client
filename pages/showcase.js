@@ -14,7 +14,7 @@ const Showcase = () => {
             </div>
           </div>
           <div className="showcase__bg">
-            <img className="showcase__pic" src="img/showcase-circle.webp" alt="" />
+            <img className="showcase__pic" src="img/showcase-circle.webp" alt="Solid Blue Circle with white Dots" />
           </div>
           <div className="showcase__circles">
             <div className="showcase__circle"></div>

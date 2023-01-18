@@ -21,7 +21,7 @@ const Accord = () => {
             <div className="accord__item js-accord-item active" data-aos="animation-scale-y">
               <div className="accord__head js-accord-head">
                 <div className="accord__icon">
-                  <img className="accord__pic" src="img/layout-3.webp" alt="" />
+                  <img className="accord__pic" src="img/layout-3.webp" alt="2 Blue & Pink Dots" />
                 </div>
                 <div className="accord__category">In research</div>
               </div>
@@ -36,7 +36,7 @@ const Accord = () => {
             <div className="accord__item js-accord-item" data-aos="animation-scale-y">
               <div className="accord__head js-accord-head">
                 <div className="accord__icon">
-                  <img className="accord__pic" src="img/layout-3.webp" alt="" />
+                  <img className="accord__pic" src="img/layout-3.webp" alt="2 Blue & Pink Dots" />
                 </div>
                 <div className="accord__category">Drafted</div>
               </div>
@@ -51,7 +51,7 @@ const Accord = () => {
             <div className="accord__item js-accord-item" data-aos="animation-scale-y">
               <div className="accord__head js-accord-head">
                 <div className="accord__icon">
-                  <img className="accord__pic" src="img/layout-3.webp" alt="" />
+                  <img className="accord__pic" src="img/layout-3.webp" alt="2 Blue & Pink Dots" />
                 </div>
                 <div className="accord__category">In development</div>
               </div>
@@ -66,7 +66,7 @@ const Accord = () => {
             <div className="accord__item js-accord-item" data-aos="animation-scale-y">
               <div className="accord__head js-accord-head">
                 <div className="accord__icon">
-                  <img className="accord__pic" src="img/layout-3.webp" alt="" />
+                  <img className="accord__pic" src="img/layout-3.webp" alt="2 Blue & Pink Dots" />
                 </div>
                 <div className="accord__category">Proposed</div>
               </div>
@@ -81,7 +81,7 @@ const Accord = () => {
             <div className="accord__item js-accord-item" data-aos="animation-scale-y">
               <div className="accord__head js-accord-head">
                 <div className="accord__icon">
-                  <img className="accord__pic" src="img/layout-3.webp" alt="" />
+                  <img className="accord__pic" src="img/layout-3.webp" alt="2 Blue & Pink Dots" />
                 </div>
                 <div className="accord__category">Completed</div>
               </div>

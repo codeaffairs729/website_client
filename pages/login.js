@@ -25,10 +25,10 @@ const Login = () => {
                     <div className="entry__center center">
                         <div className="entry__head">
                             <Link href="./">
-                                <a className="entry__logo" >
+                                <div className="entry__logo" >
                                     <img className="entry__pic entry__pic_white" src="logo/logoEdited.webp" alt="" />
                                     <img className="entry__pic entry__pic_black" src="logo/logoEdited.webp" alt="" />
-                                </a>
+                                </div>
                             </Link>
                             <a className="entry__link" href="#">
                                 Not a member?
@@ -77,7 +77,7 @@ const Login = () => {
                         <img className="entry__pic" src="img/entry-circle.webp" alt="" />
                     </div>
                     <div className="entry__cube">
-                        <img className="entry__pic" src="img/cube.webp" alt="" />
+                        <img className="entry__pic" src="img/cube.webp" alt="3D Cube" />
                     </div>
                     <div className="entry__circles">
                         <div className="entry__circle"></div>

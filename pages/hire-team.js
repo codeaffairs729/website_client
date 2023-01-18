@@ -2,8 +2,7 @@ import React from "react";
 import { RxCheck } from "react-icons/rx";
 import Slider from "react-slick";
 const techTitle = "Hire a Team ";
-const techImage = "../../public/icons/hire-icon/Frame.webp";
-import HireForm from "../components/hire";
+import HireServiceLayout from "../components/hireServiceLayout";
 import Head from "next/head";
 import ScheduleForm from "../components/schedule";
 
@@ -250,13 +249,14 @@ const bannerComponent = () => (
     <div className="top-rated shadow bg-warning rounded text-dark">
       Top rated on
     </div>
-    <img className="hire-logo" src="icons/hire/good-firms-logo.webp" />
+    <img className="hire-logo" src="icons/hire/good-firms-logo.webp" alt="Good Firm - Logo" />
     <img
       className="hire-logo"
       src="icons/hire/upwork-logo-png-transparent.webp"
+      alt="Upwork - Logo"
     />
-    <img className="hire-logo" src="icons/hire/clutch_logo.webp" />
-    <img className="hire-logo" src="icons/hire/PeoplePerHour_logo.webp" />
+    <img className="hire-logo" src="icons/hire/clutch_logo.webp" alt="Clutch - Logo"/>
+    <img className="hire-logo" src="icons/hire/PeoplePerHour_logo.webp" alt="People Per Hour - Logo"/>
   </div>
 );
 
@@ -274,12 +274,10 @@ const HireTeam = () => {
 "
         />
       </Head>
-      <HireForm
+      <HireServiceLayout
         content4={content4}
         content5={content5}
         techTitle={techTitle}
-        techImage={techImage}
-        // bannerImage={bannerImage}
         bannerComponent={bannerComponent}
         contentHeader={contentHeader}
         requestOrigin={"Requested from Hire a team page"}

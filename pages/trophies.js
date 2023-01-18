@@ -9,7 +9,7 @@ const Trophies = () => {
                         <div className='col-lg-4 col-md-4 trophies-cols' data-aos="animation-scale-x-left">
                             <div className='row' >
                                 <div className='col-lg-12 d-flex justify-content-center' >
-                                    <img className='trophies-img' src='images/Calendar.webp' alt='' />
+                                    <img className='trophies-img' src='images/Calendar.webp' alt='3D Calender' />
                                 </div>
                                 <div className='col-lg-12 text-center trophies-text' >
                                     7+ Years
@@ -21,7 +21,7 @@ const Trophies = () => {
                         <div className='col-lg-4 col-md-4 trophies-cols' data-aos="animation-scale-y" >
                             <div className='row' >
                                 <div className='col-lg-12 d-flex justify-content-center' >
-                                    <img className='trophies-img' src='images/trophy-front-clay.webp' alt='' />
+                                    <img className='trophies-img' src='images/trophy-front-clay.webp' alt='3D Trophy Front Clay' />
                                 </div>
                                 <div className='col-lg-12 text-center trophies-text' >
                                     150+ Projects

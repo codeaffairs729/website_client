@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ServiceForm from "../../components/service";
-import HireForm from "../../components/hire";
+import TechComponent from "../../components/techComponent";
+import HireServiceLayout from "../../components/hireServiceLayout";
 import Banner from "../../components/banner";
 import Link from "next/link";
 import Head from "next/head";
@@ -18,14 +18,16 @@ const contentHeader1 = () => {
             DevOps leverages monitoring, automation, collaboration, Cloud
             adoption, and tool-chain pipelines.
           </p>
-          <Link href="/contact">
-            <a target="_blank" className="header__btn btn btn_purple mt-5">
-              Get in Touch
-            </a>
-          </Link>
+          <a
+            target="_blank"
+            href="/contact"
+            className="header__btn btn btn_purple mt-5"
+          >
+            Get in Touch
+          </a>
         </div>
         <div className="tech-service-body-left-right">
-          <img src="/icons/service-icon/cloud.webp" />
+          <img src="/icons/service-icon/cloud.webp" alt="3D Cloud" />
         </div>
       </div>
     </>
@@ -68,34 +70,41 @@ const content7 = () => (
     <div className="hire-container hire-container-body-left-content-2">
       <h3 className="hire-h3">We attain DevOps Success through:</h3>
       <ul className="hire-p hire-list">
-        <li><strong>Assessment and Planning</strong></li>
+        <li>
+          <strong>Assessment and Planning</strong>
+        </li>
       </ul>
       <p className="hire-p list-p">
         We develop a DevOps Assessment roadmap just by envisioning the right
         state and also recognizing the trackable metrics.{" "}
       </p>
       <ul className="hire-list">
-        <li><strong>Process Implementation</strong></li>
+        <li>
+          <strong>Process Implementation</strong>
+        </li>
       </ul>
       <p className="hire-p list-p">
         We expedite DevOps implementation with design, analysis, automation
         construction, and implementation in the recognized areas.
       </p>
       <ul className="hire-list">
-        <li><strong>Pilot Framework Creation</strong></li>
+        <li>
+          <strong>Pilot Framework Creation</strong>
+        </li>
       </ul>
       <p className="hire-p list-p">
         We use as well as combine your existing tools with our licensed
         automation tools to build a perfect pilot framework.
       </p>
       <ul className="hire-list">
-        <li><strong>CI/CD Pipeline</strong></li>
+        <li>
+          <strong>CI/CD Pipeline</strong>
+        </li>
       </ul>
       <p className="hire-p list-p">
         We bridge the DevOps gap via constant development, constant integration,
         constant testing and constant deployment.
       </p>
-      
     </div>
     <div className="hire-container">
       <p className="hire-p">
@@ -142,7 +151,7 @@ const content7 = () => (
   </>
 );
 
-const content6 = () => <ServiceForm />;
+const content6 = () => <TechComponent />;
 const content3 = () => (
   <div className="form-service">
     <ScheduleForm
@@ -160,7 +169,7 @@ const DevOps = () => {
           href="https://www.codegaragetech.com/services/dev-ops"
         />
       </Head>
-      <HireForm
+      <HireServiceLayout
         content1={content1}
         content3={content3}
         content6={content6}

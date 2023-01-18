@@ -7,15 +7,15 @@ const BuildingPicsSlider = () => {
     const [imageIndex, setImageIndex] = useState(0);
     const sliderDiv = useRef(null);
     const sliderImages = [
-        ["building_images/img_01.webp"],
-        ["building_images/img_02.webp"],
-        ["building_images/img_03.webp"],
-        ["building_images/img_04.webp"],
-        ["building_images/img_05.webp"],
-        ["building_images/img_06.webp"],
-        ["building_images/img_07.webp"],
-        ["building_images/img_08.webp"],
-        ["building_images/img_09.webp"],
+        ["building_images/img_01.webp","Well Mantained Office"],
+        ["building_images/img_02.webp","CGT Team in the Confrence Room"],
+        ["building_images/img_03.webp","Quark City Canteen Image"],
+        ["building_images/img_04.webp","Quark City Backyard Image"],
+        ["building_images/img_05.webp",""],
+        ["building_images/img_06.webp","Quark City's Fountain"],
+        ["building_images/img_07.webp","Swiming Pool at Quark City"],
+        ["building_images/img_08.webp","Inner Beauty of Quark City"],
+        ["building_images/img_09.webp","Quark City Outer Image"],
     ]
 
     const previous = () => {
@@ -72,7 +72,7 @@ const BuildingPicsSlider = () => {
                             {
                                 sliderImages.map((element, index) => {
                                     return <div key={index} className={imageIndex === index ? "building-slide activeSlide" : "building-slide"} >
-                                        <img className='' src={element} alt={element} />
+                                        <img className='' src={element[0]} alt={element[1]} />
                                     </div>
                                 })
                             }

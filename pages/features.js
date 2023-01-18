@@ -221,7 +221,7 @@ const Features = () => {
                         <img
                           className="features__pic"
                           src="images/mobile-front-color.webp"
-                          alt=""
+                          alt="Mobile's Front PNG Image"
                         />
                       </div>
                       <div className="features__category">
@@ -255,7 +255,7 @@ const Features = () => {
                         <img
                           className="features__pic"
                           src="images/bag-front-color.webp"
-                          alt=""
+                          alt="3D Bag"
                         />
                       </div>
                       <div className="features__category">E - commerce</div>

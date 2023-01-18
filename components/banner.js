@@ -4,24 +4,27 @@ const Banner = () => {
   const bannerImage = [
     {
       path: "/images/video-chat-a-pro.webp",
+      altImg: "",
     },
     {
       path: "/images/desmania-design.webp",
-    },
-    {
-      path: "/images/video-chat-a-pro.webp",
+      altImg: "Desmania Design - Logo",
     },
     {
       path: "/images/vaayu.webp",
+      altImg: "Vaayu - Logo",
     },
     {
       path: "/images/domino-data-lab.webp",
+      altImg: "Domino Data Lab - Logo",
     },
     {
       path: "/images/ucview_2.webp",
+      altImg: "UcView - Logo",
     },
     {
       path: "/images/golden-circle-app.webp",
+      altImg: "Golden Circle App - Logo",
     },
   ];
 
@@ -81,11 +84,10 @@ const Banner = () => {
       {bannerImage.map((e, i) => (
         <picture key={i}>
           <div className="nav-logo-slider">
-            <img src={e.path} alt="" />
+            <img src={e.path} alt={e.altImg} />
           </div>
         </picture>
       ))}
-
     </Slider>
   );
 };

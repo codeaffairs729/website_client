@@ -30,14 +30,14 @@ const Layouts = () => {
             <div className="layouts__list">
               <div className="layouts__item layouts-item" data-aos="animation-scale-y">
                 <div className="layouts__icon">
-                  <img className="layouts__pic" src="img/layout-1.webp" alt="" />
+                  <img className="layouts__pic" src="img/layout-1.webp" alt="4 Blue & Pink Dots" />
                 </div>
                 <div className="layouts__text">
                   We use those technologies that suit the nature of your application.                </div>
               </div>
               <div className="layouts__item layouts-item" data-aos="animation-scale-y">
                 <div className="layouts__icon">
-                  <img className="layouts__pic" src="img/layout-2.webp" alt="" />
+                  <img className="layouts__pic" src="img/layout-2.webp" alt="Pink & Blue Circle" />
                 </div>
                 <div className="layouts__text">
                   Get rid of expensive & slow tech stack with fast & advanced technologies.
@@ -45,7 +45,7 @@ const Layouts = () => {
               </div>
               <div className="layouts__item layouts-item" data-aos="animation-scale-y">
                 <div className="layouts__icon">
-                  <img className="layouts__pic" src="img/layout-3.webp" alt="" />
+                  <img className="layouts__pic" src="img/layout-3.webp" alt="2 Blue & Pink Dots" />
                 </div>
                 <div className="layouts__text">
                   Keep your application fast, scalable, and reliable with an optimum combination.
@@ -224,32 +224,32 @@ const Layouts = () => {
           </div>
           <div className="layouts__view" data-aos>
             <div className="layouts__preview">
-              <img className="layouts__pic" src="img/layouts-pic-1.webp" alt="" />
-              <img className="layout-pic-react" src="/images/react_3.webp" alt="" data-bs-toggle="tooltip" title="React" />
+              <img className="layouts__pic" src="img/layouts-pic-1.webp" alt="3D Graphs on Mobile" />
+              <img className="layout-pic-react" src="/images/react_3.webp" alt="React Icon" data-bs-toggle="tooltip" title="React" />
               <img className="layout-pic-andoid" src="/images/node_3.webp" alt="" data-bs-toggle="tooltip" title="NodeJS" />
-              <img className="layout-pic-python" src="/images/python.webp" alt="" data-bs-toggle="tooltip" title="Python" />
+              <img className="layout-pic-python" src="/images/python.webp" alt="Python Icon" data-bs-toggle="tooltip" title="Python" />
               <img className="layout-pic-swift" src="images/swift_2.webp" alt="" data-bs-toggle="tooltip" title="Swift" />
             </div>
             <div className="layouts__preview Play_button_preview">
               {/* <img className="layouts__pic" src="images/layouts-pic-2.webp" alt="" /> */}
-              <img className="Play_button_img" src="images/Play_button.webp" alt="" />
+              <img className="Play_button_img" src="images/Play_button.webp" alt="Pink Solid Circle" />
               {/* <img className="" src="images/layouts-pic-2.webp" alt="" /> */}
 
-              <img className="layout-pic-MongoDB" src="/images/MongoDB.webp" alt="" data-bs-toggle="tooltip" title="MongoDB" />
+              <img className="layout-pic-MongoDB" src="/images/MongoDB.webp" alt="MongoDB Icon" data-bs-toggle="tooltip" title="MongoDB" />
 
-              <img className="layout-pic-message" src="images/Message.webp" alt="" />
+              <img className="layout-pic-message" src="images/Message.webp" alt="3D Message Tab" />
               <img className="layout-pic-android_3" src="/images/android_3.webp" alt="" data-bs-toggle="tooltip" title="Android" />
             </div>
             <div className="layouts__preview">
-              <img className="layouts__pic" src="img/layouts-pic-3.webp" alt="" />
+              <img className="layouts__pic" src="img/layouts-pic-3.webp" alt="3D Tool Box" />
             </div>
             <div className="layouts__preview">
-              <img className="layouts__pic" src="img/layouts-pic-4.webp" alt="" />
-              <img className="layout-pic-ror_top_2" src="/images/ror_top_2.webp" alt="" data-bs-toggle="tooltip" title="Ruby On Rails" />
-              <img className="layout-pic-ror_bottom_2" src="/images/ror_bottom_2.webp" alt="" data-bs-toggle="tooltip" title="Ruby On Rails" />
+              <img className="layouts__pic" src="img/layouts-pic-4.webp" alt="3D Pink Box" />
+              <img className="layout-pic-ror_top_2" src="/images/ror_top_2.webp" alt="ROR Top" data-bs-toggle="tooltip" title="Ruby On Rails" />
+              <img className="layout-pic-ror_bottom_2" src="/images/ror_bottom_2.webp" alt="ROR Bottom" data-bs-toggle="tooltip" title="Ruby On Rails" />
             </div>
             <div className="layouts__preview layouts-preview-figma">
-              <img className="layouts__pic layouts_pic_figma" src="images/figma.webp" alt="" data-bs-toggle="tooltip" title="Figma" />
+              <img className="layouts__pic layouts_pic_figma" src="images/figma.webp" alt="3D Figma Image" data-bs-toggle="tooltip" title="Figma" />
             </div>
           </div>
         </div>
