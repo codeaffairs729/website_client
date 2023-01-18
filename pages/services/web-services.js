@@ -243,7 +243,7 @@ const content7 = () => (
 );
 
 
-const content6 = () => <div className="form-service"><ServiceForm /></div>;
+const content6 = () => <ServiceForm />;
 const content3 = () => (
   <div className="form-service">
     <ScheduleForm

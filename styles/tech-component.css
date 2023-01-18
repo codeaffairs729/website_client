@@ -5,7 +5,7 @@ display: flex;
 flex-wrap: wrap;
 align-items: flex-start;
 padding: 0px;
-gap: 65px;
+gap: 45px;
 }
 
 .tech-container-div{
@@ -25,8 +25,13 @@ height: 98px;
 
 }
 
+@media screen and (max-width: 991px) {
+    .tech-container {
+        gap: 40px;
+    }
+}
 @media screen and (max-width: 479px) {
     .tech-container {
-        gap: 10px;
+        gap: 15px;
     }
 }

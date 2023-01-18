@@ -170,7 +170,6 @@ const content6 = () => <div ><ServiceForm /></div>;
 const content3 = () => (
   <div className="form-service">
     <ScheduleForm
-    
       title={"Schedule a Meeting"}
       requestOrigin={"Request generated from mobile solution page"}
     />
