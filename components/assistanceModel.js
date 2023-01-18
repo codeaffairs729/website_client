@@ -92,7 +92,6 @@ const AssistanceForm = ({ title,requestOrigin }) => {
     })
       .then((res) => res.json())
       .then((res) => {
-        console.log("res", res);
         if (res?.status === "success") {
           setEmail("");
           setName("");
@@ -313,7 +312,7 @@ const AssistanceForm = ({ title,requestOrigin }) => {
                   <rect width="24" height="24" fill="#5956E9" />
                 </g>
               </svg>
-              <span>Attachment file</span>
+              <span>Attachment file <span className='attachment-optional'>(optional)</span></span>
             </a>
           </div>
           <input
@@ -332,10 +331,7 @@ const AssistanceForm = ({ title,requestOrigin }) => {
       ),
     },
   ];
-
   const submitFunc = (submitBtnRef) => {
-    console.log("Submit button clicked");
-    console.log(name, email, phone, date, query);
   };
 
   const submitButton = () =>(

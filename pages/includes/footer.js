@@ -161,22 +161,22 @@ const Footer = () => {
                             <div className={`footer__menu js-footer-menu footer-social-menu ${socialIcons ? "" : "hide"}`} >
                                 <Link href="https://www.facebook.com/codegaragetech">
                                     <a className="footer__link me-3" target='_blank'>
-                                        <img className="icon icon-header-img" src="images/Facebook3d.webp" alt="" />
+                                        <img className="icon icon-header-img" src="/images/Facebook3d.webp" alt="" />
                                     </a>
                                 </Link>
                                 <Link href="https://twitter.com/codegaragetech">
                                     <a className="footer__link me-3" target='_blank'>
-                                        <img className="icon icon-header-img" src="images/Twitter3d.webp" alt="" />
+                                        <img className="icon icon-header-img" src="/images/Twitter3d.webp" alt="" />
                                     </a>
                                 </Link>
                                 <Link href="https://www.linkedin.com/company/codegarage-tech/">
                                     <a className="footer__link me-3" target='_blank'>
-                                        <img className="icon icon-header-img" src="images/LinkedIn3d.webp" alt="" />
+                                        <img className="icon icon-header-img" src="/images/LinkedIn3d.webp" alt="" />
                                     </a>
                                 </Link>
                                 <Link href="https://www.instagram.com/codegaragetech/">
                                     <a className="footer__link" target='_blank'>
-                                        <img className="icon icon-header-img" src="images/Instagram3d.webp" alt="" />
+                                        <img className="icon icon-header-img" src="/images/Instagram3d.webp" alt="" />
                                     </a>
                                 </Link>
                             </div>

@@ -111,9 +111,9 @@ const Header = () => {
                     <button onClick={(e) => handleSidebar(e)} className={sideBarHandler ? "header__burger js-header-burger active" : "header__burger js-header-burger"}>
                         <span></span>
                     </button>
-                    <Link href="./">
+                    <Link href="/">
                         <div style={{cursor:'pointer'}} className="header__logo" >
-                            <img className="header__pic" src="logo/cgt_new_logo_alt.webp" alt="" />
+                            <img className="header__pic" src="/logo/cgt_new_logo_alt.webp" alt="" />
                         </div>
                     </Link>
                     <div className={sideBarHandler ? "header__wrap js-header-wrap visible" : "header__wrap js-header-wrap"}>
@@ -135,9 +135,9 @@ const Header = () => {
                                         <div className="header__row row">
                                             <div className="col-lg-4 col-md-4 col-sm-4" >
                                                 <div className={`header__category ${serviceMenu ? "service-menu-header-item" : ""}`} >
-                                                    {/* <Link href='/services/web-services'> */}
+                                                    <Link href='/services/web-services'>
                                                     Web Solutions
-                                                    {/* </Link> */}
+                                                    </Link>
                                                 </div>
                                                 <div className="row" >
                                                     <div className="col-lg-12 header-solutions-outer" >
@@ -337,9 +337,9 @@ const Header = () => {
                                             </div>
                                             <div className="col-lg-4 col-md-4 col-sm-4" >
                                                 <div className={`header__category ${serviceMenu ? "service-menu-header-item service-menu-header-category" : ""}`} >
-                                                {/* <Link href='/services/mobile-solutions'> */}
+                                                <Link href='/services/mobile-solutions'>
                                                     Mobile Solutions
-                                                    {/* </Link> */}
+                                                    </Link>
                                                 </div>
                                                 <div className="row" >
                                                     <div className="col-lg-12 header-solutions-outer" >
@@ -506,7 +506,9 @@ const Header = () => {
                                                     {/* </Slider> */}
                                                 </div>
                                                 <div className={`header__category mt-3 ${serviceMenu ? "service-menu-header-item" : ""}`} >
-                                                    DevOps
+                                                   <Link href='/services/dev-ops'>
+                                                   DevOps
+                                                   </Link>
                                                     </div>
                                                 <div className="row" >
                                                     <div className="col-lg-12 header-solutions-outer" >
@@ -685,7 +687,7 @@ const Header = () => {
                             </Link>
                         </nav>
                         <div className="header__photo">
-                            <img className="header__pic" src="img/menu-pic.webp" alt="" />
+                            <img className="header__pic" src="/img/menu-pic.webp" alt="" />
                         </div>
                     </div>
                     <div className="header__search js-header-search" >

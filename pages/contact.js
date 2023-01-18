@@ -134,6 +134,7 @@ const Contact = () => {
             <Head>
                 <meta charSet="utf-8" />
                 <title>Have any queries? Get in touch with us now- Code Garage Tech</title>
+                <link rel="canonical" href="https://www.codegaragetech.com/contact" />
                 <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
                 <meta name="format-detection" content="telephone=no" />

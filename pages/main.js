@@ -13,6 +13,8 @@ const Main = () => {
           <title>
             Custom Software Development Service Provider in India & USA
           </title>
+          <link rel="canonical" href="https://www.codegaragetech.com/" />
+
           <meta
             name="description"
             content="Looking for reliable Custom Web Development Services in India? Code Garage Tech is here! We offer scalable, robust, and quality services. Contact us now!

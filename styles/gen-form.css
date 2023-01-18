@@ -6,6 +6,8 @@
   /* border: 1px solid #27272E; */
   border-radius: 32px;
   box-sizing: border-box;
+  margin: 0px auto;
+  width: 100%;
 }
 .input-field {
   width: 100%;
@@ -147,6 +149,7 @@
 @media screen and (max-width: 479px) {
   .gen-form-container {
     border: none;
+    width: 100%;
   }
 
   .input-field {

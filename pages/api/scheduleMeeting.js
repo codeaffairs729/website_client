@@ -14,7 +14,16 @@ const handler = (req, res) => {
           // console.log(reCaptchaRes, "Response from Google reCaptcha verification API");
           if (reCaptchaRes?.score > 0.5) {
             // Save data to the database from here
-            const { email, name, phone, date, query,resumeName, resumeType, resumeBase64} =req.body;
+            const {
+              email,
+              name,
+              phone,
+              date,
+              query,
+              resumeName,
+              resumeType,
+              resumeBase64,
+            } = req.body;
             const mail = require("@sendgrid/mail");
             mail.setApiKey(process.env.SENDGRID_API_KEY);
             mail
@@ -38,14 +47,17 @@ const handler = (req, res) => {
 
                             <p>Regards,<br>
                             Codegaragetech</p>`,
-                attachments: [
-                  {
-                    content: `${resumeBase64}`,
-                    filename: `${resumeName}`,
-                    type: `${resumeType}`,
-                    disposition: "attachment",
-                  },
-                ],
+                attachments:
+                  resumeName !== ""
+                    ? [
+                        {
+                          content: `${resumeBase64}`,
+                          filename: `${resumeName}`,
+                          type: `${resumeType}`,
+                          disposition: "attachment",
+                        },
+                      ]
+                    : [],
               })
               .then(() => {
                 res.status(200).json({ status: "success" });

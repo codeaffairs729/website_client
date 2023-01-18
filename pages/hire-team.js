@@ -5,28 +5,39 @@ const techTitle = "Hire a Team ";
 const techImage = "../../public/icons/hire-icon/Frame.webp";
 import HireForm from "../components/hire";
 import Head from "next/head";
+import ScheduleForm from "../components/schedule";
 
 const contentHeader = () => {
   return (
     <>
-      <div className="hire-team hire-container-body-left">
-        <h1 className="hire-team-header">{techTitle}</h1>
-        <h2 className="hire-h2">Together We Can Achieve More</h2>
-        <p className="hire-p">
-          Code Garage Tech has helped numerous businesses envision and also
-          implement successful projects in various development frameworks and
-          languages since 2015. <br />
-          <br />
-          We have strong links to the local talent pool, and we have highly
-          skilled developers who are eager to add value to your organization.
-          Our developers are fully flexible and can meet any requirements,
-          including long-term projects to provide vital support during the whole
-          process.
-        </p>
+      <div className="hire-container-body service-body">
+        <div className="hire-team hire-container-body-left">
+          <h1 className="hire-team-header">{techTitle}</h1>
+          <h2 className="hire-h2">Together We Can Achieve More</h2>
+          <p className="hire-p">
+            Code Garage Tech has helped numerous businesses envision and also
+            implement successful projects in various development frameworks and
+            languages since 2015. <br />
+            <br />
+            We have strong links to the local talent pool, and we have highly
+            skilled developers who are eager to add value to your organization.
+            Our developers are fully flexible and can meet any requirements,
+            including long-term projects to provide vital support during the
+            whole process.
+          </p>
+        </div>
+        <div className="hire-container-body-right">
+    <ScheduleForm
+      title={"Schedule a Meeting"}
+      requestOrigin={"Request generated from hire-team page"}
+    />
+    ;
+  </div>
       </div>
     </>
   );
 };
+
 const content4 = () => {
   return (
     <div className="hire-container">
@@ -82,9 +93,9 @@ const content4 = () => {
 const content5 = () => (
   <div className="hire-container">
     <div>
-      <h3 className="hire-h3 text-center">
+      <h2 className="hire-h2 text-center">
         Select From A Variety Of Hiring Models
-      </h3>
+      </h2>
       <p className="hire-p">
         We offer flexibility to each of our clients to select the engagement
         model that best suits their needs.
@@ -92,7 +103,7 @@ const content5 = () => (
     </div>
     <div className="hiring-models">
       <div className="hiring-model">
-        <h3 className="hire-team-h3">Adept Team</h3>
+        <h3 className="hire-h3">Adept Team</h3>
         <p className="hire-p">
           Have a project that requires complete attention or needs services like
           software development for the long term, choose our pay-as-you-go
@@ -133,7 +144,7 @@ const content5 = () => (
       </div>
 
       <div className="hiring-model">
-        <h3 className="hire-team-h3">Fixed Price Model </h3>
+        <h3 className="hire-h3">Fixed Price Model </h3>
         <p className="hire-p">
           A fixed-price model would be the best option if your project is well
           planned out. A one-time fixed-price contract is stated below:
@@ -172,7 +183,7 @@ const content5 = () => (
         </ul>
       </div>
       <div className="hiring-model">
-        <h3 className="hire-team-h3">Hourly </h3>
+        <h3 className="hire-h3">Hourly </h3>
         <p className="hire-p">
           Our hourly pricing model is also here if your business requires
           ongoing work for an unspecified number of projects. It is based on
@@ -249,9 +260,6 @@ const bannerComponent = () => (
   </div>
 );
 
-const content1 = () => <div></div>;
-const content2 = () => <div></div>;
-const content3 = () => <div></div>;
 const HireTeam = () => {
   return (
     <>
@@ -259,6 +267,7 @@ const HireTeam = () => {
         <title>
           Hire a team of Adept Software Developers - Code Garage Tech
         </title>
+        <link rel="canonical" href="https://www.codegaragetech.com/hire-team" />
         <meta
           name="description"
           content="Hire a team of adept and dedicated software developers from Code Garage Tech. We use a result-driven and innovative approach to help your business grow. 
@@ -266,9 +275,6 @@ const HireTeam = () => {
         />
       </Head>
       <HireForm
-        content1={content1}
-        content2={content2}
-        content3={content3}
         content4={content4}
         content5={content5}
         techTitle={techTitle}
@@ -276,7 +282,7 @@ const HireTeam = () => {
         // bannerImage={bannerImage}
         bannerComponent={bannerComponent}
         contentHeader={contentHeader}
-        requestOrigin={'Requested from Hire a team page'}
+        requestOrigin={"Requested from Hire a team page"}
       />
     </>
   );

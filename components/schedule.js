@@ -56,7 +56,6 @@ const ScheduleForm = ({ title, requestOrigin }) => {
     e.preventDefault();
 
     if (!executeRecaptcha) {
-      console.log("Execute recaptcha not yet available");
       return;
     }
     executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
@@ -313,7 +312,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
                   <rect width="24" height="24" fill="#5956E9" />
                 </g>
               </svg>
-              <span>Attachment file</span>
+              <span>Attachment file <span className='attachment-optional'>(optional)</span></span>
             </a>
           </div>
           <input
@@ -334,8 +333,6 @@ const ScheduleForm = ({ title, requestOrigin }) => {
   ];
 
   const submitFunc = (submitBtnRef) => {
-    console.log("Submit button clicked");
-    console.log(name, email, phone, date, query);
   };
 
   const submitButton = () => (

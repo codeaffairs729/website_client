@@ -66,6 +66,7 @@ function AboutUs() {
             <Header />
             <Head>
                 <title>We are a preeminent Web Design And Development firm!</title>
+                <link rel="canonical" href="https://www.codegaragetech.com/aboutUs" />
                 <meta name="description" content="Code Garage Tech is the leading Custom Web App Development Company in India, providing you with world-class software solutions. Get in touch with us now!" />
                 <meta name="keywords" content="Custom Web App Development Company, Web Design And Development"></meta>
 

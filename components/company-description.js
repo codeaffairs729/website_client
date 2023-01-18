@@ -7,8 +7,6 @@ const CompanyDescription = () => {
     const [phone, setPhone] = useState('');
     const [query, setQuery] = useState('');
     const [buttonText,setButtonText]=useState('Send Now');
-
-
     const formFields = [
         {
             pattern: "[0-9]{3}[0-9]{3}[0-9]{4}",
@@ -76,8 +74,6 @@ const CompanyDescription = () => {
     ]
 
     const submitFunc = () => {
-        console.log("Submit button clicked")
-        console.log(name,email,phone);
     }
     return (
         <Form fields={formFields} title="Get Free Quote Now" buttonText={buttonText} submitFunc={submitFunc} />

@@ -5,7 +5,6 @@ const ScheduleMeetingForm = ({ fields, title, submitFunc ,buttonText,submitButto
     // const [name,setName]=useState('');
     // const [email,setEmail]=useState('');es
     // const [phone,setPhone]=useState('');
-    console.log();
     return (
         <>
             <div className='assist-gen-form-container d-flex flex-column align-items-center'>

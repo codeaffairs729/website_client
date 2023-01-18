@@ -1,8 +1,8 @@
 import React from "react";
 import { RxCheck } from "react-icons/rx";
 import Slider from "react-slick";
-import Head from 'next/head'
-
+import Head from "next/head";
+import ScheduleForm from "../components/schedule";
 
 const techTitle =
   "Hire Certified and Professional Software Developers or DevOps Engineers";
@@ -26,52 +26,47 @@ const bannerImage = [
   { name: "Android", path: "images/android_4.webp" },
 ];
 
-// const bannerImage = [
-//   {
-//     path: "icons/hire/clutch-co-vector-logo.webp",
-//   },
-//   {
-//     path: "icons/hire/goodfirms-logo-vector.webp",
-//   },
-//   {
-//     path: "icons/hire/peopleperhour-logo.webp",
-//   },
-//   {
-//     path: "icons/hire/upwork.webp",
-//   },
-// ];
-
 const contentHeader = () => {
   return (
     <>
-      <div className="hire-container-body-left">
-        <h1 className="hire-header">{techTitle}</h1>
-        <ul>
-          <li>
-            <span className="tick">
-              <RxCheck />
-            </span>
-            Adept in creating a MVP/Prototype in initial phase so that you can have a demo of your products or services before launch and made changes accordingly 
-          </li>
-          <li>
-            <span className="tick">
-              <RxCheck />
-            </span>
-            Build scalable and robust desktop, mobile and web applications
-          </li>
-          <li>
-            <span className="tick">
-              <RxCheck />
-            </span>
-            Full cycle managed DevOps
-          </li>
-          <li>
-            <span className="tick">
-              <RxCheck />
-            </span>
-            Use Hassle-free time tracking software with transparent billing
-          </li>
-        </ul>
+      <div className="hire-container-body service-body">
+        <div className="hire-container-body-left">
+          <h1 className="hire-header">{techTitle}</h1>
+          <ul>
+            <li>
+              <span className="tick">
+                <RxCheck />
+              </span>
+              Adept in creating a MVP/Prototype in initial phase so that you can
+              have a demo of your products or services before launch and made
+              changes accordingly
+            </li>
+            <li>
+              <span className="tick">
+                <RxCheck />
+              </span>
+              Build scalable and robust desktop, mobile and web applications
+            </li>
+            <li>
+              <span className="tick">
+                <RxCheck />
+              </span>
+              Full cycle managed DevOps
+            </li>
+            <li>
+              <span className="tick">
+                <RxCheck />
+              </span>
+              Use Hassle-free time tracking software with transparent billing
+            </li>
+          </ul>
+        </div>
+        <div className="hire-container-body-right">
+          <ScheduleForm
+            title={"Schedule a Meeting"}
+            requestOrigin={"Request generated from hire-freelancer page"}
+          />
+        </div>
       </div>
     </>
   );
@@ -372,34 +367,32 @@ const bannerComponent = () => (
   </Slider>
 );
 
-const content4 = () => <div></div>;
-const content5 = () => <div></div>;
 const HireFreelancer = () => {
   return (
     <>
-     <Head>
-        <title>
-        Hire a freelancer software developer - Code Garage Tech
-        </title>
+      <Head>
+        <title>Hire a freelancer software developer - Code Garage Tech</title>
+        <link
+          rel="canonical"
+          href="https://www.codegaragetech.com/hire-freelancer"
+        />
+
         <meta
           name="description"
           content="Hire a professional and experienced freelancer software developer from Code Garage Tech to take your business to the new heights of success in this digital era!
 "
         />
       </Head>
-    <HireForm
-      content1={content1}
-      content2={content2}
-      content3={content3}
-      content4={content4}
-      content5={content5}
-      bannerComponent={bannerComponent}
-      techTitle={techTitle}
-      techImage={techImage}
-      contentHeader={contentHeader}
-      requestOrigin={'Requested from Hire a freelancer page'}
-
-    />
+      <HireForm
+        content1={content1}
+        content2={content2}
+        content3={content3}
+        bannerComponent={bannerComponent}
+        techTitle={techTitle}
+        techImage={techImage}
+        contentHeader={contentHeader}
+        requestOrigin={"Requested from Hire a freelancer page"}
+      />
     </>
   );
 };

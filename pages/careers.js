@@ -180,6 +180,7 @@ const Careers = () => {
             /><ToastContainer />
             <Head>
                 <title>Explore App Development Technology Jobs at Code Garage Tech!</title>
+                <link rel="canonical" href="https://www.codegaragetech.com/careers" />
                 <meta name="description" content="We at Code Garage Tech offer reliable Web Development Technology jobs and be a part of our innovative and happy work culture! Give new wings to your career now." />
                 <meta name="keywords" content="Web Development Technology, App Development Technology"></meta>
             </Head>
