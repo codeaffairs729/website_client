@@ -42,7 +42,7 @@ const content1 = () => {
         <p className="hire-p">
           DevOps leverages monitoring, automation, collaboration, Cloud
           adoption, and tool-chain pipelines. At Code Garage Tech, we offer
-          devOps services to ensure swift on-boarding of apps by automating the
+          dev-ops services to ensure swift on-boarding of apps by automating the
           end-to-end delivery and also facilitate constant integration as well
           as development across preeminent cloud platforms.
           <br />

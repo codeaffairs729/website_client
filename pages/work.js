@@ -15,28 +15,24 @@ const Work = () => {
   return (
     <>
       <div className="showcase work-process">
-        <h2 className="work-text-left-1 ms-5">Our Approach</h2>
+        <h2 className="work-text-left-1 ms-5 work-text-left-1-font">Our Approach</h2>
         <h2 className="work-text-left text-center">
           From Your Idea
           <br />
           To Your Revenue
         </h2>
         <div className="work-text-right text-center">
-          <h4>
+          <h4 className="work-text-right-heading">
             Confusion In Your
             <br />
             Million Dollar Idea?
           </h4>
           <a
             target="_blank"
-            className="package__btn btn btn_purple text-decoration-none"
+            onClick={handleModalShow}
+            className="mt-4 main_pink_btn"
           >
-            <button
-              onClick={handleModalShow}
-              className="btn work-text-right-btn "
-            >
-              Get Assistance
-            </button>
+            Get Assistance
           </a>
           {/* </Link> */}
           {/* //////////////////////////////////////////////////////////////////modals */}
@@ -109,7 +105,11 @@ const Work = () => {
             data-aos-duration="800"
             data-aos-offset="0"
           >
-            <img className="work-img-Float" src="images/Float.webp" alt="UI/UX Design" />
+            <img
+              className="work-img-Float"
+              src="images/Float.webp"
+              alt="UI/UX Design"
+            />
             <p className="work-img-bulb-text">UI/UX Design</p>
           </div>
 
@@ -121,7 +121,11 @@ const Work = () => {
             data-aos-duration="800"
             data-aos-offset="0"
           >
-            <img className="work-img-Group" src="images/Group.webp" alt="Development PNG" />
+            <img
+              className="work-img-Group"
+              src="images/Group.webp"
+              alt="Development PNG"
+            />
             <p className="work-img-bulb-text work-img-Group-text">
               Development
             </p>
@@ -252,9 +256,9 @@ const Work = () => {
             </p>
           </div>
         </div>
-        <div >
-        <GenericModal
-        className="schedule-form"
+        <div>
+          <GenericModal
+            className="schedule-form"
             genModalshow={genModalshow}
             handleModalClose={handleModalClose}
             // handleSubmit={handleSubmit}
@@ -263,10 +267,12 @@ const Work = () => {
             modalFooterShow={false}
             modalTitle={"Schedule a Meeting"}
             modalBody={
-                <AssistanceForm requestOrigin={'Requested from get assisstance'}/>
+              <AssistanceForm
+                requestOrigin={"Requested from get assisstance"}
+              />
             }
           />
-          </div>
+        </div>
         {/* <div className='work-connection-line-2-outer' >
           <hr className="work-connection-line-2" />
           <span className='work-link-ball-2 work-link-ball-2-floating' ></span>
@@ -290,7 +296,11 @@ const Work = () => {
           </div>
         </div> */}
         <div className="showcase__bg showcase-big-circle">
-          <img className="showcase__pic" src="img/showcase-circle.webp" alt="Solid Blue Circle with white Dots" />
+          <img
+            className="showcase__pic"
+            src="img/showcase-circle.webp"
+            alt="Solid Blue Circle with white Dots"
+          />
         </div>
         <div className="showcase__circles">
           <div className="showcase__circle"></div>

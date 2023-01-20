@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
-import CompanyDescription from "./company-description";
 import TechComponentIcon from "./techComponentIcon";
-import Footer from "../pages/includes/footer";
-import Header from "../pages/includes/header";
-import Banner from "./banner";
+
 
 const TechComponent = ({ content1, content2, techTitle, techImage }) => {
   const mobileTech = [
@@ -129,13 +126,13 @@ const TechComponent = ({ content1, content2, techTitle, techImage }) => {
           Technologies We use
         </h2>
         <ul className="service-footer-nav-container">
-          <li style={{ cursor: "pointer" }} onClick={handleOnMobile}>
+          <li className="cursor_pointer" onClick={handleOnMobile}>
             Mobile
           </li>
-          <li style={{ cursor: "pointer" }} onClick={handleOnFrontend}>
+          <li className="cursor_pointer" onClick={handleOnFrontend}>
             Frontend
           </li>
-          <li style={{ cursor: "pointer" }} onClick={handleOnBackend}>
+          <li className="cursor_pointer" onClick={handleOnBackend}>
             Backend
           </li>
         </ul>

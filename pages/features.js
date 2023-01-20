@@ -145,12 +145,12 @@ const Features = () => {
                         </p>
                         <p>
                           Related Expertise:
-                          <span style={{ color: "#71caaf" }}>
+                          <span className="medium-mquamarine">
                             Ruby on Rails,SAAS, Python/Django/Flask,
                             ReactJs/ES6,Web Servers
                           </span>
                           (Nginx/Apache),
-                          <span style={{ color: "#71caaf" }}>Mail Servers</span>
+                          <span className="medium-mquamarine">Mail Servers</span>
                           <span
                             style={
                               wadMoreLess
@@ -163,7 +163,7 @@ const Features = () => {
                             <a
                               href="#"
                               onClick={() => wadSeeMoreLess(1)}
-                              style={{ color: "#71caaf" }}
+                              className="medium-mquamarine"
                             >
                               <b>more</b>
                             </a>
@@ -177,19 +177,19 @@ const Features = () => {
                             }
                           >
                             (Sendgrid/Mandrill/Mailgun),
-                            <span style={{ color: "#71caaf" }}>
+                            <span className="medium-mquamarine">
                               MySQL/PSQL/sqlite3
                             </span>
                             (SQL dbs),
-                            <span style={{ color: "#71caaf" }}>
+                            <span className="medium-mquamarine">
                               MongoDB/Redis
                             </span>
                             (No SQL dbs), API Development,
-                            <span style={{ color: "#71caaf" }}>
+                            <span className="medium-mquamarine">
                               Heroku/Amazon S3/Digital Ocean
                             </span>
                             (Hosting),
-                            <span style={{ color: "#71caaf" }}>
+                            <span className="medium-mquamarine">
                               Github/Bitbucket/Gitlab
                             </span>
                             (Git), DevOps
@@ -197,7 +197,7 @@ const Features = () => {
                             <a
                               href="#"
                               onClick={() => wadSeeMoreLess(0)}
-                              style={{ color: "#71caaf" }}
+                              className="medium-mquamarine"
                             >
                               <b>less</b>
                             </a>
@@ -236,7 +236,7 @@ const Features = () => {
                         <p>
                           {" "}
                           Related Expertise:{" "}
-                          <span style={{ color: "#dda549" }}>
+                          <span className="indian-yellow">
                             Native & Hybrid Apps, iPhone, Swift, Go Lang,
                             React-Native, Ionic, Android, Mobile Games
                           </span>
@@ -268,7 +268,7 @@ const Features = () => {
                         </p>
                         <p>
                           Related Expertise:
-                          <span style={{ color: "#4dac87" }}>
+                          <span className="mint">
                             Spree Commerce, Magento, Shopify, Sharetribe,
                             WooCommerce
                           </span>
@@ -303,7 +303,7 @@ const Features = () => {
                         </p>
                         <p>
                           Related Expertise:
-                          <span style={{ color: "#fce9bc" }}>
+                          <span className="lemon-meringue">
                             Minning, Block-chain,
                           </span>
                           <span
@@ -316,7 +316,7 @@ const Features = () => {
                             <a
                               href="#"
                               onClick={() => bcSeeMoreLess(1)}
-                              style={{ color: "#fce9bc" }}
+                              className="lemon-meringue"
                             >
                               <b>more</b>
                             </a>
@@ -327,16 +327,16 @@ const Features = () => {
                               bcMoreLess ? { display: "" } : { display: "none" }
                             }
                           >
-                            <span style={{ color: "#fce9bc" }}>
+                            <span className="lemon-meringue">
                               Distributed and central ledger, Fork, Halving,
                               Hashrate, Multisig, Mining, P2P
                             </span>
                             (peer to peer),
-                            <span style={{ color: "#fce9bc" }}>POW</span>
+                            <span className="lemon-meringue">POW</span>
                             (proof of work),
-                            <span style={{ color: "#fce9bc" }}>POS</span>
+                            <span className="lemon-meringue">POS</span>
                             (proof of stake),
-                            <span style={{ color: "#fce9bc" }}>
+                            <span className="lemon-meringue">
                               Public/Private keys, Smart contract,Smrat
                               Signature
                             </span>
@@ -344,7 +344,7 @@ const Features = () => {
                             <a
                               href="#"
                               onClick={() => bcSeeMoreLess(0)}
-                              style={{ color: "#fce9bc" }}
+                              className="lemon-meringue"
                             >
                               <b>less</b>
                             </a>
@@ -380,7 +380,7 @@ const Features = () => {
                         </p>
                         <p>
                           Related Expertise:
-                          <span style={{ color: "#ed7899" }}>
+                          <span className="cyclamen">
                             Radiant CMS,Adva CMS,Casein CMS,Locomotive CMS,
                             django CMS, Spina
                           </span>
@@ -396,7 +396,7 @@ const Features = () => {
                             <a
                               href="#"
                               onClick={() => ccesSeeMoreLess(1)}
-                              style={{ color: "#ed7899" }}
+                              className="cyclamen"
                             >
                               <b>more</b>
                             </a>
@@ -409,7 +409,7 @@ const Features = () => {
                                 : { display: "none" }
                             }
                           >
-                            <span style={{ color: "#ed7899" }}>
+                            <span className="cyclamen">
                               {" "}
                               CMS,Fat Free CRM, Wordpress, Redmine, bonsaiERP,
                               Accounting Platform, Payroll Development,
@@ -420,7 +420,7 @@ const Features = () => {
                             <a
                               href="#"
                               onClick={() => ccesSeeMoreLess(0)}
-                              style={{ color: "#ed7899" }}
+                              className="cyclamen"
                             >
                               <b>less</b>
                             </a>
@@ -450,7 +450,7 @@ const Features = () => {
                         <p>
                           We don't dimension on any quality of value. Our
                           unparalleled{" "}
-                          <span style={{ color: "#f8e390" }}>
+                          <span className="flavescent">
                             Search Engine Optimization
                           </span>{" "}
                           administrations will without a doubt get you noticed
@@ -459,7 +459,7 @@ const Features = () => {
                         <p>
                           {" "}
                           Related Expertise:
-                          <span style={{ color: "#f8e390" }}>
+                          <span className="flavescent">
                             {" "}
                             SEO, SMM, ORM, Leads Generation, Ads Reveniew,
                             Facebook Leads
@@ -474,7 +474,7 @@ const Features = () => {
                             <a
                               href="#"
                               onClick={() => dmSeeMoreLess(1)}
-                              style={{ color: "#f8e390" }}
+                              className="flavescent"
                             >
                               <b>more</b>
                             </a>
@@ -485,7 +485,7 @@ const Features = () => {
                               dmMoreLess ? { display: "" } : { display: "none" }
                             }
                           >
-                            <span style={{ color: "#f8e390" }}>
+                            <span className="flavescent">
                               {" "}
                               Generation, Keywords Resaerch, Website Analysis,
                               Link Building, Youtube Video Ranking
@@ -494,7 +494,7 @@ const Features = () => {
                             <a
                               href="#"
                               onClick={() => dmSeeMoreLess(0)}
-                              style={{ color: "#f8e390" }}
+                              className="flavescent"
                             >
                               <b>less</b>
                             </a>
@@ -522,7 +522,7 @@ const Features = () => {
                       </div>
                       <div className="features__text">
                         <p>
-                          <span style={{ color: "#ed7899" }}>
+                          <span className="cyclamen">
                             Smart TV/ apps
                           </span>
                           weather it is for exercising, location puproses,
@@ -533,7 +533,7 @@ const Features = () => {
                         <p>
                           {" "}
                           Related Expertise:
-                          <span style={{ color: "#ed7899" }}>
+                          <span className="cyclamen">
                             Tizen, Android, IOS, SMIL, XML
                           </span>
                         </p>

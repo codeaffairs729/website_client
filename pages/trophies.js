@@ -3,8 +3,8 @@ import React from 'react'
 const Trophies = () => {
     return (
         <>
-            <div className='container-fluid trophies' >
-                <div className='container' >
+            <div className='container-fluid trophies ' >
+                <div className='container trophies-padding' >
                     <div className='row' >
                         <div className='col-lg-4 col-md-4 trophies-cols' data-aos="animation-scale-x-left">
                             <div className='row' >

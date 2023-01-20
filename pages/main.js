@@ -28,9 +28,9 @@ const Main = () => {
         <div className="main__center center">
           <div className="main__wrap">
             <div>
-              <h1 className="main__title title title_big" data-aos>
+              <div className="ms-3 main__title title title_big" data-aos>
                 <span className="title__box dev-title mb-3">
-                  <span className="title__text">
+                  <span className="title__text ">
                     {/* 'Development', 'Software Engineering', 'Designing', 'App Monitoring', 'Web Solutions', 'Mobile Solutions', 'CRM Solutions', 'CMS Solutions', 'Cloud Services', 'Tech Consulting' */}
                     <Typewriter
                       options={{
@@ -52,7 +52,7 @@ const Main = () => {
                   </span>
                 </span>
                 <span className="title__box">
-                  <span className="title__text ms-3">
+                  <span className="title__text">
                     <span className="title__line">
                       Web{" "}
                       <span className="main-subheadings-span">Solutions</span>
@@ -60,19 +60,19 @@ const Main = () => {
                   </span>
                 </span>
                 <span className="title__box main-android-title-box">
-                  <span className="title__text ms-3 main-android-title-text">
+                  <span className="title__text main-android-title-text">
                     Android / IOS{" "}
                     <span className="main-subheadings-span">Development</span>
                   </span>
                 </span>
                 <span className="title__box">
-                  <span className="title__text ms-3">
+                  <span className="title__text">
                     UI / UX{" "}
                     <span className="main-subheadings-span">Designing</span>
                     {/* <span className="title__color">.</span> */}
                   </span>
                 </span>
-              </h1>
+              </div>
               {/* <div className="main__info info ms-3 main-info" data-aos="animation-scale-y" data-aos-delay="400"> */}
               <div className="freelancer-btn ms-3">
                   <a href="./hire-freelancer" target="_blank" className="freelancer-main__btn">

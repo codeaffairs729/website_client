@@ -100,7 +100,7 @@ const Access = () => {
       /><ToastContainer />
       <div className="access">
         <div className="access__center center">
-          <h2 className='access-top-heading' >We Simplify and Streamline Each Step In Your App.</h2>
+          <h2 className='access-top-heading access-top-heading-text' >We Simplify and Streamline Each Step In Your App.</h2>
           <div className="access__view connect__view" data-aos data-aos-delay="300">
             <div className="access__preview">
               <img className="access__pic access-main-cloud" src="img/cloud.webp" alt="3D Cloud" />
@@ -138,7 +138,7 @@ const Access = () => {
           <div className="access__circle" data-aos data-aos-delay="200" data-aos-offset="300"></div>
         </div>
         <div className="access__clouds">
-          <div className="access__cloud access-cloud-1 digitalocean-floating">
+          <div className="access__cloud access-cloud-1 digitalocean-floating digitalocean-position">
             <img className="access__pic js-parallax" data-scale="1.5" data-orientation="left" src="img/cloud.webp" alt="3D Cloud" />
             <img className="access-google-cloud" data-scale="1.5" data-orientation="left" src="images/digitalocean.webp" alt="Digital Ocean PNG" />
           </div>

@@ -401,11 +401,11 @@ const Careers = () => {
                         <AiFillStar />
                       </span>
                       <span className="Warning">
-                        <BsStarHalf />
+                      <AiFillStar />
                       </span>
                     </div>
                   </div>
-                  <div className="mt-3">4.9/5</div>
+                  <div className="mt-3">5/5</div>
                 </div>
               </div>
             </div>

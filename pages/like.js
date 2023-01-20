@@ -105,7 +105,7 @@ const Like = () => {
                         aria-controls="collapseTransparency"
                         className="fw-bold like-options d-flex align-items-center"
                       >
-                        Transparent Customized Service
+                        Customized Service
                         <svg className="icon icon-arrow-down like-section-arrow">
                           <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                         </svg>

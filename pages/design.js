@@ -76,7 +76,9 @@ const Design = () => {
                         </a> */}
                         <div className="design__container">
                             <div className='d-flex justify-content-end'>
+                                <div className='design-slider-btn'>
                                 <SliderButton gotoNext={gotoNext} gotoPrev={gotoPrev} />
+                                </div>
                             </div>
                             <Slider ref={sliderRef} className="design__slider js-design-slider" {...designSettings}>
                                 <div className="design-slide-pink" data-aos="animation-translate-y" data-aos-delay="0">
@@ -125,7 +127,7 @@ const Design = () => {
                                         </div> */}
                                     </div>
                                     <div className="design__details">
-                                        <div className="design__category">Interactive Voice Response & Messaging</div>
+                                        <div className="design__category">IVR & Messaging</div>
                                         <div className="design__info">Withrelay</div>
                                         <div className="design__text">
                                             Send & receive text messages, set auto-responders, schedule notifications & accept payments using your existing business phone number in a single conversation. It gives a virtual SMS phone number that your customers can use to text immediately.                                        </div>

@@ -6,7 +6,7 @@ const Partners = () => {
     <>
       <Trophies />
       <div className="partners">
-        <div className="partners__center center">
+        <div className="partners__center center partners__list-margin">
           {/* <div className="partners__head" data-aos="animation-scale-y">
             <div className="partners__stage stage">Clients</div>
             <div className="partners__details">
@@ -24,7 +24,7 @@ const Partners = () => {
               <div className="partners__info info">Design anything from simple icons to fully featured websites and applications.</div>
             </div>
           </div> */}
-          <div className="partners__list">
+          <div className="partners__list ">
             <div className="partners__item" data-aos>
               <img className="partners__pic partners-pic" src="images/video-chat-a-pro.webp" alt="Video Chat a Pro - Logo" />
             </div>

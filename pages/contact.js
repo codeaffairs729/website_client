@@ -276,14 +276,14 @@ const Contact = () => {
                             </a>
                     </div>
                     <div className="contact_cloud_2 salesforce-floating">
-                        <a style={{ cursor: "pointer" }} title='Quick Contact' onClick={handleModalShow} >
+                        <a className="cursor_pointer" title='Quick Contact' onClick={handleModalShow} >
                             <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.webp" alt="3D Cloud" />
                             <img className="contact-skype-icon" data-scale="1.5" data-orientation="right" src="icons/gmail.webp" alt="Gmail Icon" />
                         </a>
                     </div>
 
                     <div className="contact_cloud_3 digitalocean-floating">
-                        <a style={{ cursor: "pointer" }}  href="skype:example123?chat">
+                        <a className="cursor_pointer"  href="skype:example123?chat">
                             <div>
                                 <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.webp" alt="3D Cloud" />
                                 <img className="contact-skype-icon" data-scale="1.5" data-orientation="right" src="icons/skype.webp" alt="Skype Icon" />

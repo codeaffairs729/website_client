@@ -4,39 +4,46 @@ import SubSlider from "../components/index/services/subSlider";
 import PrevButton from '../components/prevButton';
 import NextButton from '../components/nextButton';
 import Link from 'next/link'
+import SliderButton from '../components/sliderButton';
 
 const Package = () => {
+    const gotoNext = () => {
+        slider1.current.slickNext();
+    }
+    const gotoPrev = () => {
+        slider1.current.slickPrev();
+    }
     const designIcons = [
-        ["Figma Icon", "icons/figma.webp"],
-        ["Miro Icon", "icons/miro.webp"],
-        ["Sketch Icon", "icons/sketch_1.webp"],
-        ["Adobe XD Icon", "icons/adobe_xd.webp"],
-        ["Framer Icon", "icons/framer.webp"],
-        ["Ant Design Icon", "icons/ant-design.webp"],
-        ["Material UI Icon", "icons/material_ui.webp"],
-        ["Tailwind Icon", "icons/tailwind.webp"],
-        ["Bootstrap Icon", "icons/bootstrap_1.webp"],
-        ["Principle Icon", "icons/principle.webp"]
+        ["Figma","Figma Icon", "icons/figma.webp"],
+        ["Miro","Miro Icon", "icons/miro.webp"],
+        ["Sketch","Sketch Icon", "icons/sketch_1.webp"],
+        ["Adobe Xd","Adobe XD Icon", "icons/adobe_xd.webp"],
+        ["Framer","Framer Icon", "icons/framer.webp"],
+        ["Ant Design","Ant Design Icon", "icons/ant-design.webp"],
+        ["Material UI","Material UI Icon", "icons/material_ui.webp"],
+        ["Tailwind","Tailwind Icon", "icons/tailwind.webp"],
+        ["Booststrap","Bootstrap Icon", "icons/bootstrap_1.webp"],
+        ["Principle","Principle Icon", "icons/principle.webp"]
     ]
 
     const webIcons = [
-        ["Rails PNG", "icons/rails.webp"],
-        ["Reactjs Icon", "icons/reactjs.webp"],
-        ["Nextjs Icon", "icons/nextjs.webp"],
-        ["Vuejs Icon", "icons/vuejs.webp"],
-        ["Nuxtjs Icon", "icons/nuxtjs.webp"],
-        ["Nodejs Icon", "icons/nodejs.webp"],
-        ["Laravel Icon", "icons/laravel.webp"],
-        ["Shopify PNG Image", "images/shopify.webp"],
-        ["Wordpress Icon", "icons/wordpress.webp"]
+        ["Ruby on Rails","Rails PNG", "icons/rails.webp"],
+        ["ReactJs","Reactjs Icon", "icons/reactjs.webp"],
+        ["NextJs","Nextjs Icon", "icons/nextjs.webp"],
+        ["VueJs","Vuejs Icon", "icons/vuejs.webp"],
+        ["NuxtJs","Nuxtjs Icon", "icons/nuxtjs.webp"],
+        ["NodeJs","Nodejs Icon", "icons/nodejs.webp"],
+        ["Laravel","Laravel Icon", "icons/laravel.webp"],
+        ["Shopify","Shopify PNG Image", "images/shopify.webp"],
+        ["Wordpress","Wordpress Icon", "icons/wordpress.webp"]
     ]
 
     const mobileIcons = [
-        ["Reactjs Icon", "icons/reactjs.webp"],
-        ["Ionic Icon", "icons/ionic.webp"],
-        ["Flutter PNG Image", "images/flutter.webp"],
-        ["Swift Icon", "icons/swift.webp"],
-        ["Android", "images/android_4.webp"]
+        ["React Native","Reactjs Icon", "icons/reactjs.webp"],
+        ["Ionic","Ionic Icon", "icons/ionic.webp"],
+        ["Flutter","Flutter PNG Image", "images/flutter.webp"],
+        ["Swift / iOS","Swift Icon", "icons/swift.webp"],
+        ["Android","Android", "images/android_4.webp"]
     ]
 
     const slider1 = useRef(null);
@@ -45,22 +52,22 @@ const Package = () => {
     const subSlider3 = useRef(null);
 
     const play = () => {
-        slider1.slickPlay();
+        slider1.current.slickPlay();
     }
 
     const pause = () => {
-        slider1.slickPause();
+        slider1.current.slickPause();
     }
 
     const subSliderPause = () => {
-        slider1.slickPause();
+        slider1.current.slickPause();
         subSlider1.slickPause();
         subSlider2.slickPause();
         subSlider3.slickPause();
     }
 
     const subSliderPlay = () => {
-        slider1.slickPlay();
+        slider1.current.slickPlay();
         subSlider1.slickPlay();
         subSlider2.slickPlay();
         subSlider3.slickPlay();
@@ -70,10 +77,10 @@ const Package = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
-        arrows: true,
-        prevArrow: <PrevButton />,
-        nextArrow: <NextButton />,
-        speed: 2000,
+        arrows: false,
+        // prevArrow: <PrevButton />,
+        // nextArrow: <NextButton />,
+        speed: 200,
         fade: true,
         adaptiveHeight: true,
         autoplay: true,
@@ -129,7 +136,8 @@ const Package = () => {
                         <div className="package__wrap">
                             {/* <button className="btn btn-dark" style={{ zIndex: "2", position: "relative" }} onClick={() => play()} >Play</button>
                             <button className="btn btn-dark" style={{ zIndex: "2", position: "relative" }} onClick={() => pause()} >Pause</button> */}
-                            <Slider ref={(newSlider1) => { slider1 = newSlider1 }} className="package__slider js-package-slider" {...packageSettings}>
+
+                            <Slider  ref={slider1} /*ref={(newSlider1) => { slider1 = newSlider1 }}*/ className="package__slider js-package-slider" {...packageSettings}>
                                 <div className="package__slide">
                                     <div className="package__row row">
                                         <div className="col-lg-5">
@@ -200,8 +208,9 @@ const Package = () => {
                                                             designIcons.map((element, index) => {
                                                                 return <SubSlider
                                                                     key={index}
-                                                                    techImage={element[1]}
                                                                     techName={element[0]}
+                                                                    altimg={element[1]}
+                                                                    techImage={element[2]}
                                                                 />
                                                             })
                                                         }
@@ -288,8 +297,9 @@ const Package = () => {
                                                             webIcons.map((element, index) => {
                                                                 return <SubSlider
                                                                     key={index}
-                                                                    techImage={element[1]}
                                                                     techName={element[0]}
+                                                                    altimg={element[1]}
+                                                                    techImage={element[2]}
                                                                 />
                                                             })
                                                         }
@@ -371,8 +381,9 @@ const Package = () => {
                                                             mobileIcons.map((element, index) => {
                                                                 return <SubSlider
                                                                     key={index}
-                                                                    techImage={element[1]}
                                                                     techName={element[0]}
+                                                                    altimg={element[1]}
+                                                                    techImage={element[2]}
                                                                 />
                                                             })
                                                         }
@@ -383,6 +394,7 @@ const Package = () => {
                                     </div>
                                 </div>
                             </Slider>
+                            <SliderButton gotoNext={gotoNext} gotoPrev={gotoPrev} />
                             <div className="package__line">
                                 <img className="package__pic" src="img/line-1.webp" alt="Background Curve Line" />
                             </div>
