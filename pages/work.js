@@ -1,17 +1,6 @@
 import React, { useState, useRef } from "react";
-import GenericModal from "../components/genericModal";
-import AssistanceForm from "../components/assistanceModel";
+import ModalDialog from '../components/ModalDialog'
 const Work = () => {
-  const [genModalshow, setGenModalshow] = useState(false);
-
-  const handleModalShow = () => {
-    setGenModalshow(true);
-  };
-
-  const handleModalClose = () => {
-    setGenModalshow(false);
-  };
-
   return (
     <>
       <div className="showcase work-process">
@@ -27,13 +16,9 @@ const Work = () => {
             <br />
             Million Dollar Idea?
           </h4>
-          <a
-            target="_blank"
-            onClick={handleModalShow}
-            className="mt-4 main_pink_btn"
-          >
-            Get Assistance
-          </a>
+          <div >
+          <ModalDialog/>
+          </div>
           {/* </Link> */}
           {/* //////////////////////////////////////////////////////////////////modals */}
           {/* ////////////////////////////////////////////end modal */}
@@ -255,23 +240,6 @@ const Work = () => {
               Your Revenue
             </p>
           </div>
-        </div>
-        <div>
-          <GenericModal
-            className="schedule-form"
-            genModalshow={genModalshow}
-            handleModalClose={handleModalClose}
-            // handleSubmit={handleSubmit}
-            modalHeaderShow={true}
-            modalBodyShow={true}
-            modalFooterShow={false}
-            modalTitle={"Schedule a Meeting"}
-            modalBody={
-              <AssistanceForm
-                requestOrigin={"Requested from get assisstance"}
-              />
-            }
-          />
         </div>
         {/* <div className='work-connection-line-2-outer' >
           <hr className="work-connection-line-2" />

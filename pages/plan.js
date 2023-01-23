@@ -34,7 +34,7 @@ const Plan = () => {
               </div>
             </div>
             <div className="plan__body">
-              <div className="plan__item js-plan-item" style={ selectedPlan == 'professional' ? {display: "block"} : {display: "none"} } data-aos="animation-translate-y">
+              <div className={`plan__item js-plan-item${(selectedPlan == 'professional')?'d-block':'d-none'}`} data-aos="animation-translate-y">
                 <div className="plan__star"><svg className="icon icon-star">
                     <use xlinkHref="img/sprite.svg#icon-star"></use>
                   </svg></div>
@@ -52,7 +52,7 @@ const Plan = () => {
                   <li>Premium productivity features and simple, secure file sharing</li>
                 </ul><a className="plan__btn btn btn_white js-popup-open" href="#popup-contact" data-effect="mfp-zoom-in">Try free for 30 days</a>
               </div>
-              <div className="plan__item js-plan-item" style={ selectedPlan == 'standard' ? {display: "block"} : {display: "none"} } data-aos="animation-translate-y" data-aos-delay="200">
+              <div className={`plan__item js-plan-item${selectedPlan == 'standard' ?'d-block':'d-none'}`} data-aos="animation-translate-y" data-aos-delay="200">
                 <div className="plan__category">
                   <div className="plan__icon">
                     <img className="plan__pic" src="img/smile-2.webp" alt="" />
@@ -67,7 +67,7 @@ const Plan = () => {
                   <li>Premium productivity features and simple, secure file sharing</li>
                 </ul><a className="plan__btn btn btn_pink js-popup-open" href="#popup-contact" data-effect="mfp-zoom-in">Try free for 30 days</a>
               </div>
-              <div className="plan__item js-plan-item" style={ selectedPlan == 'ultimate' ? {display: "block"} : {display: "none"} } data-aos="animation-translate-y" data-aos-delay="400">
+              <div className={`plan__item js-plan-item${selectedPlan == 'ultimate' ?'d-block':'d-none'}`} data-aos="animation-translate-y" data-aos-delay="400">
                 <div className="plan__category">
                   <div className="plan__icon">
                     <img className="plan__pic" src="img/smile-2.webp" alt="" />

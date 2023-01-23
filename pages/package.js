@@ -1,9 +1,6 @@
 import React, { useState, useRef } from 'react'
 import Slider from "react-slick";
 import SubSlider from "../components/index/services/subSlider";
-import PrevButton from '../components/prevButton';
-import NextButton from '../components/nextButton';
-import Link from 'next/link'
 import SliderButton from '../components/sliderButton';
 
 const Package = () => {
@@ -80,7 +77,7 @@ const Package = () => {
         arrows: false,
         // prevArrow: <PrevButton />,
         // nextArrow: <NextButton />,
-        speed: 200,
+        speed: 2000,
         fade: true,
         adaptiveHeight: true,
         autoplay: true,
@@ -134,9 +131,6 @@ const Package = () => {
                 <div className="package__center center">
                     <div className="package__container">
                         <div className="package__wrap">
-                            {/* <button className="btn btn-dark" style={{ zIndex: "2", position: "relative" }} onClick={() => play()} >Play</button>
-                            <button className="btn btn-dark" style={{ zIndex: "2", position: "relative" }} onClick={() => pause()} >Pause</button> */}
-
                             <Slider  ref={slider1} /*ref={(newSlider1) => { slider1 = newSlider1 }}*/ className="package__slider js-package-slider" {...packageSettings}>
                                 <div className="package__slide">
                                     <div className="package__row row">
@@ -226,7 +220,7 @@ const Package = () => {
                                             <div onMouseOver={() => pause()} onMouseOut={() => play()} className="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
                                                 <div className="package__category">
                                                     <div className="package__icon">
-                                                        <img className="package__pic" src="images/frame.webp" alt="3D Internet PNG" style={{ height: "24px", width: "auto" }} />
+                                                        <img className="package__pic package__pic__frame" src="images/frame.webp" alt="3D Internet PNG" />
                                                     </div>
                                                     <div className="package__text">What we do</div>
                                                 </div>
@@ -315,7 +309,7 @@ const Package = () => {
                                             <div onMouseOver={() => pause()} onMouseOut={() => play()} className="package__details" data-aos data-aos-duration="600" data-aos-delay="400">
                                                 <div className="package__category">
                                                     <div className="package__icon">
-                                                        <img className="package__pic" src="images/mobile-front-color.webp" alt="Mobile's Front PNG Image" style={{ height: "24px", width: "auto" }} />
+                                                        <img className="package__pic package__pic__frame" src="images/mobile-front-color.webp" alt="Mobile's Front PNG Image"/>
                                                     </div>
                                                     <div className="package__text">What we do</div>
                                                 </div>

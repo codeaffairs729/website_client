@@ -301,7 +301,7 @@ const AssistanceForm = ({ title, requestOrigin }) => {
               >
                 <mask
                   id="mask0_1102_2677"
-                  style={{ maskType: "alpha" }}
+                  className="mask-type-alpha"
                   maskUnits="userSpaceOnUse"
                   x="5"
                   y="3"

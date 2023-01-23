@@ -267,7 +267,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .design__link:hover {
-  color: inherit;
+  color:  #2522ba;
 }
 
 .access__btn {
@@ -339,11 +339,11 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .design-slide-blue .design__link {
-  color: #5956e9;
+  /* color: #292930 */
 }
 
 .design-slide-blue .design__link .icon {
-  fill: #5956e9;
+  /* fill: #292930 */
 }
 /* design-slide-blue */
 
@@ -3923,7 +3923,9 @@ body:not(.touch-device) .header-item[href]:before {
     width: 130px;
     top: 170px;
   }
-
+.work-text-right{
+  right: 4%;
+}
   .career-area-2-img-3 {
     width: 215px;
     left: 265px;
@@ -4878,7 +4880,7 @@ body:not(.touch-device) .header-item[href]:before {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 400px;
+    max-width: 380px;
   }
 }
 

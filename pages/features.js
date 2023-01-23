@@ -150,13 +150,11 @@ const Features = () => {
                             ReactJs/ES6,Web Servers
                           </span>
                           (Nginx/Apache),
-                          <span className="medium-mquamarine">Mail Servers</span>
+                          <span className="medium-mquamarine">
+                            Mail Servers
+                          </span>
                           <span
-                            style={
-                              wadMoreLess
-                                ? { display: "none" }
-                                : { display: "" }
-                            }
+                            className={`${wadMoreLess && "d-none"}`}
                             id="service1Dots"
                           >
                             ...
@@ -170,11 +168,7 @@ const Features = () => {
                           </span>
                           <span
                             id="service1"
-                            style={
-                              wadMoreLess
-                                ? { display: "" }
-                                : { display: "none" }
-                            }
+                            className={`${!wadMoreLess && "d-none"}`}
                           >
                             (Sendgrid/Mandrill/Mailgun),
                             <span className="medium-mquamarine">
@@ -307,9 +301,7 @@ const Features = () => {
                             Minning, Block-chain,
                           </span>
                           <span
-                            style={
-                              bcMoreLess ? { display: "none" } : { display: "" }
-                            }
+                            className={`${bcMoreLess && "d-none"}`}
                             id="service2Dots"
                           >
                             ...
@@ -323,9 +315,7 @@ const Features = () => {
                           </span>
                           <span
                             id="service2"
-                            style={
-                              bcMoreLess ? { display: "" } : { display: "none" }
-                            }
+                            className={`${!bcMoreLess && "d-none"}`}
                           >
                             <span className="lemon-meringue">
                               Distributed and central ledger, Fork, Halving,
@@ -385,11 +375,7 @@ const Features = () => {
                             django CMS, Spina
                           </span>
                           <span
-                            style={
-                              ccesMoreLess
-                                ? { display: "none" }
-                                : { display: "" }
-                            }
+                            className={`${ccesMoreLess && "d-non"}`}
                             id="service3Dots"
                           >
                             ...
@@ -403,11 +389,7 @@ const Features = () => {
                           </span>
                           <span
                             id="service3"
-                            style={
-                              ccesMoreLess
-                                ? { display: "" }
-                                : { display: "none" }
-                            }
+                            className={`${!ccesMoreLess && "d-none"}`}
                           >
                             <span className="cyclamen">
                               {" "}
@@ -465,9 +447,7 @@ const Features = () => {
                             Facebook Leads
                           </span>
                           <span
-                            style={
-                              dmMoreLess ? { display: "none" } : { display: "" }
-                            }
+                            className={`${dmMoreLess && "d-none"}`}
                             id="service4Dots"
                           >
                             ...
@@ -481,9 +461,7 @@ const Features = () => {
                           </span>
                           <span
                             id="service4"
-                            style={
-                              dmMoreLess ? { display: "" } : { display: "none" }
-                            }
+                            className={`${!dmMoreLess && "d-none"}`}
                           >
                             <span className="flavescent">
                               {" "}
@@ -522,9 +500,7 @@ const Features = () => {
                       </div>
                       <div className="features__text">
                         <p>
-                          <span className="cyclamen">
-                            Smart TV/ apps
-                          </span>
+                          <span className="cyclamen">Smart TV/ apps</span>
                           weather it is for exercising, location puproses,
                           Tracking the activities & schedule, Medical reasons,
                           Entertainment or others,From personal to industrial

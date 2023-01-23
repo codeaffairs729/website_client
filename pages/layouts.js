@@ -59,7 +59,7 @@ const Layouts = () => {
                   <div className="col-lg-3 col-md-3 col-sm-3 col-3" >
                     <img className="layouts__pic" src="/images/react.webp" alt="" />
                   </div>
-                  <div className="col-lg-9 col-md-9 col-sm-9 col-9" style={{margin: "auto 0"}}>
+                  <div className="col-lg-9 col-md-9 col-sm-9 col-9" >
                     <div className="layouts__text"><h5>React / Redux</h5></div>
                   </div>
                 </div>
@@ -69,7 +69,7 @@ const Layouts = () => {
                   <div className="col-lg-3 col-md-3 col-sm-3 col-3" >
                     <img className="layouts__pic" src="/images/andoid1.webp" alt="" />
                   </div>
-                  <div className="col-lg-9 col-md-9 col-sm-9 col-9" style={{margin: "auto 0"}}>
+                  <div className="col-lg-9 col-md-9 col-sm-9 col-9" >
                     <div className="layouts__text"><h5>Android / Swift</h5></div>
                   </div>
                 </div>
@@ -79,7 +79,7 @@ const Layouts = () => {
                   <div className="col-lg-3 col-md-3 col-sm-3 col-3" >
                     <img className="layouts__pic" src="/images/python.webp" alt="" />
                   </div>
-                  <div className="col-lg-9 col-md-9 col-sm-9 col-9" style={{margin: "auto 0"}}>
+                  <div className="col-lg-9 col-md-9 col-sm-9 col-9" >
                     <div className="layouts__text"><h5>Python / Flask / Django</h5></div>
                   </div>
                 </div>
@@ -89,7 +89,7 @@ const Layouts = () => {
                   <div className="col-lg-3 col-md-3 col-sm-3 col-3" >
                     <img className="layouts__pic" src="/images/node.webp" alt="" />
                   </div>
-                  <div className="col-lg-9 col-md-9 col-sm-9 col-9" style={{margin: "auto 0"}}>
+                  <div className="col-lg-9 col-md-9 col-sm-9 col-9" >
                     <div className="layouts__text"><h5>Node JS</h5></div>
                   </div>
                 </div>
@@ -99,7 +99,7 @@ const Layouts = () => {
                   <div className="col-lg-3 col-md-3 col-sm-3 col-3" >
                     <img className="layouts__pic" src="/images/ror1.webp" alt="" />
                   </div>
-                  <div className="col-lg-9 col-md-9 col-sm-9 col-9" style={{margin: "auto 0"}}>
+                  <div className="col-lg-9 col-md-9 col-sm-9 col-9" >
                     <div className="layouts__text"><h5>Ruby on Rails</h5></div>
                   </div>
                 </div>
@@ -109,7 +109,7 @@ const Layouts = () => {
                   <div className="col-lg-3 col-md-3 col-sm-3 col-3" >
                     <img className="layouts__pic" src="/images/php1.webp" alt="" />
                   </div>
-                  <div className="col-lg-9 col-md-9 col-sm-9 col-9" style={{margin: "auto 0"}}>
+                  <div className="col-lg-9 col-md-9 col-sm-9 col-9" >
                     <div className="layouts__text"><h5>PHP / Wordpress</h5></div>
                   </div>
                 </div>
@@ -123,7 +123,7 @@ const Layouts = () => {
                     <div className="col-lg-3 col-md-3 col-sm-3 col-3" >
                       <img className="layouts__pic" src="/images/react.webp" alt="" />
                     </div>
-                    <div className="col-lg-9 col-md-9 col-sm-9 col-9" style={{margin: "auto 0"}}>
+                    <div className="col-lg-9 col-md-9 col-sm-9 col-9" >
                       <div className="layouts__text"><h5>React / Redux</h5></div>
                     </div>
                   </div>
@@ -133,7 +133,7 @@ const Layouts = () => {
                     <div className="col-lg-3 col-md-3 col-sm-3 col-3" >
                       <img className="layouts__pic" src="/images/andoid1.webp" alt="" />
                     </div>
-                    <div className="col-lg-9 col-md-9 col-sm-9 col-9" style={{margin: "auto 0"}}>
+                    <div className="col-lg-9 col-md-9 col-sm-9 col-9" >
                       <div className="layouts__text"><h5>Android / Swift</h5></div>
                     </div>
                   </div>
@@ -143,7 +143,7 @@ const Layouts = () => {
                     <div className="col-lg-3 col-md-3 col-sm-3 col-3" >
                       <img className="layouts__pic" src="/images/python.webp" alt="" />
                     </div>
-                    <div className="col-lg-9 col-md-9 col-sm-9 col-9" style={{margin: "auto 0"}}>
+                    <div className="col-lg-9 col-md-9 col-sm-9 col-9" >
                       <div className="layouts__text"><h5>Python / Flask / Django</h5></div>
                     </div>
                   </div>
@@ -153,7 +153,7 @@ const Layouts = () => {
                     <div className="col-lg-3 col-md-3 col-sm-3 col-3" >
                       <img className="layouts__pic" src="/images/node.webp" alt="" />
                     </div>
-                    <div className="col-lg-9 col-md-9 col-sm-9 col-9" style={{margin: "auto 0"}}>
+                    <div className="col-lg-9 col-md-9 col-sm-9 col-9" >
                       <div className="layouts__text"><h5>Node JS</h5></div>
                     </div>
                   </div>
@@ -163,7 +163,7 @@ const Layouts = () => {
                     <div className="col-lg-3 col-md-3 col-sm-3 col-3" >
                       <img className="layouts__pic" src="/images/ror1.webp" alt="" />
                     </div>
-                    <div className="col-lg-9 col-md-9 col-sm-9 col-9" style={{margin: "auto 0"}}>
+                    <div className="col-lg-9 col-md-9 col-sm-9 col-9" >
                       <div className="layouts__text"><h5>Ruby on Rails</h5></div>
                     </div>
                   </div>
@@ -173,7 +173,7 @@ const Layouts = () => {
                     <div className="col-lg-3 col-md-3 col-sm-3 col-3" >
                       <img className="layouts__pic" src="/images/php1.webp" alt="" />
                     </div>
-                    <div className="col-lg-9 col-md-9 col-sm-9 col-9" style={{margin: "auto 0"}}>
+                    <div className="col-lg-9 col-md-9 col-sm-9 col-9" >
                       <div className="layouts__text"><h5>PHP / Wordpress</h5></div>
                     </div>
                   </div>

@@ -65,7 +65,7 @@ const Design = () => {
 
                 <div className="design__center center">
                     <div className="design__body">
-                        <h2 className='h1' style={{ marginBottom: "10px", display: "inline-flex", marginBottom: "80px", fontWeight: "500", letterSpacing: "-.04em" }}>
+                        <h2 className='h1'>
                             We Build Delightful Experiences.
                         </h2>
                         {/* <a className="design__scroll" href="#">

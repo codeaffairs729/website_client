@@ -58,7 +58,7 @@ const Footer = () => {
     }
     return (
         <>
-            <div ref={(footerRef) => { footer = footerRef }} className="footer" style={{ overflow: "hidden" }}>
+            <div ref={(footerRef) => { footer = footerRef }} className="footer overflow-hidden">
                 <div className="footer__center center">
                     <div className="footer__row pt-5">
                         <div onClick={(e) => showAboutUs(e)} className={aboutUs ? "footer__col col-lg-4 col-md-4 active" : "footer__col col-lg-4 col-md-4 js-footer-col"} >

@@ -173,7 +173,7 @@ const Contact = () => {
                         <div className="entry__body contact_body">
                             <div className="like">
                                 <div className="like__center contact__center center p-0">
-                                    <div className="like__container" style={{ padding: "55px 38px" }}>
+                                    <div className="like__container like__container__padding">
                                         <div className="entry__row contact__row">
                                             <form className="entry__form d-flex flex-column align-items-center" onSubmit={handleSubmit} >
                                                 <div className="entry__title title title_sm text-center contact-title">
@@ -270,7 +270,7 @@ const Contact = () => {
                         <img className="entry__pic" src="img/entry-circle.webp" alt="Background Solid Blue Circle" />
                     </div>
                     <div className="contact__cloud heroku-floating">
-                            <a href="https://api.whatsapp.com/send?phone=918146394889" title='Contact Us on whatsapp' style={{cursor:"pointer"}}>
+                            <a href="https://api.whatsapp.com/send?phone=918146394889" title='Contact Us on whatsapp' className='cursor_pointer'>
                                 <img className="tool__pic js-parallax" data-scale="1.5" data-orientation="right" src="img/cloud.webp" alt="3D Cloud" />
                                 <img className="contact-skype-icon" data-scale="1.5" data-orientation="right" src="icons/whatsapp.webp" alt="WhatsApp Icon" />
                             </a>

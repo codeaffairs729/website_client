@@ -25,7 +25,7 @@ const Accord = () => {
                 </div>
                 <div className="accord__category">In research</div>
               </div>
-              <div className="accord__body js-accord-body" style={{display: "block", backgroundImage: "url('img/accord-pic.webp')"}}>
+              <div className="accord__body js-accord-body accord__bg__img__first" >
                 <ul className="accord__desc">
                   <li>3+ user</li>
                   <li>5 TB of secure storage</li>
@@ -40,7 +40,7 @@ const Accord = () => {
                 </div>
                 <div className="accord__category">Drafted</div>
               </div>
-              <div className="accord__body js-accord-body" style={{backgroundImage: "url('img/accord-pic.webp')"}}>
+              <div className="accord__body js-accord-body accord__bg__img">
                 <ul className="accord__desc">
                   <li>3+ user</li>
                   <li>5 TB of secure storage</li>
@@ -55,7 +55,7 @@ const Accord = () => {
                 </div>
                 <div className="accord__category">In development</div>
               </div>
-              <div className="accord__body js-accord-body" style={{backgroundImage: "url('img/accord-pic.webp')"}}>
+              <div className="accord__body js-accord-body accord__bg__img" >
                 <ul className="accord__desc">
                   <li>3+ user</li>
                   <li>5 TB of secure storage</li>
@@ -70,7 +70,7 @@ const Accord = () => {
                 </div>
                 <div className="accord__category">Proposed</div>
               </div>
-              <div className="accord__body js-accord-body" style={{backgroundImage: "url('img/accord-pic.webp')"}}>
+              <div className="accord__body js-accord-body accord__bg__img" >
                 <ul className="accord__desc">
                   <li>3+ user</li>
                   <li>5 TB of secure storage</li>
@@ -85,7 +85,7 @@ const Accord = () => {
                 </div>
                 <div className="accord__category">Completed</div>
               </div>
-              <div className="accord__body js-accord-body" style={{backgroundImage: "url('img/accord-pic.webp')"}}>
+              <div className="accord__body js-accord-body accord__bg__img">
                 <ul className="accord__desc">
                   <li>3+ user</li>
                   <li>5 TB of secure storage</li>

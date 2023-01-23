@@ -4019,8 +4019,8 @@ body:not(.touch-device) .header__item:hover .header__body {
   position: absolute;
   /* right: 0;
   bottom: 35px; */
-  top:132px;
-  right:8px;
+  top: 132px;
+  right: 8px;
   z-index: 3;
   width: 520px;
   font-size: 0;
@@ -4052,7 +4052,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 
 .like__container > .like__circle {
   /* top: 50%; */
-  top:143px;
+  top: 143px;
   right: calc(50% - 430px);
   z-index: 2;
   width: 410px;
@@ -5185,6 +5185,11 @@ body:not(.touch-device) .header__item:hover .header__body {
   width: 100%;
 }
 
+.package__pic__frame{
+height: 24px;
+width: auto;
+}
+
 .package__title {
   margin-bottom: 36px;
 }
@@ -5652,7 +5657,6 @@ body:not(.touch-device) .header__item:hover .header__body {
   border-radius: 24px;
 }
 
-
 .design__slider .slick-slide:first-child .design__slide,
 .design__slider .slick-slide:nth-child(4) .design__slide {
   background: #ffeddc;
@@ -5692,7 +5696,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 
 .design__slider .slick-slide:nth-child(2) .design__slide .design__link,
 .design__slider .slick-slide:nth-child(5) .design__slide .design__link {
-  color: #5956e9;
+  /* color: #5956e9; */
 }
 
 .design__slider .slick-slide:nth-child(2) .design__slide .design__link .icon,
@@ -5830,7 +5834,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   margin-top: -2px;
   margin-left: 16px;
   font-size: 14px;
-  color:#5956e9;
+  color: #5956e9;
   fill: #5956e9;
   -webkit-transition: -webkit-transform 0.25s;
   transition: -webkit-transform 0.25s;
@@ -6381,6 +6385,15 @@ body:not(.touch-device) .header__item:hover .header__body {
   color: #fff;
 }
 
+.roadmap__progress:nth-child(1) {
+  width: 66.66%;
+}
+.roadmap__progress:nth-child(2) {
+  width: 43%;
+}
+.roadmap__progress:nth-child(3) {
+  width: 50%;
+}
 .roadmap__progress[data-aos] {
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
@@ -6613,6 +6626,15 @@ body:not(.touch-device) .header__item:hover .header__body {
   background-repeat: no-repeat;
   background-position: 45px 60%;
   background-size: auto 260px;
+}
+
+.accord__bg__img__first {
+  display: block;
+  background-image: url("/img/accord-pic.webp");
+}
+
+.accord__bg__img {
+  background-image: url("/img/accord-pic.webp");
 }
 
 .accord__desc li {
@@ -8168,8 +8190,8 @@ body:not(.touch-device) .header__item:hover .header__body {
     height: 268px;
   }
   .main__circle:nth-child(6) {
-    top:0px;
-    width:1194px;
+    top: 0px;
+    width: 1194px;
     right: calc(50% - 1580px);
   }
   .like__center {
@@ -10601,7 +10623,7 @@ body:not(.touch-device) .header__item:hover .header__body {
     width: 100%;
   }
 
-  .freelancer-btn{
+  .freelancer-btn {
     flex-direction: column;
   }
 }
@@ -10973,7 +10995,7 @@ top: 7641px; */
   transition: color 1s;
 }
 
-.header__item:hover{
+.header__item:hover {
   color: #292930;
   border-bottom: 2px solid blue;
 }
@@ -10983,7 +11005,6 @@ top: 7641px; */
   border-bottom: 3px solid blue; */
   transform: rotate(0deg);
 }
-
 
 .header__head {
   position: relative;
@@ -11002,9 +11023,16 @@ top: 7641px; */
 }
 
 .schedule-form {
-  z-index: 999;
+  padding-inline: 28px;
 }
 
+.schedule-form-header {
+  margin-bottom: 1rem;
+}
+
+.modal-header {
+  padding: 0 3rem;
+}
 .cursor_pointer {
   cursor: pointer;
 }
@@ -11030,7 +11058,6 @@ top: 7641px; */
   color: #f8e390;
 }
 
-
 /* access page */
 .access-top-heading-text {
   font-size: 40px;
@@ -11047,12 +11074,43 @@ top: 7641px; */
   right: 79px;
 }
 
-.slider-btn-blueviolet{
+.slider-btn-blueviolet {
   background-color: #2522ba;
   transition: all 0.025s;
 }
 
-.slider-btn-blueviolet:hover{
-  background-color:#ffdc60;
-  color:grey;
+.slider-btn-blueviolet:hover {
+  background-color: #ffdc60;
+  color: grey;
+}
+
+/* Design page */
+.design__link {
+  color: #292930;
+}
+
+.design__link .icon {
+  fill: #292930;
+}
+
+.design__link:hover .icon {
+  color: #5956e9;
+  fill: #5956e9;
+}
+
+.like__container__padding {
+  padding: 55px 38px;
+}
+
+.design__body h2 {
+  margin-bottom: 10px;
+  display: inline-flex;
+  margin-bottom: 80px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+
+.mask-type-alpha{
+  mask-type: alpha;
+
 }

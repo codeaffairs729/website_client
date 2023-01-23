@@ -112,29 +112,29 @@ const Header = () => {
                         <span></span>
                     </button>
                     <Link href="/">
-                        <div style={{cursor:'pointer'}} className="header__logo" >
+                        <div className="cursor_pointer header__logo" >
                             <img className="header__pic" src="/logo/cgt_new_logo_alt.webp" alt="Code Garage Tech - Logo" />
                         </div>
                     </Link>
                     <div className={sideBarHandler ? "header__wrap js-header-wrap visible" : "header__wrap js-header-wrap"}>
                         <nav className="header__nav">
                             <Link href="/">
-                                <div style={{cursor:'pointer'}}className="header__item nav-css">Home</div>
+                                <div className="cursor_pointer header__item nav-css">Home</div>
                             </Link>
-                            <div className={`header__item ${serviceMenu ? "service-menu-header-item" : ""}`}>
+                            <div className={`header__item ${serviceMenu && "service-menu-header-item"}`}>
                                 <Link href="#">
-                                <div style={{cursor:'pointer'}} className={`header__head ${serviceMenu ? "service-menu-head nav-css" : ""}`}  onClick={toggleSidebarInternalMenu}>
+                                <div  className={`cursor_pointer header__head ${serviceMenu ? "service-menu-head nav-css" : ""}`}  onClick={toggleSidebarInternalMenu}>
                                     Services
                                     <svg className="icon icon-arrow-down">
                                         <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                                     </svg>
                                 </div>
                                 </Link>
-                                <div className={`header__body ${serviceMenu ? "service-menu text-start" : ""}`}>
+                                <div className={`header__body ${serviceMenu && "service-menu text-start"}`}>
                                     <div className="header__center center header-dropdown-body">
                                         <div className="header__row row">
                                             <div className="col-lg-4 col-md-4 col-sm-4" >
-                                                <div className={`header__category ${serviceMenu ? "service-menu-header-item" : ""}`} >
+                                                <div className={`header__category ${serviceMenu && "service-menu-header-item"}`} >
                                                     <Link href='/services/web-services'>
                                                     Web Solutions
                                                     </Link>
@@ -544,7 +544,7 @@ const Header = () => {
                                                 </div>
                                             </div>
                                             <div className="col-lg-4 col-md-4 col-sm-4" >
-                                                <div className={`header__category ${serviceMenu ? "service-menu-header-item service-menu-header-category" : ""}`} >
+                                                <div className={`header__category ${serviceMenu && "service-menu-header-item service-menu-header-category"}`} >
                                                     Miscellaneous
                                                     </div>
                                                 <div className="row" >
@@ -677,13 +677,13 @@ const Header = () => {
                                 </div>
                             </div>
                             <Link href="/#portfolio">
-                            <div style={{cursor:'pointer'}}className="header__item nav-css" >Portfolio</div>
+                            <div className="cursor_pointer header__item nav-css" >Portfolio</div>
                             </Link>
                             <Link href="./careers" >
-                            <div style={{cursor:'pointer'}} className={careerLink ? "header__item header-item" : "header__item nav-css"} >Careers</div>
+                            <div  className={careerLink ? "cursor_pointer header__item header-item" : "cursor_pointer header__item nav-css"} >Careers</div>
                             </Link>
                             <Link href="./aboutUs" >
-                            <div style={{cursor:'pointer'}} className={aboutUsLink ? "header__item header-item" : "header__item nav-css"} >About Us</div>
+                            <div  className={aboutUsLink ? "cursor_pointer header__item header-item" : "cursor_pointer header__item nav-css"} >About Us</div>
                             </Link>
                         </nav>
                         <div className="header__photo">
