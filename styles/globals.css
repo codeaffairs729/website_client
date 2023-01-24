@@ -4472,7 +4472,7 @@ body:not(.touch-device) .header-item[href]:before {
   }
   .work-text-right-heading {
     margin-top: -4px;
-    margin-bottom: -24px;
+    margin-bottom: 2px;
   }
   .work-text-left-1 {
     position: relative;
