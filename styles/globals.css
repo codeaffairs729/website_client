@@ -146,7 +146,9 @@ a {
 .header-solutions-icon {
   /* width: 100%; */
   /* height: 40px; */
-  height: 14px;
+  position: relative;
+  width: 14px !important;
+  height: 14px!important;
   /* -webkit-filter: grayscale(100%);
   filter: grayscale(100%); */
 }
@@ -267,7 +269,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .design__link:hover {
-  color:  #2522ba;
+  color: #2522ba;
 }
 
 .access__btn {
@@ -667,7 +669,13 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .footer-tech-img {
-  height: 20px;
+  height: 25px;
+}
+
+.image-container {
+  position: "relative";
+  height: 200px;
+  width: 200px;
 }
 
 .footer {
@@ -1282,8 +1290,8 @@ body:not(.touch-device) .header-item[href]:before {
   color: #2522ba;
 }
 
-.work-text-right-heading{
-  margin-bottom:4px;
+.work-text-right-heading {
+  margin-bottom: 4px;
 }
 .work {
   padding: 50px 0 0;
@@ -2267,10 +2275,11 @@ body:not(.touch-device) .header-item[href]:before {
   font-family: "Poppins";
   font-weight: 400;
   font-size: 32px;
-  line-height: 24px;
+  line-height: 35px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   margin-right: 10px;
+  
 }
 
 .about-area-6 {
@@ -2485,7 +2494,6 @@ body:not(.touch-device) .header-item[href]:before {
   background-color: #d9d9d9;
   position: relative;
 }
-
 
 .trophies-img {
   height: 100px;
@@ -3125,7 +3133,7 @@ body:not(.touch-device) .header-item[href]:before {
 /* Generic Modal Component CSS Start */
 .modal-header {
   border-bottom: none;
-  padding: 2.5rem 3rem 0!important;
+  padding: 2.5rem 3rem 0 !important;
 }
 
 .modal-content {
@@ -3904,6 +3912,9 @@ body:not(.touch-device) .header-item[href]:before {
   .header__logo .header__pic {
     width: 145px;
   }
+  .header_image{
+    width: 145px;
+  }
   /* Header Component CSS End */
 
   /* Building Pics Slider Component CSS Start */
@@ -3923,9 +3934,9 @@ body:not(.touch-device) .header-item[href]:before {
     width: 130px;
     top: 170px;
   }
-.work-text-right{
-  right: 4%;
-}
+  .work-text-right {
+    right: 4%;
+  }
   .career-area-2-img-3 {
     width: 215px;
     left: 265px;
@@ -4459,10 +4470,10 @@ body:not(.touch-device) .header-item[href]:before {
     bottom: 5%;
     z-index: 2;
   }
-.work-text-right-heading{
-  margin-top:-4px;
-  margin-bottom:-24px;
-}
+  .work-text-right-heading {
+    margin-top: -4px;
+    margin-bottom: -24px;
+  }
   .work-text-left-1 {
     position: relative;
     top: -57px;
@@ -4880,7 +4891,7 @@ body:not(.touch-device) .header-item[href]:before {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 380px;
+    max-width: 410px;
   }
 }
 
@@ -4913,6 +4924,7 @@ body:not(.touch-device) .header-item[href]:before {
   /* About Us Component CSS End */
 }
 @media only screen and (min-width: 1023px) {
+
   .about-area-4-sideImages-row {
     display: flex;
     flex-direction: column;

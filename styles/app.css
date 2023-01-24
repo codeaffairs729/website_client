@@ -188,7 +188,7 @@ button {
 }
 
 .icon-arrow-down {
-  transform: rotate(180deg);
+  /* transform: rotate(180deg); */
   width: 1.56em;
   height: 1em;
   fill: #999fae;
@@ -2438,12 +2438,20 @@ body.no-scroll {
   margin-right: 60px;
   font-size: 0;
 }
-
+.header_pic {
+  /* position: relative; */
+}
 .header__logo .header__pic {
   /* width: 145px; */
+  position: relative;
   width: 180px;
+  height: 27px;
 }
-
+.header_image {
+  position: relative;
+  width: 180px;
+  height: 27px;
+}
 .header__burger {
   position: relative;
   z-index: 15;
@@ -5185,9 +5193,9 @@ body:not(.touch-device) .header__item:hover .header__body {
   width: 100%;
 }
 
-.package__pic__frame{
-height: 24px;
-width: auto;
+.package__pic__frame {
+  height: 24px;
+  width: auto;
 }
 
 .package__title {
@@ -5787,7 +5795,7 @@ width: auto;
 }
 
 .design__details {
-  min-height: 440px;
+  min-height: 500px;
   padding: 40px 30px;
   background: #fff;
   border-radius: 24px;
@@ -5811,6 +5819,7 @@ width: auto;
 }
 
 .design__text {
+  height: 250px;
   color: #343842;
 }
 
@@ -9153,6 +9162,9 @@ width: auto;
     /* width: 100px; */
     width: 160px;
   }
+  .header_image{
+    width: 160px;
+  }
   .header__burger {
     display: inline-block;
   }
@@ -10936,7 +10948,9 @@ top: 7641px; */
   gap: 15px;
   margin-bottom: 24px;
 }
-
+.about_btn{
+  width:180px;
+}
 .freelancer-main__btn {
   display: flex;
   align-items: center;
@@ -11003,7 +11017,7 @@ top: 7641px; */
 .header__item:hover .icon-arrow-down {
   /* color: #292930;
   border-bottom: 3px solid blue; */
-  transform: rotate(0deg);
+  transform: rotate(180deg);
 }
 
 .header__head {
@@ -11031,7 +11045,7 @@ top: 7641px; */
 }
 
 .modal-header {
-  padding: 2.5rem 3rem 0!important;
+  padding: 2.5rem 3rem 0 !important;
 }
 .cursor_pointer {
   cursor: pointer;
@@ -11075,14 +11089,17 @@ top: 7641px; */
 }
 
 .slider-btn-blueviolet {
-  background-color: #2522ba;
+  background-color: #5956e9;
   transition: all 0.025s;
 }
-
-.slider-btn-blueviolet:hover {
+.slider-btn-pink{
+  background-color: #fab8c4;
+  transition: all 0.025s;
+}
+/* .slider-btn-blueviolet:hover {
   background-color: #ffdc60;
   color: grey;
-}
+} */
 
 /* Design page */
 .design__link {
@@ -11110,7 +11127,8 @@ top: 7641px; */
   letter-spacing: -0.04em;
 }
 
-.mask-type-alpha{
+.mask-type-alpha {
   mask-type: alpha;
-
 }
+
+

@@ -11,6 +11,7 @@ import '../styles/service.css'
 import '../styles/techComponent.css'
 import '../styles/hireServiceLayout.css'
 import '../styles/assisstanceModel.css'
+import Image from 'next/image';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

@@ -303,7 +303,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
                   />
                 </mask>
                 <g mask="url(#mask0_1102_2677)">
-                  <rect width="24" height="24" fill="black" />
+                  <rect width="24" height="24" fill="#5956E9" />
                 </g>
               </svg>
               <span>
