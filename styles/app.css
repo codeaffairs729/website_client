@@ -2442,10 +2442,10 @@ body.no-scroll {
   /* position: relative; */
 }
 .header__logo .header__pic {
-  /* width: 145px; */
-  position: relative;
+  width: 145px;
+  /* position: relative;
   width: 180px;
-  height: 27px;
+  height: 27px; */
 }
 .header_image {
   position: relative;
@@ -9057,6 +9057,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   }
   .showcase__preview .showcase__pic {
     width: 100%;
+    height: 925px;
   }
   .offer__container {
     padding: 56px;

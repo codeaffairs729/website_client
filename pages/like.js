@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Router from 'next/router'
+import Image from 'next/image';
 
 const Like = () => {
   const dropdowns = useRef(null);

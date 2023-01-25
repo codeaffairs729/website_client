@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./includes/header";
 import Typewriter from "typewriter-effect";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 
 const Main = () => {
@@ -75,12 +76,20 @@ const Main = () => {
               </div>
               {/* <div className="main__info info ms-3 main-info" data-aos="animation-scale-y" data-aos-delay="400"> */}
               <div className="freelancer-btn ms-3">
-                  <a href="./hire-freelancer" target="_blank" className="freelancer-main__btn">
-                    Hire a freelancer
-                  </a>
-                  <a href="./hire-team" target="_blank" className="freelancer-main__btn">
-                    Hire a team
-                  </a>
+                <a
+                  href="./hire-freelancer"
+                  target="_blank"
+                  className="freelancer-main__btn"
+                >
+                  Hire a freelancer
+                </a>
+                <a
+                  href="./hire-team"
+                  target="_blank"
+                  className="freelancer-main__btn"
+                >
+                  Hire a team
+                </a>
               </div>
               <div className="main__info info ms-3 main-info">
                 We deliver result-oriented, customized services with an emphasis
@@ -124,17 +133,29 @@ const Main = () => {
               />
             </div>
             <div className="main__preview">
-              <img className="main__pic" src="img/mouse.webp" alt="3D Mouse PNG" />
+              <img
+                className="main__pic"
+                src="img/mouse.webp"
+                alt="3D Mouse PNG"
+              />
             </div>
             {/* <div className="main__preview">
                             <img className="main__pic js-parallax" data-scale="1.5" data-orientation="up" src="img/main-pic-2.webp" alt="" />
                         </div> */}
             <div className="main__preview">
-              <img
+              {/* <img
                 className="main__pic"
                 src="images/desktop-asset.webp"
                 alt="3D Desktop Assets"
-              />
+              /> */}
+              <div className="main__pic">
+                <Image
+                  src="/images/desktop-asset.webp"
+                  alt="3D Desktop Assets"
+                  width={768}
+                  height={598}
+                />
+              </div>
             </div>
           </div>
           <div className="main__circles">

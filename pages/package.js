@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 import SubSlider from "../components/index/services/subSlider";
 import SliderButton from "../components/sliderButton";
-
+import Image from "next/image";
 
 const Package = () => {
   const gotoNext = () => {
@@ -12,36 +12,36 @@ const Package = () => {
     slider1.current.slickPrev();
   };
   const designIcons = [
-    ["Figma", "Figma Icon", "icons/figma.webp"],
-    ["Miro", "Miro Icon", "icons/miro.webp"],
-    ["Sketch", "Sketch Icon", "icons/sketch_1.webp"],
-    ["Adobe Xd", "Adobe XD Icon", "icons/adobe_xd.webp"],
-    ["Framer", "Framer Icon", "icons/framer.webp"],
-    ["Ant Design", "Ant Design Icon", "icons/ant-design.webp"],
-    ["Material UI", "Material UI Icon", "icons/material_ui.webp"],
-    ["Tailwind", "Tailwind Icon", "icons/tailwind.webp"],
-    ["Booststrap", "Bootstrap Icon", "icons/bootstrap_1.webp"],
-    ["Principle", "Principle Icon", "icons/principle.webp"],
+    ["Figma", "Figma Icon", "/icons/figma.webp"],
+    ["Miro", "Miro Icon", "/icons/miro.webp"],
+    ["Sketch", "Sketch Icon", "/icons/sketch_1.webp"],
+    ["Adobe Xd", "Adobe XD Icon", "/icons/adobe_xd.webp"],
+    ["Framer", "Framer Icon", "/icons/framer.webp"],
+    ["Ant Design", "Ant Design Icon", "/icons/ant-design.webp", "40"],
+    ["Material UI", "Material UI Icon", "/icons/material_ui.webp", "40"],
+    ["Tailwind", "Tailwind Icon", "/icons/tailwind.webp", "33"],
+    ["Booststrap", "Bootstrap Icon", "/icons/bootstrap_1.webp", "40"],
+    ["Principle", "Principle Icon", "/icons/principle.webp"],
   ];
 
   const webIcons = [
-    ["Ruby on Rails", "Rails PNG", "icons/rails.webp"],
-    ["ReactJs", "Reactjs Icon", "icons/reactjs.webp"],
-    ["NextJs", "Nextjs Icon", "icons/nextjs.webp"],
-    ["VueJs", "Vuejs Icon", "icons/vuejs.webp"],
-    ["NuxtJs", "Nuxtjs Icon", "icons/nuxtjs.webp"],
-    ["NodeJs", "Nodejs Icon", "icons/nodejs.webp"],
-    ["Laravel", "Laravel Icon", "icons/laravel.webp"],
-    ["Shopify", "Shopify PNG Image", "images/shopify.webp"],
-    ["Wordpress", "Wordpress Icon", "icons/wordpress.webp"],
+    ["Ruby on Rails", "Rails PNG", "/icons/rails.webp"],
+    ["ReactJs", "Reactjs Icon", "/icons/reactjs.webp"],
+    ["NextJs", "Nextjs Icon", "/icons/nextjs.webp"],
+    ["VueJs", "Vuejs Icon", "/icons/vuejs.webp"],
+    ["NuxtJs", "Nuxtjs Icon", "/icons/nuxtjs.webp"],
+    ["NodeJs", "Nodejs Icon", "/icons/nodejs.webp"],
+    ["Laravel", "Laravel Icon", "/icons/laravel.webp"],
+    ["Shopify", "Shopify PNG Image", "/images/shopify.webp"],
+    ["Wordpress", "Wordpress Icon", "/icons/wordpress.webp"],
   ];
 
   const mobileIcons = [
-    ["React Native", "Reactjs Icon", "icons/reactjs.webp"],
-    ["Ionic", "Ionic Icon", "icons/ionic.webp"],
-    ["Flutter", "Flutter PNG Image", "images/flutter.webp"],
-    ["Swift / iOS", "Swift Icon", "icons/swift.webp"],
-    ["Android", "Android", "images/android_4.webp"],
+    ["React Native", "Reactjs Icon", "/icons/reactjs.webp", "40"],
+    ["Ionic", "Ionic Icon", "/icons/ionic.webp", "40"],
+    ["Flutter", "Flutter PNG Image", "/images/flutter.webp", "33"],
+    ["Swift / iOS", "Swift Icon", "/icons/swift.webp", "40"],
+    ["Android", "Android", "/images/android_4.webp", "42"],
   ];
 
   const slider1 = useRef(null);
@@ -534,13 +534,24 @@ const Package = () => {
                     <div className="col-lg-7 d-flex justify-content-center">
                       <div className="package__preview row package-preview-mobile">
                         <div className="col-lg-12 d-flex justify-content-center align-items-center">
-                          <img
+                          {/* <img
                             onMouseOver={() => pause()}
                             onMouseOut={() => play()}
                             className="package__pic package-pic-mobile"
                             src="images/mobile_2.webp"
                             alt="Mobile Graph PNG"
-                          />
+                          /> */}
+
+                          <div className="package__pic package-pic-mobile">
+                            <Image
+                              onMouseOver={() => pause()}
+                              onMouseOut={() => play()}
+                              src="/images/mobile_2.webp"
+                              alt="Mobile Graph PNG"
+                              width={195}
+                              height={363}
+                            />
+                          </div>
 
                           {/* <img className="package-pic-android" src="images/android_4.webp" alt="" />
                                                     <img className="package-pic-flutter" src="images/flutter.webp" alt="" />
@@ -583,6 +594,14 @@ const Package = () => {
                   src="img/line-1.webp"
                   alt="Background Curve Line"
                 />
+
+                {/* <div className="package__pic">
+                  <Image
+                    src="/img/line-1.webp"
+                    alt="Background Curve Line"
+                    layout="fill"
+                  />
+                </div> */}
               </div>
               <div
                 className="package__circle"

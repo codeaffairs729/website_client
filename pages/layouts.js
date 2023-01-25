@@ -1,5 +1,6 @@
-import React from 'react'
+import React from "react";
 import Slider from "react-slick";
+import Image from "next/image";
 
 const Layouts = () => {
   const settings = {
@@ -10,7 +11,7 @@ const Layouts = () => {
     slidesToScroll: 1,
     vertical: true,
     verticalSwiping: true,
-    autoplay: true
+    autoplay: true,
   };
   return (
     <>
@@ -18,37 +19,66 @@ const Layouts = () => {
         <div className="layouts__center center" id="layouts">
           <div className="layouts__wrap">
             <div className="layouts__head" data-aos="animation-scale-y">
-              <div className="layouts__stage stage">Our Tools & Technologies</div>
+              <div className="layouts__stage stage">
+                Our Tools & Technologies
+              </div>
               <h2 className="layouts__title title">
                 Find Best Fit For Your IT Product
                 {/* <span className="title__color">.</span> */}
               </h2>
             </div>
             <div className="layouts__info info" data-aos="animation-scale-y">
-              From our software engineering excellence to our top-class design practice, we continuously seek out as well as develop optimistic modern techniques to handle complex problems.
+              From our software engineering excellence to our top-class design
+              practice, we continuously seek out as well as develop optimistic
+              modern techniques to handle complex problems.
             </div>
             <div className="layouts__list">
-              <div className="layouts__item layouts-item" data-aos="animation-scale-y">
+              <div
+                className="layouts__item layouts-item"
+                data-aos="animation-scale-y"
+              >
                 <div className="layouts__icon">
-                  <img className="layouts__pic" src="img/layout-1.webp" alt="4 Blue & Pink Dots" />
+                  <img
+                    className="layouts__pic"
+                    src="img/layout-1.webp"
+                    alt="4 Blue & Pink Dots"
+                  />
                 </div>
                 <div className="layouts__text">
-                  We use those technologies that suit the nature of your application.                </div>
+                  We use those technologies that suit the nature of your
+                  application.{" "}
+                </div>
               </div>
-              <div className="layouts__item layouts-item" data-aos="animation-scale-y">
+              <div
+                className="layouts__item layouts-item"
+                data-aos="animation-scale-y"
+              >
                 <div className="layouts__icon">
-                  <img className="layouts__pic" src="img/layout-2.webp" alt="Pink & Blue Circle" />
+                  <img
+                    className="layouts__pic"
+                    src="img/layout-2.webp"
+                    alt="Pink & Blue Circle"
+                  />
                 </div>
                 <div className="layouts__text">
-                  Get rid of expensive & slow tech stack with fast & advanced technologies.
+                  Get rid of expensive & slow tech stack with fast & advanced
+                  technologies.
                 </div>
               </div>
-              <div className="layouts__item layouts-item" data-aos="animation-scale-y">
+              <div
+                className="layouts__item layouts-item"
+                data-aos="animation-scale-y"
+              >
                 <div className="layouts__icon">
-                  <img className="layouts__pic" src="img/layout-3.webp" alt="2 Blue & Pink Dots" />
+                  <img
+                    className="layouts__pic"
+                    src="img/layout-3.webp"
+                    alt="2 Blue & Pink Dots"
+                  />
                 </div>
                 <div className="layouts__text">
-                  Keep your application fast, scalable, and reliable with an optimum combination.
+                  Keep your application fast, scalable, and reliable with an
+                  optimum combination.
                 </div>
               </div>
             </div>
@@ -224,38 +254,163 @@ const Layouts = () => {
           </div>
           <div className="layouts__view" data-aos>
             <div className="layouts__preview">
-              <img className="layouts__pic" src="img/layouts-pic-1.webp" alt="3D Graphs on Mobile" />
-              <img className="layout-pic-react" src="/images/react_3.webp" alt="React Icon" data-bs-toggle="tooltip" title="React" />
-              <img className="layout-pic-andoid" src="/images/node_3.webp" alt="" data-bs-toggle="tooltip" title="NodeJS" />
-              <img className="layout-pic-python" src="/images/python.webp" alt="Python Icon" data-bs-toggle="tooltip" title="Python" />
-              <img className="layout-pic-swift" src="images/swift_2.webp" alt="" data-bs-toggle="tooltip" title="Swift" />
+              <img
+                className="layouts__pic"
+                src="img/layouts-pic-1.webp"
+                alt="3D Graphs on Mobile"
+              />
+              <div className="layouts__pic">
+                <Image
+                  src="/img/layouts-pic-1.webp"
+                  alt="3D Graphs on Mobile"
+                  layout="fill"
+                />
+              </div>
+              <img
+                className="layout-pic-react"
+                src="/images/react_3.webp"
+                alt="React Icon"
+                data-bs-toggle="tooltip"
+                title="React"
+              />
+              <img
+                className="layout-pic-andoid"
+                src="/images/node_3.webp"
+                alt=""
+                data-bs-toggle="tooltip"
+                title="NodeJS"
+              />
+              <img
+                className="layout-pic-python"
+                src="/images/python.webp"
+                alt="Python Icon"
+                data-bs-toggle="tooltip"
+                title="Python"
+              />
+              <img
+                className="layout-pic-swift"
+                src="images/swift_2.webp"
+                alt=""
+                data-bs-toggle="tooltip"
+                title="Swift"
+              />
             </div>
             <div className="layouts__preview Play_button_preview">
               {/* <img className="layouts__pic" src="images/layouts-pic-2.webp" alt="" /> */}
-              <img className="Play_button_img" src="images/Play_button.webp" alt="Pink Solid Circle" />
+              <img
+                className="Play_button_img"
+                src="images/Play_button.webp"
+                alt="Pink Solid Circle"
+              />
+              {/* <div className="Play_button_img">
+                <Image
+                   src="/images/Play_button.webp"
+                   alt="Pink Solid Circle"
+                  width={125}
+                  height={125}
+                />
+              </div> */}
+              <img
+                className="layout-pic-MongoDB"
+                src="/images/MongoDB.webp"
+                alt="MongoDB Icon"
+                data-bs-toggle="tooltip"
+                title="MongoDB"
+              />
               {/* <img className="" src="images/layouts-pic-2.webp" alt="" /> */}
+              {/* <img
+                className="layout-pic-message"
+                src="images/Message.webp"
+                alt="3D Message Tab"
+              /> */}
 
-              <img className="layout-pic-MongoDB" src="/images/MongoDB.webp" alt="MongoDB Icon" data-bs-toggle="tooltip" title="MongoDB" />
+              <div className="layout-pic-message">
+                <Image
+                  src="/images/Message.webp"
+                  alt="3D Message Tab"
+                  width={250}
+                  height={152}
+                />
+              </div>
 
-              <img className="layout-pic-message" src="images/Message.webp" alt="3D Message Tab" />
-              <img className="layout-pic-android_3" src="/images/android_3.webp" alt="" data-bs-toggle="tooltip" title="Android" />
+              <img
+                className="layout-pic-android_3"
+                src="/images/android_3.webp"
+                alt=""
+                data-bs-toggle="tooltip"
+                title="Android"
+              />
             </div>
             <div className="layouts__preview">
-              <img className="layouts__pic" src="img/layouts-pic-3.webp" alt="3D Tool Box" />
+              {/* <img
+                className="layouts__pic"
+                src="img/layouts-pic-3.webp"
+                alt="3D Tool Box"
+              /> */}
+
+              <div className="layouts__pic">
+                <Image
+                  src="/img/layouts-pic-3.webp"
+                  alt="3D Tool Box"
+                  width={51}
+                  height={228}
+                />
+              </div>
             </div>
             <div className="layouts__preview">
-              <img className="layouts__pic" src="img/layouts-pic-4.webp" alt="3D Pink Box" />
-              <img className="layout-pic-ror_top_2" src="/images/ror_top_2.webp" alt="ROR Top" data-bs-toggle="tooltip" title="Ruby On Rails" />
-              <img className="layout-pic-ror_bottom_2" src="/images/ror_bottom_2.webp" alt="ROR Bottom" data-bs-toggle="tooltip" title="Ruby On Rails" />
+              {/* <img
+                className="layouts__pic"
+                src="img/layouts-pic-4.webp"
+                alt="3D Pink Box"
+              /> */}
+
+              <div className="layouts__pic">
+                <Image
+                  src="/img/layouts-pic-4.webp"
+                  alt="3D Pink Box"
+                  width={218}
+                  height={263}
+                />
+              </div>
+
+              <img
+                className="layout-pic-ror_top_2"
+                src="/images/ror_top_2.webp"
+                alt="ROR Top"
+                data-bs-toggle="tooltip"
+                title="Ruby On Rails"
+              />
+              <img
+                className="layout-pic-ror_bottom_2"
+                src="/images/ror_bottom_2.webp"
+                alt="ROR Bottom"
+                data-bs-toggle="tooltip"
+                title="Ruby On Rails"
+              />
             </div>
             <div className="layouts__preview layouts-preview-figma">
-              <img className="layouts__pic layouts_pic_figma" src="images/figma.webp" alt="3D Figma Image" data-bs-toggle="tooltip" title="Figma" />
+              {/* <img
+                className="layouts__pic layouts_pic_figma"
+                src="images/figma.webp"
+                alt="3D Figma Image"
+                data-bs-toggle="tooltip"
+                title="Figma"
+              /> */}
+
+              <div className="layouts__pic layouts_pic_figma">
+                <Image
+                  src="/images/figma.webp"
+                  alt="3D Pink Box"
+                  width={256}
+                  height={182}
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Layouts
+export default Layouts;

@@ -148,7 +148,7 @@ a {
   /* height: 40px; */
   position: relative;
   width: 14px !important;
-  height: 14px!important;
+  height: 14px !important;
   /* -webkit-filter: grayscale(100%);
   filter: grayscale(100%); */
 }
@@ -841,7 +841,9 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .Play_button_img {
+  position: relative;
   width: 50%;
+  height:125px
 }
 
 .layout-pic-MongoDB {
@@ -1960,10 +1962,14 @@ body:not(.touch-device) .header-item[href]:before {
   border: 5px solid #5ba79f;
 }
 
+.image-radius-50 {
+  border-radius: 50%;
+}
+
 .about-area-2-pic-3 {
   position: absolute;
   bottom: 2%;
-  left: -10%;
+  left: -2%;
   width: 170px;
   height: 170px;
   border-radius: 50%;
@@ -2010,7 +2016,7 @@ body:not(.touch-device) .header-item[href]:before {
   background-size: cover;
   position: relative;
   overflow: hidden;
-  height: 840px;
+  height: 1150px;
 }
 
 .about-area-2-grey-circle {
@@ -2055,7 +2061,7 @@ body:not(.touch-device) .header-item[href]:before {
   height: 90px;
   width: 90px;
   position: absolute;
-  bottom: 50%;
+  bottom: 63%;
   left: 5%;
   border-radius: 50%;
 }
@@ -2085,6 +2091,7 @@ body:not(.touch-device) .header-item[href]:before {
   top: 3%;
   right: -2%;
   width: 100px;
+  height: 96px;
 }
 
 .about-area-circle {
@@ -2279,7 +2286,6 @@ body:not(.touch-device) .header-item[href]:before {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   margin-right: 10px;
-  
 }
 
 .about-area-6 {
@@ -2290,13 +2296,29 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-6-pics {
+  position: relative;
   width: 100%;
-  border-radius: 12px;
+  height: 188px;
+  border-radius: 12px !important;
 }
 
 .about-area-6-pic-1 {
-  width: 82%;
+  position: relative;
+  height: 388px;
+}
+.img-radius {
   border-radius: 12px;
+}
+
+.img-margin-left {
+  margin-left: auto;
+}
+
+.img-margin-right {
+  margin-right: auto;
+}
+.about-area-6-pic-1 {
+  width: 82%;
 }
 
 .about-area-6-heading-outer {
@@ -2349,6 +2371,12 @@ body:not(.touch-device) .header-item[href]:before {
   padding-bottom: 0;
 }
 
+.aim-board {
+  position: relative;
+  width: 100%;
+  height: 481px;
+}
+
 .about-area-7-row {
   z-index: 1;
   position: relative;
@@ -2382,6 +2410,12 @@ body:not(.touch-device) .header-item[href]:before {
 
 .about-area-8-container {
   padding-bottom: 5rem;
+}
+
+.about-area-8-container .image-next {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .about-area-8-heading {
@@ -2496,8 +2530,19 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .trophies-img {
+  position: relative;
   height: 100px;
+  width: fit-content;
   margin-bottom: 30px;
+}
+.trophies-img1 {
+  width: 74px;
+}
+.trophies-img2 {
+  width: 84px;
+}
+.trophies-img3 {
+  width: 100px;
 }
 
 .trophies-text {
@@ -3912,7 +3957,7 @@ body:not(.touch-device) .header-item[href]:before {
   .header__logo .header__pic {
     width: 145px;
   }
-  .header_image{
+  .header_image {
     width: 145px;
   }
   /* Header Component CSS End */
@@ -4524,7 +4569,7 @@ body:not(.touch-device) .header-item[href]:before {
   }
 
   .about-area-2 {
-    height: 1228px;
+    height: 1640px;
   }
 
   .about-area-2-outer-col {
@@ -4924,7 +4969,6 @@ body:not(.touch-device) .header-item[href]:before {
   /* About Us Component CSS End */
 }
 @media only screen and (min-width: 1023px) {
-
   .about-area-4-sideImages-row {
     display: flex;
     flex-direction: column;
@@ -5029,13 +5073,13 @@ body:not(.touch-device) .header-item[href]:before {
   }
 
   .about-area-2-pic-3 {
-    bottom: -577%;
+    bottom: -850%;
     z-index: 1;
-    left: 0%;
+    left: 8%;
   }
 
   .about-area-2-pic-4 {
-    bottom: -594%;
+    bottom: -856%;
     z-index: 1;
     right: 0%;
   }

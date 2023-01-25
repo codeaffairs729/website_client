@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image'
 const Showcase = () => {
   return (
     <div className="showcase">
@@ -14,7 +14,15 @@ const Showcase = () => {
             </div>
           </div>
           <div className="showcase__bg">
-            <img className="showcase__pic" src="img/showcase-circle.webp" alt="Solid Blue Circle with white Dots" />
+            {/* <img className="showcase__pic" src="img/showcase-circle.webp" alt="Solid Blue Circle with white Dots" /> */}
+            <div className="showcase__pic">
+            <Image
+            src="/img/showcase-circle.webp"
+            alt="Solid Blue Circle with white Dots"
+            layout="fill"
+
+            />
+            </div>
           </div>
           <div className="showcase__circles">
             <div className="showcase__circle"></div>

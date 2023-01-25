@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import ModalDialog from '../components/ModalDialog'
+import Image from "next/image";
 const Work = () => {
   return (
     <>
@@ -264,11 +265,18 @@ const Work = () => {
           </div>
         </div> */}
         <div className="showcase__bg showcase-big-circle">
-          <img
+          {/* <img
             className="showcase__pic"
             src="img/showcase-circle.webp"
             alt="Solid Blue Circle with white Dots"
-          />
+          /> */}
+          <div className="showcase__pic">
+            <Image
+            src="/img/showcase-circle.webp"
+            alt="Solid Blue Circle with white Dots"
+            layout="fill"
+            />
+            </div>
         </div>
         <div className="showcase__circles">
           <div className="showcase__circle"></div>

@@ -6,6 +6,7 @@ import Trophies from "./trophies";
 import BuildingPicsSlider from "./buildingPicsSlider";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 function AboutUs() {
   const [companyFacesDesc, setCompanyFacesDesc] = useState(0);
@@ -25,7 +26,7 @@ function AboutUs() {
       "The guy, who established Code Garage Tech. He is a computer science engineer and has experience of more than a decade in software development. He encourages conformity with business rules & regulations and also ensures that the company's code of ethics is being followed.",
       "www.twitter.com",
       "www.instagram.com",
-      "aboutUsImages/about-img1.webp",
+      "/aboutUsImages/about-img1.webp",
     ],
     [
       "Poonam Thakur",
@@ -88,37 +89,74 @@ function AboutUs() {
           </div>
           <div className="col-lg-12">
             <div className="row">
-              <div className="col-lg-5 col-md-5 col-12 text-end">
-                <img
+              <div className="col-lg-5 col-md-5 col-12">
+                {/* <img
                   className="about-area-6-pic-1"
                   src="aboutUsImages/team_pic_3.webp"
                   alt="Harsh, Dixit & Vishav"
-                />
+                /> */}
+                <div className="about-area-6-pic-1 img-margin-left">
+                  <Image
+                    className="img-radius "
+                    src="/aboutUsImages/team_pic_3.webp"
+                    alt="Harsh, Dixit & Vishav"
+                    layout="fill"
+                  />
+                </div>
               </div>
               <div className="col-lg-2 col-md-2 col-4">
                 <div className="row">
                   <div className="col-lg-12 about-area-6-img-outer">
-                    <img
+                    {/* <img
                       className="about-area-6-pics"
                       src="aboutUsImages/team_pic_4.webp"
                       alt="Harsh, Abhishek and Vishav"
-                    />
+                    /> */}
+
+                    <div className="about-area-6-pics">
+                      <Image
+                        className="img-radius"
+                        src="/aboutUsImages/team_pic_4.webp"
+                        alt="Harsh, Abhishek and Vishav"
+                        // width={387.92}
+                        // height={387.92}
+                        layout="fill"
+                      />
+                    </div>
                   </div>
                   <div className="col-lg-12 about-area-6-img-outer">
-                    <img
+                    {/* <img
                       className="about-area-6-pics"
                       src="aboutUsImages/team_pic_2.webp"
                       alt="Tanya"
-                    />
+                    /> */}
+                    <div className="about-area-6-pics">
+                      <Image
+                        className="img-radius"
+                        src="/aboutUsImages/team_pic_2.webp"
+                        alt="Tanya"
+                        // width={387.92}
+                        // height={387.92}
+                        layout="fill"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="col-lg-5 col-md-5 col-8">
-                <img
+                {/* <img
                   className="about-area-6-pic-1"
                   src="aboutUsImages/team_pic_1.webp"
                   alt="Udham, Ankush & Mehakpal(Boss)"
-                />
+                /> */}
+                <div className="about-area-6-pic-1">
+                  <Image
+                    className="img-radius"
+                    src="/aboutUsImages/team_pic_1.webp"
+                    alt="Udham, Ankush & Mehakpal(Boss)"
+                    layout="fill"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -155,11 +193,20 @@ function AboutUs() {
             </p>
           </div>
           <div className="col-lg-5 col-md-6 about-area-7-pic-1-outer d-flex align-items-center">
-            <img
+            {/* <img
               className="w-100"
               src="aboutUsImages/team_pic_9.webp"
               alt="Aim Board"
-            />
+            /> */}
+
+            <div className="aim-board">
+              <Image
+                className="img-radius"
+                src="/aboutUsImages/team_pic_9.webp"
+                alt="Aim Board"
+                layout="fill"
+              />
+            </div>
           </div>
         </div>
         <div className="about-area-7-circle-1"></div>
@@ -172,21 +219,47 @@ function AboutUs() {
               {/* <div className="about-area-2-grey-circle" >
                                 <img className="about-area-2-cam-pic" src="images/Camera _.webp" alt="" />
                             </div> */}
-              <img
+              {/* <img
                 className="about-area-2-pic-2"
                 src="aboutUsImages/team_pic_6.webp"
                 alt="Old CGT Team Members"
-              />
-              <img
+              /> */}
+
+              <div className="about-area-2-pic-2">
+                <Image
+                  className="image-radius-50"
+                  src="/aboutUsImages/team_pic_6.webp"
+                  alt="Old CGT Team Members"
+                  layout="fill"
+                />
+              </div>
+              {/* <img
                 className="about-area-2-pic-3"
                 src="aboutUsImages/team_pic_7.webp"
                 alt="Old CGT Team "
-              />
-              <img
+              /> */}
+              <div className="about-area-2-pic-3">
+                <Image
+                  className="image-radius-50"
+                  src="/aboutUsImages/team_pic_7.webp"
+                  alt="Old CGT Team "
+                  layout="fill"
+                />
+              </div>
+              {/* <img
                 className="about-area-2-pic-4"
                 src="aboutUsImages/team_pic_8.webp"
                 alt="Vishav, Shubham & Tanya"
-              />
+              /> */}
+
+              <div className="about-area-2-pic-4">
+                <Image
+                  className="image-radius-50"
+                  src="/aboutUsImages/team_pic_8.webp"
+                  alt="Vishav, Shubham & Tanya"
+                  layout="fill"
+                />
+              </div>
             </div>
             <div className="col-lg-6 about-area-2-text-area">
               <h2 className="about-area-2-heading mb-5">Our History</h2>
@@ -202,8 +275,21 @@ function AboutUs() {
                 sure it happens.
                 <br />
                 <br />
-                Code Garage was founded with an apparent idea in mind - to make
-                brilliant software that influences and that we can be proud of.
+                Code Garage Tech was founded with an apparent idea in mind - to
+                make brilliant software that influences and that we can be proud
+                of. We offer specialized solutions to support businesses of all
+                sizes.
+                <br />
+                <br />
+                By leveraging the power of new technologies, our goal is to
+                deliver quality-centered software services to aspiring
+                businesses. Our main motto is to deliver value in terms of sales
+                and revenue.
+                <br />
+                <br />
+                Our vision is to develop future-oriented solutions to assure
+                growth for people seeking technological transition in their
+                modern business modules.
               </p>
             </div>
           </div>
@@ -212,11 +298,20 @@ function AboutUs() {
         <div className="about-area-2-circle2"></div>
         <div className="about-area-2-circle3"></div>
         <div className="about-area-2-circle4"></div>
-        <img
+        {/* <img
           className="about-area-2-cube"
           src="images/cube.webp"
           alt="3D Cube"
-        />
+        /> */}
+
+        <div className="about-area-2-cube">
+          <Image
+            className=""
+            src="/images/cube.webp"
+            alt="3D Cube"
+            layout="fill"
+          />
+        </div>
       </div>
 
       <div className="container-fluid mt-5 about-area-8">
@@ -230,6 +325,16 @@ function AboutUs() {
             alt="3D Global Map"
             useMap="#world-map"
           />
+          {/* <div className="image-next">
+          <Image
+            className=""
+            src="/aboutUsImages/global_connections.webp"
+            alt="3D Global Map"
+            layout="fill"
+            objectFit='contain'
+            // useMap="#world-map"
+          />
+        </div> */}
           <map name="world-map">
             <area
               shape="rect"
@@ -314,6 +419,14 @@ function AboutUs() {
                         src={companyFacesDetail[companyFacesDesc][6]}
                         alt=""
                       />
+                      {/* <div className="about-area-4-main-img">
+                        <Image
+                          className=""
+                          src={companyFacesDetail[companyFacesDesc][6]}
+                          alt=""
+                          layout="fill"
+                        />
+                      </div> */}
                       <div className="about-area-4-main-img-shape-1">
                         <div className="text-center about-area-4-main-img-text-area">
                           <h5 className="about-area-4-main-name">
@@ -328,6 +441,15 @@ function AboutUs() {
                           src="/aboutUsImages/about-area-4-main-img-shape.webp"
                           alt="Background Shape"
                         />
+
+                        {/* <div className="about-area-4-main-img">
+                          <Image
+                            className=""
+                            src="/aboutUsImages/about-area-4-main-img-shape.webp"
+                            alt="Background Shape"
+                            layout="fill"
+                          />
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -672,11 +794,19 @@ function AboutUs() {
             >
               <div className="row">
                 <div className="col-lg-12 d-flex justify-content-center">
-                  <img
+                  {/* <img
                     className="trophies-img"
                     src="images/Calendar.webp"
                     alt="3D Calender"
-                  />
+                  /> */}
+
+                  <div className="trophies-img trophies-img1">
+                    <Image
+                      src="/images/Calendar.webp"
+                      alt="3D Calender"
+                      layout="fill"
+                    />
+                  </div>
                 </div>
                 <div className="col-lg-12 text-center trophies-text">
                   7+ Years
@@ -691,11 +821,19 @@ function AboutUs() {
             >
               <div className="row">
                 <div className="col-lg-12 d-flex justify-content-center">
-                  <img
+                  {/* <img
                     className="trophies-img"
                     src="images/trophy-front-clay.webp"
                     alt="3D Trophy Front Clay"
-                  />
+                  /> */}
+                  <div className="trophies-img trophies-img2">
+                    <Image
+                    className="img-fit-content"
+                      src="/images/trophy-front-clay.webp"
+                      alt="3D Trophy Front Clay"
+                      layout="fill"
+                    />
+                  </div>
                 </div>
                 <div className="col-lg-12 text-center trophies-text">
                   150+ Projects
@@ -710,11 +848,14 @@ function AboutUs() {
             >
               <div className="row">
                 <div className="col-lg-12 d-flex justify-content-center">
-                  <img
+                  {/* <img
                     className="trophies-img"
                     src="images/frame_2.webp"
                     alt=""
-                  />
+                  /> */}
+                  <div className="trophies-img trophies-img3">
+                    <Image src="/images/frame_2.webp" alt="" layout="fill" />
+                  </div>
                 </div>
                 <div className="col-lg-12 text-center trophies-text">
                   120+ International
@@ -735,21 +876,7 @@ function AboutUs() {
               </h2>
               <div className="d-flex flex-wrap align-items-content">
                 <p className="align-self-center about-area-5-para">
-                  Let us know right away
-                  <svg
-                  className="mx-4"
-                    width="34"
-                    height="27"
-                    viewBox="0 0 34 27"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M19.8621 1L32 13.3636M32 13.3636L19.8621 25.7273M32 13.3636H1.19209e-07"
-                      stroke="black"
-                      strokeWidth="2"
-                    />
-                  </svg>
+                  Let us know right
                   {/* <a
                     href="./contact"
                     target="_blank"
@@ -758,13 +885,33 @@ function AboutUs() {
                     Get in Touch
                   </a> */}
                 </p>
-                <a
+                <span className="d-flex">
+                  <p className="align-self-center about-area-5-para">
+                    away
+                    <svg
+                      className="mx-2"
+                      width="34"
+                      height="27"
+                      viewBox="0 0 34 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.8621 1L32 13.3636M32 13.3636L19.8621 25.7273M32 13.3636H1.19209e-07"
+                        stroke="black"
+                        strokeWidth="2"
+                      />
+                    </svg>
+                  </p>
+
+                  <a
                     href="./contact"
                     target="_blank"
-                    className="freelancer-main__btn about_btn my-2 mx-2"
+                    className="freelancer-main__btn about_btn my-2"
                   >
                     Get in Touch
                   </a>
+                </span>
               </div>
             </div>
           </div>
