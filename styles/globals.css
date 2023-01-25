@@ -841,9 +841,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .Play_button_img {
-  position: relative;
   width: 50%;
-  height:125px
 }
 
 .layout-pic-MongoDB {
