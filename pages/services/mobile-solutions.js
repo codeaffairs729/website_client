@@ -12,7 +12,7 @@ const techImage = "/icons/service-icon/Frame.webp";
 const contentHeader1 = () => {
   return (
     <>
-      <div className="hire-container tech-service-body">
+      <div className="tech-service-body">
         <div className="tech-service-body-left">
           <h1 className="hire-h1">{techTitle}</h1>
           <p className="text-danger mt-2">
@@ -38,7 +38,7 @@ const content1 = () => {
   return (
     <>
       {/* Service container body content */}
-      <div className="hire-container hire-container-body-left-content-1">
+      <div className="hire-container-body-left-content-1">
         <p className="hire-p">
           We develop superior mobile applications that provide users with a
           seamless and lag-free experience on all contemporary platforms and
@@ -67,7 +67,7 @@ const content1 = () => {
 
 const content7 = () => (
   <>
-    <div className="hire-container hire-container-body-left-content-2">
+    <div className="hire-container-body-left-content-2">
       <h3 className="hire-h3">
         Our Mobile Application Development Solutions For Various Platforms:
       </h3>
@@ -78,7 +78,7 @@ const content7 = () => (
         <li>Cross-platform App Development</li>
       </ul>
     </div>
-    <div className="hire-container">
+    <div className="">
       <h2 className="hire-h3 text-center">
         Partner With Us to Launch, Run & Grow Your Business Worldwide
       </h2>

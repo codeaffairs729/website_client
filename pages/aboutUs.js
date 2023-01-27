@@ -89,74 +89,37 @@ function AboutUs() {
           </div>
           <div className="col-lg-12">
             <div className="row">
-              <div className="col-lg-5 col-md-5 col-12">
-                {/* <img
+              <div className="col-lg-5 col-md-5 col-12 text-end">
+                <img
                   className="about-area-6-pic-1"
                   src="aboutUsImages/team_pic_3.webp"
                   alt="Harsh, Dixit & Vishav"
-                /> */}
-                <div className="about-area-6-pic-1 img-margin-left">
-                  <Image
-                    className="img-radius "
-                    src="/aboutUsImages/team_pic_3.webp"
-                    alt="Harsh, Dixit & Vishav"
-                    layout="fill"
-                  />
-                </div>
+                />
               </div>
               <div className="col-lg-2 col-md-2 col-4">
                 <div className="row">
                   <div className="col-lg-12 about-area-6-img-outer">
-                    {/* <img
+                    <img
                       className="about-area-6-pics"
                       src="aboutUsImages/team_pic_4.webp"
                       alt="Harsh, Abhishek and Vishav"
-                    /> */}
-
-                    <div className="about-area-6-pics">
-                      <Image
-                        className="img-radius"
-                        src="/aboutUsImages/team_pic_4.webp"
-                        alt="Harsh, Abhishek and Vishav"
-                        // width={387.92}
-                        // height={387.92}
-                        layout="fill"
-                      />
-                    </div>
+                    />
                   </div>
                   <div className="col-lg-12 about-area-6-img-outer">
-                    {/* <img
+                    <img
                       className="about-area-6-pics"
                       src="aboutUsImages/team_pic_2.webp"
                       alt="Tanya"
-                    /> */}
-                    <div className="about-area-6-pics">
-                      <Image
-                        className="img-radius"
-                        src="/aboutUsImages/team_pic_2.webp"
-                        alt="Tanya"
-                        // width={387.92}
-                        // height={387.92}
-                        layout="fill"
-                      />
-                    </div>
+                    />
                   </div>
                 </div>
               </div>
               <div className="col-lg-5 col-md-5 col-8">
-                {/* <img
+                <img
                   className="about-area-6-pic-1"
                   src="aboutUsImages/team_pic_1.webp"
                   alt="Udham, Ankush & Mehakpal(Boss)"
-                /> */}
-                <div className="about-area-6-pic-1">
-                  <Image
-                    className="img-radius"
-                    src="/aboutUsImages/team_pic_1.webp"
-                    alt="Udham, Ankush & Mehakpal(Boss)"
-                    layout="fill"
-                  />
-                </div>
+                />
               </div>
             </div>
           </div>
@@ -193,20 +156,11 @@ function AboutUs() {
             </p>
           </div>
           <div className="col-lg-5 col-md-6 about-area-7-pic-1-outer d-flex align-items-center">
-            {/* <img
+            <img
               className="w-100"
               src="aboutUsImages/team_pic_9.webp"
               alt="Aim Board"
-            /> */}
-
-            <div className="aim-board">
-              <Image
-                className="img-radius"
-                src="/aboutUsImages/team_pic_9.webp"
-                alt="Aim Board"
-                layout="fill"
-              />
-            </div>
+            />
           </div>
         </div>
         <div className="about-area-7-circle-1"></div>
@@ -216,15 +170,6 @@ function AboutUs() {
         <div className="container">
           <div className="row about-area-2-outer-row">
             <div className="col-lg-6 d-flex justify-content-center about-area-2-outer-col">
-              {/* <div className="about-area-2-grey-circle" >
-                                <img className="about-area-2-cam-pic" src="images/Camera _.webp" alt="" />
-                            </div> */}
-              {/* <img
-                className="about-area-2-pic-2"
-                src="aboutUsImages/team_pic_6.webp"
-                alt="Old CGT Team Members"
-              /> */}
-
               <div className="about-area-2-pic-2">
                 <Image
                   className="image-radius-50"
@@ -325,16 +270,6 @@ function AboutUs() {
             alt="3D Global Map"
             useMap="#world-map"
           />
-          {/* <div className="image-next">
-          <Image
-            className=""
-            src="/aboutUsImages/global_connections.webp"
-            alt="3D Global Map"
-            layout="fill"
-            objectFit='contain'
-            // useMap="#world-map"
-          />
-        </div> */}
           <map name="world-map">
             <area
               shape="rect"
@@ -419,14 +354,6 @@ function AboutUs() {
                         src={companyFacesDetail[companyFacesDesc][6]}
                         alt=""
                       />
-                      {/* <div className="about-area-4-main-img">
-                        <Image
-                          className=""
-                          src={companyFacesDetail[companyFacesDesc][6]}
-                          alt=""
-                          layout="fill"
-                        />
-                      </div> */}
                       <div className="about-area-4-main-img-shape-1">
                         <div className="text-center about-area-4-main-img-text-area">
                           <h5 className="about-area-4-main-name">
@@ -441,15 +368,6 @@ function AboutUs() {
                           src="/aboutUsImages/about-area-4-main-img-shape.webp"
                           alt="Background Shape"
                         />
-
-                        {/* <div className="about-area-4-main-img">
-                          <Image
-                            className=""
-                            src="/aboutUsImages/about-area-4-main-img-shape.webp"
-                            alt="Background Shape"
-                            layout="fill"
-                          />
-                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -794,19 +712,11 @@ function AboutUs() {
             >
               <div className="row">
                 <div className="col-lg-12 d-flex justify-content-center">
-                  {/* <img
+                  <img
                     className="trophies-img"
                     src="images/Calendar.webp"
                     alt="3D Calender"
-                  /> */}
-
-                  <div className="trophies-img trophies-img1">
-                    <Image
-                      src="/images/Calendar.webp"
-                      alt="3D Calender"
-                      layout="fill"
-                    />
-                  </div>
+                  />
                 </div>
                 <div className="col-lg-12 text-center trophies-text">
                   7+ Years
@@ -821,19 +731,11 @@ function AboutUs() {
             >
               <div className="row">
                 <div className="col-lg-12 d-flex justify-content-center">
-                  {/* <img
+                  <img
                     className="trophies-img"
                     src="images/trophy-front-clay.webp"
                     alt="3D Trophy Front Clay"
-                  /> */}
-                  <div className="trophies-img trophies-img2">
-                    <Image
-                    className="img-fit-content"
-                      src="/images/trophy-front-clay.webp"
-                      alt="3D Trophy Front Clay"
-                      layout="fill"
-                    />
-                  </div>
+                  />
                 </div>
                 <div className="col-lg-12 text-center trophies-text">
                   150+ Projects
@@ -848,14 +750,11 @@ function AboutUs() {
             >
               <div className="row">
                 <div className="col-lg-12 d-flex justify-content-center">
-                  {/* <img
+                  <img
                     className="trophies-img"
                     src="images/frame_2.webp"
                     alt=""
-                  /> */}
-                  <div className="trophies-img trophies-img3">
-                    <Image src="/images/frame_2.webp" alt="" layout="fill" />
-                  </div>
+                  />
                 </div>
                 <div className="col-lg-12 text-center trophies-text">
                   120+ International
@@ -877,13 +776,6 @@ function AboutUs() {
               <div className="d-flex flex-wrap align-items-content">
                 <p className="align-self-center about-area-5-para">
                   Let us know right
-                  {/* <a
-                    href="./contact"
-                    target="_blank"
-                    className="header__btn btn btn_pink"
-                  >
-                    Get in Touch
-                  </a> */}
                 </p>
                 <span className="d-flex">
                   <p className="align-self-center about-area-5-para">

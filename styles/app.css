@@ -9143,7 +9143,6 @@ body:not(.touch-device) .header__item:hover .header__body {
     padding: 40px;
   }
 }
-
 @media only screen and (max-width: 767px) {
   body {
     font-size: 15px;

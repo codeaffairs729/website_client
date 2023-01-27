@@ -11,7 +11,7 @@ import ScheduleForm from "../../components/schedule";
 const contentHeader1 = () => {
   return (
     <>
-      <div className="hire-container tech-service-body">
+      <div className="tech-service-body">
         <div className="tech-service-body-left">
           <h1 className="hire-team-header">{techTitle}</h1>
           <p className="text-danger mt-2">
@@ -38,7 +38,7 @@ const content1 = () => {
   return (
     <>
       {/* Service container body content */}
-      <div className="hire-container hire-container-body-left-content-1">
+      <div className="hire-container-body-left-content-1">
         <p className="hire-p">
           DevOps leverages monitoring, automation, collaboration, Cloud
           adoption, and tool-chain pipelines. At Code Garage Tech, we offer
@@ -67,7 +67,7 @@ const content1 = () => {
 
 const content7 = () => (
   <>
-    <div className="hire-container hire-container-body-left-content-2">
+    <div className="hire-container-body-left-content-2">
       <h3 className="hire-h3">We attain DevOps Success through:</h3>
       <ul className="hire-p hire-list">
         <li>
@@ -106,7 +106,7 @@ const content7 = () => (
         constant testing and constant deployment.
       </p>
     </div>
-    <div className="hire-container">
+    <div className="">
       <p className="hire-p">
         Want to develop a DevOps Framework Talk to an Expert
       </p>

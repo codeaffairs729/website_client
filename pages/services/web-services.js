@@ -11,7 +11,7 @@ import ScheduleForm from "../../components/schedule";
 const contentHeader1 = () => {
   return (
     <>
-      <div className="hire-container tech-service-body">
+      <div className="tech-service-body">
         <div className="tech-service-body-left">
           <h1 className="hire-h1">{techTitle}</h1>
           <p className="hire-p text-danger mt-2">
@@ -43,7 +43,7 @@ const content1 = () => {
           href="https://www.codegaragetech.com/services/web-services"
         />
       </Head>
-      <div className="hire-container hire-container-body-left-content-1">
+      <div className="hire-container-body-left-content-1">
         <p className="hire-p">
           A fully-functional and highly interactive website is required for your
           business to keep things on the right track! <br />
@@ -73,7 +73,7 @@ const content1 = () => {
 
 const content7 = () => (
   <>
-    <div className="hire-container hire-container-body-left-content-2">
+    <div className="hire-container-body-left-content-2">
       <h3 className="hire-h3">Our Web Development Step-By-Step Process</h3>
       <h3 className="hire-h3">
         Planning - Design - Development - Testing - Maintenance
@@ -93,7 +93,7 @@ const content7 = () => (
       </p>
     </div>
 
-    <div className="hire-container">
+    <div className="">
       <p className="hire-p">Our Ruby on Rails Development Services Include:</p>
       <ul className="hire-list">
         <li>Enterprise Modernization </li>

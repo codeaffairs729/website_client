@@ -2294,18 +2294,23 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-6-pics {
-  position: relative;
   width: 100%;
-  height: 188px;
-  border-radius: 12px !important;
+  border-radius: 12px;
 }
 
 .about-area-6-pic-1 {
-  position: relative;
-  height: 388px;
+  width: 82%;
+  border-radius: 12px;
+}
+.img-radius-32 {
+  border-radius: 32px;
 }
 .img-radius {
   border-radius: 12px;
+}
+
+.img-radius-24 {
+  border-radius: 24px;
 }
 
 .img-margin-left {
@@ -2315,9 +2320,7 @@ body:not(.touch-device) .header-item[href]:before {
 .img-margin-right {
   margin-right: auto;
 }
-.about-area-6-pic-1 {
-  width: 82%;
-}
+
 
 .about-area-6-heading-outer {
   padding-top: 3rem;
@@ -2368,13 +2371,6 @@ body:not(.touch-device) .header-item[href]:before {
   padding-right: 0;
   padding-bottom: 0;
 }
-
-.aim-board {
-  position: relative;
-  width: 100%;
-  height: 481px;
-}
-
 .about-area-7-row {
   z-index: 1;
   position: relative;
@@ -2528,21 +2524,9 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .trophies-img {
-  position: relative;
   height: 100px;
-  width: fit-content;
   margin-bottom: 30px;
 }
-.trophies-img1 {
-  width: 74px;
-}
-.trophies-img2 {
-  width: 84px;
-}
-.trophies-img3 {
-  width: 100px;
-}
-
 .trophies-text {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -2704,6 +2688,7 @@ body:not(.touch-device) .header-item[href]:before {
 .career-area-2-img-1 {
   position: absolute;
   width: 310px;
+  /* height: inherit; */
   left: 80px;
   bottom: 0;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -3065,6 +3050,36 @@ body:not(.touch-device) .header-item[href]:before {
   border-radius: 32px;
 }
 
+.custom-img {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.unset-img {
+  width: 100%;
+}
+.unset-img > div {
+  position: unset !important;
+}
+
+/* add css to sub slider page */
+.custom-img-slider {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.unset-img-slider {
+  width: 100%;
+}
+.unset-img-slider > span {
+  position: unset !important;
+}
+
+
 .career-area-8-heading {
   font-family: "Poppins";
   font-style: normal;
@@ -3075,6 +3090,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .career-area-8-para {
+  padding: 10px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -3930,7 +3946,6 @@ body:not(.touch-device) .header-item[href]:before {
   .career-area-8-img-2 {
     width: 100%;
   }
-
   .career-area-9 .p-5 {
     padding: 1rem !important;
   }
