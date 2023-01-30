@@ -534,25 +534,13 @@ const Package = () => {
                     <div className="col-lg-7 d-flex justify-content-center">
                       <div className="package__preview row package-preview-mobile">
                         <div className="col-lg-12 d-flex justify-content-center align-items-center">
-                          {/* <img
+                          <img
                             onMouseOver={() => pause()}
                             onMouseOut={() => play()}
                             className="package__pic package-pic-mobile"
                             src="images/mobile_2.webp"
                             alt="Mobile Graph PNG"
-                          /> */}
-
-                          <div className="package__pic package-pic-mobile">
-                            <Image
-                              onMouseOver={() => pause()}
-                              onMouseOut={() => play()}
-                              src="/images/mobile_2.webp"
-                              alt="Mobile Graph PNG"
-                              width={195}
-                              height={363}
-                            />
-                          </div>
-
+                          />
                           {/* <img className="package-pic-android" src="images/android_4.webp" alt="" />
                                                     <img className="package-pic-flutter" src="images/flutter.webp" alt="" />
                                                     <img className="package-pic-react_2" src="images/react_2.webp" alt="" />

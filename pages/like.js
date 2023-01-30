@@ -1,13 +1,13 @@
-import React, { useEffect, useState, useRef } from 'react'
-import Router from 'next/router'
-import Image from 'next/image';
+import React, { useEffect, useState, useRef } from "react";
+import Router from "next/router";
+import Image from "next/image";
 
 const Like = () => {
   const dropdowns = useRef(null);
 
   const handleOnMouseOverList = (e) => {
     clearInterval(interval);
-  }
+  };
   const handleOnListLeave = (e) => {
     var dropdownsEle = dropdowns.getElementsByClassName("like-options");
     for (let i = 0; i < dropdownsEle.length; i++) {
@@ -15,8 +15,7 @@ const Like = () => {
         dropdownsEle[i].click();
       }
     }
-  }
-
+  };
 
   const [likeOptionOne, setLikeOptionOne] = useState(false);
   const [likeOptionTwo, setLikeOptionTwo] = useState(false);
@@ -29,7 +28,7 @@ const Like = () => {
     setLikeOptionTwo(false);
     setLikeOptionThree(false);
     setLikeOptionFour(false);
-  }
+  };
 
   const likeOptionTwoFunc = () => {
     const likeOptionTwoStatus = likeOptionTwo ? false : true;
@@ -37,7 +36,7 @@ const Like = () => {
     setLikeOptionOne(false);
     setLikeOptionThree(false);
     setLikeOptionFour(false);
-  }
+  };
 
   const likeOptionThreeFunc = () => {
     const likeOptionThreeStatus = likeOptionThree ? false : true;
@@ -45,7 +44,7 @@ const Like = () => {
     setLikeOptionTwo(false);
     setLikeOptionOne(false);
     setLikeOptionFour(false);
-  }
+  };
 
   const likeOptionFourFunc = () => {
     const likeOptionFourStatus = likeOptionFour ? false : true;
@@ -53,7 +52,7 @@ const Like = () => {
     setLikeOptionThree(false);
     setLikeOptionTwo(false);
     setLikeOptionOne(false);
-  }
+  };
 
   var interval;
   useEffect(() => {
@@ -87,13 +86,23 @@ const Like = () => {
                 Why Code Garage
                 <span className="title__color">?</span>
               </h2>
-              <div className="like__text" data-aos="animation-scale-x" data-aos-delay="150">
+              <div
+                className="like__text"
+                data-aos="animation-scale-x"
+                data-aos-delay="150"
+              >
                 {/* <p>
                   Let us take care of your problems.
                 </p> */}
-                <ul ref={(dropdownsRef) => { dropdowns = dropdownsRef }} className="like-list text-start d-inline-block w-100" data-aos="animation-scale-y" data-aos-delay="200">
-                  <li
-                  >
+                <ul
+                  ref={(dropdownsRef) => {
+                    dropdowns = dropdownsRef;
+                  }}
+                  className="like-list text-start d-inline-block w-100"
+                  data-aos="animation-scale-y"
+                  data-aos-delay="200"
+                >
+                  <li>
                     <div
                       onMouseOut={handleOnListLeave}
                       onMouseOver={handleOnMouseOverList}
@@ -111,12 +120,20 @@ const Like = () => {
                           <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                         </svg>
                       </a>
-                      <div className="collapse like-headline-description" id="collapseTransparency" >
-                        Every business has its own set of requirements, and we are here to fulfill those requirements with transparency. Code Garage Tech is devoted to providing one-of-a-kind solutions for each website design project and has assisted many customers in realizing their goals.
+                      <div
+                        className="collapse like-headline-description"
+                        id="collapseTransparency"
+                      >
+                        Every business has its own set of requirements, and we
+                        are here to fulfill those requirements with transparency
+                        in custom web development services. Code Garage Tech is
+                        devoted to providing one-of-a-kind solutions for each
+                        website design project and has assisted many customers
+                        in realizing their goals.{" "}
                       </div>
                     </div>
                   </li>
-                  <li data-id="2" className='list-items'>
+                  <li data-id="2" className="list-items">
                     <div
                       onMouseOut={handleOnListLeave}
                       onMouseOver={handleOnMouseOverList}
@@ -134,12 +151,19 @@ const Like = () => {
                           <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                         </svg>
                       </a>
-                      <div className="collapse like-headline-description" id="collapseAvailability" >
-                        We have a team of talented people who help your business reach new heights of success. Our Professional web & app developers are always available at your service to make your company's website look outstanding.
+                      <div
+                        className="collapse like-headline-description"
+                        id="collapseAvailability"
+                      >
+                        We have a team of talented people who help your business
+                        reach new heights of success in custom web development.
+                        Our Professional web developers are always available at
+                        your service to make your company's website look
+                        outstanding.
                       </div>
                     </div>
                   </li>
-                  <li data-id="3" className='list-items'>
+                  <li data-id="3" className="list-items">
                     <div
                       onMouseOut={handleOnListLeave}
                       onMouseOver={handleOnMouseOverList}
@@ -150,18 +174,25 @@ const Like = () => {
                         role="button"
                         aria-expanded="false"
                         aria-controls="collapseProcessOrientedWork"
-                        className="fw-bold like-options d-flex align-items-center" >
+                        className="fw-bold like-options d-flex align-items-center"
+                      >
                         Development Scope
                         <svg className="icon icon-arrow-down like-section-arrow">
                           <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                         </svg>
                       </a>
-                      <div className="collapse like-headline-description" id="collapseProcessOrientedWork" >
-                        We know that your website needs to grow as your business thrives. Hence, our software development solutions come with the flexibility of modifications that will aid your business in earning more revenue.
+                      <div
+                        className="collapse like-headline-description"
+                        id="collapseProcessOrientedWork"
+                      >
+                        We know that your website needs to grow as your business
+                        thrives. Hence, our custom web application development
+                        solutions come with the flexibility of modifications
+                        that will aid your business in earning more revenue.
                       </div>
                     </div>
                   </li>
-                  <li data-id="4" className='list-items'>
+                  <li data-id="4" className="list-items">
                     <div
                       onMouseOut={handleOnListLeave}
                       onMouseOver={handleOnMouseOverList}
@@ -169,16 +200,22 @@ const Like = () => {
                       <a
                         data-bs-toggle="collapse"
                         href="#collapseUptoDateonITTrends"
-                        role="button" aria-expanded="false"
+                        role="button"
+                        aria-expanded="false"
                         aria-controls="collapseUptoDateonITTrends"
-                        className="fw-bold like-options d-flex align-items-center" >
+                        className="fw-bold like-options d-flex align-items-center"
+                      >
                         Maintenance & Support
                         <svg className="icon icon-arrow-down like-section-arrow">
                           <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                         </svg>
                       </a>
-                      <div className="collapse" id="collapseUptoDateonITTrends" >
-                        Our team of professional developers offers support and maintenance services to enhance our client’s business life. At Code Garage Tech, our client's satisfaction is indispensable because we don't want them to face any kind of lag.
+                      <div className="collapse" id="collapseUptoDateonITTrends">
+                        Our team of professional developers offers support and
+                        maintenance services to enhance our client’s business
+                        life. At Code Garage Tech, our client's satisfaction is
+                        indispensable because we don't want them to face any
+                        kind of lag.
                       </div>
                     </div>
                   </li>
@@ -189,13 +226,23 @@ const Like = () => {
               </div> */}
             </div>
             <div className="like__preview" data-aos>
-              <img className="like__pic" src="img/hand-1.webp" alt="3D Hand Thumbs up" />
+              <img
+                className="like__pic"
+                src="img/hand-1.webp"
+                alt="3D Hand Thumbs up"
+              />
             </div>
             <div className="like__circle"></div>
             <div className="like__circles">
               <div className="like__circle"></div>
-              <div className="like__circle js-rellax" data-rellax-speed="-1"></div>
-              <div className="like__circle js-rellax" data-rellax-speed=".8"></div>
+              <div
+                className="like__circle js-rellax"
+                data-rellax-speed="-1"
+              ></div>
+              <div
+                className="like__circle js-rellax"
+                data-rellax-speed=".8"
+              ></div>
               <div className="like__circle"></div>
               <div className="like__circle"></div>
             </div>
@@ -203,7 +250,7 @@ const Like = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Like
+export default Like;

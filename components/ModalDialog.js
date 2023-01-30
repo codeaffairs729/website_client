@@ -8,13 +8,13 @@ function ModalDialog() {
   };
   return (
     <>
-      <a
-        target="_blank"
+      <button
+        type="button"
         className="freelancer-main__btn"
         onClick={initModal}
       >
         Get Assistance
-      </a>
+      </button>
 
       <div onClick={initModal}>
         <Modal show={modalView} onClick={(e) => e.stopPropagation()}>

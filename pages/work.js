@@ -17,7 +17,7 @@ const Work = () => {
             <br />
             Million Dollar Idea?
           </h4>
-          <div >
+          <div className="get-assist-btn">
           <ModalDialog/>
           </div>
           {/* </Link> */}
@@ -265,18 +265,18 @@ const Work = () => {
           </div>
         </div> */}
         <div className="showcase__bg showcase-big-circle">
-          {/* <img
+          <img
             className="showcase__pic"
             src="img/showcase-circle.webp"
             alt="Solid Blue Circle with white Dots"
-          /> */}
-          <div className="showcase__pic">
+          />
+          {/* <div className="showcase__pic">
             <Image
             src="/img/showcase-circle.webp"
             alt="Solid Blue Circle with white Dots"
             layout="fill"
             />
-            </div>
+            </div> */}
         </div>
         <div className="showcase__circles">
           <div className="showcase__circle"></div>

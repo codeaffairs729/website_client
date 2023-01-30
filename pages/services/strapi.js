@@ -3,7 +3,7 @@ import TechComponent from "../../components/techComponent";
 import HireServiceLayout from "../../components/hireServiceLayout";
 import Banner from "../../components/banner";
 import Link from "next/link";
-import Head from 'next/head'
+import Head from "next/head";
 import ScheduleForm from "../../components/schedule";
 const techTitle = "Strapi";
 const techImage = "";
@@ -14,8 +14,7 @@ const contentHeaderLeft = () => <div></div>;
 const contentHeader1 = () => {
   return (
     <>
-      
-      <div className="hire-container tech-service-body">
+      <div className=" tech-service-body">
         <div className="tech-service-body-left">
           <h1 className="hire-team-header">{techTitle}</h1>
           <p className="text-danger mt-2">
@@ -23,9 +22,13 @@ const contentHeader1 = () => {
             seamless and lag-free experience on all contemporary platforms and
             devices.- Mobile
           </p>
-            <a target="_blank" href="/contact" className="header__btn btn btn_purple mt-5">
-              Get in Touch
-            </a>
+          <a
+            target="_blank"
+            href="/contact"
+            className="header__btn btn btn_purple mt-5"
+          >
+            Get in Touch
+          </a>
         </div>
         <div className="tech-service-body-left-right">
           <img src="" />
@@ -39,90 +42,82 @@ const content1 = () => {
   return (
     <>
       {/* Service container body content */}
-      <div className="hire-container hire-container-body-left-content-1">
+      <div className="hire-container-body-left-content-1">
         <p className="service-p service-para hire-p">
           Strapi is a preeminent open-source headless Content Management System
           (CMS) of node.js, uses koa as its framework. It’s 100% reliable and
           fully customizable.
         </p>
       </div>
-      <div className="hire-container hire-container-body-left-content-2">
+      <div className=" hire-container-body-left-content-2">
         <h3 className="hire-h3">Develop Applications Faster</h3>
         <p className="hire-p">
           Building customizable, performant, and self-hosted content API that
           has never been facile.{" "}
         </p>
-
         <h3 className="hire-h3">Customizable</h3>
-        <p>
+        <p className="hire-p">
           Conveniently customize the API, query resolvers, and admin panel. You
           can extend your CMS (Content Management System) with Strapi plugins,
           in a few seconds. One can also create plugins for Strapi.
         </p>
 
         <h3 className="hire-h3">GraphQL or RESTful</h3>
-        <p>
+        <p className="hire-p">
           Using Strapi GraphQL or RESTful, you can consume API from mobile
           applications, IoT devices, any client(Vue, React, Angular).
         </p>
 
         <h3 className="hire-h3">Open Source</h3>
-        <p>
+        <p className="hire-p">
           The whole codebase is available on GitHub and maintained by many
           contributors.
         </p>
         <h3 className="hire-h3">Self-Hosted </h3>
-        <p>
+        <p className="hire-p">
           You can now keep full control of your private data as well as cost
           with the help of Strapi.
         </p>
-
-        <h3 className="hire-h3 text-center">Hire Adept Strapi Developers</h3>
-        <p className="hire-p">
-          We create customized Strapi (CMS) Content Management Systems as per
-          your business interface. Our skilled team of Strapi developers develop
-          the best and reliable softwares for you.{" "}
-        </p>
-        <h3 className="hire-h3 text-center">Hire Strapi Developer (Button)</h3>
-        <h3 className="hire-h3 text-center">
-          Strapi- Provides a Range of Benefits!{" "}
-        </h3>
-
-        <ul className="hire-list">
-          <li>
-            <h5>Shorten The Time-To-Deploy</h5>
-          </li>
-          <p className="mb-2">
-            Build your projects in a few hours instead of weeks with Strapi.
-          </p>
-          <li>
-            <h5>Manage Your Content Easily, and Deliver It Anywhere</h5>
-          </li>
-          <p className="mb-2">
-            With matchless customization, ubiquitous connectivity, unstoppable
-            productivity, and unbeatable control, you can manage your content
-            easily.
-          </p>
-          <li>
-            <h5>A Smooth Multi-Device Experience</h5>
-          </li>
-          <p className="mb-2">
-            With the help of Strapi you can develop splendid omnichannel digital
-            experiences. You can now distribute your content from one Content
-            Management System (CMS) to any digital channel, product, or device.
-          </p>
-        </ul>
       </div>
     </>
   );
 };
-
 const content7 = () => (
   <>
-    <div className="hire-container">
-      <h3 className="hire-h3 text-center">
-        Strapi Is A Selected Headless CMS For:
-      </h3>
+    <div className="">
+      <h3 className="hire-h3">Hire Adept Strapi Developers</h3>
+      <p className="hire-p">
+        We create customized Strapi (CMS) Content Management Systems as per your
+        business interface. Our skilled team of Strapi developers develop the
+        best and reliable softwares for you.{" "}
+      </p>
+      <h3 className="hire-h3">Hire Strapi Developer (Button)</h3>
+      <h3 className="hire-h3">Strapi- Provides a Range of Benefits! </h3>
+      <ul className="hire-list">
+        <li>
+          <h5>Shorten The Time-To-Deploy</h5>
+        </li>
+        <p className="mb-2">
+          Build your projects in a few hours instead of weeks with Strapi.
+        </p>
+        <li>
+          <h5>Manage Your Content Easily, and Deliver It Anywhere</h5>
+        </li>
+        <p className="mb-2">
+          With matchless customization, ubiquitous connectivity, unstoppable
+          productivity, and unbeatable control, you can manage your content
+          easily.
+        </p>
+        <li>
+          <h5>A Smooth Multi-Device Experience</h5>
+        </li>
+        <p className="mb-2">
+          With the help of Strapi you can develop splendid omnichannel digital
+          experiences. You can now distribute your content from one Content
+          Management System (CMS) to any digital channel, product, or device.
+        </p>
+      </ul>
+      <h3 className="hire-h3">Strapi Is A Selected Headless CMS For:</h3>
       <h4 className="hire-h4">Developers</h4>
       <p className="hire-p">
         Strapi CMS helps developers to easily customize as well as extend any
@@ -145,8 +140,8 @@ const content7 = () => (
         Strapi helps in boosting up the development as well as delivery of
         contemporary digital experiences.
       </p>
-      <h3 className="hire-h3 text-center">Why Choose Us?</h3>
-      <p>
+      <h3 className="hire-h3">Why Choose Us?</h3>
+      <p className="hire-p">
         We offer effective back-end services with the help of Strapi that can
         provide customization to your application or website as per your
         business requirements.
@@ -162,7 +157,7 @@ const content4 = () => <div></div>;
 const content5 = () => <div></div>;
 const content2 = () => <div></div>;
 const content3 = () => (
-  <div>
+  <div className="form-service">
     <ScheduleForm
       title={"Schedule a Meeting"}
       requestOrigin={"Request generated from hire-team page"}
@@ -173,7 +168,10 @@ const Strapi = () => {
   return (
     <>
       <Head>
-      <link rel="canonical" href="https://www.codegaragetech.com/services/strapi" />
+        <link
+          rel="canonical"
+          href="https://www.codegaragetech.com/services/strapi"
+        />
       </Head>
 
       <HireServiceLayout

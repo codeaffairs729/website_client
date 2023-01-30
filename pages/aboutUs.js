@@ -32,7 +32,7 @@ function AboutUs() {
       "Poonam Thakur",
       "HR Manager",
       "Poonam",
-      "Poonam integrates and implements the technology via improved training, staffing, and communication with all the employees. Moreover, she also recommends approaches, business solutions, and processes to the management.",
+      "Poonam integrates and implements the technology via improved training, staffing, and communication with all the employees. Moreover, she also recommend approaches, business solutions, and processes to the management.",
       "www.twitter.com",
       "www.instagram.com",
       "aboutUsImages/about-img2.webp",
