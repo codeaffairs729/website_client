@@ -1,29 +1,27 @@
-import React, { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 // import Image from 'next/image'
 // import styles from '../styles/Home.module.css'
 import Main from "./main";
-import Features from "./features";
-import Access from "./access";
-import Layouts from "./layouts";
-import Like from "./like";
-import Plan from "./plan";
-import Work from "./work";
-import Teams from "./teams";
-import Speed from "./speed";
-import Package from "./package";
-import Demo from "./demo";
-import Design from "./design";
-import Details from "./details";
-import Tool from "./tool";
-import Roadmap from "./roadmap";
-import Accord from "./accord";
-import Partners from "./partners";
-import Quality from "./quality";
-import Showcase from "./showcase";
-import Offer from "./offer";
+// import Access from "./access";
+// import Layouts from "./layouts";
+// import Like from "./like";
+// import Work from "./work";
+// import Teams from "./teams";
+// import Package from "./package";
+// import Design from "./design";
+// import Partners from "./partners";
 
-import Footer from "./includes/footer";
-import Link from "next/link";
+const Access = dynamic(() => import("./access"), {});
+const Layouts = dynamic(() => import("./layouts"), {});
+const Like = dynamic(() => import("./like"), {});
+const Work = dynamic(() => import("./work"), {});
+const Teams = dynamic(() => import("./teams"), {});
+
+const Package = dynamic(() => import("./package"), {});
+const Design = dynamic(() => import("./design"), {});
+const Partners = dynamic(() => import("./partners"), {});
+
+const Footer = dynamic(() => import("./includes/footer"), {});
 
 export default function Home() {
   return (
@@ -40,9 +38,12 @@ export default function Home() {
             alt="3D Whatsapp Icon"
           />
         </a>
+
         <Main />
         <Package />
+
         {/* <Features /> */}
+
         <Work />
         <Layouts />
         <Access />
@@ -61,6 +62,7 @@ export default function Home() {
         <Quality />
         <Showcase />
         <Offer /> */}
+
         <Footer />
       </div>
     </>

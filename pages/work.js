@@ -1,11 +1,15 @@
 import React, { useState, useRef } from "react";
-import ModalDialog from '../components/ModalDialog'
+import dynamic from "next/dynamic";
+// import ModalDialog from '../components/ModalDialog'
 import Image from "next/image";
+const ModalDialog = dynamic(() => import("../components/ModalDialog"), {});
 const Work = () => {
   return (
     <>
       <div className="showcase work-process">
-        <h2 className="work-text-left-1 ms-5 work-text-left-1-font">Our Approach</h2>
+        <h2 className="work-text-left-1 ms-5 work-text-left-1-font">
+          Our Approach
+        </h2>
         <h2 className="work-text-left text-center">
           From Your Idea
           <br />
@@ -18,7 +22,7 @@ const Work = () => {
             Million Dollar Idea?
           </h4>
           <div className="get-assist-btn">
-          <ModalDialog/>
+            <ModalDialog />
           </div>
           {/* </Link> */}
           {/* //////////////////////////////////////////////////////////////////modals */}
