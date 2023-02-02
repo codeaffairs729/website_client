@@ -1,6 +1,5 @@
 import React from "react";
 import { RxCheck } from "react-icons/rx";
-import Slider from "react-slick";
 const techTitle = "Hire a Team ";
 import HireServiceLayout from "../components/hireServiceLayout";
 import Head from "next/head";

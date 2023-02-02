@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import AOS from "aos";
 import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/app.css'
@@ -6,12 +6,10 @@ import '../styles/gen-form.css'
 import '../styles/globals.css'
 import "aos/dist/aos.css";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
-import Link from 'next/link'
 import '../styles/service.css'
 import '../styles/techComponent.css'
 import '../styles/hireServiceLayout.css'
 import '../styles/assisstanceModel.css'
-import Image from 'next/image';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

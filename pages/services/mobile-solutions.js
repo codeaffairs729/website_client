@@ -1,13 +1,10 @@
-import React, { useState } from "react";
 import TechComponent from "../../components/techComponent";
 import HireServiceLayout from "../../components/hireServiceLayout";
 import Banner from "../../components/banner";
 import Link from "next/link";
 import Head from "next/head";
 import ScheduleForm from "../../components/schedule";
-
 const techTitle = "Mobile Solutions";
-const techImage = "/icons/service-icon/Frame.webp";
 
 const contentHeader1 = () => {
   return (
@@ -166,7 +163,11 @@ const content7 = () => (
   </>
 );
 
-const content6 = () => <div ><TechComponent /></div>;
+const content6 = () => (
+  <div>
+    <TechComponent />
+  </div>
+);
 const content3 = () => (
   <div className="form-service">
     <ScheduleForm

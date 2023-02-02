@@ -1,12 +1,9 @@
-import React, { useState } from "react";
 import TechComponent from "../../components/techComponent";
 import HireServiceLayout from "../../components/hireServiceLayout";
 import Banner from "../../components/banner";
-import Link from "next/link";
 import Head from "next/head";
 import ScheduleForm from "../../components/schedule";
 const techTitle = "Chatwoot";
-const techImage = "";
 
 const contentHeader = () => <div></div>;
 const contentHeaderLeft = () => <div></div>;

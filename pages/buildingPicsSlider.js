@@ -1,4 +1,4 @@
-import React, { Component, useState, useRef } from "react";
+import React, {  useState, useRef } from "react";
 import Slider from "react-slick";
 import PrevButton from "../components/prevButton";
 import NextButton from "../components/nextButton";

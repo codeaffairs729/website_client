@@ -1,6 +1,3 @@
-import React, { useState, useEffect } from "react";
-import ScheduleForm from "./schedule";
-import Banner from "./banner";
 import Header from "../pages/includes/header";
 import Footer from "../pages/includes/footer";
 

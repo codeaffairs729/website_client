@@ -5,7 +5,7 @@ import "react-datetime/css/react-datetime.css";
 import Datetime from "react-datetime";
 import { BsCalendar2Date } from "react-icons/bs";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 const ScheduleForm = ({ title, requestOrigin }) => {
   const image = useRef(null);

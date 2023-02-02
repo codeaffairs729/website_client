@@ -1,11 +1,8 @@
-import React, { useState } from "react";
 import TechComponent from "../../components/techComponent";
 import HireServiceLayout from "../../components/hireServiceLayout";
 import Banner from "../../components/banner";
-import Link from "next/link";
 import Head from "next/head";
 const techTitle = "Dev Ops";
-const techImage = "/icons/service-icon/Frame.webp";
 import ScheduleForm from "../../components/schedule";
 
 const contentHeader1 = () => {

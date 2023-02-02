@@ -1,8 +1,6 @@
-import React, { useState } from "react";
 import TechComponent from "../../components/techComponent";
 import HireServiceLayout from "../../components/hireServiceLayout";
 import Banner from "../../components/banner";
-import Link from "next/link";
 import Head from "next/head";
 const techTitle = "Web Solutions";
 import ScheduleForm from "../../components/schedule";

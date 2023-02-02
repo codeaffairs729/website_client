@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import TechComponent from "../../components/techComponent";
 import HireServiceLayout from "../../components/hireServiceLayout";
 import Banner from "../../components/banner";

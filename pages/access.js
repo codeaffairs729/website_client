@@ -1,6 +1,6 @@
-import React, { useCallback, useState, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Access = () => {

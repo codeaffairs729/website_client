@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import Header from "./includes/header";
 import Footer from "./includes/footer";
 import SideImages from "../components/sideImages";
-import Trophies from "./trophies";
 import BuildingPicsSlider from "./buildingPicsSlider";
 import Head from "next/head";
-import Link from "next/link";
 import Image from "next/image";
 
 function AboutUs() {

@@ -11,7 +11,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Head from "next/head";
 import { AiFillStar } from "react-icons/ai";
 import { BsStarHalf } from "react-icons/bs";
-import Image from "next/image";
 
 const Careers = () => {
   const [email, setEmail] = useState("");

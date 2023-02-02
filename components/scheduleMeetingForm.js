@@ -1,4 +1,3 @@
-import React, {useState,useRef}from 'react'
 
 const ScheduleMeetingForm = ({ fields, title, submitFunc ,buttonText,submitButton}) => {
     

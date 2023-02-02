@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 import SubSlider from "../components/index/services/subSlider";
 import SliderButton from "../components/sliderButton";
-import Image from "next/image";
 
 const Package = () => {
   const gotoNext = () => {
