@@ -35,12 +35,6 @@ const content1 = () => {
   return (
     <>
       {/* Service container body content */}
-      <Head>
-        <link
-          rel="canonical"
-          href="https://www.codegaragetech.com/services/web-services"
-        />
-      </Head>
       <div className="hire-container-body-left-content-1">
         <p className="hire-p">
           A fully-functional and highly interactive website is required for your
@@ -252,6 +246,21 @@ const content3 = () => (
 const WebServices = () => {
   return (
     <>
+      <Head>
+        <title>
+          Effective Web Solutions for your business - Code Garage Tech
+        </title>
+        <link
+          rel="canonical"
+          href="https://www.codegaragetech.com/services/web-services"
+        />
+        <meta
+          name="description"
+          content="At Code Garage Tech, we offer full web development solutions, from initial planning to final delivery and third-party testing. Get in Touch with us now! 
+
+          "
+        />
+      </Head>
       <HireServiceLayout
         content1={content1}
         content3={content3}

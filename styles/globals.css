@@ -381,50 +381,58 @@ body:not(.touch-device) .header-item[href]:before {
 
 .design-view-ucview-bg {
   background: url("../public/images/ucview.webp") no-repeat !important;
-  background-size: cover !important;
-  background-position-x: center !important;
+  background-size: cover!important;
+   background-position-x: center !important; 
+
 }
 
 .design-view-stockarchitect-bg {
   background: url("../public/images/stockarchitect.webp") no-repeat !important;
-  background-size: cover !important;
-  background-position-x: center !important;
+  background-size: cover!important;
+   background-position-x: center !important; 
+
 }
 
 .design-view-withrelay-bg {
   background: url("../public/images/withrelay.webp") no-repeat !important;
-  background-size: cover !important;
-  background-position-x: center !important;
+  background-size: cover!important;
+   background-position-x: center !important; 
+
+
 }
 
 .design-view-videochatapro-bg {
   background: url("../public/images/videochatapro.webp") no-repeat !important;
-  background-size: cover !important;
-  background-position-x: center !important;
+  background-size: cover!important;
+   background-position-x: center !important; 
+
 }
 
 .design-view-buyma-bg {
   background: url("../public/images/buyma.webp") no-repeat !important;
-  background-size: cover !important;
-  background-position-x: center !important;
+  background-size: cover!important;
+   background-position-x: center !important; 
+
 }
 
 .design-view-fintrakk-bg {
   background: url("../public/images/fintrakk.webp") no-repeat !important;
-  background-size: cover !important;
-  background-position-x: center !important;
+  background-size: cover!important;
+   background-position-x: center !important; 
+
 }
 
 .design-view-welcome-bg {
   background: url("../public/images/welcomeAi.webp") no-repeat !important;
-  background-size: cover !important;
-  background-position-x: center !important;
+  background-size: cover!important;
+   background-position-x: center !important; 
+
 }
 
 .design-view-bzigo-bg {
   background: url("../public/images/bzigo-web.webp") no-repeat !important;
-  background-size: cover !important;
-  background-position-x: center !important;
+  background-size: cover!important;
+   background-position-x: center !important; 
 }
 
 .design__slider .slick-slide {
@@ -570,6 +578,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .field_text_area {
+  resize: none;
   height: 130px;
   padding-top: 10px;
 }
@@ -4036,6 +4045,7 @@ body:not(.touch-device) .header-item[href]:before {
 
   .field_text_area {
     height: 100px;
+    resize: none;
   }
 
   .contact__cloud {

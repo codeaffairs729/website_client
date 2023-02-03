@@ -154,7 +154,11 @@ const Header = () => {
           </button>
           <Link href="/">
             <div className="cursor_pointer header__logo">
-              <img className="header__pic" src="/logo/cgt_new_logo_alt.webp" alt="Code Garage Tech - Logo" />
+              <img
+                className="header__pic"
+                src="/logo/cgt_new_logo_alt.webp"
+                alt="Code Garage Tech - Logo"
+              />
               {/* <div className="header__pic">
                 <Image
                   src="/logo/cgt_new_logo_alt.webp"
@@ -809,28 +813,31 @@ const Header = () => {
                         >
                           Miscellaneous
                         </div>
+
                         <div className="row">
                           <div className="col-lg-12 header-solutions-outer">
-                            <div className="row">
-                              <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                {/* <img
+                            <Link href="/services/ux-ui">
+                              <div className="row cursor_pointer">
+                                <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                  {/* <img
                                   className="header-solutions-icon"
                                   src="/images/content-management-system.webp"
                                   alt="3D Pencil"
                                 /> */}
 
-                                <div className="header-solutions-icon">
-                                  <Image
-                                    src="/images/content-management-system.webp"
-                                    alt="3D Pencil"
-                                    layout="fill"
-                                  />
+                                  <div className="header-solutions-icon">
+                                    <Image
+                                      src="/images/content-management-system.webp"
+                                      alt="3D Pencil"
+                                      layout="fill"
+                                    />
+                                  </div>
+                                </div>
+                                <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                  <div className="header__info">UI / UX</div>
                                 </div>
                               </div>
-                              <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                <div className="header__info">UI / UX</div>
-                              </div>
-                            </div>
+                            </Link>
                           </div>
                           <div className="col-lg-12 header-solutions-outer">
                             <div className="row">
@@ -936,6 +943,38 @@ const Header = () => {
                               </div>
                             </div>
                           </div>
+                          <div className="col-lg-12 header-solutions-outer">
+                            <Link href="/services/strapi">
+                              <div className="row cursor_pointer">
+                                <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                  <img
+                                    className="header-solutions-icon"
+                                    src="/icons/strapi-frame.webp"
+                                    alt="strapi PNG"
+                                  />
+                                </div>
+                                <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                  <div className="header__info">Strapi</div>
+                                </div>
+                              </div>
+                            </Link>
+                          </div>
+                          <div className="col-lg-12 header-solutions-outer">
+                            <Link href="/services/chat-woot">
+                              <div className="row cursor_pointer">
+                                <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                  <img
+                                    className="header-solutions-icon"
+                                    src="/icons/chatwoot.webp"
+                                    alt="chatwoot PNG"
+                                  />
+                                </div>
+                                <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                  <div className="header__info">Chatwoot</div>
+                                </div>
+                              </div>
+                            </Link>
+                          </div>
                           {/* <Slider {...portfolioSettings}>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
@@ -1009,7 +1048,7 @@ const Header = () => {
                   Portfolio
                 </div>
               </Link>
-              <Link href="./careers">
+              <Link href="/careers">
                 <div
                   className={
                     careerLink
@@ -1020,7 +1059,7 @@ const Header = () => {
                   Careers
                 </div>
               </Link>
-              <Link href="./aboutUs">
+              <Link href="/aboutUs">
                 <div
                   className={
                     aboutUsLink

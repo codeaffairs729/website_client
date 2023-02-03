@@ -1,8 +1,5 @@
 import React, { useState, useRef } from "react";
-import dynamic from "next/dynamic";
-// import ModalDialog from '../components/ModalDialog'
-import Image from "next/image";
-const ModalDialog = dynamic(() => import("../components/ModalDialog"), {});
+import ModalDialog from '../components/ModalDialog'
 const Work = () => {
   return (
     <>

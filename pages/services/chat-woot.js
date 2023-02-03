@@ -24,7 +24,7 @@ const contentHeader1 = () => {
           </a>
         </div>
         <div className="tech-service-body-left-right">
-          <img src="" />
+          <img src="/icons/service-icon/chatwoot.webp" alt="chatwoot-image"/>
         </div>
       </div>
     </>
@@ -115,9 +115,16 @@ const Strapi = () => {
   return (
     <>
       <Head>
+        <title>All-In-One Communication Channel - Chatwoot</title>
+
         <link
           rel="canonical"
-          href="https://www.codegaragetech.com/services/strapi"
+          href="https://www.codegaragetech.com/services/chat-woot"
+        />
+        <meta
+          name="description"
+          content="Code Garage Tech provides a platform that helps you to engage with your customer in smooth conversational experiences. 
+          "
         />
       </Head>
 

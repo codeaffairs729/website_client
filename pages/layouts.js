@@ -259,13 +259,6 @@ const Layouts = () => {
                 src="img/layouts-pic-1.webp"
                 alt="3D Graphs on Mobile"
               />
-              <div className="layouts__pic">
-                <Image
-                  src="/img/layouts-pic-1.webp"
-                  alt="3D Graphs on Mobile"
-                  layout="fill"
-                />
-              </div>
               <img
                 className="layout-pic-react"
                 src="/images/react_3.webp"

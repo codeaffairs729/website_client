@@ -8,6 +8,18 @@ import ScheduleForm from "../../components/schedule";
 const contentHeader1 = () => {
   return (
     <>
+    <Head>
+        <title>Reliable DevOps Solutions for your business - Code Garage Tech</title>
+        <link
+          rel="canonical"
+          href="https://www.codegaragetech.com/services/dev-ops"
+        />
+        <meta
+          name="description"
+          content="Effective DevOps services like Automation CI/CD Cloud Engineering! We ensure swift on-boarding of apps by automating the end-to-end delivery - Code Garage Tech
+          "
+        />
+      </Head>
       <div className="tech-service-body">
         <div className="tech-service-body-left">
           <h1 className="hire-team-header">{techTitle}</h1>
@@ -122,15 +134,8 @@ const content7 = () => (
 
       <h3 className="hire-h3">CI/CD </h3>
       <p className="hire-p">
-        We at Code Garage Tech offer reliable DevOps automation testing
-        solutions by adopting a strategy that emphasizes integration,
-        collaboration, automation and collaboration. We aid you incorporate the
-        necessary changes in your technology culture and landscape. We
-        effectively leverage collaboration, monitoring, automation, cloud
-        adoption, and tool-chain pipelines to ensure swift onboarding of apps.
-        Through our DevOps consulting services, we assist businesses and
-        startups in aligning their operations and development for greater
-        efficiency.
+      Continuous Integration and Continuous Deployment (CI/CD) are crucial in the contemporary era of tech as it revamped the way software used to develop. Incorporating CI/CD leads to swiftly build and faster deliveries that does not affect the quality of software. The main concept of CI/CD pipeline is about making some alterations to code, developing, testing and delivering effective softwares responding to business needs.  We at Code                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Garage Tech, have an adept team of developers who offer CI/CD design and deployment solutions, CI/CD implementation solutions, and plug-ins. 
+
       </p>
       <h3 className="hire-h3">Cloud Engineering </h3>
       <p className="hire-p">

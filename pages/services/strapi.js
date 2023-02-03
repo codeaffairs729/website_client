@@ -28,7 +28,8 @@ const contentHeader1 = () => {
           </a>
         </div>
         <div className="tech-service-body-left-right">
-          <img src="" />
+          <img src="/icons/service-icon/strapi-frame.webp" alt="strapi-image"/>
+
         </div>
       </div>
     </>
@@ -165,9 +166,16 @@ const Strapi = () => {
   return (
     <>
       <Head>
+        <title>Preeminent open-source headless CMS - Strapi</title>
         <link
           rel="canonical"
           href="https://www.codegaragetech.com/services/strapi"
+        />
+        <meta
+          name="description"
+          content="At Code Garage Tech, we create customized Strapi (CMS) as per your business interface. Our skilled team of Strapi developers create the best softwares for you. 
+
+          "
         />
       </Head>
 

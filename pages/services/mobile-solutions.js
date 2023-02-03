@@ -180,9 +180,17 @@ const MobileSolutions = () => {
   return (
     <>
       <Head>
+        <title>
+          Best Mobile Solutions for your business - Code Garage Tech
+        </title>
         <link
           rel="canonical"
           href="https://www.codegaragetech.com/services/mobile-solutions"
+        />
+        <meta
+          name="description"
+          content="We offer reliable mobile solutions like Android App Development IOS App Development React Native Development Flutter Development. Contact us now
+          "
         />
       </Head>
       <HireServiceLayout

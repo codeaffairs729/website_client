@@ -124,10 +124,19 @@ const content3 = () => (
 const Miscellaneous = () => {
   return (
     <>
-      <Head>
+    <Head>
+        <title>
+        UI/UX Design Services - Code Garage Tech
+        </title>
         <link
           rel="canonical"
-          href="https://www.codegaragetech.com/services/dev-ops"
+          href="https://www.codegaragetech.com/services/ux-ui"
+        />
+        <meta
+          name="description"
+          content="From research to design to development, we provide a full range of UI/UX design services to bring your ideas to life. Contact us now! 
+
+          "
         />
       </Head>
       <HireServiceLayout
