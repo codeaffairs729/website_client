@@ -1,46 +1,14 @@
 // import styles from '../styles/Home.module.css'
-import dynamic from "next/dynamic";
-// // import Main from "./main";
-// import Package from "./package";
-// import Work from "./work";
-// import Layouts from "./layouts";
-// import Access from "./access";
-// import Partners from "./partners";
-// import Design from "./design";
-// import Teams from "./teams";
-// import Like from "./like";
-// import Footer from "./includes/footer";
-
-const Main = dynamic(() => import("./main"), {
-  loading: () => "",
-});
-const Package = dynamic(() => import("./package"), {
-  loading: () => "",
-});
-const Work = dynamic(() => import("./work"), {
-  loading: () => "",
-});
-const Layouts = dynamic(() => import("./layouts"), {
-  loading: () => "",
-});
-const Access = dynamic(() => import("./access"), {
-  loading: () => "",
-});
-const Partners = dynamic(() => import("./partners"), {
-  loading: () => "",
-});
-const Design = dynamic(() => import("./design"), {
-  loading: () => "",
-});
-const Teams = dynamic(() => import("./teams"), {
-  loading: () => "",
-});
-const Like = dynamic(() => import("./like"), {
-  loading: () => "",
-});
-const Footer = dynamic(() => import("./includes/footer"), {
-  loading: () => "",
-});
+import Main from "./main";
+import Package from "./package";
+import Work from "./work";
+import Layouts from "./layouts";
+import Access from "./access";
+import Partners from "./partners";
+import Design from "./design";
+import Teams from "./teams";
+import Like from "./like";
+import Footer from "./includes/footer";
 
 export default function Home() {
   return (
