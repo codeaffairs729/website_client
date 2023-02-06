@@ -1,14 +1,14 @@
 // import styles from '../styles/Home.module.css'
 import Main from "./main";
-import Access from "./access";
-import Layouts from "./layouts";
-import Like from "./like";
-import Work from "./work";
-import Teams from "./teams";
-import Package from "./package";
-import Design from "./design";
-import Partners from "./partners";
-import Footer from "./includes/footer";
+// import Access from "./access";
+// import Layouts from "./layouts";
+// import Like from "./like";
+// import Work from "./work";
+// import Teams from "./teams";
+// import Package from "./package";
+// import Design from "./design";
+// import Partners from "./partners";
+// import Footer from "./includes/footer";
 
 export default function Home() {
   return (
@@ -27,17 +27,17 @@ export default function Home() {
         </a>
 
         <Main />
-        <Package />
+        {/* <Package /> */}
 
         {/* <Features /> */}
 
-        <Work />
-        <Layouts />
-        <Access />
-        <Partners />
-        <Design />
-        <Teams />
-        <Like />
+        {/* <Work /> */}
+        {/* <Layouts /> */}
+        {/* <Access /> */}
+        {/* <Partners /> */}
+        {/* <Design /> */}
+        {/* <Teams /> */}
+        {/* <Like /> */}
 
         {/* <Plan />
         <Speed />
@@ -50,7 +50,7 @@ export default function Home() {
         <Showcase />
         <Offer /> */}
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );
