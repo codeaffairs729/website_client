@@ -7,7 +7,7 @@ import Access from "./access";
 import Partners from "./partners";
 import Design from "./design";
 import Teams from "./teams";
-// import Like from "./like";
+import Like from "./like";
 // import Footer from "./includes/footer";
 
 export default function Home() {
@@ -37,7 +37,7 @@ export default function Home() {
         <Partners />
         <Design />
         <Teams />
-        {/* <Like /> */}
+        <Like />
 
         {/* <Plan />
         <Speed />
