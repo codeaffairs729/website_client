@@ -1,10 +1,10 @@
 // import styles from '../styles/Home.module.css'
 import Main from "./main";
 import Package from "./package";
+import Work from "./work";
 // import Access from "./access";
 // import Layouts from "./layouts";
 // import Like from "./like";
-// import Work from "./work";
 // import Teams from "./teams";
 // import Design from "./design";
 // import Partners from "./partners";
@@ -31,7 +31,7 @@ export default function Home() {
 
         {/* <Features /> */}
 
-        {/* <Work /> */}
+        <Work />
         {/* <Layouts /> */}
         {/* <Access /> */}
         {/* <Partners /> */}
