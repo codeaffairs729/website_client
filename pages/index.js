@@ -6,8 +6,8 @@ import Layouts from "./layouts";
 import Access from "./access";
 import Partners from "./partners";
 import Design from "./design";
+import Teams from "./teams";
 // import Like from "./like";
-// import Teams from "./teams";
 // import Footer from "./includes/footer";
 
 export default function Home() {
@@ -36,7 +36,7 @@ export default function Home() {
         <Access />
         <Partners />
         <Design />
-        {/* <Teams /> */}
+        <Teams />
         {/* <Like /> */}
 
         {/* <Plan />
