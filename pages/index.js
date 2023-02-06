@@ -4,10 +4,10 @@ import Package from "./package";
 import Work from "./work";
 import Layouts from "./layouts";
 import Access from "./access";
+import Partners from "./partners";
 // import Like from "./like";
 // import Teams from "./teams";
 // import Design from "./design";
-// import Partners from "./partners";
 // import Footer from "./includes/footer";
 
 export default function Home() {
@@ -34,7 +34,7 @@ export default function Home() {
         <Work />
         <Layouts />
         <Access />
-        {/* <Partners /> */}
+        <Partners />
         {/* <Design /> */}
         {/* <Teams /> */}
         {/* <Like /> */}
