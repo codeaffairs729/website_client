@@ -3,7 +3,7 @@ import Main from "./main";
 import Package from "./package";
 import Work from "./work";
 import Layouts from "./layouts";
-// import Access from "./access";
+import Access from "./access";
 // import Like from "./like";
 // import Teams from "./teams";
 // import Design from "./design";
@@ -33,7 +33,7 @@ export default function Home() {
 
         <Work />
         <Layouts />
-        {/* <Access /> */}
+        <Access />
         {/* <Partners /> */}
         {/* <Design /> */}
         {/* <Teams /> */}
