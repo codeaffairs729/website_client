@@ -8,7 +8,7 @@ import Partners from "./partners";
 import Design from "./design";
 import Teams from "./teams";
 import Like from "./like";
-// import Footer from "./includes/footer";
+import Footer from "./includes/footer";
 
 export default function Home() {
   return (
@@ -50,7 +50,7 @@ export default function Home() {
         <Showcase />
         <Offer /> */}
 
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );
