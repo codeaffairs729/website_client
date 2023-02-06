@@ -2,8 +2,8 @@
 import Main from "./main";
 import Package from "./package";
 import Work from "./work";
+import Layouts from "./layouts";
 // import Access from "./access";
-// import Layouts from "./layouts";
 // import Like from "./like";
 // import Teams from "./teams";
 // import Design from "./design";
@@ -32,7 +32,7 @@ export default function Home() {
         {/* <Features /> */}
 
         <Work />
-        {/* <Layouts /> */}
+        <Layouts />
         {/* <Access /> */}
         {/* <Partners /> */}
         {/* <Design /> */}
