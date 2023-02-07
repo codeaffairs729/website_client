@@ -576,11 +576,11 @@ const Package = () => {
               </Slider>
               {/* <SliderButton gotoNext={gotoNext} gotoPrev={gotoPrev} /> */}
               <div className="package__line">
-                <img
+                {/* <img
                   className="package__pic"
                   src="img/line-1.webp"
                   alt="Background Curve Line"
-                />
+                /> */}
 
                 {/* <div className="package__pic">
                   <Image
