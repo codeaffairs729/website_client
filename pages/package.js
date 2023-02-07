@@ -24,7 +24,7 @@ const Package = () => {
   ];
 
   const webIcons = [
-    // ["Ruby on Rails", "Rails PNG", "/icons/rails.webp"],
+    ["Ruby on Rails", "Rails PNG", "/icons/rails.webp"],
     ["ReactJs", "Reactjs Icon", "/icons/reactjs.webp"],
     ["NextJs", "Nextjs Icon", "/icons/nextjs.webp"],
     ["VueJs", "Vuejs Icon", "/icons/vuejs.webp"],

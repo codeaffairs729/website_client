@@ -149,12 +149,12 @@ const Main = () => {
                 alt="3D Desktop Assets"
               /> */}
               <div className="main__pic">
-                {/* <Image
+                <Image
                   src="/images/desktop-asset.webp"
                   alt="3D Desktop Assets"
                   width={768}
                   height={598}
-                /> */}
+                />
               </div>
             </div>
           </div>
