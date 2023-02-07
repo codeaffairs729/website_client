@@ -115,21 +115,33 @@ const Main = () => {
           </div>
           <div className="main__view" data-aos>
             <div className="main__preview">
-              <img
+              {/* <img
                 className="main__pic js-parallax"
                 data-scale="1.5"
                 data-orientation="down"
                 src="img/main-pic-1.webp"
                 alt="3D Video Play Button Image"
+              /> */}
+              <Image
+              src="/img/main-pic-1.webp"
+              alt="3D Video Play Button Image"
+              width={370}
+              height={323}
               />
             </div>
             <div className="main__preview">
-              <img
+              {/* <img
                 className="main__pic js-parallax"
                 data-scale="1.5"
                 data-orientation="up"
                 src="img/main-pic-2.webp"
                 alt="3D Main Profile PNG"
+              /> */}
+              <Image
+              src="/img/main-pic-2.webp"
+              alt="3D Main Profile PNG"
+              width={235}
+              height={142}
               />
             </div>
             <div className="main__preview">

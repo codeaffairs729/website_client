@@ -1,5 +1,7 @@
 import React, { useState, useRef } from "react";
-import ModalDialog from '../components/ModalDialog'
+import ModalDialog from "../components/ModalDialog";
+import Image from "next/image";
+
 const Work = () => {
   return (
     <>
@@ -48,19 +50,35 @@ const Work = () => {
             data-aos-duration="800"
             data-aos-offset="0"
           >
-            <img
+            {/* <img
               className="work__pic js-parallax"
               data-scale="1.2"
               data-orientation="down"
               src="img/hand-2.webp"
               alt="3D Hand"
-            />
+            /> */}
+            <div className="work__pic js-parallax" data-scale="1.2">
+              <Image
+                src="/img/hand-2.webp"
+                alt="3D Hand"
+                width={80}
+                height={135}
+              />
+            </div>
             <div className="work-img-bulb-outer">
-              <img
+              {/* <img
                 className="work-img-bulb"
                 src="images/bulb-front-color.webp"
                 alt="3D Bulb"
-              />
+              /> */}
+              <div className="work-img-bulb" data-scale="1.2">
+                <Image
+                  src="/images/bulb-front-color.webp"
+                  alt="3D Bulb"
+                  width={70}
+                  height={74}
+                />
+              </div>
               <p className="work-img-bulb-text">Your Idea</p>
             </div>
           </div>
@@ -73,11 +91,19 @@ const Work = () => {
             data-aos-duration="800"
             data-aos-offset="0"
           >
-            <img
+            {/* <img
               className="work-img-msg"
               src="images/chat-text-front-clay.webp"
               alt="3D Chat Text Front Clay PNG"
-            />
+            /> */}
+            <div className="work-img-msg">
+              <Image
+                src="/images/chat-text-front-clay.webp"
+                alt="3D Chat Text Front Clay PNG"
+                width={70}
+                height={75}
+              />
+            </div>
             <p className="work-img-bulb-text work-img-msg-text">
               Discussion &<br />
               Consultation
@@ -92,11 +118,19 @@ const Work = () => {
             data-aos-duration="800"
             data-aos-offset="0"
           >
-            <img
+            {/* <img
               className="work-img-Float"
               src="images/Float.webp"
               alt="UI/UX Design"
-            />
+            /> */}
+            <div className="work-img-Float">
+              <Image
+                src="/images/Float.webp"
+                alt="UI/UX Design"
+                width={70}
+                height={70}
+              />
+            </div>
             <p className="work-img-bulb-text">UI/UX Design</p>
           </div>
 
@@ -108,11 +142,19 @@ const Work = () => {
             data-aos-duration="800"
             data-aos-offset="0"
           >
-            <img
+            {/* <img
               className="work-img-Group"
               src="images/Group.webp"
               alt="Development PNG"
-            />
+            /> */}
+            <div className="work-img-Group">
+              <Image
+                src="/images/Group.webp"
+                alt="Development PNG"
+                width={49}
+                height={70}
+              />
+            </div>
             <p className="work-img-bulb-text work-img-Group-text">
               Development
             </p>
@@ -126,11 +168,19 @@ const Work = () => {
             data-aos-duration="800"
             data-aos-offset="0"
           >
-            <img
+            {/* <img
               className="work-img-rocket"
               src="images/rocket-iso-color.webp"
               alt="3D Rocket"
+            /> */}
+            {/* <div className="work-img-rocket"> */}
+            <Image
+              src="/images/rocket-iso-color.webp"
+              alt="3D Rocket"
+              width={70}
+              height={61}
             />
+            {/* </div> */}
             <p className="work-img-bulb-text work-img-rocket-text">Launch</p>
           </div>
 
@@ -142,11 +192,19 @@ const Work = () => {
             data-aos-duration="800"
             data-aos-offset="0"
           >
-            <img
+            {/* <img
               className="work-img-chart"
               src="images/chart-front-color.webp"
               alt="3D Monitoring Chart"
-            />
+            /> */}
+            <div className="work-img-chart">
+              <Image
+                src="/images/chart-front-color.webp"
+                alt="3D Monitoring Chart"
+                width={70}
+                height={72}
+              />
+            </div>
             <p className="work-img-bulb-text work-img-chart-text">Monitoring</p>
           </div>
           {/* <span className='work-link-ball-3 work-link-ball-3-floating' ></span>
@@ -154,7 +212,7 @@ const Work = () => {
           <span className='work-link-ball-3 work-link-ball-5-floating' ></span>
           <span className='work-link-ball-3 work-link-ball-6-floating' ></span>
           <span className='work-link-ball-3 work-link-ball-7-floating' ></span> */}
-          <img
+          {/* <img
             className="work-arrow-1-img"
             src="images/work-arrow-1.webp"
             alt="Right Blue Curve Arrow"
@@ -163,8 +221,23 @@ const Work = () => {
             data-aos="zoom-in"
             data-aos-duration="800"
             data-aos-offset="0"
-          />
-          <img
+          /> */}
+          <div
+            className="work-arrow-1-img"
+            data-aos-anchor="#show-process"
+            data-aos-delay="200"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-offset="0"
+          >
+            <Image
+              src="/images/work-arrow-1.webp"
+              alt="Right Blue Curve Arrow"
+              width={180}
+              height={70}
+            />
+          </div>
+          {/* <img
             className="work-arrow-2-img"
             src="images/work-arrow-2.webp"
             alt="Right Grey Curve Arrow"
@@ -173,8 +246,23 @@ const Work = () => {
             data-aos="zoom-in"
             data-aos-duration="800"
             data-aos-offset="0"
-          />
-          <img
+          /> */}
+          <div
+            className="work-arrow-2-img"
+            data-aos-anchor="#show-process"
+            data-aos-delay="600"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-offset="0"
+          >
+            <Image
+              src="/images/work-arrow-2.webp"
+              alt="Right Grey Curve Arrow"
+              width={150}
+              height={48}
+            />
+          </div>
+          {/* <img
             className="work-arrow-3-img"
             src="images/work-arrow-3.webp"
             alt="Down Grey Curve Arrow"
@@ -183,8 +271,23 @@ const Work = () => {
             data-aos="zoom-in"
             data-aos-duration="800"
             data-aos-offset="0"
-          />
-          <img
+          /> */}
+          <div
+            className="work-arrow-3-img"
+            data-aos-anchor="#show-process"
+            data-aos-delay="1000"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-offset="0"
+          >
+            <Image
+              src="/images/work-arrow-3.webp"
+              alt="Down Grey Curve Arrow"
+              width={80}
+              height={135}
+            />
+          </div>
+          {/* <img
             className="work-arrow-4-img"
             src="images/work-arrow-4.webp"
             alt="Left-Down Grey Curve Arrow"
@@ -193,8 +296,23 @@ const Work = () => {
             data-aos="zoom-in"
             data-aos-duration="800"
             data-aos-offset="0"
-          />
-          <img
+          /> */}
+          <div
+            className="work-arrow-4-img"
+            data-aos-anchor="#show-process"
+            data-aos-delay="1400"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-offset="0"
+          >
+            <Image
+              src="/images/work-arrow-4.webp"
+              alt="Left-Down Grey Curve Arrow"
+              width={133}
+              height={124}
+            />
+          </div>
+          {/* <img
             className="work-arrow-5-img"
             src="images/work-arrow-6.webp"
             alt="Left-Up Grey Curve Arrow"
@@ -203,8 +321,23 @@ const Work = () => {
             data-aos="zoom-in"
             data-aos-duration="800"
             data-aos-offset="0"
-          />
-          <img
+          /> */}
+          <div
+            className="work-arrow-5-img"
+            data-aos-anchor="#show-process"
+            data-aos-delay="1800"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-offset="0"
+          >
+            <Image
+              src="/images/work-arrow-6.webp"
+              alt="Left-Up Grey Curve Arrow"
+              width={130}
+              height={80}
+            />
+          </div>
+          {/* <img
             className="work-arrow-6-img"
             src="images/work-arrow-7.webp"
             alt="Up Grey Curve Arrow"
@@ -213,8 +346,23 @@ const Work = () => {
             data-aos="zoom-in"
             data-aos-duration="800"
             data-aos-offset="0"
-          />
-          <img
+          /> */}
+          <div
+            className="work-arrow-6-img"
+            data-aos-anchor="#show-process"
+            data-aos-delay="3000"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-offset="0"
+          >
+            <Image
+               src="/images/work-arrow-7.webp"
+               alt="Up Grey Curve Arrow"
+              width={40}
+              height={145}
+            />
+          </div>
+          {/* <img
             className="work-arrow-7-img"
             src="images/work-arrow-5.webp"
             alt="Right-Down Blue Curve Arrow"
@@ -223,8 +371,22 @@ const Work = () => {
             data-aos="zoom-in"
             data-aos-duration="800"
             data-aos-offset="0"
-          />
-
+          /> */}
+          <div
+            className="work-arrow-7-img"
+            data-aos-anchor="#show-process"
+            data-aos-delay="1600"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-offset="0"
+          >
+            <Image
+              src="/images/work-arrow-5.webp"
+              alt="Right-Down Blue Curve Arrow"
+              width={150}
+              height={116}
+            />
+          </div>
           <div
             className="work-img-money-outer"
             data-aos-anchor="#show-process"
@@ -233,11 +395,26 @@ const Work = () => {
             data-aos-duration="800"
             data-aos-offset="0"
           >
-            <img
+            {/* <img
               className="work-img-money"
               src="images/work-money.webp"
               alt="Revenue Growth"
-            />
+            /> */}
+            <div
+              className="work-img-money"
+              data-aos-anchor="#show-process"
+              data-aos="fade-up"
+              data-aos-delay="1700"
+              data-aos-duration="800"
+              data-aos-offset="0"
+            >
+              <Image
+                src="/images/work-money.webp"
+                alt="Revenue Growth"
+                width={70}
+                height={67}
+              />
+            </div>
             <p className="work-img-bulb-text work-img-money-text">
               Your Revenue
             </p>
