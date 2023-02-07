@@ -9,7 +9,7 @@ const techTitle =
 import HireServiceLayout from "../components/hireServiceLayout";
 
 const bannerImage = [
-  { name: "Ruby on Rails", path: "icons/rails.webp",altImg:'Rails PNG' },
+  // { name: "Ruby on Rails", path: "icons/rails.webp",altImg:'Rails PNG' },
   { name: "ReactJs", path: "icons/reactjs.webp",altImg:'Reactjs Icon' },
   { name: "NextJs", path: "icons/nextjs.webp" ,altImg:'Nextjs Icon'},
   { name: "VueJs", path: "icons/vuejs.webp" ,altImg:'Vuejs Icon'},
