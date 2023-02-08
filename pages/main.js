@@ -12,7 +12,7 @@ const Main = () => {
         <Header />
         <Head>
           <title>
-            Custom Web Software & Application Development Services in India & USA
+            Custom Web Software & Application Development Services
           </title>
           <link rel="canonical" href="https://www.codegaragetech.com/" />
 

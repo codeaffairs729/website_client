@@ -157,11 +157,19 @@ const Package = () => {
                       >
                         <div className="package__category">
                           <div className="package__icon">
-                            <img
+                            {/* <img
                               className="package__pic"
                               src="images/content-management-system.webp"
                               alt="3D Pencil"
-                            />
+                            /> */}
+                            <div className="package__pic">
+                              <Image
+                                src="/images/content-management-system.webp"
+                                alt="3D Pencil"
+                                width={24}
+                                height={24}
+                              />
+                            </div>
                           </div>
                           <div className="package__text">What we do</div>
                         </div>
@@ -209,13 +217,13 @@ const Package = () => {
                     <div className="col-lg-7 d-flex justify-content-center">
                       <div className="package__preview row">
                         <div className="col-lg-12 d-flex justify-content-center align-items-center">
-                          <img
+                          {/* <img
                             onMouseOver={() => pause()}
                             onMouseOut={() => play()}
                             className="package__pic"
                             src="images/laptop_4.webp"
                             alt="3D Laptop-1 PNG"
-                          />
+                          /> */}
 
                           <Image
                             onMouseOver={() => pause()}
@@ -269,11 +277,19 @@ const Package = () => {
                       >
                         <div className="package__category">
                           <div className="package__icon">
-                            <img
+                            {/* <img
                               className="package__pic package__pic__frame"
                               src="images/frame.webp"
                               alt="3D Internet PNG"
-                            />
+                            /> */}
+                            <div className="package__pic package__pic__frame">
+                              <Image
+                                src="/images/frame.webp"
+                                alt="3D Internet PNG"
+                                width={30}
+                                height={24}
+                              />
+                            </div>
                           </div>
                           <div className="package__text">What we do</div>
                         </div>
@@ -380,11 +396,19 @@ const Package = () => {
                       >
                         <div className="package__category">
                           <div className="package__icon">
-                            <img
+                            {/* <img
                               className="package__pic package__pic__frame"
                               src="images/mobile-front-color.webp"
                               alt="Mobile's Front PNG Image"
-                            />
+                            /> */}
+                            <div className="package__pic package__pic__frame">
+                              <Image
+                                src="/images/mobile-front-color.webp"
+                                alt="Mobile's Front PNG Image"
+                                width={14}
+                                height={24}
+                              />
+                            </div>
                           </div>
                           <div className="package__text">What we do</div>
                         </div>

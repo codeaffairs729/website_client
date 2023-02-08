@@ -154,20 +154,19 @@ const Header = () => {
           </button>
           <Link href="/">
             <div className="cursor_pointer header__logo">
-              <img
+              {/* <img
                 className="header__pic"
                 src="/logo/cgt_new_logo_alt.webp"
                 alt="Code Garage Tech - Logo"
-              />
-              {/* <div className="header__pic">
+              /> */}
+              <div className="header__pic">
                 <Image
                   src="/logo/cgt_new_logo_alt.webp"
                   alt="Code Garage Tech - Logo"
-                  // width={180}
-                  // height={100}
-                  layout="fill"
+                  width={145}
+                  height={27}
                 />
-              </div> */}
+              </div>
             </div>
           </Link>
           <div

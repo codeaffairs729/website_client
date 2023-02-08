@@ -3,6 +3,7 @@ import HireServiceLayout from "../../components/hireServiceLayout";
 import Banner from "../../components/banner";
 import Head from "next/head";
 import ScheduleForm from "../../components/schedule";
+import Image from "next/image";
 const techTitle = "Strapi";
 
 const contentHeader = () => <div></div>;
@@ -28,8 +29,13 @@ const contentHeader1 = () => {
           </a>
         </div>
         <div className="tech-service-body-left-right">
-          <img src="/icons/service-icon/strapi-frame.webp" alt="strapi-image"/>
-
+          {/* <img src="/icons/service-icon/strapi-frame.webp" alt="strapi-image"/> */}
+          <Image
+              src="/icons/service-icon/strapi-frame.webp"
+              alt="strapi-image"
+              width={255}
+              height={280}
+              />
         </div>
       </div>
     </>

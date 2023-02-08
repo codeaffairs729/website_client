@@ -5,6 +5,7 @@ import Link from "next/link";
 import Head from "next/head";
 import ScheduleForm from "../../components/schedule";
 const techTitle = "Mobile Solutions";
+import Image from "next/image";
 
 const contentHeader1 = () => {
   return (
@@ -24,7 +25,15 @@ const contentHeader1 = () => {
           </Link>
         </div>
         <div className="tech-service-body-left-right">
-          <img src="/icons/service-icon/mobile-front-color-service.webp" />
+          {/* <img src="/icons/service-icon/mobile-front-color-service.webp" /> */}
+          <div>
+          <Image
+              src="/icons/service-icon/mobile-front-color-service.webp" 
+              alt="mobile-front-color-service Image"
+              width={159}
+              height={280}
+              />
+          </div>
         </div>
       </div>
     </>

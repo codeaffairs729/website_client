@@ -817,8 +817,8 @@ body:not(.touch-device) .header-item[href]:before {
 
 .layout-pic-ror_top_2 {
   position: absolute;
-  left: 40px;
-  top: 29px;
+  left: 57px;
+  top: 45px;
 }
 
 .layout-pic-ror_bottom_2 {
@@ -850,6 +850,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .Play_button_img {
+  margin-inline: auto;
   width: 50%;
 }
 
@@ -872,6 +873,7 @@ body:not(.touch-device) .header-item[href]:before {
 .layout-pic-android_3 {
   position: absolute;
   top: 190px;
+  right: 5px;
 }
 
 .layouts {
@@ -904,6 +906,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .access-main-cloud {
+  margin-inline: auto;
   width: 65%;
   margin-top: 80px;
 }
@@ -967,7 +970,8 @@ body:not(.touch-device) .header-item[href]:before {
 
 .access-azure-cloud {
   position: absolute;
-  bottom: 28px;
+  /* bottom: 28px; */
+  bottom:-48px;
   right: -18px;
   width: 40px;
 }
@@ -987,7 +991,7 @@ body:not(.touch-device) .header-item[href]:before {
   top: 60%;
   left: 29%; */
   position: absolute;
-  top: 62%;
+  top: 50%;
   left: 50%;
   width: 180px;
   transform: translate(-50%, -50%);
@@ -3341,8 +3345,8 @@ body:not(.touch-device) .header-item[href]:before {
   } */
 
   .layout-pic-ror_top_2 {
-    left: 35px;
-    top: 22px;
+    left: 48px;
+    top: 35px;
   }
 
   .layout-pic-ror_bottom_2 {
@@ -4260,12 +4264,14 @@ body:not(.touch-device) .header-item[href]:before {
 
   .sphere__pic {
     width: 35%;
-    top: 145px;
-    right: -25px;
+    /* top: 145px; */
+    /* right: -25px; */
+    top: 142px;
+    right: -20px;
   }
 
   .access-azure-cloud {
-    bottom: 107px;
+    /* bottom: 107px; */
     right: 35px;
     width: 35px;
   }
@@ -4273,7 +4279,7 @@ body:not(.touch-device) .header-item[href]:before {
   .access-heading {
     /* top: 35%;
     left: 25%; */
-    top: 30%;
+    top: 50%;
     width: 140px;
   }
 

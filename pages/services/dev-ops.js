@@ -4,7 +4,7 @@ import Banner from "../../components/banner";
 import Head from "next/head";
 const techTitle = "Dev Ops";
 import ScheduleForm from "../../components/schedule";
-
+import Image from "next/image";
 const contentHeader1 = () => {
   return (
     <>
@@ -36,7 +36,15 @@ const contentHeader1 = () => {
           </a>
         </div>
         <div className="tech-service-body-left-right">
-          <img src="/icons/service-icon/cloud.webp" alt="3D Cloud" />
+          {/* <img src="/icons/service-icon/cloud.webp"  /> */}
+          {/* <div> */}
+          <Image
+              src="/icons/service-icon/cloud.webp"
+              alt="3D Cloud"
+              width={378}
+              height={280}
+              />
+          {/* </div> */}
         </div>
       </div>
     </>

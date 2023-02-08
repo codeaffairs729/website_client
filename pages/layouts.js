@@ -38,11 +38,19 @@ const Layouts = () => {
                 data-aos="animation-scale-y"
               >
                 <div className="layouts__icon">
-                  <img
+                  {/* <img
                     className="layouts__pic"
                     src="img/layout-1.webp"
                     alt="4 Blue & Pink Dots"
-                  />
+                  /> */}
+                  <div className="layouts__pic">
+                    <Image
+                      src="/img/layout-1.webp"
+                      alt="4 Blue & Pink Dots"
+                      width={56}
+                      height={57}
+                    />
+                  </div>
                 </div>
                 <div className="layouts__text">
                   We use those technologies that suit the nature of your
@@ -54,11 +62,19 @@ const Layouts = () => {
                 data-aos="animation-scale-y"
               >
                 <div className="layouts__icon">
-                  <img
+                  {/* <img
                     className="layouts__pic"
                     src="img/layout-2.webp"
                     alt="Pink & Blue Circle"
-                  />
+                  /> */}
+                  <div className="layouts__icon">
+                    <Image
+                      src="/img/layout-2.webp"
+                      alt="Pink & Blue Circle"
+                      width={56}
+                      height={57}
+                    />
+                  </div>
                 </div>
                 <div className="layouts__text">
                   Get rid of expensive & slow tech stack with fast & advanced
@@ -70,11 +86,19 @@ const Layouts = () => {
                 data-aos="animation-scale-y"
               >
                 <div className="layouts__icon">
-                  <img
+                  {/* <img
                     className="layouts__pic"
                     src="img/layout-3.webp"
                     alt="2 Blue & Pink Dots"
-                  />
+                  /> */}
+                  <div className="layouts__icon">
+                    <Image
+                      src="/img/layout-3.webp"
+                      alt="2 Blue & Pink Dots"
+                      width={56}
+                      height={57}
+                    />
+                  </div>
                 </div>
                 <div className="layouts__text">
                   Keep your application fast, scalable, and reliable with an
@@ -254,55 +278,114 @@ const Layouts = () => {
           </div>
           <div className="layouts__view" data-aos>
             <div className="layouts__preview">
-              <img
+              {/* <img
                 className="layouts__pic"
                 src="img/layouts-pic-1.webp"
                 alt="3D Graphs on Mobile"
-              />
-              <img
+              /> */}
+              <div className="layouts__pic">
+                <Image
+                  src="/img/layouts-pic-1.webp"
+                  alt="3D Graphs on Mobile"
+                  width={786}
+                  height={568}
+                />
+              </div>
+              {/* <img
                 className="layout-pic-react"
                 src="/images/react_3.webp"
                 alt="React Icon"
                 data-bs-toggle="tooltip"
                 title="React"
-              />
-              <img
+              /> */}
+
+              <div
+                className="layout-pic-react"
+                data-bs-toggle="tooltip"
+                title="React"
+              >
+                <Image
+                  src="/images/react_3.webp"
+                  alt="React Icon"
+                  width={57}
+                  height={59}
+                />
+              </div>
+
+              {/* <img
                 className="layout-pic-andoid"
                 src="/images/node_3.webp"
                 alt=""
                 data-bs-toggle="tooltip"
                 title="NodeJS"
-              />
-              <img
+              /> */}
+              <div
+                className="layout-pic-andoid"
+                data-bs-toggle="tooltip"
+                title="React"
+              >
+                <Image
+                  src="/images/node_3.webp"
+                  alt="layout-react-png"
+                  width={30}
+                  height={34}
+                />
+              </div>
+              {/* <img
                 className="layout-pic-python"
                 src="/images/python.webp"
                 alt="Python Icon"
                 data-bs-toggle="tooltip"
                 title="Python"
-              />
-              <img
+              /> */}
+              <div
+                className="layout-pic-python"
+                data-bs-toggle="tooltip"
+                title="Python"
+              >
+                <Image
+                  src="/images/python.webp"
+                  alt="Python Icon"
+                  width={40}
+                  height={46}
+                />
+              </div>
+              {/* <img
                 className="layout-pic-swift"
                 src="images/swift_2.webp"
-                alt=""
+                alt="layout-swift-png"
                 data-bs-toggle="tooltip"
                 title="Swift"
-              />
+              /> */}
+
+              <div
+                className="layout-pic-swift"
+                data-bs-toggle="tooltip"
+                title="Swift"
+              >
+                <Image
+                  src="/images/swift_2.webp"
+                  alt="layout-swift-png"
+                  width={47}
+                  height={47}
+                />
+              </div>
             </div>
             <div className="layouts__preview Play_button_preview">
               {/* <img className="layouts__pic" src="images/layouts-pic-2.webp" alt="" /> */}
-              <img
+              {/* <img
                 className="Play_button_img"
                 src="images/Play_button.webp"
                 alt="Pink Solid Circle"
-              />
-              {/* <div className="Play_button_img">
+              /> */}
+              <div className="Play_button_img">
                 <Image
-                   src="/images/Play_button.webp"
-                   alt="Pink Solid Circle"
+                  src="/images/Play_button.webp"
+                  alt="Pink Solid Circle"
                   width={125}
                   height={125}
                 />
-              </div> */}
+              </div>
               <img
                 className="layout-pic-MongoDB"
                 src="/images/MongoDB.webp"
@@ -310,6 +393,19 @@ const Layouts = () => {
                 data-bs-toggle="tooltip"
                 title="MongoDB"
               />
+
+              {/* <div
+                className="layout-pic-MongoDB"
+                data-bs-toggle="tooltip"
+                title="MongoDB"
+              >
+                <Image
+                  src="/images/MongoDB.webp"
+                  alt="MongoDB Icon"
+                  width={45}
+                  height={53}
+                />
+              </div> */}
               {/* <img className="" src="images/layouts-pic-2.webp" alt="" /> */}
               {/* <img
                 className="layout-pic-message"
@@ -326,13 +422,25 @@ const Layouts = () => {
                 />
               </div>
 
-              <img
+              {/* <img
                 className="layout-pic-android_3"
                 src="/images/android_3.webp"
-                alt=""
+                alt="layout-pic-android-png"
                 data-bs-toggle="tooltip"
                 title="Android"
-              />
+              /> */}
+              <div
+                className="layout-pic-android_3"
+                data-bs-toggle="tooltip"
+                title="Android"
+              >
+                <Image
+                  src="/images/android_3.webp"
+                  alt="layout-pic-android-png"
+                  width={42}
+                  height={36}
+                />
+              </div>
             </div>
             <div className="layouts__preview">
               {/* <img
@@ -366,20 +474,47 @@ const Layouts = () => {
                 />
               </div>
 
-              <img
+              {/* <img
                 className="layout-pic-ror_top_2"
                 src="/images/ror_top_2.webp"
                 alt="ROR Top"
                 data-bs-toggle="tooltip"
                 title="Ruby On Rails"
-              />
-              <img
+              /> */}
+
+              <div
+                className="layout-pic-ror_top_2"
+                data-bs-toggle="tooltip"
+                title="Ruby On Rails"
+              >
+                <Image
+                  src="/images/ror_top_2.webp"
+                  alt="ROR Top"
+                  width={48}
+                  height={47}
+                />
+              </div>
+
+              {/* <img
                 className="layout-pic-ror_bottom_2"
                 src="/images/ror_bottom_2.webp"
                 alt="ROR Bottom"
                 data-bs-toggle="tooltip"
                 title="Ruby On Rails"
-              />
+              /> */}
+
+              <div
+                className="layout-pic-ror_bottom_2"
+                data-bs-toggle="tooltip"
+                title="Ruby On Rails"
+              >
+                <Image
+                  src="/images/ror_bottom_2.webp"
+                  alt="ROR Bottom"
+                  width={48}
+                  height={47}
+                />
+              </div>
             </div>
             <div className="layouts__preview layouts-preview-figma">
               {/* <img

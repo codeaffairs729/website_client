@@ -443,11 +443,21 @@ const Work = () => {
           </div>
         </div> */}
         <div className="showcase__bg showcase-big-circle">
-          <img
+          {/* <img
             className="showcase__pic"
             src="img/showcase-circle.webp"
             alt="Solid Blue Circle with white Dots"
-          />
+          /> */}
+          <div
+              className="showcase__pic"
+            >
+              <Image
+                src="/img/showcase-circle.webp"
+                alt="Solid Blue Circle with white Dots"
+                width={925}
+                height={924}
+              />
+            </div>
           {/* <div className="showcase__pic">
             <Image
             src="/img/showcase-circle.webp"

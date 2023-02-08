@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-
+import Image from "next/image";
 const Like = () => {
   const dropdowns = useRef(null);
 
@@ -224,11 +224,19 @@ const Like = () => {
               </div> */}
             </div>
             <div className="like__preview" data-aos>
-              <img
+              {/* <img
                 className="like__pic"
                 src="img/hand-1.webp"
                 alt="3D Hand Thumbs up"
-              />
+              /> */}
+              <div className="like__pic">
+                <Image
+                  src="/img/hand-1.webp"
+                  alt="3D Hand Thumbs up"
+                  width={520}
+                  height={543}
+                />
+              </div>
             </div>
             <div className="like__circle"></div>
             <div className="like__circles">

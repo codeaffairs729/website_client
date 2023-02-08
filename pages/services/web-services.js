@@ -4,6 +4,7 @@ import Banner from "../../components/banner";
 import Head from "next/head";
 const techTitle = "Web Solutions";
 import ScheduleForm from "../../components/schedule";
+import Image from "next/image";
 
 // const contentHeader=()=><div></div>
 const contentHeader1 = () => {
@@ -24,7 +25,15 @@ const contentHeader1 = () => {
           </a>
         </div>
         <div className="tech-service-body-left-right">
-          <img src="/icons/service-icon/Frame.webp" alt="" />
+          {/* <img src="/icons/service-icon/Frame.webp" alt="" /> */}
+          <div>
+          <Image
+              src="/icons/service-icon/Frame.webp"
+              alt="Frame JPG"
+              width={256}
+              height={280}
+              />
+          </div>
         </div>
       </div>
     </>

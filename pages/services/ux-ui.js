@@ -2,9 +2,9 @@ import TechComponent from "../../components/techComponent";
 import HireServiceLayout from "../../components/hireServiceLayout";
 import Banner from "../../components/banner";
 import Head from "next/head";
-const techTitle = "UI / UX";
+import Image from "next/image";
 import ScheduleForm from "../../components/schedule";
-
+const techTitle = "UI / UX";
 const contentHeader1 = () => {
   return (
     <>
@@ -21,7 +21,13 @@ const contentHeader1 = () => {
           </a>
         </div>
         <div className="tech-service-body-left-right">
-          <img src="/icons/service-icon/cloud.webp" alt="3D Cloud" />
+          {/* <img src="/icons/service-icon/cloud.webp" alt="3D Cloud" /> */}
+          <Image
+              src="/icons/service-icon/cloud.webp"
+              alt="3D Cloud"
+              width={378}
+              height={280}
+              />
         </div>
       </div>
     </>
