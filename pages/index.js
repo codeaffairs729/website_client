@@ -9,7 +9,7 @@ import Design from "./design";
 import Teams from "./teams";
 import Like from "./like";
 import Footer from "./includes/footer";
-
+import Image from "next/image";
 export default function Home() {
   return (
     <>
@@ -19,10 +19,17 @@ export default function Home() {
           className="whatsapp-btn-outer"
           title="Contact Us on whatsapp"
         >
-          <img
+          {/* <img
             className="whatsapp-btn"
             src="images/WhatsApp.webp"
             alt="3D Whatsapp Icon"
+          /> */}
+           <Image
+            className="whatsapp-btn"
+            src="/images/WhatsApp.webp"
+            alt="3D Whatsapp Icon"
+            width={50}
+            height={50}
           />
         </a>
 

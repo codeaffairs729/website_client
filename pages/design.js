@@ -2,8 +2,7 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import { GrFormPreviousLink } from "react-icons/gr";
 import { GrFormNextLink } from "react-icons/gr";
-import Link from "next/link";
-
+import Image from "next/image";
 const SliderButton = ({ gotoPrev, gotoNext }) => {
   return (
     <div>
@@ -85,10 +84,14 @@ const Design = () => {
                   data-aos="animation-translate-y"
                   data-aos-delay="0"
                 >
-                  <div className="design__view design-view-ucview-bg">
-                    {/* <div className="design__preview">
-                                            <img className="design__pic" src="images/ucview.webp" alt="" />
-                                        </div> */}
+                  <div className="design__view">
+                    <Image
+                      className="img-radius-10-per"
+                      src="/images/ucview.webp"
+                      alt="ucview image"
+                      layout="fill"
+                      objectFit="cover"
+                    />
                   </div>
                   <div className="design__details">
                     <div className="design__category">Digital Signage</div>
@@ -113,10 +116,14 @@ const Design = () => {
                   data-aos="animation-translate-y"
                   data-aos-delay="200"
                 >
-                  <div className="design__view design-view-stockarchitect-bg">
-                    {/* <div className="design__preview">
-                                            <img className="design__pic" src="images/stockarchitect.webp" alt="" />
-                                        </div> */}
+                  <div className="design__view">
+                    <Image
+                      className="img-radius-10-per"
+                      src="/images/stockarchitect.webp"
+                      alt="stockarchitect image"
+                      layout="fill"
+                      objectFit="cover"
+                    />
                   </div>
                   <div className="design__details">
                     <div className="design__category">
@@ -146,10 +153,14 @@ const Design = () => {
                   data-aos="animation-translate-y"
                   data-aos-delay="400"
                 >
-                  <div className="design__view design-view-withrelay-bg">
-                    {/* <div className="design__preview">
-                                            <img className="design__pic" src="images/withrelay.webp" alt="" />
-                                        </div> */}
+                  <div className="design__view">
+                    <Image
+                      className="img-radius-10-per"
+                      src="/images/withrelay.webp"
+                      alt="withrelay image"
+                      layout="fill"
+                      objectFit="cover"
+                    />
                   </div>
                   <div className="design__details">
                     <div className="design__category">IVR & Messaging</div>
@@ -176,10 +187,14 @@ const Design = () => {
                   className="design-slide-pink"
                   data-aos="animation-translate-y"
                 >
-                  <div className="design__view design-view-videochatapro-bg">
-                    {/* <div className="design__preview">
-                                            <img className="design__pic" src="images/videochatapro.webp" alt="" />
-                                        </div> */}
+                  <div className="design__view">
+                    <Image
+                      className="img-radius-10-per"
+                      src="/images/videochatapro.webp"
+                      alt="videochatapro image"
+                      layout="fill"
+                      objectFit="cover"
+                    />
                   </div>
                   <div className="design__details">
                     <div className="design__category">
@@ -209,9 +224,13 @@ const Design = () => {
                   data-aos="animation-translate-y"
                 >
                   <div className="design__view design-view-buyma-bg">
-                    {/* <div className="design__preview">
-                                            <img className="design__pic" src="images/buyma.webp" alt="" />
-                                        </div> */}
+                    <Image
+                      className="img-radius-10-per"
+                      src="/images/buyma.webp"
+                      alt="buyma image"
+                      layout="fill"
+                      objectFit="cover"
+                    />
                   </div>
                   <div className="design__details">
                     <div className="design__category">E-commerce</div>
@@ -235,10 +254,14 @@ const Design = () => {
                   data-aos="animation-translate-y"
                   data-aos-delay="0"
                 >
-                  <div className="design__view design-view-fintrakk-bg">
-                    {/* <div className="design__preview">
-                                            <img className="design__pic" src="images/fintrakk.webp" alt="" />
-                                        </div> */}
+                  <div className="design__view">
+                    <Image
+                      className="img-radius-10-per"
+                      src="/images/fintrakk.webp"
+                      alt="fintrakk image"
+                      layout="fill"
+                      objectFit="cover"
+                    />
                   </div>
                   <div className="design__details">
                     <div className="design__category">Fintech</div>
@@ -262,10 +285,14 @@ const Design = () => {
                   className="design-slide-pink"
                   data-aos="animation-translate-y"
                 >
-                  <div className="design__view design-view-welcome-bg">
-                    {/* <div className="design__preview">
-                                            <img className="design__pic" src="images/welcomeAi.webp" alt="" />
-                                        </div> */}
+                  <div className="design__view">
+                    <Image
+                      className="img-radius-10-per"
+                      src="/images/welcomeAi.webp"
+                      alt="welcomeAi image"
+                      layout="fill"
+                      objectFit="cover"
+                    />
                   </div>
                   <div className="design__details">
                     <div className="design__category">AI Blogs</div>
@@ -289,7 +316,15 @@ const Design = () => {
                   className="design-slide-blue"
                   data-aos="animation-translate-y"
                 >
-                  <div className="design__view design-view-bzigo-bg"></div>
+                  <div className="design__view">
+                    <Image
+                      className="img-radius-10-per"
+                      src="/images/bzigo-web.webp"
+                      alt="bzigo image"
+                      layout="fill"
+                      objectFit="cover"
+                    />
+                  </div>
                   <div className="design__details">
                     <div className="design__category">IoT Technology</div>
                     <div className="design__info">Bzigo</div>

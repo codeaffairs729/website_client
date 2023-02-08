@@ -267,7 +267,7 @@ const Header = () => {
                                 /> */}
                                 <div className="header-solutions-icon">
                                   <Image
-                                    src="/images/vuejs.webp"
+                                    src="/icons/vuejs.webp"
                                     alt="Vuejs PNG Image"
                                     layout="fill"
                                   />
@@ -291,7 +291,7 @@ const Header = () => {
 
                                 <div className="header-solutions-icon">
                                   <Image
-                                    src="/images/node_2.webp"
+                                    src="/icons/node_2.webp"
                                     alt="Nodejs PNG Image"
                                     layout="fill"
                                   />
@@ -314,7 +314,7 @@ const Header = () => {
                                 /> */}
                                 <div className="header-solutions-icon">
                                   <Image
-                                    src="/images/laravel.webp"
+                                    src="/icons/laravel.webp"
                                     alt="Laravel PNG Image"
                                     layout="fill"
                                   />
@@ -514,13 +514,13 @@ const Header = () => {
                               <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                 {/* <img
                                   className="header-solutions-icon"
-                                  src="/images/android_2.webp"
+                                  src="/icons/android_2.webp"
                                   alt="Android PNG Image"
                                 /> */}
 
                                 <div className="header-solutions-icon">
                                   <Image
-                                    src="/images/android_2.webp"
+                                    src="/icons/android_2.webp"
                                     alt="Android PNG Image"
                                     layout="fill"
                                   />
@@ -544,7 +544,7 @@ const Header = () => {
 
                                 <div className="header-solutions-icon">
                                   <Image
-                                    src="/images/ios.webp"
+                                    src="/icons/ios.webp"
                                     alt="iOS PNG Image"
                                     layout="fill"
                                   />
@@ -568,7 +568,7 @@ const Header = () => {
 
                                 <div className="header-solutions-icon">
                                   <Image
-                                    src="/images/react_native.webp"
+                                    src="/icons/react_native.webp"
                                     alt="iOS PNG Image"
                                     layout="fill"
                                   />
@@ -616,7 +616,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="/images/android_2.webp" alt="Android PNG Image" />
+                                                                    <img className="header-solutions-icon" src="/icons/android_2.webp" alt="Android PNG Image" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">Android App Development</div>
@@ -636,7 +636,7 @@ const Header = () => {
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="/images/android_2.webp" alt="" />
+                                                                    <img className="header-solutions-icon" src="/icons/android_2.webp" alt="" />
                                                                 </div>
                                                                 <div className="col-lg-9" >
                                                                     <div className="header__info">React Native Development</div>
@@ -738,13 +738,13 @@ const Header = () => {
                               <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                 {/* <img
                                   className="header-solutions-icon"
-                                  src="/images/android_2.webp"
+                                  src="/icons/android_2.webp"
                                   alt="Android PNG Image"
                                 /> */}
 
                                 <div className="header-solutions-icon">
                                   <Image
-                                    src="/images/android_2.webp"
+                                    src="/icons/android_2.webp"
                                     alt="Android PNG Image"
                                     layout="fill"
                                   />
@@ -760,13 +760,13 @@ const Header = () => {
                               <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                 {/* <img
                                   className="header-solutions-icon"
-                                  src="/images/android_2.webp"
+                                  src="/icons/android_2.webp"
                                   alt="Android PNG Image"
                                 /> */}
 
                                 <div className="header-solutions-icon">
                                   <Image
-                                    src="/images/android_2.webp"
+                                    src="/icons/android_2.webp"
                                     alt="Android PNG Image"
                                     layout="fill"
                                   />
@@ -826,7 +826,7 @@ const Header = () => {
 
                                   <div className="header-solutions-icon">
                                     <Image
-                                      src="/images/content-management-system.webp"
+                                      src="/icons/content-management-system.webp"
                                       alt="3D Pencil"
                                       layout="fill"
                                     />
@@ -849,7 +849,7 @@ const Header = () => {
 
                                 <div className="header-solutions-icon">
                                   <Image
-                                    src="/images/bag-front-color.webp"
+                                    src="/icons/bag-front-color.webp"
                                     alt="3D Bag"
                                     layout="fill"
                                   />
@@ -865,15 +865,15 @@ const Header = () => {
                           <div className="col-lg-12 header-solutions-outer">
                             <div className="row">
                               <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                <img
+                                {/* <img
                                   className="header-solutions-icon"
                                   src="/images/notebook-iso-color.webp"
                                   alt="3D Notebook"
-                                />
+                                /> */}
 
                                 <div className="header-solutions-icon">
                                   <Image
-                                    src="/images/notebook-iso-color.webp"
+                                    src="/icons/notebook-iso-color.webp"
                                     alt="3D Notebook"
                                     layout="fill"
                                   />
@@ -897,7 +897,7 @@ const Header = () => {
 
                                 <div className="header-solutions-icon">
                                   <Image
-                                    src="/images/customer-relationship-management.webp"
+                                    src="/icons/customer-relationship-management.webp"
                                     alt="3D Customer"
                                     layout="fill"
                                   />
@@ -913,11 +913,18 @@ const Header = () => {
                           <div className="col-lg-12 header-solutions-outer">
                             <div className="row">
                               <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                <img
+                                {/* <img
                                   className="header-solutions-icon"
-                                  src="/images/digital-marketing.webp"
+                                  src="/icons/digital-marketing.webp"
                                   alt="3D Speaker"
-                                />
+                                /> */}
+                                <div className="header-solutions-icon">
+                                  <Image
+                                    src="/icons/digital-marketing.webp"
+                                    alt="3D Speaker"
+                                    layout="fill"
+                                  />
+                                </div>
                               </div>
                               <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
                                 <div className="header__info">
@@ -929,11 +936,18 @@ const Header = () => {
                           <div className="col-lg-12 header-solutions-outer">
                             <div className="row">
                               <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                <img
+                                {/* <img
                                   className="header-solutions-icon"
-                                  src="/images/deployment-host-management.webp"
+                                  src="/icons/deployment-host-management.webp"
                                   alt="3D Deployment PNG"
-                                />
+                                /> */}
+                                <div className="header-solutions-icon">
+                                  <Image
+                                    src="/icons/deployment-host-management.webp"
+                                    alt="3D Deployment PNG"
+                                    layout="fill"
+                                  />
+                                </div>
                               </div>
                               <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
                                 <div className="header__info">
@@ -946,11 +960,18 @@ const Header = () => {
                             <Link href="/services/strapi">
                               <div className="row cursor_pointer">
                                 <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                  <img
+                                  {/* <img
                                     className="header-solutions-icon"
                                     src="/icons/strapi-frame.webp"
                                     alt="strapi PNG"
-                                  />
+                                  /> */}
+                                  <div className="header-solutions-icon">
+                                    <Image
+                                      src="/icons/strapi-frame.webp"
+                                      alt="strapi PNG"
+                                      layout="fill"
+                                    />
+                                  </div>
                                 </div>
                                 <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
                                   <div className="header__info">Strapi</div>
@@ -962,11 +983,18 @@ const Header = () => {
                             <Link href="/services/chat-woot">
                               <div className="row cursor_pointer">
                                 <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                  <img
+                                  {/* <img
                                     className="header-solutions-icon"
                                     src="/icons/chatwoot.webp"
                                     alt="chatwoot PNG"
-                                  />
+                                  /> */}
+                                  <div className="header-solutions-icon">
+                                    <Image
+                                      src="/icons/chatwoot.webp"
+                                      alt="chatwoot PNG"
+                                      layout="fill"
+                                    />
+                                  </div>
                                 </div>
                                 <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
                                   <div className="header__info">Chatwoot</div>
@@ -1071,11 +1099,19 @@ const Header = () => {
               </Link>
             </nav>
             <div className="header__photo">
-              <img
+              {/* <img
                 className="header__pic"
                 src="/img/menu-pic.webp"
                 alt="3D Computer System"
-              />
+              /> */}
+              <div className="header__pic">
+                <Image
+                  src="/img/menu-pic.webp"
+                  alt="3D Computer System"
+                  width={350}
+                  height={308}
+                />
+              </div>
             </div>
           </div>
           <div className="header__search js-header-search">
