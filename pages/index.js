@@ -1,15 +1,24 @@
 // import styles from '../styles/Home.module.css'
 import Main from "./main";
 import Package from "./package";
-import Work from "./work";
+// import Work from "./work";
 import Layouts from "./layouts";
-import Access from "./access";
-import Partners from "./partners";
-import Design from "./design";
+// import Access from "./access";
+// import Partners from "./partners";
+// import Design from "./design";
 import Teams from "./teams";
 import Like from "./like";
 import Footer from "./includes/footer";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
+const Work = dynamic(() => import("./work"), {});
+const Access = dynamic(() => import("./access"), {});
+const Partners = dynamic(() => import("./partners"), {});
+const Design = dynamic(() => import("./design"), {});
+
+
+
 export default function Home() {
   return (
     <>
@@ -24,7 +33,7 @@ export default function Home() {
             src="images/WhatsApp.webp"
             alt="3D Whatsapp Icon"
           /> */}
-           <Image
+          <Image
             className="whatsapp-btn"
             src="/images/WhatsApp.webp"
             alt="3D Whatsapp Icon"

@@ -2922,10 +2922,10 @@ body:not(.touch-device) .header__item:hover .header__body {
 
 .title__text {
   display: block;
-  opacity: 0;
-  -webkit-transform: translateY(110%);
-  -ms-transform: translateY(110%);
-  transform: translateY(110%);
+  opacity: 100;
+  /* -webkit-transform: translateY(110%); */
+  /* -ms-transform: translateY(110%); */
+  /* transform: translateY(110%); */
   -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
   transition: opacity 0.4s, -webkit-transform 0.4s;
   -o-transition: transform 0.4s, opacity 0.4s;
@@ -9161,7 +9161,7 @@ body:not(.touch-device) .header__item:hover .header__body {
     /* width: 100px; */
     width: 160px;
   }
-  .header_image{
+  .header_image {
     width: 160px;
   }
   .header__burger {
@@ -10947,8 +10947,8 @@ top: 7641px; */
   gap: 15px;
   margin-bottom: 24px;
 }
-.about_btn{
-  width:180px;
+.about_btn {
+  width: 180px;
 }
 .freelancer-main__btn {
   display: flex;
@@ -11091,7 +11091,7 @@ top: 7641px; */
   background-color: #5956e9;
   transition: all 0.025s;
 }
-.slider-btn-pink{
+.slider-btn-pink {
   background-color: #fab8c4;
   transition: all 0.025s;
 }
@@ -11129,5 +11129,3 @@ top: 7641px; */
 .mask-type-alpha {
   mask-type: alpha;
 }
-
-
