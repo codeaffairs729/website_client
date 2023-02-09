@@ -3,7 +3,7 @@ import Image from "next/image";
 const Trophies = () => {
   return (
     <>
-      <div className="container-fluid trophies ">
+      <div className="container-fluid trophies margin-bottom">
         <div className="container trophies-padding">
           <div className="row">
             <div

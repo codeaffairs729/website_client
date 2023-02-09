@@ -2922,10 +2922,10 @@ body:not(.touch-device) .header__item:hover .header__body {
 
 .title__text {
   display: block;
-  opacity: 100;
-  /* -webkit-transform: translateY(110%); */
-  /* -ms-transform: translateY(110%); */
-  /* transform: translateY(110%); */
+  opacity: 0;
+  -webkit-transform: translateY(110%);
+  -ms-transform: translateY(110%);
+  transform: translateY(110%);
   -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
   transition: opacity 0.4s, -webkit-transform 0.4s;
   -o-transition: transform 0.4s, opacity 0.4s;
@@ -11128,4 +11128,7 @@ top: 7641px; */
 
 .mask-type-alpha {
   mask-type: alpha;
+}
+.margin-bottom{
+margin-bottom:100px;
 }

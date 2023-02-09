@@ -27,7 +27,7 @@ const Main = () => {
         <div className="main__center center">
           <div className="main__wrap">
             <div>
-              <div className="ms-3 main__title title title_big">
+              <div className="ms-3 main__title title title_big" data-aos>
                 <span className="title__box dev-title mb-3">
                   <span className="title__text ">
                     {/* 'Development', 'Software Engineering', 'Designing', 'App Monitoring', 'Web Solutions', 'Mobile Solutions', 'CRM Solutions', 'CMS Solutions', 'Cloud Services', 'Tech Consulting' */}
@@ -120,12 +120,12 @@ const Main = () => {
                 src="img/main-pic-1.webp"
                 alt="3D Video Play Button Image"
               /> */}
-              {/* <Image
+              <Image
                 src="/img/main-pic-1.webp"
                 alt="3D Video Play Button Image"
                 width={370}
                 height={323}
-              /> */}
+              />
             </div>
             <div className="main__preview">
               {/* <img
@@ -135,12 +135,12 @@ const Main = () => {
                 src="img/main-pic-2.webp"
                 alt="3D Main Profile PNG"
               /> */}
-              {/* <Image
+              <Image
                 src="/img/main-pic-2.webp"
                 alt="3D Main Profile PNG"
                 width={235}
                 height={142}
-              /> */}
+              />
             </div>
             <div className="main__preview">
               {/* <img
@@ -148,14 +148,14 @@ const Main = () => {
                 src="img/mouse.webp"
                 alt="3D Mouse PNG"
               /> */}
-              {/* <div  className="main__pic">
+              <div  className="main__pic">
                 <Image
                  src="/img/mouse.webp"
                  alt="3D Mouse PNG"
                  width={98}
                  height={38}
                  />
-              </div> */}
+              </div>
             </div>
             {/* <div className="main__preview">
                             <img className="main__pic js-parallax" data-scale="1.5" data-orientation="up" src="img/main-pic-2.webp" alt="" />
@@ -168,7 +168,7 @@ const Main = () => {
               /> */}
               <div className="main__pic">
                 <Image
-                  src="/images/Desktop Asset_bundle.webp"
+                  src="/images/desktop-asset.webp"
                   alt="3D Desktop Assets"
                   width={768}
                   height={598}
