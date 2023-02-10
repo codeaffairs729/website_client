@@ -10,8 +10,8 @@ const contentHeader1 = () => {
     <>
       <div className="tech-service-body">
         <div className="tech-service-body-left">
-          <h1 className="hire-team-header">{techTitle}</h1>
-          <p className="text-danger mt-2"></p>
+          <h1 className="hire-h1">{techTitle}</h1>
+          <p className="hire-desc"></p>
           <a
             target="_blank"
             href="/contact"
@@ -20,14 +20,14 @@ const contentHeader1 = () => {
             Get in Touch
           </a>
         </div>
-        <div className="tech-service-body-left-right">
+        <div className="tech-service-body-right">
           {/* <img src="/icons/service-icon/cloud.webp" alt="3D Cloud" /> */}
           <Image
-              src="/icons/service-icon/cloud.webp"
-              alt="3D Cloud"
-              width={378}
-              height={280}
-              />
+            src="/icons/service-icon/cloud.webp"
+            alt="3D Cloud"
+            width={378}
+            height={280}
+          />
         </div>
       </div>
     </>
@@ -63,6 +63,50 @@ const content1 = () => {
           experience consulting, mobile app design, promotional designs, and
           responsive web design using the latest tools and technologies.
         </p>
+        {/* content 7 */}
+        <h2 className="hire-h2">Our UI/UX Process</h2>
+        <h3 className="hire-h3">
+          Innovative & Creative User Experience Design Services
+        </h3>
+
+        <h3 className="hire-h3">We attain DevOps Success through:</h3>
+        <ul className="hire-p hire-list">
+          <li>
+            <strong>UX Strategy and Consulting</strong>
+          </li>
+        </ul>
+        <p className="hire-p margin-left-30px">
+          Our entire team initially understands the needs of your business to
+          identify indispensable aspects to build an integrated UX.
+        </p>
+        <ul className="hire-list">
+          <li>
+            <strong>Website Design</strong>
+          </li>
+        </ul>
+        <p className="hire-p margin-left-30px">
+          We build fast-loading, clutter-free, and responsive websites for
+          brands to prosper business.
+        </p>
+        <ul className="hire-list">
+          <li>
+            <strong>Cross Platform Compatibility </strong>
+          </li>
+        </ul>
+        <p className="hire-p margin-left-30px">
+          We focus on the core principles of UI functionality and design to
+          deliver a great and consistent experience.
+        </p>
+        <ul className="hire-list">
+          <li>
+            <strong>Mobile App Design </strong>
+          </li>
+        </ul>
+        <p className="hire-p margin-left-30px">
+          For us, every pixel counts, and our effective Mobile Application
+          design solutions cover distinctive aspects like user experience, UI
+          design, and revamping of existing mobile applications.
+        </p>
       </div>
     </>
   );
@@ -70,51 +114,7 @@ const content1 = () => {
 
 const content7 = () => (
   <>
-    <div className="hire-container-body-left-content-2">
-      <h2 className="hire-h1">Our UI/UX Process</h2>
-      <h2 className="hire-h2">
-        Innovative & Creative User Experience Design Services
-      </h2>
-
-      <h3 className="hire-h3">We attain DevOps Success through:</h3>
-      <ul className="hire-p hire-list">
-        <li>
-          <strong>UX Strategy and Consulting</strong>
-        </li>
-      </ul>
-      <p className="hire-p list-p">
-        Our entire team initially understands the needs of your business to
-        identify indispensable aspects to build an integrated UX.
-      </p>
-      <ul className="hire-list">
-        <li>
-          <strong>Website Design</strong>
-        </li>
-      </ul>
-      <p className="hire-p list-p">
-        We build fast-loading, clutter-free, and responsive websites for brands
-        to prosper business.
-      </p>
-      <ul className="hire-list">
-        <li>
-          <strong>Cross Platform Compatibility </strong>
-        </li>
-      </ul>
-      <p className="hire-p list-p">
-        We focus on the core principles of UI functionality and design to
-        deliver a great and consistent experience.
-      </p>
-      <ul className="hire-list">
-        <li>
-          <strong>Mobile App Design </strong>
-        </li>
-      </ul>
-      <p className="hire-p list-p">
-        For us, every pixel counts, and our effective Mobile Application design
-        solutions cover distinctive aspects like user experience, UI design, and
-        revamping of existing mobile applications.
-      </p>
-    </div>
+    <div className="hire-container-body-left-content-2"></div>
   </>
 );
 
@@ -130,10 +130,8 @@ const content3 = () => (
 const Miscellaneous = () => {
   return (
     <>
-    <Head>
-        <title>
-        UI/UX Design Services - Code Garage Tech
-        </title>
+      <Head>
+        <title>UI/UX Design Services - Code Garage Tech</title>
         <link
           rel="canonical"
           href="https://www.codegaragetech.com/services/ux-ui"

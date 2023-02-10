@@ -191,7 +191,7 @@ const Contact = () => {
         <div className="entry entry_solo contact_solo">
           <div className="entry__center center contact-entry-center">
             <div className="entry__head contact__head">
-              <Link href="./">
+              <Link href="/">
                 <div className="entry__logo contact__logo">
                   <img
                     className="entry__pic entry__pic_white entry__pic__entry__pic_white-size"

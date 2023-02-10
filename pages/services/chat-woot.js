@@ -12,10 +12,10 @@ const contentHeaderLeft = () => <div></div>;
 const contentHeader1 = () => {
   return (
     <>
-      <div className=" tech-service-body">
+      <div className="tech-service-body">
         <div className="tech-service-body-left">
-          <h1 className="hire-team-header">{techTitle}</h1>
-          <p className="text-danger mt-2"></p>
+          <h1 className="hire-h1">{techTitle}</h1>
+          <p className="hire-desc"></p>
           <a
             target="_blank"
             href="/contact"
@@ -24,14 +24,14 @@ const contentHeader1 = () => {
             Get in Touch
           </a>
         </div>
-        <div className="tech-service-body-left-right">
+        <div className="tech-service-body-right">
           {/* <img src="/icons/service-icon/chatwoot.webp" alt="chatwoot-image"/> */}
           <Image
-              src="/icons/service-icon/chatwoot.webp"
-              alt="chatwoot-image"
-              width={280}
-              height={280}
-              />
+            src="/icons/service-icon/chatwoot.webp"
+            alt="chatwoot-image"
+            width={280}
+            height={280}
+          />
         </div>
       </div>
     </>
@@ -63,50 +63,50 @@ const content1 = () => {
           Solve your customer issues immediately as you will be notified
           instantly after receiving a message.
         </p>
+        {/* content-7 */}
+        <h2 className="hire-h2">Omnichannel Support Center</h2>
+        <p className="hire-p">
+          Chatwoot allows you to connect with eminent customer communication
+          platforms such as Website live chat, Email, WhatsApp, Facebook,
+          Instagram, Twitter, etc. This aids you deliver a reliable CX across
+          various platforms- from a sole dashboard. <br />
+          <br />
+          At Code Garage Tech, we offer good customer service by providing a
+          Chatwoot framework that helps your business achieve new heights of
+          success.
+        </p>
+        <h2 className="hire-h2">
+          Connect With Customers To Grow Your Business
+        </h2>
+        <p className="hire-p">
+          Chatwoot supports self-hosted installations by default and you can
+          easily own your customer data. The framework offers a wonderful
+          experience to everyone, including your employees, partners, and
+          customers.{" "}
+        </p>
+        <h3 className="hire-h3">
+          Privacy Compliant, Open-source, and Self-hosted
+        </h3>
+        <h3 className="hire-h3">TechComponent</h3>
+        <h3 className="hire-h3">Build End-To-End Engagement From Anywhere</h3>
+        <div></div>
+        <div>
+          <h3 className="hire-h3">Communication, On The Go</h3>
+          <p className="hire-p">
+            We offer a Chatwoot framework that allows you to communicate, reply
+            to messages, as well as collaborate with your customers instantly.{" "}
+          </p>
+        </div>
       </div>
     </>
   );
 };
 
-const content7 = () => (
-  <>
-    <h2 className="hire-h2">Omnichannel Support Center</h2>
-    <p className="hire-p">
-      Chatwoot allows you to connect with eminent customer communication
-      platforms such as Website live chat, Email, WhatsApp, Facebook, Instagram,
-      Twitter, etc. This aids you deliver a reliable CX across various
-      platforms- from a sole dashboard. <br />
-      <br />
-      At Code Garage Tech, we offer good customer service by providing a
-      Chatwoot framework that helps your business achieve new heights of
-      success.
-    </p>
-    <h2 className="hire-h2">Connect With Customers To Grow Your Business</h2>
-    <p className="hire-p">
-      Chatwoot supports self-hosted installations by default and you can easily
-      own your customer data. The framework offers a wonderful experience to
-      everyone, including your employees, partners, and customers.{" "}
-    </p>
-    <h3 className="hire-h3">Privacy Compliant, Open-source, and Self-hosted</h3>
-    <div>TechComponent</div>
-    <h3 className="hire-h3">Build End-To-End Engagement From Anywhere</h3>
-    <div>
-      <img src="" alt="Build End-To-End" />
-    </div>
-    <div>
-      <h3 className="hire-h3">Communication, On The Go</h3>
-      <p className="hire-p">
-        We offer a Chatwoot framework that allows you to communicate, reply to
-        messages, as well as collaborate with your customers instantly.{" "}
-      </p>
-      <img src="" alt="chat-app-images" />
-    </div>
-  </>
-);
+const content7 = () => <></>;
 
 const bannerComponent = () => <Banner />;
 
-const content6 = () => <TechComponent />;
+// const content6 = () => <TechComponent />;
 const content4 = () => <div></div>;
 const content5 = () => <div></div>;
 const content2 = () => <div></div>;
@@ -118,7 +118,7 @@ const content3 = () => (
     />
   </div>
 );
-const Strapi = () => {
+const Chatwoot = () => {
   return (
     <>
       <Head>
@@ -141,7 +141,7 @@ const Strapi = () => {
         content3={content3}
         content4={content4}
         content5={content5}
-        content6={content6}
+        // content6={content6}
         content7={content7}
         contentHeader1={contentHeader1}
         contentHeaderLeft={contentHeaderLeft}
@@ -155,4 +155,4 @@ const Strapi = () => {
   );
 };
 
-export default Strapi;
+export default Chatwoot;

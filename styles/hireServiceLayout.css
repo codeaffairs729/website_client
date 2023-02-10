@@ -1,64 +1,78 @@
 /* utility class */
 
-.hire-header {
+.hire-h1 {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 80px;
   line-height: 100%;
   letter-spacing: -0.025em;
   color: #292930;
-  margin-bottom: 30px;
-}
-.hire-h1 {
-  margin-bottom: 24px;
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 3rem;
-  letter-spacing: -0.025em;
-  color: #292930;
+  margin-left: 4px;
+  margin-bottom: 16px;
 }
 
-.hire-h2 {
-  margin-top: 24px;
+.hire-desc {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 500;
-  font-size: 2rem;
-  line-height: 36px;
-  color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fb2e3b;
+  margin-bottom: 32px;
+}
+.hire-h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 8px;
 }
 
 .hire-h3 {
-  margin-top: 16px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 36px;
-  color: #333333;
-}
-.hire-h4 {
-  margin-top: 16px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
   color: #333333;
+  margin-bottom: 8px;
+}
+.hire-h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.04em;
+  color: #292930;
+}
+.heading-blue {
+  display: flex;
+  gap: 26px;
+}
+.hire-h2-blue {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #5956e9;
+  margin-bottom: 8px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .hire-p,
 li {
-  margin-top:10px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 18px;
   line-height: 27px;
   letter-spacing: 0.04em;
   color: #292930;
+  margin-bottom: 8px;
 }
 
 .hire-team-h3 {
@@ -72,27 +86,54 @@ li {
   color: #333333;
 }
 
-.hire-team-header {
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 3rem;
-  line-height: 100%;
-  letter-spacing: -0.025em;
-  color: #292930;
-  margin-bottom: 40px;
+.tech-service-body {
+  display: flex;
+  padding-block: 127px 116px;
+  justify-content: space-between;
 }
-
-.service__btn{
-    padding: 1em 1.5em ;
+.tech-service-body-left {
+  flex-basis: 55%;
+}
+.tech-service-body-right {
+  padding-right: 74px;
+  width: 400px;
+}
+.service__btn {
+  padding: 1em 1.5em;
 }
 
 .hire-container {
-  height: auto;
   margin-inline: auto;
-  padding-left: 72px;
-  padding-right: 72px;
-  margin-bottom: 50px;
+  padding-left: 63px;
+  padding-right: 39px;
+}
+.tech-component-container{
+  margin-top: 37px;
+  margin-bottom: 100px;
+}
+.grey-shade {
+  background: #fafafa;
+}
+.margin-bottom-8 {
+  margin-bottom: 8px;
+}
+.gap-col {
+  margin-top: 24px;
+  gap: 24px;
+ }
+
+.hire-container-body-content {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.hire-container-body-left-content {
+  margin-top: 36px;
+  flex-basis: 55%;
+}
+.hire-container-body-right {
+  max-width: 400px;
 }
 
 .hire-container-body {
@@ -166,13 +207,6 @@ p {
   font-size: 18px;
 }
 
-.hire-container-body-content {
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
-}
-
 .hire-container-body-left-content {
   flex-basis: 60%;
 }
@@ -225,9 +259,29 @@ p {
   }
   .hire-h2 {
     font-size: 28px;
+    line-height: 40px;
   }
 }
 @media screen and (max-width: 991px) {
+  .tech-service-body-right {
+    width: 350px;
+  }
+  .hire-container-body-right {
+    max-width: 300px;
+  }
+  .hire-h2{
+    line-height: 32px;
+  }
+  .hire-h3{
+    line-height: 24px;
+  }
+  .tech-service-body {
+    padding-block: 0px 36px;
+}
+  .tech-service-body-right {
+    padding-right: 0px;
+  }
+
   .hiring-model:nth-child(2) {
     border-left: none;
     padding-left: 0px;
@@ -270,6 +324,7 @@ p {
   .hire-container-body-right-content {
     border-left: none;
   }
+
   .hire-header {
     font-size: 28px;
     line-height: 100%;
@@ -337,6 +392,9 @@ p {
 }
 
 @media screen and (max-width: 479px) {
+  .tech-service-body-right {
+    width: 250px;
+  }
   .hire-container-body-content {
     margin-top: -25px;
   }
@@ -347,20 +405,18 @@ p {
     font-size: 28px;
   }
 
-  .hire-h1{
- font-size: 2rem;
+  .hire-h1 {
+    font-size: 2rem;
   }
-   .hire-h2{
-font-size: 1.5rem;
+  .hire-h2 {
+    font-size: 1.5rem;
   }
-   .hire-h3{
-font-size: 1.25rem;
-
+  .hire-h3 {
+    font-size: 1.25rem;
   }
-  .hire-p{
-font-size: 1rem;
+  .hire-p {
+    font-size: 1rem;
   }
-
 
   .hire-container {
     padding-left: 15px;

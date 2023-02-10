@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import Head from "next/head";
 import Script from "next/script";
-import Slider from "react-slick";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";

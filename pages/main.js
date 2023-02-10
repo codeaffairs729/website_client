@@ -75,14 +75,14 @@ const Main = () => {
               {/* <div className="main__info info ms-3 main-info" data-aos="animation-scale-y" data-aos-delay="400"> */}
               <div className="freelancer-btn ms-3">
                 <a
-                  href="./hire-freelancer"
+                  href="/hire-freelancer"
                   target="_blank"
                   className="freelancer-main__btn"
                 >
                   Hire a freelancer
                 </a>
                 <a
-                  href="./hire-team"
+                  href="/hire-team"
                   target="_blank"
                   className="freelancer-main__btn"
                 >
