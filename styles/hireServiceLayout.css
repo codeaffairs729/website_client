@@ -27,6 +27,8 @@
   font-weight: 700;
   font-size: 32px;
   line-height: 48px;
+
+  margin-top: 27px;
   margin-bottom: 8px;
 }
 
@@ -51,6 +53,8 @@
 .heading-blue {
   display: flex;
   gap: 26px;
+  margin-top: 27px;
+  margin-bottom: 8px;
 }
 .hire-h2-blue {
   font-family: "Poppins";
@@ -59,7 +63,7 @@
   font-size: 32px;
   line-height: 48px;
   color: #5956e9;
-  margin-bottom: 8px;
+
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -103,24 +107,76 @@ li {
 }
 
 .hire-container {
+  position: relative;
   margin-inline: auto;
   padding-left: 63px;
   padding-right: 39px;
 }
-.tech-component-container{
+.tech-component-container {
   margin-top: 37px;
   margin-bottom: 100px;
 }
+.shade-1 {
+  position: relative;
+}
 .grey-shade {
+  position: absolute;
+  left: -55px;
+  z-index: -999;
+  width: 98vw;
+  height: 105%;
+  overflow: hidden;
   background: #fafafa;
+}
+.blue-circle {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  left: -31px;
+  top: 1590px;
+  /* Color/Primary */
+  overflow: hidden;
+
+  background: #5956e9;
+}
+.black-circle {
+  position: absolute;
+
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  right: -25px;
+  top: 1000px;
+  background: #27272e;
+  z-index: 999;
+  overflow: hidden;
+}
+.banner-cloud {
+  position: absolute;
+  z-index: 999;
+  width: 111px;
+  height: 82px;
+  left: 37%;
+  top: 90%;
+}
+
+.banner-type {
+  position: absolute;
+  z-index: 999;
+  right: 4px;
+  top: 87%;
 }
 .margin-bottom-8 {
   margin-bottom: 8px;
 }
+.margin-bottom-100 {
+  margin-bottom: 100px;
+}
 .gap-col {
   margin-top: 24px;
   gap: 24px;
- }
+}
 
 .hire-container-body-content {
   margin-top: 36px;
@@ -257,27 +313,53 @@ p {
   .hire-header {
     font-size: 36px;
   }
-  .hire-h2 {
+  .hire-h2,
+  .hire-h2-blue {
     font-size: 28px;
     line-height: 40px;
   }
+
+  .grey-shade {
+    left: -60px;
+    width: 99vw;
+  }
+  .black-circle {
+    /* right: 0px; */
+  }
 }
 @media screen and (max-width: 991px) {
+  .banner-cloud {
+    width: 111px;
+    height: 82px;
+    left: 37%;
+    top: 96%;
+  }
   .tech-service-body-right {
     width: 350px;
   }
   .hire-container-body-right {
     max-width: 300px;
   }
-  .hire-h2{
+  .hire-h2,
+  .hire-h2-blue {
     line-height: 32px;
   }
-  .hire-h3{
+  .hire-h3 {
+    font-size: 20px;
     line-height: 24px;
+  }
+  .black-circle {
+    /* right: 3px; */
+  }
+  .blue-circle {
+    left: -25px;
+  }
+  .form-service {
+    margin-top: 20px;
   }
   .tech-service-body {
     padding-block: 0px 36px;
-}
+  }
   .tech-service-body-right {
     padding-right: 0px;
   }
@@ -296,14 +378,12 @@ p {
     font-size: 32px;
     margin-bottom: 0px;
   }
-  .hire-h2 {
+  .hire-h2,
+  .heading-blue {
     font-size: 24px;
   }
   .hire-header {
     font-size: 32px;
-  }
-  .hire-h3 {
-    font-size: 24px;
   }
   .hire-team-h3 {
     font-size: 20px;
@@ -369,11 +449,6 @@ p {
     margin-bottom: 5px;
   }
 
-  .hire-p,
-  li {
-    margin-bottom: 10px;
-  }
-
   /* top rated banner */
 
   .top-rated {
@@ -392,6 +467,19 @@ p {
 }
 
 @media screen and (max-width: 479px) {
+  .hire-h1 {
+    font-size: 2rem;
+  }
+  .hire-h2,
+  .hire-h2-blue {
+    font-size: 1.5rem;
+  }
+  .hire-h3 {
+    font-size: 1.25rem;
+  }
+  .hire-p {
+    font-size: 1rem;
+  }
   .tech-service-body-right {
     width: 250px;
   }
@@ -405,19 +493,12 @@ p {
     font-size: 28px;
   }
 
-  .hire-h1 {
-    font-size: 2rem;
+  .grey-shade {
+    left: -20px;
   }
-  .hire-h2 {
-    font-size: 1.5rem;
+  .banner-cloud {
+    display: none;
   }
-  .hire-h3 {
-    font-size: 1.25rem;
-  }
-  .hire-p {
-    font-size: 1rem;
-  }
-
   .hire-container {
     padding-left: 15px;
     padding-right: 15px;
@@ -450,12 +531,8 @@ p {
   }
   .hire-p,
   li {
-    font-size: 14px;
+    font-size: 1rem;
     word-wrap: break-word;
-    /* text-align: start; */
-    /* display: flex;
-      justify-content: flex-start;
-      list-style-type: disc; */
   }
   .hire-container-body-left {
     padding-left: 15px;
@@ -478,6 +555,12 @@ p {
     top: 3px;
     left: -62px;
     transform: rotate(-46deg);
+  }
+  .blue-circle {
+    display: none;
+  }
+  .black-circle {
+    display: none;
   }
 }
 

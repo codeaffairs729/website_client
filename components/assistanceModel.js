@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import ScheduleMeetingForm from "./scheduleMeetingForm";
 import "react-datetime/css/react-datetime.css";
 import Datetime from "react-datetime";
-import { BsCalendar2Date } from "react-icons/bs";
+// import { BsCalendar2Date } from "react-icons/bs";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { ToastContainer, toast } from "react-toastify";
 
@@ -231,7 +231,7 @@ const AssistanceForm = ({ title, requestOrigin }) => {
       },
     },
     {
-      icon: <BsCalendar2Date />,
+      // icon: <BsCalendar2Date />,
 
       render: () => {
         return (

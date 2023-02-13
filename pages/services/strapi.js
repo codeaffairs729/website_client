@@ -89,8 +89,8 @@ const content1 = () => {
             <h2 className="hire-h2-blue">Hire Adept Strapi Developers</h2>
             <Image
               src="/icons/service-icon/Arrow Right.svg"
-              width={16}
-              height={16}
+              width={12}
+              height={12}
             />
           </div>
         </Link>
@@ -99,7 +99,9 @@ const content1 = () => {
           your business interface. Our skilled team of Strapi developers develop
           the best and reliable softwares for you.{" "}
         </p>
-        <div className="grey-shade">
+
+        <div className="shade-1">
+          <div className="grey-shade"></div>
           <h2 className="hire-h2">Strapi- Provides a Range of Benefits! </h2>
 
           <h3 className="hire-h3">Shorten The Time-To-Deploy</h3>
@@ -149,12 +151,15 @@ const content1 = () => {
           Strapi helps in boosting up the development as well as delivery of
           contemporary digital experiences.
         </p>
-        <h2 className="hire-h2 margin-bottom-8">Why Choose Us?</h2>
-        <p className="hire-p">
-          We offer effective back-end services with the help of Strapi that can
-          provide customization to your application or website as per your
-          business requirements.
-        </p>
+        <div className="shade-1">
+          <div className="grey-shade"></div>
+          <h2 className="hire-h2 margin-bottom-8">Why Choose Us?</h2>
+          <p className="hire-p">
+            We offer effective back-end services with the help of Strapi that
+            can provide customization to your application or website as per your
+            business requirements.
+          </p>
+        </div>
         {/* CONTENT7 END */}
       </div>
     </>
@@ -196,13 +201,13 @@ const Strapi = () => {
           "
         />
       </Head>
-
       <HireServiceLayout
         content1={content1}
         content2={content2}
         content3={content3}
         content4={content4}
         content5={content5}
+        isIconExit={true}
         // content6={content6}
         content7={content7}
         contentHeader1={contentHeader1}

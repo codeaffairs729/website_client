@@ -197,6 +197,7 @@ const DevOps = () => {
         contentHeader1={contentHeader1}
         techTitle={techTitle}
         // techImage={techImage}
+        isIconExit={true}
         bannerComponent={Banner}
         requestOrigin={"Requested from dev-ops solution page"}
       />

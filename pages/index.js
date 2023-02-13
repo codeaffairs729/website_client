@@ -10,8 +10,6 @@ import Teams from "./teams";
 import Like from "./like";
 import Footer from "./includes/footer";
 import Image from "next/image";
-import dynamic from "next/dynamic";
-
 export default function Home() {
   return (
     <>
@@ -21,11 +19,6 @@ export default function Home() {
           className="whatsapp-btn-outer"
           title="Contact Us on whatsapp"
         >
-          {/* <img
-            className="whatsapp-btn"
-            src="images/WhatsApp.webp"
-            alt="3D Whatsapp Icon"
-          /> */}
           <Image
             className="whatsapp-btn"
             src="/images/WhatsApp.webp"
@@ -34,12 +27,8 @@ export default function Home() {
             height={50}
           />
         </a>
-
         <Main />
         <Package />
-
-        {/* <Features /> */}
-
         <Work />
         <Layouts />
         <Access />
@@ -47,18 +36,6 @@ export default function Home() {
         <Design />
         <Teams />
         <Like />
-
-        {/* <Plan />
-        <Speed />
-        <Demo />
-        <Details />
-        <Tool />
-        <Roadmap />
-        <Accord />
-        <Quality />
-        <Showcase />
-        <Offer /> */}
-
         <Footer />
       </div>
     </>

@@ -12,7 +12,7 @@ const Main = () => {
         <Header />
         <Head>
           <title>Custom Web Software & Application Development Services</title>
-          <link rel="canonical" href="https://www.codegaragetech.com/" />
+          <link rel="canonical" href="https://www.codegaragetech.com" />
 
           <meta
             name="description"
@@ -162,7 +162,7 @@ const Main = () => {
                         </div> */}
             <div className="main__preview">
               {/* <img
-                className="main__pic"
+                className="'main__pic"
                 src="images/desktop-asset.webp"
                 alt="3D Desktop Assets"
               /> */}
@@ -172,6 +172,7 @@ const Main = () => {
                   alt="3D Desktop Assets"
                   width={768}
                   height={598}
+                  priority={true}
                 />
               </div>
             </div>

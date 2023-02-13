@@ -149,6 +149,7 @@ const Chatwoot = () => {
         // techImage={techImage}
         bannerComponent={bannerComponent}
         contentHeader={contentHeader}
+        isIconExit={true}
         requestOrigin={"Requested from Mobile solution page"}
       />
     </>

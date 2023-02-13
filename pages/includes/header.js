@@ -118,7 +118,7 @@ const Header = () => {
           sizes="16x16"
           href="/logo/cgt_new_favicon.webp"
         />
-        <link rel="manifest" href="/img/site.webmanifest" />
+        {/* <link rel="manifest" href="/img/site.webmanifest" /> */}
         <link
           rel="mask-icon"
           href="img/safari-pinned-tab.webp"

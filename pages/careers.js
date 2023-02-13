@@ -9,8 +9,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Head from "next/head";
-import { AiFillStar } from "react-icons/ai";
-import { BsStarHalf } from "react-icons/bs";
+import Image from "next/image";
 
 const Careers = () => {
   const [email, setEmail] = useState("");
@@ -354,23 +353,43 @@ const Careers = () => {
                     <div className="rating-container-headline fs-5">Google</div>
                     <div>
                       <span className="Warning">
-                        <AiFillStar />
+                        <Image
+                          src="/icons/star-full-icon.svg"
+                          height={16}
+                          width={16}
+                        />
                       </span>
                       <span className="Warning">
-                        <AiFillStar />
+                        <Image
+                          src="/icons/star-full-icon.svg"
+                          height={16}
+                          width={16}
+                        />
                       </span>
                       <span className="Warning">
-                        <AiFillStar />
+                        <Image
+                          src="/icons/star-full-icon.svg"
+                          height={16}
+                          width={16}
+                        />
                       </span>
                       <span className="Warning">
-                        <AiFillStar />
+                        <Image
+                          src="/icons/star-full-icon.svg"
+                          height={16}
+                          width={16}
+                        />
                       </span>
-                      <span className="Warning">
-                        <BsStarHalf />
+                      <span className="Warning pr-2">
+                        <Image
+                          src="/icons/star-full-icon.svg"
+                          height={16}
+                          width={16}
+                        />
                       </span>
                     </div>
                   </div>
-                  <div className="mt-3">4.9/5</div>
+                  <div className="mt-3">5/5</div>
                 </div>
               </div>
             </div>
@@ -389,19 +408,39 @@ const Careers = () => {
                     </div>
                     <div>
                       <span className="Warning">
-                        <AiFillStar />
+                        <Image
+                          src="/icons/star-full-icon.svg"
+                          height={16}
+                          width={16}
+                        />
                       </span>
                       <span className="Warning">
-                        <AiFillStar />
+                        <Image
+                          src="/icons/star-full-icon.svg"
+                          height={16}
+                          width={16}
+                        />
                       </span>
                       <span className="Warning">
-                        <AiFillStar />
+                        <Image
+                          src="/icons/star-full-icon.svg"
+                          height={16}
+                          width={16}
+                        />
                       </span>
                       <span className="Warning">
-                        <AiFillStar />
+                        <Image
+                          src="/icons/star-full-icon.svg"
+                          height={16}
+                          width={16}
+                        />
                       </span>
                       <span className="Warning">
-                        <AiFillStar />
+                        <Image
+                          src="/icons/star-full-icon.svg"
+                          height={16}
+                          width={16}
+                        />
                       </span>
                     </div>
                   </div>

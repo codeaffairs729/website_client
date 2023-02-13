@@ -148,6 +148,7 @@ const Miscellaneous = () => {
         content3={content3}
         content6={content6}
         content7={content7}
+        isIconExit={true}
         contentHeader1={contentHeader1}
         techTitle={techTitle}
         // techImage={techImage}

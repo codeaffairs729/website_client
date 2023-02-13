@@ -276,6 +276,7 @@ const WebServices = () => {
         content1={content1}
         content3={content3}
         // content6={content6}
+        isIconExit={true}
         content7={content7}
         contentHeader1={contentHeader1}
         techTitle={techTitle}
