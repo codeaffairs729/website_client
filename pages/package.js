@@ -80,7 +80,7 @@ const Package = () => {
     speed: 2000,
     fade: true,
     adaptiveHeight: true,
-    autoplay: true,
+    autoplay: false,
     pauseOnHover: false,
     responsive: [
       {
@@ -118,11 +118,11 @@ const Package = () => {
         </svg>
       </button>
     ),
-    infinite: true,
+    infinite: false,
     speed: 700,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     responsive: [
       {
         breakpoint: 768,
@@ -239,7 +239,7 @@ const Package = () => {
                           onMouseOut={() => subSliderPlay()}
                           className="col-lg-10 m-auto subSliderIcons"
                         >
-                          {/* <Slider
+                          <Slider
                             ref={(newSubSlider1) => {
                               subSlider1 = newSubSlider1;
                             }}
@@ -258,7 +258,7 @@ const Package = () => {
                                 />
                               );
                             })}
-                          </Slider> */}
+                          </Slider>
                         </div>
                       </div>
                     </div>
@@ -358,7 +358,7 @@ const Package = () => {
                           onMouseOut={() => subSliderPlay()}
                           className="col-lg-10 m-auto subSliderIcons"
                         >
-                          {/* <Slider
+                          <Slider
                             ref={(newSubSlider2) => {
                               subSlider2 = newSubSlider2;
                             }}
@@ -377,7 +377,7 @@ const Package = () => {
                                 />
                               );
                             })}
-                          </Slider> */}
+                          </Slider>
                         </div>
                       </div>
                     </div>
@@ -470,7 +470,7 @@ const Package = () => {
                           onMouseOut={() => subSliderPlay()}
                           className="col-lg-10 m-auto subSliderIcons"
                         >
-                          {/* <Slider
+                          <Slider
                             ref={(newSubSlider3) => {
                               subSlider3 = newSubSlider3;
                             }}
@@ -489,7 +489,7 @@ const Package = () => {
                                 />
                               );
                             })}
-                          </Slider> */}
+                          </Slider>
                         </div>
                       </div>
                     </div>
