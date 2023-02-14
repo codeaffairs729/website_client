@@ -148,8 +148,8 @@ const Package = () => {
                   <div className="package__row row">
                     <div className="col-lg-5">
                       <div
-                        onMouseOver={() => pause()}
-                        onMouseOut={() => play()}
+                        // onMouseOver={() => pause()}
+                        // onMouseOut={() => play()}
                         className="package__details"
                         data-aos
                         data-aos-duration="600"
@@ -226,8 +226,8 @@ const Package = () => {
                           /> */}
 
                           <Image
-                            onMouseOver={() => pause()}
-                            onMouseOut={() => play()}
+                            // onMouseOver={() => pause()}
+                            // onMouseOut={() => play()}
                             src="/images/laptop_4.webp"
                             alt="3D Laptop-1 PNG"
                             width={641}
@@ -235,8 +235,8 @@ const Package = () => {
                           />
                         </div>
                         <div
-                          onMouseOver={() => subSliderPause()}
-                          onMouseOut={() => subSliderPlay()}
+                          // onMouseOver={() => subSliderPause()}
+                          // onMouseOut={() => subSliderPlay()}
                           className="col-lg-10 m-auto subSliderIcons"
                         >
                           <Slider
@@ -268,8 +268,8 @@ const Package = () => {
                   <div className="package__row row">
                     <div className="col-lg-5">
                       <div
-                        onMouseOver={() => pause()}
-                        onMouseOut={() => play()}
+                        // onMouseOver={() => pause()}
+                        // onMouseOut={() => play()}
                         className="package__details"
                         data-aos
                         data-aos-duration="600"
@@ -345,8 +345,8 @@ const Package = () => {
                             alt="3D Laptop-2 PNG"
                           /> */}
                           <Image
-                            onMouseOver={() => pause()}
-                            onMouseOut={() => play()}
+                            // onMouseOver={() => pause()}
+                            // onMouseOut={() => play()}
                             src="/images/laptop_3.webp"
                             alt="3D Laptop-2 PNG"
                             width={640}
@@ -354,8 +354,8 @@ const Package = () => {
                           />
                         </div>
                         <div
-                          onMouseOver={() => subSliderPause()}
-                          onMouseOut={() => subSliderPlay()}
+                          // onMouseOver={() => subSliderPause()}
+                          // onMouseOut={() => subSliderPlay()}
                           className="col-lg-10 m-auto subSliderIcons"
                         >
                           <Slider
@@ -387,8 +387,8 @@ const Package = () => {
                   <div className="package__row row">
                     <div className="col-lg-5">
                       <div
-                        onMouseOver={() => pause()}
-                        onMouseOut={() => play()}
+                        // onMouseOver={() => pause()}
+                        // onMouseOut={() => play()}
                         className="package__details"
                         data-aos
                         data-aos-duration="600"
@@ -457,8 +457,8 @@ const Package = () => {
                       <div className="package__preview row package-preview-mobile">
                         <div className="col-lg-12 d-flex justify-content-center align-items-center">
                           <Image
-                            onMouseOver={() => pause()}
-                            onMouseOut={() => play()}
+                            // onMouseOver={() => pause()}
+                            // onMouseOut={() => play()}
                             src="/images/mobile_2.webp"
                             alt="Mobile Graph PNG"
                             width={194}
@@ -466,8 +466,8 @@ const Package = () => {
                           />
                         </div>
                         <div
-                          onMouseOver={() => subSliderPause()}
-                          onMouseOut={() => subSliderPlay()}
+                          // onMouseOver={() => subSliderPause()}
+                          // onMouseOut={() => subSliderPlay()}
                           className="col-lg-10 m-auto subSliderIcons"
                         >
                           <Slider
