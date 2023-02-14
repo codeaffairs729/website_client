@@ -239,7 +239,7 @@ const Package = () => {
                           onMouseOut={() => subSliderPlay()}
                           className="col-lg-10 m-auto subSliderIcons"
                         >
-                          <Slider
+                          {/* <Slider
                             ref={(newSubSlider1) => {
                               subSlider1 = newSubSlider1;
                             }}
@@ -258,7 +258,7 @@ const Package = () => {
                                 />
                               );
                             })}
-                          </Slider>
+                          </Slider> */}
                         </div>
                       </div>
                     </div>
@@ -358,7 +358,7 @@ const Package = () => {
                           onMouseOut={() => subSliderPlay()}
                           className="col-lg-10 m-auto subSliderIcons"
                         >
-                          <Slider
+                          {/* <Slider
                             ref={(newSubSlider2) => {
                               subSlider2 = newSubSlider2;
                             }}
@@ -377,7 +377,7 @@ const Package = () => {
                                 />
                               );
                             })}
-                          </Slider>
+                          </Slider> */}
                         </div>
                       </div>
                     </div>
@@ -470,7 +470,7 @@ const Package = () => {
                           onMouseOut={() => subSliderPlay()}
                           className="col-lg-10 m-auto subSliderIcons"
                         >
-                          <Slider
+                          {/* <Slider
                             ref={(newSubSlider3) => {
                               subSlider3 = newSubSlider3;
                             }}
@@ -489,7 +489,7 @@ const Package = () => {
                                 />
                               );
                             })}
-                          </Slider>
+                          </Slider> */}
                         </div>
                       </div>
                     </div>
