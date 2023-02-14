@@ -1,8 +1,8 @@
 // import styles from '../styles/Home.module.css'
 import Main from "./main";
 import Package from "./package";
-// import Work from "./work";
-import Layouts from "./layouts";
+import Work from "./work";
+// import Layouts from "./layouts";
 import Access from "./access";
 import Partners from "./partners";
 import Design from "./design";
@@ -29,8 +29,8 @@ export default function Home() {
         </a>
         <Main />
         <Package />
-        {/* <Work /> */}
-        <Layouts />
+        <Work />
+        {/* <Layouts /> */}
         <Access />
         <Partners />
         <Design />
