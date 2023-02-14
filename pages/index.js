@@ -7,7 +7,7 @@ import Access from "./access";
 import Partners from "./partners";
 import Design from "./design";
 import Teams from "./teams";
-import Like from "./like";
+// import Like from "./like";
 import Footer from "./includes/footer";
 import Image from "next/image";
 export default function Home() {
@@ -28,14 +28,14 @@ export default function Home() {
           />
         </a>
         <Main />
-        {/* <Package /> */}
+        <Package />
         <Work />
         <Layouts />
         <Access />
         <Partners />
         <Design />
         <Teams />
-        <Like />
+        {/* <Like /> */}
         <Footer />
       </div>
     </>
