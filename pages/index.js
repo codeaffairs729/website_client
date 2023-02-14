@@ -28,7 +28,7 @@ export default function Home() {
           />
         </a>
         <Main />
-        <Package />
+        {/* <Package /> */}
         <Work />
         <Layouts />
         <Access />
