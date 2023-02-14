@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import 'react-toastify/dist/ReactToastify.min.css'
 import Image from "next/image";
 
 const Access = () => {

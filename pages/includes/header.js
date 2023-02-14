@@ -193,7 +193,7 @@ const Header = () => {
                   >
                     Services
                     <svg className="icon icon-arrow-down">
-                      <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
+                      <use xlinkHref="/img/sprite.svg#icon-arrow-down"></use>
                     </svg>
                   </div>
                 </Link>

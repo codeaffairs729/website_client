@@ -45,6 +45,7 @@ const contentHeader1 = () => {
             alt="3D Cloud"
             width={378}
             height={280}
+            priority={true}
           />
           {/* </div> */}
         </div>

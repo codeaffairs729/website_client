@@ -32,6 +32,7 @@ const contentHeader1 = () => {
               alt="mobile-front-color-service Image"
               width={159}
               height={280}
+              priority={true}
             />
           </div>
         </div>

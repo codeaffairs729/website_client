@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import Head from "next/head";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import 'react-toastify/dist/ReactToastify.min.css'
 import GenericModal from "../components/genericModal";
 import Link from "next/link";
 

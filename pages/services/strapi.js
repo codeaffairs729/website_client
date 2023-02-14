@@ -35,6 +35,7 @@ const contentHeader1 = () => {
             alt="strapi-image"
             width={311}
             height={341}
+            priority={true}
           />
         </div>
       </div>

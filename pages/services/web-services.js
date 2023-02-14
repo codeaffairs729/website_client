@@ -32,6 +32,7 @@ const contentHeader1 = () => {
               alt="Frame JPG"
               width={442}
               height={483}
+              priority={true}
             />
           </div>
         </div>

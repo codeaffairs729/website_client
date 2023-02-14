@@ -31,6 +31,7 @@ const contentHeader1 = () => {
             alt="chatwoot-image"
             width={280}
             height={280}
+            priority={true}
           />
         </div>
       </div>

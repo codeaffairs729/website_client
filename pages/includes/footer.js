@@ -78,7 +78,7 @@ const Footer = () => {
               <div className="footer__category js-footer-category footer-category-cgt-name">
                 Code Garage
                 <svg className="icon icon-arrow-down">
-                  <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
+                  <use xlinkHref="/img/sprite.svg#icon-arrow-down"></use>
                 </svg>
               </div>
               <div
@@ -116,7 +116,7 @@ const Footer = () => {
               <div className="footer__category js-footer-category">
                 Technologies We Work On
                 <svg className="icon icon-arrow-down">
-                  <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
+                  <use xlinkHref="/img/sprite.svg#icon-arrow-down"></use>
                 </svg>
               </div>
               <div
@@ -271,7 +271,7 @@ const Footer = () => {
               <div className="footer__category js-footer-category">
                 Check Us on Social Network
                 <svg className="icon icon-arrow-down">
-                  <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
+                  <use xlinkHref="/img/sprite.svg#icon-arrow-down"></use>
                 </svg>
               </div>
               <div

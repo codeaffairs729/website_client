@@ -4,7 +4,7 @@ import Footer from "./includes/footer";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import GenericModal from "../components/genericModal";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import 'react-toastify/dist/ReactToastify.min.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

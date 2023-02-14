@@ -27,6 +27,7 @@ const contentHeader1 = () => {
             alt="3D Cloud"
             width={378}
             height={280}
+            priority={true}
           />
         </div>
       </div>
@@ -107,18 +108,13 @@ const content1 = () => {
           design solutions cover distinctive aspects like user experience, UI
           design, and revamping of existing mobile applications.
         </p>
+        <TechComponent />
       </div>
     </>
   );
 };
 
-const content7 = () => (
-  <>
-    <div className="hire-container-body-left-content-2"></div>
-  </>
-);
 
-const content6 = () => <TechComponent />;
 const content3 = () => (
   <div className="form-service">
     <ScheduleForm
@@ -146,12 +142,9 @@ const Miscellaneous = () => {
       <HireServiceLayout
         content1={content1}
         content3={content3}
-        content6={content6}
-        content7={content7}
         isIconExit={true}
         contentHeader1={contentHeader1}
         techTitle={techTitle}
-        // techImage={techImage}
         bannerComponent={Banner}
         requestOrigin={"Requested from Miscellaneous page"}
       />

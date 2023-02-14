@@ -7,6 +7,11 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
+          rel="preload"
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,700&family=Poppins:wght@300;400;500;600&display=swap"
+          as="style"
+        ></link>
+        <link
           href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,700&family=Poppins:wght@300;400;500;600&display=swap"
           rel="stylesheet"
         />
