@@ -1,13 +1,13 @@
 // import styles from '../styles/Home.module.css'
 import Main from "./main";
 import Package from "./package";
-import Work from "./work";
+// import Work from "./work";
 import Layouts from "./layouts";
 import Access from "./access";
 import Partners from "./partners";
 import Design from "./design";
 import Teams from "./teams";
-// import Like from "./like";
+import Like from "./like";
 import Footer from "./includes/footer";
 import Image from "next/image";
 export default function Home() {
@@ -29,7 +29,7 @@ export default function Home() {
         </a>
         <Main />
         <Package />
-        <Work />
+        {/* <Work /> */}
         <Layouts />
         <Access />
         <Partners />
