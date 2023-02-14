@@ -49,25 +49,25 @@ const Package = () => {
   const subSlider3 = useRef(null);
 
   const play = () => {
-    slider1.current.slickPlay();
+    // slider1.current.slickPlay();
   };
 
   const pause = () => {
-    slider1.current.slickPause();
+    // slider1.current.slickPause();
   };
 
   const subSliderPause = () => {
-    slider1.current.slickPause();
-    subSlider1.slickPause();
-    subSlider2.slickPause();
-    subSlider3.slickPause();
+    // slider1.current.slickPause();
+    // subSlider1.slickPause();
+    // subSlider2.slickPause();
+    // subSlider3.slickPause();
   };
 
   const subSliderPlay = () => {
-    slider1.current.slickPlay();
-    subSlider1.slickPlay();
-    subSlider2.slickPlay();
-    subSlider3.slickPlay();
+    // slider1.current.slickPlay();
+    // subSlider1.slickPlay();
+    // subSlider2.slickPlay();
+    // subSlider3.slickPlay();
   };
 
   const packageSettings = {
@@ -77,7 +77,7 @@ const Package = () => {
     arrows: false,
     // prevArrow: <PrevButton />,
     // nextArrow: <NextButton />,
-    speed: 2000,
+    speed: 200,
     fade: true,
     adaptiveHeight: true,
     autoplay: false,
@@ -498,7 +498,7 @@ const Package = () => {
               </Slider>
               <div className="package__line"></div>
               <div
-                className="package__circle"
+                // className="package__circle"
                 // data-aos
                 // data-aos-duration="600"
               ></div>
