@@ -151,9 +151,9 @@ const Package = () => {
                         // onMouseOver={() => pause()}
                         // onMouseOut={() => play()}
                         className="package__details"
-                        data-aos
-                        data-aos-duration="600"
-                        data-aos-delay="400"
+                        // data-aos
+                        // data-aos-duration="600"
+                        // data-aos-delay="400"
                       >
                         <div className="package__category">
                           <div className="package__icon">
@@ -185,8 +185,8 @@ const Package = () => {
                         <div className="package__list">
                           <ul
                             className="package-list"
-                            data-aos="animation-scale-y"
-                            data-aos-delay="200"
+                            // data-aos="animation-scale-y"
+                            // data-aos-delay="200"
                           >
                             <li>Pixel Perfect</li>
                             <li>User Centred</li>
@@ -271,9 +271,9 @@ const Package = () => {
                         // onMouseOver={() => pause()}
                         // onMouseOut={() => play()}
                         className="package__details"
-                        data-aos
-                        data-aos-duration="600"
-                        data-aos-delay="400"
+                        // data-aos
+                        // data-aos-duration="600"
+                        // data-aos-delay="400"
                       >
                         <div className="package__category">
                           <div className="package__icon">
@@ -305,8 +305,8 @@ const Package = () => {
                         <div className="package__list">
                           <ul
                             className="package-list"
-                            data-aos="animation-scale-y"
-                            data-aos-delay="200"
+                            // data-aos="animation-scale-y"
+                            // data-aos-delay="200"
                           >
                             <li>Fast & Scalable</li>
                             <li>Reliable</li>
@@ -390,9 +390,9 @@ const Package = () => {
                         // onMouseOver={() => pause()}
                         // onMouseOut={() => play()}
                         className="package__details"
-                        data-aos
-                        data-aos-duration="600"
-                        data-aos-delay="400"
+                        // data-aos
+                        // data-aos-duration="600"
+                        // data-aos-delay="400"
                       >
                         <div className="package__category">
                           <div className="package__icon">
@@ -424,8 +424,8 @@ const Package = () => {
                         <div className="package__list">
                           <ul
                             className="package-list"
-                            data-aos="animation-scale-y"
-                            data-aos-delay="200"
+                            // data-aos="animation-scale-y"
+                            // data-aos-delay="200"
                           >
                             <li>High Performance</li>
                             <li>Cross Platform</li>
@@ -499,8 +499,8 @@ const Package = () => {
               <div className="package__line"></div>
               <div
                 className="package__circle"
-                data-aos
-                data-aos-duration="600"
+                // data-aos
+                // data-aos-duration="600"
               ></div>
             </div>
             <div className="package__circles">
