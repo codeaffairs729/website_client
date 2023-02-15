@@ -4,7 +4,7 @@ import ScheduleMeetingForm from "./scheduleMeetingForm";
 import "react-datetime/css/react-datetime.css";
 import Datetime from "react-datetime";
 // import { BsCalendar2Date } from "react-icons/bs";
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+// import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { ToastContainer, toast } from "react-toastify";
 
 const AssistanceForm = ({ title, requestOrigin }) => {
@@ -50,21 +50,22 @@ const AssistanceForm = ({ title, requestOrigin }) => {
     });
   };
 
-  const { executeRecaptcha } = useGoogleReCaptcha();
+  // const { executeRecaptcha } = useGoogleReCaptcha();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
 
-    if (!executeRecaptcha) {
-      console.log("Execute recaptcha not yet available");
-      return;
-    }
-    executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
-      submitEnquiryForm(gReCaptchaToken);
-    });
-  };
+  //   if (!executeRecaptcha) {
+  //     console.log("Execute recaptcha not yet available");
+  //     return;
+  //   }
+  //   executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
+  //     submitEnquiryForm(gReCaptchaToken);
+  //   });
+  // };
 
-  const submitEnquiryForm = (gReCaptchaToken) => {
+  const submitEnquiryForm = (e) => {
+     e.preventDefault();
     if (name == "" || email == "" || phone == "") {
       // setFileAlert(true);
       return;
@@ -87,7 +88,6 @@ const AssistanceForm = ({ title, requestOrigin }) => {
         resumeName: resumeName,
         resumeType: resumeType,
         resumeBase64: resumeBase64,
-        gRecaptchaToken: gReCaptchaToken,
         requestOrigin: requestOrigin,
       }),
     })
@@ -350,7 +350,7 @@ const AssistanceForm = ({ title, requestOrigin }) => {
       }}
       className="assist-form-container-input-btn"
       type="submit"
-      onClick={handleSubmit}
+      onClick={submitEnquiryForm}
     >
       Submit
     </button>
@@ -360,7 +360,7 @@ const AssistanceForm = ({ title, requestOrigin }) => {
       fields={formFields}
       title={title}
       buttonText={buttonText}
-      submitFunc={handleSubmit}
+      submitFunc={submitEnquiryForm}
       submitButton={submitButton}
     />
   );

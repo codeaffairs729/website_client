@@ -3,7 +3,6 @@ import Header from "./includes/header";
 import Typewriter from "typewriter-effect";
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 
 const Main = () => {
   return (
@@ -29,7 +28,7 @@ const Main = () => {
             <div>
               <div className="ms-3 main__title title title_big" data-aos>
                 <span className="title__box dev-title mb-3">
-                  <span className="title__text ">
+                  <span className="title__text" style={{minWidth: 500}}>
                     {/* 'Development', 'Software Engineering', 'Designing', 'App Monitoring', 'Web Solutions', 'Mobile Solutions', 'CRM Solutions', 'CMS Solutions', 'Cloud Services', 'Tech Consulting' */}
                     <Typewriter
                       options={{

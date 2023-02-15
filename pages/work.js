@@ -1,4 +1,3 @@
-import React, { useState, useRef } from "react";
 import ModalDialog from "../components/ModalDialog";
 import Image from "next/image";
 
@@ -356,8 +355,8 @@ const Work = () => {
             data-aos-offset="0"
           >
             <Image
-               src="/images/work-arrow-7.webp"
-               alt="Up Grey Curve Arrow"
+              src="/images/work-arrow-7.webp"
+              alt="Up Grey Curve Arrow"
               width={40}
               height={145}
             />
@@ -448,16 +447,14 @@ const Work = () => {
             src="img/showcase-circle.webp"
             alt="Solid Blue Circle with white Dots"
           /> */}
-          <div
-              className="showcase__pic"
-            >
-              <Image
-                src="/img/showcase-circle.webp"
-                alt="Solid Blue Circle with white Dots"
-                width={925}
-                height={924}
-              />
-            </div>
+          <div className="showcase__pic">
+            <Image
+              src="/img/showcase-circle.webp"
+              alt="Solid Blue Circle with white Dots"
+              width={925}
+              height={924}
+            />
+          </div>
           {/* <div className="showcase__pic">
             <Image
             src="/img/showcase-circle.webp"

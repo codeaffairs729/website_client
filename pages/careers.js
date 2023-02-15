@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import Header from "./includes/header";
 import Footer from "./includes/footer";
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+// import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import GenericModal from "../components/genericModal";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.min.css'
@@ -60,21 +60,22 @@ const Careers = () => {
     });
   };
 
-  const { executeRecaptcha } = useGoogleReCaptcha();
+  // const { executeRecaptcha } = useGoogleReCaptcha();
 
-  const handleSubmit = (e) => {
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+
+  //   if (!executeRecaptcha) {
+  //     console.log("Execute recaptcha not yet available");
+  //     return;
+  //   }
+  //   executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
+  //     submitEnquiryForm(gReCaptchaToken);
+  //   });
+  // };
+
+  const submitEnquiryForm = (e) => {
     e.preventDefault();
-
-    if (!executeRecaptcha) {
-      console.log("Execute recaptcha not yet available");
-      return;
-    }
-    executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
-      submitEnquiryForm(gReCaptchaToken);
-    });
-  };
-
-  const submitEnquiryForm = (gReCaptchaToken) => {
     if (resumeName == "") {
       setFileAlert(true);
       return;
@@ -95,7 +96,7 @@ const Careers = () => {
         resumeName: resumeName,
         resumeType: resumeType,
         resumeBase64: resumeBase64,
-        gRecaptchaToken: gReCaptchaToken,
+        // gRecaptchaToken: gReCaptchaToken,
       }),
     })
       .then((res) => res.json())
@@ -729,7 +730,7 @@ const Careers = () => {
       <GenericModal
         genModalshow={genModalshow}
         handleModalClose={handleModalClose}
-        handleSubmit={handleSubmit}
+        handleSubmit={submitEnquiryForm}
         modalHeaderShow={true}
         modalBodyShow={true}
         modalFooterShow={false}

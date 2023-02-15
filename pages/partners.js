@@ -1,6 +1,5 @@
 import React from "react";
 import Trophies from "./trophies";
-import Image from "next/image";
 const Partners = () => {
   return (
     <>

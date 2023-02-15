@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import Head from "next/head";
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+// import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.min.css'
 import GenericModal from "../components/genericModal";
@@ -29,7 +29,7 @@ const Contact = () => {
     setGenModalshow(false);
   };
 
-  const { executeRecaptcha } = useGoogleReCaptcha();
+  // const { executeRecaptcha } = useGoogleReCaptcha();
 
   const changeNameIcon = (e) => {
     e == 1 ? setNameIcon(true) : setNameIcon(false);
@@ -54,19 +54,20 @@ const Contact = () => {
     setMessage("Enquiry");
   };
 
-  const handleSubmit = (e) => {
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+
+  //   if (!executeRecaptcha) {
+  //     console.log("Execute recaptcha not yet available");
+  //     return;
+  //   }
+  //   executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
+  //     submitEnquiryForm(gReCaptchaToken);
+  //   });
+  // };
+
+  const submitEnquiryForm = (e) => {
     e.preventDefault();
-
-    if (!executeRecaptcha) {
-      console.log("Execute recaptcha not yet available");
-      return;
-    }
-    executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
-      submitEnquiryForm(gReCaptchaToken);
-    });
-  };
-
-  const submitEnquiryForm = (gReCaptchaToken) => {
     submitBtn.disabled = true;
     submitBtn.innerHTML =
       '<span class="spinner-border spinner-border-sm"></span> Loading...';
@@ -85,7 +86,6 @@ const Contact = () => {
         phone: phone,
         email: email,
         message: message,
-        gRecaptchaToken: gReCaptchaToken,
       }),
     })
       .then((res) => res.json())
@@ -213,7 +213,7 @@ const Contact = () => {
                     <div className="entry__row contact__row">
                       <form
                         className="entry__form d-flex flex-column align-items-center"
-                        onSubmit={handleSubmit}
+                        onSubmit={submitEnquiryForm}
                       >
                         <div className="entry__title title title_sm text-center contact-title">
                           <h1>Get in touch</h1>
@@ -544,7 +544,7 @@ const Contact = () => {
       <GenericModal
         genModalshow={genModalshow}
         handleModalClose={handleModalClose}
-        handleSubmit={handleSubmit}
+        handleSubmit={submitEnquiryForm}
         modalHeaderShow={true}
         modalBodyShow={true}
         modalFooterShow={false}

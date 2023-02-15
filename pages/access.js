@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+// import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.min.css'
 import Image from "next/image";
@@ -8,25 +8,25 @@ const Access = () => {
   const [email, setEmail] = useState("");
   const [notfication, setNotification] = useState("");
 
-  const { executeRecaptcha } = useGoogleReCaptcha();
+  // const { executeRecaptcha } = useGoogleReCaptcha();
   const submitBtn = useRef(null);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    submitBtn.innerHTML = "Submitted";
-    submitBtn.className = "access__btn btn btn-success";
-    // setEmail("");
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   submitBtn.innerHTML = "Submitted";
+  //   submitBtn.className = "access__btn btn btn-success";
+  //   // setEmail("");
 
-    if (!executeRecaptcha) {
-      console.log("Execute recaptcha not yet available");
+  //   if (!executeRecaptcha) {
+  //     console.log("Execute recaptcha not yet available");
 
-      return;
-    }
-    executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
-      // console.log(gReCaptchaToken, "response Google reCaptcha server");
-      submitEnquiryForm(gReCaptchaToken);
-    });
-  };
+  //     return;
+  //   }
+  //   executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
+  //     // console.log(gReCaptchaToken, "response Google reCaptcha server");
+  //     submitEnquiryForm(gReCaptchaToken);
+  //   });
+  // };
 
   const submitEnquiryForm = (gReCaptchaToken) => {
     submitBtn.disabled = true;
@@ -44,7 +44,7 @@ const Access = () => {
         phone: "NA",
         email: email,
         message: "Enquiry",
-        gRecaptchaToken: gReCaptchaToken,
+        // gRecaptchaToken: gReCaptchaToken,
       }),
     })
       .then((res) => res.json())
@@ -176,7 +176,7 @@ const Access = () => {
           </div>
           <div className="access__wrap" data-aos="animation-scale-y">
             <div className="access__info">Ready To Make Your App Live?</div>
-            <form className="access__form" onSubmit={handleSubmit}>
+            <form className="access__form" onSubmit={submitEnquiryForm}>
               <div className="access__field">
                 <input
                   className="access__input"

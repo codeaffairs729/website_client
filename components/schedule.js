@@ -4,7 +4,7 @@ import Form from "./genForm";
 import "react-datetime/css/react-datetime.css";
 import Datetime from "react-datetime";
 import { BsCalendar2Date } from "react-icons/bs";
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+// import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { toast } from "react-toastify";
 
 const ScheduleForm = ({ title, requestOrigin }) => {
@@ -50,20 +50,20 @@ const ScheduleForm = ({ title, requestOrigin }) => {
     });
   };
 
-  const { executeRecaptcha } = useGoogleReCaptcha();
+  // const { executeRecaptcha } = useGoogleReCaptcha();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
 
-    if (!executeRecaptcha) {
-      return;
-    }
-    executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
-      submitEnquiryForm(gReCaptchaToken);
-    });
-  };
+  //   if (!executeRecaptcha) {
+  //     return;
+  //   }
+  //   executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
+  //     submitEnquiryForm(gReCaptchaToken);
+  //   });
+  // };
 
-  const submitEnquiryForm = (gReCaptchaToken) => {
+  const submitEnquiryForm = (e) => {
     if (name == "" || email == "" || phone == "") {
       // setFileAlert(true);
       return;
@@ -86,7 +86,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
         resumeName: resumeName,
         resumeType: resumeType,
         resumeBase64: resumeBase64,
-        gRecaptchaToken: gReCaptchaToken,
+        // gRecaptchaToken: gReCaptchaToken,
         requestOrigin: requestOrigin,
       }),
     })
@@ -338,7 +338,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
       }}
       className="form-container-input-btn"
       type="submit"
-      onClick={handleSubmit}
+      onClick={submitEnquiryForm}
     >
       Submit
     </button>
@@ -348,7 +348,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
       fields={formFields}
       title={title}
       buttonText={buttonText}
-      submitFunc={handleSubmit}
+      submitFunc={submitEnquiryForm}
       submitButton={submitButton}
     />
   );
