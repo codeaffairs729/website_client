@@ -4,6 +4,7 @@ import SubSlider from "../components/index/services/subSlider";
 import SliderButton from "../components/sliderButton";
 import Image from "next/image";
 const Package = () => {
+  const [isTrue, setIsTrue] = useState(true);
   const gotoNext = () => {
     slider1.current.slickNext();
   };
@@ -80,8 +81,9 @@ const Package = () => {
     speed: 1000,
     fade: true,
     adaptiveHeight: true,
-    autoplay: true,
+    autoplay: isTrue,
     pauseOnHover: false,
+    lazyload: "progressive",
     responsive: [
       {
         breakpoint: 1199,
@@ -122,7 +124,8 @@ const Package = () => {
     speed: 700,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: isTrue,
+
     responsive: [
       {
         breakpoint: 768,
@@ -498,9 +501,9 @@ const Package = () => {
               </Slider>
               <div className="package__line"></div>
               <div
-                // className="package__circle"
-                // data-aos
-                // data-aos-duration="600"
+              // className="package__circle"
+              // data-aos
+              // data-aos-duration="600"
               ></div>
             </div>
             <div className="package__circles">
