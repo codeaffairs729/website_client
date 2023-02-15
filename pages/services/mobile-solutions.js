@@ -24,7 +24,7 @@ const contentHeader1 = () => {
             </a>
           </Link>
         </div>
-        <div className="tech-service-body-right">
+        <div className="tech-service-body-right text-center">
           {/* <img src="/icons/service-icon/mobile-front-color-service.webp" /> */}
           <div>
             <Image
