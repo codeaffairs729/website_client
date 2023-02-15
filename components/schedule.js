@@ -1,54 +1,54 @@
-import React, { useState, useRef } from "react";
-import "bootstrap/dist/css/bootstrap.css";
-import Form from "./genForm";
-import "react-datetime/css/react-datetime.css";
-import Datetime from "react-datetime";
-import { BsCalendar2Date } from "react-icons/bs";
+import React, { useState, useRef } from 'react'
+import 'bootstrap/dist/css/bootstrap.css'
+import Form from './genForm'
+import 'react-datetime/css/react-datetime.css'
+import Datetime from 'react-datetime'
+import { BsCalendar2Date } from 'react-icons/bs'
 // import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
-import { toast } from "react-toastify";
+import { toast } from 'react-toastify'
 
 const ScheduleForm = ({ title, requestOrigin }) => {
-  const image = useRef(null);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [date, setDate] = useState(new Date());
-  const [query, setQuery] = useState("");
-  const [buttonText, setButtonText] = useState("Submit");
-  const [resume, setResume] = useState("");
-  const [resumeName, setResumeName] = useState("");
-  const [resumeType, setResumeType] = useState("");
-  const [resumeBase64, setResumeBase64] = useState("");
-  const [createObjectURL, setCreateObjectURL] = useState("");
+  const image = useRef(null)
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
+  const [date, setDate] = useState(new Date())
+  const [query, setQuery] = useState('')
+  const [buttonText, setButtonText] = useState('Submit')
+  const [resume, setResume] = useState('')
+  const [resumeName, setResumeName] = useState('')
+  const [resumeType, setResumeType] = useState('')
+  const [resumeBase64, setResumeBase64] = useState('')
+  const [createObjectURL, setCreateObjectURL] = useState('')
 
-  const submitBtn = useRef(null);
+  const submitBtn = useRef(null)
 
   const uploadToClient = async (event) => {
     if (event.target.files && event.target.files[0]) {
-      const file = event.target.files[0];
-      const base64 = await convertBase64(file);
+      const file = event.target.files[0]
+      const base64 = await convertBase64(file)
       // setResume(file);
-      setResumeName(file.name);
-      setResumeType(file.type);
-      setResumeBase64(base64.split(",")[1]);
-      setCreateObjectURL(URL.createObjectURL(file));
+      setResumeName(file.name)
+      setResumeType(file.type)
+      setResumeBase64(base64.split(',')[1])
+      setCreateObjectURL(URL.createObjectURL(file))
     }
-  };
+  }
 
   const convertBase64 = (file) => {
     return new Promise((resolve, reject) => {
-      const fileReader = new FileReader();
-      fileReader.readAsDataURL(file);
+      const fileReader = new FileReader()
+      fileReader.readAsDataURL(file)
 
       fileReader.onload = () => {
-        resolve(fileReader.result);
-      };
+        resolve(fileReader.result)
+      }
 
       fileReader.onerror = (error) => {
-        reject(error);
-      };
-    });
-  };
+        reject(error)
+      }
+    })
+  }
 
   // const { executeRecaptcha } = useGoogleReCaptcha();
 
@@ -64,18 +64,18 @@ const ScheduleForm = ({ title, requestOrigin }) => {
   // };
 
   const submitEnquiryForm = (e) => {
-    if (name == "" || email == "" || phone == "") {
+    if (name == '' || email == '' || phone == '') {
       // setFileAlert(true);
-      return;
+      return
     }
-    submitBtn.disabled = true;
+    submitBtn.disabled = true
     submitBtn.innerHTML =
-      '<span class="spinner-border spinner-border-sm"></span> Loading...';
-    fetch("/api/scheduleMeeting", {
-      method: "POST",
+      '<span class="spinner-border spinner-border-sm"></span> Loading...'
+    fetch('/api/scheduleMeeting', {
+      method: 'POST',
       headers: {
-        Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json",
+        Accept: 'application/json, text/plain, */*',
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify({
         email: email,
@@ -92,51 +92,65 @@ const ScheduleForm = ({ title, requestOrigin }) => {
     })
       .then((res) => res.json())
       .then((res) => {
-        console.log("res", res);
-        if (res?.status === "success") {
-          setEmail("");
-          setName("");
-          setPhone("");
-          setQuery("");
-          setDate("");
-          submitBtn.innerHTML = "SEND NOW";
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = "Send Now";
+        console.log('res', res)
+        if (res?.status === 'success') {
+          setEmail('')
+          setName('')
+          setPhone('')
+          setQuery('')
+          setDate('')
+          submitBtn.innerHTML = 'SEND NOW'
+          submitBtn.disabled = false
+          submitBtn.innerHTML = 'Send Now'
 
-          toast.success("Success! Email Sent Successful", {
-            position: "top-right",
+          toast.success('Success! Email Sent Successful', {
+            position: 'top-right',
             autoClose: 5000,
             hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-          });
+          })
         } else {
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = "Send Now";
+          submitBtn.disabled = false
+          submitBtn.innerHTML = 'Send Now'
 
-          toast.error("Error! Email Not Sent", {
-            position: "top-right",
+          toast.error('Error! Email Not Sent', {
+            position: 'top-right',
             autoClose: 5000,
             hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-          });
+          })
         }
-      });
-  };
+      })
+  }
 
   const formFields = [
     {
-      pattern: "[0-9]{3}[0-9]{3}[0-9]{4}",
+      pattern: '[0-9]{3}[0-9]{3}[0-9]{4}',
       icon: (
-        <svg className="form-name-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path opacity="0.3" d="M12 11.5C9.79086 11.5 8 9.70914 8 7.5C8 5.29086 9.79086 3.5 12 3.5C14.2091 3.5 16 5.29086 16 7.5C16 9.70914 14.2091 11.5 12 11.5Z" fill="black" />
-                                                                        <path d="M3.00065 20.6992C3.38826 15.9265 7.26191 13.5 11.9833 13.5C16.7712 13.5 20.7049 15.7932 20.9979 20.7C21.0096 20.8955 20.9979 21.5 20.2467 21.5C16.5411 21.5 11.0347 21.5 3.7275 21.5C3.47671 21.5 2.97954 20.9592 3.00065 20.6992Z" fill="black" />
-                                                                    </svg>
+        <svg
+          className="form-name-icon"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.3"
+            d="M12 11.5C9.79086 11.5 8 9.70914 8 7.5C8 5.29086 9.79086 3.5 12 3.5C14.2091 3.5 16 5.29086 16 7.5C16 9.70914 14.2091 11.5 12 11.5Z"
+            fill="black"
+          />
+          <path
+            d="M3.00065 20.6992C3.38826 15.9265 7.26191 13.5 11.9833 13.5C16.7712 13.5 20.7049 15.7932 20.9979 20.7C21.0096 20.8955 20.9979 21.5 20.2467 21.5C16.5411 21.5 11.0347 21.5 3.7275 21.5C3.47671 21.5 2.97954 20.9592 3.00065 20.6992Z"
+            fill="black"
+          />
+        </svg>
       ),
       render: () => {
         return (
@@ -148,13 +162,13 @@ const ScheduleForm = ({ title, requestOrigin }) => {
             onChange={(e) => setName(e.target.value)}
             required
           />
-        );
+        )
       },
     },
     {
       icon: (
         <svg
-        className="form-email-icon"
+          className="form-email-icon"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -190,14 +204,17 @@ const ScheduleForm = ({ title, requestOrigin }) => {
             onChange={(e) => setEmail(e.target.value)}
             required
           />
-        );
+        )
       },
     },
     {
       icon: (
-        <svg 
-        className="form-phone-icon"
-        xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+        <svg
+          className="form-phone-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+        >
           <path
             fill="black"
             d="M12.2 10c-1.1-.1-1.7 1.4-2.5 1.8C8.4 12.5 6 10 6 10S3.5 7.6 4.1 6.3c.5-.8 2-1.4 1.9-2.5-.1-1-2.3-4.6-3.4-3.6C.2 2.4 0 3.3 0 5.1c-.1 3.1 3.9 7 3.9 7 .4.4 3.9 4 7 3.9 1.8 0 2.7-.2 4.9-2.6 1-1.1-2.5-3.3-3.6-3.4z"
@@ -214,24 +231,24 @@ const ScheduleForm = ({ title, requestOrigin }) => {
             onChange={(e) => setPhone(e.target.value)}
             required
           />
-        );
+        )
       },
     },
     {
-      icon: <BsCalendar2Date className="form-date-icon"/>,
+      icon: <BsCalendar2Date className="form-date-icon" />,
 
       render: () => {
         return (
           <div className="date-time">
             <Datetime
               className="date-value"
-              initialValue={"Select a date and time*"}
+              initialValue={'Select a date and time*'}
               selected={date}
               onChange={(date) => setDate(date)}
               required
             />
           </div>
-        );
+        )
       },
     },
     {
@@ -263,7 +280,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
-        );
+        )
       },
     },
     {
@@ -307,14 +324,14 @@ const ScheduleForm = ({ title, requestOrigin }) => {
                 </g>
               </svg>
               <span>
-                Attachment file{" "}
+                Attachment file{' '}
                 <span className="attachment-optional">(optional)</span>
               </span>
             </a>
           </div>
           <input
             ref={(selectImage) => {
-              image = selectImage;
+              image = selectImage
             }}
             onChange={uploadToClient}
             className="d-none"
@@ -327,14 +344,14 @@ const ScheduleForm = ({ title, requestOrigin }) => {
         </>
       ),
     },
-  ];
+  ]
 
-  const submitFunc = (submitBtnRef) => {};
+  const submitFunc = (submitBtnRef) => {}
 
   const submitButton = () => (
     <button
       ref={(submitBtnRef) => {
-        submitBtn = submitBtnRef;
+        submitBtn = submitBtnRef
       }}
       className="form-container-input-btn"
       type="submit"
@@ -342,7 +359,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
     >
       Submit
     </button>
-  );
+  )
   return (
     <Form
       fields={formFields}
@@ -351,7 +368,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
       submitFunc={submitEnquiryForm}
       submitButton={submitButton}
     />
-  );
-};
+  )
+}
 
-export default ScheduleForm;
+export default ScheduleForm

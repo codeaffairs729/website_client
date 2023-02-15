@@ -1,11 +1,11 @@
-import TechComponent from "../../components/techComponent";
-import HireServiceLayout from "../../components/hireServiceLayout";
-import Banner from "../../components/banner";
-import Link from "next/link";
-import Head from "next/head";
-import ScheduleForm from "../../components/schedule";
-const techTitle = "Mobile Solutions";
-import Image from "next/image";
+import TechComponent from '../../components/techComponent'
+import HireServiceLayout from '../../components/hireServiceLayout'
+import Banner from '../../components/banner'
+import Link from 'next/link'
+import Head from 'next/head'
+import ScheduleForm from '../../components/schedule'
+const techTitle = 'Mobile Solutions'
+import Image from 'next/image'
 
 const contentHeader1 = () => {
   return (
@@ -38,8 +38,8 @@ const contentHeader1 = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
 const content1 = () => {
   return (
@@ -164,15 +164,15 @@ const content1 = () => {
         <TechComponent />
       </div>
     </>
-  );
-};
+  )
+}
 
 const content7 = () => (
   <>
     <div className="hire-container-body-left-content-2"></div>
     <div className=""></div>
   </>
-);
+)
 
 // const content6 = () => (
 //   <div>
@@ -182,11 +182,11 @@ const content7 = () => (
 const content3 = () => (
   <div className="form-service">
     <ScheduleForm
-      title={"Schedule a Meeting"}
-      requestOrigin={"Request generated from mobile solution page"}
+      title={'Schedule a Meeting'}
+      requestOrigin={'Request generated from mobile solution page'}
     />
   </div>
-);
+)
 const MobileSolutions = () => {
   return (
     <>
@@ -215,7 +215,7 @@ const MobileSolutions = () => {
         bannerComponent={Banner}
       />
     </>
-  );
-};
+  )
+}
 
-export default MobileSolutions;
+export default MobileSolutions

@@ -1,10 +1,10 @@
-import TechComponent from "../../components/techComponent";
-import HireServiceLayout from "../../components/hireServiceLayout";
-import Banner from "../../components/banner";
-import Head from "next/head";
-const techTitle = "Dev Ops";
-import ScheduleForm from "../../components/schedule";
-import Image from "next/image";
+import TechComponent from '../../components/techComponent'
+import HireServiceLayout from '../../components/hireServiceLayout'
+import Banner from '../../components/banner'
+import Head from 'next/head'
+const techTitle = 'Dev Ops'
+import ScheduleForm from '../../components/schedule'
+import Image from 'next/image'
 const contentHeader1 = () => {
   return (
     <>
@@ -51,8 +51,8 @@ const contentHeader1 = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
 const content1 = () => {
   return (
@@ -89,7 +89,7 @@ const content1 = () => {
         </ul>
         <p className="hire-p list-p">
           We develop a DevOps Assessment roadmap just by envisioning the right
-          state and also recognizing the trackable metrics.{" "}
+          state and also recognizing the trackable metrics.{' '}
         </p>
         <ul className="hire-list">
           <li>
@@ -163,24 +163,24 @@ const content1 = () => {
         <TechComponent />
       </div>
     </>
-  );
-};
+  )
+}
 
 const content7 = () => (
   <>
     <div className="hire-container-body-left-content-2"></div>
   </>
-);
+)
 
 // const content6 = () => <TechComponent />;
 const content3 = () => (
   <div className="form-service">
     <ScheduleForm
-      title={"Schedule a Meeting"}
-      requestOrigin={"Request generated from dev-ops page"}
+      title={'Schedule a Meeting'}
+      requestOrigin={'Request generated from dev-ops page'}
     />
   </div>
-);
+)
 const DevOps = () => {
   return (
     <>
@@ -200,10 +200,10 @@ const DevOps = () => {
         // techImage={techImage}
         isIconExit={true}
         bannerComponent={Banner}
-        requestOrigin={"Requested from dev-ops solution page"}
+        requestOrigin={'Requested from dev-ops solution page'}
       />
     </>
-  );
-};
+  )
+}
 
-export default DevOps;
+export default DevOps

@@ -1,6 +1,6 @@
-import Header from "../pages/includes/header";
-import Footer from "../pages/includes/footer";
-import Image from "next/image";
+import Header from '../pages/includes/header'
+import Footer from '../pages/includes/footer'
+import Image from 'next/image'
 const HireServiceLayout = ({
   bannerComponent,
   contentHeader,
@@ -70,7 +70,7 @@ const HireServiceLayout = ({
       <div>{content6 && content6()}</div>
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default HireServiceLayout;
+export default HireServiceLayout

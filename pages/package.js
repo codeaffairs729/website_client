@@ -1,75 +1,75 @@
-import React, { useState, useRef } from "react";
-import Slider from "react-slick";
-import SubSlider from "../components/index/services/subSlider";
-import SliderButton from "../components/sliderButton";
-import Image from "next/image";
+import React, { useState, useRef } from 'react'
+import Slider from 'react-slick'
+import SubSlider from '../components/index/services/subSlider'
+import SliderButton from '../components/sliderButton'
+import Image from 'next/image'
 const Package = () => {
-  const [isTrue, setIsTrue] = useState(true);
+  const [isTrue, setIsTrue] = useState(true)
   const gotoNext = () => {
-    slider1.current.slickNext();
-  };
+    slider1.current.slickNext()
+  }
   const gotoPrev = () => {
-    slider1.current.slickPrev();
-  };
+    slider1.current.slickPrev()
+  }
   const designIcons = [
-    ["Figma", "Figma Icon", "/icons/figma.webp", "27", "40"],
-    ["Miro", "Miro Icon", "/icons/miro.webp", "40", "40"],
-    ["Sketch", "Sketch Icon", "/icons/sketch_1.webp", "45", "40"],
-    ["Adobe Xd", "Adobe XD Icon", "/icons/adobe_xd.webp", "42", "40"],
-    ["Framer", "Framer Icon", "/icons/framer.webp", "40", "40"],
-    ["Ant Design", "Ant Design Icon", "/icons/ant-design.webp", "40", "40"],
-    ["Material UI", "Material UI Icon", "/icons/material_ui.webp", "51", "40"],
-    ["Tailwind", "Tailwind Icon", "/icons/tailwind.webp", "67", "40"],
-    ["Booststrap", "Bootstrap Icon", "/icons/bootstrap_1.webp", "40", "40"],
-    ["Principle", "Principle Icon", "/icons/principle.webp", "40", "40"],
-  ];
+    ['Figma', 'Figma Icon', '/icons/figma.webp', '27', '40'],
+    ['Miro', 'Miro Icon', '/icons/miro.webp', '40', '40'],
+    ['Sketch', 'Sketch Icon', '/icons/sketch_1.webp', '45', '40'],
+    ['Adobe Xd', 'Adobe XD Icon', '/icons/adobe_xd.webp', '42', '40'],
+    ['Framer', 'Framer Icon', '/icons/framer.webp', '40', '40'],
+    ['Ant Design', 'Ant Design Icon', '/icons/ant-design.webp', '40', '40'],
+    ['Material UI', 'Material UI Icon', '/icons/material_ui.webp', '51', '40'],
+    ['Tailwind', 'Tailwind Icon', '/icons/tailwind.webp', '67', '40'],
+    ['Booststrap', 'Bootstrap Icon', '/icons/bootstrap_1.webp', '40', '40'],
+    ['Principle', 'Principle Icon', '/icons/principle.webp', '40', '40'],
+  ]
 
   const webIcons = [
-    ["Ruby on Rails", "Rails PNG", "/icons/rails.webp", "31", "40"],
-    ["ReactJs", "Reactjs Icon", "/icons/reactjs.webp", "40", "40"],
-    ["NextJs", "Nextjs Icon", "/icons/nextjs.webp", "67", "40"],
-    ["VueJs", "Vuejs Icon", "/icons/vuejs.webp", "44", "40"],
-    ["NuxtJs", "Nuxtjs Icon", "/icons/nuxtjs.webp", "54", "40"],
-    ["NodeJs", "Nodejs Icon", "/icons/nodejs.webp", "37", "40"],
-    ["Laravel", "Laravel Icon", "/icons/laravel.webp", "39", "40"],
-    ["Shopify", "Shopify PNG Image", "/images/shopify.webp", "72", "40"],
-    ["Wordpress", "Wordpress Icon", "/icons/wordpress.webp", "40", "40"],
-  ];
+    ['Ruby on Rails', 'Rails PNG', '/icons/rails.webp', '31', '40'],
+    ['ReactJs', 'Reactjs Icon', '/icons/reactjs.webp', '40', '40'],
+    ['NextJs', 'Nextjs Icon', '/icons/nextjs.webp', '67', '40'],
+    ['VueJs', 'Vuejs Icon', '/icons/vuejs.webp', '44', '40'],
+    ['NuxtJs', 'Nuxtjs Icon', '/icons/nuxtjs.webp', '54', '40'],
+    ['NodeJs', 'Nodejs Icon', '/icons/nodejs.webp', '37', '40'],
+    ['Laravel', 'Laravel Icon', '/icons/laravel.webp', '39', '40'],
+    ['Shopify', 'Shopify PNG Image', '/images/shopify.webp', '72', '40'],
+    ['Wordpress', 'Wordpress Icon', '/icons/wordpress.webp', '40', '40'],
+  ]
 
   const mobileIcons = [
-    ["React Native", "Reactjs Icon", "/icons/reactjs.webp", "40", "40"],
-    ["Ionic", "Ionic Icon", "/icons/ionic.webp", "40", "40"],
-    ["Flutter", "Flutter PNG Image", "/images/flutter.webp", "33", "40"],
-    ["Swift / iOS", "Swift Icon", "/icons/swift.webp", "40", "40"],
-    ["Android", "Android", "/images/android_4.webp", "42", "40"],
-  ];
+    ['React Native', 'Reactjs Icon', '/icons/reactjs.webp', '40', '40'],
+    ['Ionic', 'Ionic Icon', '/icons/ionic.webp', '40', '40'],
+    ['Flutter', 'Flutter PNG Image', '/images/flutter.webp', '33', '40'],
+    ['Swift / iOS', 'Swift Icon', '/icons/swift.webp', '40', '40'],
+    ['Android', 'Android', '/images/android_4.webp', '42', '40'],
+  ]
 
-  const slider1 = useRef(null);
-  const subSlider1 = useRef(null);
-  const subSlider2 = useRef(null);
-  const subSlider3 = useRef(null);
+  const slider1 = useRef(null)
+  const subSlider1 = useRef(null)
+  const subSlider2 = useRef(null)
+  const subSlider3 = useRef(null)
 
   const play = () => {
     // slider1.current.slickPlay();
-  };
+  }
 
   const pause = () => {
     // slider1.current.slickPause();
-  };
+  }
 
   const subSliderPause = () => {
     // slider1.current.slickPause();
     // subSlider1.slickPause();
     // subSlider2.slickPause();
     // subSlider3.slickPause();
-  };
+  }
 
   const subSliderPlay = () => {
     // slider1.current.slickPlay();
     // subSlider1.slickPlay();
     // subSlider2.slickPlay();
     // subSlider3.slickPlay();
-  };
+  }
 
   const packageSettings = {
     slidesToShow: 1,
@@ -83,7 +83,7 @@ const Package = () => {
     adaptiveHeight: true,
     autoplay: isTrue,
     pauseOnHover: false,
-    lazyload: "progressive",
+    lazyload: 'progressive',
     responsive: [
       {
         breakpoint: 1199,
@@ -101,7 +101,7 @@ const Package = () => {
         },
       },
     ],
-  };
+  }
 
   const packageSubsliderSettings = {
     dots: false,
@@ -134,7 +134,7 @@ const Package = () => {
         },
       },
     ],
-  };
+  }
 
   return (
     <>
@@ -244,7 +244,7 @@ const Package = () => {
                         >
                           <Slider
                             ref={(newSubSlider1) => {
-                              subSlider1 = newSubSlider1;
+                              subSlider1 = newSubSlider1
                             }}
                             className="package-subslider d-flex align-items-center"
                             {...packageSubsliderSettings}
@@ -259,7 +259,7 @@ const Package = () => {
                                   imgWidth={element[3]}
                                   imgHeight={element[4]}
                                 />
-                              );
+                              )
                             })}
                           </Slider>
                         </div>
@@ -363,7 +363,7 @@ const Package = () => {
                         >
                           <Slider
                             ref={(newSubSlider2) => {
-                              subSlider2 = newSubSlider2;
+                              subSlider2 = newSubSlider2
                             }}
                             {...packageSubsliderSettings}
                             className="package-subslider d-flex align-items-center"
@@ -378,7 +378,7 @@ const Package = () => {
                                   imgWidth={element[3]}
                                   imgHeight={element[4]}
                                 />
-                              );
+                              )
                             })}
                           </Slider>
                         </div>
@@ -475,7 +475,7 @@ const Package = () => {
                         >
                           <Slider
                             ref={(newSubSlider3) => {
-                              subSlider3 = newSubSlider3;
+                              subSlider3 = newSubSlider3
                             }}
                             {...packageSubsliderSettings}
                             className="package-subslider d-flex align-items-center"
@@ -490,7 +490,7 @@ const Package = () => {
                                   imgWidth={element[3]}
                                   imgHeight={element[4]}
                                 />
-                              );
+                              )
                             })}
                           </Slider>
                         </div>
@@ -515,7 +515,7 @@ const Package = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Package;
+export default Package

@@ -1,15 +1,15 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef } from 'react'
 // import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
-import Image from "next/image";
+import Image from 'next/image'
 
 const Access = () => {
-  const [email, setEmail] = useState("");
-  const [notfication, setNotification] = useState("");
+  const [email, setEmail] = useState('')
+  const [notfication, setNotification] = useState('')
 
   // const { executeRecaptcha } = useGoogleReCaptcha();
-  const submitBtn = useRef(null);
+  const submitBtn = useRef(null)
 
   // const handleSubmit = (e) => {
   //   e.preventDefault();
@@ -29,33 +29,33 @@ const Access = () => {
   // };
 
   const submitEnquiryForm = (gReCaptchaToken) => {
-    submitBtn.disabled = true;
+    submitBtn.disabled = true
     submitBtn.innerHTML =
-      '<span class="spinner-border spinner-border-sm"></span> Loading...';
+      '<span class="spinner-border spinner-border-sm"></span> Loading...'
 
-    fetch("/api/contact", {
-      method: "POST",
+    fetch('/api/contact', {
+      method: 'POST',
       headers: {
-        Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json",
+        Accept: 'application/json, text/plain, */*',
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        name: "Anonymous",
-        phone: "NA",
+        name: 'Anonymous',
+        phone: 'NA',
         email: email,
-        message: "Enquiry",
+        message: 'Enquiry',
         // gRecaptchaToken: gReCaptchaToken,
       }),
     })
       .then((res) => res.json())
       .then((res) => {
-        console.log(res);
-        if (res?.status === "success") {
-          console.log(res?.message);
-          setEmail("");
+        console.log(res)
+        if (res?.status === 'success') {
+          console.log(res?.message)
+          setEmail('')
 
-          submitBtn.disabled = true;
-          submitBtn.innerHTML = "Submitted";
+          submitBtn.disabled = true
+          submitBtn.innerHTML = 'Submitted'
 
           // toast.success('Success! Email Sent Successful', {
           //   position: "top-right",
@@ -66,12 +66,12 @@ const Access = () => {
           //   draggable: true,
           //   progress: undefined,
           // });
-          setNotification(res?.message);
+          setNotification(res?.message)
         } else {
-          console.log(res?.message);
-          setNotification(res?.message);
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = "Request Contact";
+          console.log(res?.message)
+          setNotification(res?.message)
+          submitBtn.disabled = false
+          submitBtn.innerHTML = 'Request Contact'
 
           // toast.error('Error! Email Not Sent', {
           //   position: "top-right",
@@ -83,8 +83,8 @@ const Access = () => {
           //   progress: undefined,
           // });
         }
-      });
-  };
+      })
+  }
 
   return (
     <>
@@ -196,7 +196,7 @@ const Access = () => {
               </div>
               <button
                 ref={(submitBtnRef) => {
-                  submitBtn = submitBtnRef;
+                  submitBtn = submitBtnRef
                 }}
                 className="request_connect_btn access__btn btn btn_purple"
                 type="submit"
@@ -425,7 +425,7 @@ const Access = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Access;
+export default Access

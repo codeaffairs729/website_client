@@ -1,8 +1,8 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react'
+import Image from 'next/image'
 
 const SubSlider = (props) => {
-  const { techImage, techName, imgWidth, imgHeight } = props;
+  const { techImage, techName, imgWidth, imgHeight } = props
   return (
     <>
       <div className="row">
@@ -20,7 +20,7 @@ const SubSlider = (props) => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default SubSlider;
+export default SubSlider

@@ -1,14 +1,14 @@
-import TechComponent from "../../components/techComponent";
-import HireServiceLayout from "../../components/hireServiceLayout";
-import Banner from "../../components/banner";
-import Head from "next/head";
-import ScheduleForm from "../../components/schedule";
-import Image from "next/image";
-import Link from "next/link";
-const techTitle = "Strapi";
+import TechComponent from '../../components/techComponent'
+import HireServiceLayout from '../../components/hireServiceLayout'
+import Banner from '../../components/banner'
+import Head from 'next/head'
+import ScheduleForm from '../../components/schedule'
+import Image from 'next/image'
+import Link from 'next/link'
+const techTitle = 'Strapi'
 
-const contentHeader = () => <div></div>;
-const contentHeaderLeft = () => <div></div>;
+const contentHeader = () => <div></div>
+const contentHeaderLeft = () => <div></div>
 
 const contentHeader1 = () => {
   return (
@@ -40,8 +40,8 @@ const contentHeader1 = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
 const content1 = () => {
   return (
@@ -58,7 +58,7 @@ const content1 = () => {
         <h3 className="hire-h3">Develop Applications Faster</h3>
         <p className="hire-p">
           Building customizable, performant, and self-hosted content API that
-          has never been facile.{" "}
+          has never been facile.{' '}
         </p>
         <h3 className="hire-h3">Customizable</h3>
         <p className="hire-p">
@@ -98,7 +98,7 @@ const content1 = () => {
         <p className="hire-p">
           We create customized Strapi (CMS) Content Management Systems as per
           your business interface. Our skilled team of Strapi developers develop
-          the best and reliable softwares for you.{" "}
+          the best and reliable softwares for you.{' '}
         </p>
 
         <div className="shade-1">
@@ -164,28 +164,28 @@ const content1 = () => {
         {/* CONTENT7 END */}
       </div>
     </>
-  );
-};
+  )
+}
 const content7 = () => (
   <>
     <div></div>
   </>
-);
+)
 
-const bannerComponent = () => <Banner />;
+const bannerComponent = () => <Banner />
 
 // const content6 = () => <TechComponent />;
-const content4 = () => <div></div>;
-const content5 = () => <div></div>;
-const content2 = () => <div></div>;
+const content4 = () => <div></div>
+const content5 = () => <div></div>
+const content2 = () => <div></div>
 const content3 = () => (
   <div className="form-service">
     <ScheduleForm
-      title={"Schedule a Meeting"}
-      requestOrigin={"Request generated from hire-team page"}
+      title={'Schedule a Meeting'}
+      requestOrigin={'Request generated from hire-team page'}
     />
   </div>
-);
+)
 const Strapi = () => {
   return (
     <>
@@ -217,10 +217,10 @@ const Strapi = () => {
         // techImage={techImage}
         bannerComponent={bannerComponent}
         contentHeader={contentHeader}
-        requestOrigin={"Requested from Mobile solution page"}
+        requestOrigin={'Requested from Mobile solution page'}
       />
     </>
-  );
-};
+  )
+}
 
-export default Strapi;
+export default Strapi

@@ -1,10 +1,10 @@
-import TechComponent from "../../components/techComponent";
-import HireServiceLayout from "../../components/hireServiceLayout";
-import Banner from "../../components/banner";
-import Head from "next/head";
-const techTitle = "Web Solutions";
-import ScheduleForm from "../../components/schedule";
-import Image from "next/image";
+import TechComponent from '../../components/techComponent'
+import HireServiceLayout from '../../components/hireServiceLayout'
+import Banner from '../../components/banner'
+import Head from 'next/head'
+const techTitle = 'Web Solutions'
+import ScheduleForm from '../../components/schedule'
+import Image from 'next/image'
 
 // const contentHeader=()=><div></div>
 const contentHeader1 = () => {
@@ -38,8 +38,8 @@ const contentHeader1 = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
 const content1 = () => {
   return (
@@ -115,7 +115,7 @@ const content1 = () => {
           as clients.
         </p>
         <h3 className="hire-h3">
-          Choose Next.Js development services because it offers:{" "}
+          Choose Next.Js development services because it offers:{' '}
         </h3>
         <ul className="hire-list">
           <li>Multiple Rendering Capabilities</li>
@@ -140,7 +140,7 @@ const content1 = () => {
           <br />
         </p>
         <h3 className="hire-h3">
-          Choose VueJs/NuxtJs development services because:{" "}
+          Choose VueJs/NuxtJs development services because:{' '}
         </h3>
         <ul className="hire-list">
           <li>It offers a Performance boost</li>
@@ -177,7 +177,7 @@ const content1 = () => {
         <p className="hire-p">
           As a leading Laravel development company, we offer cutting-edge
           services that will help your business to reach new heights of success.
-          We offer Laravel development solutions to businesses of all sizes.{" "}
+          We offer Laravel development solutions to businesses of all sizes.{' '}
           <br />
           <br />
           We, at Code Garage Tech, have years of experience in providing Laravel
@@ -227,7 +227,7 @@ const content1 = () => {
           height of success with WordPress Development Solutions.
         </p>
         <h3 className="hire-h3">
-          Our WordPress Development Services Include:{" "}
+          Our WordPress Development Services Include:{' '}
         </h3>
         <ul className="hire-list">
           <li>WordPress SEO</li>
@@ -238,23 +238,23 @@ const content1 = () => {
           <li>WordPress Bug Fixing</li>
           <li>WordPress Maintenance and Support</li>
         </ul>
-        <TechComponent techList={"frontTech"} />
+        <TechComponent techList={'frontTech'} />
       </div>
     </>
-  );
-};
+  )
+}
 
-const content7 = () => <></>;
+const content7 = () => <></>
 
 // const content6 = () => <TechComponent techList={"frontTech"} />;
 const content3 = () => (
   <div className="form-service">
     <ScheduleForm
-      title={"Schedule a Meeting"}
-      requestOrigin={"Request generated from web services page"}
+      title={'Schedule a Meeting'}
+      requestOrigin={'Request generated from web services page'}
     />
   </div>
-);
+)
 const WebServices = () => {
   return (
     <>
@@ -284,7 +284,7 @@ const WebServices = () => {
         bannerComponent={Banner}
       />
     </>
-  );
-};
+  )
+}
 
-export default WebServices;
+export default WebServices

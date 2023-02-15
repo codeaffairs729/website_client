@@ -1,5 +1,5 @@
-import ModalDialog from "../components/ModalDialog";
-import Image from "next/image";
+import ModalDialog from '../components/ModalDialog'
+import Image from 'next/image'
 
 const Work = () => {
   return (
@@ -469,7 +469,7 @@ const Work = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Work;
+export default Work

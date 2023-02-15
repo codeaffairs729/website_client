@@ -1,78 +1,78 @@
-import React, { useEffect, useState, useRef } from "react";
-import Image from "next/image";
+import React, { useEffect, useState, useRef } from 'react'
+import Image from 'next/image'
 const Like = () => {
-  const dropdowns = useRef(null);
+  const dropdowns = useRef(null)
 
   const handleOnMouseOverList = (e) => {
-    clearInterval(interval);
-  };
+    clearInterval(interval)
+  }
   const handleOnListLeave = (e) => {
-    var dropdownsEle = dropdowns.getElementsByClassName("like-options");
+    var dropdownsEle = dropdowns.getElementsByClassName('like-options')
     for (let i = 0; i < dropdownsEle.length; i++) {
-      if (dropdownsEle[i].ariaExpanded == "true") {
-        dropdownsEle[i].click();
+      if (dropdownsEle[i].ariaExpanded == 'true') {
+        dropdownsEle[i].click()
       }
     }
-  };
+  }
 
-  const [likeOptionOne, setLikeOptionOne] = useState(false);
-  const [likeOptionTwo, setLikeOptionTwo] = useState(false);
-  const [likeOptionThree, setLikeOptionThree] = useState(false);
-  const [likeOptionFour, setLikeOptionFour] = useState(false);
+  const [likeOptionOne, setLikeOptionOne] = useState(false)
+  const [likeOptionTwo, setLikeOptionTwo] = useState(false)
+  const [likeOptionThree, setLikeOptionThree] = useState(false)
+  const [likeOptionFour, setLikeOptionFour] = useState(false)
 
   const likeOptionOneFunc = () => {
-    const likeOptionOneStatus = likeOptionOne ? false : true;
-    setLikeOptionOne(likeOptionOneStatus);
-    setLikeOptionTwo(false);
-    setLikeOptionThree(false);
-    setLikeOptionFour(false);
-  };
+    const likeOptionOneStatus = likeOptionOne ? false : true
+    setLikeOptionOne(likeOptionOneStatus)
+    setLikeOptionTwo(false)
+    setLikeOptionThree(false)
+    setLikeOptionFour(false)
+  }
 
   const likeOptionTwoFunc = () => {
-    const likeOptionTwoStatus = likeOptionTwo ? false : true;
-    setLikeOptionTwo(likeOptionTwoStatus);
-    setLikeOptionOne(false);
-    setLikeOptionThree(false);
-    setLikeOptionFour(false);
-  };
+    const likeOptionTwoStatus = likeOptionTwo ? false : true
+    setLikeOptionTwo(likeOptionTwoStatus)
+    setLikeOptionOne(false)
+    setLikeOptionThree(false)
+    setLikeOptionFour(false)
+  }
 
   const likeOptionThreeFunc = () => {
-    const likeOptionThreeStatus = likeOptionThree ? false : true;
-    setLikeOptionThree(likeOptionThreeStatus);
-    setLikeOptionTwo(false);
-    setLikeOptionOne(false);
-    setLikeOptionFour(false);
-  };
+    const likeOptionThreeStatus = likeOptionThree ? false : true
+    setLikeOptionThree(likeOptionThreeStatus)
+    setLikeOptionTwo(false)
+    setLikeOptionOne(false)
+    setLikeOptionFour(false)
+  }
 
   const likeOptionFourFunc = () => {
-    const likeOptionFourStatus = likeOptionFour ? false : true;
-    setLikeOptionFour(likeOptionFourStatus);
-    setLikeOptionThree(false);
-    setLikeOptionTwo(false);
-    setLikeOptionOne(false);
-  };
+    const likeOptionFourStatus = likeOptionFour ? false : true
+    setLikeOptionFour(likeOptionFourStatus)
+    setLikeOptionThree(false)
+    setLikeOptionTwo(false)
+    setLikeOptionOne(false)
+  }
 
-  var interval;
+  var interval
   useEffect(() => {
-    const dropdownsEle = dropdowns.getElementsByClassName("like-options");
+    const dropdownsEle = dropdowns.getElementsByClassName('like-options')
 
-    const cnt = 0;
+    const cnt = 0
     interval = setInterval(() => {
       for (let i = 0; i < dropdownsEle.length; i++) {
-        if (dropdownsEle[i].ariaExpanded == "true") {
-          dropdownsEle[i].click();
+        if (dropdownsEle[i].ariaExpanded == 'true') {
+          dropdownsEle[i].click()
         }
       }
       if (cnt < 4) {
-        dropdownsEle[cnt].click();
-        cnt = cnt + 1;
+        dropdownsEle[cnt].click()
+        cnt = cnt + 1
       } else {
-        dropdownsEle[0].click();
-        cnt = 1;
+        dropdownsEle[0].click()
+        cnt = 1
       }
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [])
 
   return (
     <>
@@ -80,7 +80,7 @@ const Like = () => {
         <div className="like__center center">
           <div className="like__container">
             <div className="like__wrap">
-              <h2 className="like__title title" >
+              <h2 className="like__title title">
                 Why Code Garage
                 <span className="title__color">?</span>
               </h2>
@@ -94,7 +94,7 @@ const Like = () => {
                 </p> */}
                 <ul
                   ref={(dropdownsRef) => {
-                    dropdowns = dropdownsRef;
+                    dropdowns = dropdownsRef
                   }}
                   className="like-list text-start d-inline-block w-100"
                   // data-aos="animation-scale-y"
@@ -102,8 +102,8 @@ const Like = () => {
                 >
                   <li>
                     <div
-                      // onMouseOut={handleOnListLeave}
-                      // onMouseOver={handleOnMouseOverList}
+                    // onMouseOut={handleOnListLeave}
+                    // onMouseOver={handleOnMouseOverList}
                     >
                       <a
                         // data-bs-toggle="collapse"
@@ -127,14 +127,14 @@ const Like = () => {
                         in custom web development services. Code Garage Tech is
                         devoted to providing one-of-a-kind solutions for each
                         website design project and has assisted many customers
-                        in realizing their goals.{" "}
+                        in realizing their goals.{' '}
                       </div>
                     </div>
                   </li>
                   <li data-id="2" className="list-items">
                     <div
-                      // onMouseOut={handleOnListLeave}
-                      // onMouseOver={handleOnMouseOverList}
+                    // onMouseOut={handleOnListLeave}
+                    // onMouseOver={handleOnMouseOverList}
                     >
                       <a
                         // data-bs-toggle="collapse"
@@ -163,8 +163,8 @@ const Like = () => {
                   </li>
                   <li data-id="3" className="list-items">
                     <div
-                      // onMouseOut={handleOnListLeave}
-                      // onMouseOver={handleOnMouseOverList}
+                    // onMouseOut={handleOnListLeave}
+                    // onMouseOver={handleOnMouseOverList}
                     >
                       <a
                         // data-bs-toggle="collapse"
@@ -192,8 +192,8 @@ const Like = () => {
                   </li>
                   <li data-id="4" className="list-items">
                     <div
-                      // onMouseOut={handleOnListLeave}
-                      // onMouseOver={handleOnMouseOverList}
+                    // onMouseOut={handleOnListLeave}
+                    // onMouseOver={handleOnMouseOverList}
                     >
                       <a
                         // data-bs-toggle="collapse"
@@ -256,7 +256,7 @@ const Like = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Like;
+export default Like

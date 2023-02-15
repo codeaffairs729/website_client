@@ -1,54 +1,54 @@
-import React, { useState, useRef } from "react";
-import "bootstrap/dist/css/bootstrap.css";
-import ScheduleMeetingForm from "./scheduleMeetingForm";
-import "react-datetime/css/react-datetime.css";
-import Datetime from "react-datetime";
+import React, { useState, useRef } from 'react'
+import 'bootstrap/dist/css/bootstrap.css'
+import ScheduleMeetingForm from './scheduleMeetingForm'
+import 'react-datetime/css/react-datetime.css'
+import Datetime from 'react-datetime'
 // import { BsCalendar2Date } from "react-icons/bs";
 // import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer, toast } from 'react-toastify'
 
 const AssistanceForm = ({ title, requestOrigin }) => {
-  const image = useRef(null);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [date, setDate] = useState(new Date());
-  const [query, setQuery] = useState("");
-  const [buttonText, setButtonText] = useState("Submit");
-  const [resume, setResume] = useState("");
-  const [resumeName, setResumeName] = useState("");
-  const [resumeType, setResumeType] = useState("");
-  const [resumeBase64, setResumeBase64] = useState("");
-  const [createObjectURL, setCreateObjectURL] = useState("");
+  const image = useRef(null)
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
+  const [date, setDate] = useState(new Date())
+  const [query, setQuery] = useState('')
+  const [buttonText, setButtonText] = useState('Submit')
+  const [resume, setResume] = useState('')
+  const [resumeName, setResumeName] = useState('')
+  const [resumeType, setResumeType] = useState('')
+  const [resumeBase64, setResumeBase64] = useState('')
+  const [createObjectURL, setCreateObjectURL] = useState('')
 
-  const submitBtn = useRef(null);
+  const submitBtn = useRef(null)
 
   const uploadToClient = async (event) => {
     if (event.target.files && event.target.files[0]) {
-      const file = event.target.files[0];
-      const base64 = await convertBase64(file);
+      const file = event.target.files[0]
+      const base64 = await convertBase64(file)
       // setResume(file);
-      setResumeName(file.name);
-      setResumeType(file.type);
-      setResumeBase64(base64.split(",")[1]);
-      setCreateObjectURL(URL.createObjectURL(file));
+      setResumeName(file.name)
+      setResumeType(file.type)
+      setResumeBase64(base64.split(',')[1])
+      setCreateObjectURL(URL.createObjectURL(file))
     }
-  };
+  }
 
   const convertBase64 = (file) => {
     return new Promise((resolve, reject) => {
-      const fileReader = new FileReader();
-      fileReader.readAsDataURL(file);
+      const fileReader = new FileReader()
+      fileReader.readAsDataURL(file)
 
       fileReader.onload = () => {
-        resolve(fileReader.result);
-      };
+        resolve(fileReader.result)
+      }
 
       fileReader.onerror = (error) => {
-        reject(error);
-      };
-    });
-  };
+        reject(error)
+      }
+    })
+  }
 
   // const { executeRecaptcha } = useGoogleReCaptcha();
 
@@ -65,19 +65,19 @@ const AssistanceForm = ({ title, requestOrigin }) => {
   // };
 
   const submitEnquiryForm = (e) => {
-     e.preventDefault();
-    if (name == "" || email == "" || phone == "") {
+    e.preventDefault()
+    if (name == '' || email == '' || phone == '') {
       // setFileAlert(true);
-      return;
+      return
     }
-    submitBtn.disabled = true;
+    submitBtn.disabled = true
     submitBtn.innerHTML =
-      '<span class="spinner-border spinner-border-sm"></span> Loading...';
-    fetch("/api/scheduleMeeting", {
-      method: "POST",
+      '<span class="spinner-border spinner-border-sm"></span> Loading...'
+    fetch('/api/scheduleMeeting', {
+      method: 'POST',
       headers: {
-        Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json",
+        Accept: 'application/json, text/plain, */*',
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify({
         email: email,
@@ -93,49 +93,49 @@ const AssistanceForm = ({ title, requestOrigin }) => {
     })
       .then((res) => res.json())
       .then((res) => {
-        if (res?.status === "success") {
-          setEmail("");
-          setName("");
-          setPhone("");
-          setQuery("");
-          setDate("");
-          submitBtn.innerHTML = "SEND NOW";
+        if (res?.status === 'success') {
+          setEmail('')
+          setName('')
+          setPhone('')
+          setQuery('')
+          setDate('')
+          submitBtn.innerHTML = 'SEND NOW'
 
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = "Send Now";
+          submitBtn.disabled = false
+          submitBtn.innerHTML = 'Send Now'
 
-          toast.success("Success! Email Sent Successful", {
-            position: "top-right",
+          toast.success('Success! Email Sent Successful', {
+            position: 'top-right',
             autoClose: 5000,
             hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-          });
+          })
         } else {
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = "Send Now";
+          submitBtn.disabled = false
+          submitBtn.innerHTML = 'Send Now'
 
-          toast.error("Error! Email Not Sent", {
-            position: "top-right",
+          toast.error('Error! Email Not Sent', {
+            position: 'top-right',
             autoClose: 5000,
             hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-          });
+          })
         }
-      });
-  };
+      })
+  }
 
   const formFields = [
     {
-      pattern: "[0-9]{3}[0-9]{3}[0-9]{4}",
+      pattern: '[0-9]{3}[0-9]{3}[0-9]{4}',
       icon: (
         <svg
-        className="form-name-icon"
+          className="form-name-icon"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -163,13 +163,13 @@ const AssistanceForm = ({ title, requestOrigin }) => {
             onChange={(e) => setName(e.target.value)}
             required
           />
-        );
+        )
       },
     },
     {
       icon: (
         <svg
-        className="form-email-icon"
+          className="form-email-icon"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -205,7 +205,7 @@ const AssistanceForm = ({ title, requestOrigin }) => {
             onChange={(e) => setEmail(e.target.value)}
             required
           />
-        );
+        )
       },
     },
     {
@@ -227,7 +227,7 @@ const AssistanceForm = ({ title, requestOrigin }) => {
             onChange={(e) => setPhone(e.target.value)}
             required
           />
-        );
+        )
       },
     },
     {
@@ -238,13 +238,13 @@ const AssistanceForm = ({ title, requestOrigin }) => {
           <div className="assist-date-time">
             <Datetime
               className="assist-date-value"
-              initialValue={"Select a date and time*"}
+              initialValue={'Select a date and time*'}
               selected={date}
               onChange={(date) => setDate(date)}
               required
             />
           </div>
-        );
+        )
       },
     },
     {
@@ -276,7 +276,7 @@ const AssistanceForm = ({ title, requestOrigin }) => {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
-        );
+        )
       },
     },
     {
@@ -320,14 +320,14 @@ const AssistanceForm = ({ title, requestOrigin }) => {
                 </g>
               </svg>
               <span>
-                Attachment file{" "}
+                Attachment file{' '}
                 <span className="attachment-optional">(optional)</span>
               </span>
             </a>
           </div>
           <input
             ref={(selectImage) => {
-              image = selectImage;
+              image = selectImage
             }}
             onChange={uploadToClient}
             className="attachment d-none"
@@ -340,13 +340,12 @@ const AssistanceForm = ({ title, requestOrigin }) => {
         </>
       ),
     },
-  ];
-  
+  ]
 
   const submitButton = () => (
     <button
       ref={(submitBtnRef) => {
-        submitBtn = submitBtnRef;
+        submitBtn = submitBtnRef
       }}
       className="assist-form-container-input-btn"
       type="submit"
@@ -354,7 +353,7 @@ const AssistanceForm = ({ title, requestOrigin }) => {
     >
       Submit
     </button>
-  );
+  )
   return (
     <ScheduleMeetingForm
       fields={formFields}
@@ -363,7 +362,7 @@ const AssistanceForm = ({ title, requestOrigin }) => {
       submitFunc={submitEnquiryForm}
       submitButton={submitButton}
     />
-  );
-};
+  )
+}
 
-export default AssistanceForm;
+export default AssistanceForm

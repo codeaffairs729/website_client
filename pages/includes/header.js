@@ -1,44 +1,44 @@
-import React, { useEffect, useState, useRef } from "react";
-import Head from "next/head";
-import Script from "next/script";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import Image from "next/image";
+import React, { useEffect, useState, useRef } from 'react'
+import Head from 'next/head'
+import Script from 'next/script'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import Image from 'next/image'
 
 const Header = () => {
-  const [headerSearchBar, setHeaderSearchBar] = useState(false);
-  const [sideBarHandler, setSideBarHandler] = useState(false);
-  const [autoplay1, setAutoplay1] = useState(true);
-  const [autoplay2, setAutoplay2] = useState(true);
-  const [autoplay3, setAutoplay3] = useState(true);
-  const [serviceMenu, setServiceMenu] = useState(false);
-  const header = useRef(null);
+  const [headerSearchBar, setHeaderSearchBar] = useState(false)
+  const [sideBarHandler, setSideBarHandler] = useState(false)
+  const [autoplay1, setAutoplay1] = useState(true)
+  const [autoplay2, setAutoplay2] = useState(true)
+  const [autoplay3, setAutoplay3] = useState(true)
+  const [serviceMenu, setServiceMenu] = useState(false)
+  const header = useRef(null)
 
-  const [careerLink, setCareerLink] = useState(false);
-  const [aboutUsLink, setAboutUsLink] = useState(false);
-  const router = useRouter();
+  const [careerLink, setCareerLink] = useState(false)
+  const [aboutUsLink, setAboutUsLink] = useState(false)
+  const router = useRouter()
 
   const headerSearch = () => {
-    const searchBarShowHide = headerSearchBar ? false : true;
-    setHeaderSearchBar(searchBarShowHide);
-  };
+    const searchBarShowHide = headerSearchBar ? false : true
+    setHeaderSearchBar(searchBarShowHide)
+  }
 
   const handleSidebar = (e) => {
-    sideBarHandler ? setSideBarHandler(false) : setSideBarHandler(true);
-    setServiceMenu(false);
-    header.parentElement.style.overflowY = "unset";
-  };
+    sideBarHandler ? setSideBarHandler(false) : setSideBarHandler(true)
+    setServiceMenu(false)
+    header.parentElement.style.overflowY = 'unset'
+  }
 
   const toggleSidebarInternalMenu = () => {
-    serviceMenu ? setServiceMenu(false) : setServiceMenu(true);
+    serviceMenu ? setServiceMenu(false) : setServiceMenu(true)
     sideBarHandler
-      ? (header.parentElement.style.overflowY = "scroll")
-      : (header.parentElement.style.overflowY = "unset");
-  };
+      ? (header.parentElement.style.overflowY = 'scroll')
+      : (header.parentElement.style.overflowY = 'unset')
+  }
 
   useEffect(() => {
-    setCareerLink(router.pathname == "/careers");
-    setAboutUsLink(router.pathname == "/aboutUs");
+    setCareerLink(router.pathname == '/careers')
+    setAboutUsLink(router.pathname == '/aboutUs')
     //     const timer1 = setTimeout(() => {
     //         setAutoplay1(true);
     //         console.log(autoplay1);
@@ -53,7 +53,7 @@ const Header = () => {
     //         setAutoplay3(true);
     //         console.log(autoplay3);
     //     }, 5000);
-  }, []);
+  }, [])
 
   const servicesSettings = {
     slidesToShow: 3,
@@ -65,7 +65,7 @@ const Header = () => {
     vertical: true,
     verticalSwiping: true,
     autoplaySpeed: 3000,
-  };
+  }
 
   const technologiesSettings = {
     slidesToShow: 3,
@@ -77,7 +77,7 @@ const Header = () => {
     vertical: true,
     verticalSwiping: true,
     autoplaySpeed: 3000,
-  };
+  }
 
   const portfolioSettings = {
     slidesToShow: 3,
@@ -89,7 +89,7 @@ const Header = () => {
     vertical: true,
     verticalSwiping: true,
     autoplaySpeed: 3000,
-  };
+  }
   return (
     <>
       <Head>
@@ -135,7 +135,7 @@ const Header = () => {
       />
       <div
         ref={(headerRef) => {
-          header = headerRef;
+          header = headerRef
         }}
         className="header js-header"
         id="header"
@@ -145,8 +145,8 @@ const Header = () => {
             onClick={(e) => handleSidebar(e)}
             className={
               sideBarHandler
-                ? "header__burger js-header-burger active"
-                : "header__burger js-header-burger"
+                ? 'header__burger js-header-burger active'
+                : 'header__burger js-header-burger'
             }
           >
             <span></span>
@@ -171,8 +171,8 @@ const Header = () => {
           <div
             className={
               sideBarHandler
-                ? "header__wrap js-header-wrap visible"
-                : "header__wrap js-header-wrap"
+                ? 'header__wrap js-header-wrap visible'
+                : 'header__wrap js-header-wrap'
             }
           >
             <nav className="header__nav">
@@ -181,13 +181,13 @@ const Header = () => {
               </Link>
               <div
                 className={`header__item ${
-                  serviceMenu && "service-menu-header-item"
+                  serviceMenu && 'service-menu-header-item'
                 }`}
               >
                 <Link href="#">
                   <div
                     className={`cursor_pointer header__head ${
-                      serviceMenu ? "service-menu-head nav-css" : ""
+                      serviceMenu ? 'service-menu-head nav-css' : ''
                     }`}
                     onClick={toggleSidebarInternalMenu}
                   >
@@ -199,7 +199,7 @@ const Header = () => {
                 </Link>
                 <div
                   className={`header__body ${
-                    serviceMenu && "service-menu text-start"
+                    serviceMenu && 'service-menu text-start'
                   }`}
                 >
                   <div className="header__center center header-dropdown-body">
@@ -207,7 +207,7 @@ const Header = () => {
                       <div className="col-lg-4 col-md-4 col-sm-4">
                         <div
                           className={`header__category ${
-                            serviceMenu && "service-menu-header-item"
+                            serviceMenu && 'service-menu-header-item'
                           }`}
                         >
                           <Link href="/services/web-services">
@@ -499,8 +499,8 @@ const Header = () => {
                         <div
                           className={`header__category ${
                             serviceMenu
-                              ? "service-menu-header-item service-menu-header-category"
-                              : ""
+                              ? 'service-menu-header-item service-menu-header-category'
+                              : ''
                           }`}
                         >
                           <Link href="/services/mobile-solutions">
@@ -726,7 +726,7 @@ const Header = () => {
                         </div>
                         <div
                           className={`header__category mt-3 ${
-                            serviceMenu ? "service-menu-header-item" : ""
+                            serviceMenu ? 'service-menu-header-item' : ''
                           }`}
                         >
                           <Link href="/services/dev-ops">DevOps</Link>
@@ -806,7 +806,7 @@ const Header = () => {
                         <div
                           className={`header__category ${
                             serviceMenu &&
-                            "service-menu-header-item service-menu-header-category"
+                            'service-menu-header-item service-menu-header-category'
                           }`}
                         >
                           Miscellaneous
@@ -1078,8 +1078,8 @@ const Header = () => {
                 <div
                   className={
                     careerLink
-                      ? "cursor_pointer header__item header-item"
-                      : "cursor_pointer header__item nav-css"
+                      ? 'cursor_pointer header__item header-item'
+                      : 'cursor_pointer header__item nav-css'
                   }
                 >
                   Careers
@@ -1089,8 +1089,8 @@ const Header = () => {
                 <div
                   className={
                     aboutUsLink
-                      ? "cursor_pointer header__item header-item"
-                      : "cursor_pointer header__item nav-css"
+                      ? 'cursor_pointer header__item header-item'
+                      : 'cursor_pointer header__item nav-css'
                   }
                 >
                   About Us
@@ -1156,7 +1156,7 @@ const Header = () => {
         <div className="header__bg js-header-bg"></div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

@@ -1,68 +1,68 @@
-import { useState } from "react";
-import Image from "next/image";
+import { useState } from 'react'
+import Image from 'next/image'
 const TechComponent = ({ techList }) => {
   const mobileTech = [
     {
       id: 1,
-      name: "Android",
-      path: "/icons/service-icon/Android.webp",
-      altImg: "Android-png",
-      desc: "Our developer provides the best WordPress Web Development to create an efficient website.",
-      techWidth: "82",
+      name: 'Android',
+      path: '/icons/service-icon/Android.webp',
+      altImg: 'Android-png',
+      desc: 'Our developer provides the best WordPress Web Development to create an efficient website.',
+      techWidth: '82',
     },
     {
       id: 2,
-      name: "Flutter",
-      path: "/icons/service-icon/Flutter.webp",
-      altImg: "Flutter-png",
-      desc: "Our developer provides the best WordPress Web Development to create an efficient website.",
-      techWidth: "83",
+      name: 'Flutter',
+      path: '/icons/service-icon/Flutter.webp',
+      altImg: 'Flutter-png',
+      desc: 'Our developer provides the best WordPress Web Development to create an efficient website.',
+      techWidth: '83',
     },
     {
       id: 3,
-      name: "React Native",
-      path: "/icons/service-icon/React Native.webp",
-      altImg: "React-Native-png",
-      desc: "Our developer provides the best WordPress Web Development to create an efficient website.",
-      techWidth: "82",
+      name: 'React Native',
+      path: '/icons/service-icon/React Native.webp',
+      altImg: 'React-Native-png',
+      desc: 'Our developer provides the best WordPress Web Development to create an efficient website.',
+      techWidth: '82',
     },
     {
       id: 4,
-      name: "Augmented Reality",
-      path: "/icons/service-icon/Augmented Reality.webp",
-      altImg: "Augmented-png",
-      desc: "Our developer provides the best WordPress Web Development to create an efficient website.",
-      techWidth: "77",
+      name: 'Augmented Reality',
+      path: '/icons/service-icon/Augmented Reality.webp',
+      altImg: 'Augmented-png',
+      desc: 'Our developer provides the best WordPress Web Development to create an efficient website.',
+      techWidth: '77',
     },
     {
       id: 5,
-      name: "Virtual Reality",
-      path: "/icons/service-icon/Virtual Reality.webp",
-      altImg: "Virtual-Reality-png",
-      desc: "Our developer provides the best WordPress Web Development to create an efficient website.",
-      techWidth: "82",
+      name: 'Virtual Reality',
+      path: '/icons/service-icon/Virtual Reality.webp',
+      altImg: 'Virtual-Reality-png',
+      desc: 'Our developer provides the best WordPress Web Development to create an efficient website.',
+      techWidth: '82',
     },
     {
       id: 6,
-      name: "Swift",
-      path: "/icons/service-icon/Swift.webp",
-      altImg: "Swift Icon",
-      desc: "Our developer provides the best WordPress Web Development to create an efficient website.",
-      techWidth: "82",
+      name: 'Swift',
+      path: '/icons/service-icon/Swift.webp',
+      altImg: 'Swift Icon',
+      desc: 'Our developer provides the best WordPress Web Development to create an efficient website.',
+      techWidth: '82',
     },
     {
       id: 7,
-      name: "ionic",
-      path: "/icons/service-icon/ionic.webp",
-      altImg: "ionic-png",
-      desc: "Our developer provides the best WordPress Web Development to create an efficient website.",
-      techWidth: "82",
+      name: 'ionic',
+      path: '/icons/service-icon/ionic.webp',
+      altImg: 'ionic-png',
+      desc: 'Our developer provides the best WordPress Web Development to create an efficient website.',
+      techWidth: '82',
     },
-  ];
-  const [path, setPath] = useState(mobileTech);
+  ]
+  const [path, setPath] = useState(mobileTech)
   const handleOnMobile = () => {
-    setPath(mobileTech);
-  };
+    setPath(mobileTech)
+  }
   const handleOnFrontend = () => {
     const frontTech = [
       // {
@@ -98,9 +98,9 @@ const TechComponent = ({ techList }) => {
       //   name: "ionic",
       //   path: "/icons/service-icon/ionic.webp",
       // },
-    ];
-    setPath(frontTech);
-  };
+    ]
+    setPath(frontTech)
+  }
   const handleOnBackend = () => {
     const backTech = [
       // { name: "Android", path: "/icons/service-icon/Android.webp" },
@@ -132,9 +132,9 @@ const TechComponent = ({ techList }) => {
       //   name: "ionic",
       //   path: "/icons/service-icon/ionic.webp",
       // },
-    ];
-    setPath(backTech);
-  };
+    ]
+    setPath(backTech)
+  }
 
   return (
     <>
@@ -151,7 +151,7 @@ const TechComponent = ({ techList }) => {
           </div>
         ))} */}
         <div className="d-flex flex-column gap-col">
-          {mobileTech.map((element,index) => (
+          {mobileTech.map((element, index) => (
             <div className="d-flex flex-column" key={index}>
               <div className="d-flex aling-items-center">
                 <Image
@@ -168,7 +168,7 @@ const TechComponent = ({ techList }) => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default TechComponent;
+export default TechComponent

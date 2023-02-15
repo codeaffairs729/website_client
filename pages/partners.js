@@ -1,5 +1,5 @@
-import React from "react";
-import Trophies from "./trophies";
+import React from 'react'
+import Trophies from './trophies'
 const Partners = () => {
   return (
     <>
@@ -101,7 +101,7 @@ const Partners = () => {
         </div>
       </div> */}
     </>
-  );
-};
+  )
+}
 
-export default Partners;
+export default Partners

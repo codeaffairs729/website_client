@@ -1,7 +1,7 @@
 /* utility class */
 
 .hire-h1 {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 80px;
@@ -13,7 +13,7 @@
 }
 
 .hire-desc {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -22,7 +22,7 @@
   margin-bottom: 32px;
 }
 .hire-h2 {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -33,7 +33,7 @@
 }
 
 .hire-h3 {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -42,7 +42,7 @@
   margin-bottom: 8px;
 }
 .hire-h4 {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -57,7 +57,7 @@
   margin-bottom: 8px;
 }
 .hire-h2-blue {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -82,7 +82,7 @@ li {
 .hire-team-h3 {
   margin-top: 24px;
   margin-bottom: 10px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 28px;

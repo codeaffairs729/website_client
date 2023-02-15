@@ -1,64 +1,64 @@
-import React, { useState, useRef } from "react";
-import Header from "./includes/header";
-import Footer from "./includes/footer";
+import React, { useState, useRef } from 'react'
+import Header from './includes/header'
+import Footer from './includes/footer'
 // import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
-import GenericModal from "../components/genericModal";
-import { ToastContainer, toast } from "react-toastify";
+import GenericModal from '../components/genericModal'
+import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Head from "next/head";
-import Image from "next/image";
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import Head from 'next/head'
+import Image from 'next/image'
 
 const Careers = () => {
-  const [email, setEmail] = useState("");
-  const [jobPosition, setJobPosition] = useState("");
-  const [experience, setExperience] = useState("");
-  const [resume, setResume] = useState("");
-  const [resumeName, setResumeName] = useState("");
-  const [resumeType, setResumeType] = useState("");
-  const [resumeBase64, setResumeBase64] = useState("");
-  const [createObjectURL, setCreateObjectURL] = useState("");
-  const [fileAlert, setFileAlert] = useState(false);
+  const [email, setEmail] = useState('')
+  const [jobPosition, setJobPosition] = useState('')
+  const [experience, setExperience] = useState('')
+  const [resume, setResume] = useState('')
+  const [resumeName, setResumeName] = useState('')
+  const [resumeType, setResumeType] = useState('')
+  const [resumeBase64, setResumeBase64] = useState('')
+  const [createObjectURL, setCreateObjectURL] = useState('')
+  const [fileAlert, setFileAlert] = useState(false)
 
-  const image = useRef(null);
-  const submitBtn = useRef(null);
+  const image = useRef(null)
+  const submitBtn = useRef(null)
 
-  const [genModalshow, setGenModalshow] = useState(false);
+  const [genModalshow, setGenModalshow] = useState(false)
   const handleModalShow = () => {
-    setGenModalshow(true);
-  };
+    setGenModalshow(true)
+  }
   const handleModalClose = () => {
-    setGenModalshow(false);
-  };
+    setGenModalshow(false)
+  }
   const uploadToClient = async (event) => {
     if (event.target.files && event.target.files[0]) {
-      const file = event.target.files[0];
-      const base64 = await convertBase64(file);
+      const file = event.target.files[0]
+      const base64 = await convertBase64(file)
 
       // setResume(file);
-      setResumeName(file.name);
-      setResumeType(file.type);
-      setResumeBase64(base64.split(",")[1]);
-      setCreateObjectURL(URL.createObjectURL(file));
+      setResumeName(file.name)
+      setResumeType(file.type)
+      setResumeBase64(base64.split(',')[1])
+      setCreateObjectURL(URL.createObjectURL(file))
     }
-  };
+  }
 
   const convertBase64 = (file) => {
     return new Promise((resolve, reject) => {
-      const fileReader = new FileReader();
-      fileReader.readAsDataURL(file);
+      const fileReader = new FileReader()
+      fileReader.readAsDataURL(file)
 
       fileReader.onload = () => {
-        resolve(fileReader.result);
-      };
+        resolve(fileReader.result)
+      }
 
       fileReader.onerror = (error) => {
-        reject(error);
-      };
-    });
-  };
+        reject(error)
+      }
+    })
+  }
 
   // const { executeRecaptcha } = useGoogleReCaptcha();
 
@@ -75,19 +75,19 @@ const Careers = () => {
   // };
 
   const submitEnquiryForm = (e) => {
-    e.preventDefault();
-    if (resumeName == "") {
-      setFileAlert(true);
-      return;
+    e.preventDefault()
+    if (resumeName == '') {
+      setFileAlert(true)
+      return
     }
-    submitBtn.disabled = true;
+    submitBtn.disabled = true
     submitBtn.innerHTML =
-      '<span class="spinner-border spinner-border-sm"></span> Loading...';
-    fetch("/api/applyForJob", {
-      method: "POST",
+      '<span class="spinner-border spinner-border-sm"></span> Loading...'
+    fetch('/api/applyForJob', {
+      method: 'POST',
       headers: {
-        Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json",
+        Accept: 'application/json, text/plain, */*',
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify({
         email: email,
@@ -101,50 +101,50 @@ const Careers = () => {
     })
       .then((res) => res.json())
       .then((res) => {
-        if (res?.status === "success") {
-          setEmail("");
-          setJobPosition("");
-          setExperience("");
-          setResumeName("");
-          setResumeType("");
-          setResumeBase64("");
-          setResume("");
-          setCreateObjectURL("");
-          setGenModalshow(false);
+        if (res?.status === 'success') {
+          setEmail('')
+          setJobPosition('')
+          setExperience('')
+          setResumeName('')
+          setResumeType('')
+          setResumeBase64('')
+          setResume('')
+          setCreateObjectURL('')
+          setGenModalshow(false)
 
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = "Send Now";
+          submitBtn.disabled = false
+          submitBtn.innerHTML = 'Send Now'
 
-          toast.success("Success! Email Sent Successful", {
-            position: "top-right",
+          toast.success('Success! Email Sent Successful', {
+            position: 'top-right',
             autoClose: 5000,
             hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-          });
+          })
         } else {
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = "Send Now";
+          submitBtn.disabled = false
+          submitBtn.innerHTML = 'Send Now'
 
-          toast.error("Error! Email Not Sent", {
-            position: "top-right",
+          toast.error('Error! Email Not Sent', {
+            position: 'top-right',
             autoClose: 5000,
             hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-          });
+          })
         }
-      });
-  };
+      })
+  }
 
   const handleCurrentOpenings = (val) => {
-    setJobPosition(val);
-    handleModalShow();
-  };
+    setJobPosition(val)
+    handleModalShow()
+  }
 
   var settings = {
     dots: true,
@@ -163,7 +163,7 @@ const Careers = () => {
         },
       },
     ],
-  };
+  }
   return (
     <>
       <Header />
@@ -734,7 +734,7 @@ const Careers = () => {
         modalHeaderShow={true}
         modalBodyShow={true}
         modalFooterShow={false}
-        modalTitle={"Enter Your Details Below"}
+        modalTitle={'Enter Your Details Below'}
         modalBody={
           <div>
             <input
@@ -797,7 +797,7 @@ const Careers = () => {
               <option value="5 years">5 years</option>
               <option value="5+ years">5+ years</option>
             </select>
-            <p className={fileAlert ? "text-danger" : "d-none"}>
+            <p className={fileAlert ? 'text-danger' : 'd-none'}>
               Please upload your resume*
             </p>
             <div className="job-apply-upImg-text d-flex mb-4">
@@ -834,7 +834,7 @@ const Careers = () => {
             </div>
             <input
               ref={(selectImage) => {
-                image = selectImage;
+                image = selectImage
               }}
               onChange={uploadToClient}
               className="d-none"
@@ -847,7 +847,7 @@ const Careers = () => {
             <div className="mb-4 text-end">
               <button
                 ref={(submitBtnRef) => {
-                  submitBtn = submitBtnRef;
+                  submitBtn = submitBtnRef
                 }}
                 className="entry__btn btn btn_purple contact-submit-btn btn-sm mb-3 w-100"
                 type="submit"
@@ -860,7 +860,7 @@ const Careers = () => {
       />
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Careers;
+export default Careers

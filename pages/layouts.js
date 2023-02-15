@@ -1,5 +1,5 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react'
+import Image from 'next/image'
 
 const Layouts = () => {
   const settings = {
@@ -11,7 +11,7 @@ const Layouts = () => {
     vertical: true,
     verticalSwiping: true,
     autoplay: true,
-  };
+  }
   return (
     <>
       <div className="layouts">
@@ -53,7 +53,7 @@ const Layouts = () => {
                 </div>
                 <div className="layouts__text">
                   We use those technologies that suit the nature of your
-                  application.{" "}
+                  application.{' '}
                 </div>
               </div>
               <div
@@ -537,7 +537,7 @@ const Layouts = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Layouts;
+export default Layouts

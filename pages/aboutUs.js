@@ -1,63 +1,63 @@
-import React, { useState } from "react";
-import Header from "./includes/header";
-import Footer from "./includes/footer";
-import SideImages from "../components/sideImages";
-import BuildingPicsSlider from "./buildingPicsSlider";
-import Head from "next/head";
-import Image from "next/image";
+import React, { useState } from 'react'
+import Header from './includes/header'
+import Footer from './includes/footer'
+import SideImages from '../components/sideImages'
+import BuildingPicsSlider from './buildingPicsSlider'
+import Head from 'next/head'
+import Image from 'next/image'
 
 function AboutUs() {
-  const [companyFacesDesc, setCompanyFacesDesc] = useState(0);
+  const [companyFacesDesc, setCompanyFacesDesc] = useState(0)
 
   const sideImgArr = [
-    ["aboutUsImages/about-img1.webp", "Mehakpal Singh(Founder)"],
-    ["aboutUsImages/about-img2.webp", "Poonam Thakur(HR Manager)"],
-    ["aboutUsImages/about-img4.webp", "Naresh Bhatia(Chartered Accountant)"],
-    ["aboutUsImages/about-img3.webp", "Kannav Sharma(Lawyer)"],
-  ];
+    ['aboutUsImages/about-img1.webp', 'Mehakpal Singh(Founder)'],
+    ['aboutUsImages/about-img2.webp', 'Poonam Thakur(HR Manager)'],
+    ['aboutUsImages/about-img4.webp', 'Naresh Bhatia(Chartered Accountant)'],
+    ['aboutUsImages/about-img3.webp', 'Kannav Sharma(Lawyer)'],
+  ]
 
   const companyFacesDetail = [
     [
-      "Mehakpal Singh",
-      "Founder",
-      "Mehakpal",
+      'Mehakpal Singh',
+      'Founder',
+      'Mehakpal',
       "The guy, who established Code Garage Tech. He is a computer science engineer and has experience of more than a decade in software development. He encourages conformity with business rules & regulations and also ensures that the company's code of ethics is being followed.",
-      "www.twitter.com",
-      "www.instagram.com",
-      "/aboutUsImages/about-img1.webp",
+      'www.twitter.com',
+      'www.instagram.com',
+      '/aboutUsImages/about-img1.webp',
     ],
     [
-      "Poonam Thakur",
-      "HR Manager",
-      "Poonam",
-      "Poonam integrates and implements the technology via improved training, staffing, and communication with all the employees. Moreover, she also recommend approaches, business solutions, and processes to the management.",
-      "www.twitter.com",
-      "www.instagram.com",
-      "aboutUsImages/about-img2.webp",
+      'Poonam Thakur',
+      'HR Manager',
+      'Poonam',
+      'Poonam integrates and implements the technology via improved training, staffing, and communication with all the employees. Moreover, she also recommend approaches, business solutions, and processes to the management.',
+      'www.twitter.com',
+      'www.instagram.com',
+      'aboutUsImages/about-img2.webp',
     ],
     [
-      "Naresh Bhatia",
-      "Chartered Accountant",
-      "Naresh",
-      "As a proactive and result-oriented finance professional, he has a strong track record of handling multiple assignments efficiently. He has 15 years of experience and is very diligent in handling Accounts & Finance, Direct & Indirect Tax, Internal Auditing, and Risk Assessment of the company.",
-      "www.twitter.com",
-      "www.instagram.com",
-      "aboutUsImages/about-img4.webp",
+      'Naresh Bhatia',
+      'Chartered Accountant',
+      'Naresh',
+      'As a proactive and result-oriented finance professional, he has a strong track record of handling multiple assignments efficiently. He has 15 years of experience and is very diligent in handling Accounts & Finance, Direct & Indirect Tax, Internal Auditing, and Risk Assessment of the company.',
+      'www.twitter.com',
+      'www.instagram.com',
+      'aboutUsImages/about-img4.webp',
     ],
     [
-      "Kannav Sharma",
-      "Lawyer",
-      "Kannav",
-      "Proud First generation lawyer. He joined the litigation to make a mark and help as many people as best of his capabilities. Kannav ensures the company’s strategies, actions, and processes comply relevantly with state, local, international, and federal laws.",
-      "www.twitter.com",
-      "www.instagram.com",
-      "aboutUsImages/about-img3.webp",
+      'Kannav Sharma',
+      'Lawyer',
+      'Kannav',
+      'Proud First generation lawyer. He joined the litigation to make a mark and help as many people as best of his capabilities. Kannav ensures the company’s strategies, actions, and processes comply relevantly with state, local, international, and federal laws.',
+      'www.twitter.com',
+      'www.instagram.com',
+      'aboutUsImages/about-img3.webp',
     ],
-  ];
+  ]
 
   const SideImagesChangeHandle = (index) => {
-    setCompanyFacesDesc(index.target.id);
-  };
+    setCompanyFacesDesc(index.target.id)
+  }
 
   return (
     <>
@@ -132,7 +132,7 @@ function AboutUs() {
             <h2 className="about-area-7-heading mb-5">
               Our
               <span className="title__color about-area-7-heading-span">
-                {" "}
+                {' '}
                 Mission
               </span>
             </h2>
@@ -336,7 +336,7 @@ function AboutUs() {
                     sideImagesgUrl={element[0]}
                     SideImagesChangeHandle={SideImagesChangeHandle}
                   />
-                );
+                )
               })}
             </div>
           </div>
@@ -560,7 +560,7 @@ function AboutUs() {
                         We only focus on getting the job done. We're built on a
                         system of processes, which means that each part of our
                         business has its own defined role to play in helping us
-                        achieve our goals.{" "}
+                        achieve our goals.{' '}
                       </p>
                     </div>
                   </div>
@@ -818,7 +818,7 @@ function AboutUs() {
             </div> */}
       <Footer />
     </>
-  );
+  )
 }
 
-export default AboutUs;
+export default AboutUs

@@ -19,7 +19,7 @@ a {
   min-width: 178px;
   height: 72px;
   border-radius: 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.04em;
@@ -299,7 +299,7 @@ body:not(.touch-device) .header-item[href]:before {
 
 .design-slide-pink .design__info {
   margin-bottom: 23px;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 32px;
   font-weight: 500;
   line-height: 1.1;
@@ -333,7 +333,7 @@ body:not(.touch-device) .header-item[href]:before {
 
 .design-slide-blue .design__info {
   margin-bottom: 23px;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 32px;
   font-weight: 500;
   line-height: 1.1;
@@ -371,7 +371,7 @@ body:not(.touch-device) .header-item[href]:before {
 
 .design-slide-green .design__info {
   margin-bottom: 23px;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 32px;
   font-weight: 500;
   line-height: 1.1;
@@ -626,7 +626,7 @@ body:not(.touch-device) .header-item[href]:before {
 .footer__category {
   margin-bottom: 20px;
   color: #333333;
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-weight: 700;
   font-size: 16px;
   line-height: 48px;
@@ -647,7 +647,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .footer-category-cgt-name {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-weight: 700;
   font-size: 40px;
   line-height: 48px;
@@ -655,7 +655,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .footer-link-about {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -663,14 +663,14 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .footer-link-contact {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
 }
 
 .footer-link-technology {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-weight: 400;
   font-size: 16px;
   color: #999999;
@@ -681,7 +681,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .image-container {
-  position: "relative";
+  position: 'relative';
   height: 200px;
   width: 200px;
 }
@@ -1558,7 +1558,7 @@ body:not(.touch-device) .header-item[href]:before {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical; */
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 24px;
   letter-spacing: -0.025em;
   line-height: 1.25;
@@ -1725,7 +1725,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .package-list li:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 1px;
   left: 0;
@@ -1875,7 +1875,7 @@ body:not(.touch-device) .header-item[href]:before {
   /* margin-top: 150px; */
   margin-bottom: 70px;
   /* border-radius: 0px 0px 40px 40px; */
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   position: relative;
 }
 
@@ -1893,7 +1893,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-1-header-1 {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-weight: 700;
   font-size: 32px;
   line-height: 100%;
@@ -1902,7 +1902,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-1-para-1 {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
@@ -1997,13 +1997,13 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-1-outer p {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-weight: 500;
   font-size: 70px;
 }
 
 .about-area-1-btn {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   color: #2522ba;
   filter: drop-shadow(0px 14px 20px rgba(35, 34, 87, 0.4))
     drop-shadow(0px 48px 48px rgba(0, 0, 0, 0.12));
@@ -2016,13 +2016,13 @@ body:not(.touch-device) .header-item[href]:before {
 
 .about-area-1-para {
   line-height: 27px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 18px;
 }
 
 .about-area-2 {
-  font-family: "DM Sans";
-  background: url("../public/images/Vector_332.webp") no-repeat;
+  font-family: 'DM Sans';
+  background: url('../public/images/Vector_332.webp') no-repeat;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -2045,7 +2045,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-2-para {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 18px;
 }
 
@@ -2117,7 +2117,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-3-h3 {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-weight: 500;
   font-size: 30px;
   line-height: 2;
@@ -2135,14 +2135,14 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-3-heading {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-weight: 700;
   font-size: 70px;
   letter-spacing: -0.025em;
 }
 
 .about-area-3-para {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
@@ -2162,7 +2162,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-4-heading {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: 70px;
   letter-spacing: -0.025em;
@@ -2219,14 +2219,14 @@ body:not(.touch-device) .header-item[href]:before {
 } */
 
 .about-area-4-main-name {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 0;
 }
 
 .about-area-4-main-designation {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-weight: 400;
   font-size: 10px;
   line-height: 24px;
@@ -2240,7 +2240,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-4-main-para {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2250,7 +2250,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-4-main-para span {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 32px;
   line-height: 3;
 }
@@ -2280,7 +2280,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-5-heading {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: 80px;
   line-height: 120px;
@@ -2289,7 +2289,7 @@ body:not(.touch-device) .header-item[href]:before {
 
 .about-area-5-para {
   display: inline-block;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-weight: 400;
   font-size: 32px;
   line-height: 35px;
@@ -2373,7 +2373,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-7-heading {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-weight: 400;
   font-size: 60px;
 }
@@ -2424,7 +2424,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-8-heading {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-weight: 500;
   font-size: 60px;
   padding-top: 5rem;
@@ -2464,7 +2464,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .like-list li:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 1px;
   left: 0;
@@ -2539,7 +2539,7 @@ body:not(.touch-device) .header-item[href]:before {
   margin-bottom: 30px;
 }
 .trophies-text {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 32px;
   line-height: 48px;
@@ -2606,13 +2606,13 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .career-area-1-heading {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-size: 70px;
   letter-spacing: -0.025em;
 }
 
 .career-area-1-para {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 18px;
 }
 
@@ -2624,7 +2624,7 @@ body:not(.touch-device) .header-item[href]:before {
 .career-area-1-btn {
   filter: drop-shadow(0px 14px 20px rgba(35, 34, 87, 0.4))
     drop-shadow(0px 48px 48px rgba(0, 0, 0, 0.12));
-  font-family: "Poppins";
+  font-family: 'Poppins';
 }
 
 /* .career-area-1-btn:hover {
@@ -2663,14 +2663,14 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .career-area-2-heading {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-weight: 500;
   font-size: 70px;
   letter-spacing: -0.025em;
 }
 
 .career-area-2-para {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-weight: 400;
   font-size: 18px;
 }
@@ -2749,13 +2749,13 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .career-area-3-heading {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-size: 60px;
   z-index: 1;
 }
 
 .career-area-3-para {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 18px;
   z-index: 1;
 }
@@ -2845,7 +2845,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .career-area-4-heading {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-weight: 700;
   font-size: 70px;
   line-height: 120px;
@@ -2925,21 +2925,21 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .career-area-5-heading {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-weight: 700;
   font-size: 80px;
   letter-spacing: -0.025em;
 }
 
 .career-area-5-sub-heading {
-  font-family: "poppins";
+  font-family: 'poppins';
   font-weight: 700;
   font-size: 80px;
   letter-spacing: -0.04em;
 }
 
 .career-area-5-para {
-  font-family: "poppins";
+  font-family: 'poppins';
   font-weight: 700;
   font-size: 16px;
   letter-spacing: -0.04em;
@@ -2963,7 +2963,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .career-area-6-heading {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-weight: 700;
   font-size: 80px;
   letter-spacing: -0.025em;
@@ -2982,7 +2982,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .career-area-7-heading {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-weight: 700;
   font-size: 80px;
   letter-spacing: -0.025em;
@@ -3091,7 +3091,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .career-area-8-heading {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 56px;
@@ -3101,7 +3101,7 @@ body:not(.touch-device) .header-item[href]:before {
 
 .career-area-8-para {
   padding: 10px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -3117,7 +3117,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .career-area-9-heading {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 56px;
@@ -3134,7 +3134,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .career-area-9-sub-heading {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -3142,7 +3142,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .career-area-9-para {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -3186,7 +3186,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .job-apply-upImg-text {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.04em;
@@ -5068,7 +5068,7 @@ body:not(.touch-device) .header-item[href]:before {
   }
 
   .career-area-2-para {
-    font-family: "Poppins";
+    font-family: 'Poppins';
     font-weight: 400;
     font-size: 17px;
     text-align: justify;

@@ -1,6 +1,6 @@
 // import styles from '../styles/Home.module.css'
-import dynamic from "next/dynamic";
-import Main from "./main";
+import dynamic from 'next/dynamic'
+import Main from './main'
 // import Package from "./package";
 // import Work from "./work";
 // import Layouts from "./layouts";
@@ -9,34 +9,34 @@ import Main from "./main";
 // import Design from "./design";
 // import Teams from "./teams";
 // import Like from "./like";
-import Footer from "./includes/footer";
-import Image from "next/image";
+import Footer from './includes/footer'
+import Image from 'next/image'
 // left ssr
-const Package = dynamic(() => import("./package"), {
+const Package = dynamic(() => import('./package'), {
   ssr: false,
-});
-const Work = dynamic(() => import("./work"), {
+})
+const Work = dynamic(() => import('./work'), {
   ssr: false,
-});
+})
 // left side ssr
-const Layouts = dynamic(() => import("./layouts"), {
+const Layouts = dynamic(() => import('./layouts'), {
   ssr: false,
-});
-const Access = dynamic(() => import("./access"), {
+})
+const Access = dynamic(() => import('./access'), {
   ssr: false,
-});
-const Partners = dynamic(() => import("./partners"), {
+})
+const Partners = dynamic(() => import('./partners'), {
   ssr: false,
-});
-const Design = dynamic(() => import("./design"), {
+})
+const Design = dynamic(() => import('./design'), {
   ssr: false,
-});
-const Teams = dynamic(() => import("./teams"), {
+})
+const Teams = dynamic(() => import('./teams'), {
   ssr: false,
-});
-const Like = dynamic(() => import("./like"), {
+})
+const Like = dynamic(() => import('./like'), {
   ssr: false,
-});
+})
 
 export default function Home() {
   return (
@@ -67,5 +67,5 @@ export default function Home() {
         <Footer />
       </div>
     </>
-  );
+  )
 }

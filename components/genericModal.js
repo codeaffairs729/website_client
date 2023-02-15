@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
 const GenericModal = (props) => {
   const {
@@ -8,15 +8,15 @@ const GenericModal = (props) => {
     modalFooterShow,
     modalTitle,
     modalBody,
-  } = props;
+  } = props
   return (
     <>
-      <div className={`modal fade ${genModalshow && "show"}`} id="myModal">
+      <div className={`modal fade ${genModalshow && 'show'}`} id="myModal">
         <div className="modal-dialog">
           <div className="modal-content">
             <div
               className={`modal-header justify-content-center ${
-                modalHeaderShow ? "flex" : "d-none"
+                modalHeaderShow ? 'flex' : 'd-none'
               }`}
             >
               <h4 className="modal-title">{modalTitle}</h4>
@@ -27,7 +27,7 @@ const GenericModal = (props) => {
               ></button>
             </div>
             <div
-              className={`modal-body ${modalBodyShow ? "d-block" : "d-none"}`}
+              className={`modal-body ${modalBodyShow ? 'd-block' : 'd-none'}`}
             >
               <div className="row">
                 <div className="col-lg-12 px-5">
@@ -43,7 +43,7 @@ const GenericModal = (props) => {
             </div>
             <div
               className={`modal-footer ${
-                modalFooterShow ? "d-block" : "d-none"
+                modalFooterShow ? 'd-block' : 'd-none'
               }`}
             >
               <button
@@ -59,11 +59,11 @@ const GenericModal = (props) => {
       </div>
       <div
         className={`modal-backdrop ${
-          genModalshow ? "d-block opacity-25" : "d-none"
+          genModalshow ? 'd-block opacity-25' : 'd-none'
         }`}
       ></div>
     </>
-  );
-};
+  )
+}
 
-export default GenericModal;
+export default GenericModal

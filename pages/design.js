@@ -1,8 +1,8 @@
-import React, { useRef } from "react";
-import Slider from "react-slick";
-import { GrFormPreviousLink } from "react-icons/gr";
-import { GrFormNextLink } from "react-icons/gr";
-import Image from "next/image";
+import React, { useRef } from 'react'
+import Slider from 'react-slick'
+import { GrFormPreviousLink } from 'react-icons/gr'
+import { GrFormNextLink } from 'react-icons/gr'
+import Image from 'next/image'
 const SliderButton = ({ gotoPrev, gotoNext }) => {
   return (
     <div>
@@ -13,19 +13,19 @@ const SliderButton = ({ gotoPrev, gotoNext }) => {
         <GrFormNextLink className="h2 border border-dark rounded-circle " />
       </button>
     </div>
-  );
-};
+  )
+}
 
-import Head from "next/head";
+import Head from 'next/head'
 
 const Design = () => {
   const gotoNext = () => {
-    sliderRef.current.slickNext();
-  };
+    sliderRef.current.slickNext()
+  }
   const gotoPrev = () => {
-    sliderRef.current.slickPrev();
-  };
-  const sliderRef = useRef();
+    sliderRef.current.slickPrev()
+  }
+  const sliderRef = useRef()
   const designSettings = {
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -49,7 +49,7 @@ const Design = () => {
         },
       },
     ],
-  };
+  }
 
   return (
     <>
@@ -135,7 +135,7 @@ const Design = () => {
                       various sources in the curated form to its users to help
                       them take informed decisions before buying or selling
                       stocks. You can now get real-time views from real
-                      investors and traders.{" "}
+                      investors and traders.{' '}
                     </div>
                     <a
                       className="design__link"
@@ -170,7 +170,7 @@ const Design = () => {
                       schedule notifications & accept payments using your
                       existing business phone number in a single conversation.
                       It gives a virtual SMS phone number that your customers
-                      can use to text immediately.{" "}
+                      can use to text immediately.{' '}
                     </div>
                     <a
                       className="design__link"
@@ -206,7 +206,7 @@ const Design = () => {
                       from skilled HVAC & landscaping professionals in
                       real-time, it is super simple to download this app. This
                       app power your business on the go by instantly notifying
-                      you of free customer leads, and much more.{" "}
+                      you of free customer leads, and much more.{' '}
                     </div>
                     <a
                       className="design__link"
@@ -239,7 +239,7 @@ const Design = () => {
                       Buyma is a shopping application that allows you to shop
                       for a variety of products, including clothing, bags, and
                       accessories. You can have access to limited collections of
-                      your favorite brands that may not be sold in your country.{" "}
+                      your favorite brands that may not be sold in your country.{' '}
                     </div>
                     <a className="design__link" href="https://www.buyma.us/">
                       Visit
@@ -271,7 +271,7 @@ const Design = () => {
                       Finance, Investments, Stock Brokers, and Stock Market. You
                       can explore important concepts, popular products or
                       services, trading apps, and interesting investing ideas
-                      across the world.{" "}
+                      across the world.{' '}
                     </div>
                     <a className="design__link" href="https://fintrakk.com/">
                       Visit
@@ -302,7 +302,7 @@ const Design = () => {
                       essential knowledge on Artificial Intelligence, emerging
                       technologies, and changing industries. You can discover
                       and learn about AI and emerging technologies within
-                      business today.{" "}
+                      business today.{' '}
                     </div>
                     <a className="design__link" href="https://welcome.ai/">
                       Visit
@@ -333,7 +333,7 @@ const Design = () => {
                       locates mosquitoes. Once a mosquito is detected, you
                       receive a notification on your smartphone, and a laser
                       marker shows the mosquito’s precise location, allowing you
-                      to easily eliminate it.{" "}
+                      to easily eliminate it.{' '}
                     </div>
                     <a className="design__link" href="https://bzigo.com/">
                       Visit
@@ -352,7 +352,7 @@ const Design = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Design;
+export default Design

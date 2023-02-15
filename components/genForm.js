@@ -1,7 +1,7 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef } from 'react'
 
 const GenForm = ({ fields, title, submitFunc, buttonText, submitButton }) => {
-   return (
+  return (
     <>
       <div className="gen-form-container d-flex flex-column align-items-center">
         <div className="input-field">
@@ -18,7 +18,7 @@ const GenForm = ({ fields, title, submitFunc, buttonText, submitButton }) => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default GenForm;
+export default GenForm

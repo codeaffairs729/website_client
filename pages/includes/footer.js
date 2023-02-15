@@ -1,16 +1,16 @@
-import React, { useEffect, useState, useRef } from "react";
-import Link from "next/link";
-import Image from "next/image";
+import React, { useEffect, useState, useRef } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const Footer = () => {
-  const [aboutUs, setAboutUs] = useState(false);
-  const [technologies, setTechnologies] = useState(false);
-  const [contactUs, setContactUs] = useState(false);
-  const [socialIcons, setSocialIcons] = useState(false);
-  const footer = useRef(null);
-  const rubyImg = "/icons/ror.webp";
+  const [aboutUs, setAboutUs] = useState(false)
+  const [technologies, setTechnologies] = useState(false)
+  const [contactUs, setContactUs] = useState(false)
+  const [socialIcons, setSocialIcons] = useState(false)
+  const footer = useRef(null)
+  const rubyImg = '/icons/ror.webp'
   const showAboutUs = (e) => {
-    const items = footer.getElementsByClassName("js-footer-col");
+    const items = footer.getElementsByClassName('js-footer-col')
     // for (let i = 0; i < items.length; i++) {
     //     let item = e.currentTarget,
     //         category = item.getElementsByClassName('js-footer-category'),
@@ -27,41 +27,41 @@ const Footer = () => {
     //     }
     // }
 
-    const aboutUsStatus = aboutUs ? false : true;
-    setAboutUs(aboutUsStatus);
-    setTechnologies(false);
-    setContactUs(false);
-    setSocialIcons(false);
-  };
+    const aboutUsStatus = aboutUs ? false : true
+    setAboutUs(aboutUsStatus)
+    setTechnologies(false)
+    setContactUs(false)
+    setSocialIcons(false)
+  }
 
   const showTechnologies = () => {
-    const technologiesStatus = technologies ? false : true;
-    setAboutUs(false);
-    setTechnologies(technologiesStatus);
-    setContactUs(false);
-    setSocialIcons(false);
-  };
+    const technologiesStatus = technologies ? false : true
+    setAboutUs(false)
+    setTechnologies(technologiesStatus)
+    setContactUs(false)
+    setSocialIcons(false)
+  }
 
   const showContactUs = () => {
-    const contactUsStatus = contactUs ? false : true;
-    setAboutUs(false);
-    setTechnologies(false);
-    setContactUs(contactUsStatus);
-    setSocialIcons(false);
-  };
+    const contactUsStatus = contactUs ? false : true
+    setAboutUs(false)
+    setTechnologies(false)
+    setContactUs(contactUsStatus)
+    setSocialIcons(false)
+  }
 
   const showSocialIcons = () => {
-    const socialIconsStatus = socialIcons ? false : true;
-    setAboutUs(false);
-    setTechnologies(false);
-    setContactUs(false);
-    setSocialIcons(socialIconsStatus);
-  };
+    const socialIconsStatus = socialIcons ? false : true
+    setAboutUs(false)
+    setTechnologies(false)
+    setContactUs(false)
+    setSocialIcons(socialIconsStatus)
+  }
   return (
     <>
       <div
         ref={(footerRef) => {
-          footer = footerRef;
+          footer = footerRef
         }}
         className="footer overflow-hidden"
       >
@@ -71,8 +71,8 @@ const Footer = () => {
               onClick={(e) => showAboutUs(e)}
               className={
                 aboutUs
-                  ? "footer__col col-lg-4 col-md-4 active"
-                  : "footer__col col-lg-4 col-md-4 js-footer-col"
+                  ? 'footer__col col-lg-4 col-md-4 active'
+                  : 'footer__col col-lg-4 col-md-4 js-footer-col'
               }
             >
               <div className="footer__category js-footer-category footer-category-cgt-name">
@@ -83,7 +83,7 @@ const Footer = () => {
               </div>
               <div
                 className={`footer__menu js-footer-menu ${
-                  aboutUs ? "" : "hide"
+                  aboutUs ? '' : 'hide'
                 }`}
               >
                 <span className="footer__link footer-link-about">
@@ -109,8 +109,8 @@ const Footer = () => {
               onClick={() => showTechnologies()}
               className={
                 technologies
-                  ? "footer__col col-lg-5 col-md-4 active"
-                  : "footer__col col-lg-5 col-md-4 js-footer-col"
+                  ? 'footer__col col-lg-5 col-md-4 active'
+                  : 'footer__col col-lg-5 col-md-4 js-footer-col'
               }
             >
               <div className="footer__category js-footer-category">
@@ -121,7 +121,7 @@ const Footer = () => {
               </div>
               <div
                 className={`footer__menu js-footer-menu ${
-                  technologies ? "" : "hide"
+                  technologies ? '' : 'hide'
                 }`}
               >
                 <div className="row">
@@ -131,7 +131,7 @@ const Footer = () => {
                         {/* <img className='footer-tech-img' src='/icons/ror.webp' alt='ROR - PNG Icon' /> */}
 
                         <Image
-                          src={"/icons/ror.webp"}
+                          src={'/icons/ror.webp'}
                           alt="ROR - PNG Icon"
                           width={20}
                           height={20}
@@ -154,7 +154,7 @@ const Footer = () => {
                         /> */}
 
                         <Image
-                          src={"/images/node_2.webp"}
+                          src={'/images/node_2.webp'}
                           alt="Nodejs PNG Image"
                           width={25}
                           height={25}
@@ -176,7 +176,7 @@ const Footer = () => {
                           alt="Reactjs Icon"
                         /> */}
                         <Image
-                          src={"/icons/reactjs.webp"}
+                          src={'/icons/reactjs.webp'}
                           alt="Reactjs Icon"
                           width={25}
                           height={25}
@@ -199,7 +199,7 @@ const Footer = () => {
                         /> */}
 
                         <Image
-                          src={"/icons/laravel.webp"}
+                          src={'/icons/laravel.webp'}
                           alt="Laravel Icon"
                           width={25}
                           height={25}
@@ -222,7 +222,7 @@ const Footer = () => {
                         /> */}
 
                         <Image
-                          src={"/icons/reactjs.webp"}
+                          src={'/icons/reactjs.webp'}
                           alt="Reactjs Icon"
                           width={25}
                           height={25}
@@ -244,7 +244,7 @@ const Footer = () => {
                           alt=""
                         /> */}
                         <Image
-                          src={"/icons/vuejs.webp"}
+                          src={'/icons/vuejs.webp'}
                           alt=""
                           width={25}
                           height={25}
@@ -264,8 +264,8 @@ const Footer = () => {
               onClick={() => showSocialIcons()}
               className={
                 socialIcons
-                  ? "footer__col col-lg-3 col-md-4 active"
-                  : "footer__col col-lg-3 col-md-4 js-footer-col"
+                  ? 'footer__col col-lg-3 col-md-4 active'
+                  : 'footer__col col-lg-3 col-md-4 js-footer-col'
               }
             >
               <div className="footer__category js-footer-category">
@@ -276,7 +276,7 @@ const Footer = () => {
               </div>
               <div
                 className={`footer__menu js-footer-menu footer-social-menu ${
-                  socialIcons ? "" : "hide"
+                  socialIcons ? '' : 'hide'
                 }`}
               >
                 <Link href="https://www.facebook.com/codegaragetech">
@@ -291,8 +291,7 @@ const Footer = () => {
                     /> */}
 
                     <Image
-                      
-                      src={"/images/Facebook3d.webp"}
+                      src={'/images/Facebook3d.webp'}
                       alt="3D Facebook Icon"
                       height={35}
                       width={35}
@@ -307,7 +306,7 @@ const Footer = () => {
                       alt="3D Twitter Icon"
                     /> */}
                     <Image
-                      src={"/images/Twitter3d.webp"}
+                      src={'/images/Twitter3d.webp'}
                       alt="3D Twitter Icon"
                       height={35}
                       width={35}
@@ -322,8 +321,8 @@ const Footer = () => {
                       src="/images/LinkedIn3d.webp"
                       alt="3D LinkedIn Icon"
                     /> */}
-                     <Image
-                      src={"/images/LinkedIn3d.webp"}
+                    <Image
+                      src={'/images/LinkedIn3d.webp'}
                       alt="3D LinkedIn Icon"
                       height={35}
                       width={35}
@@ -338,7 +337,7 @@ const Footer = () => {
                       alt="3D Instagram Icon"
                     /> */}
                     <Image
-                      src={"/images/Instagram3d.webp"}
+                      src={'/images/Instagram3d.webp'}
                       alt="3D Instagram Icon"
                       height={35}
                       width={35}
@@ -359,7 +358,7 @@ const Footer = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

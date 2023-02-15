@@ -1,32 +1,32 @@
-import React from "react";
-import Slider from "react-slick";
+import React from 'react'
+import Slider from 'react-slick'
 const Banner = () => {
   const bannerImage = [
     {
-      path: "/images/video-chat-a-pro.webp",
-      altImg: "",
+      path: '/images/video-chat-a-pro.webp',
+      altImg: '',
     },
     {
-      path: "/images/desmania-design.webp",
-      altImg: "Desmania Design - Logo",
+      path: '/images/desmania-design.webp',
+      altImg: 'Desmania Design - Logo',
     },
     {
-      path: "/images/vaayu.webp",
-      altImg: "Vaayu - Logo",
+      path: '/images/vaayu.webp',
+      altImg: 'Vaayu - Logo',
     },
     {
-      path: "/images/domino-data-lab.webp",
-      altImg: "Domino Data Lab - Logo",
+      path: '/images/domino-data-lab.webp',
+      altImg: 'Domino Data Lab - Logo',
     },
     {
-      path: "/images/ucview_2.webp",
-      altImg: "UcView - Logo",
+      path: '/images/ucview_2.webp',
+      altImg: 'UcView - Logo',
     },
     {
-      path: "/images/golden-circle-app.webp",
-      altImg: "Golden Circle App - Logo",
+      path: '/images/golden-circle-app.webp',
+      altImg: 'Golden Circle App - Logo',
     },
-  ];
+  ]
 
   var settings = {
     dots: false,
@@ -78,7 +78,7 @@ const Banner = () => {
         },
       },
     ],
-  };
+  }
   return (
     <Slider {...settings}>
       {bannerImage.map((e, i) => (
@@ -89,7 +89,7 @@ const Banner = () => {
         </picture>
       ))}
     </Slider>
-  );
-};
+  )
+}
 
-export default Banner;
+export default Banner

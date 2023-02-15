@@ -1,5 +1,5 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react'
+import Image from 'next/image'
 const Trophies = () => {
   return (
     <>
@@ -17,7 +17,7 @@ const Trophies = () => {
                     src="images/Calendar.webp"
                     alt="3D Calender"
                   /> */}
-                  <div  className="trophies-img">
+                  <div className="trophies-img">
                     <Image
                       src="/images/Calendar.webp"
                       alt="3D Calender"
@@ -44,7 +44,7 @@ const Trophies = () => {
                     src="images/trophy-front-clay.webp"
                     alt="3D Trophy Front Clay"
                   /> */}
-                  <div  className="trophies-img">
+                  <div className="trophies-img">
                     <Image
                       src="/images/trophy-front-clay.webp"
                       alt="3D Trophy Front Clay"
@@ -73,8 +73,8 @@ const Trophies = () => {
                   /> */}
                   <div className="trophies-img">
                     <Image
-                       src="/images/frame_2.webp"
-                       alt="frame image"
+                      src="/images/frame_2.webp"
+                      alt="frame image"
                       width={100}
                       height={100}
                     />
@@ -93,7 +93,7 @@ const Trophies = () => {
         <div className="trophies-two-colored-circle"></div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Trophies;
+export default Trophies

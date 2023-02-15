@@ -1,11 +1,11 @@
-import React from "react";
-import { Modal, Button } from "react-bootstrap";
-import AssistanceForm from "./assistanceModel";
+import React from 'react'
+import { Modal, Button } from 'react-bootstrap'
+import AssistanceForm from './assistanceModel'
 function ModalDialog() {
-  const [modalView, setModalView] = React.useState(false);
+  const [modalView, setModalView] = React.useState(false)
   const initModal = () => {
-    return setModalView(!modalView);
-  };
+    return setModalView(!modalView)
+  }
   return (
     <>
       <button
@@ -24,7 +24,7 @@ function ModalDialog() {
             onClick={initModal}
           >
             <Modal.Title onClick={(e) => e.stopPropagation()}>
-              {" "}
+              {' '}
               <h3 className="schedule-form-header text-center">
                 Schedule a Meeting
               </h3>
@@ -33,13 +33,13 @@ function ModalDialog() {
           <Modal.Body>
             <div className="schedule-form">
               <AssistanceForm
-                requestOrigin={"Requested from get assisstance"}
+                requestOrigin={'Requested from get assisstance'}
               />
             </div>
           </Modal.Body>
         </Modal>
       </div>
     </>
-  );
+  )
 }
-export default ModalDialog;
+export default ModalDialog

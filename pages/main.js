@@ -1,8 +1,8 @@
-import React from "react";
-import Header from "./includes/header";
-import Typewriter from "typewriter-effect";
-import Head from "next/head";
-import Image from "next/image";
+import React from 'react'
+import Header from './includes/header'
+import Typewriter from 'typewriter-effect'
+import Head from 'next/head'
+import Image from 'next/image'
 
 const Main = () => {
   return (
@@ -28,7 +28,7 @@ const Main = () => {
             <div>
               <div className="ms-3 main__title title title_big" data-aos>
                 <span className="title__box dev-title mb-3">
-                  <span className="title__text" style={{minWidth: 500}}>
+                  <span className="title__text" style={{ minWidth: 500 }}>
                     {/* 'Development', 'Software Engineering', 'Designing', 'App Monitoring', 'Web Solutions', 'Mobile Solutions', 'CRM Solutions', 'CMS Solutions', 'Cloud Services', 'Tech Consulting' */}
                     <Typewriter
                       options={{
@@ -44,7 +44,7 @@ const Main = () => {
                         ],
                         autoStart: true,
                         loop: true,
-                        cursor: "",
+                        cursor: '',
                       }}
                     />
                   </span>
@@ -52,20 +52,20 @@ const Main = () => {
                 <span className="title__box">
                   <span className="title__text">
                     <span className="title__line">
-                      Web{" "}
+                      Web{' '}
                       <span className="main-subheadings-span">Solutions</span>
                     </span>
                   </span>
                 </span>
                 <span className="title__box main-android-title-box">
                   <span className="title__text main-android-title-text">
-                    Android / IOS{" "}
+                    Android / IOS{' '}
                     <span className="main-subheadings-span">Development</span>
                   </span>
                 </span>
                 <span className="title__box">
                   <span className="title__text">
-                    UI / UX{" "}
+                    UI / UX{' '}
                     <span className="main-subheadings-span">Designing</span>
                     {/* <span className="title__color">.</span> */}
                   </span>
@@ -147,13 +147,13 @@ const Main = () => {
                 src="img/mouse.webp"
                 alt="3D Mouse PNG"
               /> */}
-              <div  className="main__pic">
+              <div className="main__pic">
                 <Image
-                 src="/img/mouse.webp"
-                 alt="3D Mouse PNG"
-                 width={98}
-                 height={38}
-                 />
+                  src="/img/mouse.webp"
+                  alt="3D Mouse PNG"
+                  width={98}
+                  height={38}
+                />
               </div>
             </div>
             {/* <div className="main__preview">
@@ -191,7 +191,7 @@ const Main = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main

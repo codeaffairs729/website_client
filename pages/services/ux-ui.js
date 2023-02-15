@@ -1,10 +1,10 @@
-import TechComponent from "../../components/techComponent";
-import HireServiceLayout from "../../components/hireServiceLayout";
-import Banner from "../../components/banner";
-import Head from "next/head";
-import Image from "next/image";
-import ScheduleForm from "../../components/schedule";
-const techTitle = "UI / UX";
+import TechComponent from '../../components/techComponent'
+import HireServiceLayout from '../../components/hireServiceLayout'
+import Banner from '../../components/banner'
+import Head from 'next/head'
+import Image from 'next/image'
+import ScheduleForm from '../../components/schedule'
+const techTitle = 'UI / UX'
 const contentHeader1 = () => {
   return (
     <>
@@ -32,8 +32,8 @@ const contentHeader1 = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
 const content1 = () => {
   return (
@@ -111,18 +111,17 @@ const content1 = () => {
         <TechComponent />
       </div>
     </>
-  );
-};
-
+  )
+}
 
 const content3 = () => (
   <div className="form-service">
     <ScheduleForm
-      title={"Schedule a Meeting"}
-      requestOrigin={"Request generated from dev-ops page"}
+      title={'Schedule a Meeting'}
+      requestOrigin={'Request generated from dev-ops page'}
     />
   </div>
-);
+)
 const Miscellaneous = () => {
   return (
     <>
@@ -146,10 +145,10 @@ const Miscellaneous = () => {
         contentHeader1={contentHeader1}
         techTitle={techTitle}
         bannerComponent={Banner}
-        requestOrigin={"Requested from Miscellaneous page"}
+        requestOrigin={'Requested from Miscellaneous page'}
       />
     </>
-  );
-};
+  )
+}
 
-export default Miscellaneous;
+export default Miscellaneous

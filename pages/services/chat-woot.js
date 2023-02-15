@@ -1,13 +1,13 @@
-import TechComponent from "../../components/techComponent";
-import HireServiceLayout from "../../components/hireServiceLayout";
-import Banner from "../../components/banner";
-import Head from "next/head";
-import ScheduleForm from "../../components/schedule";
-import Image from "next/image";
-const techTitle = "Chatwoot";
+import TechComponent from '../../components/techComponent'
+import HireServiceLayout from '../../components/hireServiceLayout'
+import Banner from '../../components/banner'
+import Head from 'next/head'
+import ScheduleForm from '../../components/schedule'
+import Image from 'next/image'
+const techTitle = 'Chatwoot'
 
-const contentHeader = () => <div></div>;
-const contentHeaderLeft = () => <div></div>;
+const contentHeader = () => <div></div>
+const contentHeaderLeft = () => <div></div>
 
 const contentHeader1 = () => {
   return (
@@ -36,8 +36,8 @@ const contentHeader1 = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
 const content1 = () => {
   return (
@@ -83,7 +83,7 @@ const content1 = () => {
           Chatwoot supports self-hosted installations by default and you can
           easily own your customer data. The framework offers a wonderful
           experience to everyone, including your employees, partners, and
-          customers.{" "}
+          customers.{' '}
         </p>
         <h3 className="hire-h3">
           Privacy Compliant, Open-source, and Self-hosted
@@ -95,30 +95,30 @@ const content1 = () => {
           <h3 className="hire-h3">Communication, On The Go</h3>
           <p className="hire-p">
             We offer a Chatwoot framework that allows you to communicate, reply
-            to messages, as well as collaborate with your customers instantly.{" "}
+            to messages, as well as collaborate with your customers instantly.{' '}
           </p>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-const content7 = () => <></>;
+const content7 = () => <></>
 
-const bannerComponent = () => <Banner />;
+const bannerComponent = () => <Banner />
 
 // const content6 = () => <TechComponent />;
-const content4 = () => <div></div>;
-const content5 = () => <div></div>;
-const content2 = () => <div></div>;
+const content4 = () => <div></div>
+const content5 = () => <div></div>
+const content2 = () => <div></div>
 const content3 = () => (
   <div className="form-service">
     <ScheduleForm
-      title={"Schedule a Meeting"}
-      requestOrigin={"Request generated from hire-team page"}
+      title={'Schedule a Meeting'}
+      requestOrigin={'Request generated from hire-team page'}
     />
   </div>
-);
+)
 const Chatwoot = () => {
   return (
     <>
@@ -151,10 +151,10 @@ const Chatwoot = () => {
         bannerComponent={bannerComponent}
         contentHeader={contentHeader}
         isIconExit={true}
-        requestOrigin={"Requested from Mobile solution page"}
+        requestOrigin={'Requested from Mobile solution page'}
       />
     </>
-  );
-};
+  )
+}
 
-export default Chatwoot;
+export default Chatwoot

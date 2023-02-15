@@ -1,29 +1,29 @@
-import React from "react";
-import { RxCheck } from "react-icons/rx";
-import Slider from "react-slick";
-import Head from "next/head";
-import ScheduleForm from "../components/schedule";
+import React from 'react'
+import { RxCheck } from 'react-icons/rx'
+import Slider from 'react-slick'
+import Head from 'next/head'
+import ScheduleForm from '../components/schedule'
 
 const techTitle =
-  "Hire Certified and Professional Software Developers or DevOps Engineers";
-import HireServiceLayout from "../components/hireServiceLayout";
+  'Hire Certified and Professional Software Developers or DevOps Engineers'
+import HireServiceLayout from '../components/hireServiceLayout'
 
 const bannerImage = [
-  { name: "Ruby on Rails", path: "icons/rails.webp",altImg:'Rails PNG' },
-  { name: "ReactJs", path: "icons/reactjs.webp",altImg:'Reactjs Icon' },
-  { name: "NextJs", path: "icons/nextjs.webp" ,altImg:'Nextjs Icon'},
-  { name: "VueJs", path: "icons/vuejs.webp" ,altImg:'Vuejs Icon'},
-  { name: "NuxtJs", path: "icons/nuxtjs.webp",altImg:'Nuxtjs Icon' },
-  { name: "NodeJs", path: "icons/nodejs.webp",altImg:'Nodejs Icon' },
-  { name: "Laravel Icon", path: "icons/laravel.webp" ,altImg:''},
-  { name: "Shopify", path: "images/shopify.webp" ,altImg:'Shopify PNG Image'},
-  { name: "Wordpress", path: "icons/wordpress.webp",altImg:'Wordpress Icon' },
-  { name: "React Native", path: "icons/reactjs.webp",altImg:'Reactjs Icon' },
-  { name: "Ionic", path: "icons/ionic.webp",altImg:'Ionic Icon' },
-  { name: "Flutter", path: "images/flutter.webp",altImg:'Flutter PNG Image' },
-  { name: "Swift / iOS", path: "icons/swift.webp",altImg:'Swift Icon' },
-  { name: "Android", path: "images/android_4.webp" ,altImg:''},
-];
+  { name: 'Ruby on Rails', path: 'icons/rails.webp', altImg: 'Rails PNG' },
+  { name: 'ReactJs', path: 'icons/reactjs.webp', altImg: 'Reactjs Icon' },
+  { name: 'NextJs', path: 'icons/nextjs.webp', altImg: 'Nextjs Icon' },
+  { name: 'VueJs', path: 'icons/vuejs.webp', altImg: 'Vuejs Icon' },
+  { name: 'NuxtJs', path: 'icons/nuxtjs.webp', altImg: 'Nuxtjs Icon' },
+  { name: 'NodeJs', path: 'icons/nodejs.webp', altImg: 'Nodejs Icon' },
+  { name: 'Laravel Icon', path: 'icons/laravel.webp', altImg: '' },
+  { name: 'Shopify', path: 'images/shopify.webp', altImg: 'Shopify PNG Image' },
+  { name: 'Wordpress', path: 'icons/wordpress.webp', altImg: 'Wordpress Icon' },
+  { name: 'React Native', path: 'icons/reactjs.webp', altImg: 'Reactjs Icon' },
+  { name: 'Ionic', path: 'icons/ionic.webp', altImg: 'Ionic Icon' },
+  { name: 'Flutter', path: 'images/flutter.webp', altImg: 'Flutter PNG Image' },
+  { name: 'Swift / iOS', path: 'icons/swift.webp', altImg: 'Swift Icon' },
+  { name: 'Android', path: 'images/android_4.webp', altImg: '' },
+]
 
 const contentHeader = () => {
   return (
@@ -62,14 +62,14 @@ const contentHeader = () => {
         </div>
         <div className="hire-container-body-right">
           <ScheduleForm
-            title={"Schedule a Meeting"}
-            requestOrigin={"Request generated from hire-freelancer page"}
+            title={'Schedule a Meeting'}
+            requestOrigin={'Request generated from hire-freelancer page'}
           />
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 const content1 = () => {
   return (
     <>
@@ -77,7 +77,7 @@ const content1 = () => {
 
       <div className="hire-container-body-left-content-1">
         <h2 className="hire-h2">
-          Sustain, Prosper And Achieve New Heights Of Success.{" "}
+          Sustain, Prosper And Achieve New Heights Of Success.{' '}
         </h2>
         <p className="hire-p">
           A collaboration with Code Garage Tech developers offers access to
@@ -104,7 +104,7 @@ const content1 = () => {
             Code Garage Tech, we have learned how to lower overhead costs,
             source talent that is within your budget, and produce outcomes on
             time and within your budget in order to help your business better
-            focus on attaining those indispensable KPIs.{" "}
+            focus on attaining those indispensable KPIs.{' '}
           </li>
           <li>
             Dependable outcomes using a "right the first time" philosophy. When
@@ -119,8 +119,8 @@ const content1 = () => {
         </p>
       </div>
     </>
-  );
-};
+  )
+}
 
 const content2 = () => (
   <div>
@@ -139,11 +139,11 @@ const content2 = () => (
     <ul className="body-list">
       <li>
         Senior Developers and Engineers with a high level of experience of more
-        than 9 years in custom mobile app development.{" "}
+        than 9 years in custom mobile app development.{' '}
       </li>
       <li>
         All of our coders have approximately three years of experience in their
-        realm.{" "}
+        realm.{' '}
       </li>
       <li>
         A powerful track record with thousands of completed projects
@@ -182,11 +182,11 @@ const content2 = () => (
         You will be offered transparency from the beginning of your involvement
         with our team to the project's conclusion. We are purely committed to
         honesty because we offer real-time tracking of hours worked, timecard
-        screenshots, and much more.{" "}
+        screenshots, and much more.{' '}
       </li>
       <li>
         We offer a variety of engagement models that make it simple to select
-        the hiring method that best fits your business approach.{" "}
+        the hiring method that best fits your business approach.{' '}
       </li>
     </ul>
     <p className="hire-p">
@@ -195,7 +195,7 @@ const content2 = () => (
       build a sturdy technological foundation to craft success.
     </p>
   </div>
-);
+)
 
 const content3 = () => (
   <>
@@ -301,7 +301,7 @@ const content3 = () => (
       </ul>
     </div>
   </>
-);
+)
 
 var settings = {
   dots: false,
@@ -353,7 +353,7 @@ var settings = {
       },
     },
   ],
-};
+}
 
 const bannerComponent = () => (
   <Slider {...settings}>
@@ -364,7 +364,7 @@ const bannerComponent = () => (
       </div>
     ))}
   </Slider>
-);
+)
 
 const HireFreelancer = () => {
   return (
@@ -389,10 +389,10 @@ const HireFreelancer = () => {
         bannerComponent={bannerComponent}
         techTitle={techTitle}
         contentHeader={contentHeader}
-        requestOrigin={"Requested from Hire a freelancer page"}
+        requestOrigin={'Requested from Hire a freelancer page'}
       />
     </>
-  );
-};
+  )
+}
 
-export default HireFreelancer;
+export default HireFreelancer

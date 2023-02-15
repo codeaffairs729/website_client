@@ -1,58 +1,58 @@
-import React, { useState, useRef } from "react";
-import Head from "next/head";
+import React, { useState, useRef } from 'react'
+import Head from 'next/head'
 // import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
-import GenericModal from "../components/genericModal";
-import Link from "next/link";
+import GenericModal from '../components/genericModal'
+import Link from 'next/link'
 
 const Contact = () => {
-  const [nameIcon, setNameIcon] = useState(false);
-  const [phoneIcon, setPhoneIcon] = useState(false);
-  const [emailIcon, setEmailIcon] = useState(false);
-  const [messageIcon, setMessageIcon] = useState(false);
+  const [nameIcon, setNameIcon] = useState(false)
+  const [phoneIcon, setPhoneIcon] = useState(false)
+  const [emailIcon, setEmailIcon] = useState(false)
+  const [messageIcon, setMessageIcon] = useState(false)
 
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState('')
+  const [phone, setPhone] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
 
-  const submitBtn = useRef(null);
-  const submitModalBtn = useRef(null);
+  const submitBtn = useRef(null)
+  const submitModalBtn = useRef(null)
 
-  const [genModalshow, setGenModalshow] = useState(false);
+  const [genModalshow, setGenModalshow] = useState(false)
   const handleModalShow = () => {
-    setGenModalshow(true);
-  };
+    setGenModalshow(true)
+  }
 
   const handleModalClose = () => {
-    setGenModalshow(false);
-  };
+    setGenModalshow(false)
+  }
 
   // const { executeRecaptcha } = useGoogleReCaptcha();
 
   const changeNameIcon = (e) => {
-    e == 1 ? setNameIcon(true) : setNameIcon(false);
-  };
+    e == 1 ? setNameIcon(true) : setNameIcon(false)
+  }
 
   const changeEmailIcon = (e) => {
-    e == 1 ? setEmailIcon(true) : setEmailIcon(false);
-  };
+    e == 1 ? setEmailIcon(true) : setEmailIcon(false)
+  }
 
   const changeMessageIcon = (e) => {
-    e == 1 ? setMessageIcon(true) : setMessageIcon(false);
-  };
+    e == 1 ? setMessageIcon(true) : setMessageIcon(false)
+  }
 
   const changePhoneIcon = (e) => {
-    e == 1 ? setPhoneIcon(true) : setPhoneIcon(false);
-  };
+    e == 1 ? setPhoneIcon(true) : setPhoneIcon(false)
+  }
 
   const handleModalEmail = (e) => {
-    setName("Anonymous");
-    setPhone("NA");
-    setEmail(e.target.value);
-    setMessage("Enquiry");
-  };
+    setName('Anonymous')
+    setPhone('NA')
+    setEmail(e.target.value)
+    setMessage('Enquiry')
+  }
 
   // const handleSubmit = (e) => {
   //   e.preventDefault();
@@ -67,19 +67,19 @@ const Contact = () => {
   // };
 
   const submitEnquiryForm = (e) => {
-    e.preventDefault();
-    submitBtn.disabled = true;
+    e.preventDefault()
+    submitBtn.disabled = true
     submitBtn.innerHTML =
-      '<span class="spinner-border spinner-border-sm"></span> Loading...';
+      '<span class="spinner-border spinner-border-sm"></span> Loading...'
 
-    submitModalBtn.disabled = true;
+    submitModalBtn.disabled = true
     submitModalBtn.innerHTML =
-      '<span class="spinner-border spinner-border-sm"></span> Loading...';
-    fetch("/api/contact", {
-      method: "POST",
+      '<span class="spinner-border spinner-border-sm"></span> Loading...'
+    fetch('/api/contact', {
+      method: 'POST',
       headers: {
-        Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json",
+        Accept: 'application/json, text/plain, */*',
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify({
         name: name,
@@ -90,47 +90,47 @@ const Contact = () => {
     })
       .then((res) => res.json())
       .then((res) => {
-        if (res?.status === "success") {
-          setName("");
-          setPhone("");
-          setEmail("");
-          setMessage("");
-          setGenModalshow(false);
+        if (res?.status === 'success') {
+          setName('')
+          setPhone('')
+          setEmail('')
+          setMessage('')
+          setGenModalshow(false)
 
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = "Send Now";
+          submitBtn.disabled = false
+          submitBtn.innerHTML = 'Send Now'
 
-          submitModalBtn.disabled = false;
-          submitModalBtn.innerHTML = "Send Now";
+          submitModalBtn.disabled = false
+          submitModalBtn.innerHTML = 'Send Now'
 
-          toast.success("Success! Email Sent Successful", {
-            position: "top-right",
+          toast.success('Success! Email Sent Successful', {
+            position: 'top-right',
             autoClose: 5000,
             hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-          });
+          })
         } else {
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = "Send Now";
+          submitBtn.disabled = false
+          submitBtn.innerHTML = 'Send Now'
 
-          submitModalBtn.disabled = false;
-          submitModalBtn.innerHTML = "Send Now";
+          submitModalBtn.disabled = false
+          submitModalBtn.innerHTML = 'Send Now'
 
-          toast.error("Error! Email Not Sent", {
-            position: "top-right",
+          toast.error('Error! Email Not Sent', {
+            position: 'top-right',
             autoClose: 5000,
             hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-          });
+          })
         }
-      });
-  };
+      })
+  }
   return (
     <>
       <Head>
@@ -436,7 +436,7 @@ const Contact = () => {
                         </div>
                         <button
                           ref={(submitBtnRef) => {
-                            submitBtn = submitBtnRef;
+                            submitBtn = submitBtnRef
                           }}
                           className="entry__btn btn btn_purple contact-submit-btn"
                           type="submit"
@@ -548,7 +548,7 @@ const Contact = () => {
         modalHeaderShow={true}
         modalBodyShow={true}
         modalFooterShow={false}
-        modalTitle={"Quick Contact"}
+        modalTitle={'Quick Contact'}
         modalBody={
           <div>
             <div className="entry__field field quick-contact-field">
@@ -604,7 +604,7 @@ const Contact = () => {
             <div className="mb-4 text-end">
               <button
                 ref={(submitModalBtnRef) => {
-                  submitModalBtn = submitModalBtnRef;
+                  submitModalBtn = submitModalBtnRef
                 }}
                 className="entry__btn btn btn_purple contact-submit-btn btn-sm mb-3 w-100"
                 type="submit"
@@ -616,7 +616,7 @@ const Contact = () => {
         }
       />
     </>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

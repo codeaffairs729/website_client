@@ -1,9 +1,9 @@
-import React from "react";
-import { RxCheck } from "react-icons/rx";
-const techTitle = "Hire a Team ";
-import HireServiceLayout from "../components/hireServiceLayout";
-import Head from "next/head";
-import ScheduleForm from "../components/schedule";
+import React from 'react'
+import { RxCheck } from 'react-icons/rx'
+const techTitle = 'Hire a Team '
+import HireServiceLayout from '../components/hireServiceLayout'
+import Head from 'next/head'
+import ScheduleForm from '../components/schedule'
 
 const contentHeader = () => {
   return (
@@ -25,16 +25,16 @@ const contentHeader = () => {
           </p>
         </div>
         <div className="hire-container-body-right">
-    <ScheduleForm
-      title={"Schedule a Meeting"}
-      requestOrigin={"Request generated from hire-team page"}
-    />
-    ;
-  </div>
+          <ScheduleForm
+            title={'Schedule a Meeting'}
+            requestOrigin={'Request generated from hire-team page'}
+          />
+          ;
+        </div>
       </div>
     </>
-  );
-};
+  )
+}
 
 const content4 = () => {
   return (
@@ -70,7 +70,7 @@ const content4 = () => {
             Code Garage Tech, we have learned how to lower overhead costs,
             source talent that is within your budget, and produce outcomes on
             time and within your budget in order to help your business better
-            focus on attaining those indispensable KPIs.{" "}
+            focus on attaining those indispensable KPIs.{' '}
           </li>
           <li>
             Dependable outcomes using a "right the first time" philosophy. When
@@ -85,8 +85,8 @@ const content4 = () => {
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
 const content5 = () => (
   <div className="hire-container">
@@ -105,14 +105,14 @@ const content5 = () => (
         <p className="hire-p">
           Have a project that requires complete attention or needs services like
           software development for the long term, choose our pay-as-you-go
-          service model provided by our adept time.{" "}
+          service model provided by our adept time.{' '}
         </p>
         <ul>
           <li>
             <span className="tick">
               <RxCheck />
             </span>
-            160 Hours of part & full time{" "}
+            160 Hours of part & full time{' '}
           </li>
           <li>
             <span className="tick">
@@ -176,7 +176,7 @@ const content5 = () => (
             <span className="tick">
               <RxCheck />
             </span>
-            Milestone based payment{" "}
+            Milestone based payment{' '}
           </li>
         </ul>
       </div>
@@ -192,7 +192,7 @@ const content5 = () => (
             <span className="tick">
               <RxCheck />
             </span>
-            No hidden costs{" "}
+            No hidden costs{' '}
           </li>
           <li>
             <span className="tick">
@@ -216,7 +216,7 @@ const content5 = () => (
             <span className="tick">
               <RxCheck />
             </span>
-            Requirement-based working hours{" "}
+            Requirement-based working hours{' '}
           </li>
         </ul>
       </div>
@@ -241,23 +241,35 @@ const content5 = () => (
       </p>
     </div>
   </div>
-);
+)
 
 const bannerComponent = () => (
   <div className="hire-container hire-free-banner">
     <div className="top-rated shadow bg-warning rounded text-dark">
       Top rated on
     </div>
-    <img className="hire-logo" src="icons/hire/good-firms-logo.webp" alt="Good Firm - Logo" />
+    <img
+      className="hire-logo"
+      src="icons/hire/good-firms-logo.webp"
+      alt="Good Firm - Logo"
+    />
     <img
       className="hire-logo"
       src="icons/hire/upwork-logo-png-transparent.webp"
       alt="Upwork - Logo"
     />
-    <img className="hire-logo" src="icons/hire/clutch_logo.webp" alt="Clutch - Logo"/>
-    <img className="hire-logo" src="icons/hire/PeoplePerHour_logo.webp" alt="People Per Hour - Logo"/>
+    <img
+      className="hire-logo"
+      src="icons/hire/clutch_logo.webp"
+      alt="Clutch - Logo"
+    />
+    <img
+      className="hire-logo"
+      src="icons/hire/PeoplePerHour_logo.webp"
+      alt="People Per Hour - Logo"
+    />
   </div>
-);
+)
 
 const HireTeam = () => {
   return (
@@ -279,10 +291,10 @@ const HireTeam = () => {
         techTitle={techTitle}
         bannerComponent={bannerComponent}
         contentHeader={contentHeader}
-        requestOrigin={"Requested from Hire a team page"}
+        requestOrigin={'Requested from Hire a team page'}
       />
     </>
-  );
-};
+  )
+}
 
-export default HireTeam;
+export default HireTeam

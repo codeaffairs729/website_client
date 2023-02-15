@@ -1,4 +1,3 @@
-
 const SliderButton = ({ gotoPrev, gotoNext }) => {
   return (
     <div className="d-flex">
@@ -43,7 +42,7 @@ const SliderButton = ({ gotoPrev, gotoNext }) => {
         </svg>
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default SliderButton;
+export default SliderButton
