@@ -77,10 +77,10 @@ const Package = () => {
     arrows: false,
     // prevArrow: <PrevButton />,
     // nextArrow: <NextButton />,
-    speed: 200,
+    speed: 1000,
     fade: true,
     adaptiveHeight: true,
-    autoplay: false,
+    autoplay: true,
     pauseOnHover: false,
     responsive: [
       {
@@ -122,7 +122,7 @@ const Package = () => {
     speed: 700,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 768,

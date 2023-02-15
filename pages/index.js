@@ -11,15 +11,32 @@ import Main from "./main";
 // import Like from "./like";
 import Footer from "./includes/footer";
 import Image from "next/image";
-
-const Package = dynamic(() => import("./package"), {});
-const Work = dynamic(() => import("./work"), {});
-const Layouts = dynamic(() => import("./layouts"), {});
-const Access = dynamic(() => import("./access"), {});
-const Partners = dynamic(() => import("./partners"), {});
-const Design = dynamic(() => import("./design"), {});
-const Teams = dynamic(() => import("./teams"), {});
-const Like = dynamic(() => import("./like"), {});
+// left ssr
+const Package = dynamic(() => import("./package"), {
+  ssr: false,
+});
+const Work = dynamic(() => import("./work"), {
+  ssr: false,
+});
+// left side ssr
+const Layouts = dynamic(() => import("./layouts"), {
+  ssr: false,
+});
+const Access = dynamic(() => import("./access"), {
+  ssr: false,
+});
+const Partners = dynamic(() => import("./partners"), {
+  ssr: false,
+});
+const Design = dynamic(() => import("./design"), {
+  ssr: false,
+});
+const Teams = dynamic(() => import("./teams"), {
+  ssr: false,
+});
+const Like = dynamic(() => import("./like"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
