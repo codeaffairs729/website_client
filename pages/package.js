@@ -182,8 +182,8 @@ const Package = () => {
                         <div className="package__info">
                           Driven by the values of empathy & impact, we are
                           thriving towards this vision. From research backed
-                          design decisions to jaw dropping pixels, It's a no
-                          brainer to cook your idea in our lab.
+                          design decisions to jaw dropping pixels, It&apos;s a
+                          no brainer to cook your idea in our lab.
                         </div>
                         <div className="package__list">
                           <ul
@@ -300,9 +300,9 @@ const Package = () => {
                           Web Development
                         </h3>
                         <div className="package__info">
-                          It's the development of systems that take care of your
-                          valuable processes. We develop user friendly, reliable
-                          & scalable applications that help to boost
+                          It&apos;s the development of systems that take care of
+                          your valuable processes. We develop user friendly,
+                          reliable & scalable applications that help to boost
                           productivity in your field and generate revenue.
                         </div>
                         <div className="package__list">

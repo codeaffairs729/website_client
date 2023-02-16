@@ -265,8 +265,8 @@ const Careers = () => {
           </div>
           <div className="col-lg-6 col-md-6 career-area-3-para d-flex align-items-center">
             <p>
-              We Experiment, Adapt & Continually Grow. You won't find a more
-              dedicated, diligent team of professionals anywhere else who
+              We Experiment, Adapt & Continually Grow. You won&apos;t find a
+              more dedicated, diligent team of professionals anywhere else who
               utilize Web & App development technology cheerfully. We want to
               see your career success and we pride ourselves on working hard to
               make sure it happens. Mark your part as an inclusive,
@@ -540,16 +540,16 @@ const Careers = () => {
           <div className="d-flex flex-column flex-md-row">
             <div className="col-lg-6 col-md-6 d-flex align-items-center">
               <div className="career-area-8-text-div-1">
-                <h2 className="career-area-8-heading">We’re Fun</h2>
+                <h2 className="career-area-8-heading">We&apos;re Fun</h2>
                 <p className="career-area-8-para">
                   Having a friendly workspace is all you need to be more
                   productive and we at Code Garage Tech find fun in little
                   things that make our day full of positive vibes. We Lift
                   Spirits by making our office environment lively with great
                   music. We believe that fun is essential to a good work
-                  environment. That's why we offer flexible hours, fun events,
-                  and challenging projects. We want you to feel like you're not
-                  just working—you're exuberant!
+                  environment. That&apos;s why we offer flexible hours, fun
+                  events, and challenging projects. We want you to feel like
+                  you&apos;re not just working—you&apos;re exuberant!
                 </p>
               </div>
             </div>
@@ -573,13 +573,13 @@ const Careers = () => {
             <div className="m-2 col-lg-6 col-md-6 d-flex align-items-center">
               <div className="career-area-8-text-div-1">
                 <h2 className="career-area-8-heading">
-                  We're Process-Oriented
+                  We&apos;re Process-Oriented
                 </h2>
                 <p className="career-area-8-para mt-3">
                   One of the most important things about our process is that
-                  we're focused on the client. We believe that great work
-                  doesn't just happen—it needs to be created by people who are
-                  passionate about it and committed to excellence.
+                  we&apos;re focused on the client. We believe that great work
+                  doesn&apos;t just happen—it needs to be created by people who
+                  are passionate about it and committed to excellence.
                 </p>
               </div>
             </div>
@@ -607,8 +607,8 @@ const Careers = () => {
                   You Get To Work On The Latest Technologies.
                 </h3>
                 <p className="career-area-9-para">
-                  We don’t limit ourselves to only working on one technology, we
-                  want you to prosper and gain success.
+                  We don&apos;t limit ourselves to only working on one
+                  technology, we want you to prosper and gain success.
                 </p>
               </div>
             </div>
@@ -662,8 +662,8 @@ const Careers = () => {
                   Regular Research-Based Seminars On The Latest Tech
                 </h3>
                 <p className="career-area-9-para">
-                  We don’t want you to lag behind that’s why we conduct monthly
-                  seminars to polish your skills.
+                  We don&apos;t want you to lag behind that&apos;s why we
+                  conduct monthly seminars to polish your skills.
                 </p>
               </div>
             </div>

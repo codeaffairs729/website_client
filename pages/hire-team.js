@@ -57,12 +57,12 @@ const content4 = () => {
         </p>
         <ul className="body-list">
           <li>
-            An uncomplicated way to avoid the "talent war." When you require a
-            knowledgeable MySQL architect or experienced C developers to develop
-            a new website for your business, hiring in-house depicts competing
-            with other businesses in your area for a small or medium talent
-            pool. We at Code Garage Tech aid you circumvent the struggle by
-            providing instant access to qualified and professional people.
+            An uncomplicated way to avoid the &quot;talent war.&quot; When you
+            require a knowledgeable MySQL architect or experienced C developers
+            to develop a new website for your business, hiring in-house depicts
+            competing with other businesses in your area for a small or medium
+            talent pool. We at Code Garage Tech aid you circumvent the struggle
+            by providing instant access to qualified and professional people.
           </li>
           <li>
             Cost reductions across the board, up to 60% when compared to
@@ -73,10 +73,10 @@ const content4 = () => {
             focus on attaining those indispensable KPIs.{' '}
           </li>
           <li>
-            Dependable outcomes using a "right the first time" philosophy. When
-            outcomes do not meet your expectations fully, we are always here to
-            talk, learn, and adapt. All of our clients always get exactly what
-            they asked for in their initial proposal.
+            Dependable outcomes using a &quot;right the first time&quot;
+            philosophy. When outcomes do not meet your expectations fully, we
+            are always here to talk, learn, and adapt. All of our clients always
+            get exactly what they asked for in their initial proposal.
           </li>
         </ul>
         <p className="hire-p">
@@ -235,9 +235,10 @@ const content5 = () => (
         <br />
         <br />
         Contact us right now for a thorough discussion regarding Code Garde
-        Technologies' and custom software development that help in empowering
-        your development procedures. We're always willing to hear your goals and
-        find out how we can best support you in achieving them.
+        Technologies&apos; and custom software development that help in
+        empowering your development procedures. We&apos;re always willing to
+        hear your goals and find out how we can best support you in achieving
+        them.
       </p>
     </div>
   </div>

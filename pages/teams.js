@@ -119,7 +119,7 @@ const Teams = () => {
                     >
                       <div className="row teams-cmnt-row">
                         <div className="col-lg-12 mt-5 mb-4 teams-cmnt-text">
-                          Solid work. Can't go wrong.
+                          Solid work. Can&apos;t go wrong.
                         </div>
                         <div className="col-lg-12 mb-5 teams-cmnt-author">
                           - Sean Adler

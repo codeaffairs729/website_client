@@ -137,7 +137,7 @@ function AboutUs() {
               </span>
             </h2>
             <p className="about-area-7-para">
-              We're on a mission to make the IT world more process-driven.
+              We&apos;re on a mission to make the IT world more process-driven.
               <br />
               <br />
               We believe in empowering entrepreneurs by providing valuable
@@ -468,9 +468,9 @@ function AboutUs() {
                         We believe in transparency, and we want you to feel
                         comfortable with us. We believe that everyone deserves
                         the opportunity to be heard and understood—no matter
-                        where they are or what they do and that's why we work
-                        hard every day to make sure our services provide optimum
-                        outcomes.
+                        where they are or what they do and that&apos;s why we
+                        work hard every day to make sure our services provide
+                        optimum outcomes.
                       </p>
                     </div>
                   </div>
@@ -499,9 +499,9 @@ function AboutUs() {
                         We provide 24*7 support because we know how important it
                         is to have access to help when you need it. Our team
                         will respond within minutes of receiving your request.
-                        We'll provide you with the information, advice, and
-                        support that you need to get back on track. We're here
-                        for you, so let us know if you ever need anything!
+                        We&apos;ll provide you with the information, advice, and
+                        support that you need to get back on track. We&apos;re
+                        here for you, so let us know if you ever need anything!
                       </p>
                     </div>
                   </div>
@@ -525,11 +525,11 @@ function AboutUs() {
                     <div className="col-lg-2 col-md-2 col-2"></div>
                     <div className="col-lg-10 col-md-10 col-10">
                       <p className="about-area-1-para-1">
-                        Future-ready tech is about taking the best of what's
-                        already out there and combining it with the next wave of
-                        innovation. We help businesses to understand the new
-                        tech landscape by offering guidance, consultancy, and
-                        support.
+                        Future-ready tech is about taking the best of
+                        what&apos;s already out there and combining it with the
+                        next wave of innovation. We help businesses to
+                        understand the new tech landscape by offering guidance,
+                        consultancy, and support.
                       </p>
                     </div>
                   </div>
@@ -557,10 +557,10 @@ function AboutUs() {
                     <div className="col-lg-2 col-md-2 col-2"></div>
                     <div className="col-lg-10 col-md-10 col-10">
                       <p className="about-area-1-para-1">
-                        We only focus on getting the job done. We're built on a
-                        system of processes, which means that each part of our
-                        business has its own defined role to play in helping us
-                        achieve our goals.{' '}
+                        We only focus on getting the job done. We&apos;re built
+                        on a system of processes, which means that each part of
+                        our business has its own defined role to play in helping
+                        us achieve our goals.{' '}
                       </p>
                     </div>
                   </div>
@@ -585,10 +585,10 @@ function AboutUs() {
                     <div className="col-lg-10 col-md-10 col-10">
                       <p className="about-area-1-para-1">
                         We know that your business is as unique as you are.
-                        We're committed to helping you build the kind of working
-                        relationship that will help you achieve your goals. We
-                        love working with you, and we want you to feel like
-                        you're part of the team every step of the way!
+                        We&apos;re committed to helping you build the kind of
+                        working relationship that will help you achieve your
+                        goals. We love working with you, and we want you to feel
+                        like you&apos;re part of the team every step of the way!
                       </p>
                     </div>
                   </div>

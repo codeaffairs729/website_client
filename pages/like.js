@@ -156,7 +156,7 @@ const Like = () => {
                         We have a team of talented people who help your business
                         reach new heights of success in custom web development.
                         Our Professional web developers are always available at
-                        your service to make your company's website look
+                        your service to make your company&apos;s website look
                         outstanding.
                       </div>
                     </div>
@@ -210,10 +210,10 @@ const Like = () => {
                       </a>
                       <div className="collapse" id="collapseUptoDateonITTrends">
                         Our team of professional developers offers support and
-                        maintenance services to enhance our client’s business
-                        life. At Code Garage Tech, our client's satisfaction is
-                        indispensable because we don't want them to face any
-                        kind of lag.
+                        maintenance services to enhance our client&apos;s
+                        business life. At Code Garage Tech, our client&apos;s
+                        satisfaction is indispensable because we don&apos;t want
+                        them to face any kind of lag.
                       </div>
                     </div>
                   </li>

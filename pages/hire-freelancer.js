@@ -91,12 +91,12 @@ const content1 = () => {
       <div className="hire-container-body-left-content-2">
         <ul className="body-list">
           <li>
-            An uncomplicated way to avoid the "talent war." When you require a
-            knowledgeable MySQL architect or experienced C developers to develop
-            a new website for your business, hiring in-house depicts competing
-            with other businesses in your area for a small or medium talent
-            pool. We at Code Garage Tech aid you circumvent the struggle by
-            providing instant access to qualified and professional people.
+            An uncomplicated way to avoid the &quot;talent war.&quot; When you
+            require a knowledgeable MySQL architect or experienced C developers
+            to develop a new website for your business, hiring in-house depicts
+            competing with other businesses in your area for a small or medium
+            talent pool. We at Code Garage Tech aid you circumvent the struggle
+            by providing instant access to qualified and professional people.
           </li>
           <li>
             Cost reductions across the board, up to 60% when compared to
@@ -107,10 +107,10 @@ const content1 = () => {
             focus on attaining those indispensable KPIs.{' '}
           </li>
           <li>
-            Dependable outcomes using a "right the first time" philosophy. When
-            outcomes do not meet your expectations fully, we are always here to
-            talk, learn, and adapt. All of our clients always get exactly what
-            they asked for in their initial proposal.
+            Dependable outcomes using a &quot;right the first time&quot;
+            philosophy. When outcomes do not meet your expectations fully, we
+            are always here to talk, learn, and adapt. All of our clients always
+            get exactly what they asked for in their initial proposal.
           </li>
         </ul>
         <p className="hire-p">
@@ -175,13 +175,13 @@ const content2 = () => (
       <li>
         We offer extensive initial deep discussions and we work together to
         develop an environment where achieving success is our pertinent goal.
-        For our potential partners, we've also made it clear and easy to
+        For our potential partners, we&quot;ve also made it clear and easy to
         comprehend what we can accomplish within any given set of guidelines.
       </li>
       <li>
         You will be offered transparency from the beginning of your involvement
-        with our team to the project's conclusion. We are purely committed to
-        honesty because we offer real-time tracking of hours worked, timecard
+        with our team to the project&quot;s conclusion. We are purely committed
+        to honesty because we offer real-time tracking of hours worked, timecard
         screenshots, and much more.{' '}
       </li>
       <li>
@@ -191,8 +191,8 @@ const content2 = () => (
     </ul>
     <p className="hire-p">
       Discover more about our engagement models and also learn how they assist
-      you to make investments that are more profitable. We're always here to
-      build a sturdy technological foundation to craft success.
+      you to make investments that are more profitable. We&quot;re always here
+      to build a sturdy technological foundation to craft success.
     </p>
   </div>
 )
