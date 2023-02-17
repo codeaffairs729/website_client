@@ -80,14 +80,14 @@ const Like = () => {
         <div className="like__center center">
           <div className="like__container">
             <div className="like__wrap">
-              <h2 className="like__title title">
+              <h2 className="like__title title" data-aos="animation-scale-x">
                 Why Code Garage
                 <span className="title__color">?</span>
               </h2>
               <div
                 className="like__text"
-                // data-aos="animation-scale-x"
-                // data-aos-delay="150"
+                data-aos="animation-scale-x"
+                data-aos-delay="150"
               >
                 {/* <p>
                   Let us take care of your problems.
@@ -97,24 +97,27 @@ const Like = () => {
                     dropdowns = dropdownsRef
                   }}
                   className="like-list text-start d-inline-block w-100"
-                  // data-aos="animation-scale-y"
-                  // data-aos-delay="200"
+                  data-aos="animation-scale-y"
+                  data-aos-delay="200"
                 >
                   <li>
                     <div
-                    // onMouseOut={handleOnListLeave}
-                    // onMouseOver={handleOnMouseOverList}
+                      onMouseOut={handleOnListLeave}
+                      onMouseOver={handleOnMouseOverList}
                     >
                       <a
-                        // data-bs-toggle="collapse"
+                        data-bs-toggle="collapse"
                         href="#collapseTransparency"
                         role="button"
-                        // aria-expanded="false"
-                        // aria-controls="collapseTransparency"
+                        aria-expanded="false"
+                        aria-controls="collapseTransparency"
                         className="fw-bold like-options d-flex align-items-center"
                       >
                         Customized Service
-                        <svg className="icon icon-arrow-down like-section-arrow">
+                        <svg
+                          className="icon icon-arrow-down like-section-arrow"
+                          aria-labelledby="arrow-down-icon"
+                        >
                           <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                         </svg>
                       </a>
@@ -133,19 +136,22 @@ const Like = () => {
                   </li>
                   <li data-id="2" className="list-items">
                     <div
-                    // onMouseOut={handleOnListLeave}
-                    // onMouseOver={handleOnMouseOverList}
+                      onMouseOut={handleOnListLeave}
+                      onMouseOver={handleOnMouseOverList}
                     >
                       <a
-                        // data-bs-toggle="collapse"
+                        data-bs-toggle="collapse"
                         href="#collapseAvailability"
                         role="button"
-                        // aria-expanded="false"
-                        // aria-controls="collapseAvailability"
+                        aria-expanded="false"
+                        aria-controls="collapseAvailability"
                         className="fw-bold like-options d-flex align-items-center"
                       >
                         An Adept Team
-                        <svg className="icon icon-arrow-down like-section-arrow">
+                        <svg
+                          className="icon icon-arrow-down like-section-arrow"
+                          aria-labelledby="arrow-down-icon"
+                        >
                           <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                         </svg>
                       </a>
@@ -163,19 +169,22 @@ const Like = () => {
                   </li>
                   <li data-id="3" className="list-items">
                     <div
-                    // onMouseOut={handleOnListLeave}
-                    // onMouseOver={handleOnMouseOverList}
+                      onMouseOut={handleOnListLeave}
+                      onMouseOver={handleOnMouseOverList}
                     >
                       <a
-                        // data-bs-toggle="collapse"
+                        data-bs-toggle="collapse"
                         href="#collapseProcessOrientedWork"
                         role="button"
-                        // aria-expanded="false"
-                        // aria-controls="collapseProcessOrientedWork"
+                        aria-expanded="false"
+                        aria-controls="collapseProcessOrientedWork"
                         className="fw-bold like-options d-flex align-items-center"
                       >
                         Development Scope
-                        <svg className="icon icon-arrow-down like-section-arrow">
+                        <svg
+                          className="icon icon-arrow-down like-section-arrow"
+                          aria-labelledby="arrow-down-icon"
+                        >
                           <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                         </svg>
                       </a>
@@ -192,19 +201,22 @@ const Like = () => {
                   </li>
                   <li data-id="4" className="list-items">
                     <div
-                    // onMouseOut={handleOnListLeave}
-                    // onMouseOver={handleOnMouseOverList}
+                      onMouseOut={handleOnListLeave}
+                      onMouseOver={handleOnMouseOverList}
                     >
                       <a
-                        // data-bs-toggle="collapse"
+                        data-bs-toggle="collapse"
                         href="#collapseUptoDateonITTrends"
                         role="button"
-                        // aria-expanded="false"
-                        // aria-controls="collapseUptoDateonITTrends"
+                        aria-expanded="false"
+                        aria-controls="collapseUptoDateonITTrends"
                         className="fw-bold like-options d-flex align-items-center"
                       >
                         Maintenance & Support
-                        <svg className="icon icon-arrow-down like-section-arrow">
+                        <svg
+                          className="icon icon-arrow-down like-section-arrow"
+                          aria-labelledby="arrow-down-icon"
+                        >
                           <use xlinkHref="img/sprite.svg#icon-arrow-down"></use>
                         </svg>
                       </a>

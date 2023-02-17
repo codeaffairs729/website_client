@@ -1,7 +1,7 @@
 const SliderButton = ({ gotoPrev, gotoNext }) => {
   return (
     <div className="d-flex">
-      <button className="" onClick={gotoPrev}>
+      <button aria-label="package-prev" onClick={gotoPrev}>
         <svg
           stroke="#FFFFFF"
           fill="#FAB8C4"
@@ -22,7 +22,7 @@ const SliderButton = ({ gotoPrev, gotoNext }) => {
         </svg>
       </button>
 
-      <button className="mx-3" onClick={gotoNext}>
+      <button className="mx-3" aria-label="package-next" onClick={gotoNext}>
         <svg
           stroke="#FFFFFF"
           fill="#5956e9"

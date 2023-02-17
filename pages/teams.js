@@ -10,7 +10,7 @@ const Teams = () => {
     arrows: true,
     prevArrow: (
       <button type="button" className="slick-prev">
-        <svg className="icon icon-arrow-prev">
+        <svg className="icon icon-arrow-prev" aria-labelledby="arrow-prev-icon">
           <use
             xmlnsXlink="http://www.w3.org/1999/xlink"
             xlinkHref="img/sprite.svg#icon-arrow-prev"
@@ -20,7 +20,7 @@ const Teams = () => {
     ),
     nextArrow: (
       <button type="button" className="slick-next">
-        <svg className="icon icon-arrow-next">
+        <svg className="icon icon-arrow-next" aria-labelledby="arrow-next-icon">
           <use
             xmlnsXlink="http://www.w3.org/1999/xlink"
             xlinkHref="img/sprite.svg#icon-arrow-next"

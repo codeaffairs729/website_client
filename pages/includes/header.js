@@ -98,7 +98,7 @@ const Header = () => {
         <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
         <meta
           name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+          content="width=device-width, initial-scale=1, maximum-scale=2.0"
         />
         <meta name="format-detection" content="telephone=no" />
         <link
@@ -192,7 +192,10 @@ const Header = () => {
                     onClick={toggleSidebarInternalMenu}
                   >
                     Services
-                    <svg className="icon icon-arrow-down">
+                    <svg
+                      className="icon icon-arrow-down"
+                      aria-labelledby="arrow-down-icon"
+                    >
                       <use xlinkHref="/img/sprite.svg#icon-arrow-down"></use>
                     </svg>
                   </div>

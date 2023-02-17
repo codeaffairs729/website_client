@@ -142,7 +142,7 @@ const Contact = () => {
         <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
         <meta
           name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+          content="width=device-width, initial-scale=1, maximum-scale=2.0"
         />
         <meta name="format-detection" content="telephone=no" />
         <link

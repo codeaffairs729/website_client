@@ -77,7 +77,10 @@ const Footer = () => {
             >
               <div className="footer__category js-footer-category footer-category-cgt-name">
                 Code Garage
-                <svg className="icon icon-arrow-down">
+                <svg
+                  className="icon icon-arrow-down"
+                  aria-labelledby="arrow-down-icon"
+                >
                   <use xlinkHref="/img/sprite.svg#icon-arrow-down"></use>
                 </svg>
               </div>
@@ -115,7 +118,10 @@ const Footer = () => {
             >
               <div className="footer__category js-footer-category">
                 Technologies We Work On
-                <svg className="icon icon-arrow-down">
+                <svg
+                  className="icon icon-arrow-down"
+                  aria-labelledby="arrow-down-icon"
+                >
                   <use xlinkHref="/img/sprite.svg#icon-arrow-down"></use>
                 </svg>
               </div>
@@ -270,7 +276,10 @@ const Footer = () => {
             >
               <div className="footer__category js-footer-category">
                 Check Us on Social Network
-                <svg className="icon icon-arrow-down">
+                <svg
+                  className="icon icon-arrow-down"
+                  aria-labelledby="arrow-down-icon"
+                >
                   <use xlinkHref="/img/sprite.svg#icon-arrow-down"></use>
                 </svg>
               </div>

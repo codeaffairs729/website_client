@@ -9,7 +9,10 @@ const PrevButton = (props) => {
       style={{ ...style }}
       onClick={onClick}
     >
-      <svg className="slider-button-place icon icon-arrow-prev">
+      <svg
+        className="slider-button-place icon icon-arrow-prev"
+        aria-labelledby="arrow-prev-icon"
+      >
         <use xlinkHref="img/sprite.svg#icon-arrow-prev"></use>
       </svg>
     </button>

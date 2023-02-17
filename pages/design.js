@@ -6,10 +6,10 @@ import Image from 'next/image'
 const SliderButton = ({ gotoPrev, gotoNext }) => {
   return (
     <div>
-      <button className="m-4" onClick={gotoPrev}>
+      <button className="m-4" aria-label="design-prev" onClick={gotoPrev}>
         <GrFormPreviousLink className="h2 border border-dark rounded-circle" />
       </button>
-      <button onClick={gotoNext}>
+      <button aria-label="design-next" onClick={gotoNext}>
         <GrFormNextLink className="h2 border border-dark rounded-circle " />
       </button>
     </div>
@@ -105,7 +105,10 @@ const Design = () => {
                     </div>
                     <a href="https://www.ucview.com/" className="design__link">
                       Visit
-                      <svg className="icon icon-arrow-right">
+                      <svg
+                        className="icon icon-arrow-right"
+                        aria-labelledby="fwd-icon"
+                      >
                         <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                       </svg>
                     </a>
@@ -142,7 +145,10 @@ const Design = () => {
                       href="https://stockarchitect.com/"
                     >
                       Visit
-                      <svg className="icon icon-arrow-right">
+                      <svg
+                        className="icon icon-arrow-right"
+                        aria-labelledby="fwd-icon"
+                      >
                         <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                       </svg>
                     </a>
@@ -177,7 +183,10 @@ const Design = () => {
                       href="https://www.withrelay.com/"
                     >
                       Visit
-                      <svg className="icon icon-arrow-right">
+                      <svg
+                        className="icon icon-arrow-right"
+                        aria-labelledby="fwd-icon"
+                      >
                         <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                       </svg>
                     </a>
@@ -213,7 +222,10 @@ const Design = () => {
                       href="https://videochatapro.com/"
                     >
                       Visit
-                      <svg className="icon icon-arrow-right">
+                      <svg
+                        className="icon icon-arrow-right"
+                        aria-labelledby="fwd-icon"
+                      >
                         <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                       </svg>
                     </a>
@@ -243,7 +255,10 @@ const Design = () => {
                     </div>
                     <a className="design__link" href="https://www.buyma.us/">
                       Visit
-                      <svg className="icon icon-arrow-right">
+                      <svg
+                        className="icon icon-arrow-right"
+                        aria-labelledby="fwd-icon"
+                      >
                         <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                       </svg>
                     </a>
@@ -275,7 +290,10 @@ const Design = () => {
                     </div>
                     <a className="design__link" href="https://fintrakk.com/">
                       Visit
-                      <svg className="icon icon-arrow-right">
+                      <svg
+                        className="icon icon-arrow-right"
+                        aria-labelledby="fwd-icon"
+                      >
                         <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                       </svg>
                     </a>
@@ -306,7 +324,10 @@ const Design = () => {
                     </div>
                     <a className="design__link" href="https://welcome.ai/">
                       Visit
-                      <svg className="icon icon-arrow-right">
+                      <svg
+                        className="icon icon-arrow-right"
+                        aria-labelledby="fwd-icon"
+                      >
                         <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                       </svg>
                     </a>
@@ -337,7 +358,10 @@ const Design = () => {
                     </div>
                     <a className="design__link" href="https://bzigo.com/">
                       Visit
-                      <svg className="icon icon-arrow-right">
+                      <svg
+                        className="icon icon-arrow-right"
+                        aria-labelledby="fwd-icon"
+                      >
                         <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
                       </svg>
                     </a>

@@ -9,7 +9,7 @@ const NextButton = (props) => {
       style={{ ...style }}
       onClick={onClick}
     >
-      <svg className="icon icon-arrow-next">
+      <svg className="icon icon-arrow-next" aria-labelledby="arrow-next-icon">
         <use xlinkHref="img/sprite.svg#icon-arrow-next"></use>
       </svg>
     </button>

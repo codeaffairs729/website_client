@@ -140,6 +140,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          aria-labelledby="form-name-icon"
         >
           <path
             opacity="0.3"
@@ -174,6 +175,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          aria-labelledby="form-email-icon"
         >
           <g id="Stockholm-icons / Communication / Sending mail">
             <path
@@ -214,6 +216,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
           xmlns="http://www.w3.org/2000/svg"
           width="16"
           height="16"
+          aria-labelledby="form-email-icon"
         >
           <path
             fill="black"
@@ -260,6 +263,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
           viewBox="0 0 18 19"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          aria-labelledby="form-textarea-icon"
         >
           <path
             d="M3 12L6.5 15M9 17.5H17M2.5 12L12.3595 1.79619C13.4211 0.734605 15.1422 0.734603 16.2038 1.79619C17.2654 2.85777 17.2654 4.57894 16.2038 5.64052L6 15.5L1 17L2.5 12Z"
@@ -302,6 +306,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
                 fill="#292930"
                 xmlns="http://www.w3.org/2000/svg"
                 stroke="#292930"
+                aria-labelledby="form-imgupload-icon"
               >
                 <mask
                   id="mask0_1102_2677"

@@ -108,14 +108,14 @@ const Package = () => {
     arrows: false,
     prevArrow: (
       <button>
-        <svg className="icon icon-arrow-prev">
+        <svg className="icon icon-arrow-prev" aria-labelledby="arrow-prev-icon">
           <use xlinkHref="img/sprite.svg#icon-arrow-prev"></use>
         </svg>
       </button>
     ),
     nextArrow: (
       <button>
-        <svg className="icon icon-arrow-next">
+        <svg className="icon icon-arrow-next" aria-labelledby="arrow-next-icon">
           <use xlinkHref="img/sprite.svg#icon-arrow-next"></use>
         </svg>
       </button>
