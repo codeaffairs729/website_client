@@ -1,10 +1,33 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import Script from 'next/script'
+// import {
+//   OrganizationSchema,
+//   WebsiteSchema,
+//   LocalBusinessSchema,
+//   WebServicesSchema,
+//   MobileServicesSchema,
+//   DevOpsServicesSchema,
+//   UIUXServicesSchema,
+//   EcommerceServicesSchema,
+//   CMSServicesSchema,
+//   CRMServicesSchema,
+//   DigitalMarketingServicesSchema,
+//   DeploymentHostManagementServicesSchema,
+//   StrapiServicesSchema,
+//   ChatwootServicesSchema,
+//   AboutServicesSchema,
+//   CareerServicesSchema,
+// } from '../components/organizationSchema'
 export default function Document() {
   return (
     <Html lang="en">
       <Head>
         {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <link
           rel="preload"
           href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,700&family=Poppins:wght@300;400;500;600&display=swap"
@@ -22,27 +45,40 @@ export default function Document() {
           as="font"
         ></link> */}
 
-        {/* <link
+        <link
           href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,700&family=Poppins:wght@300;400;500;600&display=swap"
           rel="stylesheet"
+        />
+
+        {/* <Script
+          strategy="lazyOnload"
+          src="https://www.googletagmanager.com/gtag/js?id=G-GT3WPQDNTQ"
         /> */}
 
-        <script>
-          {/* (function(d,t) {
-        var BASE_URL="http://backend.codegaragetech.com";
-        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=BASE_URL+"/packs/js/sdk.js";
-        g.defer = true;
-        g.async = true;
-        s.parentNode.insertBefore(g,s);
-        g.onload=function(){
-          window.chatwootSDK.run({
-            websiteToken: 'pvrMMBqvsmQFw9cv2fYYG1Kt',
-            baseUrl: BASE_URL
-          })
-        }
-      })(document,"script"); */}
-        </script>
+        {/* <Script id="google-analytics-script" strategy="lazyOnload">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-GT3WPQDNTQ');
+    `}
+        </Script> */}
+        {/* <OrganizationSchema />
+        <WebsiteSchema />
+        <LocalBusinessSchema />
+        <WebServicesSchema />
+        <MobileServicesSchema />
+        <DevOpsServicesSchema />
+        <UIUXServicesSchema />
+        <EcommerceServicesSchema />
+        <CMSServicesSchema />
+        <CRMServicesSchema />
+        <DigitalMarketingServicesSchema />
+        <DeploymentHostManagementServicesSchema />
+        <StrapiServicesSchema />
+        <ChatwootServicesSchema />
+        <AboutServicesSchema />
+        <CareerServicesSchema /> */}
       </Head>
       <body>
         <Main />
