@@ -5,30 +5,20 @@ import '../styles/app.css'
 import '../styles/gen-form.css'
 import '../styles/globals.css'
 import 'aos/dist/aos.css'
-// import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+// import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
 import '../styles/service.css'
 import '../styles/techComponent.css'
 import '../styles/hireServiceLayout.css'
 import '../styles/assisstanceModel.css'
+// import Header from './includes/header'
+// import Footer from './includes/footer'
+const Footer = dynamic(() => import('./includes/footer'), {
+  ssr: false,
+})
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     AOS.init()
     AOS.refresh()
-    // (function (d, t) {
-    //   var BASE_URL = 'http://backend.codegaragetech.com'
-    //   var g = d.createElement(t),
-    //     s = d.getElementsByTagName(t)[0]
-    //   g.src = BASE_URL + '/packs/js/sdk.js'
-    //   g.defer = true
-    //   g.async = true
-    //   s.parentNode.insertBefore(g, s)
-    //   g.onload = function () {
-    //     window.chatwootSDK.run({
-    //       websiteToken: 'pvrMMBqvsmQFw9cv2fYYG1Kt',
-    //       baseUrl: BASE_URL,
-    //     })
-    //   }
-    // })(document, 'script')
   }, [])
   return (
     // <GoogleReCaptchaProvider
@@ -44,6 +34,10 @@ function MyApp({ Component, pageProps }) {
     // </GoogleReCaptchaProvider>
     <>
       <Component {...pageProps} />
+      {/* <button type="button" className="btn btn-primary" onClick={handleOnclick}>
+        Chatwoot
+      </button> */}
+      <Footer />
     </>
   )
 }
