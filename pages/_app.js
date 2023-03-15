@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import dynamic from 'next/dynamic'
 import AOS from 'aos'
 import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/app.css'
