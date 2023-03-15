@@ -149,7 +149,7 @@ const Package = () => {
               >
                 <div className="package__slide">
                   <div className="package__row row">
-                    <div className="col-lg-5">
+                    <div className="col-lg-5 package-row-min-height">
                       <div
                         // onMouseOver={() => pause()}
                         // onMouseOut={() => play()}
@@ -176,9 +176,9 @@ const Package = () => {
                           </div>
                           <div className="package__text">What we do</div>
                         </div>
-                        <h3 className="package__title title title_sm title-ui-ux">
+                        <div className="package__title title title_sm title-ui-ux">
                           UI/UX Services
-                        </h3>
+                        </div>
                         <div className="package__info">
                           Driven by the values of empathy & impact, we are
                           thriving towards this vision. From research backed
@@ -219,7 +219,7 @@ const Package = () => {
                     </div>
                     <div className="col-lg-7 d-flex justify-content-center">
                       <div className="package__preview row">
-                        <div className="col-lg-12 d-flex justify-content-center align-items-center">
+                        <div className="col-lg-12 d-flex justify-content-center align-items-center  package-min-height">
                           {/* <img
                             onMouseOver={() => pause()}
                             onMouseOut={() => play()}
@@ -240,7 +240,7 @@ const Package = () => {
                         <div
                           // onMouseOver={() => subSliderPause()}
                           // onMouseOut={() => subSliderPlay()}
-                          className="col-lg-10 m-auto subSliderIcons"
+                          className="col-lg-10 m-auto subSliderIcons "
                         >
                           <Slider
                             ref={(newSubSlider1) => {
@@ -269,7 +269,7 @@ const Package = () => {
                 </div>
                 <div className="package__slide">
                   <div className="package__row row">
-                    <div className="col-lg-5">
+                    <div className="col-lg-5 package-row-min-height">
                       <div
                         // onMouseOver={() => pause()}
                         // onMouseOut={() => play()}
@@ -296,9 +296,9 @@ const Package = () => {
                           </div>
                           <div className="package__text">What we do</div>
                         </div>
-                        <h3 className="package__title title title_sm">
+                        <div className="package__title title title_sm">
                           Web Development
-                        </h3>
+                        </div>
                         <div className="package__info">
                           It&apos;s the development of systems that take care of
                           your valuable processes. We develop user friendly,
@@ -339,7 +339,7 @@ const Package = () => {
                     </div>
                     <div className="col-lg-7 d-flex justify-content-center">
                       <div className="package__preview row">
-                        <div className="col-lg-12 d-flex justify-content-center align-items-center">
+                        <div className="col-lg-12 d-flex justify-content-center align-items-center  package-min-height">
                           {/* <img
                             onMouseOver={() => pause()}
                             onMouseOut={() => play()}
@@ -359,7 +359,7 @@ const Package = () => {
                         <div
                           // onMouseOver={() => subSliderPause()}
                           // onMouseOut={() => subSliderPlay()}
-                          className="col-lg-10 m-auto subSliderIcons"
+                          className="col-lg-10 m-auto subSliderIcons "
                         >
                           <Slider
                             ref={(newSubSlider2) => {
@@ -388,7 +388,7 @@ const Package = () => {
                 </div>
                 <div className="package__slide">
                   <div className="package__row row">
-                    <div className="col-lg-5">
+                    <div className="col-lg-5 package-row-min-height">
                       <div
                         // onMouseOver={() => pause()}
                         // onMouseOut={() => play()}
@@ -415,9 +415,9 @@ const Package = () => {
                           </div>
                           <div className="package__text">What we do</div>
                         </div>
-                        <h3 className="package__title title title_sm title-ui-ux">
+                        <div className="package__title title title_sm title-ui-ux">
                           Mobile Solutions
-                        </h3>
+                        </div>
                         <div className="package__info">
                           Not just mobile apps, we build user-friendly mobile
                           experience. We develop apps that resolve real-life
@@ -458,7 +458,7 @@ const Package = () => {
                     </div>
                     <div className="col-lg-7 d-flex justify-content-center">
                       <div className="package__preview row package-preview-mobile">
-                        <div className="col-lg-12 d-flex justify-content-center align-items-center">
+                        <div className="col-lg-12 d-flex justify-content-center align-items-center  package-min-height">
                           <Image
                             // onMouseOver={() => pause()}
                             // onMouseOut={() => play()}
@@ -471,7 +471,7 @@ const Package = () => {
                         <div
                           // onMouseOver={() => subSliderPause()}
                           // onMouseOut={() => subSliderPlay()}
-                          className="col-lg-10 m-auto subSliderIcons"
+                          className="col-lg-10 m-auto subSliderIcons "
                         >
                           <Slider
                             ref={(newSubSlider3) => {
