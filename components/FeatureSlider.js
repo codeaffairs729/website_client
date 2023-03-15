@@ -20,7 +20,7 @@ const bannerImage = [
 
 var settings = {
   dots: false,
-  infinite: false,
+  infinite: true,
   speed: 1000,
   slidesToShow: 4,
   slidesToScroll: 1,
