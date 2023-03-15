@@ -1,5 +1,6 @@
 // import styles from '../styles/Home.module.css'
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 import Main from './main'
 // import Package from "./package";
 // import Work from "./work";
@@ -9,16 +10,17 @@ import Main from './main'
 // import Design from "./design";
 // import Teams from "./teams";
 // import Like from "./like";
-import Footer from './includes/footer'
-import Image from 'next/image'
-// left ssr
-const Package = dynamic(() => import('./package'), {
-  ssr: false,
-})
+// import FeatureList from '../components/FeatureList'
+// import FeatureList from '../components/FeatureList'
+// const FeatureList = dynamic(() => import('../components/FeatureList'), {
+//   ssr: false,
+// })
 const Work = dynamic(() => import('./work'), {
   ssr: false,
 })
-// left side ssr
+const Package = dynamic(() => import('./package'), {
+  ssr: false,
+})
 const Layouts = dynamic(() => import('./layouts'), {
   ssr: false,
 })
@@ -37,7 +39,9 @@ const Teams = dynamic(() => import('./teams'), {
 const Like = dynamic(() => import('./like'), {
   ssr: false,
 })
-
+const ChatwootWidget = dynamic(() => import('../components/ChatwootWidget'), {
+  ssr: false,
+})
 export default function Home() {
   return (
     <>
@@ -56,6 +60,7 @@ export default function Home() {
           />
         </a>
         <Main />
+        {/* <FeatureList /> */}
         <Package />
         <Work />
         <Layouts />
@@ -64,7 +69,7 @@ export default function Home() {
         <Design />
         <Teams />
         <Like />
-        <Footer />
+        <ChatwootWidget />
       </div>
     </>
   )
