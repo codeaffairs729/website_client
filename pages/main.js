@@ -1,9 +1,12 @@
 import React from 'react'
-import Header from './includes/header'
+import dynamic from 'next/dynamic'
+// import Header from './includes/header'
 import Typewriter from 'typewriter-effect'
 import Head from 'next/head'
 import Image from 'next/image'
-
+const Header = dynamic(() => import('./includes/header'), {
+  ssr: false,
+})
 const Main = () => {
   return (
     <>
