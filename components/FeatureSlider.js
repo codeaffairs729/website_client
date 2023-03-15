@@ -20,7 +20,7 @@ const bannerImage = [
 
 var settings = {
   dots: false,
-  infinite: true,
+  infinite: false,
   speed: 1000,
   slidesToShow: 4,
   slidesToScroll: 1,
@@ -28,6 +28,7 @@ var settings = {
   autoplay: true,
   initialSlide: 0,
   vertical: true,
+  lazyload: 'progressive',
   responsive: [
     {
       breakpoint: 480,
