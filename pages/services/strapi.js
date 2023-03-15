@@ -1,5 +1,5 @@
 import TechComponent from '../../components/techComponent'
-import HireServiceLayout from '../../components/hireServiceLayout'
+import HireServiceLayout from '../../components/HireServiceLayout'
 import Banner from '../../components/banner'
 import Head from 'next/head'
 import ScheduleForm from '../../components/schedule'
@@ -16,18 +16,24 @@ const contentHeader1 = () => {
       <div className="tech-service-body">
         <div className="tech-service-body-left">
           <h1 className="hire-h1">{techTitle}</h1>
-          <p className="hire-desc">
-            We develop superior mobile applications that provide users with a
-            seamless and lag-free experience on all contemporary platforms and
-            devices.- Mobile.
-          </p>
-          <a
-            target="_blank"
-            href="/contact"
-            className="header__btn btn btn_purple mt-5"
-          >
-            Get in Touch
-          </a>
+          <ul className="hire-list-icon">
+            <li className="margine-bottom-16px">
+              <p className="margin-left-25px">
+                Leading Open-Source Headless Cms
+              </p>
+            </li>
+            <li className="margine-bottom-16px">
+              <p className="margin-left-25px">
+                100% Reliable And Fully Customizable.
+              </p>
+            </li>
+            <li className="margine-bottom-16px">
+              <p className="margin-left-25px">Build Your Projects In No-Time</p>
+            </li>
+            <li className="margine-bottom-16px">
+              <p className="margin-left-25px">Best And Reliable Softwares</p>
+            </li>
+          </ul>
         </div>
         <div className="tech-service-body-right">
           <Image
@@ -55,34 +61,37 @@ const content1 = () => {
         </p>
       </div>
       <div className=" hire-container-body-left-content-2">
-        <h3 className="hire-h3">Develop Applications Faster</h3>
-        <p className="hire-p">
-          Building customizable, performant, and self-hosted content API that
-          has never been facile.{' '}
-        </p>
-        <h3 className="hire-h3">Customizable</h3>
-        <p className="hire-p">
-          Conveniently customize the API, query resolvers, and admin panel. You
-          can extend your CMS (Content Management System) with Strapi plugins,
-          in a few seconds. One can also create plugins for Strapi.
-        </p>
+        <div className="shade-1">
+          <div className="grey-shade"></div>
+          <h2 className="hire-h2">Develop Applications Faster</h2>
+          <p className="hire-p margin-bottom-24px">
+            Building customizable, performant, and self-hosted content API that
+            has never been facile.{' '}
+          </p>
+          <h3 className="hire-h3">Customizable</h3>
+          <p className="hire-p margin-bottom-24px ">
+            Conveniently customize the API, query resolvers, and admin panel.
+            You can extend your CMS (Content Management System) with Strapi
+            plugins, in a few seconds. One can also create plugins for Strapi.
+          </p>
 
-        <h3 className="hire-h3">GraphQL or RESTful</h3>
-        <p className="hire-p">
-          Using Strapi GraphQL or RESTful, you can consume API from mobile
-          applications, IoT devices, any client(Vue, React, Angular).
-        </p>
+          <h3 className="hire-h3">GraphQL or RESTful</h3>
+          <p className="hire-p margin-bottom-24px ">
+            Using Strapi GraphQL or RESTful, you can consume API from mobile
+            applications, IoT devices, any client(Vue, React, Angular).
+          </p>
 
-        <h3 className="hire-h3">Open Source</h3>
-        <p className="hire-p">
-          The whole codebase is available on GitHub and maintained by many
-          contributors.
-        </p>
-        <h3 className="hire-h3">Self-Hosted </h3>
-        <p className="hire-p">
-          You can now keep full control of your private data as well as cost
-          with the help of Strapi.
-        </p>
+          <h3 className="hire-h3">Open Source</h3>
+          <p className="hire-p margin-bottom-24px ">
+            The whole codebase is available on GitHub and maintained by many
+            contributors.
+          </p>
+          <h3 className="hire-h3">Self-Hosted </h3>
+          <p className="hire-p margin-bottom-24px ">
+            You can now keep full control of your private data as well as cost
+            with the help of Strapi.
+          </p>
+        </div>
 
         {/* CONTENT 7 */}
         <Link href="/hire-team">
@@ -105,7 +114,9 @@ const content1 = () => {
           <div className="grey-shade"></div>
           <h2 className="hire-h2">Strapi- Provides a Range of Benefits! </h2>
 
-          <h3 className="hire-h3">Shorten The Time-To-Deploy</h3>
+          <h3 className="hire-h3">
+            <b>Shorten The Time-To-Deploy</b>
+          </h3>
 
           <p className="hire-p">
             Build your projects in a few hours instead of weeks with Strapi.
@@ -182,7 +193,7 @@ const content3 = () => (
   <div className="form-service">
     <ScheduleForm
       title={'Schedule a Meeting'}
-      requestOrigin={'Request generated from hire-team page'}
+      requestOrigin={'Request generated from Strapi page'}
     />
   </div>
 )
@@ -193,7 +204,7 @@ const Strapi = () => {
         <title>Preeminent open-source headless CMS - Strapi</title>
         <link
           rel="canonical"
-          href="https://www.codegaragetech.com/services/strapi"
+          href="https://codegaragetech.com/services/strapi"
         />
         <meta
           name="description"

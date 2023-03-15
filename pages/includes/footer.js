@@ -75,15 +75,17 @@ const Footer = () => {
                   : 'footer__col col-lg-4 col-md-4 js-footer-col'
               }
             >
-              <div className="footer__category js-footer-category footer-category-cgt-name">
-                Code Garage
-                <svg
-                  className="icon icon-arrow-down"
-                  aria-labelledby="arrow-down-icon"
-                >
-                  <use xlinkHref="/img/sprite.svg#icon-arrow-down"></use>
-                </svg>
-              </div>
+              <Link href="/">
+                <div className="cursor_pointer footer__category js-footer-category footer-category-cgt-name">
+                  Code Garage
+                  <svg
+                    className="icon icon-arrow-down"
+                    aria-labelledby="arrow-down-icon"
+                  >
+                    <use xlinkHref="/img/sprite.svg#icon-arrow-down"></use>
+                  </svg>
+                </div>
+              </Link>
               <div
                 className={`footer__menu js-footer-menu ${
                   aboutUs ? '' : 'hide'
@@ -97,7 +99,13 @@ const Footer = () => {
                   +91 82889 83623
                 </span>
                 <span className="footer__link footer-link-contact">
-                  hr@codegaragetech.com
+                  {/* hr@codegaragetech.com */}
+                  <Image
+                    src="/logo/emailImg.png"
+                    alt="email-text-image-png"
+                    width={190}
+                    height={24}
+                  />
                 </span>
                 <span className="footer__link footer-link-about">
                   The Atrium Quarkcity,
@@ -112,7 +120,7 @@ const Footer = () => {
               onClick={() => showTechnologies()}
               className={
                 technologies
-                  ? 'footer__col col-lg-5 col-md-4 active'
+                  ? 'footer__col col-lg-5 col-md-4'
                   : 'footer__col col-lg-5 col-md-4 js-footer-col'
               }
             >

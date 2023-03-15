@@ -19,7 +19,7 @@ const GenericModal = (props) => {
                 modalHeaderShow ? 'flex' : 'd-none'
               }`}
             >
-              <h4 className="modal-title">{modalTitle}</h4>
+              <div className="modal-title">{modalTitle}</div>
               <button
                 type="button"
                 className="btn-close genModalCrossBtn"

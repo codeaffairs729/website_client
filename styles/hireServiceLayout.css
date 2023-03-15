@@ -4,12 +4,12 @@
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 80px;
+  font-size: 3rem;
   line-height: 100%;
   letter-spacing: -0.025em;
   color: #292930;
   margin-left: 4px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .hire-desc {
@@ -27,9 +27,8 @@
   font-weight: 700;
   font-size: 32px;
   line-height: 48px;
-
   margin-top: 27px;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
 }
 
 .hire-h3 {
@@ -66,19 +65,36 @@
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+.hire-icon-text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
 
 .hire-p,
 li {
-  /* font-family: "Poppins"; */
+  font-family: 'Poppins';
+  list-style-position: outside;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 16px;
+  line-height: 30px;
   letter-spacing: 0.04em;
   color: #292930;
-  margin-bottom: 8px;
 }
-
+.hire-list li {
+  font-size: 16px;
+  /* margin-bottom: 12px; */
+}
+.hire-p {
+  margin-bottom: 16px;
+}
+.hire-header {
+  margin-bottom: 24px;
+}
 .hire-team-h3 {
   margin-top: 24px;
   margin-bottom: 10px;
@@ -92,7 +108,7 @@ li {
 
 .tech-service-body {
   display: flex;
-  padding-block: 127px 116px;
+  padding-block: 0px 116px;
   justify-content: space-between;
 }
 .tech-service-body-left {
@@ -108,9 +124,11 @@ li {
 
 .hire-container {
   position: relative;
-  margin-inline: auto;
-  padding-left: 63px;
-  padding-right: 39px;
+  margin: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  /* outline: rgb(230, 5, 5) solid; */
+  max-width: 1440px;
 }
 .tech-component-container {
   margin-top: 37px;
@@ -121,6 +139,7 @@ li {
 }
 .grey-shade {
   position: absolute;
+  top: -15px;
   left: -55px;
   z-index: -999;
   width: 98vw;
@@ -154,7 +173,7 @@ li {
 }
 .banner-cloud {
   position: absolute;
-  z-index: 999;
+  z-index: 1;
   width: 111px;
   height: 82px;
   left: 37%;
@@ -179,13 +198,12 @@ li {
 }
 
 .hire-container-body-content {
-  margin-top: 36px;
+  margin-top: 71px;
   display: flex;
   justify-content: space-between;
   gap: 50px;
 }
 .hire-container-body-left-content {
-  margin-top: 36px;
   flex-basis: 55%;
 }
 .hire-container-body-right {
@@ -256,7 +274,7 @@ li {
 
 .hire-list {
   list-style-type: disc;
-  padding-left: 30px;
+  padding-left: 22px;
 }
 
 p {
@@ -337,9 +355,9 @@ p {
   .tech-service-body-right {
     width: 350px;
   }
-  .hire-container-body-right {
+  /* .hire-container-body-right {
     max-width: 300px;
-  }
+  } */
   .hire-h2,
   .hire-h2-blue {
     line-height: 32px;
@@ -396,8 +414,8 @@ p {
   }
 
   .hire-container {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
     margin-bottom: 35px;
   }
 
@@ -429,7 +447,7 @@ p {
 
   .hire-container-body-left-content {
     width: 100%;
-    margin-top: -45px;
+    /* margin-top: -45px; */
   }
 
   .hire-container-body {
@@ -441,7 +459,7 @@ p {
   }
 
   .hiring-models {
-    gap: 0px;
+    gap: 30px;
   }
 
   .hire-team-h3 {
@@ -476,9 +494,7 @@ p {
   }
   .hire-h3 {
     font-size: 1.25rem;
-  }
-  .hire-p {
-    font-size: 1rem;
+    margin-bottom: 4px;
   }
   .tech-service-body-right {
     width: 250px;
@@ -495,6 +511,7 @@ p {
 
   .grey-shade {
     left: -20px;
+    height: 102%;
   }
   .banner-cloud {
     display: none;
@@ -513,7 +530,7 @@ p {
   }
 
   .hire-list {
-    padding-left: 15px;
+    padding-left: 20px;
   }
   .hire-container {
     padding-left: 20px;
@@ -529,9 +546,8 @@ p {
   .hire-container-body {
     gap: 0px;
   }
-  .hire-p,
-  li {
-    font-size: 1rem;
+  .hire-p {
+    font-size: 16px;
     word-wrap: break-word;
   }
   .hire-container-body-left {
@@ -565,3 +581,62 @@ p {
 }
 
 /* hire team page */
+.margine-left-8px {
+  margin-left: 8px;
+}
+.margine-bottom-16px {
+  margin-bottom: 16px;
+}
+
+/* .hire-list-icon {
+  list-style-image: url('/icons/service-icon/check-broken.svg');
+  list-style-position: outside;
+} */
+/* .hire-list-icon {
+  list-style: none;
+  width: 100%;
+} */
+.hire-list-icon {
+  margin-left: 10px;
+}
+.hire-list-icon li {
+  /* content: ''; */
+  /* display: inline-block; */
+  background-image: url('/icons/service-icon/check-broken.svg');
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  text-align: left;
+}
+
+.hire-list-icon li::before {
+  background-size: 20px 20px;
+}
+
+.margin-left-25px {
+  margin-left: 35px;
+}
+.margin-left-22px {
+  margin-left: 22px;
+}
+.margin-bottom-24px {
+  margin-bottom: 24px;
+}
+.margin-bottom-8px {
+  margin-bottom: 8px;
+}
+.margin-top-32px {
+  margin-top: 40px;
+}
+
+.heading-icon {
+  /* width: 82px;
+  height: 82px; */
+  display: flex;
+  padding: 0.7em;
+  /* border:0.5px solid rgb(170, 183, 197); */
+  outline: rgb(213, 219, 226) solid 0.5px;
+  border-radius: 12px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+}

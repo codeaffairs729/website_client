@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
-import Form from './genForm'
+import Form from './GeneralForm'
 import 'react-datetime/css/react-datetime.css'
 import Datetime from 'react-datetime'
 import { BsCalendar2Date } from 'react-icons/bs'
@@ -99,9 +99,9 @@ const ScheduleForm = ({ title, requestOrigin }) => {
           setPhone('')
           setQuery('')
           setDate('')
-          submitBtn.innerHTML = 'SEND NOW'
+          submitBtn.innerHTML = 'Submitted'
           submitBtn.disabled = false
-          submitBtn.innerHTML = 'Send Now'
+          submitBtn.innerHTML = 'Submitted'
 
           toast.success('Success! Email Sent Successful', {
             position: 'top-right',

@@ -7,7 +7,7 @@ import Datetime from 'react-datetime'
 // import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { ToastContainer, toast } from 'react-toastify'
 
-const AssistanceForm = ({ title, requestOrigin }) => {
+const AssistanceModel = ({ title, requestOrigin }) => {
   const image = useRef(null)
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -99,10 +99,10 @@ const AssistanceForm = ({ title, requestOrigin }) => {
           setPhone('')
           setQuery('')
           setDate('')
-          submitBtn.innerHTML = 'SEND NOW'
+          submitBtn.innerHTML = 'Submitted'
 
           submitBtn.disabled = false
-          submitBtn.innerHTML = 'Send Now'
+          submitBtn.innerHTML = 'Submitted'
 
           toast.success('Success! Email Sent Successful', {
             position: 'top-right',
@@ -368,4 +368,4 @@ const AssistanceForm = ({ title, requestOrigin }) => {
   )
 }
 
-export default AssistanceForm
+export default AssistanceModel

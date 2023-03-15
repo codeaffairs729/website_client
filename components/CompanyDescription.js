@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
-import Form from './genForm'
+import Form from './GeneralForm'
 const CompanyDescription = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')

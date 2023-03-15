@@ -1,5 +1,5 @@
 import TechComponent from '../../components/techComponent'
-import HireServiceLayout from '../../components/hireServiceLayout'
+import HireServiceLayout from '../../components/HireServiceLayout'
 import Banner from '../../components/banner'
 import Link from 'next/link'
 import Head from 'next/head'
@@ -13,16 +13,24 @@ const contentHeader1 = () => {
       <div className="tech-service-body">
         <div className="tech-service-body-left">
           <h1 className="hire-h1">{techTitle}</h1>
-          <p className="hire-desc">
-            We develop superior mobile applications that provide users with a
-            seamless and lag-free experience on all contemporary platforms and
-            devices.- Mobile
-          </p>
-          <Link href="/contact">
-            <a target="_blank" className="header__btn btn btn_purple mt-5">
-              Get in Touch
-            </a>
-          </Link>
+          <ul className="hire-list-icon">
+            <li className="margine-bottom-16px">
+              <p className="margin-left-25px">Superior Mobile Applications.</p>
+            </li>
+            <li className="margine-bottom-16px">
+              <p className="margin-left-25px">Seamless Experience To Users.</p>
+            </li>
+            <li className="margine-bottom-16px">
+              <p className="margin-left-25px">
+                Develop Custom Android & Ios Applications.
+              </p>
+            </li>
+            <li className="margine-bottom-16px">
+              <p className="margin-left-25px">
+                Niche-Specific, Target-Oriented Applications
+              </p>
+            </li>
+          </ul>
         </div>
         <div className="tech-service-body-right text-center">
           {/* <img src="/icons/service-icon/mobile-front-color-service.webp" /> */}
@@ -47,15 +55,11 @@ const content1 = () => {
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
         <p className="hire-p">
-          We develop superior mobile applications that provide users with a
-          seamless and lag-free experience on all contemporary platforms and
-          devices.
-          <br /> <br />
           Code Garage Tech is a preeminent mobile app development agency that is
           specifically driven by creativity and innovation. We have proved
           ourselves as a customer-trusted and credible company for over 6 years.
           We have delivered 900+ mobile apps with a 98% success rate, and our
-          client’s testimonials are evidence of that. <br /> <br />
+          client&apos;s testimonials are evidence of that. <br /> <br />
           We have a team of adept mobile app developers who have expertise in
           developing mobile solutions that meet market requirements, empower the
           brand identity of companies, and inspire business expansion and
@@ -68,9 +72,11 @@ const content1 = () => {
           <br />
         </p>
         {/* content-7 */}
-        <h3 className="hire-h3">
-          Our Mobile Application Development Solutions For Various Platforms:
-        </h3>
+        <h2 className="hire-h2">
+          <strong>
+            Our Mobile Application Development Solutions For Various Platforms:
+          </strong>
+        </h2>
         <ul className="hire-list">
           <li>Android App Development</li>
           <li>iOS App Development</li>
@@ -78,10 +84,20 @@ const content1 = () => {
           <li>Cross-platform App Development</li>
         </ul>
 
-        <h3 className="hire-h3">
+        <h2 className="hire-h2">
           Partner With Us to Launch, Run & Grow Your Business Worldwide
-        </h3>
-        <h3 className="hire-h3">Android App Development</h3>
+        </h2>
+        <div id="android" className="d-flex align-items-center margin-top-32px">
+          <div className="heading-icon">
+            <Image
+              src="/icons/android.webp"
+              alt="React Native png"
+              width={45}
+              height={45}
+            />
+          </div>
+          <h3 className="hire-icon-text">Android App Development</h3>
+        </div>
         <p className="hire-p">
           We are a reliable Android app development company, renowned for
           boosting your development strategy, designing smooth experiences,
@@ -89,19 +105,31 @@ const content1 = () => {
           value to the lives of users. We design as well as develop custom
           Android applications for all sizes of business and domains.
         </p>
-        <p className="hire-p">Our Android Development Services: </p>
+        <p className="hire-p">
+          <strong>Our Android Development Services: </strong>
+        </p>
         <ul className="hire-list">
-          <li>Android UI/UX Design</li>
-          <li>Android Universal App Development</li>
+          <li> UI/UX Design</li>
+          <li> Universal App Development</li>
           <li>Custom Android App Development</li>
           <li>Android Gaming App Development</li>
           <li>Enterprise Android App</li>
-          <li>Wearable Apps</li>
           <li>Android App Testing</li>
+          <li>Wearable Apps</li>
           <li>Android App Security</li>
-          <li>Android App Maintenance & Support </li>
+          <li> App Maintenance & Support </li>
         </ul>
-        <h3 className="hire-h3">iOS App Development</h3>
+        <div id="ios" className="d-flex align-items-center margin-top-32px">
+          <div className="heading-icon">
+            <Image
+              src="/icons/ios.webp"
+              alt="React Native png"
+              width={45}
+              height={45}
+            />
+          </div>
+          <h3 className="hire-icon-text">iOS App Development</h3>
+        </div>
         <p className="hire-p">
           If you want effective results, it is vital to develop niche-specific,
           feature-rich, adaptable, and target-oriented mobile applications. We
@@ -110,19 +138,34 @@ const content1 = () => {
           iterative development approach and create applications with a scope
           for improvement as the application runs.
         </p>
-        <p className="hire-p">Our iOS App Development Services:</p>
+        <p className="hire-p">
+          <strong>Our iOS App Development Services:</strong>
+        </p>
         <ul className="hire-list">
-          <li>iOS UI/UX Design</li>
-          <li>iOS Universal App Development</li>
+          <li> UI/UX Design</li>
+          <li> Universal App Development</li>
           <li>Custom iOS App Development</li>
           <li>iOS Gaming App Development</li>
           <li>Apple Wearable App Development</li>
-          <li>Enterprise iOS AppS</li>
           <li>iOS App Testing</li>
+          <li>Enterprise iOS AppS</li>
           <li>iOS App Security</li>
-          <li>iOS App Maintenance & Support</li>
+          <li> App Maintenance & Support</li>
         </ul>
-        <h3 className="hire-h3">React Native Development</h3>
+        <div
+          id="mobile_react"
+          className="d-flex align-items-center margin-top-32px"
+        >
+          <div className="heading-icon">
+            <Image
+              src="/icons/react_native.webp"
+              alt="React Native png"
+              width={45}
+              height={45}
+            />
+          </div>
+          <h3 className="hire-icon-text">React Native Development</h3>
+        </div>
         <p className="hire-p">
           React Native is one of the most eminent programming languages these
           days and businesses over the globe are swiftly implementing it to
@@ -134,16 +177,28 @@ const content1 = () => {
           <br />
           <br />
         </p>
-        <p className="hire-p">Our React Native Development Services:</p>
+        <p className="hire-p">
+          <strong>Our React Native Development Services:</strong>
+        </p>
         <ul className="hire-list">
           <li>React Native Application Development</li>
           <li>React Native Android and iOS Applications</li>
-          <li>React Native Integration and Migration Services</li>
+          <li> Integration and Migration Services</li>
           <li>React Native Consulting</li>
-          <li>React Native UI/UX Design</li>
-          <li>React Native Support and Maintenance Services</li>
+          <li> UI/UX Design</li>
+          <li> Support and Maintenance Services</li>
         </ul>
-        <h3 className="hire-h3">Flutter Development</h3>
+        <div id="flutter" className="d-flex align-items-center margin-top-32px">
+          <div className="heading-icon">
+            <Image
+              src="/images/flutter.webp"
+              alt="React Native png"
+              width={45}
+              height={45}
+            />
+          </div>
+          <h3 className="hire-icon-text">Flutter Development</h3>
+        </div>
         <p className="hire-p">
           Our Flutter mobile app development services are specifically designed
           to aid you develop a multi-platform existence. We at Code Garage Tech,
@@ -152,16 +207,17 @@ const content1 = () => {
           applications for businesses of all sizes that are secure, reliable,
           and secure at the same time.
         </p>
-        <p className="hire-p">Our Flutter Development Services: </p>
+        <p className="hire-p">
+          <strong>Our Flutter Development Services:</strong>{' '}
+        </p>
         <ul className="hire-list">
           <li>Custom Flutter App Development</li>
           <li>Cross-app Flutter App Development</li>
-          <li>Flutter App Support and Maintenance Services</li>
+          <li> Support and Maintenance Services</li>
           <li>Flutter App Design Solutions</li>
-          <li>Flutter App Upgrade</li>
           <li>Advanced & Native Flutter App Development</li>
+          <li>Flutter App Upgrade</li>
         </ul>
-        <TechComponent />
       </div>
     </>
   )
@@ -170,7 +226,13 @@ const content1 = () => {
 const content7 = () => (
   <>
     <div className="hire-container-body-left-content-2"></div>
-    <div className=""></div>
+    <div className="margin-top-32px">
+      <TechComponent
+        techList={'mobileTech'}
+        frontActive={false}
+        mobileActive={true}
+      />
+    </div>
   </>
 )
 
@@ -196,7 +258,7 @@ const MobileSolutions = () => {
         </title>
         <link
           rel="canonical"
-          href="https://www.codegaragetech.com/services/mobile-solutions"
+          href="https://codegaragetech.com/services/mobile-solutions"
         />
         <meta
           name="description"

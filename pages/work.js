@@ -8,17 +8,17 @@ const Work = () => {
         <h2 className="work-text-left-1 ms-5 work-text-left-1-font">
           Our Approach
         </h2>
-        <h2 className="work-text-left text-center">
+        <span className="work-text-left text-center span-revenue-h2 ">
           From Your Idea
           <br />
           To Your Revenue
-        </h2>
+        </span>
         <div className="work-text-right text-center">
-          <h4 className="work-text-right-heading">
+          <div className="work-text-right-heading work-text-h4">
             Confusion In Your
             <br />
             Million Dollar Idea?
-          </h4>
+          </div>
           <div className="get-assist-btn">
             <ModalDialog />
           </div>

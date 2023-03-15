@@ -3,8 +3,12 @@ import Head from 'next/head'
 // import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
-import GenericModal from '../components/genericModal'
+import GenericModal from '../components/GenericModal'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
+const ChatwootWidget = dynamic(() => import('../components/ChatwootWidget'), {
+  ssr: false,
+})
 
 const Contact = () => {
   const [nameIcon, setNameIcon] = useState(false)
@@ -98,10 +102,10 @@ const Contact = () => {
           setGenModalshow(false)
 
           submitBtn.disabled = false
-          submitBtn.innerHTML = 'Send Now'
+          submitBtn.innerHTML = 'Submitted'
 
           submitModalBtn.disabled = false
-          submitModalBtn.innerHTML = 'Send Now'
+          submitModalBtn.innerHTML = 'Submitted'
 
           toast.success('Success! Email Sent Successful', {
             position: 'top-right',
@@ -138,7 +142,7 @@ const Contact = () => {
         <title>
           Have any queries? Get in touch with us now- Code Garage Tech
         </title>
-        <link rel="canonical" href="https://www.codegaragetech.com/contact" />
+        <link rel="canonical" href="https://codegaragetech.com/contact" />
         <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
         <meta
           name="viewport"
@@ -219,9 +223,9 @@ const Contact = () => {
                           <h1>Get in touch</h1>
                           {/* <span className="title__color">.</span> */}
                         </div>
-                        <div className="entry__info text-center">
+                        <h2 className="form-h2 entry__info text-center">
                           Enter your details below
-                        </div>
+                        </h2>
                         <div className="entry__field field">
                           <div className="field__label">Name</div>
                           <div className="field__wrap">
@@ -352,7 +356,7 @@ const Contact = () => {
                               ) : (
                                 <img
                                   className="field__pic"
-                                  src="img/sending-mail.webp"
+                                  src="/img/sending-mail.webp"
                                   alt="Sending Mail PNG"
                                 />
                               )}
@@ -583,7 +587,7 @@ const Contact = () => {
                   ) : (
                     <img
                       className="field__pic"
-                      src="img/sending-mail.webp"
+                      src="/img/sending-mail.webp"
                       alt="Sending Mail PNG"
                     />
                   )}
@@ -615,6 +619,7 @@ const Contact = () => {
           </div>
         }
       />
+      <ChatwootWidget />
     </>
   )
 }

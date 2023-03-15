@@ -1,5 +1,5 @@
 import Header from '../pages/includes/header'
-import Footer from '../pages/includes/footer'
+// import Footer from '../pages/includes/footer'
 import Image from 'next/image'
 const HireServiceLayout = ({
   bannerComponent,
@@ -68,7 +68,7 @@ const HireServiceLayout = ({
         {content7 && content7()}
       </div>
       <div>{content6 && content6()}</div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

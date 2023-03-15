@@ -1,5 +1,5 @@
 const handler = (req, res) => {
-  console.log('form submission ', req.body)
+  // console.log('form submission ', req.body)
   if (req.method === 'POST') {
     try {
       // Save data to the database from here
@@ -12,7 +12,9 @@ const handler = (req, res) => {
         resumeName,
         resumeType,
         resumeBase64,
+        requestOrigin,
       } = req.body
+      console.log('body', req.body)
       const mail = require('@sendgrid/mail')
       mail.setApiKey(process.env.SENDGRID_API_KEY)
       mail
@@ -32,6 +34,7 @@ const handler = (req, res) => {
                                 Phone No: ${phone}<br>
                                 Appointment: ${date}<br>
                                 Query: ${query}<br>
+                                Request Origin:${requestOrigin}<br>
                             </p>
 
                             <p>Regards,<br>

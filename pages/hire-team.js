@@ -1,7 +1,7 @@
 import React from 'react'
 import { RxCheck } from 'react-icons/rx'
 const techTitle = 'Hire a Team '
-import HireServiceLayout from '../components/hireServiceLayout'
+import HireServiceLayout from '../components/HireServiceLayout'
 import Head from 'next/head'
 import ScheduleForm from '../components/schedule'
 
@@ -10,9 +10,9 @@ const contentHeader = () => {
     <>
       <div className="hire-container-body service-body">
         <div className="hire-team hire-container-body-left">
-          <h1 className="hire-team-header">{techTitle}</h1>
+          <h1 className="hire-h1">{techTitle}</h1>
           <h2 className="hire-h2">Together We Can Achieve More</h2>
-          <p className="hire-p">
+          <p className="hire-p margin-bottom-24px">
             Code Garage Tech has helped numerous businesses envision and also
             implement successful projects in various development frameworks and
             languages since 2015. <br />
@@ -29,7 +29,6 @@ const contentHeader = () => {
             title={'Schedule a Meeting'}
             requestOrigin={'Request generated from hire-team page'}
           />
-          ;
         </div>
       </div>
     </>
@@ -52,10 +51,10 @@ const content4 = () => {
         </p>
       </div>
       <div className="hire-container-body-left-content-2">
-        <p className="hire-p">
+        <h3 className="hire-h3">
           <strong>How Our Experts Handle The Project Efficiently</strong>
-        </p>
-        <ul className="body-list">
+        </h3>
+        <ul className="hire-list">
           <li>
             An uncomplicated way to avoid the &quot;talent war.&quot; When you
             require a knowledgeable MySQL architect or experienced C developers
@@ -279,7 +278,7 @@ const HireTeam = () => {
         <title>
           Hire a team of Adept Software Developers - Code Garage Tech
         </title>
-        <link rel="canonical" href="https://www.codegaragetech.com/hire-team" />
+        <link rel="canonical" href="https://codegaragetech.com/hire-team" />
         <meta
           name="description"
           content="Hire a team of adept and dedicated software developers from Code Garage Tech. We use a result-driven and innovative approach to help your business grow. 

@@ -1,170 +1,149 @@
-import { useState } from 'react'
-import Image from 'next/image'
-const TechComponent = ({ techList }) => {
+import React, { useState, useEffect } from 'react'
+import TechComponentIcon from './techComponentIcon'
+
+const TechComponent = ({ techList, frontActive, backActive, mobileActive }) => {
   const mobileTech = [
-    {
-      id: 1,
-      name: 'Android',
-      path: '/icons/service-icon/Android.webp',
-      altImg: 'Android-png',
-      desc: 'Our developer provides the best WordPress Web Development to create an efficient website.',
-      techWidth: '82',
-    },
+    { id: 1, name: 'Android', path: '/images/android_4.webp' },
     {
       id: 2,
       name: 'Flutter',
-      path: '/icons/service-icon/Flutter.webp',
-      altImg: 'Flutter-png',
-      desc: 'Our developer provides the best WordPress Web Development to create an efficient website.',
-      techWidth: '83',
+      path: '/images/flutter.webp',
+      altImg: '',
     },
-    {
-      id: 3,
-      name: 'React Native',
-      path: '/icons/service-icon/React Native.webp',
-      altImg: 'React-Native-png',
-      desc: 'Our developer provides the best WordPress Web Development to create an efficient website.',
-      techWidth: '82',
-    },
-    {
-      id: 4,
-      name: 'Augmented Reality',
-      path: '/icons/service-icon/Augmented Reality.webp',
-      altImg: 'Augmented-png',
-      desc: 'Our developer provides the best WordPress Web Development to create an efficient website.',
-      techWidth: '77',
-    },
-    {
-      id: 5,
-      name: 'Virtual Reality',
-      path: '/icons/service-icon/Virtual Reality.webp',
-      altImg: 'Virtual-Reality-png',
-      desc: 'Our developer provides the best WordPress Web Development to create an efficient website.',
-      techWidth: '82',
-    },
+
     {
       id: 6,
       name: 'Swift',
-      path: '/icons/service-icon/Swift.webp',
+      path: '/icons/swift.webp',
       altImg: 'Swift Icon',
-      desc: 'Our developer provides the best WordPress Web Development to create an efficient website.',
-      techWidth: '82',
     },
     {
       id: 7,
       name: 'ionic',
-      path: '/icons/service-icon/ionic.webp',
-      altImg: 'ionic-png',
-      desc: 'Our developer provides the best WordPress Web Development to create an efficient website.',
-      techWidth: '82',
+      path: '/icons/ionic.webp',
+      altImg: '',
+    },
+    {
+      id: 3,
+      name: 'React Native',
+      path: '/icons/reactjs.webp',
+      altImg: '',
     },
   ]
-  const [path, setPath] = useState(mobileTech)
+
+  const frontTech = [
+    {
+      name: 'Rails',
+      path: '/icons/rails.webp',
+    },
+
+    {
+      name: 'Vuejs',
+      path: '/icons/vuejs.webp',
+    },
+    { name: 'ReactJs', path: '/icons/reactjs.webp' },
+    {
+      name: 'NextJs',
+      path: '/icons/nextjs.webp',
+    },
+    {
+      name: 'Nuxtjs',
+      path: '/icons/nuxtjs.webp',
+    },
+  ]
+
+  const backTech = [
+    {
+      name: 'Nodejs',
+      path: '/icons/nodejs.webp',
+    },
+
+    {
+      name: 'Shopify',
+      path: '/images/shopify.webp',
+    },
+    {
+      name: 'Laravel',
+      path: '/icons/laravel.webp',
+    },
+    {
+      name: 'Ruby',
+      path: '/images/ror_orig.webp',
+    },
+    {
+      name: 'Python',
+      path: '/images/python_2.webp',
+    },
+  ]
+  const [activeMobile, setActiveMobile] = useState(mobileActive)
+  const [activeFront, setActiveFront] = useState(frontActive)
+  const [activeBack, setActiveBack] = useState(backActive)
+
   const handleOnMobile = () => {
+    setActiveMobile(true)
+    setActiveFront(false)
+    setActiveBack(false)
+
     setPath(mobileTech)
   }
   const handleOnFrontend = () => {
-    const frontTech = [
-      // {
-      //   name: "ionic",
-      //   path: "/icons/service-icon/ionic.webp",
-      // },
-      // { name: "Android", path: "/icons/service-icon/Android.webp" },
-      // {
-      //   name: "Flutter",
-      //   path: "/icons/service-icon/Flutter.webp",
-      // },
-      // {
-      //   name: "React Native",
-      //   path: "/icons/service-icon/React Native.webp",
-      // },
-      // {
-      //   name: "Augmented Reality",
-      //   path: "/icons/service-icon/Augmented Reality.webp",
-      // },
-      // {
-      //   name: "Virtual Reality",
-      //   path: "/icons/service-icon/Virtual Reality.webp",
-      // },
-      // {
-      //   name: "Swift",
-      //   path: "/icons/service-icon/Swift.webp",
-      // },
-      // {
-      //   name: "ionic",
-      //   path: "/icons/service-icon/ionic.webp",
-      // },
-      // {
-      //   name: "ionic",
-      //   path: "/icons/service-icon/ionic.webp",
-      // },
-    ]
+    setActiveMobile(false)
+    setActiveFront(true)
+    setActiveBack(false)
     setPath(frontTech)
   }
   const handleOnBackend = () => {
-    const backTech = [
-      // { name: "Android", path: "/icons/service-icon/Android.webp" },
-      // {
-      //   name: "Flutter",
-      //   path: "/icons/service-icon/Flutter.webp",
-      // },
-      // {
-      //   name: "React Native",
-      //   path: "/icons/service-icon/React Native.webp",
-      // },
-      // {
-      //   name: "Virtual Reality",
-      //   path: "/icons/service-icon/Virtual Reality.webp",
-      // },
-      // {
-      //   name: "Swift",
-      //   path: "/icons/service-icon/Swift.webp",
-      // },
-      // {
-      //   name: "ionic",
-      //   path: "/icons/service-icon/ionic.webp",
-      // },
-      // {
-      //   name: "ionic",
-      //   path: "/icons/service-icon/ionic.webp",
-      // },
-      // {
-      //   name: "ionic",
-      //   path: "/icons/service-icon/ionic.webp",
-      // },
-    ]
+    setActiveMobile(false)
+    setActiveFront(false)
+    setActiveBack(true)
     setPath(backTech)
   }
-
+  // if (techList === 'frontTech') setPath(frontTech)
+  // else if (techList === 'mobileTech') setPath(mobileTech)
+  // else if (techList === 'frontTech') setPath(backTech)
+  const [textColor, setTextColor] = useState('red')
+  const [isBlack, setIsBlack] = useState(true)
+  const handleChnageTextColor = (e) => {
+    setIsBlack(!isBlack)
+    setTextColor(isBlack ? '#CCCCCC' : 'black ')
+  }
+  const [path, setPath] = useState([])
+  useEffect(() => {
+    if (techList === 'frontTech') setPath(frontTech)
+    else if (techList === 'mobileTech') setPath(mobileTech)
+    else if (techList === 'backTech') setPath(backTech)
+  }, [])
   return (
     <>
-      <div className="tech-component-container">
-        <h2 className="hire-h2">
+      <div className="service-footer d-flex flex-column justify-content-center align-items-center">
+        <h2 className="hire-h2 service-header text-center">
           The Technologies And Services We Use For Website & CMS Development
         </h2>
-        <p className="hire-h4">
-          Innovative and Advanced Technologies for the Website & CMS Development
-        </p>
-        {/* {mobileTech.map((element) => (
-          <div>
-            <img src={element.path} style={{ height: "82px" }} />
-          </div>
-        ))} */}
-        <div className="d-flex flex-column gap-col">
-          {mobileTech.map((element, index) => (
-            <div className="d-flex flex-column" key={index}>
-              <div className="d-flex aling-items-center">
-                <Image
-                  src={element.path}
-                  alt={element.altImg}
-                  width={element.techWidth}
-                  height={82}
-                />
-                <h3 className="hire-h3 ms-3 my-auto">{element.name}</h3>
-              </div>
-              <p className="hire-h4">{element.desc}</p>
-            </div>
-          ))}
+        <ul className="service-footer-nav-container">
+          <li
+            className="cursor_pointer"
+            onClick={handleOnMobile}
+            style={{ color: activeMobile ? 'blue' : 'black' }}
+          >
+            Mobile
+          </li>
+          <li
+            className="cursor_pointer"
+            onClick={handleOnFrontend}
+            style={{ color: activeFront ? 'blue' : 'black' }}
+          >
+            Frontend
+          </li>
+          <li
+            className="cursor_pointer"
+            onClick={handleOnBackend}
+            style={{ color: activeBack ? 'blue' : 'black' }}
+          >
+            Backend
+          </li>
+        </ul>
+        <div className="service-container service-footer-nav-container-logo">
+          <TechComponentIcon path={path} />
         </div>
       </div>
     </>

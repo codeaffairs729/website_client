@@ -61,7 +61,7 @@ const Design = () => {
       <div id="portfolio" className="design">
         <div className="design__center center">
           <div className="design__body">
-            <h1>We Build Delightful Experiences.</h1>
+            <h2>We Build Delightful Experiences.</h2>
             {/* <a className="design__scroll" href="#">
                             <div className="design__icon">
                                 <img className="design__pic" src="img/scroll.webp" alt="" />

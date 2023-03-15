@@ -15,8 +15,9 @@ const SubSlider = (props) => {
             height={imgHeight}
           />
         </div>
+        {techName}
         <div className="col-lg-12 package-subslider-name">
-          <h6 className="package-subslider-h6">{techName}</h6>
+          <span className="package-subslider-h6">{techName}</span>
         </div>
       </div>
     </>

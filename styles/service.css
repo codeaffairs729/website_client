@@ -112,8 +112,9 @@
   border-radius: 32px;
   padding: 20px;
   max-height: 640px;
-  max-width: 400px;
+  max-width: 450px;
   margin: 0px auto;
+  background: #ffffff;
 }
 
 /* tech service container */

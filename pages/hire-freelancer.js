@@ -4,9 +4,8 @@ import Slider from 'react-slick'
 import Head from 'next/head'
 import ScheduleForm from '../components/schedule'
 
-const techTitle =
-  'Hire Certified and Professional Software Developers or DevOps Engineers'
-import HireServiceLayout from '../components/hireServiceLayout'
+const techTitle = 'Hire Certified and Professional Software Developers'
+import HireServiceLayout from '../components/HireServiceLayout'
 
 const bannerImage = [
   { name: 'Ruby on Rails', path: 'icons/rails.webp', altImg: 'Rails PNG' },
@@ -15,7 +14,7 @@ const bannerImage = [
   { name: 'VueJs', path: 'icons/vuejs.webp', altImg: 'Vuejs Icon' },
   { name: 'NuxtJs', path: 'icons/nuxtjs.webp', altImg: 'Nuxtjs Icon' },
   { name: 'NodeJs', path: 'icons/nodejs.webp', altImg: 'Nodejs Icon' },
-  { name: 'Laravel Icon', path: 'icons/laravel.webp', altImg: '' },
+  { name: 'Laravel', path: 'icons/laravel.webp', altImg: '' },
   { name: 'Shopify', path: 'images/shopify.webp', altImg: 'Shopify PNG Image' },
   { name: 'Wordpress', path: 'icons/wordpress.webp', altImg: 'Wordpress Icon' },
   { name: 'React Native', path: 'icons/reactjs.webp', altImg: 'Reactjs Icon' },
@@ -30,8 +29,8 @@ const contentHeader = () => {
     <>
       <div className="hire-container-body service-body">
         <div className="hire-container-body-left">
-          <h1 className="hire-header">{techTitle}</h1>
-          <ul>
+          <h1 className="hire-h1">{techTitle}</h1>
+          <ul className="margin-bottom-24px">
             <li>
               <span className="tick">
                 <RxCheck />
@@ -53,7 +52,7 @@ const contentHeader = () => {
               Full cycle managed DevOps
             </li>
             <li>
-              <span className="tick">
+              <span className="tick ">
                 <RxCheck />
               </span>
               Use Hassle-free time tracking software with transparent billing
@@ -113,7 +112,7 @@ const content1 = () => {
             get exactly what they asked for in their initial proposal.
           </li>
         </ul>
-        <p className="hire-p">
+        <p className="hire-p ">
           Contact us right away to learn more about hiring developers from Code
           Garage Tech to add to your internal efforts.
         </p>
@@ -124,10 +123,10 @@ const content1 = () => {
 
 const content2 = () => (
   <div>
-    <h3 className="hire-h3">
+    <h2 className="hire-h2">
       Why Choose to Hire a Sole Developer from Code Garage Tech for Your
       Company?
-    </h3>
+    </h2>
     <p className="hire-p">
       We add value to your business by leveraging our professional and
       technological expertise. Hiring a developer is an amazing method to
@@ -136,7 +135,7 @@ const content2 = () => (
       processes to provide our clients with access to certified and expert
       DevOps engineers and software developers. What else do we have to offer?
     </p>
-    <ul className="body-list">
+    <ul className="hire-list">
       <li>
         Senior Developers and Engineers with a high level of experience of more
         than 9 years in custom mobile app development.{' '}
@@ -171,7 +170,7 @@ const content2 = () => (
       also strive to add value for our clients in other ways as well.
     </p>
 
-    <ul className="body-list">
+    <ul className="hire-list">
       <li>
         We offer extensive initial deep discussions and we work together to
         develop an environment where achieving success is our pertinent goal.
@@ -373,7 +372,7 @@ const HireFreelancer = () => {
         <title>Hire a freelancer software developer - Code Garage Tech</title>
         <link
           rel="canonical"
-          href="https://www.codegaragetech.com/hire-freelancer"
+          href="https://codegaragetech.com/hire-freelancer"
         />
 
         <meta

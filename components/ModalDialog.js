@@ -1,6 +1,6 @@
 import React from 'react'
 import { Modal, Button } from 'react-bootstrap'
-import AssistanceForm from './assistanceModel'
+import AssistanceForm from './AssistanceModel'
 function ModalDialog() {
   const [modalView, setModalView] = React.useState(false)
   const initModal = () => {

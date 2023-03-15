@@ -1,6 +1,12 @@
 import React, { useState, useRef } from 'react'
 
-const GenForm = ({ fields, title, submitFunc, buttonText, submitButton }) => {
+const GenenralForm = ({
+  fields,
+  title,
+  submitFunc,
+  buttonText,
+  submitButton,
+}) => {
   return (
     <>
       <div className="gen-form-container d-flex flex-column align-items-center">
@@ -21,4 +27,4 @@ const GenForm = ({ fields, title, submitFunc, buttonText, submitButton }) => {
   )
 }
 
-export default GenForm
+export default GenenralForm

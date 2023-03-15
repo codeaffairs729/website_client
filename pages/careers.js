@@ -1,8 +1,8 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import Header from './includes/header'
 import Footer from './includes/footer'
 // import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
-import GenericModal from '../components/genericModal'
+import GenericModal from '../components/GenericModal'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
 import Slider from 'react-slick'
@@ -12,6 +12,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 const Careers = () => {
+  const [loaded, setLoaded] = useState(false)
+
+  const handleImageLoad = (origin) => {
+    setLoaded(true)
+  }
   const [email, setEmail] = useState('')
   const [jobPosition, setJobPosition] = useState('')
   const [experience, setExperience] = useState('')
@@ -164,6 +169,9 @@ const Careers = () => {
       },
     ],
   }
+  useEffect(() => {
+    handleImageLoad('useEffect')
+  }, [loaded])
   return (
     <>
       <Header />
@@ -183,7 +191,7 @@ const Careers = () => {
         <title>
           Explore App Development Technology Jobs at Code Garage Tech!
         </title>
-        <link rel="canonical" href="https://www.codegaragetech.com/careers" />
+        <link rel="canonical" href="https://codegaragetech.com/careers" />
         <meta
           name="description"
           content="We at Code Garage Tech offer reliable Web Development Technology jobs and be a part of our innovative and happy work culture! Give new wings to your career now."
@@ -197,9 +205,9 @@ const Careers = () => {
         <div className="row">
           <div className="col-lg-3 col-md-3"></div>
           <div className="col-lg-9 col-md-9 career-area-2-text-outer">
-            <h2 className="career-area-2-heading">
+            <h1 className="career-area-2-heading">
               A Place Where Active Mode Is Always On!
-            </h2>
+            </h1>
             <p className="career-area-2-para">
               We are relaxed, energetic, & joyful. We are playful & have fun
               while doing serious & important work. Join us now!
@@ -208,25 +216,71 @@ const Careers = () => {
         </div>
         {/* <div className='rounded-circle career-area-2-circle' ></div> */}
         <img
-          className="career-area-2-img-1"
+          className={`career-area-2-img-1 ${
+            loaded ? 'blur-image-loaded' : 'blur-image'
+          }
+          `}
           src="/career_images/career-area-2-img-1.webp"
           alt="Vishav Playing Chess"
         />
+        {/* <div className="career-area-2-img-1">
+          <Image
+            className="career-area-2-img-1"
+            src="/career_images/career-area-2-img-1.webp"
+            alt="Vishav Playing Chess"
+            width={310}
+            height={755}
+            blurDataURL="/career_images/career-area-2-img-1.webp"
+            placeholder="blur"
+          />
+        </div> */}
         <img
-          className="career-area-2-img-2"
+          className={`career-area-2-img-2 ${
+            loaded ? 'blur-image-loaded' : 'blur-image'
+          }
+          `}
           src="/career_images/career-area-2-img-2.webp"
           alt="CGT - Pool Party"
         />
+        {/* <div className="career-area-2-img-2">
+          <Image
+            src="/career_images/career-area-2-img-2.webp"
+            alt="CGT - Pool Party"
+            width={120}
+            height={197}
+            blurDataURL="/career_images/career-area-2-img-2.webp"
+            placeholder="blur"
+          />
+        </div> */}
         <img
-          className="career-area-2-img-3"
+          className={`career-area-2-img-3 ${
+            loaded ? 'blur-image-loaded' : 'blur-image'
+          }
+          `}
           src="/career_images/career-area-2-img-3.webp"
           alt="CGT - Old Memories"
         />
+        {/* <div>
+          <Image
+            className="career-area-2-img-3"
+            src="/career_images/career-area-2-img-3.webp"
+            alt="CGT - Old Memories"
+            width={180}
+            height={152}
+            blurDataURL="/career_images/career-area-2-img-3.webp"
+            placeholder="blur"
+          />
+        </div> */}
         <img
-          className="career-area-2-img-4"
+          className={`career-area-2-img-4 ${
+            loaded ? 'blur-image-loaded' : 'blur-image'
+          }
+          `}
           src="/career_images/career-area-2-img-4.webp"
           alt="Some Old Faces of CGT"
+          onLoad={handleImageLoad}
         />
+
         <img
           className="career-area-2-typing-icon"
           src="images/type.webp"
@@ -237,9 +291,9 @@ const Careers = () => {
       <div className="container-fluid career-area-1">
         <div className="row career-area-1-row rounded-pill">
           <div className="col-lg-12 career-area-1-col1">
-            <h1 className="career-area-1-heading">
+            <h2 className="career-area-1-heading">
               Extraordinary Problem Require Extraordinary People
-            </h1>
+            </h2>
             <p className="career-area-1-para py-3">
               We offer a refreshing ambiance where you can explore your caliber.
             </p>
@@ -258,10 +312,10 @@ const Careers = () => {
       <div className="container-fluid my-5 career-area-3">
         <div className="row career-area-3-outer-row border-top-5 p-5">
           <div className="col-lg-12">
-            <h1 className="mb-4 career-area-3-heading">
+            <h2 className="mb-4 career-area-3-heading">
               Hop on a Hyper Growth ride
               {/* &gt;&gt;&gt; */}
-            </h1>
+            </h2>
           </div>
           <div className="col-lg-6 col-md-6 career-area-3-para d-flex align-items-center">
             <p>
@@ -306,11 +360,11 @@ const Careers = () => {
 
       <div className="container-fluid career-area-4">
         <div className="row justify-content-center align-items-center career-area-4-row">
-          <h2 className="career-area-4-heading">
+          <div className="career-area-4-heading">
             Our Best Perks Are
             <br />
             Pe<span className="text-danger">o</span>ple Themselves
-          </h2>
+          </div>
           <div className="rounded-circle career-area-4-circle1"></div>
           <div className="rounded-circle career-area-4-circle2"></div>
           <div
@@ -858,7 +912,6 @@ const Careers = () => {
           </div>
         }
       />
-      <Footer />
     </>
   )
 }

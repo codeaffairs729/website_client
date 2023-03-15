@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Header from './includes/header'
 import Footer from './includes/footer'
 import SideImages from '../components/sideImages'
@@ -8,7 +8,11 @@ import Image from 'next/image'
 
 function AboutUs() {
   const [companyFacesDesc, setCompanyFacesDesc] = useState(0)
+  const [loaded, setLoaded] = useState(false)
 
+  const handleImageLoad = (origin) => {
+    setLoaded(true)
+  }
   const sideImgArr = [
     ['aboutUsImages/about-img1.webp', 'Mehakpal Singh(Founder)'],
     ['aboutUsImages/about-img2.webp', 'Poonam Thakur(HR Manager)'],
@@ -58,13 +62,15 @@ function AboutUs() {
   const SideImagesChangeHandle = (index) => {
     setCompanyFacesDesc(index.target.id)
   }
-
+  useEffect(() => {
+    handleImageLoad('useEffect')
+  }, [loaded])
   return (
     <>
       <Header />
       <Head>
         <title>We are a preeminent Web Design And Development firm!</title>
-        <link rel="canonical" href="https://www.codegaragetech.com/aboutUs" />
+        <link rel="canonical" href="https://codegaragetech.com/about-us" />
         <meta
           name="description"
           content="Code Garage Tech is the leading Custom Web App Development Company in India, providing you with world-class software solutions. Get in touch with us now!"
@@ -89,7 +95,11 @@ function AboutUs() {
             <div className="row">
               <div className="col-lg-5 col-md-5 col-12 text-end">
                 <img
-                  className="about-area-6-pic-1"
+                  // className="about-area-6-pic-1"
+                  className={`about-area-6-pic-1 ${
+                    loaded ? 'blur-image-loaded' : 'blur-image'
+                  }
+                  `}
                   src="aboutUsImages/team_pic_3.webp"
                   alt="Harsh, Dixit & Vishav"
                 />
@@ -98,14 +108,22 @@ function AboutUs() {
                 <div className="row">
                   <div className="col-lg-12 about-area-6-img-outer">
                     <img
-                      className="about-area-6-pics"
+                      // className="about-area-6-pics"
+                      className={`about-area-6-pics ${
+                        loaded ? 'blur-image-loaded' : 'blur-image'
+                      }
+                      `}
                       src="aboutUsImages/team_pic_4.webp"
                       alt="Harsh, Abhishek and Vishav"
                     />
                   </div>
                   <div className="col-lg-12 about-area-6-img-outer">
                     <img
-                      className="about-area-6-pics"
+                      // className="about-area-6-pics"
+                      className={`about-area-6-pics ${
+                        loaded ? 'blur-image-loaded' : 'blur-image'
+                      }
+                      `}
                       src="aboutUsImages/team_pic_2.webp"
                       alt="Tanya"
                     />
@@ -114,7 +132,11 @@ function AboutUs() {
               </div>
               <div className="col-lg-5 col-md-5 col-8">
                 <img
-                  className="about-area-6-pic-1"
+                  // className="about-area-6-pic-1"
+                  className={`about-area-6-pic-1 ${
+                    loaded ? 'blur-image-loaded' : 'blur-image'
+                  }
+                  `}
                   src="aboutUsImages/team_pic_1.webp"
                   alt="Udham, Ankush & Mehakpal(Boss)"
                 />
@@ -342,7 +364,7 @@ function AboutUs() {
           </div>
           <div className="col-lg-11 col-md-10">
             <div className="row about-area-4-main-data-outer">
-              <div className="col-lg-6 col-md-6">
+              <div className="col-lg-6 col-md-6 d-flex align-items-center about-img-height">
                 <div className="row">
                   <div className="col-lg-1 col-md-12 col-1"></div>
                   <div className="col-lg-10 col-md-12 col-10">
@@ -354,9 +376,9 @@ function AboutUs() {
                       />
                       <div className="about-area-4-main-img-shape-1">
                         <div className="text-center about-area-4-main-img-text-area">
-                          <h5 className="about-area-4-main-name">
+                          <div className="about-area-4-main-name margin-bottom-1px">
                             {companyFacesDetail[companyFacesDesc][0]}
-                          </h5>
+                          </div>
                           <p className="about-area-4-main-designation">
                             {companyFacesDetail[companyFacesDesc][1]}
                           </p>
@@ -432,7 +454,7 @@ function AboutUs() {
       <div className="container-fluid about-area-1">
         <div className="container">
           <div className="row about-area-1-outer-row">
-            <div className="col-lg-12 text-center about-area-1-outer pb-5">
+            <h2 className="col-lg-12 text-center about-area-1-outer pb-5">
               <p>Pillars We Stand Firm At</p>
               {/* <p className='about-area-1-para my-4' >
                                 We offer flexible pricing options for freelancers and design teams. This
@@ -441,7 +463,7 @@ function AboutUs() {
                                 sl fsfs fksl fksl fkls fskl fs f.
                             </p>
                             <button className='btn btn-primary bg-white about-area-1-btn' >Our Magic Potion</button> */}
-            </div>
+            </h2>
             {/* <div className='col-lg-5 col-md-5 about-area-1-outer' >
                             <img className='about-area-1-pic-1' src='aboutUsImages/team_pic_1.webp' alt='' />
                             <img className='about-area-1-pic-2' src='aboutUsImages/team_pic_2.webp' alt='' />
@@ -816,7 +838,6 @@ function AboutUs() {
                     </div>
                 </div>
             </div> */}
-      <Footer />
     </>
   )
 }

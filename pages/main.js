@@ -7,11 +7,11 @@ import Image from 'next/image'
 const Main = () => {
   return (
     <>
+      <Header />
       <div className="main">
-        <Header />
         <Head>
           <title>Custom Web Software & Application Development Services</title>
-          <link rel="canonical" href="https://www.codegaragetech.com" />
+          <link rel="canonical" href="https://codegaragetech.com/" />
 
           <meta
             name="description"
@@ -49,27 +49,31 @@ const Main = () => {
                     />
                   </span>
                 </span>
-                <span className="title__box">
-                  <span className="title__text">
-                    <span className="title__line">
-                      Web{' '}
-                      <span className="main-subheadings-span">Solutions</span>
+                <h1 className="home-header">
+                  <span className="title__box">
+                    <span className="title__text">
+                      <span className="title__line">
+                        Web{' '}
+                        <span className="main-subheadings-span">
+                          Solutions&nbsp;
+                        </span>
+                      </span>
                     </span>
                   </span>
-                </span>
-                <span className="title__box main-android-title-box">
-                  <span className="title__text main-android-title-text">
-                    Android / IOS{' '}
-                    <span className="main-subheadings-span">Development</span>
+                  <span className="title__box main-android-title-box">
+                    <span className="title__text main-android-title-text">
+                      Android / IOS{' '}
+                      <span className="main-subheadings-span">Development</span>
+                    </span>
                   </span>
-                </span>
-                <span className="title__box">
-                  <span className="title__text">
-                    UI / UX{' '}
-                    <span className="main-subheadings-span">Designing</span>
-                    {/* <span className="title__color">.</span> */}
+                  <span className="title__box">
+                    <span className="title__text">
+                      UI / UX{' '}
+                      <span className="main-subheadings-span">Designing</span>
+                      {/* <span className="title__color">.</span> */}
+                    </span>
                   </span>
-                </span>
+                </h1>
               </div>
               {/* <div className="main__info info ms-3 main-info" data-aos="animation-scale-y" data-aos-delay="400"> */}
               <div className="freelancer-btn ms-3">
