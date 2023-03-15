@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import FeatureSlider from './FeatureSlider'
 const FeatureList = () => {
   return (
     <div className="feature-list container">
@@ -12,8 +11,8 @@ const FeatureList = () => {
           height={56}
         />
       </div>
-      <div className="row align-items-center gx-5 feature-overflow-hiiden">
-        <div className="col-md-12 col-lg-5">
+      <div className="row align-content-between  gx-5 feature-overflow-hiiden">
+        <div className="col-md-12 col-lg-6">
           <div className="feature-small-text">Think No Limits</div>
           <h2 className="mb-4">Leading The Way In Crafting New Innovations</h2>
           <p className="mb-4">
@@ -21,10 +20,120 @@ const FeatureList = () => {
             advice and solutions should be tailored accordingly. Allow us to
             assist you with top-notch software development solutions.
           </p>
+          <div className="feature-list-div-container">
+            <div className="row feature-slide-row">
+              <div className="col-lg-12">
+                <div className="row align-items-center py-3">
+                  <div className="col-3 col-sm-2 align-items-center justify-content-center">
+                    <Image
+                      src="/icons/Rect-4-circle.svg"
+                      alt=""
+                      width={56}
+                      height={56}
+                    />
+                  </div>
+                  <div className="col-9 col-sm-10 align-items-center">
+                    <h3>RESEARCH & INNOVATION</h3>
+                    <p>
+                      Transform your product idea into a reality. Strategize and
+                      assess the key features of your product required to
+                      achieve your business objectives.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="col-md-12 col-lg-1"></div>
         <div className="col-md-12 col-lg-6">
-          <FeatureSlider />
+          <div className="feature-list-div-container">
+            <div className="row feature-slide-row">
+              <div className="col-lg-12">
+                <div className="row align-items-center py-3">
+                  <div className="col-3 col-sm-2 align-items-center justify-content-center">
+                    <Image
+                      src="/icons/Rect-1-circle.svg"
+                      alt=""
+                      width={56}
+                      height={56}
+                    />
+                  </div>
+                  <div className="col-9 col-sm-10 align-items-center">
+                    <h3>IDEATION AND DESIGN</h3>
+                    <p>
+                      Craft a distinct and precise visual identity for your
+                      brand and product through personalized designs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row feature-slide-row">
+              <div className="col-lg-12">
+                <div className="row align-items-center py-3">
+                  <div className="col-3 col-sm-2 align-items-center justify-content-center">
+                    <Image
+                      src="/icons/Rect-4-circle.svg"
+                      alt=""
+                      width={56}
+                      height={56}
+                    />
+                  </div>
+                  <div className="col-9 col-sm-10 align-items-center">
+                    <h3>EEFFICACIOUS SOFT SOLUTIONS</h3>
+                    <p>
+                      Our adept software developers always deliver highly
+                      responsive and interactive user interfaces that offer
+                      users a fascinating experience
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row feature-slide-row">
+              <div className="col-lg-12">
+                <div className="row align-items-center py-3">
+                  <div className="col-3 col-sm-2 align-items-center justify-content-center">
+                    <Image
+                      src="/icons/Rect-1-circle.svg"
+                      alt=""
+                      width={56}
+                      height={56}
+                    />
+                  </div>
+                  <div className="col-9 col-sm-10 align-items-center">
+                    <h3>SCALE AND MARKET</h3>
+                    <p>
+                      Our goal is to assist your growth by ensuring that your
+                      project meets the constantly-evolving market demands.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row feature-slide-row">
+              <div className="col-lg-12">
+                <div className="row align-items-center py-3">
+                  <div className="col-3 col-sm-2 align-items-center justify-content-center">
+                    <Image
+                      src="/icons/Rect-4-circle.svg"
+                      alt=""
+                      width={56}
+                      height={56}
+                    />
+                  </div>
+                  <div className="col-9 col-sm-10 align-items-center">
+                    <h3>PROCESS OPTIMIZATION</h3>
+                    <p>
+                      We adopt the systematic approach of identifying,
+                      analyzing, and improving business processes to increase
+                      efficiency and enhance quality.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="ellipse-blue-full">
