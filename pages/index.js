@@ -13,7 +13,7 @@ import Main from './main'
 // import FeatureList from '../components/FeatureList'
 // import FeatureList from '../components/FeatureList'
 const FeatureList = dynamic(() => import('../components/FeatureList'), {
-  ssr: true,
+  ssr: false,
 })
 // const Work = dynamic(() => import('./work'), {
 //   ssr: false,
