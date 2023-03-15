@@ -11,10 +11,9 @@ import Main from './main'
 // import Teams from "./teams";
 // import Like from "./like";
 // import FeatureList from '../components/FeatureList'
-// import FeatureList from '../components/FeatureList'
-const FeatureList = dynamic(() => import('../components/FeatureList'), {
-  ssr: false,
-})
+// const FeatureList = dynamic(() => import('../components/FeatureList'), {
+//   ssr: false,
+// })
 // const Work = dynamic(() => import('./work'), {
 //   ssr: false,
 // })
@@ -60,7 +59,7 @@ export default function Home() {
           />
         </a>
         <Main />
-        <FeatureList />
+        {/* <FeatureList /> */}
         <Package />
         {/* <Work /> */}
         <Layouts />
