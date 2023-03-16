@@ -1,16 +1,15 @@
 import React from 'react'
-import dynamic from 'next/dynamic'
 // import Header from './includes/header'
 import Typewriter from 'typewriter-effect'
 import Head from 'next/head'
 import Image from 'next/image'
+import dynamic from 'next/dynamic'
 const Header = dynamic(() => import('./includes/header'), {
   ssr: false,
 })
 const Main = () => {
   return (
     <>
-      <Header />
       <div className="main">
         <Head>
           <title>Custom Web Software & Application Development Services</title>

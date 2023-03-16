@@ -13,6 +13,9 @@ import '../styles/hireServiceLayout.css'
 import '../styles/assisstanceModel.css'
 // import Header from './includes/header'
 // import Footer from './includes/footer'
+const Header = dynamic(() => import('./includes/header'), {
+  ssr: false,
+})
 const Footer = dynamic(() => import('./includes/footer'), {
   ssr: false,
 })
@@ -34,6 +37,7 @@ function MyApp({ Component, pageProps }) {
 
     // </GoogleReCaptchaProvider>
     <>
+      <Header />
       <Component {...pageProps} />
       {/* <button type="button" className="btn btn-primary" onClick={handleOnclick}>
         Chatwoot

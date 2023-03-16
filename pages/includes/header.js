@@ -17,7 +17,8 @@ const Header = () => {
   const [careerLink, setCareerLink] = useState(false)
   const [aboutUsLink, setAboutUsLink] = useState(false)
   const router = useRouter()
-
+  const currentPath = router.pathname
+  console.log('userouter', currentPath)
   const headerSearch = () => {
     const searchBarShowHide = headerSearchBar ? false : true
     setHeaderSearchBar(searchBarShowHide)
@@ -170,6 +171,7 @@ const Header = () => {
                     alt="Code Garage Tech - Logo"
                     width={210}
                     height={39}
+                    priority={true}
                   />
                 </div>
               </div>
@@ -182,8 +184,21 @@ const Header = () => {
               }
             >
               <nav className="header__nav">
-                <Link href="/">
-                  <div className="cursor_pointer header__item nav-css">
+                <Link
+                  href="/"
+                  className={
+                    currentPath === '/'
+                      ? 'underline_text'
+                      : !'not_underline_text'
+                  }
+                >
+                  <div
+                    className={
+                      currentPath === '/'
+                        ? 'cursor_pointer header__item nav-css underline_text'
+                        : 'cursor_pointer header__item nav-css'
+                    }
+                  >
                     Home
                   </div>
                 </Link>
@@ -217,18 +232,24 @@ const Header = () => {
                       <div className="header__row row">
                         <div className="col-lg-4 col-md-4 col-sm-4">
                           <div
-                            className={`header__category ${
+                            className={`header__category cursor_pointer ${
                               serviceMenu && 'service-menu-header-item'
                             }`}
                           >
-                            <Link href="/services/web-solutions">
-                              Web Solutions
+                            <Link
+                              href="/services/web-solutions"
+                              onClick={handleSidebar}
+                            >
+                              <div onClick={handleSidebar}>Web Solutions</div>
                             </Link>
                           </div>
                           <div className="row">
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/web-solutions/#ruby-rails">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
@@ -253,7 +274,10 @@ const Header = () => {
                             </div>
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/reactjs-nextjs">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     <div className="header-solutions-icon">
                                       <Image
@@ -273,7 +297,10 @@ const Header = () => {
                             </div>
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/vuejs-nuxtjs">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
@@ -301,7 +328,10 @@ const Header = () => {
                               style={{ position: 'relative' }}
                             >
                               <Link href="/services/web-solutions/#nodejs">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
@@ -327,7 +357,10 @@ const Header = () => {
                             </div>
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/web-solutions/#laravel">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
@@ -352,7 +385,10 @@ const Header = () => {
                             </div>
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/web-solutions/#shopify">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
@@ -376,7 +412,10 @@ const Header = () => {
                             </div>
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/web-solutions/#wordpress">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
@@ -527,20 +566,28 @@ const Header = () => {
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-4">
                           <div
-                            className={`header__category ${
+                            className={`header__category cursor_pointer ${
                               serviceMenu
                                 ? 'service-menu-header-item service-menu-header-category'
                                 : ''
                             }`}
                           >
-                            <Link href="/services/mobile-solutions">
-                              Mobile Solutions
+                            <Link
+                              href="/services/mobile-solutions"
+                              onClick={handleSidebar}
+                            >
+                              <div onClick={handleSidebar}>
+                                Mobile Solutions
+                              </div>
                             </Link>
                           </div>
                           <div className="row ">
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/mobile-solutions/#android">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
@@ -566,7 +613,10 @@ const Header = () => {
                             </div>
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/mobile-solutions/#ios">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
@@ -592,7 +642,10 @@ const Header = () => {
                             </div>
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/mobile-solutions/#mobile_react">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
@@ -618,7 +671,10 @@ const Header = () => {
                             </div>
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/mobile-solutions/#flutter">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
@@ -763,16 +819,24 @@ const Header = () => {
                             {/* </Slider> */}
                           </div>
                           <div
-                            className={`header__category mt-3 ${
+                            className={`header__category cursor_pointer mt-3 ${
                               serviceMenu ? 'service-menu-header-item' : ''
                             }`}
                           >
-                            <Link href="/services/devops">DevOps</Link>
+                            <Link
+                              href="/services/devops"
+                              onClick={handleSidebar}
+                            >
+                              <div onClick={handleSidebar}>DevOps</div>
+                            </Link>
                           </div>
                           <div className="row ">
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/devops/#automation">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
@@ -798,7 +862,10 @@ const Header = () => {
                             </div>
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/devops/#ci/cd">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
@@ -822,7 +889,10 @@ const Header = () => {
                             </div>
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/devops/#cloud">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
@@ -861,7 +931,10 @@ const Header = () => {
                           <div className="row">
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/ui-ux">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
@@ -885,7 +958,10 @@ const Header = () => {
                             </div>
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/ecommerce-solutions">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
@@ -911,7 +987,10 @@ const Header = () => {
                             </div>
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/content-management-system">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
@@ -937,7 +1016,10 @@ const Header = () => {
                             </div>
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/customer-relationship-management">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
@@ -963,7 +1045,10 @@ const Header = () => {
                             </div>
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/digital-marketing">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
@@ -988,7 +1073,10 @@ const Header = () => {
                             </div>
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/deployment-and-host-management">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
@@ -1013,7 +1101,10 @@ const Header = () => {
                             </div>
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/strapi">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                     className="header-solutions-icon"
@@ -1036,7 +1127,10 @@ const Header = () => {
                             </div>
                             <div className="col-lg-12 header-solutions-outer">
                               <Link href="/services/chatwoot">
-                                <div className="row cursor_pointer">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
                                   <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                     className="header-solutions-icon"
@@ -1126,17 +1220,21 @@ const Header = () => {
                   </div>
                 </div>
                 <Link href="/#portfolio">
-                  <div className="cursor_pointer header__item nav-css">
+                  <div
+                    className="cursor_pointer header__item nav-css"
+                    onClick={handleSidebar}
+                  >
                     Portfolio
                   </div>
                 </Link>
                 <Link href="/careers">
                   <div
                     className={
-                      careerLink
-                        ? 'cursor_pointer header__item header-item'
+                      currentPath === '/careers'
+                        ? 'cursor_pointer header__item nav-css underline_text'
                         : 'cursor_pointer header__item nav-css'
                     }
+                    onClick={handleSidebar}
                   >
                     Careers
                   </div>
@@ -1144,10 +1242,11 @@ const Header = () => {
                 <Link href="/about-us">
                   <div
                     className={
-                      aboutUsLink
-                        ? 'cursor_pointer header__item header-item'
+                      currentPath === '/about-us'
+                        ? 'cursor_pointer header__item nav-css underline_text'
                         : 'cursor_pointer header__item nav-css'
                     }
+                    onClick={handleSidebar}
                   >
                     About Us
                   </div>

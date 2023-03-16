@@ -9,6 +9,7 @@ const Footer = () => {
   const [socialIcons, setSocialIcons] = useState(false)
   const footer = useRef(null)
   const rubyImg = '/icons/ror.webp'
+
   const showAboutUs = (e) => {
     const items = footer.getElementsByClassName('js-footer-col')
     // for (let i = 0; i < items.length; i++) {
@@ -57,6 +58,19 @@ const Footer = () => {
     setContactUs(false)
     setSocialIcons(socialIconsStatus)
   }
+
+  const emailRef = useRef(null)
+  const salesEmailRef = useRef(null)
+  useEffect(() => {
+    const emailElement = emailRef.current
+    const email = 'hr@codegaragetech.com'
+    emailElement.innerHTML = `<a href="mailto:${email}">${email}</a>`
+
+    const salesEmailElement = salesEmailRef.current
+    const sales = 'sales@codegaragetech.com'
+    salesEmailElement.innerHTML = `<a href="mailto:${sales}">${sales}</a>`
+  }, [])
+
   return (
     <>
       <div
@@ -95,18 +109,33 @@ const Footer = () => {
                   Want to take your business online? Count on us, we offer the
                   best software solutions to your business.
                 </span>
-                <span className="footer__link footer-link-contact">
-                  +91 82889 83623
+                <span className="footer__link footer-link-contact d-flex">
+                  <span className="mr-2">
+                    <Image src="/logo/india_logo.svg" width={32} height={24} />
+                  </span>
+                  <span>&nbsp;&nbsp;+91 82889 83623</span>
+                </span>
+                <span className="footer__link footer-link-contact d-flex">
+                  <span>
+                    <Image src="/logo/US_logo.svg" width={32} height={24} />
+                  </span>
+                  <span>&nbsp;&nbsp;+1 7606839821</span>
                 </span>
                 <span className="footer__link footer-link-contact">
-                  {/* hr@codegaragetech.com */}
-                  <Image
+                  <p>
+                    <span ref={salesEmailRef}></span>
+                  </p>
+                  {/* <Image
                     src="/logo/emailImg.png"
                     alt="email-text-image-png"
                     width={190}
                     height={24}
-                  />
+                  /> */}
+                  <p>
+                    <span ref={emailRef}></span>
+                  </p>
                 </span>
+
                 <span className="footer__link footer-link-about">
                   The Atrium Quarkcity,
                   <br />

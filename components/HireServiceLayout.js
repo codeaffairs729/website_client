@@ -16,7 +16,7 @@ const HireServiceLayout = ({
 }) => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="hire-container ">
         {isIconExit && (
           <div>

@@ -7400,7 +7400,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 }
 
 .footer__link:not(:last-child) {
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 
 .footer__bottom {
@@ -11176,6 +11176,11 @@ top: 7641px; */
   transition: color 1s;
 }
 
+.header__item:hover {
+  /* color: #292930; */
+  color: #27272e;
+  border-bottom: 2px solid blue;
+}
 .header__item:hover {
   /* color: #292930; */
   color: #27272e;

@@ -67,7 +67,7 @@ function AboutUs() {
   }, [loaded])
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Head>
         <title>We are a preeminent Web Design And Development firm!</title>
         <link rel="canonical" href="https://codegaragetech.com/about-us" />

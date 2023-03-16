@@ -174,7 +174,7 @@ const Careers = () => {
   }, [loaded])
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <ToastContainer
         position="top-right"
         autoClose={5000}
