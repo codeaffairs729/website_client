@@ -1,23 +1,23 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import Script from 'next/script'
-// import {
-//   OrganizationSchema,
-//   WebsiteSchema,
-//   LocalBusinessSchema,
-//   WebServicesSchema,
-//   MobileServicesSchema,
-//   DevOpsServicesSchema,
-//   UIUXServicesSchema,
-//   EcommerceServicesSchema,
-//   CMSServicesSchema,
-//   CRMServicesSchema,
-//   DigitalMarketingServicesSchema,
-//   DeploymentHostManagementServicesSchema,
-//   StrapiServicesSchema,
-//   ChatwootServicesSchema,
-//   AboutServicesSchema,
-//   CareerServicesSchema,
-// } from '../components/organizationSchema'
+import {
+  OrganizationSchema,
+  WebsiteSchema,
+  LocalBusinessSchema,
+  WebServicesSchema,
+  MobileServicesSchema,
+  DevOpsServicesSchema,
+  UIUXServicesSchema,
+  EcommerceServicesSchema,
+  CMSServicesSchema,
+  CRMServicesSchema,
+  DigitalMarketingServicesSchema,
+  DeploymentHostManagementServicesSchema,
+  StrapiServicesSchema,
+  ChatwootServicesSchema,
+  AboutServicesSchema,
+  CareerServicesSchema,
+} from '../components/organizationSchema'
 export default function Document() {
   return (
     <Html lang="en">
@@ -55,15 +55,15 @@ export default function Document() {
           src="https://www.googletagmanager.com/gtag/js?id=G-GT3WPQDNTQ"
         /> */}
 
-        {/* <Script id="google-analytics-script" strategy="lazyOnload">
+        <Script id="google-analytics-script" strategy="lazyOnload">
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-GT3WPQDNTQ');
     `}
-        </Script> */}
-        {/* <OrganizationSchema />
+        </Script>
+        <OrganizationSchema />
         <WebsiteSchema />
         <LocalBusinessSchema />
         <WebServicesSchema />
@@ -78,7 +78,7 @@ export default function Document() {
         <StrapiServicesSchema />
         <ChatwootServicesSchema />
         <AboutServicesSchema />
-        <CareerServicesSchema /> */}
+        <CareerServicesSchema />
       </Head>
       <body>
         <Main />

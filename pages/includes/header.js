@@ -168,8 +168,8 @@ const Header = () => {
                   <Image
                     src="/logo/cgt_new_logo_alt.webp"
                     alt="Code Garage Tech - Logo"
-                    width={145}
-                    height={27}
+                    width={210}
+                    height={39}
                   />
                 </div>
               </div>
