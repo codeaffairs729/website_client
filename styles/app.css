@@ -8136,6 +8136,58 @@ body:not(.touch-device) .header__item:hover .header__body {
 html {
   scroll-padding-top: 8vw; /* height of sticky header */
 }
+/* <----------Blog Section list ------->*/
+.blog-container {
+  padding: 50px 60px 100px;
+}
+.card-desc {
+  height: 160px;
+}
+.blog-list {
+  /* border: 0.5px solid #ccc; */
+  z-index: 700;
+  /* height: 5000px; */
+}
+.blog-container h2 {
+  font-size: 48px;
+  margin-bottom: 48px;
+}
+
+.blog-btn {
+  width: 145px;
+  height: 46px;
+  color: #ffffff;
+  font-family: 'Mukta', Sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #21cdc0;
+  border-style: solid;
+  border-color: #21cdc0;
+  margin: 0px 0px 10px 0px;
+  margin-top: 16px;
+  transition: 0.35s ease-in-out;
+}
+
+.blog-btn:hover {
+  background-color: #5764ec;
+}
+
+.card-body {
+  position: relative;
+  padding: 11px 22px 0px 22px;
+}
+.card-body h3 {
+  font-size: 24px;
+  color: #273353;
+}
+.card-body p {
+  font-size: 16px;
+  color: #666666;
+}
+
+.blog-list-container {
+  padding: 200px 0px;
+}
 /* <----------Feature list ------->*/
 .feature-list {
   position: relative;
@@ -8157,7 +8209,6 @@ html {
   color: #292930;
   margin-bottom: 40px;
 }
-
 .feature-small-text {
   /* Head title */
   font-family: 'DM Sans';
@@ -8299,6 +8350,9 @@ html {
   .entry__cube {
     right: -50px;
   }
+  .card-desc {
+    height: 160px;
+  }
 }
 
 @media only screen and (max-width: 1365px) {
@@ -8343,6 +8397,9 @@ html {
   }
   .entry__form {
     margin-right: 0;
+  }
+  .card-desc {
+    height: 190px;
   }
 }
 
@@ -8838,6 +8895,9 @@ html {
   .mfp-container {
     padding: 40px;
   }
+  .card-desc {
+    height: 240px;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -9270,6 +9330,13 @@ html {
     padding-left: 6px;
     padding-right: 6px;
   }
+  /* <----------Blog Section list ------->*/
+  .blog-container {
+    padding: 50px 40px 100px;
+  }
+  .card-desc {
+    height: 125px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -9288,6 +9355,9 @@ html {
     left: 16px;
     bottom: 125px;
     width: 235px;
+  }
+  .header__item:not(:last-child) {
+    margin-right: 35px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -10735,6 +10805,16 @@ html {
   .design-slider-btn {
     top: 102px;
     right: 45px;
+  }
+  /* <----------Blog Section list ------->*/
+  .blog-container {
+    padding: 0px 20px 100px;
+  }
+  .blog-list {
+    padding: 0px 0px;
+  }
+  .card-desc {
+    height: 190px;
   }
 }
 

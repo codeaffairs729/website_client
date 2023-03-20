@@ -200,8 +200,10 @@ const AssistanceModel = ({ title, requestOrigin }) => {
       render: () => {
         return (
           <input
+            id="email"
+            name="email"
             type="email"
-            className="assist-form-container-input-field"
+            className="assist-form-container-input-field form-control"
             placeholder="Your email*"
             value={email}
             onChange={(e) => setEmail(e.target.value)}

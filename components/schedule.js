@@ -68,6 +68,19 @@ const ScheduleForm = ({ title, requestOrigin }) => {
       // setFileAlert(true);
       return
     }
+    if (!email.match(/[^\s@]+@[^\s@]+\.[^\s@]+/gi)) {
+      // toast.error('Email is not valid', {
+      //   position: 'top-right',
+      //   autoClose: 5000,
+      //   hideProgressBar: true,
+      //   closeOnClick: true,
+      //   pauseOnHover: true,
+      //   draggable: true,
+      //   progress: undefined,
+      // })
+      console.log('Please enter a valid email')
+      return
+    }
     submitBtn.disabled = true
     submitBtn.innerHTML =
       '<span class="spinner-border spinner-border-sm"></span> Loading...'
@@ -199,9 +212,12 @@ const ScheduleForm = ({ title, requestOrigin }) => {
       render: () => {
         return (
           <input
+            // pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            id="email"
+            // name="email"
             type="email"
             className="form-container-input-field"
-            placeholder="Your email*"
+            placeholder="Your emaild*"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required

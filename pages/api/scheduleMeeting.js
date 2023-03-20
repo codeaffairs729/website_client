@@ -1,5 +1,5 @@
 const handler = (req, res) => {
-  // console.log('form submission ', req.body)
+  console.log('form submission Mar17 ', req.body)
   if (req.method === 'POST') {
     try {
       // Save data to the database from here

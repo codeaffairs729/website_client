@@ -18,7 +18,6 @@ const Header = () => {
   const [aboutUsLink, setAboutUsLink] = useState(false)
   const router = useRouter()
   const currentPath = router.pathname
-  console.log('userouter', currentPath)
   const headerSearch = () => {
     const searchBarShowHide = headerSearchBar ? false : true
     setHeaderSearchBar(searchBarShowHide)
@@ -238,7 +237,7 @@ const Header = () => {
                           >
                             <Link
                               href="/services/web-solutions"
-                              onClick={handleSidebar}
+                              legacyBehavior={true}
                             >
                               <div onClick={handleSidebar}>Web Solutions</div>
                             </Link>
@@ -574,7 +573,7 @@ const Header = () => {
                           >
                             <Link
                               href="/services/mobile-solutions"
-                              onClick={handleSidebar}
+                              legacyBehavior={true}
                             >
                               <div onClick={handleSidebar}>
                                 Mobile Solutions
@@ -823,10 +822,7 @@ const Header = () => {
                               serviceMenu ? 'service-menu-header-item' : ''
                             }`}
                           >
-                            <Link
-                              href="/services/devops"
-                              onClick={handleSidebar}
-                            >
+                            <Link href="/services/devops" legacyBehavior={true}>
                               <div onClick={handleSidebar}>DevOps</div>
                             </Link>
                           </div>

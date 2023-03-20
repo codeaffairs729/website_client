@@ -11,6 +11,9 @@ import Main from './main'
 // import Teams from "./teams";
 // import Like from "./like";
 // import FeatureList from '../components/FeatureList'
+const BlogSection = dynamic(() => import('../components/BlogSection'), {
+  ssr: false,
+})
 const FeatureList = dynamic(() => import('../components/FeatureList'), {
   ssr: false,
 })
@@ -67,7 +70,8 @@ export default function Home() {
         <Partners />
         <Design />
         <Teams />
-        <Like />
+        {/* <Like /> */}
+        <BlogSection />
         <ChatwootWidget />
       </div>
     </>

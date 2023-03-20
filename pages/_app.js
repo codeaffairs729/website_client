@@ -11,6 +11,7 @@ import '../styles/service.css'
 import '../styles/techComponent.css'
 import '../styles/hireServiceLayout.css'
 import '../styles/assisstanceModel.css'
+import '../styles/blog-style.css'
 // import Header from './includes/header'
 // import Footer from './includes/footer'
 const Header = dynamic(() => import('./includes/header'), {

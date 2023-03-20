@@ -29,8 +29,8 @@
     ],
     "react/function-component-definition": "off",
     "jsx-a11y/anchor-is-valid": "off",
-    "no-promise-executor-return": "off"
-    // "react/no-unescaped-entities": "off"
+    "no-promise-executor-return": "off",
+    "react/no-unescaped-entities": "off"
   },
   "globals": {
     "JSX": true
