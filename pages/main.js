@@ -4,6 +4,7 @@ import Typewriter from 'typewriter-effect'
 import Head from 'next/head'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
+import Rating from '../components/Rating'
 const Header = dynamic(() => import('./includes/header'), {
   ssr: false,
 })
@@ -100,6 +101,8 @@ const Main = () => {
                 software development & consulting company, we possess quality
                 knowledge and tactics to bring it to life.
               </div>
+              <Rating />
+
               {/* <div className="main__control ms-3" data-aos="animation-scale-y" data-aos-delay="550"> */}
               <div
                 className="main__scroll ms-3"

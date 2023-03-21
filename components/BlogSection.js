@@ -11,14 +11,16 @@ const BlogSection = () => {
       <div className="row blog-list">
         <div className="col-12 col-lg-4">
           <div className="card m-2 shadow p-3 bg-body-tertiary" style={styles}>
-            <div>
+            <div className="card-img text-center">
               <Image
-                src="/blog_images/SpeedWebsite.webp"
+                src="/blog_images/enhance-speed.webp"
                 width={554}
                 height={383}
+                objectFit="contain"
+                objectPosition="50% 50%"
                 alt="a snow-capped mountain range"
               />
-              {/* <img src="/blog_images/cost_pwa.webp" style={{width:"1060px"}}/> */}
+              {/* <img src="/blog_images/SpeedWebsite.webp" style={{width:"334px"}}/> */}
             </div>
             <div className="card-body">
               <div className="card-desc">
@@ -39,12 +41,14 @@ const BlogSection = () => {
         </div>
         <div className="col-12 col-lg-4">
           <div className="card m-2 shadow p-3 bg-body-tertiary" style={styles}>
-            <div>
+            <div className="card-img text-center">
               <Image
                 src="/blog_images/cost_pwa.webp"
                 width={554}
                 height={383}
                 alt="a snow-capped mountain range"
+                objectFit="contain"
+                objectPosition="50% 50%"
               />
             </div>
             <div className="card-body">
@@ -66,24 +70,26 @@ const BlogSection = () => {
         </div>
         <div className="col-12 col-lg-4">
           <div className="card m-2 shadow p-3 bg-body-tertiary" style={styles}>
-            <div>
+            <div className="card-img text-center">
               <Image
-                src="/blog_images/shopify_guide.webp"
+                src="/blog_images/ruby-framework.webp"
                 width={554}
                 height={383}
                 alt="a snow-capped mountain range"
+                objectFit="contain"
+                objectPosition="50% 50%"
               />
             </div>
             <div className="card-body">
               <div className="card-desc">
                 <h3 className="card-title pt-2">
-                  A Complete Guide on Headless Shopify
+                  Ruby Frameworks For Website Development In 2023
                 </h3>
                 <p className="card-text pt-2">
                   Are you wondering what headless shopify actually is?
                 </p>
               </div>
-              <Link href="/blog/shopify_app" className="">
+              <Link href="/blog/shopify-blog" className="">
                 <button type="button" className="blog-btn">
                   READ MORE
                 </button>

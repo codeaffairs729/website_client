@@ -1,5 +1,5 @@
 import Image from 'next/image'
-const ShopifyApp = () => {
+const ShopifyBlog = () => {
   return (
     <>
       <div className="hire-container  blog-page-container ">
@@ -203,4 +203,4 @@ const ShopifyApp = () => {
   )
 }
 
-export default ShopifyApp
+export default ShopifyBlog

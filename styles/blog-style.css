@@ -1,3 +1,6 @@
+.blog-page-container .hire-h2{
+  color: #0a0a23;
+}
 .blog-page-container {
   margin-top: 50px;
   padding: 150px;
@@ -10,6 +13,7 @@
   padding: 48px;
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
 } */
+
 
 @media only screen and (max-width: 1024px) {
   .blog-page-container {

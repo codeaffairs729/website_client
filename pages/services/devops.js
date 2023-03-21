@@ -139,7 +139,7 @@ const content1 = () => {
         >
           <div className="heading-icon">
             <Image
-              src="/images/flutter.webp"
+              src="/icons/Unionautomation.svg"
               alt="React Native png"
               width={45}
               height={45}
@@ -163,7 +163,7 @@ const content1 = () => {
         <div id="ci/cd" className="d-flex align-items-center margin-top-32px">
           <div className="heading-icon">
             <Image
-              src="/images/flutter.webp"
+              src="/icons/VectorCICD.svg"
               alt="React Native png"
               width={45}
               height={45}

@@ -8,42 +8,49 @@ const BlogList = () => {
       id: 1,
       title: 'A Complete Guide on How to Enhance the Speed of Your Website',
       desc: "When we talk about a website's performance,",
-      img: '/images/SpeedWebsite.webp',
+      img: '/blog_images/enhance-speed.webp',
+      redirect_url: '/blog/speed-up-page',
     },
     {
       id: 2,
-      title: 'A Complete Guide on Headless Shopify',
+      title: 'Cost of Developing a Progressive Web App (PWA) in 2023',
       desc: 'Are you wondering what headless shopify actually is?Well, you',
-      img: '/images/SpeedWebsite.webp',
+      img: '/blog_images/cost_pwa.webp',
+      redirect_url: '/blog/progressive-web-app',
     },
     {
       id: 3,
-      title: 'All About React Native',
+      title: 'Ruby Frameworks For Web Development In 2023',
       desc: 'React Native has been adopted by numerous businesses globally,',
+      img: '/blog_images/ruby-framework.webp',
+      redirect_url: '/blog/ruby-framework',
     },
     {
       id: 4,
       title: 'A Complete Guide on Headless Shopify',
       desc: 'Are you wondering what headless shopify actually is?Well, you',
-      img: '/images/SpeedWebsite.webp',
+      img: '/blog_images/shopify_guide.webp',
+      redirect_url: '/blog/shopify-blog',
     },
     {
       id: 5,
-      title: 'All About React Native',
+      title: 'A Complete Guide on Node.js',
       desc: 'React Native has been adopted by numerous businesses globally,',
-      img: '/images/SpeedWebsite.webp',
+      img: '/blog_images/node-guide.webp',
+      redirect_url: '/blog/complete-guide-node',
     },
     {
       id: 6,
       title: 'All About React Native',
       desc: 'React Native has been adopted by numerous businesses globally,',
-      img: '/images/SpeedWebsite.webp',
+      img: '/blog_images/react-desc.webp',
+      redirect_url: '/blog/react-native-blog',
     },
   ]
   return (
     <div className="container blog-list-container">
       <div className="row d-flex justify-content-center">
-        <h2 className="text-center m-4">OUR LATEST BLOG</h2>
+        <h1 className="text-center m-4">OUR LATEST BLOG</h1>
         {blogArray.map((e) => (
           <div
             className="card m-2 shadow p-3 bg-body-tertiary"
@@ -51,10 +58,11 @@ const BlogList = () => {
             key={e.id}
           >
             <div>
-              <Image
-                src={'/images/SpeedWebsite.webp'}
-                width={350}
-                height={288}
+              <img
+                src={e.img}
+                style={{ width: '100%' }}
+                // width={350}
+                // height={288}
                 alt="a snow-capped mountain range"
               />
             </div>
@@ -63,11 +71,14 @@ const BlogList = () => {
                 <h3 className="card-title pt-2">{e.title}</h3>
                 <p className="card-text pt-2">{e.desc}</p>
               </div>
-              <Link href="#">
-                <span className="fs-6 fw-semibold text-black-50 cursor_pointer ">
-                  + READ MORE
-                </span>
-              </Link>
+              <a
+                className="text-primary fw-bold"
+                href={e.redirect_url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className="fs-6 fw-semibold ">READ MORE</span>
+              </a>
             </div>
           </div>
         ))}

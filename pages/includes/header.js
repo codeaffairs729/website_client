@@ -842,8 +842,8 @@ const Header = () => {
 
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src="/icons/android_2.webp"
-                                        alt="Android PNG Image"
+                                        src="/icons/Unionautomation.svg"
+                                        alt="automatin PNG Image"
                                         layout="fill"
                                       />
                                     </div>
@@ -871,8 +871,8 @@ const Header = () => {
 
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src="/icons/android_2.webp"
-                                        alt="Android PNG Image"
+                                        src="/icons/VectorCICD.svg"
+                                        alt="cicd PNG Image"
                                         layout="fill"
                                       />
                                     </div>
@@ -1245,6 +1245,18 @@ const Header = () => {
                     onClick={handleSidebar}
                   >
                     About Us
+                  </div>
+                </Link>
+                <Link href="/blog-list">
+                  <div
+                    className={
+                      currentPath === '/blog-list'
+                        ? 'cursor_pointer header__item nav-css underline_text'
+                        : 'cursor_pointer header__item nav-css'
+                    }
+                    onClick={handleSidebar}
+                  >
+                    Blogs
                   </div>
                 </Link>
               </nav>

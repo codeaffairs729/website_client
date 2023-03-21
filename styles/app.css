@@ -2457,7 +2457,8 @@ body.no-scroll {
 }
 
 .header__logo {
-  margin-right: 60px;
+  /* margin-right: 60px; */
+  margin-right: 20px;
   font-size: 0;
 }
 .header_pic {
@@ -8258,6 +8259,24 @@ html {
 .client-container-left > h2 {
   margin-bottom: 24px;
 }
+/* Rating Section  */
+.rating {
+  margin-top: 30px;
+  padding: 20px;
+}
+.rating-container {
+  display: flex;
+  gap: 30px;
+}
+.rating-img img {
+  height: 20px;
+}
+.rating-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 @media only screen and (min-width: 768px) {
   .footer__menu {
     display: -webkit-box !important;
@@ -9357,7 +9376,8 @@ html {
     width: 235px;
   }
   .header__item:not(:last-child) {
-    margin-right: 35px;
+    /* margin-right: 35px; */
+    margin-right: 22px
   }
 }
 @media only screen and (max-width: 767px) {
