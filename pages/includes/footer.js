@@ -59,13 +59,8 @@ const Footer = () => {
     setSocialIcons(socialIconsStatus)
   }
 
-  const emailRef = useRef(null)
   const salesEmailRef = useRef(null)
   useEffect(() => {
-    const emailElement = emailRef.current
-    const email = 'hr@codegaragetech.com'
-    emailElement.innerHTML = `<a href="mailto:${email}">${email}</a>`
-
     const salesEmailElement = salesEmailRef.current
     const sales = 'sales@codegaragetech.com'
     salesEmailElement.innerHTML = `<a href="mailto:${sales}">${sales}</a>`
@@ -91,13 +86,13 @@ const Footer = () => {
             >
               <Link href="/">
                 <div className="cursor_pointer footer__category js-footer-category footer-category-cgt-name">
-                  Code Garage
-                  <svg
-                    className="icon icon-arrow-down"
-                    aria-labelledby="arrow-down-icon"
-                  >
-                    <use xlinkHref="/img/sprite.svg#icon-arrow-down"></use>
-                  </svg>
+                  <Image
+                    src="/logo/cgt_new_logo_alt.webp"
+                    alt="Code Garage Tech - Logo"
+                    width={210}
+                    height={39}
+                    priority={true}
+                  />
                 </div>
               </Link>
               <div
@@ -131,17 +126,6 @@ const Footer = () => {
                     width={190}
                     height={24}
                   /> */}
-                  <p>
-                    <span ref={emailRef}></span>
-                  </p>
-                </span>
-
-                <span className="footer__link footer-link-about">
-                  The Atrium Quarkcity,
-                  <br />
-                  industrial area, SAS-Nagar,
-                  <br />
-                  Mohali, Punjab -160059
                 </span>
               </div>
             </div>
@@ -391,6 +375,11 @@ const Footer = () => {
                   </a>
                 </Link>
               </div>
+              <span className="footer__link footer-link-about">
+                The Atrium Quarkcity,
+                <br />
+                industrial area, SAS-Nagar, Mohali, Punjab -160059
+              </span>
             </div>
           </div>
         </div>

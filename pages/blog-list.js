@@ -50,7 +50,7 @@ const BlogList = () => {
   return (
     <div className="container blog-list-container">
       <div className="row d-flex justify-content-center">
-        <h1 className="text-center m-4">OUR LATEST BLOG</h1>
+        <h1 className="text-center p-4">OUR LATEST BLOG</h1>
         {blogArray.map((e) => (
           <div
             className="card m-2 shadow p-3 bg-body-tertiary"
@@ -67,8 +67,8 @@ const BlogList = () => {
               />
             </div>
             <div className="card-body">
-              <div className="card-desc">
-                <h3 className="card-title pt-2">{e.title}</h3>
+              <div className="blog-list-desc">
+                <h3 className=" card-title pt-2">{e.title}</h3>
                 <p className="card-text pt-2">{e.desc}</p>
               </div>
               <a
