@@ -30,7 +30,7 @@ const NodejsBlog = () => {
             Node js- an open-source, cross-platform environment. In reality,
             this technology has gained a lot of popularity in recent years and
             will still be competitive in 2023 for many startups and businesses
-            because of its strengths.
+            because of its strengths
             <br />
             <br />
             In this blog, we will explore a detailed guide on what Node js is,
