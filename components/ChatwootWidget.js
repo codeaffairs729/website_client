@@ -12,16 +12,16 @@ class ChatwootWidget extends React.Component {
 
     // Paste the script from inbox settings except the <script> tag
     ;(function (d, t) {
-      var BASE_URL = 'https://518d29068f7b.ngrok.app'
-      var g = d.createElement(t)
-      var s = d.getElementsByTagName(t)[0]
+      var BASE_URL = 'https://backend.codegaragetech.com'
+      var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0]
       g.src = BASE_URL + '/packs/js/sdk.js'
+      s.parentNode.insertBefore(g, s)
       // g.defer = true
       g.async = true
-      s.parentNode.insertBefore(g, s)
       g.onload = function () {
         window.chatwootSDK.run({
-          websiteToken: 'Nn37tutKDEqixSeYWjHGkhBR',
+          websiteToken: 'pvrMMBqvsmQFw9cv2fYYG1Kt',
           baseUrl: BASE_URL,
         })
       }
