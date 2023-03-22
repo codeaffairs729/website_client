@@ -7,7 +7,7 @@ const RubyFrameworkBlog = () => {
           <h1 className="hire-h1">
             Ruby Frameworks For Web Development In 2023
           </h1>
-          <div className="text-center p-4">
+          <div className="text-center p-4 border border-2 border-muted">
             <Image
               src="/blog_images/ruby-framework.webp"
               width={1060}
@@ -16,6 +16,8 @@ const RubyFrameworkBlog = () => {
             {/* <img src="/blog_images/cost_pwa.webp" style={{width:"1060px"}}/> */}
           </div>
           <p className="hire-p">
+            <br />
+            <br />
             Ruby is one of the most widely used languages as it was designed to
             meet the requirements of programmers. It is an eminent programming
             language that was specially developed for creating web applications.{' '}

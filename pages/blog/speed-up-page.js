@@ -7,10 +7,16 @@ const SpeedUp = () => {
           <h1 className="hire-h1">
             A Complete Guide on How to Enhance the Speed of Your Website
           </h1>
-          <div className="text-center p-4">
-            <Image src="/images/SpeedWebsite.webp" width={1060} height={530} />
+          <div className="text-center p-4 border border-2 border-muted">
+            <Image
+              src="/blog_images/enhance-speed.webp"
+              width={1060}
+              height={530}
+            />
           </div>
           <p className="hire-p">
+            <br />
+            <br />
             When we talk about a website's performance, page speed is one thing
             that comes to our minds. <br />
             <br />

@@ -8161,7 +8161,7 @@ html {
   font-family: 'Mukta', Sans-serif;
   font-size: 16px;
   font-weight: 600;
-  background-color: #21cdc0;
+  background-color: #5764ec;
   border-style: solid;
   border-color: #21cdc0;
   margin: 0px 0px 10px 0px;
@@ -8170,7 +8170,7 @@ html {
 }
 
 .blog-btn:hover {
-  background-color: #5764ec;
+  background-color: #6a75e8f8;
 }
 
 .card-body {
@@ -8276,6 +8276,11 @@ html {
   flex-wrap: wrap;
   gap: 30px;
 }
+.rating-border-left{
+  border-right: 2px solid rgba(106, 103, 103, 0.3);
+  padding-right: 10px;
+}
+
 
 @media only screen and (min-width: 768px) {
   .footer__menu {
@@ -11308,6 +11313,10 @@ top: 7641px; */
 @media screen and (max-width: 479px) {
   .freelancer-main__btn {
     font: size 12px;
+  }
+  .rating-border-left{
+    border-right: none;
+    padding-right: 0px;
   }
 }
 

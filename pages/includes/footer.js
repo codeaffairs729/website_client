@@ -103,6 +103,8 @@ const Footer = () => {
                 <span className="footer__link footer-link-about">
                   Want to take your business online? Count on us, we offer the
                   best software solutions to your business.
+                  <br />
+                  <br />
                 </span>
                 <span className="footer__link footer-link-contact d-flex">
                   <span className="mr-2">

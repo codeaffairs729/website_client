@@ -3,25 +3,29 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useContext } from 'react'
 const BlogList = () => {
+  const handleOnClick = () => {
+    console.log('------window------', window)
+    console.log('------------', window.$chatwoot)
+  }
   const blogArray = [
     {
       id: 1,
       title: 'A Complete Guide on How to Enhance the Speed of Your Website',
-      desc: "When we talk about a website's performance,",
+      desc: "When we talk about a website's performance, page speed is",
       img: '/blog_images/enhance-speed.webp',
       redirect_url: '/blog/speed-up-page',
     },
     {
       id: 2,
       title: 'Cost of Developing a Progressive Web App (PWA) in 2023',
-      desc: 'Are you wondering what headless shopify actually is?Well, you',
+      desc: 'Well, Progressive Web Apps (PWAs) are in trend now and it has attracted',
       img: '/blog_images/cost_pwa.webp',
       redirect_url: '/blog/progressive-web-app',
     },
     {
       id: 3,
       title: 'Ruby Frameworks For Web Development In 2023',
-      desc: 'React Native has been adopted by numerous businesses globally,',
+      desc: 'Ruby is one of the most widely used languages as it was designed to',
       img: '/blog_images/ruby-framework.webp',
       redirect_url: '/blog/ruby-framework',
     },
@@ -35,7 +39,7 @@ const BlogList = () => {
     {
       id: 5,
       title: 'A Complete Guide on Node.js',
-      desc: 'React Native has been adopted by numerous businesses globally,',
+      desc: 'Do you know that choosing the right tools, platforms, and languages',
       img: '/blog_images/node-guide.webp',
       redirect_url: '/blog/complete-guide-node',
     },
@@ -71,6 +75,7 @@ const BlogList = () => {
                 <h3 className=" card-title pt-2">{e.title}</h3>
                 <p className="card-text pt-2">{e.desc}</p>
               </div>
+              <br />
               <a
                 className="text-primary fw-bold"
                 href={e.redirect_url}

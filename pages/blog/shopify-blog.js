@@ -5,7 +5,7 @@ const ShopifyBlog = () => {
       <div className="hire-container  blog-page-container ">
         <div className="blog-shades">
           <h1 className="hire-h1">A Complete Guide on Headless Shopify</h1>
-          <div className="text-center p-4">
+          <div className="text-center p-4 border border-2 border-muted">
             <Image
               src="/blog_images/shopify_guide.webp"
               width={1060}
@@ -14,6 +14,7 @@ const ShopifyBlog = () => {
             {/* <img src="/blog_images/cost_pwa.webp" style={{width:"1060px"}}/> */}
           </div>
           <p className="hire-p">
+            <br /> <br />
             Are you wondering what headless shopify actually is?
             <br />
             Well, you first need to understand Shopify.
@@ -78,13 +79,15 @@ const ShopifyBlog = () => {
           <h2 className="hire-h2">
             Here are some benefits of using Headless Shopify:
           </h2>
-          <div className="text-center p-4">
+          <div className="text-center p-4 border border-2 border-muted">
             <Image
               src="/blog_images/benefits_shopify.webp"
               width={1060}
               height={530}
             />
           </div>
+          <br />
+          <br />
           <ul className="hire-list">
             <li>
               {' '}

@@ -2,9 +2,9 @@ const Rating = () => {
   return (
     <div className="rating">
       <div className="rating-container d-flex flex-column justify-content-between">
-        <div className="rating-text">Top Rate Vendor On</div>
+        <div className="rating-text">Top Rate On</div>
         <div className="rating-row">
-          <div className="d-flex flex-column justify-content-between">
+          <div className="d-flex flex-column justify-content-between rating-border-left">
             <div>
               <img src="/img/rating/clutch-sigle.svg" />
             </div>

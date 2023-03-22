@@ -86,10 +86,10 @@ const BlogSection = () => {
                   Ruby Frameworks For Website Development In 2023
                 </h3>
                 <p className="card-text pt-2">
-                  Are you wondering what headless shopify actually is?
+                  Ruby is one of the most widely used languages as
                 </p>
               </div>
-              <Link href="/blog/shopify-blog" className="">
+              <Link href="/blog/ruby-framework" className="">
                 <button type="button" className="blog-btn">
                   READ MORE
                 </button>

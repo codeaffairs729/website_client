@@ -28,27 +28,6 @@ const FeatureList = () => {
                 <div className="row align-items-center py-3">
                   <div className="col-3 col-sm-2 align-items-center justify-content-center">
                     <Image
-                      src="/icons/Rect-1-circle.svg"
-                      alt=""
-                      width={56}
-                      height={56}
-                    />
-                  </div>
-                  <div className="col-9 col-sm-10 align-items-center">
-                    <h3>IDEATION AND DESIGN</h3>
-                    <p>
-                      Craft a distinct and precise visual identity for your
-                      brand and product through personalized designs.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="row feature-slide-row">
-              <div className="col-lg-12">
-                <div className="row align-items-center py-3">
-                  <div className="col-3 col-sm-2 align-items-center justify-content-center">
-                    <Image
                       src="/icons/Rect-4-circle.svg"
                       alt=""
                       width={56}
@@ -66,6 +45,28 @@ const FeatureList = () => {
                 </div>
               </div>
             </div>
+            <div className="row feature-slide-row">
+              <div className="col-lg-12">
+                <div className="row align-items-center py-3">
+                  <div className="col-3 col-sm-2 align-items-center justify-content-center">
+                    <Image
+                      src="/icons/Rect-1-circle.svg"
+                      alt=""
+                      width={56}
+                      height={56}
+                    />
+                  </div>
+                  <div className="col-9 col-sm-10 align-items-center">
+                    <h3>IDEATION AND DESIGN</h3>
+                    <p>
+                      Craft a distinct and precise visual identity for your
+                      brand and product through personalized designs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="row feature-slide-row">
               <div className="col-lg-12">
                 <div className="row align-items-center py-3">
