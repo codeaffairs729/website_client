@@ -6,13 +6,16 @@ const NodejsBlog = () => {
         <div className="blog-shades">
           <h1 className="hire-h1">A Complete Guide on Node.js</h1>
           <div className="text-center p-4">
-            <Image
+            {/* <Image
               src="/blog_images/node-guide.webp"
               alt="node-guide-image"
               width={1060}
               height={530}
+            /> */}
+            <img
+              src="/blog_images/node-guide.webp"
+              style={{ width: '1060px' }}
             />
-            {/* <img src="/blog_images/cost_pwa.webp" style={{width:"1060px"}}/> */}
           </div>
           <p className="hire-p">
             Do you know that choosing the right tools, platforms, and languages
@@ -117,13 +120,16 @@ const NodejsBlog = () => {
           </p>
           <h2 className="hire-h2">Advantages of Using Node.js</h2>
           <div className="text-center p-4">
-            <Image
+            {/* <Image
               src="/blog_images/node-advantage.webp"
               alt="node-advantage-image"
               width={1060}
               height={530}
+            /> */}
+            <img
+              src="/blog_images/node-advantage.webp"
+              style={{ width: '1060px' }}
             />
-            {/* <img src="/blog_images/cost_pwa.webp" style={{width:"1060px"}}/> */}
           </div>
           <h3 className="hire-h3">Easily Scalable </h3>
           <p className="hire-p">
