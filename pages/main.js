@@ -13,12 +13,12 @@ const Main = () => {
     <>
       <div className="main">
         <Head>
-          <title>Custom Web Software & Application Development Services</title>
+          <title>Code Garage Tech - Custom Web & App Development Company</title>
           <link rel="canonical" href="https://codegaragetech.com/" />
 
           <meta
             name="description"
-            content="Looking for reliable Custom Web Development Services in India? Code Garage Tech is here! We offer scalable, robust, and quality services. Contact us now!
+            content="Looking for reliable custom web software & application development services in India & USA ? Code Garage Tech is here! We offer scalable, robust, and quality services.
 "
           />
           <meta
