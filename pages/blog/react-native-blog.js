@@ -5,10 +5,17 @@ const ReactNativeBlog = () => {
       <div className="hire-container  blog-page-container ">
         <div className="blog-shades">
           <h1 className="hire-h1">All About React Native</h1>
-          <div className="text-center p-4">
-            <Image src="/images/react-desc.webp" width={1060} height={530} />
+          <div className="text-center p-4 border border-2 border-muted">
+            {/* <Image src="/images/react-desc.webp" width={1060} height={530} /> */}
+            <img
+              src="/images/react-desc.webp"
+              alt="react-desc"
+              style={{ width: '1060px' }}
+            />
           </div>
           <p className="hire-p">
+            <br />
+            <br />
             React Native has been adopted by numerous businesses globally,
             including Microsoft, Uber, and Meta, and is used across a wide range
             of industries. Nevertheless, before you decide to go with React
@@ -67,10 +74,15 @@ const ReactNativeBlog = () => {
           </ul>
           <h2 className="hire-h2">React Vs React Native</h2>
           <div className="text-center p-4">
-            <Image
+            {/* <Image
               src="/images/react-vs-react-native.webp"
               width={1060}
               height={530}
+            /> */}
+            <img
+              src="/images/react-vs-react-native.webp"
+              alt="react-vs-react-native-image"
+              style={{ width: '1060px' }}
             />
           </div>
           <p className="hire-p">
@@ -159,10 +171,15 @@ const ReactNativeBlog = () => {
 
           <h2 className="hire-h2">Benefits of React Native</h2>
           <div className="text-center p-4">
-            <Image
+            {/* <Image
               src="/images/react-benefits.webp"
               width={1060}
               height={530}
+            /> */}
+            <img
+              src="/images/react-benefits.webp"
+              alt="react-benefits-image"
+              style={{ width: '1060px' }}
             />
           </div>
           <ul className="hire-list">

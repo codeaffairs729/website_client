@@ -8,12 +8,16 @@ const RubyFrameworkBlog = () => {
             Ruby Frameworks For Web Development In 2023
           </h1>
           <div className="text-center p-4 border border-2 border-muted">
-            <Image
+            {/* <Image
               src="/images/ruby-framework.webp"
               width={1060}
               height={530}
+            /> */}
+            <img
+              src="/images/ruby-framework.webp"
+              alt="ruby-framework-img"
+              style={{ width: '1060px' }}
             />
-            {/* <img src="/images/cost_pwa.webp" style={{width:"1060px"}}/> */}
           </div>
           <p className="hire-p">
             <br />

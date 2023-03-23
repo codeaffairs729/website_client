@@ -6,8 +6,12 @@ const ShopifyBlog = () => {
         <div className="blog-shades">
           <h1 className="hire-h1">A Complete Guide on Headless Shopify</h1>
           <div className="text-center p-4 border border-2 border-muted">
-            <Image src="/images/shopify_guide.webp" width={1060} height={530} />
-            {/* <img src="/images/cost_pwa.webp" style={{width:"1060px"}}/> */}
+            {/* <Image src="/images/shopify_guide.webp" width={1060} height={530} /> */}
+            <img
+              src="/images/shopify_guide.webp"
+              alt="shopify_guide-img"
+              style={{ width: '1060px' }}
+            />
           </div>
           <p className="hire-p">
             <br /> <br />
@@ -86,10 +90,15 @@ const ShopifyBlog = () => {
             Here are some benefits of using Headless Shopify:
           </h2>
           <div className="text-center p-4 border border-2 border-muted">
-            <Image
+            {/* <Image
               src="/images/benefits_shopify.webp"
               width={1060}
               height={530}
+            /> */}
+            <img
+              src="/images/benefits_shopify.webp"
+              alt="benefits_shopify-img"
+              style={{ width: '1060px' }}
             />
           </div>
           <br />

@@ -8,7 +8,12 @@ const SpeedUp = () => {
             A Complete Guide on How to Enhance the Speed of Your Website
           </h1>
           <div className="text-center p-4 border border-2 border-muted">
-            <Image src="/images/enhance-speed.webp" width={1060} height={530} />
+            {/* <Image src="/images/enhance-speed.webp" width={1060} height={530} /> */}
+            <img
+              src="/images/enhance-speed.webp"
+              alt="enhance-speed-img"
+              style={{ width: '1060px' }}
+            />
           </div>
           <p className="hire-p">
             <br />
@@ -107,7 +112,12 @@ const SpeedUp = () => {
           </p>
           <h2 className="hire-h2">And, The Most Effective One: </h2>
           <div className="text-center p-4">
-            <Image src="/images/lazy-loading.webp" width={1060} height={530} />
+            {/* <Image src="/images/lazy-loading.webp" width={1060} height={530} /> */}
+            <img
+              src="/images/lazy-loading.webp"
+              alt="azy-loading-img"
+              style={{ width: '1060px' }}
+            />
           </div>
           <h3 className="hire-h3">Lazy Loading Technique</h3>
           <p className="hire-p">

@@ -12,7 +12,11 @@ const NodejsBlog = () => {
               width={1060}
               height={530}
             /> */}
-            <img src="/images/node-guide.webp" style={{ width: '1060px' }} />
+            <img
+              src="/images/node-guide.webp"
+              alt="node-guide-image"
+              style={{ width: '1060px' }}
+            />
           </div>
           <p className="hire-p">
             Do you know that choosing the right tools, platforms, and languages
@@ -125,6 +129,7 @@ const NodejsBlog = () => {
             /> */}
             <img
               src="/images/node-advantage.webp"
+              alt="node-advantage-image"
               style={{ width: '1060px' }}
             />
           </div>
