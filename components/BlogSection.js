@@ -13,14 +13,14 @@ const BlogSection = () => {
           <div className="card m-2 shadow p-3 bg-body-tertiary" style={styles}>
             <div className="card-img text-center">
               <Image
-                src="/blog_images/enhance-speed.webp"
+                src="/images/enhance-speed.webp"
                 width={554}
                 height={383}
                 objectFit="contain"
                 objectPosition="50% 50%"
                 alt="a snow-capped mountain range"
               />
-              {/* <img src="/blog_images/SpeedWebsite.webp" style={{width:"334px"}}/> */}
+              {/* <img src="/images/SpeedWebsite.webp" style={{width:"334px"}}/> */}
             </div>
             <div className="card-body">
               <div className="card-desc">
@@ -43,7 +43,7 @@ const BlogSection = () => {
           <div className="card m-2 shadow p-3 bg-body-tertiary" style={styles}>
             <div className="card-img text-center">
               <Image
-                src="/blog_images/cost_pwa.webp"
+                src="/images/cost_pwa.webp"
                 width={554}
                 height={383}
                 alt="a snow-capped mountain range"
@@ -72,7 +72,7 @@ const BlogSection = () => {
           <div className="card m-2 shadow p-3 bg-body-tertiary" style={styles}>
             <div className="card-img text-center">
               <Image
-                src="/blog_images/ruby-framework.webp"
+                src="/images/ruby-framework.webp"
                 width={554}
                 height={383}
                 alt="a snow-capped mountain range"

@@ -8,8 +8,8 @@ const ProgressiveWebApp = () => {
             Cost of Building a Progressive Web App (PWA) in 2023?
           </h1>
           <div className="text-center p-4 border border-dark-subtle">
-            <Image src="/blog_images/cost_pwa.webp" width={1060} height={530} />
-            {/* <img src="/blog_images/cost_pwa.webp" style={{width:"1060px"}}/> */}
+            <Image src="/images/cost_pwa.webp" width={1060} height={530} />
+            {/* <img src="/images/cost_pwa.webp" style={{width:"1060px"}}/> */}
           </div>
           <p className="hire-p pt-4">
             Well, Progressive Web Apps (PWAs) are in trend now and it has
@@ -62,11 +62,7 @@ const ProgressiveWebApp = () => {
             Business?
           </h2>
           <div className="text-center p-4">
-            <Image
-              src="/blog_images/forecast-pwa.webp"
-              width={1060}
-              height={530}
-            />
+            <Image src="/images/forecast-pwa.webp" width={1060} height={530} />
           </div>
           <p className="hire-p">
             According to{' '}
@@ -143,7 +139,7 @@ const ProgressiveWebApp = () => {
           </h2>
           <div className="text-center p-4">
             <Image
-              src="/blog_images/5_aspects_cost_pwa.webp"
+              src="/images/5_aspects_cost_pwa.webp"
               width={1060}
               height={530}
             />

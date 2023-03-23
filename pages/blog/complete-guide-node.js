@@ -7,15 +7,12 @@ const NodejsBlog = () => {
           <h1 className="hire-h1">A Complete Guide on Node.js</h1>
           <div className="text-center p-4">
             {/* <Image
-              src="/blog_images/node-guide.webp"
+              src="/images/node-guide.webp"
               alt="node-guide-image"
               width={1060}
               height={530}
             /> */}
-            <img
-              src="/blog_images/node-guide.webp"
-              style={{ width: '1060px' }}
-            />
+            <img src="/images/node-guide.webp" style={{ width: '1060px' }} />
           </div>
           <p className="hire-p">
             Do you know that choosing the right tools, platforms, and languages
@@ -121,13 +118,13 @@ const NodejsBlog = () => {
           <h2 className="hire-h2">Advantages of Using Node.js</h2>
           <div className="text-center p-4">
             {/* <Image
-              src="/blog_images/node-advantage.webp"
+              src="/images/node-advantage.webp"
               alt="node-advantage-image"
               width={1060}
               height={530}
             /> */}
             <img
-              src="/blog_images/node-advantage.webp"
+              src="/images/node-advantage.webp"
               style={{ width: '1060px' }}
             />
           </div>

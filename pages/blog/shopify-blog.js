@@ -6,26 +6,26 @@ const ShopifyBlog = () => {
         <div className="blog-shades">
           <h1 className="hire-h1">A Complete Guide on Headless Shopify</h1>
           <div className="text-center p-4 border border-2 border-muted">
-            <Image
-              src="/blog_images/shopify_guide.webp"
-              width={1060}
-              height={530}
-            />
-            {/* <img src="/blog_images/cost_pwa.webp" style={{width:"1060px"}}/> */}
+            <Image src="/images/shopify_guide.webp" width={1060} height={530} />
+            {/* <img src="/images/cost_pwa.webp" style={{width:"1060px"}}/> */}
           </div>
           <p className="hire-p">
             <br /> <br />
             Are you wondering what headless shopify actually is?
             <br />
+            <br />
             Well, you first need to understand Shopify.
             <br />
+            <br />
             So, let’s dig in! <br />
+            <br />
             Shopify is a multinational Canadian commerce company that was
             founded in the year 2004. Since then, the popularity of the brand
             has grown significantly. Moreover, Shopify currently offers services
             that provide support to over one million businesses in 172
             countries. Overall, these businesses now make over 200 billion US
             dollars in sales. <br />
+            <br />
             Shopify provides a sole platform that allows users to sell their
             products and services all over the globe, both online through their
             website and in person via its point-of-sale (POS) feature. The
@@ -34,9 +34,11 @@ const ShopifyBlog = () => {
             offers tools for the analysis, execution, and creation of digital
             marketing campaigns.
             <br />
+            <br />
             Shopify also has a decoupled headless framework and in this article,
             we will give you an explanation of headless Shopify, and how to set
             it up:
+            <br />
             <br />
             Let’s explore!
           </p>
@@ -48,11 +50,13 @@ const ShopifyBlog = () => {
             conventional architecture to a format that has a front-end design
             secluded from the back-end functionality.
             <br />
+            <br />
             The headless framework allows your Shopify storefront to be
             published to and from approximately any platform at a considerably
             higher pace. Moreover, it offers a high level of flexibility as
             businesses can utilize any device to handle the checkout procedure
             and also employ any CMS (Content Management System)
+            <br />
             <br />
             The cardinal part of Shopify’s headless framework is Shopify
             Storefront API. It provides businesses functionality and creative
@@ -66,11 +70,13 @@ const ShopifyBlog = () => {
             allows websites to fetch information about services or products from
             the store, add products or services to the cart, checkout, and much
             more. <br />
+            <br />
             Plus, headless commerce works in both online and offline modes. The
             first online feature (PWAs) is progressive web apps, which use
             progressive rendering for websites and pre-caching, leading to swift
             load times as well as multi-device compatibility. Second is the
             custom native mobile applications that are for online experiences.{' '}
+            <br />
             <br />
             On the other hand, offline features include live streaming, voice
             shopping, vending machines, smart mirrors, and video games.
@@ -81,7 +87,7 @@ const ShopifyBlog = () => {
           </h2>
           <div className="text-center p-4 border border-2 border-muted">
             <Image
-              src="/blog_images/benefits_shopify.webp"
+              src="/images/benefits_shopify.webp"
               width={1060}
               height={530}
             />

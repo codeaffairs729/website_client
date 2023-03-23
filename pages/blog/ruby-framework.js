@@ -9,11 +9,11 @@ const RubyFrameworkBlog = () => {
           </h1>
           <div className="text-center p-4 border border-2 border-muted">
             <Image
-              src="/blog_images/ruby-framework.webp"
+              src="/images/ruby-framework.webp"
               width={1060}
               height={530}
             />
-            {/* <img src="/blog_images/cost_pwa.webp" style={{width:"1060px"}}/> */}
+            {/* <img src="/images/cost_pwa.webp" style={{width:"1060px"}}/> */}
           </div>
           <p className="hire-p">
             <br />

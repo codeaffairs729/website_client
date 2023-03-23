@@ -6,11 +6,7 @@ const ReactNativeBlog = () => {
         <div className="blog-shades">
           <h1 className="hire-h1">All About React Native</h1>
           <div className="text-center p-4">
-            <Image
-              src="/blog_images/react-desc.webp"
-              width={1060}
-              height={530}
-            />
+            <Image src="/images/react-desc.webp" width={1060} height={530} />
           </div>
           <p className="hire-p">
             React Native has been adopted by numerous businesses globally,
@@ -72,7 +68,7 @@ const ReactNativeBlog = () => {
           <h2 className="hire-h2">React Vs React Native</h2>
           <div className="text-center p-4">
             <Image
-              src="/blog_images/react-vs-react-native.webp"
+              src="/images/react-vs-react-native.webp"
               width={1060}
               height={530}
             />
@@ -164,7 +160,7 @@ const ReactNativeBlog = () => {
           <h2 className="hire-h2">Benefits of React Native</h2>
           <div className="text-center p-4">
             <Image
-              src="/blog_images/react-benefits.webp"
+              src="/images/react-benefits.webp"
               width={1060}
               height={530}
             />
