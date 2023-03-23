@@ -12,12 +12,13 @@ import '../styles/techComponent.css'
 import '../styles/hireServiceLayout.css'
 import '../styles/assisstanceModel.css'
 import '../styles/blog-style.css'
-// import Header from './includes/header'
-// import Footer from './includes/footer'
 const Header = dynamic(() => import('./includes/header'), {
   ssr: false,
 })
 const Footer = dynamic(() => import('./includes/footer'), {
+  ssr: false,
+})
+const ChatwootWidget = dynamic(() => import('../components/ChatwootWidget'), {
   ssr: false,
 })
 function MyApp({ Component, pageProps }) {
@@ -40,9 +41,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Header />
       <Component {...pageProps} />
-      {/* <button type="button" className="btn btn-primary" onClick={handleOnclick}>
-        Chatwoot
-      </button> */}
+      <ChatwootWidget />
       <Footer />
     </>
   )

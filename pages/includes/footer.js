@@ -378,6 +378,7 @@ const Footer = () => {
                 </Link>
               </div>
               <span className="footer__link footer-link-about">
+                <br />
                 The Atrium Quarkcity,
                 <br />
                 industrial area, SAS-Nagar, Mohali, Punjab -160059

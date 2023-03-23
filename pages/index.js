@@ -2,24 +2,14 @@
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Main from './main'
-// import Package from "./package";
-// import Work from "./work";
-// import Layouts from "./layouts";
-// import Access from "./access";
-// import Partners from "./partners";
-// import Design from "./design";
-// import Teams from "./teams";
-// import Like from "./like";
-// import FeatureList from '../components/FeatureList'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 const BlogSection = dynamic(() => import('../components/BlogSection'), {
   ssr: false,
 })
 const FeatureList = dynamic(() => import('../components/FeatureList'), {
   ssr: false,
 })
-// const Work = dynamic(() => import('./work'), {
-//   ssr: false,
-// })
 const Package = dynamic(() => import('./package'), {
   ssr: false,
 })
@@ -38,13 +28,27 @@ const Design = dynamic(() => import('./design'), {
 const Teams = dynamic(() => import('./teams'), {
   ssr: false,
 })
-const Like = dynamic(() => import('./like'), {
-  ssr: false,
-})
-const ChatwootWidget = dynamic(() => import('../components/ChatwootWidget'), {
-  ssr: false,
-})
+
 export default function Home() {
+  // const Router = useRouter()
+  // const { name, email } = Router.query
+  // // console.log('name:', name, 'email:', email)
+  // // const isEmpty = Object.keys(ChatwootWidget).length
+
+  // function handleComponentRender() {
+  //   // console.log('Dynamic component rendered!')
+  // }
+  // // useEffect(() => {
+  // //   console.log("chatwoot length" ,Object.keys(ChatwootWidget).length);
+
+  // //   if (isEmpty) {
+  // //     console.log('chatwoot script executed successfully')
+  // //     window.$chatwoot.setConversation('xyz','xyzz@xyz.com')
+  // //   }
+
+  // // }, [])
+  // const d = new Date()
+  // let ms = useEffect(() => {}, [])
   return (
     <>
       <div className="page">
@@ -64,15 +68,12 @@ export default function Home() {
         <Main />
         <FeatureList />
         <Package />
-        {/* <Work /> */}
         <Layouts />
         <Access />
         <Partners />
         <Design />
         <Teams />
-        {/* <Like /> */}
         <BlogSection />
-        <ChatwootWidget />
       </div>
     </>
   )
