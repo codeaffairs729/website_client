@@ -52,43 +52,47 @@ const BlogList = () => {
     },
   ]
   return (
-    <div className="container blog-list-container">
-      <div className="row d-flex justify-content-center">
-        <h1 className="text-center p-4">OUR LATEST BLOG</h1>
-        {blogArray.map((e) => (
-          <div
-            className="card m-2 shadow p-3 bg-body-tertiary"
-            style={{ width: '350px' }}
-            key={e.id}
-          >
-            <div>
-              <img
-                src={e.img}
-                style={{ width: '100%' }}
-                // width={350}
-                // height={288}
-                alt="a snow-capped mountain range"
-              />
-            </div>
-            <div className="card-body">
-              <div className="blog-list-desc">
-                <h3 className=" card-title pt-2">{e.title}</h3>
-                <p className="card-text pt-2">{e.desc}</p>
-              </div>
-              <br />
-              <a
-                className="text-primary fw-bold"
-                href={e.redirect_url}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span className="fs-6 fw-semibold ">READ MORE</span>
-              </a>
-            </div>
-          </div>
-        ))}
+    <>
+      <div className="breadcumb-area">
+        <h1 className="text-center text-light">OUR LATEST BLOG</h1>
       </div>
-    </div>
+      <div className="container blog-list-container">
+        <div className="row d-flex justify-content-center">
+          {blogArray.map((e) => (
+            <div
+              className="card m-2 shadow p-3 bg-body-tertiary"
+              style={{ width: '350px' }}
+              key={e.id}
+            >
+              <div>
+                <img
+                  src={e.img}
+                  style={{ width: '100%' }}
+                  // width={350}
+                  // height={288}
+                  alt="a snow-capped mountain range"
+                />
+              </div>
+              <div className="card-body">
+                <div className="blog-list-desc">
+                  <h3 className=" card-title pt-2">{e.title}</h3>
+                  <p className="card-text pt-2">{e.desc}</p>
+                </div>
+                <br />
+                <a
+                  className="text-primary fw-bold"
+                  href={e.redirect_url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="fs-6 fw-semibold ">READ MORE</span>
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
   )
 }
 
