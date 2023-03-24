@@ -17,7 +17,7 @@ const Rating = () => {
               <img src="/img/rating/goodfirms.svg" />
             </div>
             <div className="rating-img">
-              <img src="/img/rating/five-star.svg" />
+              <img src="/img/rating/five-star.full.svg" />
             </div>
           </div>
         </div>
