@@ -1247,7 +1247,7 @@ const Header = () => {
                     About Us
                   </div>
                 </Link>
-                <Link href="/blog-list">
+                <Link href="/user-blog-list">
                   <div
                     className={
                       currentPath === '/blog-list'

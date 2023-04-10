@@ -30,23 +30,28 @@ const Teams = dynamic(() => import('./teams'), {
 })
 
 export default function Home() {
-  // const Router = useRouter()
-  // const { name, email } = Router.query
-  // // console.log('name:', name, 'email:', email)
+  // const Router = useRouter();
+  // const { email } = Router.query;
+  // // console.log('email:', email)
+  // const isEmpty = Object.keys(Router.query).length;
+  // // console.log('team:', isEmpty)
   // // const isEmpty = Object.keys(ChatwootWidget).length
 
-  // function handleComponentRender() {
-  //   // console.log('Dynamic component rendered!')
+  // // function handleComponentRender() {
+  // //   // console.log('Dynamic component rendered!')
   // }
-  // // useEffect(() => {
-  // //   console.log("chatwoot length" ,Object.keys(ChatwootWidget).length);
+  // useEffect(() => {
 
-  // //   if (isEmpty) {
-  // //     console.log('chatwoot script executed successfully')
-  // //     window.$chatwoot.setConversation('xyz','xyzz@xyz.com')
-  // //   }
-
-  // // }, [])
+  //   if (isEmpty) {
+  //     // console.log(
+  //     //   'window : ',
+  //     //   window.$chatwoot.setConversation('xyz', 'xyzz@xyz.com')
+  //     // )
+  //     // console.log('chatwoot dialog open\n')
+  //     // console.log('\nEmail :', email)
+  //     // window.$chatwoot.setConversation('xyz', email)
+  //   }
+  // }, [])
   // const d = new Date()
   // let ms = useEffect(() => {}, [])
   return (

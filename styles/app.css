@@ -2901,6 +2901,9 @@ body:not(.touch-device) .header__item:hover .header__body {
   min-width: 180px;
 }
 
+.contact-btn{
+
+}
 .header__bg {
   position: fixed;
   top: 0;
@@ -7544,6 +7547,22 @@ body:not(.touch-device) .header__item:hover .header__body {
   margin-bottom: 16px;
   font-size: 48px;
 }
+.sign_title{
+    color:#5956e9;
+}
+.sign-btn{
+    min-width: 100%;
+    background: #5956e9;
+    color: #fff;
+    height: 72px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    transition: all 0.25s;
+}
+
 
 .entry__details .entry__info {
   max-width: 280px;
@@ -8161,9 +8180,10 @@ html {
   font-family: 'Mukta', Sans-serif;
   font-size: 16px;
   font-weight: 600;
-  background-color: #5764ec;
+  background-color: #2522BA;
   border-style: solid;
   border-color: #21cdc0;
+  border-radius: 12px;
   margin: 0px 0px 10px 0px;
   margin-top: 16px;
   transition: 0.35s ease-in-out;

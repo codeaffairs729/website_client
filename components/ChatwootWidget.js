@@ -13,12 +13,12 @@ class ChatwootWidget extends React.Component {
     // Paste the script from inbox settings except the <script> tag
     ;(function (d, t) {
       var BASE_URL = 'https://backend.codegaragetech.com'
-      var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0]
+      var g = d.createElement(t)
+      var s = d.getElementsByTagName(t)[0]
       g.src = BASE_URL + '/packs/js/sdk.js'
-      s.parentNode.insertBefore(g, s)
       // g.defer = true
       g.async = true
+      s.parentNode.insertBefore(g, s)
       g.onload = function () {
         window.chatwootSDK.run({
           websiteToken: 'pvrMMBqvsmQFw9cv2fYYG1Kt',
@@ -26,6 +26,12 @@ class ChatwootWidget extends React.Component {
         })
       }
     })(document, 'script')
+
+    const { onRender } = this.props
+    if (onRender) {
+      onRender()
+      // window.$chatwoot.setConversation('xyz','xyzz@xyz.com')
+    }
   }
 
   render() {

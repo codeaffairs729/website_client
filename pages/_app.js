@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
 import AOS from 'aos'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -26,6 +26,9 @@ function MyApp({ Component, pageProps }) {
     AOS.init()
     AOS.refresh()
   }, [])
+
+  // const [auth, setAuth] = useState(false)
+
   return (
     // <GoogleReCaptchaProvider
     //   reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
