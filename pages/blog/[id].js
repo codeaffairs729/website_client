@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import { useState } from 'react'
-import { useRouter } from 'next/router'
 
 export default function BlogDetails({ blogData }) {
   const [data, setData] = useState(blogData)
@@ -52,21 +51,12 @@ export default function BlogDetails({ blogData }) {
   )
 }
 
-export const getStaticPaths = async () => {
-  const blogData = await (
-    await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blogs`)
-  ).json()
-  const blogIds = blogData.map((blog) => blog.id)
-  return {
-    paths: blogIds.map((blogId) => ({ params: { id: `${blogId}` } })),
-    fallback: false,
-  }
-}
-export async function getStaticProps(context) {
-  const id = context.params.id
+export async function getServerSideProps({ params }) {
+  const { id } = params
   const blogData = await (
     await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blogs/${id}`)
   ).json()
+
   return {
     props: {
       blogData,

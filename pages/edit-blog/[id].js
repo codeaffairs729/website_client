@@ -14,21 +14,22 @@ export default function UpdateBlog({ blogData }) {
   )
 }
 
-export const getStaticPaths = async () => {
-  const blogData = await (
-    await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blogs`)
-  ).json()
-  const blogIds = blogData.map((blog) => blog.id)
-  return {
-    paths: blogIds.map((blogId) => ({ params: { id: `${blogId}` } })),
-    fallback: false,
-  }
-}
-export async function getStaticProps(context) {
-  const id = context.params.id
+// export const getStaticPaths = async () => {
+//   const blogData = await (
+//     await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blogs`)
+//   ).json()
+//   const blogIds = blogData.map((blog) => blog.id)
+//   return {
+//     paths: blogIds.map((blogId) => ({ params: { id: `${blogId}` } })),
+//     fallback: false,
+//   }
+// }
+export async function getServerSideProps({ params }) {
+  const { id } = params
   const blogData = await (
     await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blogs/${id}`)
   ).json()
+
   return {
     props: {
       blogData,

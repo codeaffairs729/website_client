@@ -23,7 +23,6 @@ const BlogList = ({ authorized, blogData, notify, notifyError }) => {
 
   const handleOnDelete = async () => {
     const newData = data.filter((e) => e.id != delId)
-    console.log(process.env.NEXT_PUBLIC_BASE_URL, delId, token)
     try {
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_BASE_URL}/blogs/${delId}`,

@@ -31,7 +31,7 @@ export default function AdminBlogList({ blogData }) {
     </>
   )
 }
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blogs`)
   const data = await response.json()
 
