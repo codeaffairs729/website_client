@@ -18,7 +18,7 @@ const Main = () => {
 
           <meta
             name="description"
-            content="Looking for reliable custom web software & application development services in India & USA ? Code Garage Tech is here! We offer scalable, robust, and quality services.
+            content="Looking for reliable custom web software & app development services in India & USA? Code Garage Tech is here! We offer scalable, robust, and quality services.
 "
           />
           <meta
