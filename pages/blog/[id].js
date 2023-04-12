@@ -14,7 +14,7 @@ export default function BlogDetails({ blogData }) {
       <Head>
         <title>{blogData[0].title}</title>
       </Head>
-      {true && (
+      {name && (
         <Link href={name ? '/blog/admin-blog-list' : '/user-blog-list'}>
           <div className="blog-back-btn cursor_pointer d-flex ">
             <div className="align-self-center">
@@ -34,7 +34,7 @@ export default function BlogDetails({ blogData }) {
         <div className="hire-container  blog-page-container " key={i}>
           <div className="blog-shades">
             <h1 className="hire-h1">{data[i].title}</h1>
-            <div className="text-center p-4">
+            <div className="p-4">
               <img
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${e.image}`}
                 alt="node-guide-image"

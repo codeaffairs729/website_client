@@ -1,11 +1,11 @@
 import { useRouter } from 'next/router'
-import { useLayoutEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const ProtectedRoute = ({ children }) => {
   const router = useRouter()
   const [token, setToken] = useState(null)
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const localStorageToken = localStorage.getItem('token')
     if (localStorageToken) {
       setToken(localStorageToken)

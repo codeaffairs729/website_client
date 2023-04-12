@@ -2,8 +2,6 @@
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Main from './main'
-import { useRouter } from 'next/router'
-import { useEffect } from 'react'
 const BlogSection = dynamic(() => import('../components/BlogSection'), {
   ssr: false,
 })
@@ -29,7 +27,10 @@ const Teams = dynamic(() => import('./teams'), {
   ssr: false,
 })
 
-export default function Home() {
+export default function Home({ data }) {
+  // <----------------Don't delete ---------->
+  // ---code for open chatwoot based on url---
+
   // const Router = useRouter();
   // const { email } = Router.query;
   // // console.log('email:', email)
@@ -78,8 +79,21 @@ export default function Home() {
         <Partners />
         <Design />
         <Teams />
-        <BlogSection />
+        <BlogSection data={data} />
       </div>
     </>
   )
+}
+
+export async function getStaticProps() {
+  const data = await (
+    await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blogs`)
+  ).json()
+
+  return {
+    props: {
+      data,
+    },
+    revalidate: 10,
+  }
 }
