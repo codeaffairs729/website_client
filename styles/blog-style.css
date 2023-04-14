@@ -76,14 +76,14 @@
 .edit-blog h1 {
   margin-bottom: 70px;
 }
-.ql-editor {
+/* .ql-editor {
   min-height: 500px;
-}
+} */
 .rich-text-containar {
   /* padding: 30px; */
 }
 .editor-btn {
-  margin-top: 30px;
+  margin-top: 75px;
   /* margin-left: 1042px; */
   width: 110px;
   height: 46px;

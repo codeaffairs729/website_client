@@ -14,7 +14,7 @@ const SignIn = () => {
   if (typeof window !== 'undefined' && window.localStorage) {
     var token = localStorage.getItem('token')
     if (token) {
-      navigate.push('/blog/admin-blog-list')
+      navigate.push('/blogs')
     }
   }
   const notify = (status) => {
@@ -48,7 +48,7 @@ const SignIn = () => {
         window.localStorage.setItem('name', jsonData?.user?.name)
         window.localStorage.setItem('token', jsonData?.token)
         window.localStorage.setItem('id', jsonData?.user.id)
-        navigate.push('/blog/admin-blog-list')
+        navigate.push('/blogs')
       } else {
         notifyError(jsonData.message)
         navigate.push('/signIn')

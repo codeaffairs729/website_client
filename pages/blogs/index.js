@@ -26,6 +26,7 @@ export default function AdminBlogList({ blogData }) {
           blogData={blogData}
           notify={notify}
           notifyError={notifyError}
+          db={'blogs'}
         />
       </ProtectedRoute>
     </>

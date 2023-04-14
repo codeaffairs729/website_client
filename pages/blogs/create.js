@@ -1,5 +1,5 @@
-import RichTextEditor from '../components/RichTextEditor'
-import ProtectedRoute from '../components/ProtectedRoute'
+import RichTextEditor from '../../components/RichTextEditor'
+import ProtectedRoute from '../../components/ProtectedRoute'
 
 export default function CreateBlog() {
   const data = {
@@ -16,6 +16,7 @@ export default function CreateBlog() {
           btnName={'Save'}
           uploadbtn={'Choose banner'}
           data={data}
+          db={'blogs'}
         />
       </ProtectedRoute>
     </>

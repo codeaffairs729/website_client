@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const BlogGrid = ({ data, authorized, setDelId }) => {
+const BlogGrid = ({ data, authorized, setDelId, db }) => {
   return (
     <>
       <div className="container blog-list-container">
@@ -20,7 +20,7 @@ const BlogGrid = ({ data, authorized, setDelId }) => {
               </div>
               <div className="card-body">
                 <div className="blog-list-desc">
-                  <Link href={`/blog/${e.id}`}>
+                  <Link href={`/${db}/${e.id}`}>
                     <h3 className=" card-title pt-2 cursor_pointer">
                       {e.title}
                     </h3>
@@ -29,7 +29,7 @@ const BlogGrid = ({ data, authorized, setDelId }) => {
                 <br />
                 <div className="d-flex justify-content-between">
                   <span className="text-primary fw-bold">
-                    <Link href={`/blog/${e.id}`}>
+                    <Link href={`/${db}/${e.id}`}>
                       <span className="text-blue link-text fs-6 fw-semibold cursor_pointer">
                         READ MORE
                       </span>
@@ -37,7 +37,7 @@ const BlogGrid = ({ data, authorized, setDelId }) => {
                   </span>
                   {authorized && (
                     <>
-                      <Link href={`/edit-blog/${e.id}`}>
+                      <Link href={`/${db}/edit/${e.id}`}>
                         <span className="text-primary fw-bold">
                           <span className=" text-blue link-text fs-6 fw-semibold cursor_pointer">
                             EDIT

@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import BlogGrid from './BlogGrid'
 import DeleteModal from './DeleteModal'
 
-const BlogList = ({ authorized, blogData, notify, notifyError }) => {
+const BlogList = ({ authorized, blogData, notify, notifyError, db }) => {
   const [data, setData] = useState(blogData)
   const [delId, setDelId] = useState()
   const router = useRouter()
@@ -18,14 +18,14 @@ const BlogList = ({ authorized, blogData, notify, notifyError }) => {
   }
 
   const handleOnCreate = () => {
-    router.push('/create-blog')
+    router.push(db === 'blogs' ? '/blogs/create' : '/case-studies/create')
   }
 
   const handleOnDelete = async () => {
     const newData = data.filter((e) => e.id != delId)
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/blogs/${delId}`,
+        `${process.env.NEXT_PUBLIC_BASE_URL}/${db}/${delId}`,
         {
           method: 'DELETE',
           headers: { 'Content-Type': 'application/json', Authorization: token },
@@ -34,7 +34,7 @@ const BlogList = ({ authorized, blogData, notify, notifyError }) => {
       const json = await response.json()
       notify(json.message)
       setData(newData)
-      router.push('/blog/admin-blog-list')
+      router.push(db === 'blogs' ? '/blogs' : '/case-studies')
     } catch (error) {
       notifyError('Internal server error')
     }
@@ -53,7 +53,12 @@ const BlogList = ({ authorized, blogData, notify, notifyError }) => {
       <div className="breadcumb-area">
         <h1 className="text-center text-light">OUR LATEST BLOGS</h1>
       </div>
-      <BlogGrid data={data} authorized={authorized} setDelId={setDelId} />
+      <BlogGrid
+        data={data}
+        authorized={authorized}
+        setDelId={setDelId}
+        db={db}
+      />
     </>
   )
 }

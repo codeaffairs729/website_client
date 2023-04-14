@@ -2,6 +2,7 @@
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Main from './main'
+import CaseStudy from '../components/CaseStudy'
 const BlogSection = dynamic(() => import('../components/BlogSection'), {
   ssr: false,
 })
@@ -27,7 +28,7 @@ const Teams = dynamic(() => import('./teams'), {
   ssr: false,
 })
 
-export default function Home({ data }) {
+export default function Home({ data, caseData }) {
   // <----------------Don't delete ---------->
   // ---code for open chatwoot based on url---
 
@@ -80,6 +81,7 @@ export default function Home({ data }) {
         <Design />
         <Teams />
         <BlogSection data={data} />
+        {/* <CaseStudy data={caseData} /> */}
       </div>
     </>
   )
@@ -89,10 +91,14 @@ export async function getStaticProps() {
   const data = await (
     await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blogs`)
   ).json()
+  const caseData = await (
+    await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/case-studies`)
+  ).json()
 
   return {
     props: {
       data,
+      caseData,
     },
     revalidate: 10,
   }

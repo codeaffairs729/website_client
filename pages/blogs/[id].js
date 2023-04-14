@@ -1,33 +1,38 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 
 export default function BlogDetails({ blogData }) {
   const [data, setData] = useState(blogData)
-
+  const router = useRouter()
   if (typeof window !== 'undefined' && window.localStorage) {
     var name = localStorage.getItem('name')
   }
 
+  const handleOnBack = () => {
+    router.back()
+  }
   return (
     <>
       <Head>
         <title>{blogData[0].title}</title>
       </Head>
       {name && (
-        <Link href={name ? '/blog/admin-blog-list' : '/user-blog-list'}>
-          <div className="blog-back-btn cursor_pointer d-flex ">
-            <div className="align-self-center">
-              <img src="/icons/left-angle.png" style={{ height: '24px' }} />
-            </div>
-            <div
-              className="fs-6  fw-semibold fw-bold"
-              style={{ color: '#2522BA' }}
-            >
-              &nbsp;&nbsp;Back
-            </div>
+        // <Link href={name ? '/blogs' : '/user-blog-list'}>
+        <div className="blog-back-btn cursor_pointer d-flex ">
+          <div className="align-self-center">
+            <img src="/icons/left-angle.png" style={{ height: '24px' }} />
           </div>
-        </Link>
+          <div
+            className="fs-6  fw-semibold fw-bold"
+            style={{ color: '#2522BA' }}
+            onClick={handleOnBack}
+          >
+            &nbsp;&nbsp;Back
+          </div>
+        </div>
+        // </Link>
       )}
 
       {data.map((e, i) => (

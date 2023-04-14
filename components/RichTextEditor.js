@@ -38,7 +38,7 @@ const formats = [
   'link',
   'image',
 ]
-const RichTextEditor = ({ pageName, btnName, uploadbtn, data }) => {
+const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
   const [title, setTitle] = useState(data.title)
   const [image, setImage] = useState(data.image)
   const [content, setContent] = useState(data.content)
@@ -100,7 +100,7 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data }) => {
     formData.append('fname', imageField)
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/blogs/${data.id}`,
+        `${process.env.NEXT_PUBLIC_BASE_URL}/${db}/${data.id}`,
         {
           body: formData,
           method: 'PUT',
@@ -111,7 +111,7 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data }) => {
       )
       const json = await response.json()
       notify(json.message)
-      router.push('/blog/admin-blog-list')
+      router.push(db === 'blogs' ? '/blogs' : '/case-studies')
     } catch (error) {
       notifyError(json.message)
     }
@@ -119,7 +119,6 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data }) => {
 
   // function for upload image
   const onClickUpload = async (e) => {
-    console.log('token', token)
     e.preventDefault()
     if (imageField == null) {
       notify('Oops! You must upload file')
@@ -132,7 +131,7 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data }) => {
     formData.append('fname', imageField)
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/blogs`,
+        `${process.env.NEXT_PUBLIC_BASE_URL}/${db}`,
         {
           body: formData,
           method: 'POST',
@@ -143,27 +142,31 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data }) => {
       )
       const json = await response.json()
       notify(json.message)
-      router.push('/blog/admin-blog-list')
+      router.push(db === 'blogs' ? '/blogs' : '/case-studies')
     } catch (error) {
-      notifyError(json.message)
+      // notifyError(json.message)
     }
   }
 
+  const handleOnBack = () => {
+    router.back()
+  }
   return (
     <div className="rich-text-containar d-flex flex-column justify-content-center">
-      <Link href={'/blog/admin-blog-list'}>
-        <div className="blog-back-btn cursor_pointer d-flex ">
-          <div className="align-self-center">
-            <img src="/icons/left-angle.png" style={{ height: '24px' }} />
-          </div>
-          <div
-            className="fs-6  fw-semibold fw-bold"
-            style={{ color: '#2522BA' }}
-          >
-            &nbsp;&nbsp;Back
-          </div>
+      {/* <Link href={db === 'blogs' ? '/blogs' : '/case-studies'}> */}
+      <div className="blog-back-btn cursor_pointer d-flex ">
+        <div className="align-self-center">
+          <img src="/icons/left-angle.png" style={{ height: '24px' }} />
         </div>
-      </Link>
+        <div
+          className="fs-6  fw-semibold fw-bold"
+          style={{ color: '#2522BA' }}
+          onClick={handleOnBack}
+        >
+          &nbsp;&nbsp;Back
+        </div>
+      </div>
+      {/* </Link> */}
       <ToastContainer />
       <div className="edit-blog">
         <h1 className="text-center">{pageName}</h1>

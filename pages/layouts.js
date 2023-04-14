@@ -526,7 +526,7 @@ const Layouts = () => {
 
               <div className="layouts__pic layouts_pic_figma">
                 <Image
-                  src="/images/figma.webp"
+                  src="/images/FIGMA.webp"
                   alt="3D Pink Box"
                   width={256}
                   height={182}
