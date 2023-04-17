@@ -5,7 +5,7 @@ export default function UpdateBlog({ blogData }) {
   return (
     <ProtectedRoute>
       <RichTextEditor
-        pageName={'Update A Blog'}
+        pageName={'Update A Case Study'}
         btnName={'Update'}
         uploadbtn={'Update banner'}
         data={blogData[0]}

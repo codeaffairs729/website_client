@@ -2,7 +2,7 @@ import BlogList from '../components/BlogList'
 export default function UserBlogList({ blogData }) {
   return (
     <>
-      <BlogList blogData={blogData} />
+      <BlogList blogData={blogData} db={'blogs'} />
     </>
   )
 }

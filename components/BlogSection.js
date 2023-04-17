@@ -29,7 +29,7 @@ export default function BlogSection({ data }) {
                     is
                   </p> */}
                 </div>
-                <Link href={`/blog/${e.id}`} className="">
+                <Link href={`/blogs/${e.id}`} className="">
                   <button type="button" className="blog-btn">
                     READ MORE
                   </button>
