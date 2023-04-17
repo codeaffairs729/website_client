@@ -156,7 +156,6 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
   const handleOnBack = () => {
     router.back()
   }
-  console.log('content :', content)
   return (
     <div className="rich-text-containar d-flex flex-column justify-content-center">
       {/* <Link href={db === 'blogs' ? '/blogs' : '/case-studies'}> */}
