@@ -5,14 +5,14 @@
   margin-top: 50px;
   padding: 150px;
 }
-
-.blog-page-container h1 {
-  margin-bottom: 48px;
-}
 /* .blog-shades {
   padding: 48px;
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
 } */
+
+.ql-editor .ql-blank {
+  height: 500px;
+}
 .blog-list-container div h1 {
   margin-bottom: 72px;
 }
@@ -76,12 +76,10 @@
 .edit-blog h1 {
   margin-bottom: 70px;
 }
-/* .ql-editor {
-  min-height: 500px;
-} */
-.rich-text-containar {
-  /* padding: 30px; */
+.ql-container {
+  height: 500px;
 }
+
 .editor-btn {
   margin-top: 75px;
   /* margin-left: 1042px; */
@@ -105,6 +103,13 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
+}
+
+.htmlContent ul li {
+  list-style: disc;
+}
+.htmlContent ol li {
+  list-style: decimal;
 }
 
 .upload-banner-img {
@@ -171,8 +176,6 @@
   border: 1px solid #888;
   width: 80%;
 }
-
-
 
 /* Modal Content/Box */
 .modal-content {

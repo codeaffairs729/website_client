@@ -39,6 +39,7 @@ export default function BlogDetails({ blogData }) {
         <div className="hire-container  blog-page-container " key={i}>
           <div className="blog-shades">
             <h1 className="hire-h1">{data[i].title}</h1>
+            <br />
             <div className="p-4">
               <img
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${e.image}`}

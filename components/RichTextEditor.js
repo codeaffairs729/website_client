@@ -22,6 +22,9 @@ const modules = {
     [{ align: [] }],
     [{ list: 'ordered' }, { list: 'bullet' }],
     ['link', 'image'],
+    // ['code-block'],
+    // [{ source: 'toggle' }], // Add the source toggle button to the toolbar
+    // ['clean'],
   ],
 }
 
@@ -37,6 +40,8 @@ const formats = [
   'bullet',
   'link',
   'image',
+  'code-block',
+  'clean',
 ]
 const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
   const [title, setTitle] = useState(data.title)
@@ -151,6 +156,7 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
   const handleOnBack = () => {
     router.back()
   }
+  console.log('content :', content)
   return (
     <div className="rich-text-containar d-flex flex-column justify-content-center">
       {/* <Link href={db === 'blogs' ? '/blogs' : '/case-studies'}> */}
@@ -218,6 +224,7 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
           </div>
           <br />
           <ReactQuill
+            style={{ height: '400px', width: '100%' }}
             modules={modules}
             formats={formats}
             theme="snow"
