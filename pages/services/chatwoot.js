@@ -23,7 +23,7 @@ const contentHeader1 = () => {
             </li>
             <li className="margine-bottom-16px">
               <p className="margin-left-25px">
-                you&apos;ll Get Notified Instantly After Receiving A Message
+                You&apos;ll Get Notified Instantly After Receiving A Message
               </p>
             </li>
             <li className="margine-bottom-16px">
