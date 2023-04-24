@@ -55,6 +55,43 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
   let token
   let id
 
+  const containerRef = useRef(null)
+  const startPosRef = useRef(null)
+  const resizeDirectionRef = useRef(null)
+
+  const handleMouseDown = (event, direction) => {
+    startPosRef.current = {
+      x: event.clientX,
+      y: event.clientY,
+    }
+    resizeDirectionRef.current = direction
+    window.addEventListener('mousemove', handleMouseMove)
+    window.addEventListener('mouseup', handleMouseUp)
+  }
+
+  const handleMouseMove = (event) => {
+    const container = containerRef.current
+    const startPos = startPosRef.current
+    const resizeDirection = resizeDirectionRef.current
+    if (!container || !startPos || !resizeDirection) {
+      return
+    }
+    const deltaX = event.clientX - startPos.x
+    const deltaY = event.clientY - startPos.y
+    if (resizeDirection === 'right') {
+      container.style.width = `${container.offsetWidth + deltaX}px`
+    } else if (resizeDirection === 'down') {
+      container.style.height = `${container.offsetHeight + deltaY}px`
+    }
+  }
+
+  const handleMouseUp = () => {
+    startPosRef.current = null
+    resizeDirectionRef.current = null
+    window.removeEventListener('mousemove', handleMouseMove)
+    window.removeEventListener('mouseup', handleMouseUp)
+  }
+
   const notify = (status) => {
     toast.success(status, {
       position: 'top-right',
@@ -222,7 +259,10 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
             )}
           </div>
           <br />
+
           <ReactQuill
+            ref={containerRef}
+            className="editor-container resizable"
             style={{ height: '400px', width: '100%' }}
             modules={modules}
             formats={formats}
@@ -230,6 +270,15 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
             onChange={setContent}
             value={content}
           />
+          <div
+            className="resizer right"
+            onMouseDown={(event) => handleMouseDown(event, 'right')}
+          />
+          <div
+            className="resizer down"
+            onMouseDown={(event) => handleMouseDown(event, 'down')}
+          />
+
           <div className="text-end">
             <button
               type="submit"
