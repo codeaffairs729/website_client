@@ -1147,6 +1147,34 @@ const Header = () => {
                                 </div>
                               </Link>
                             </div>
+                            <div className="col-lg-12 header-solutions-outer">
+                              <Link href="/services/openAi">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
+                                  <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                    {/* <img
+                                    className="header-solutions-icon"
+                                    src="/icons/chatwoot.webp"
+                                    alt="chatwoot PNG"
+                                  /> */}
+                                    <div className="header-solutions-icon">
+                                      <Image
+                                        src="/icons/openai1.svg"
+                                        alt="openAI icon svg"
+                                        layout="fill"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                    <div className="header__info">
+                                      OpenAI (ChatGPT)
+                                    </div>
+                                  </div>
+                                </div>
+                              </Link>
+                            </div>
                             {/* <Slider {...portfolioSettings}>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >

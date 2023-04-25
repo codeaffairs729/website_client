@@ -11454,12 +11454,14 @@ top: 7641px; */
 .editor-container {
   position: relative;
   overflow: hidden;
+  border: 1px solid #ccc;
   background-color: #fff;
+ 
 }
 
 .editor-container.resizable {
   resize: both;
-  
+ 
 }
 
 .resizer {
