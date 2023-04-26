@@ -92,7 +92,7 @@ const content1 = () => {
             </li>
             <li>
               We believe that a company&apos;s IT infrastructure is the heart of
-              their business. And we know that it&apos;s important to have an
+              it's business. And we know that it&apos;s important to have an
               organized and reliable deployment process in place.
             </li>
             <li>

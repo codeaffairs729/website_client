@@ -6,6 +6,8 @@ import 'react-toastify/dist/ReactToastify.css'
 
 const CaseStudyForm = ({ action, data, db }) => {
   const router = useRouter()
+  
+
   const notify = (status) => {
     toast.success(status, {
       position: 'top-right',
@@ -99,13 +101,15 @@ const CaseStudyForm = ({ action, data, db }) => {
   const onClickUpload = async (e) => {
     e.preventDefault()
     if (
-      storyImage === null ||
-      resultImage === null ||
-      bannerImage === null ||
-      coverImage === null ||
-      solutionImage === null
+      storyImage == null ||
+      resultImage == null ||
+      bannerImage == null ||
+      coverImage == null ||
+      solutionImage == null
     ) {
-      notify('Oops! You must upload file')
+      notifyError('Oops! You must upload file')
+    
+  
       return
     }
 
@@ -182,7 +186,7 @@ const CaseStudyForm = ({ action, data, db }) => {
     }
   }
   return (
-    <>
+   
       <div
         style={{
           marginTop: '250px',
@@ -198,6 +202,7 @@ const CaseStudyForm = ({ action, data, db }) => {
         </h1>
         <br />
         <br />
+        <ToastContainer/>
         <div className="mb-3">
           <label htmlFor="exampleFormControlInput1" className="form-label">
             Title
@@ -373,7 +378,7 @@ const CaseStudyForm = ({ action, data, db }) => {
           </button>
         </div>
       </div>
-    </>
+   
   )
 }
 export default CaseStudyForm

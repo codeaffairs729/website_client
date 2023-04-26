@@ -123,7 +123,9 @@ const TechComponent = ({ techList, frontActive, backActive, mobileActive }) => {
           <li
             className="cursor_pointer"
             onClick={handleOnMobile}
-            style={{ color: activeMobile ? 'blue' : 'black' }}
+            style={{
+              color: activeMobile ? 'blue' : 'black',
+            }}
           >
             Mobile
           </li>

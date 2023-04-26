@@ -207,10 +207,12 @@ const Strapi = () => {
           href="https://codegaragetech.com/services/strapi"
         />
         <meta
+          name="title"
+          content="Strapi - A Preeminent Open-Source Headless CMS with Graphql"
+        />
+        <meta
           name="description"
-          content="At Code Garage Tech, we create customized Strapi (CMS) as per your business interface. Our skilled team of Strapi developers create the best softwares for you. 
-
-          "
+          content="At Code Garage Tech, we create customized Strapi (CMS) as per your business interface. Our skilled team of Strapi Graphql developers create the best softwares for you. "
         />
       </Head>
       <HireServiceLayout

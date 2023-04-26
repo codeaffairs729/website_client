@@ -155,8 +155,12 @@ const Chatwoot = () => {
           href="https://codegaragetech.com/services/chatwoot"
         />
         <meta
+          name="title"
+          content="Chatwoot Developement - All-In-One Communication Channel"
+        />
+        <meta
           name="description"
-          content="Code Garage Tech provides a platform that helps you to engage with your customer in smooth conversational experiences with the assistance of ChatWoot."
+          content="Chatwoot is an open-source customer communication platform. Chatwoot development helps you to engage with your customer in smooth conversational experiences."
         />
       </Head>
 

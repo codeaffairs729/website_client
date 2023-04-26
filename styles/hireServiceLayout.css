@@ -159,7 +159,7 @@ li {
 
   background: #5956e9;
 }
-.black-circle {
+/* .black-circle {
   position: absolute;
 
   width: 48px;
@@ -170,7 +170,7 @@ li {
   background: #27272e;
   z-index: 999;
   overflow: hidden;
-}
+} */
 .banner-cloud {
   position: absolute;
   z-index: 1;
@@ -575,9 +575,9 @@ p {
   .blue-circle {
     display: none;
   }
-  .black-circle {
+  /* .black-circle {
     display: none;
-  }
+  } */
 }
 
 /* hire team page */

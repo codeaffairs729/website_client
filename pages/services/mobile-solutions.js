@@ -103,7 +103,7 @@ const content1 = () => {
           boosting your development strategy, designing smooth experiences,
           build-up viable solutions, and developing applications that add unique
           value to the lives of users. We design as well as develop custom
-          Android applications for all sizes of business and domains.
+          Android applications for all sizes of businesses and domains.
         </p>
         <p className="hire-p">
           <strong>Our Android Development Services: </strong>

@@ -20,7 +20,6 @@ const HireServiceLayout = ({
       <div className="hire-container ">
         {isIconExit && (
           <div>
-            <div className="black-circle"></div>
             <div className="blue-circle"></div>
             <div className="banner-cloud">
               <Image

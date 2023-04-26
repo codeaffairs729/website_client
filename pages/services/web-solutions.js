@@ -78,15 +78,15 @@ const contentHeader1 = () => {
         </div>
         <div className="tech-service-body-right">
           {/* <img src="/icons/service-icon/Frame.webp" alt="" /> */}
-          <div>
+          
             <Image
               src="/icons/service-icon/Frame.webp"
               alt="Frame JPG"
-              width={442}
-              height={483}
+              width={378}
+              height={378}
               priority={true}
             />
-          </div>
+          
         </div>
       </div>
     </>
@@ -410,9 +410,7 @@ const WebSolutions = () => {
         <meta
           name="description"
           content="
-          At Code Garage Tech, we offer full web development solutions, from initial planning to final delivery and third-party testing. Get in Touch with us now! 
-
-          "
+          At Code Garage Tech, we offer full web development solutions, from initial planning to final delivery and third-party testing. Get in Touch with us now!"
         />
       </Head>
       <HireServiceLayout
