@@ -2,7 +2,7 @@
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Main from './main'
-// import CaseStudy from '../components/CaseStudy'
+import CaseStudy from '../components/CaseStudy'
 const BlogSection = dynamic(() => import('../components/BlogSection'), {
   ssr: false,
 })
@@ -93,7 +93,7 @@ export async function getStaticProps() {
   ).json()
 
   const caseData = await (
-    await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/case-studies`)
+    await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/case-study`)
   ).json()
 
   return {

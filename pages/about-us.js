@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import Header from './includes/header'
-import Footer from './includes/footer'
 import SideImages from '../components/sideImages'
 import BuildingPicsSlider from './buildingPicsSlider'
 import Head from 'next/head'

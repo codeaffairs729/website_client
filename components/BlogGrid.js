@@ -13,7 +13,9 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
             >
               <div>
                 <img
-                  src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${e.image}`}
+                  src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${
+                    db === 'case-study' ? e.banner_img : e.image
+                  }`}
                   style={{ width: '100%', height: '158px' }}
                   alt="a snow-capped mountain range"
                 />

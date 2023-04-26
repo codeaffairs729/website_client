@@ -1,16 +1,9 @@
-import RichTextEditor from '../../../components/RichTextEditor'
 import ProtectedRoute from '../../../components/ProtectedRoute'
-
+import CaseStudyForm from '../../../components/CaseStudyForm'
 export default function UpdateBlog({ blogData }) {
   return (
     <ProtectedRoute>
-      <RichTextEditor
-        pageName={'Update A Case Study'}
-        btnName={'Update'}
-        uploadbtn={'Update banner'}
-        data={blogData[0]}
-        db={'case-studies'}
-      />
+      <CaseStudyForm action={'update'} data={blogData[0]} />
     </ProtectedRoute>
   )
 }
@@ -18,7 +11,7 @@ export default function UpdateBlog({ blogData }) {
 export async function getServerSideProps({ params }) {
   const { id } = params
   const blogData = await (
-    await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/case-studies/${id}`)
+    await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/case-study/${id}`)
   ).json()
 
   return {

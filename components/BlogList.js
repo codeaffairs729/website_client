@@ -18,7 +18,13 @@ const BlogList = ({ authorized, blogData, notify, notifyError, db }) => {
   }
 
   const handleOnCreate = () => {
-    router.push(db === 'blogs' ? '/blogs/create' : '/case-studies/create')
+    router.push(
+      db === 'blogs'
+        ? '/blogs/create'
+        : db === 'case-study'
+        ? '/case-study/create'
+        : '/case-studies/create'
+    )
   }
 
   const handleOnDelete = async () => {
@@ -34,7 +40,7 @@ const BlogList = ({ authorized, blogData, notify, notifyError, db }) => {
       const json = await response.json()
       notify(json.message)
       setData(newData)
-      router.push(db === 'blogs' ? '/blogs' : '/case-studies')
+      //   router.push(db === "blogs" ? "/blogs" : "/case-studies");
     } catch (error) {
       notifyError('Internal server error')
     }
@@ -51,7 +57,11 @@ const BlogList = ({ authorized, blogData, notify, notifyError, db }) => {
         </>
       )}
       <div className="breadcumb-area">
-        <h1 className="text-center text-light">OUR LATEST BLOGS</h1>
+        {db === 'case-study' ? (
+          <h1 className="text-center text-light">CASE STUDY</h1>
+        ) : (
+          <h1 className="text-center text-light">OUR LATEST BLOGS</h1>
+        )}
       </div>
       <BlogGrid
         data={data}

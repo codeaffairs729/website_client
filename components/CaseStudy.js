@@ -5,6 +5,7 @@ import Styles from '../styles/Case.module.css'
 import Slider from 'react-slick'
 
 export default function CaseStudy({ data }) {
+  // console.log('data', data)
   // const blogData = data.filter((e, i) => i < 5)
   const blogData = data
   var settings = {
@@ -64,12 +65,12 @@ export default function CaseStudy({ data }) {
       <div className={`${Styles.caseContainer}`}>
         <Slider {...settings}>
           {blogData.map((e, i) => (
-            <Link href={`/case-studies/${e.id}`} key={e.id}>
+            <Link href={`/case-study/${e.id}`} key={e.id}>
               <div className={`${Styles.cardContainer} cursor_pointer`} key={i}>
                 <div className={Styles.caseImg}>
                   <div className={Styles.overlap}></div>
                   <img
-                    src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${e.image}`}
+                    src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${e.banner_img}`}
                     style={{ width: '100%', height: '430px' }}
                   />
 

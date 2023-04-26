@@ -1,0 +1,279 @@
+.header{
+  height: 90px;
+}
+
+.first_background {
+  /* background-image: url(https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80); */
+  height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  
+  overflow: hidden;
+  background-size:cover;
+}
+
+.case_study {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.percentage_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-size: auto;
+  background-image: url(https://media.istockphoto.com/id/1294603953/vector/abstract-black-stripes-diagonal-background.jpg?s=612x612&w=0&k=20&c=nQZHTk-o97cNVqWnUe8BJg0A5jQG0tqylquzbt9YtcQ=);
+}
+.first_percentage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: "120%"; */
+  width: 300px;
+  padding: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.story_container {
+  padding: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.story_text_container {
+  /* width: 400px; */
+  
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* background-color: black; */
+}
+.story_image_container {
+  width: 400px;
+  height: 400px;
+  /* background-image: url(https://images.macrumors.com/article-new/2019/01/iphone11wallpaper-800x637.jpg); */
+  background-size: cover;
+}
+.the_goal_container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.the_solution_container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.solution_items_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  padding-bottom: 60px;
+}
+.solution_details_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.solution_paragrah {
+  font-size: 16px;
+  text-align: left;
+  font-weight: '400';
+  line-height: 30px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.solution_image_container {
+  height: 400px;
+  width: 40vw;
+  display: flex;
+  overflow: hidden;
+
+  margin-left: 20px;
+
+  /* background-image: url(https://media.istockphoto.com/id/1405838999/photo/smartphone-similar-to-iphone-13-with-blank-white-screen-for-infographic-global-business.jpg?b=1&s=170667a&w=0&k=20&c=qDMK-mCWOhPMAn4gm_XkiMCyLraMIl7TLOnLJamlhOI=); */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width:760px) {
+  .solution_image_container{
+    height: 50vh;
+    width: 100vw;
+  }
+}
+
+
+.the_results_container {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/001/987/871/original/abstract-black-stripes-diagonal-background-free-vector.jpg);
+  background-size: contain;
+  padding: 24px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.the_results_items_container {
+  height: '100%';
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.result_content {
+  width: 400px;
+  height: 100%;
+  line-height: 30px;
+}
+
+.products_used {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.products_used_container {
+  width: 100vw;
+  /* height: 70vh; */
+  padding-bottom: 60px;
+}
+.products_used_left_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.products_used_left_items_container {
+  height: 100%;
+  width: 224px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.products_used_right_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.products_used_items_right_container {
+  height: 100%;
+  width: 224px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.summary_container {
+  background-color: white;
+  background-position: center 100%;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://scontent.fdel27-1.fna.fbcdn.net/v/t39.8562-6/85739816_123038632348132_1888811936859029504_n.jpg?stp=dst-webp&_nc_cat=101&ccb=1-7&_nc_sid=743b2f&_nc_ohc=XdwgRcH9y50AX-eEXFB&_nc_ht=scontent.fdel27-1.fna&oh=00_AfCbqzBm2xqMYNiYDd9LDEO_4W8c-oVQdjKRTUsC2gzBPA&oe=64415EC3);
+}
+.summary_items_container {
+  background-color: white;
+  height: 70%;
+  width: 55%;
+  padding: 0 50px;
+}
+.quotes_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60px;
+}
+.summary_content {
+  text-align: left;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) and (min-width: 500px) {
+  .products_used_right_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+  .products_used_left_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .summary_items_container {
+    background-color: white;
+    height: 75%;
+    width: 75%;
+  }
+  .summary_content {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .header{
+    height: 70px;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 300px) {
+  .products_used_right_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+  .products_used_left_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .summary_items_container {
+    background-color: white;
+    height: 80%;
+    width: 80%;
+    padding: 0 3px;
+  }
+  .summary_content {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+}
+

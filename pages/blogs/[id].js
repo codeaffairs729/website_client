@@ -1,14 +1,22 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 
 export default function BlogDetails({ blogData }) {
-  const [data, setData] = useState(blogData)
   const router = useRouter()
-  if (typeof window !== 'undefined' && window.localStorage) {
-    var name = localStorage.getItem('name')
-  }
+  const [name, setName] = useState('')
+
+  // useEffect used for solving hydration errror because name is not defined at server side
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.localStorage) {
+      setName(localStorage.getItem('name'))
+    }
+    if (blogData.length === 0) {
+      router.push('/404')
+    }
+  }, [])
 
   const handleOnBack = () => {
     router.back()
@@ -16,7 +24,7 @@ export default function BlogDetails({ blogData }) {
   return (
     <>
       <Head>
-        <title>{blogData[0].title}</title>
+        <title>{blogData[0]?.title}</title>
       </Head>
       {name && (
         // <Link href={name ? '/blogs' : '/user-blog-list'}>
@@ -26,25 +34,34 @@ export default function BlogDetails({ blogData }) {
           </div>
           <div
             className="fs-6  fw-semibold fw-bold"
-            style={{ color: '#2522BA' }}
+            style={{
+              color: '#2522BA',
+              width: '100vw',
+              height: 80,
+              display: 'flex',
+              alignItems: 'center',
+            }}
             onClick={handleOnBack}
           >
-            &nbsp;&nbsp;Back
+            <div>&nbsp;&nbsp;Back</div>
           </div>
         </div>
         // </Link>
       )}
 
-      {data.map((e, i) => (
+      {blogData.map((e, i) => (
         <div className="hire-container  blog-page-container " key={i}>
           <div className="blog-shades">
-            <h1 className="hire-h1">{data[i].title}</h1>
+            <h1 className="hire-h1">{blogData[i]?.title}</h1>
             <br />
-            <div className="p-4">
+            <div className="p-4" style={{ height: 300, width: 500 }}>
               <img
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${e.image}`}
                 alt="node-guide-image"
-                style={{ width: '1060px' }}
+                style={{
+                  height: '100%',
+                  width: '100%',
+                }}
               />
             </div>
             <div className="htmlContent">
@@ -59,13 +76,20 @@ export default function BlogDetails({ blogData }) {
 
 export async function getServerSideProps({ params }) {
   const { id } = params
-  const blogData = await (
-    await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blogs/${id}`)
-  ).json()
+  const res = await await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/blogs/${id}`
+  )
+  const blogData = await res.json()
 
-  return {
-    props: {
-      blogData,
-    },
+  if (res.status === 200) {
+    return {
+      props: {
+        blogData,
+      },
+    }
+  } else {
+    return {
+      notFound: true,
+    }
   }
 }

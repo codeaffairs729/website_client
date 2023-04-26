@@ -4,7 +4,7 @@ import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import ProtectedRoute from '../../components/ProtectedRoute'
 
-export default function CaseStudyList({ blogData }) {
+export default function CaseStudiesList({ blogData }) {
   const notify = (status) => {
     toast.success(status, {
       position: 'top-right',
@@ -26,16 +26,14 @@ export default function CaseStudyList({ blogData }) {
           blogData={blogData}
           notify={notify}
           notifyError={notifyError}
-          db={'case-studies'}
+          db={'case-study'}
         />
       </ProtectedRoute>
     </>
   )
 }
 export async function getServerSideProps() {
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/case-studies`
-  )
+  const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/case-study`)
   const data = await response.json()
 
   return {

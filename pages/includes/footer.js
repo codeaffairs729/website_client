@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const Footer = () => {
+const FooterNew = () => {
   const [aboutUs, setAboutUs] = useState(false)
   const [technologies, setTechnologies] = useState(false)
   const [contactUs, setContactUs] = useState(false)
@@ -399,4 +399,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default FooterNew

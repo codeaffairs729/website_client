@@ -1,6 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react'
-import Header from './includes/header'
-import Footer from './includes/footer'
 // import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import GenericModal from '../components/GenericModal'
 import { ToastContainer, toast } from 'react-toastify'
