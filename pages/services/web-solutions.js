@@ -78,15 +78,14 @@ const contentHeader1 = () => {
         </div>
         <div className="tech-service-body-right">
           {/* <img src="/icons/service-icon/Frame.webp" alt="" /> */}
-          
-            <Image
-              src="/icons/service-icon/Frame.webp"
-              alt="Frame JPG"
-              width={378}
-              height={378}
-              priority={true}
-            />
-          
+
+          <Image
+            src="/icons/service-icon/Frame.webp"
+            alt="Frame JPG"
+            width={378}
+            height={378}
+            priority={true}
+          />
         </div>
       </div>
     </>

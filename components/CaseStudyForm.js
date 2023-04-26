@@ -6,7 +6,6 @@ import 'react-toastify/dist/ReactToastify.css'
 
 const CaseStudyForm = ({ action, data, db }) => {
   const router = useRouter()
-  
 
   const notify = (status) => {
     toast.success(status, {
@@ -108,8 +107,7 @@ const CaseStudyForm = ({ action, data, db }) => {
       solutionImage == null
     ) {
       notifyError('Oops! You must upload file')
-    
-  
+
       return
     }
 
@@ -186,199 +184,197 @@ const CaseStudyForm = ({ action, data, db }) => {
     }
   }
   return (
-   
-      <div
-        style={{
-          marginTop: '250px',
-          marginBottom: '250px',
-          width: '70%',
-          marginInline: 'Auto',
-        }}
-      >
-        <h1>
-          {action === 'update'
-            ? 'Update Case Study Form'
-            : 'Create Case Study Form '}
-        </h1>
-        <br />
-        <br />
-        <ToastContainer/>
-        <div className="mb-3">
-          <label htmlFor="exampleFormControlInput1" className="form-label">
-            Title
-          </label>
-          <input
-            name="title"
-            type="text"
-            className="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Enter title"
-            value={formContent.title}
-            onChange={handleOnChange}
-          />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="exampleFormControlTextarea1" className="form-label">
-            subTitle
-          </label>
-          <textarea
-            name="subTitle"
-            className="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-            value={formContent.subTitle}
-            onChange={handleOnChange}
-          ></textarea>
-        </div>
-        <br />
-        <div className="mb-3">
-          <label htmlFor="formFile" className="form-label">
-            Banner Image between (1920px-1080px width)*(1080px -1350px height)
-          </label>
-          <input
-            name="bannerImage"
-            className="form-control"
-            type="file"
-            id="formFile"
-            accept="image/"
-            onChange={(event) => handleFileChange(event, setBannerImage)}
-          />
-        </div>
-        <br />
-        <div className="mb-3">
-          <label htmlFor="formFile" className="form-label">
-            Cover Image (1920px*1080px)
-          </label>
-          <input
-            name="coverImage"
-            className="form-control"
-            type="file"
-            id="formFile"
-            accept="image/"
-            onChange={(event) => handleCoverImage(event, setCoverImage)}
-          />
-        </div>
-        <br />
-        <div className="mb-3">
-          <label htmlFor="exampleFormControlInput1" className="form-label">
-            Story
-          </label>
-          <textarea
-            name="story"
-            type="text"
-            className="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Enter story"
-            value={formContent.story}
-            onChange={handleOnChange}
-          ></textarea>
-        </div>
-        <div className="mb-3">
-          <label htmlFor="formFile" className="form-label">
-            Story Image between (1920px-1080px width)*(1080px -1350px height)
-          </label>
-          <input
-            name="storyImage"
-            className="form-control"
-            type="file"
-            id="formFile"
-            accept="image/"
-            onChange={(event) => handleFileChange(event, setStoryImage)}
-          />
-        </div>
-        <br />
-        <div className="mb-3">
-          <label htmlFor="exampleFormControlTextarea1" className="form-label">
-            Challenge
-          </label>
-          <textarea
-            name="challenge"
-            className="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-            value={formContent.challenge}
-            onChange={handleOnChange}
-          ></textarea>
-        </div>
-        <br />
-        <div className="mb-3">
-          <label htmlFor="exampleFormControlTextarea1" className="form-label">
-            Comment
-          </label>
-          <textarea
-            name="comment"
-            className="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-            value={formContent.comment}
-            onChange={handleOnChange}
-          ></textarea>
-        </div>
-        <br />
-        <div className="mb-3">
-          <label htmlFor="exampleFormControlInput1" className="form-label">
-            Solution
-          </label>
-          <textarea
-            name="solution"
-            className="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Enter solutions"
-            value={formContent.solution}
-            onChange={handleOnChange}
-          ></textarea>
-        </div>
-        <div className="mb-3">
-          <label htmlFor="formFile" className="form-label">
-            Solution Image between (1920px-1080px width)*(1080px -1350px height)
-          </label>
-          <input
-            name="solutionImage"
-            className="form-control"
-            type="file"
-            id="formFile"
-            accept="image/"
-            onChange={(event) => handleFileChange(event, setSolutionImage)}
-          />
-        </div>
-        <br />
-        <div className="mb-3">
-          <label htmlFor="exampleFormControlInput1" className="form-label">
-            Result
-          </label>
-          <textarea
-            name="result"
-            className="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Enter result"
-            value={formContent.result}
-            onChange={handleOnChange}
-          ></textarea>
-        </div>
-        <div className="mb-3">
-          <label htmlFor="formFile" className="form-label">
-            Result Image between (1920px-1080px width)*(1080px -1350px height)
-          </label>
-          <input
-            name="resultImage"
-            className="form-control"
-            type="file"
-            id="formFile"
-            accept="image/"
-            onChange={(event) => handleFileChange(event, setResultImage)}
-          />
-        </div>
-        <div className="text-end">
-          <button
-            type="submit"
-            className="editor-btn"
-            onClick={action === 'update' ? onClickUpdate : onClickUpload}
-          >
-            {action === 'update' ? 'Update' : 'Submit'}
-          </button>
-        </div>
+    <div
+      style={{
+        marginTop: '250px',
+        marginBottom: '250px',
+        width: '70%',
+        marginInline: 'Auto',
+      }}
+    >
+      <h1>
+        {action === 'update'
+          ? 'Update Case Study Form'
+          : 'Create Case Study Form '}
+      </h1>
+      <br />
+      <br />
+      <ToastContainer />
+      <div className="mb-3">
+        <label htmlFor="exampleFormControlInput1" className="form-label">
+          Title
+        </label>
+        <input
+          name="title"
+          type="text"
+          className="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Enter title"
+          value={formContent.title}
+          onChange={handleOnChange}
+        />
       </div>
-   
+      <div className="mb-3">
+        <label htmlFor="exampleFormControlTextarea1" className="form-label">
+          subTitle
+        </label>
+        <textarea
+          name="subTitle"
+          className="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+          value={formContent.subTitle}
+          onChange={handleOnChange}
+        ></textarea>
+      </div>
+      <br />
+      <div className="mb-3">
+        <label htmlFor="formFile" className="form-label">
+          Banner Image between (1920px-1080px width)*(1080px -1350px height)
+        </label>
+        <input
+          name="bannerImage"
+          className="form-control"
+          type="file"
+          id="formFile"
+          accept="image/"
+          onChange={(event) => handleFileChange(event, setBannerImage)}
+        />
+      </div>
+      <br />
+      <div className="mb-3">
+        <label htmlFor="formFile" className="form-label">
+          Cover Image (1920px*1080px)
+        </label>
+        <input
+          name="coverImage"
+          className="form-control"
+          type="file"
+          id="formFile"
+          accept="image/"
+          onChange={(event) => handleCoverImage(event, setCoverImage)}
+        />
+      </div>
+      <br />
+      <div className="mb-3">
+        <label htmlFor="exampleFormControlInput1" className="form-label">
+          Story
+        </label>
+        <textarea
+          name="story"
+          type="text"
+          className="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Enter story"
+          value={formContent.story}
+          onChange={handleOnChange}
+        ></textarea>
+      </div>
+      <div className="mb-3">
+        <label htmlFor="formFile" className="form-label">
+          Story Image between (1920px-1080px width)*(1080px -1350px height)
+        </label>
+        <input
+          name="storyImage"
+          className="form-control"
+          type="file"
+          id="formFile"
+          accept="image/"
+          onChange={(event) => handleFileChange(event, setStoryImage)}
+        />
+      </div>
+      <br />
+      <div className="mb-3">
+        <label htmlFor="exampleFormControlTextarea1" className="form-label">
+          Challenge
+        </label>
+        <textarea
+          name="challenge"
+          className="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+          value={formContent.challenge}
+          onChange={handleOnChange}
+        ></textarea>
+      </div>
+      <br />
+      <div className="mb-3">
+        <label htmlFor="exampleFormControlTextarea1" className="form-label">
+          Comment
+        </label>
+        <textarea
+          name="comment"
+          className="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+          value={formContent.comment}
+          onChange={handleOnChange}
+        ></textarea>
+      </div>
+      <br />
+      <div className="mb-3">
+        <label htmlFor="exampleFormControlInput1" className="form-label">
+          Solution
+        </label>
+        <textarea
+          name="solution"
+          className="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Enter solutions"
+          value={formContent.solution}
+          onChange={handleOnChange}
+        ></textarea>
+      </div>
+      <div className="mb-3">
+        <label htmlFor="formFile" className="form-label">
+          Solution Image between (1920px-1080px width)*(1080px -1350px height)
+        </label>
+        <input
+          name="solutionImage"
+          className="form-control"
+          type="file"
+          id="formFile"
+          accept="image/"
+          onChange={(event) => handleFileChange(event, setSolutionImage)}
+        />
+      </div>
+      <br />
+      <div className="mb-3">
+        <label htmlFor="exampleFormControlInput1" className="form-label">
+          Result
+        </label>
+        <textarea
+          name="result"
+          className="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Enter result"
+          value={formContent.result}
+          onChange={handleOnChange}
+        ></textarea>
+      </div>
+      <div className="mb-3">
+        <label htmlFor="formFile" className="form-label">
+          Result Image between (1920px-1080px width)*(1080px -1350px height)
+        </label>
+        <input
+          name="resultImage"
+          className="form-control"
+          type="file"
+          id="formFile"
+          accept="image/"
+          onChange={(event) => handleFileChange(event, setResultImage)}
+        />
+      </div>
+      <div className="text-end">
+        <button
+          type="submit"
+          className="editor-btn"
+          onClick={action === 'update' ? onClickUpdate : onClickUpload}
+        >
+          {action === 'update' ? 'Update' : 'Submit'}
+        </button>
+      </div>
+    </div>
   )
 }
 export default CaseStudyForm
