@@ -1,0 +1,23 @@
+.services_image_container {
+  height: 75vh;
+  width: 55vw;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+@media (max-width: 1000px) {
+  .services_image_container {
+    width: 85vw;
+    height: 90vh;
+  }
+}
+@media (max-width: 430px) {
+  .services_image_container {
+    width: 95vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

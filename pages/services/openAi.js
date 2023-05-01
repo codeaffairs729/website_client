@@ -4,6 +4,8 @@ import Banner from '../../components/banner'
 import Head from 'next/head'
 import Image from 'next/image'
 import ScheduleForm from '../../components/schedule'
+import styles from '../../styles/Services.module.css'
+
 const techTitle = 'Open AI Services Provider'
 const contentHeader1 = () => {
   return (
@@ -68,16 +70,31 @@ const content1 = () => {
           Hence, it aids to improve staff efficiency, and productivity, saving
           efforts and time. <br />
           <br />
-          <a
-            href="/contact"
-            className="header__btn btn-none btn btn_pink"
-            target="_blank"
-          >
-            Get a Free Quote
-          </a>
-          <h2 className="hire-h2 margin-bottom-24px">
-            Out-of-the-box Open AI App Development Solutions
-          </h2>
+        </p>
+        <a
+          href="/contact"
+          className="header__btn btn-none btn btn_pink"
+          target="_blank"
+        >
+          Get a Free Quote
+        </a>
+        <h2 className="hire-h2 margin-bottom-24px">
+          Our Process of Building AI Apps Using Open AI
+        </h2>
+        <div className={`${styles.services_image_container}`}>
+          <Image
+            src="/services_images/openai.png"
+            alt="OpenAI Processes"
+            width={600}
+            height={400}
+            priority={true}
+            objectFit="contain"
+          />
+        </div>
+        <h2 className="hire-h2 margin-bottom-24px">
+          Out-of-the-box Open AI App Development Solutions
+        </h2>
+        <p>
           The world is thrilled by the intelligence of <strong>Chat GPT</strong>
           and everyone is talking about its distinctive implications. ChatGPT is
           an ideal example of a robust OpenAI application.
@@ -207,7 +224,7 @@ const content3 = () => (
   <div className="form-service">
     <ScheduleForm
       title={'Schedule a Meeting'}
-      requestOrigin={'Request generated from ui-ux page'}
+      requestOrigin={'Request generated from openAi page'}
     />
   </div>
 )
@@ -218,14 +235,9 @@ const OpenAI = () => {
         <title>OpenAI (ChatGPT) - Code Garage Tech</title>
         <link
           rel="canonical"
-          href="https://codegaragetech.com/services/ui-ux"
+          href="https://codegaragetech.com/services/openAi"
         />
-        <meta
-          name="description"
-          content="From research to design to development, we provide a full range of UI/UX design services to bring your ideas to life. Contact us now! 
-
-          "
-        />
+        <meta name="description" content="Open AI Chat GPT " />
       </Head>
       <HireServiceLayout
         content1={content1}

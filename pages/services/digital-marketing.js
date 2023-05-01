@@ -4,6 +4,8 @@ import Banner from '../../components/banner'
 import Head from 'next/head'
 import Image from 'next/image'
 import ScheduleForm from '../../components/schedule'
+import styles from '../../styles/Services.module.css'
+
 const techTitle = 'Digital Marketing (PPC, SEO, ORM)'
 const contentHeader1 = () => {
   return (
@@ -69,6 +71,19 @@ const content1 = () => {
         {/* image required */}
         <div className="shade-1">
           <div className="grey-shade"></div>
+          <h2 className="hire-h2 margin-bottom-24px">
+            Digital Marketing Process
+          </h2>
+          <div className={`${styles.services_image_container}`}>
+            <Image
+              src="/services_images/digital.png"
+              alt="digital marketing"
+              width={600}
+              height={400}
+              priority={true}
+              objectFit="contain"
+            />
+          </div>
           <h2 className="hire-h2 margin-bottom-24px">
             <strong>Our Digital Marketing Services</strong>
           </h2>

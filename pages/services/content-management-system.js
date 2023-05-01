@@ -4,6 +4,7 @@ import Banner from '../../components/banner'
 import Head from 'next/head'
 import Image from 'next/image'
 import ScheduleForm from '../../components/schedule'
+import styles from '../../styles/Services.module.css'
 const techTitle = 'Content Management System'
 const contentHeader1 = () => {
   return (
@@ -79,6 +80,17 @@ const content1 = () => {
         {/* content-7 */}
         <div className="shade-1">
           <div className="grey-shade"></div>
+
+          <div className={`${styles.services_image_container}`}>
+            <Image
+              src="/services_images/CMS.png"
+              alt="content management system"
+              width={600}
+              height={400}
+              priority={true}
+              objectFit="contain"
+            />
+          </div>
           <h2 className="hire-h2 margin-bottom-24px">
             Pertinent CMS Features That We Offer:{' '}
           </h2>

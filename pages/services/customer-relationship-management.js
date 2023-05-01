@@ -6,6 +6,7 @@ import Head from 'next/head'
 import ScheduleForm from '../../components/schedule'
 const techTitle = 'Customer Relationship Management'
 import Image from 'next/image'
+import styles from '../../styles/Services.module.css'
 
 const contentHeader1 = () => {
   return (
@@ -45,6 +46,7 @@ const contentHeader1 = () => {
               width={442}
               height={483}
               priority={true}
+              objectFit="contain"
             />
           </div>
         </div>
@@ -88,6 +90,17 @@ const content1 = () => {
         </p>
         <div className="shade-1">
           <div className="grey-shade"></div>
+
+          <div className={`${styles.services_image_container}`}>
+            <Image
+              src="/services_images/CRM.png"
+              alt="customer relation management"
+              width={600}
+              height={600}
+              priority={true}
+              objectFit="contain"
+            />
+          </div>
           <h2 className="hire-h2">WE BRIDGE THE FUTURE</h2>
           <p className="hire-p margin-bottom-24px">
             CRM solutions are the ideal solution if you want to take your

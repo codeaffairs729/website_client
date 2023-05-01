@@ -4,6 +4,8 @@ import Banner from '../../components/banner'
 import Head from 'next/head'
 import Image from 'next/image'
 import ScheduleForm from '../../components/schedule'
+import styles from '../../styles/Services.module.css'
+
 const techTitle = 'UI / UX'
 const contentHeader1 = () => {
   return (
@@ -87,6 +89,19 @@ const content1 = () => {
             Our UI/UX Process
           </h2> */}
           {/* image required */}
+
+          <h2 className="hire-h2 margin-bottom-24px">Our UI/UX Process</h2>
+          <div className={`${styles.services_image_container}`}>
+            <Image
+              src="/services_images/uiux.png"
+              alt="UIUX"
+              width={800}
+              height={800}
+              priority={true}
+              objectFit="contain"
+            />
+          </div>
+
           <h2 className="hire-h2 margin-bottom-24px">
             Innovative & Creative User Experience Design Services
           </h2>

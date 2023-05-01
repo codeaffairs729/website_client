@@ -4,6 +4,12 @@
 .blog-page-container {
   margin-top: 50px;
   padding: 150px;
+  padding-top: 0px;
+}
+.background_image_container {
+  height: 70vh;
+  background-size: cover;
+  margin-top: 90px;
 }
 /* .blog-shades {
   padding: 48px;
@@ -226,12 +232,12 @@
 
 @media only screen and (max-width: 1024px) {
   .blog-page-container {
-    padding: 75px;
+    padding: 20px;
   }
 }
 @media only screen and (max-width: 768px) {
   .blog-page-container {
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 50px;
   }
 }
@@ -242,5 +248,17 @@
   .blog-shades {
     padding: 0px;
     box-shadow: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .background_image_container {
+    height: 50vh;
+    background-size: contain;
+  }
+  .blog-page-container {
+    margin-top: 0px;
+    padding: 20px;
+    padding-top: 0px;
   }
 }

@@ -4,6 +4,7 @@ import Banner from '../../components/banner'
 import Head from 'next/head'
 import Image from 'next/image'
 import ScheduleForm from '../../components/schedule'
+import styles from '../../styles/Services.module.css'
 const techTitle = 'E-commerce Solutions'
 const contentHeader1 = () => {
   return (
@@ -78,6 +79,19 @@ const content1 = () => {
         {/* image required */}
         <div className="shade-1">
           <div className="grey-shade"></div>
+          <h2 className="hire-h2 margin-bottom-24px">
+            Advantages of Hiring Ecommerce Experts
+          </h2>
+          <div className={`${styles.services_image_container}`}>
+            <Image
+              src="/services_images/ecommerce.png"
+              alt="ecommerce"
+              width={600}
+              height={400}
+              priority={true}
+              objectFit="contain"
+            />
+          </div>
           <h2 className="hire-h2 margin-bottom-24px">
             Boost Your Sales With Our E-Commerce Website Development Solutions{' '}
           </h2>

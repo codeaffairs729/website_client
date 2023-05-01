@@ -118,7 +118,7 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
     reader.onload = function () {
       const img = new Image()
       img.onload = function () {
-        if (img.width == 1264 || img.height == 632) {
+        if (img.width == 1920 && img.height == 1080) {
           setImageField(e.target.files[0])
           setImagePreview(imageUrl)
         } else {
@@ -241,7 +241,7 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
               onChange={handleSelectImage}
             />
             <p className="fs-6 text-secondary file-error">
-              Image must be at least 1264 pixels width and 632 pixels height
+              Image must be at least 1920 pixels width and 1080 pixels height
             </p>
             {imagePreview === null ? (
               <div className="upload-banner-img">

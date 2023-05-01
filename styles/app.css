@@ -2901,8 +2901,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   min-width: 180px;
 }
 
-.contact-btn{
-
+.contact-btn {
 }
 .header__bg {
   position: fixed;
@@ -7547,22 +7546,21 @@ body:not(.touch-device) .header__item:hover .header__body {
   margin-bottom: 16px;
   font-size: 48px;
 }
-.sign_title{
-    color:#5956e9;
+.sign_title {
+  color: #5956e9;
 }
-.sign-btn{
-    min-width: 100%;
-    background: #5956e9;
-    color: #fff;
-    height: 72px;
-    border-radius: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: -0.04em;
-    transition: all 0.25s;
+.sign-btn {
+  min-width: 100%;
+  background: #5956e9;
+  color: #fff;
+  height: 72px;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  transition: all 0.25s;
 }
-
 
 .entry__details .entry__info {
   max-width: 280px;
@@ -8180,7 +8178,7 @@ html {
   font-family: 'Mukta', Sans-serif;
   font-size: 16px;
   font-weight: 600;
-  background-color: #2522BA;
+  background-color: #2522ba;
   border-style: solid;
   border-color: #21cdc0;
   border-radius: 12px;
@@ -8296,11 +8294,10 @@ html {
   flex-wrap: wrap;
   gap: 30px;
 }
-.rating-border-left{
+.rating-border-left {
   border-right: 2px solid rgba(106, 103, 103, 0.3);
   padding-right: 10px;
 }
-
 
 @media only screen and (min-width: 768px) {
   .footer__menu {
@@ -8943,8 +8940,7 @@ html {
     height: 240px;
   }
 }
-@media (max-width:1104px){
-
+@media (max-width: 1104px) {
   .header__btn.btn {
     /* min-width: 100px; */
     display: none;
@@ -9409,7 +9405,7 @@ html {
   }
   .header__item:not(:last-child) {
     /* margin-right: 35px; */
-    margin-right: 22px
+    margin-right: 22px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -11341,7 +11337,7 @@ top: 7641px; */
   .freelancer-main__btn {
     font: size 12px;
   }
-  .rating-border-left{
+  .rating-border-left {
     border-right: none;
     padding-right: 0px;
   }
@@ -11450,18 +11446,15 @@ top: 7641px; */
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-
 .editor-container {
   position: relative;
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #fff;
- 
 }
 
 .editor-container.resizable {
   resize: both;
- 
 }
 
 .resizer {

@@ -1,4 +1,4 @@
-.header{
+.header {
   height: 90px;
 }
 
@@ -11,9 +11,10 @@
   align-items: center;
   justify-content: center;
   color: white;
-  
+
   overflow: hidden;
-  background-size:cover;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .case_study {
@@ -52,7 +53,6 @@
 
 .story_text_container {
   /* width: 400px; */
-  
 
   display: flex;
   flex-direction: column;
@@ -120,13 +120,12 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
-@media (max-width:760px) {
-  .solution_image_container{
+@media (max-width: 760px) {
+  .solution_image_container {
     height: 50vh;
     width: 100vw;
   }
 }
-
 
 .the_results_container {
   background-image: url(https://static.vecteezy.com/system/resources/previews/001/987/871/original/abstract-black-stripes-diagonal-background-free-vector.jpg);
@@ -244,7 +243,7 @@
     font-size: 16px;
     font-weight: 500;
   }
-  .header{
+  .header {
     height: 70px;
   }
 }
@@ -274,6 +273,8 @@
     font-size: 14px;
     font-weight: 500;
   }
-  
+  .first_background {
+    background-size: contain;
+    height: 50vh;
+  }
 }
-

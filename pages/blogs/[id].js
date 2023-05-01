@@ -22,55 +22,33 @@ export default function BlogDetails({ blogData }) {
     router.back()
   }
   return (
-    <>
+    <div>
       <Head>
         <title>{blogData[0]?.title}</title>
       </Head>
-      {name && (
-        // <Link href={name ? '/blogs' : '/user-blog-list'}>
-        <div className="blog-back-btn cursor_pointer d-flex ">
-          <div className="align-self-center">
-            <img src="/icons/left-angle.png" style={{ height: '24px' }} />
-          </div>
-          <div
-            className="fs-6  fw-semibold fw-bold"
-            style={{
-              color: '#2522BA',
-              width: '100vw',
-              height: 80,
-              display: 'flex',
-              alignItems: 'center',
-            }}
-            onClick={handleOnBack}
-          >
-            <div>&nbsp;&nbsp;Back</div>
-          </div>
-        </div>
-        // </Link>
-      )}
 
       {blogData.map((e, i) => (
-        <div className="hire-container  blog-page-container " key={i}>
-          <div className="blog-shades">
-            <h1 className="hire-h1">{blogData[i]?.title}</h1>
-            <br />
-            <div className="p-4" style={{ height: 300, width: 500 }}>
-              <img
-                src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${e.image}`}
-                alt="node-guide-image"
-                style={{
-                  height: '100%',
-                  width: '100%',
-                }}
-              />
-            </div>
-            <div className="htmlContent">
-              <div dangerouslySetInnerHTML={{ __html: e.content }} />
+        <>
+          <div
+            className="background_image_container"
+            style={{
+              backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_URL}/upload/${e.image})`,
+              backgroundRepeat: 'no-repeat',
+            }}
+          ></div>
+          <div className="hire-container  blog-page-container " key={i}>
+            <div className="blog-shades">
+              <br />
+              <h1 className="hire-h1">{blogData[i]?.title}</h1>
+
+              <div className="htmlContent">
+                <div dangerouslySetInnerHTML={{ __html: e.content }} />
+              </div>
             </div>
           </div>
-        </div>
+        </>
       ))}
-    </>
+    </div>
   )
 }
 

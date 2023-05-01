@@ -12,6 +12,7 @@ import '../styles/techComponent.css'
 import '../styles/hireServiceLayout.css'
 import '../styles/assisstanceModel.css'
 import '../styles/blog-style.css'
+import '../styles/Services.module.css'
 const Header = dynamic(() => import('./includes/header'), {
   ssr: false,
 })
