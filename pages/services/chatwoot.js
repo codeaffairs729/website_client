@@ -4,6 +4,7 @@ import Banner from '../../components/banner'
 import Head from 'next/head'
 import ScheduleForm from '../../components/schedule'
 import Image from 'next/image'
+import styles from '../../styles/Services.module.css'
 const techTitle = 'Chatwoot'
 
 const contentHeader = () => <div></div>
@@ -102,6 +103,32 @@ const content1 = () => {
           experience to everyone, including your employees, partners, and
           customers.{' '}
         </p>
+        <h3 className="hire-h3 margin-bottom-24px">
+          <b>Privacy Compliant, Open-source, and Self-hosted</b>
+        </h3>
+        <div className={`${styles.services_image_container}`}>
+          <Image
+            src="/services_images/chatwoot_privacy.png"
+            alt="CHATWOOT"
+            width={800}
+            height={800}
+            priority={true}
+            objectFit="contain"
+          />
+        </div>
+        <h3 className="hire-h3 margin-bottom-24px">
+          <b>Build End-To-End Engagement From Anywhere</b>
+        </h3>
+        <div className={`${styles.services_image_container}`}>
+          <Image
+            src="/services_images/chatwoot_image.png"
+            alt="CHATWOOT"
+            width={800}
+            height={800}
+            priority={true}
+            objectFit="contain"
+          />
+        </div>
         <div className="shade-1">
           <div className="grey-shade"></div>
           {/* <h2 className="hire-h2 margin-bottom-24px">
