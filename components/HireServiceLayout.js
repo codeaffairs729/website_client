@@ -20,7 +20,7 @@ const HireServiceLayout = ({
       <div className="hire-container ">
         {isIconExit && (
           <div>
-            <div className="blue-circle"></div>
+            {/* <div className="blue-circle"></div> */}
             <div className="banner-cloud">
               <Image
                 src="/img/cloud.webp"

@@ -110,8 +110,8 @@ const content1 = () => {
           <Image
             src="/services_images/chatwoot_privacy.png"
             alt="CHATWOOT"
-            width={800}
-            height={800}
+            width={700}
+            height={700}
             priority={true}
             objectFit="contain"
           />
@@ -148,6 +148,16 @@ const content1 = () => {
               reply to messages, as well as collaborate with your customers
               instantly.{' '}
             </p>
+            <div className={`${styles.services_image_container}`}>
+              <Image
+                src="/services_images/chatwoot_communication.png"
+                alt="CHATWOOT"
+                width={1000}
+                height={800}
+                priority={true}
+                objectFit="contain"
+              />
+            </div>
           </div>
         </div>
       </div>

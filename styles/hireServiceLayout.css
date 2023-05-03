@@ -147,18 +147,18 @@ li {
   overflow: hidden;
   background: #fafafa;
 }
-.blue-circle {
+/* .blue-circle {
   position: absolute;
   width: 62px;
   height: 62px;
   border-radius: 50%;
   left: -31px;
-  top: 1590px;
-  /* Color/Primary */
-  overflow: hidden;
+  top: 1590px; */
+/* Color/Primary */
+/* overflow: hidden;
 
   background: #5956e9;
-}
+} */
 /* .black-circle {
   position: absolute;
 

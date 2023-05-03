@@ -81,12 +81,14 @@ const content1 = () => {
         <h2 className="hire-h2 margin-bottom-24px">
           Our Process of Building AI Apps Using Open AI
         </h2>
-        <div className={`${styles.services_image_container}`}>
+        <div
+          className={`${styles.services_image_container} ${styles.openai_image} `}
+        >
           <Image
             src="/services_images/openai.png"
             alt="OpenAI Processes"
-            width={600}
-            height={400}
+            width={800}
+            height={800}
             priority={true}
             objectFit="contain"
           />
