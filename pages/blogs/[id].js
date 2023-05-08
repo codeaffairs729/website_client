@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Head from 'next/head'
+import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 
@@ -32,10 +33,18 @@ export default function BlogDetails({ blogData }) {
           <div
             className="background_image_container"
             style={{
-              backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_URL}/upload/${e.image})`,
-              backgroundRepeat: 'no-repeat',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
             }}
-          ></div>
+          >
+            <Image
+              src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${e.image}`}
+              width={3000}
+              height={1080}
+              objectFit="cover"
+            />
+          </div>
           <div className="hire-container  blog-page-container " key={i}>
             <div className="blog-shades">
               <br />

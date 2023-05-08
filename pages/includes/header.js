@@ -104,7 +104,7 @@ const Header = () => {
           <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
           <meta
             name="viewport"
-            // content="width=device-width, initial-scale=0.96, maximum-scale=2.0"
+            // content="width=device-width, initial-scale=0.96, maximum-scale=1.0"
           />
           <meta name="format-detection" content="telephone=no" />
           <link
@@ -183,24 +183,6 @@ const Header = () => {
               }
             >
               <nav className="header__nav">
-                <Link
-                  href="/"
-                  className={
-                    currentPath === '/'
-                      ? 'underline_text'
-                      : !'not_underline_text'
-                  }
-                >
-                  <div
-                    className={
-                      currentPath === '/'
-                        ? 'cursor_pointer header__item nav-css underline_text'
-                        : 'cursor_pointer header__item nav-css'
-                    }
-                  >
-                    Home
-                  </div>
-                </Link>
                 <div
                   className={`header__item ${
                     serviceMenu && 'service-menu-header-item'
@@ -1175,80 +1157,23 @@ const Header = () => {
                                 </div>
                               </Link>
                             </div>
-                            {/* <Slider {...portfolioSettings}>
-                                                        <div className="col-lg-12 header-solutions-outer" >
-                                                            <div className="row" >
-                                                                <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="img/clock.webp" alt="" />
-                                                                </div>
-                                                                <div className="col-lg-9" >
-                                                                    <div className="header__info">UI / UX</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-12 header-solutions-outer" >
-                                                            <div className="row" >
-                                                                <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="/images/bag-front-color.webp" alt="" />
-                                                                </div>
-                                                                <div className="col-lg-9" >
-                                                                    <div className="header__info">E-commerce Solutions</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-12 header-solutions-outer" >
-                                                            <div className="row" >
-                                                                <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="img/clock.webp" alt="" />
-                                                                </div>
-                                                                <div className="col-lg-9" >
-                                                                    <div className="header__info">Content Management System</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-12 header-solutions-outer" >
-                                                            <div className="row" >
-                                                                <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="img/clock.webp" alt="" />
-                                                                </div>
-                                                                <div className="col-lg-9" >
-                                                                    <div className="header__info">Customer Relationship Management</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-12 header-solutions-outer" >
-                                                            <div className="row" >
-                                                                <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="img/clock.webp" alt="" />
-                                                                </div>
-                                                                <div className="col-lg-9" >
-                                                                    <div className="header__info">Internet Marketing</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-12 header-solutions-outer" >
-                                                            <div className="row" >
-                                                                <div className="col-lg-3" >
-                                                                    <img className="header-solutions-icon" src="img/clock.webp" alt="" />
-                                                                </div>
-                                                                <div className="col-lg-9" >
-                                                                    <div className="header__info">Deployment and Host Management</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </Slider> */}
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <Link href="/#portfolio">
+
+                <Link href="/about-us">
                   <div
-                    className="cursor_pointer header__item nav-css"
+                    className={
+                      currentPath === '/about-us'
+                        ? 'cursor_pointer header__item nav-css underline_text'
+                        : 'cursor_pointer header__item nav-css'
+                    }
                     onClick={handleSidebar}
                   >
-                    Portfolio
+                    About Us
                   </div>
                 </Link>
                 <Link href="/careers">
@@ -1263,19 +1188,7 @@ const Header = () => {
                     Careers
                   </div>
                 </Link>
-                <Link href="/about-us">
-                  <div
-                    className={
-                      currentPath === '/about-us'
-                        ? 'cursor_pointer header__item nav-css underline_text'
-                        : 'cursor_pointer header__item nav-css'
-                    }
-                    onClick={handleSidebar}
-                  >
-                    About Us
-                  </div>
-                </Link>
-                <Link href="/user-blog-list">
+                {/* <Link href="/user-blog-list">
                   <div
                     className={
                       currentPath === '/blog-list'
@@ -1286,7 +1199,7 @@ const Header = () => {
                   >
                     Blogs
                   </div>
-                </Link>
+                </Link> */}
               </nav>
               <div className="header__photo">
                 {/* <img

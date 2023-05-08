@@ -30,8 +30,7 @@ const Main = () => {
             <div>
               <div className="ms-3 main__title title title_big" data-aos>
                 <span className="title__box dev-title mb-3">
-                  <span className="title__text" style={{ minWidth: 500 }}>
-                    {/* 'Development', 'Software Engineering', 'Designing', 'App Monitoring', 'Web Solutions', 'Mobile Solutions', 'CRM Solutions', 'CMS Solutions', 'Cloud Services', 'Tech Consulting' */}
+                  {/* <span className="title__text" style={{ minWidth: 500 }}>
                     <Typewriter
                       options={{
                         strings: [
@@ -49,20 +48,16 @@ const Main = () => {
                         cursor: '',
                       }}
                     />
-                  </span>
+                  </span> */}
                 </span>
                 <h1 className="home-header">
-                  <span className="title__box">
-                    <span className="title__text">
-                      <span className="title__line">
-                        Web{' '}
-                        <span className="main-subheadings-span">
-                          Solutions&nbsp;
-                        </span>
-                      </span>
-                    </span>
-                  </span>
-                  <span className="title__box main-android-title-box">
+                  Simplifying <br />
+                  Processes With <br />
+                  Scalable Solutions!
+                  {/* <span className="title__box">
+                    <span className="title__text">Web{' '}</span>
+                  </span> */}
+                  {/* <span className="title__box main-android-title-box">
                     <span className="title__text main-android-title-text">
                       Android / IOS{' '}
                       <span className="main-subheadings-span">Development</span>
@@ -72,13 +67,11 @@ const Main = () => {
                     <span className="title__text">
                       UI / UX{' '}
                       <span className="main-subheadings-span">Designing</span>
-                      {/* <span className="title__color">.</span> */}
                     </span>
-                  </span>
+                  </span> */}
                 </h1>
               </div>
-              {/* <div className="main__info info ms-3 main-info" data-aos="animation-scale-y" data-aos-delay="400"> */}
-              <div className="freelancer-btn ms-3">
+              {/* <div className="freelancer-btn ms-3">
                 <a
                   href="/hire-freelancer"
                   target="_blank"
@@ -93,14 +86,12 @@ const Main = () => {
                 >
                   Hire a team
                 </a>
-              </div>
+              </div> */}
               <div className="main__info info ms-3 main-info">
-                We deliver result-oriented, customized services with an emphasis
-                on providing value. Being a reliable as well as professional
-                software development & consulting company, we possess quality
-                knowledge and tactics to bring it to life.
+                We prioritize quality assurance solutions with a focus on
+                providing up-to-date and researched information.
               </div>
-              <Rating />
+              {/* <Rating /> */}
 
               {/* <div className="main__control ms-3" data-aos="animation-scale-y" data-aos-delay="550"> */}
               <div
@@ -189,12 +180,12 @@ const Main = () => {
             <div className="main__circle js-rellax" data-rellax-speed="2"></div>
             <div className="main__circle js-rellax" data-rellax-speed="1"></div>
             <div className="main__circle js-rellax" data-rellax-speed="2"></div>
-            <div
+            {/* <div
               className="main__circle js-rellax"
               data-rellax-speed=".3"
-            ></div>
-            <div className="main__circle"></div>
-            <div className="main__circle js-rellax" data-rellax-speed="1"></div>
+            ></div> */}
+            {/* <div className="main__circle"></div> */}
+            {/* <div className="main__circle js-rellax" data-rellax-speed="1"></div> */}
           </div>
         </div>
       </div>

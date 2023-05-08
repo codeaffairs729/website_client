@@ -16,12 +16,12 @@ import '../styles/Services.module.css'
 const Header = dynamic(() => import('./includes/header'), {
   ssr: false,
 })
-// const Footer = dynamic(() => import('../components/Footer'), {
-//   ssr: true,
-// })
-const Footer = dynamic(() => import('./includes/footer'), {
+const Footer = dynamic(() => import('../components/Footer'), {
   ssr: true,
 })
+// const Footer = dynamic(() => import('./includes/footer'), {
+//   ssr: true,
+// })
 const ChatwootWidget = dynamic(() => import('../components/ChatwootWidget'), {
   ssr: false,
 })

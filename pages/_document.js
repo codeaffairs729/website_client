@@ -63,6 +63,24 @@ export default function Document() {
           gtag('config', 'G-GT3WPQDNTQ');
     `}
         </Script>
+
+        {/* Add Google Tag Manager script */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-GT3WPQDNTQ"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-GT3WPQDNTQ');
+              `,
+          }}
+        />
         <OrganizationSchema />
         <WebsiteSchema />
         <LocalBusinessSchema />
