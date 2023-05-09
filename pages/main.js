@@ -88,8 +88,10 @@ const Main = () => {
                 </a>
               </div> */}
               <div className="main__info info ms-3 main-info">
-                We prioritize quality assurance solutions with a focus on
-                providing up-to-date and researched information.
+                We have extensive experience in developing high-performance
+                software using full-stack technologies, along with our agile
+                development approach, allows us to facilitate technology-driven
+                business transformation
               </div>
               {/* <Rating /> */}
 

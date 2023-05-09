@@ -118,7 +118,7 @@ const Footer = () => {
                     />
                   </span>
                   <span className={FooterCss.usa_text}>
-                    &nbsp;&nbsp;+91 758 910 3409
+                    &nbsp;&nbsp;+91 760 683 9821
                   </span>
                 </div>
                 {/* <div className={` ${FooterCss.email_container} `}>

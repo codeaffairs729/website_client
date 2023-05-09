@@ -2944,7 +2944,6 @@ body:not(.touch-device) .header__item:hover .header__body {
 .home-header {
   font-weight: bolder;
   line-height: 1.2;
-  font-size: 60px;
 }
 
 .title__box {
