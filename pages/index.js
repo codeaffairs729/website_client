@@ -24,9 +24,9 @@ const Partners = dynamic(() => import('./partners'), {
 const Design = dynamic(() => import('./design'), {
   ssr: false,
 })
-const Teams = dynamic(() => import('./teams'), {
-  ssr: false,
-})
+// const Teams = dynamic(() => import('./teams'), {
+//   ssr: false,
+// })
 
 export default function Home({ data, caseData }) {
   // <----------------Don't delete ---------->
@@ -74,12 +74,12 @@ export default function Home({ data, caseData }) {
         </a>
         <Main />
         <FeatureList />
-        <Package />
-        <Layouts />
+        {/* <Package /> */}
         <Access />
-        <Partners />
-        <Design />
-        <Teams />
+        <Layouts />
+        {/* <Partners /> */}
+        {/* <Design /> */}
+        {/* <Teams /> */}
         <BlogSection data={data} />
         {/* <CaseStudy data={caseData} /> */}
       </div>

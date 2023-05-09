@@ -27,7 +27,6 @@ const Footer = () => {
       setAriaExpandIndustries2(!areaExapandIndustries2)
     }, '100')
   }
-  const handleSidebar = (e) => {}
 
   function useWindowSize() {
     const [windowSize, setWindowSize] = useState({
@@ -51,9 +50,10 @@ const Footer = () => {
     return windowSize
   }
   const width = size.width
+  const height = size.height
   let isShort = false
 
-  if (width < 775) {
+  if (width <= 775) {
     isShort = true
   } else {
     isShort = false
@@ -62,25 +62,9 @@ const Footer = () => {
   return (
     <div className="col">
       <div className={`row ${FooterCss.footer_container}`}>
-        <div
-          id="accordionExample"
-          className={`accordian col-md-6 col-sm-12 ${FooterCss.left_container} `}
-        >
-          <div
-            className={
-              isShort
-                ? ` accordian-item ${FooterCss.left_footer_details}`
-                : ` ${FooterCss.left_footer_details}`
-            }
-          >
-            <div
-              className={` accordion-header accordion-button ${FooterCss.logo_container} `}
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseFour"
-              aria-expanded="true"
-              aria-controls="collapseFour"
-              id="headingOne"
-            >
+        <div className={`col-md-6 col-sm-12 ${FooterCss.left_container} `}>
+          <div className={` ${FooterCss.left_footer_details}`}>
+            <div className={`${FooterCss.logo_container} `}>
               <Image
                 src="/footer-images/Logo__text.svg"
                 alt="Code Garage Tech - Logo"
@@ -89,22 +73,13 @@ const Footer = () => {
                 priority={true}
               />
             </div>
-            <div
-              id="collapseFour"
-              className={
-                isShort
-                  ? `accordion-collapse collapse accordion-body ${FooterCss.left_items_container}`
-                  : `${FooterCss.left_items_container}`
-              }
-              aria-labelledby="headingFour"
-              data-bs-parent="#accordionExample"
-            >
+            <div className={`${FooterCss.left_items_container}`}>
               <div className={` ${FooterCss.header_text} `}>
-                Want to take your business online? <br /> Count on us, we offer
-                the best
-                <br /> software solutions to your business.
+                We ensure the scalability of businesses <br />
+                to meet evolving needs with our optimal <br />
+                approaches.
               </div>
-              <div style={{ margin: 0 }} className="freelancer-btn">
+              {/* <div style={{ margin: 0 }} className="freelancer-btn">
                 <a
                   href="/hire-freelancer"
                   target="_blank"
@@ -119,7 +94,7 @@ const Footer = () => {
                 >
                   Hire a team
                 </a>
-              </div>
+              </div> */}
               <div className={` ${FooterCss.contact_details_container}`}>
                 <div className={`${FooterCss.india_container}`}>
                   <span className="">
@@ -133,6 +108,7 @@ const Footer = () => {
                     &nbsp;&nbsp;+91 758 910 3409
                   </span>
                 </div>
+
                 <div className={`${FooterCss.india_container}`}>
                   <span>
                     <Image
@@ -145,7 +121,7 @@ const Footer = () => {
                     &nbsp;&nbsp;+91 758 910 3409
                   </span>
                 </div>
-                <div className={` ${FooterCss.email_container} `}>
+                {/* <div className={` ${FooterCss.email_container} `}>
                   <span>
                     <Image
                       src="/footer-images/Group.svg"
@@ -157,7 +133,7 @@ const Footer = () => {
                   <span className={FooterCss.email_text}>
                     &nbsp;&nbsp;hr@codegaragetech.com
                   </span>
-                </div>
+                </div> */}
                 <div className={` ${FooterCss.email_container} `}>
                   <span>
                     <Image
@@ -208,6 +184,14 @@ const Footer = () => {
                   <Image
                     src={'/images/Twitter3d.webp'}
                     alt="3D Twitter Icon"
+                    height={35}
+                    width={35}
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={'/images/skype3d.webp'}
+                    alt="3D Skype Icon"
                     height={35}
                     width={35}
                   />
@@ -335,7 +319,7 @@ const Footer = () => {
                   />
                   <div className={`${FooterCss.stack_item_text}`}>Python</div>
                 </div>
-                <div className={`${FooterCss.stack_items}`}>
+                {/* <div className={`${FooterCss.stack_items}`}>
                   <Image
                     src={'/footer-images/Tizen.svg'}
                     alt="Tizen Icon"
@@ -343,7 +327,7 @@ const Footer = () => {
                     width={16}
                   />
                   <div className={`${FooterCss.stack_item_text}`}>Tizen</div>
-                </div>
+                </div> */}
               </div>
             </div>
             <div
@@ -613,21 +597,19 @@ const Footer = () => {
       </div>
       <div className={`row ${FooterCss.footer_footer_container}`}>
         <div className={`col-lg-8 col-sm-12 ${FooterCss.footer_copyright}`}>
-          <div>
-            © Copyright 2022. Code Garage Tech Private Ltd. All Right Reserved.
-          </div>
+          © Copyright 2022. Code Garage Tech Private Ltd.
         </div>
 
         <div
           className={`col-lg-4 col-sm-12  ${FooterCss.footer_copyright_right}`}
         >
           <div className={`${FooterCss.right_links_container}`}>
-            <Link href="/careers">
+            {/* <Link href="/careers">
               <div
                 className="cursor_pointer"
                 style={{ color: 'white', fontSize: 16 }}
               >
-                Careers
+                <span className={`${FooterCss.footer_links}`}>Careers</span>
               </div>
             </Link>
             <Link href="/user-blog-list">
@@ -635,7 +617,7 @@ const Footer = () => {
                 className="cursor_pointer"
                 style={{ color: 'white', fontSize: 16 }}
               >
-                Blogs
+                <span className={`${FooterCss.footer_links}`}>Blogs</span>
               </div>
             </Link>
             <Link href="/contact">
@@ -643,9 +625,10 @@ const Footer = () => {
                 className="cursor_pointer"
                 style={{ color: 'white', fontSize: 16 }}
               >
-                Contact Us
+                <span className={`${FooterCss.footer_links}`}>Contact Us</span>
               </div>
-            </Link>
+            </Link> */}
+            <div>All Rights Reserved.</div>
           </div>
         </div>
       </div>

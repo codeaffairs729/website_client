@@ -1188,6 +1188,18 @@ const Header = () => {
                     Careers
                   </div>
                 </Link>
+                <Link href="/contact">
+                  <div
+                    className={
+                      currentPath === '/contact'
+                        ? 'cursor_pointer header__item nav-css underline_text'
+                        : 'cursor_pointer header__item nav-css'
+                    }
+                    onClick={handleSidebar}
+                  >
+                    Contact Us
+                  </div>
+                </Link>
                 {/* <Link href="/user-blog-list">
                   <div
                     className={
@@ -1217,9 +1229,9 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <div className="header__search js-header-search">
-              {/* Social Media Icons */}
-              {/* <a className="header__open" href="https://www.facebook.com/CodeGarageTech" >
+            {/* <div className="header__search js-header-search"> */}
+            {/* Social Media Icons */}
+            {/* <a className="header__open" href="https://www.facebook.com/CodeGarageTech" >
                             <img className="icon icon-header-img" src="/images/fb35.webp" alt="" />
                         </a>
                         <a className="header__open" href="https://twitter.com/CodeGarageTech" >
@@ -1231,15 +1243,15 @@ const Header = () => {
                         <a className="header__open" href="https://www.instagram.com/codegaragetech/" >
                             <img className="icon icon-header-img" src="/images/instagram.webp" alt="" />
                         </a> */}
-              {/* Social Media Icons */}
+            {/* Social Media Icons */}
 
-              {/* <button onClick={() => headerSearch()} className="header__open js-header-open">
+            {/* <button onClick={() => headerSearch()} className="header__open js-header-open">
                             <svg className="icon icon-search">
                                 <use xlinkHref="img/sprite.svg#icon-search"></use>
                             </svg>
                         </button> */}
-            </div>
-            {/* <div className={ headerSearchBar ? "header__search js-header-search active" : "header__search js-header-search" }>
+          </div>
+          {/* <div className={ headerSearchBar ? "header__search js-header-search active" : "header__search js-header-search" }>
                         <button onClick={() => headerSearch()} className="header__open js-header-open">
                             <svg className="icon icon-search">
                                 <use xlinkHref="img/sprite.svg#icon-search"></use>
@@ -1249,14 +1261,14 @@ const Header = () => {
                             <input className="header__input" type="text" placeholder="Search ..." />
                         </div>
                     </div> */}
-            <a
+          {/* <a
               href="/contact"
               className="header__btn btn-none btn btn_pink"
               target="_blank"
             >
               Get in Touch
             </a>
-          </div>
+          </div> */}
           <div className="header__bg js-header-bg"></div>
         </div>
       </header>

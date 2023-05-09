@@ -2942,8 +2942,9 @@ body:not(.touch-device) .header__item:hover .header__body {
   background: #5956e9;
 }
 .home-header {
-  font-weight: 700;
+  font-weight: bolder;
   line-height: 1.2;
+  font-size: 60px;
 }
 
 .title__box {
@@ -3117,6 +3118,13 @@ body:not(.touch-device) .header__item:hover .header__body {
 .main__preview:not(:last-child) {
   position: absolute;
 }
+.Desktop_Image_container {
+  height: 30vh;
+  width: 30vw;
+  position: relative;
+  left: 600px;
+  bottom: 400px;
+}
 
 .main__view[data-aos] .main__preview {
   opacity: 0;
@@ -3208,20 +3216,20 @@ body:not(.touch-device) .header__item:hover .header__body {
   border-radius: 50%;
 }
 
-.main__circle:first-child {
+/* .main__circle:first-child {
   top: -200px;
   left: -200px;
   width: 400px;
   height: 400px;
-  background: #ffdc60;
-}
+  background: #525260;
+} */
 
 .main__circle:nth-child(2) {
   top: 44%;
   left: calc(50% - 620px);
   width: 48px;
   height: 48px;
-  background: #fab8c4;
+  background: #5956e9;
 }
 
 .main__circle:nth-child(3) {
@@ -3230,7 +3238,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   z-index: 2;
   width: 128px;
   height: 128px;
-  background: #ffdc60;
+  background: #5956e9;
 }
 
 .main__circle:nth-child(4) {
@@ -3241,14 +3249,14 @@ body:not(.touch-device) .header__item:hover .header__body {
   background: #5956e9;
 }
 
-.main__circle:nth-child(5) {
+/* .main__circle:nth-child(5) {
   right: calc(50% - 250px);
   bottom: -90px;
   z-index: 2;
   width: 180px;
   height: 180px;
-  background: #ffdc60;
-}
+  background: #525260;
+} */
 
 .main__circle:nth-child(6) {
   top: 40px;
@@ -4893,7 +4901,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   width: 88px;
   height: 88px;
   border-radius: 50%;
-  background: #fab8c4;
+  background: #5956e9;
 }
 
 .teams .slick-arrow {
@@ -4902,7 +4910,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #fab8c4;
+  background: #5956e9;
   font-size: 0;
   -webkit-transition: all 0.25s;
   -o-transition: all 0.25s;
@@ -11385,6 +11393,12 @@ top: 7641px; */
 /* access page */
 .access-top-heading-text {
   font-size: 40px;
+}
+
+@media (max-width: 1000px) {
+  .access-top-heading-text {
+    font-size: 30px;
+  }
 }
 /* work page */
 .work-text-left-1-font {

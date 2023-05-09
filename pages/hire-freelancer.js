@@ -6,6 +6,7 @@ import ScheduleForm from '../components/schedule'
 
 const techTitle = 'Hire Certified and Professional Software Developers'
 import HireServiceLayout from '../components/HireServiceLayout'
+import { useRouter } from 'next/router'
 
 const bannerImage = [
   { name: 'Ruby on Rails', path: 'icons/rails.webp', altImg: 'Rails PNG' },
@@ -366,6 +367,10 @@ const bannerComponent = () => (
 )
 
 const HireFreelancer = () => {
+  const router = useRouter()
+  const handleOnBack = () => {
+    router.push('/')
+  }
   return (
     <>
       <Head>
@@ -381,6 +386,20 @@ const HireFreelancer = () => {
 "
         />
       </Head>
+
+      <div className="blog-back-btn cursor_pointer d-flex ">
+        <div className="align-self-center">
+          <img src="/icons/left-angle.png" style={{ height: '24px' }} />
+        </div>
+        <div
+          className="fs-6  fw-semibold fw-bold"
+          style={{ color: '#2522BA' }}
+          onClick={handleOnBack}
+        >
+          &nbsp;&nbsp;Back
+        </div>
+      </div>
+
       <HireServiceLayout
         content1={content1}
         content2={content2}
