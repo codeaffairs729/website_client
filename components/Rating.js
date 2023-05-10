@@ -2,7 +2,7 @@ const Rating = () => {
   return (
     <div className="rating">
       <div className="rating-container d-flex flex-column justify-content-between">
-        <div className="rating-text">Top Rated On</div>
+        <div className="rating-text fw-bold fs-5">Top Rated On</div>
         <div className="rating-row">
           <div className="d-flex flex-column justify-content-between rating-border-left">
             <div>

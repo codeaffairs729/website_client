@@ -2564,7 +2564,7 @@ body.no-scroll {
 
 .header__item:not(:last-child) {
   /* margin-right: 57px; */
-  margin-right: 75px;
+  margin-right: 50px;
 }
 
 .header__item[href],
@@ -2942,6 +2942,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   background: #5956e9;
 }
 .home-header {
+  font-size: 52px;
   font-weight: bolder;
   line-height: 1.2;
 }
@@ -3025,16 +3026,22 @@ body:not(.touch-device) .header__item:hover .header__body {
 }
 
 .main__wrap {
-  margin-top: 85px;
-  max-width: 440px;
+  margin-top: 15px;
+  /* max-width: 440px; */
 }
 
+.main-big-blue-circle {
+  position: absolute;
+  right: -357px;
+  top: 150px;
+}
 .main__title {
   margin-bottom: 21px;
 }
 
 .main__info {
-  max-width: 320px;
+  /* max-width: 320px; */
+  padding-right: 90px;
   margin-bottom: -15px;
 }
 
@@ -8221,7 +8228,7 @@ html {
   position: relative;
   /* border: 0.5px solid #ccc; */
   /* padding: 50px 65px 70px; */
-  padding: 150px 65px 70px;
+  padding: 0px 65px 70px;
   z-index: 700;
   /* height: 5000px; */
 }
@@ -8323,6 +8330,16 @@ html {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .main-big-blue-circle {
+    position: absolute;
+    right: -417px;
+    top: 100px;
+  }
+  .home-header {
+    font-size: 38px;
+  }
+}
 @media only screen and (min-width: 1540px) {
   .design__hand {
     right: 0;
@@ -9366,7 +9383,7 @@ html {
     font: size 16px;
   }
   .feature-list {
-    padding: 150px 20px 100px;
+    padding: 0px 20px 100px;
   }
   .mfp-arrow {
     -webkit-transform: scale(0.75);
@@ -9533,7 +9550,7 @@ html {
     max-width: 100%;
   }
   .main__title {
-    max-width: 400px;
+    /* max-width: 400px; */
     margin-bottom: 40px;
   }
   .main__title br {
@@ -9541,6 +9558,10 @@ html {
   }
   .main__info {
     max-width: 100%;
+    padding-right: 0px;
+  }
+  .rating-container {
+    gap: 20px;
   }
   .main__btn {
     height: 64px;
@@ -10882,13 +10903,13 @@ html {
     min-height: 200px;
   }
   .main__title {
-    max-width: 300px;
+    /* max-width: 300px; */
   }
   .main__title br {
     display: block;
   }
   .main__info {
-    max-width: 230px;
+    /* max-width: 230px; */
   }
   .features__info {
     max-width: 250px;

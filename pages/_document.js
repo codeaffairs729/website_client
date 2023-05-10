@@ -65,7 +65,7 @@ export default function Document() {
         </Script>
 
         {/* Add Google Tag Manager script */}
-        <Script
+        {/* <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-GT3WPQDNTQ"
           strategy="afterInteractive"
         />
@@ -80,7 +80,7 @@ export default function Document() {
                 gtag('config', 'G-GT3WPQDNTQ');
               `,
           }}
-        />
+        /> */}
         <OrganizationSchema />
         <WebsiteSchema />
         <LocalBusinessSchema />

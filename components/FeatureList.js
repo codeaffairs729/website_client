@@ -5,7 +5,7 @@ const FeatureList = () => {
     <div className="feature-list container">
       <div>
         <Image
-          src="/icons/Ellipse-pink-full.svg"
+          src="/icons/Ellipse-blue-full.svg"
           alt=""
           width={56}
           height={56}

@@ -11,6 +11,7 @@ const Footer = () => {
   const [areaExapand, setAriaExpand] = useState(false)
   const [areaExapandIndustries1, setAriaExpandIndustries1] = useState(false)
   const [areaExapandIndustries2, setAriaExpandIndustries2] = useState(false)
+  const pathname = router.pathname
 
   const handleAreaExpand = () => {
     setTimeout(() => {
@@ -33,6 +34,7 @@ const Footer = () => {
       width: undefined,
       height: undefined,
     })
+
     useEffect(() => {
       function handleResize() {
         setWindowSize({
@@ -105,7 +107,7 @@ const Footer = () => {
                     />
                   </span>
                   <span className={FooterCss.india_text}>
-                    &nbsp;&nbsp;+91 758 910 3409
+                    &nbsp;&nbsp;+91 8146394889
                   </span>
                 </div>
 
@@ -118,7 +120,7 @@ const Footer = () => {
                     />
                   </span>
                   <span className={FooterCss.usa_text}>
-                    &nbsp;&nbsp;+91 760 683 9821
+                    &nbsp;&nbsp;+1 760 683 9821
                   </span>
                 </div>
                 {/* <div className={` ${FooterCss.email_container} `}>
@@ -142,10 +144,15 @@ const Footer = () => {
                       height={24}
                     />
                   </span>
-
-                  <span className={FooterCss.email_text}>
-                    &nbsp;&nbsp;sales@codegaragetech.com
-                  </span>
+                  {pathname == '/careers' ? (
+                    <span className={FooterCss.email_text}>
+                      &nbsp;&nbsp;hr@codegaragetech.com
+                    </span>
+                  ) : (
+                    <span className={FooterCss.email_text}>
+                      &nbsp;&nbsp;sales@codegaragetech.com
+                    </span>
+                  )}
                 </div>
               </div>
               <div className={` ${FooterCss.address_text}  `}>
@@ -156,46 +163,81 @@ const Footer = () => {
               </div>
 
               <div className={`${FooterCss.social_links_container}`}>
-                <div>
-                  <Image
-                    src={'/images/LinkedIn3d.webp'}
-                    alt="3D LinkedIn Icon"
-                    height={35}
-                    width={35}
-                  />
-                </div>
-                <div>
-                  <Image
-                    src={'/images/Facebook3d.webp'}
-                    alt="3D Facebook Icon"
-                    height={35}
-                    width={35}
-                  />
-                </div>
-                <div>
-                  <Image
-                    src={'/images/Instagram3d.webp'}
-                    alt="3D Instagram Icon"
-                    height={35}
-                    width={35}
-                  />
-                </div>
-                <div>
-                  <Image
-                    src={'/images/Twitter3d.webp'}
-                    alt="3D Twitter Icon"
-                    height={35}
-                    width={35}
-                  />
-                </div>
-                <div>
-                  <Image
-                    src={'/images/skype3d.webp'}
-                    alt="3D Skype Icon"
-                    height={35}
-                    width={35}
-                  />
-                </div>
+                <a
+                  href="https://in.linkedin.com/company/codegarage-tech"
+                  className="cursor_pointer"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div>
+                    <Image
+                      src={'/images/LinkedIn3d.webp'}
+                      alt="3D LinkedIn Icon"
+                      height={35}
+                      width={35}
+                    />
+                  </div>
+                </a>
+                <a
+                  className="cursor_pointer"
+                  href="https://www.facebook.com/codegaragetech/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div>
+                    <Image
+                      src={'/images/Facebook3d.webp'}
+                      alt="3D Facebook Icon"
+                      height={35}
+                      width={35}
+                    />
+                  </div>
+                </a>
+                <a
+                  className="cursor_pointer"
+                  href="https://www.instagram.com/codegaragetech/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div>
+                    <Image
+                      src={'/images/Instagram3d.webp'}
+                      alt="3D Instagram Icon"
+                      height={35}
+                      width={35}
+                    />
+                  </div>
+                </a>
+                <a
+                  className="cursor_pointer"
+                  href="https://twitter.com/codegaragetech"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div>
+                    <Image
+                      src={'/images/Twitter3d.webp'}
+                      alt="3D Twitter Icon"
+                      height={35}
+                      width={35}
+                    />
+                  </div>
+                </a>
+                <a
+                  className="cursor_pointer"
+                  href="https://join.skype.com/invite/sJVyftWdVzOu"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div>
+                    <Image
+                      src={'/images/skype3d.webp'}
+                      alt="3D Skype Icon"
+                      height={35}
+                      width={35}
+                    />
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -252,73 +294,106 @@ const Footer = () => {
                 aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample"
               >
-                <div className={`${FooterCss.stack_items}`}>
-                  <Image
-                    src={'/footer-images/Ruby.svg'}
-                    alt="Ruby Icon"
-                    height={16}
-                    width={16}
-                  />
-                  <div className={`${FooterCss.stack_item_text}`}>
-                    Ruby on Rails
+                <Link href="/services/web-solutions/#ruby-rails">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    <Image
+                      src={'/footer-images/Ruby.svg'}
+                      alt="Ruby Icon"
+                      height={16}
+                      width={16}
+                    />
+                    <div className={`${FooterCss.stack_item_text}`}>
+                      Ruby on Rails
+                    </div>
                   </div>
-                </div>
-                <div className={`${FooterCss.stack_items}`}>
-                  <Image
-                    src={'/footer-images/Node.svg'}
-                    alt="Node Icon"
-                    height={16}
-                    width={16}
-                  />
-                  <div className={`${FooterCss.stack_item_text}`}>Node.js</div>
-                </div>
-                <div className={`${FooterCss.stack_items}`}>
-                  <Image
-                    src={'/footer-images/Javascript.svg'}
-                    alt="Java script Icon"
-                    height={16}
-                    width={16}
-                  />
-                  <div className={`${FooterCss.stack_item_text}`}>
-                    Javascript
+                </Link>
+                <Link href="/services/web-solutions/#laravel">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    <Image
+                      src={'/icons/laravel.webp'}
+                      alt="Node Icon"
+                      height={16}
+                      width={16}
+                    />
+                    <div className={`${FooterCss.stack_item_text}`}>
+                      Laravel
+                    </div>
                   </div>
-                </div>
-                <div className={`${FooterCss.stack_items}`}>
-                  <Image
-                    src={'/footer-images/Php.svg'}
-                    alt="Php Icon"
-                    height={16}
-                    width={16}
-                  />
-                  <div className={`${FooterCss.stack_item_text}`}>PHP</div>
-                </div>
-                <div className={`${FooterCss.stack_items}`}>
-                  <Image
-                    src={'/footer-images/Android.svg'}
-                    alt="Android Icon"
-                    height={16}
-                    width={16}
-                  />
-                  <div className={`${FooterCss.stack_item_text}`}>Android</div>
-                </div>
-                <div className={`${FooterCss.stack_items}`}>
-                  <Image
-                    src={'/footer-images/React.svg'}
-                    alt="React Icon"
-                    height={16}
-                    width={16}
-                  />
-                  <div className={`${FooterCss.stack_item_text}`}>React</div>
-                </div>
-                <div className={`${FooterCss.stack_items}`}>
-                  <Image
-                    src={'/footer-images/Python.svg'}
-                    alt="Python Icon"
-                    height={16}
-                    width={16}
-                  />
-                  <div className={`${FooterCss.stack_item_text}`}>Python</div>
-                </div>
+                </Link>
+                <Link href="/services/reactjs-nextjs">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    <Image
+                      src={'/footer-images/nextjs-white-bg.png'}
+                      alt="Tizen Icon"
+                      height={16}
+                      width={16}
+                    />
+                    <div className={`${FooterCss.stack_item_text}`}>NextJS</div>
+                  </div>
+                </Link>
+                <Link href="/services/mobile-solutions/#flutter">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    <Image
+                      src={'/images/flutter.webp'}
+                      alt="Node Icon"
+                      height={16}
+                      width={16}
+                    />
+                    <div className={`${FooterCss.stack_item_text}`}>
+                      Flutter
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/services/mobile-solutions/#android">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    <Image
+                      src={'/footer-images/Android.svg'}
+                      alt="Android Icon"
+                      height={16}
+                      width={16}
+                    />
+                    <div className={`${FooterCss.stack_item_text}`}>
+                      Android
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/services/mobile-solutions/#ios">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    <Image
+                      src={'/icons/ios.webp'}
+                      alt="Android Icon"
+                      height={16}
+                      width={16}
+                    />
+                    <div className={`${FooterCss.stack_item_text}`}>IOS</div>
+                  </div>
+                </Link>
+
+                <Link href="/services/devops">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    <Image
+                      src={'/footer-images/devops.png'}
+                      alt="React Icon"
+                      height={16}
+                      width={16}
+                    />
+                    <div className={`${FooterCss.stack_item_text}`}>DevOps</div>
+                  </div>
+                </Link>
+                <Link href="/services/web-solutions/#wordpress">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    <Image
+                      src={'/icons/wordpress.webp'}
+                      alt="React Icon"
+                      height={16}
+                      width={16}
+                    />
+                    <div className={`${FooterCss.stack_item_text}`}>
+                      Wordpress
+                    </div>
+                  </div>
+                </Link>
+
                 {/* <div className={`${FooterCss.stack_items}`}>
                   <Image
                     src={'/footer-images/Tizen.svg'}
@@ -377,18 +452,20 @@ const Footer = () => {
                 aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample"
               >
-                <div className={`${FooterCss.stack_items}`}>
-                  <Image
-                    src={'/footer-images/commerce.png'}
-                    alt="Ruby Icon"
-                    height={16}
-                    width={16}
-                  />
-                  <div className={`${FooterCss.stack_item_text}`}>
-                    E-commerce
+                <Link href="/services/ecommerce-solutions">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    <Image
+                      src={'/footer-images/commerce.png'}
+                      alt="Ruby Icon"
+                      height={16}
+                      width={16}
+                    />
+                    <div className={`${FooterCss.stack_item_text}`}>
+                      E-commerce
+                    </div>
                   </div>
-                </div>
-                <div className={`${FooterCss.stack_items}`}>
+                </Link>
+                <div className={`${FooterCss.stack_items} cursor_pointer`}>
                   <Image
                     src={'/footer-images/healthcare.png'}
                     alt="Node Icon"
@@ -401,24 +478,13 @@ const Footer = () => {
                 </div>
                 <div className={`${FooterCss.stack_items}`}>
                   <Image
-                    src={'/footer-images/logistics.png'}
-                    alt="Java script Icon"
-                    height={16}
-                    width={16}
-                  />
-                  <div className={`${FooterCss.stack_item_text}`}>
-                    Logistics
-                  </div>
-                </div>
-                <div className={`${FooterCss.stack_items}`}>
-                  <Image
                     src={'/footer-images/education.png'}
                     alt="Php Icon"
                     height={16}
                     width={16}
                   />
                   <div className={`${FooterCss.stack_item_text}`}>
-                    Education
+                    Education & E-Learning
                   </div>
                 </div>
                 <div className={`${FooterCss.stack_items}`}>
@@ -434,32 +500,45 @@ const Footer = () => {
                 </div>
                 <div className={`${FooterCss.stack_items}`}>
                   <Image
-                    src={'/footer-images/video.png'}
-                    alt="React Icon"
-                    height={16}
-                    width={16}
-                  />
-                  <div className={`${FooterCss.stack_item_text}`}>
-                    Video Streaming
-                  </div>
-                </div>
-                <div className={`${FooterCss.stack_items}`}>
-                  <Image
-                    src={'/footer-images/fitness.png'}
-                    alt="Python Icon"
-                    height={16}
-                    width={16}
-                  />
-                  <div className={`${FooterCss.stack_item_text}`}>Fitness</div>
-                </div>
-                <div className={`${FooterCss.stack_items}`}>
-                  <Image
                     src={'/footer-images/travel.png'}
                     alt="Tizen Icon"
                     height={16}
                     width={16}
                   />
-                  <div className={`${FooterCss.stack_item_text}`}>Travel</div>
+                  <div className={`${FooterCss.stack_item_text}`}>
+                    Travel & Tourism
+                  </div>
+                </div>
+                <div className={`${FooterCss.stack_items}`}>
+                  <Image
+                    src={'/footer-images/building.png'}
+                    alt="Tizen Icon"
+                    height={16}
+                    width={16}
+                  />
+                  <div className={`${FooterCss.stack_item_text}`}>
+                    Real Estate
+                  </div>
+                </div>
+                <div className={`${FooterCss.stack_items}`}>
+                  <Image
+                    src={'/footer-images/fintech.png'}
+                    alt="Tizen Icon"
+                    height={16}
+                    width={16}
+                  />
+                  <div className={`${FooterCss.stack_item_text}`}>Fintech</div>
+                </div>
+                <div className={`${FooterCss.stack_items}`}>
+                  <Image
+                    src={'/footer-images/automotive.png'}
+                    alt="Tizen Icon"
+                    height={16}
+                    width={16}
+                  />
+                  <div className={`${FooterCss.stack_item_text}`}>
+                    Automotive
+                  </div>
                 </div>
               </div>
             </div>
@@ -484,7 +563,7 @@ const Footer = () => {
                     aria-expanded="true"
                     aria-controls="collapseThree"
                   >
-                    Industries
+                    Hire Developers
                   </button>
                   {areaExapandIndustries2 ? (
                     <Image src="/footer-images/up.png" width={16} height={16} />
@@ -497,7 +576,9 @@ const Footer = () => {
                   )}
                 </div>
               ) : (
-                <span className={`${FooterCss.stack_text}`}>Industries</span>
+                <span className={`${FooterCss.stack_text}`}>
+                  Hire Developers
+                </span>
               )}
 
               <div
@@ -510,86 +591,102 @@ const Footer = () => {
                 aria-labelledby="headingThree"
                 data-bs-parent="#accordionExample"
               >
-                <div className={`${FooterCss.stack_items}`}>
-                  <Image
-                    src={'/footer-images/dating.png'}
-                    alt="Ruby Icon"
-                    height={16}
-                    width={16}
-                  />
-                  <div className={`${FooterCss.stack_item_text}`}>Dating</div>
-                </div>
-                <div className={`${FooterCss.stack_items}`}>
-                  <Image
-                    src={'/footer-images/manufacturing.png'}
-                    alt="Node Icon"
-                    height={16}
-                    width={16}
-                  />
-                  <div className={`${FooterCss.stack_item_text}`}>
-                    Manufacturing
+                <Link href="/services/mobile-solutions/#mobile_react">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    <Image
+                      src={'/icons/react_native.webp'}
+                      alt="Ruby Icon"
+                      height={16}
+                      width={16}
+                    />
+                    <div className={`${FooterCss.stack_item_text}`}>
+                      React Native
+                    </div>
                   </div>
-                </div>
-                <div className={`${FooterCss.stack_items}`}>
-                  <Image
-                    src={'/footer-images/estate.png'}
-                    alt="Java script Icon"
-                    height={16}
-                    width={16}
-                  />
-                  <div className={`${FooterCss.stack_item_text}`}>
-                    Real estate
+                </Link>
+                <Link href="/services/reactjs-nextjs">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    <Image
+                      src={'/footer-images/nextjs-white-bg.png'}
+                      alt="Tizen Icon"
+                      height={16}
+                      width={16}
+                    />
+                    <div className={`${FooterCss.stack_item_text}`}>NextJS</div>
                   </div>
-                </div>
-                <div className={`${FooterCss.stack_items}`}>
-                  <Image
-                    src={'/footer-images/grocery.png'}
-                    alt="Php Icon"
-                    height={16}
-                    width={16}
-                  />
-                  <div className={`${FooterCss.stack_item_text}`}>Grocery</div>
-                </div>
-                <div className={`${FooterCss.stack_items}`}>
-                  <Image
-                    src={'/footer-images/fintech.png'}
-                    alt="Android Icon"
-                    height={16}
-                    width={16}
-                  />
-                  <div className={`${FooterCss.stack_item_text}`}>Fintech</div>
-                </div>
-                <div className={`${FooterCss.stack_items}`}>
-                  <Image
-                    src={'/footer-images/entertainment.png'}
-                    alt="React Icon"
-                    height={16}
-                    width={16}
-                  />
-                  <div className={`${FooterCss.stack_item_text}`}>
-                    Entertainment
+                </Link>
+                <Link href="/services/vuejs-nuxtjs">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    <Image
+                      src={'/icons/vuejs.webp'}
+                      alt="Java script Icon"
+                      height={16}
+                      width={16}
+                    />
+                    <div className={`${FooterCss.stack_item_text}`}>NuxtJs</div>
                   </div>
-                </div>
-                <div className={`${FooterCss.stack_items}`}>
-                  <Image
-                    src={'/footer-images/retail.png'}
-                    alt="Python Icon"
-                    height={16}
-                    width={16}
-                  />
-                  <div className={`${FooterCss.stack_item_text}`}>Retail</div>
-                </div>
-                <div className={`${FooterCss.stack_items}`}>
-                  <Image
-                    src={'/footer-images/automotive.png'}
-                    alt="Tizen Icon"
-                    height={16}
-                    width={16}
-                  />
-                  <div className={`${FooterCss.stack_item_text}`}>
-                    Automotive
+                </Link>
+                <Link href="/services/web-solutions/#nodejs">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    <Image
+                      src={'/icons/node_2.webp'}
+                      alt="Php Icon"
+                      height={16}
+                      width={16}
+                    />
+                    <div className={`${FooterCss.stack_item_text}`}>NodeJS</div>
                   </div>
-                </div>
+                </Link>
+                <Link href="/services/devops">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    <Image
+                      src={'/footer-images/devops.png'}
+                      alt="Android Icon"
+                      height={16}
+                      width={16}
+                    />
+                    <div className={`${FooterCss.stack_item_text}`}>DevOps</div>
+                  </div>
+                </Link>
+                <Link href="/services/openAi">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    <Image
+                      src={'/footer-images/openai-invert.png'}
+                      alt="React Icon"
+                      height={16}
+                      width={16}
+                    />
+                    <div className={`${FooterCss.stack_item_text}`}>
+                      Open AI
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/services/web-solutions/#shopify">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    <Image
+                      src={'/images/shopify_icon.webp'}
+                      alt="Python Icon"
+                      height={16}
+                      width={16}
+                    />
+                    <div className={`${FooterCss.stack_item_text}`}>
+                      Shopify
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/services/web-solutions/#ruby-rails">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    <Image
+                      src={'/footer-images/Ruby.svg'}
+                      alt="Ruby Icon"
+                      height={16}
+                      width={16}
+                    />
+                    <div className={`${FooterCss.stack_item_text}`}>
+                      Ruby on Rails
+                    </div>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
