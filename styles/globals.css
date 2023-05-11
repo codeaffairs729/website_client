@@ -2046,7 +2046,13 @@ body:not(.touch-device) .header-item[href]:before {
   background-size: cover;
   position: relative;
   overflow: hidden;
-  height: 1150px;
+  min-height: 1000px;
+}
+
+@media (max-width: 1000px) {
+  .about-area-2 {
+    min-height: 1200px;
+  }
 }
 
 .about-area-2-grey-circle {
@@ -2411,7 +2417,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-7-left-outer {
-  padding: 7rem 0 7rem 7rem;
+  padding: 5rem 0 5rem 5rem;
 }
 
 .about-area-7-para {
@@ -4633,7 +4639,7 @@ body:not(.touch-device) .header-item[href]:before {
   }
 
   .about-area-2 {
-    height: 1640px;
+    height: 1440px;
   }
 
   .about-area-2-outer-col {
@@ -5051,7 +5057,7 @@ body:not(.touch-device) .header-item[href]:before {
     /* line-height: 0.5px; */
   }
   .about-area-2-outer-row {
-    padding: 125px 0;
+    padding: 125px 0 0;
   }
 
   .about-area-4-main-img-text-area {

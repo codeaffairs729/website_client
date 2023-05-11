@@ -7498,7 +7498,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 60px;
-  padding: 48px 0;
+  padding: 100px 0 40px;
 }
 
 .entry__logo {
@@ -7652,7 +7652,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 }
 
 .entry__bg {
-  top: 0;
+  top: 100px;
   left: calc(50% - 1070px);
   z-index: -2;
   width: 1050px;
@@ -8937,7 +8937,7 @@ html {
   }
   .entry__head {
     margin-bottom: 40px;
-    padding: 40px 0;
+    padding: 100px 0 40px;
   }
   .entry__details {
     max-width: 330px;

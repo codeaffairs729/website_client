@@ -55,7 +55,7 @@ const Footer = () => {
   const height = size.height
   let isShort = false
 
-  if (width <= 775) {
+  if (width <= 800) {
     isShort = true
   } else {
     isShort = false
@@ -248,7 +248,11 @@ const Footer = () => {
         <div className={`col-md-6 col-sm-12 ${FooterCss.right}`}>
           <div
             id="accordionExample"
-            className={`accordian col-md-6 col-sm-12 p-3 ${FooterCss.right_container}`}
+            className={
+              isShort
+                ? `accordian w-100 col-md-6 col-sm-12 p-3 ${FooterCss.right_container}`
+                : `w-100 col-md-6 col-sm-12 p-3 ${FooterCss.right_container}`
+            }
           >
             <div
               className={

@@ -24,6 +24,7 @@ const Partners = dynamic(() => import('./partners'), {
 const Design = dynamic(() => import('./design'), {
   ssr: false,
 })
+
 // const Teams = dynamic(() => import('./teams'), {
 //   ssr: false,
 // })
