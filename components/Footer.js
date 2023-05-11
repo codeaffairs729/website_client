@@ -275,6 +275,7 @@ const Footer = () => {
                   ) : (
                     <Image
                       src="/footer-images/down.png"
+                      alt="down-arrow-png"
                       width={16}
                       height={16}
                     />
@@ -324,7 +325,7 @@ const Footer = () => {
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
                     <Image
                       src={'/footer-images/nextjs-white-bg.png'}
-                      alt="Tizen Icon"
+                      alt="NextJs Icon"
                       height={16}
                       width={16}
                     />
@@ -335,7 +336,7 @@ const Footer = () => {
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
                     <Image
                       src={'/images/flutter.webp'}
-                      alt="Node Icon"
+                      alt="flutter-Icon"
                       height={16}
                       width={16}
                     />
@@ -347,8 +348,8 @@ const Footer = () => {
                 <Link href="/services/mobile-solutions/#android">
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
                     <Image
-                      src={'/footer-images/Android.svg'}
-                      alt="Android Icon"
+                      src={'/footer-images/Android_robot.svg.png'}
+                      alt="android-Icon"
                       height={16}
                       width={16}
                     />
@@ -361,7 +362,7 @@ const Footer = () => {
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
                     <Image
                       src={'/icons/ios.webp'}
-                      alt="Android Icon"
+                      alt="IOS-Icon"
                       height={16}
                       width={16}
                     />
@@ -373,7 +374,7 @@ const Footer = () => {
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
                     <Image
                       src={'/footer-images/devops.png'}
-                      alt="React Icon"
+                      alt="DevOps-icon"
                       height={16}
                       width={16}
                     />
@@ -384,7 +385,7 @@ const Footer = () => {
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
                     <Image
                       src={'/icons/wordpress.webp'}
-                      alt="React Icon"
+                      alt="Wordpress-icon"
                       height={16}
                       width={16}
                     />
@@ -433,6 +434,7 @@ const Footer = () => {
                   ) : (
                     <Image
                       src="/footer-images/down.png"
+                      alt="down-arrow-png"
                       width={16}
                       height={16}
                     />
@@ -456,7 +458,7 @@ const Footer = () => {
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
                     <Image
                       src={'/footer-images/commerce.png'}
-                      alt="Ruby Icon"
+                      alt="E-commerce-Icon"
                       height={16}
                       width={16}
                     />
@@ -468,7 +470,7 @@ const Footer = () => {
                 <div className={`${FooterCss.stack_items} cursor_pointer`}>
                   <Image
                     src={'/footer-images/healthcare.png'}
-                    alt="Node Icon"
+                    alt="Healthcare-Icon"
                     height={16}
                     width={16}
                   />
@@ -479,7 +481,7 @@ const Footer = () => {
                 <div className={`${FooterCss.stack_items}`}>
                   <Image
                     src={'/footer-images/education.png'}
-                    alt="Php Icon"
+                    alt="education-icon"
                     height={16}
                     width={16}
                   />
@@ -490,7 +492,7 @@ const Footer = () => {
                 <div className={`${FooterCss.stack_items}`}>
                   <Image
                     src={'/footer-images/social.png'}
-                    alt="Android Icon"
+                    alt="social-networking-icon"
                     height={16}
                     width={16}
                   />
@@ -501,7 +503,7 @@ const Footer = () => {
                 <div className={`${FooterCss.stack_items}`}>
                   <Image
                     src={'/footer-images/travel.png'}
-                    alt="Tizen Icon"
+                    alt="Travel-icon"
                     height={16}
                     width={16}
                   />
@@ -512,7 +514,7 @@ const Footer = () => {
                 <div className={`${FooterCss.stack_items}`}>
                   <Image
                     src={'/footer-images/building.png'}
-                    alt="Tizen Icon"
+                    alt="Real-Icon"
                     height={16}
                     width={16}
                   />
@@ -523,7 +525,7 @@ const Footer = () => {
                 <div className={`${FooterCss.stack_items}`}>
                   <Image
                     src={'/footer-images/fintech.png'}
-                    alt="Tizen Icon"
+                    alt="Fintech Icon"
                     height={16}
                     width={16}
                   />
@@ -532,7 +534,7 @@ const Footer = () => {
                 <div className={`${FooterCss.stack_items}`}>
                   <Image
                     src={'/footer-images/automotive.png'}
-                    alt="Tizen Icon"
+                    alt="Automotive Icon"
                     height={16}
                     width={16}
                   />
@@ -570,6 +572,7 @@ const Footer = () => {
                   ) : (
                     <Image
                       src="/footer-images/down.png"
+                      alt="down-arrow-png"
                       width={16}
                       height={16}
                     />
@@ -595,7 +598,7 @@ const Footer = () => {
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
                     <Image
                       src={'/icons/react_native.webp'}
-                      alt="Ruby Icon"
+                      alt="React-native-icon"
                       height={16}
                       width={16}
                     />
@@ -608,7 +611,7 @@ const Footer = () => {
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
                     <Image
                       src={'/footer-images/nextjs-white-bg.png'}
-                      alt="Tizen Icon"
+                      alt="NextJS Icon"
                       height={16}
                       width={16}
                     />
@@ -618,8 +621,8 @@ const Footer = () => {
                 <Link href="/services/vuejs-nuxtjs">
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
                     <Image
-                      src={'/icons/vuejs.webp'}
-                      alt="Java script Icon"
+                      src={'/footer-images/nuxt-seeklogo.com.svg'}
+                      alt="NuxtJs Icon"
                       height={16}
                       width={16}
                     />
@@ -630,7 +633,7 @@ const Footer = () => {
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
                     <Image
                       src={'/icons/node_2.webp'}
-                      alt="Php Icon"
+                      alt="nodejs-logo"
                       height={16}
                       width={16}
                     />
@@ -641,7 +644,7 @@ const Footer = () => {
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
                     <Image
                       src={'/footer-images/devops.png'}
-                      alt="Android Icon"
+                      alt="DevOps-logo"
                       height={16}
                       width={16}
                     />
@@ -652,7 +655,7 @@ const Footer = () => {
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
                     <Image
                       src={'/footer-images/openai-invert.png'}
-                      alt="React Icon"
+                      alt="Open-AI-logo"
                       height={16}
                       width={16}
                     />
@@ -665,7 +668,7 @@ const Footer = () => {
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
                     <Image
                       src={'/images/shopify_icon.webp'}
-                      alt="Python Icon"
+                      alt="Shopify-logo"
                       height={16}
                       width={16}
                     />
@@ -678,7 +681,7 @@ const Footer = () => {
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
                     <Image
                       src={'/footer-images/Ruby.svg'}
-                      alt="Ruby Icon"
+                      alt="Ruby-logo"
                       height={16}
                       width={16}
                     />
