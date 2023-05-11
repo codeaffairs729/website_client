@@ -31,7 +31,7 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
                 <br />
                 <div className="d-flex justify-content-between">
                   <span className="text-primary fw-bold">
-                    <Link href={`/${db}/${e.id}`}>
+                    <Link href={`/${db}/${e.slug}`}>
                       <span className="text-blue link-text fs-6 fw-semibold cursor_pointer">
                         READ MORE
                       </span>
@@ -39,7 +39,7 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
                   </span>
                   {authorized && (
                     <>
-                      <Link href={`/${db}/edit/${e.id}`}>
+                      <Link href={`/${db}/edit/${e.slug}`}>
                         <span className="text-primary fw-bold">
                           <span className=" text-blue link-text fs-6 fw-semibold cursor_pointer">
                             EDIT

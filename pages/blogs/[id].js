@@ -37,6 +37,7 @@ export default function BlogDetails({ blogData }) {
               justifyContent: 'center',
               alignItems: 'center',
             }}
+            key={e.id}
           >
             <Image
               src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${e.image}`}
@@ -62,9 +63,8 @@ export default function BlogDetails({ blogData }) {
 }
 
 export async function getServerSideProps({ params }) {
-  const { id } = params
   const res = await await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/blogs/${id}`
+    `${process.env.NEXT_PUBLIC_BASE_URL}/blogs/slug/${params.id}`
   )
   const blogData = await res.json()
 

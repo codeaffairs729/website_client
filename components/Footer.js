@@ -102,6 +102,7 @@ const Footer = () => {
                   <span className="">
                     <Image
                       src="/footer-images/india_logo.svg"
+                      alt="india-flag-logo"
                       width={32}
                       height={24}
                     />
@@ -115,6 +116,7 @@ const Footer = () => {
                   <span>
                     <Image
                       src="/footer-images/US_logo.svg"
+                      alt="us-flag-logo"
                       width={32}
                       height={24}
                     />
@@ -140,6 +142,7 @@ const Footer = () => {
                   <span>
                     <Image
                       src="/footer-images/Group.svg"
+                      alt="email-logo"
                       width={32}
                       height={24}
                     />

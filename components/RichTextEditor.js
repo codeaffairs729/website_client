@@ -9,12 +9,10 @@ import Link from 'next/link'
 const config = {
   buttons: ['bold', 'italic', 'link', 'unlink', 'underline', 'source'],
 }
-
 const ReactQuill = dynamic(import('react-quill'), {
   ssr: false,
   loading: () => <p>Loading ...</p>,
 })
-
 const modules = {
   toolbar: [
     [{ header: [1, 2, 3, 4, 5, 6, false] }],
@@ -27,7 +25,6 @@ const modules = {
     // ['clean'],
   ],
 }
-
 const formats = [
   'header',
   'bold',
@@ -45,6 +42,7 @@ const formats = [
 ]
 const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
   const [title, setTitle] = useState(data.title)
+  const [slug, setSlug] = useState(data.slug)
   const [image, setImage] = useState(data.image)
   const [content, setContent] = useState(data.content)
   const [imagePreview, setImagePreview] = useState(null)
@@ -54,11 +52,9 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
   let name
   let token
   let id
-
   const containerRef = useRef(null)
   const startPosRef = useRef(null)
   const resizeDirectionRef = useRef(null)
-
   const handleMouseDown = (event, direction) => {
     startPosRef.current = {
       x: event.clientX,
@@ -68,7 +64,6 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
     window.addEventListener('mousemove', handleMouseMove)
     window.addEventListener('mouseup', handleMouseUp)
   }
-
   const handleMouseMove = (event) => {
     const container = containerRef.current
     const startPos = startPosRef.current
@@ -84,14 +79,12 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
       container.style.height = `${container.offsetHeight + deltaY}px`
     }
   }
-
   const handleMouseUp = () => {
     startPosRef.current = null
     resizeDirectionRef.current = null
     window.removeEventListener('mousemove', handleMouseMove)
     window.removeEventListener('mouseup', handleMouseUp)
   }
-
   const notify = (status) => {
     toast.success(status, {
       position: 'top-right',
@@ -102,7 +95,6 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
       position: 'top-right',
     })
   }
-
   if (typeof window !== 'undefined' && window.localStorage) {
     name = localStorage.getItem('token')
     token = localStorage.getItem('token')
@@ -114,7 +106,6 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
     const file = e.target.files[0]
     const reader = new FileReader()
     const imageUrl = URL.createObjectURL(file)
-
     reader.onload = function () {
       const img = new Image()
       img.onload = function () {
@@ -131,12 +122,17 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
     }
     reader.readAsDataURL(file)
   }
-
   // function for update image
   const onClickUpdate = async (e) => {
     e.preventDefault()
+    console.log('slug is empty')
+    if (!slug) {
+      notifyError("slug shouldn't be empty")
+      return
+    }
     const formData = new FormData()
     formData.append('title', title)
+    formData.append('slug', slug)
     formData.append('content', content)
     formData.append('author_id', id)
     formData.append('fname', imageField)
@@ -158,16 +154,20 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
       notifyError(json.message)
     }
   }
-
-  // function for upload image
+  // function for creating blog
   const onClickUpload = async (e) => {
     e.preventDefault()
-    if (imageField == null) {
-      notify('Oops! You must upload file')
+    if (!slug) {
+      notifyError("slug shouldn't be empty")
+      return
+    }
+    if (!imageField) {
+      notifyError('Oops! You must upload file')
       return
     }
     const formData = new FormData()
     formData.append('title', title)
+    formData.append('slug', slug)
     formData.append('content', content)
     formData.append('author_id', id)
     formData.append('fname', imageField)
@@ -189,7 +189,6 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
       // notifyError(json.message)
     }
   }
-
   const handleOnBack = () => {
     router.back()
   }
@@ -229,6 +228,21 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
             />
           </div>
           <div className="mb-3">
+            <label htmlFor="exampleFormControlInput1" className="form-label">
+              Enter Slug
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="exampleFormControlInput1"
+              placeholder="enter slug"
+              value={slug}
+              onChange={(e) => {
+                setSlug(e.target.value)
+              }}
+            />
+          </div>
+          <div className="mb-3">
             <label htmlFor="formFileMultiple" className="form-label">
               {uploadbtn}
             </label>
@@ -259,7 +273,6 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
             )}
           </div>
           <br />
-
           <ReactQuill
             ref={containerRef}
             className="editor-container resizable"
@@ -278,7 +291,6 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
             className="resizer down"
             onMouseDown={(event) => handleMouseDown(event, 'down')}
           />
-
           <div className="text-end">
             <button
               type="submit"
@@ -293,5 +305,4 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
     </div>
   )
 }
-
 export default RichTextEditor

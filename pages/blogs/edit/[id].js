@@ -15,9 +15,8 @@ export default function UpdateBlog({ blogData }) {
   )
 }
 export async function getServerSideProps({ params }) {
-  const { id } = params
   const blogData = await (
-    await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blogs/${id}`)
+    await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blogs/slug/${params.id}`)
   ).json()
 
   return {
