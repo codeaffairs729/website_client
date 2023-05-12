@@ -1,6 +1,29 @@
 import React from 'react'
 import Image from 'next/image'
 const FeatureList = () => {
+  const feature = [
+    {
+      title: 'RESEARCH & INNOVATION',
+      desc: 'Transform your product idea into a reality. Strategize and assess the key features of your product required to achieve your business objectives.',
+      img: '/icons/Rect-4-circle.svg',
+    },
+    {
+      title: 'IDEATION AND DESIGN',
+      desc: 'Craft a distinct and precise visual identity for your brand and product through personalized designs.',
+      img: '/icons/Rect-1-circle.svg',
+    },
+    {
+      title: 'SCALE AND MARKET',
+      desc: 'Our goal is to assist your growth by ensuring that your project meets the constantly-evolving market demands.',
+      img: '/icons/Rect-1-circle.svg',
+    },
+    {
+      title: 'PROCESS OPTIMIZATION',
+      desc: 'We adopt the systematic approach of identifying,analyzing, and improving business processes to increase efficiency and enhance quality.',
+      img: '/icons/Rect-4-circle.svg',
+    },
+  ]
+
   return (
     <div className="feature-list container">
       <div>
@@ -23,93 +46,20 @@ const FeatureList = () => {
         </div>
         <div className="col-md-12 col-lg-6">
           <div className="feature-list-div-container">
-            <div className="row feature-slide-row">
-              <div className="col-lg-12">
-                <div className="row align-items-center py-3">
-                  <div className="col-3 col-sm-2 align-items-center justify-content-center">
-                    <Image
-                      src="/icons/Rect-4-circle.svg"
-                      alt=""
-                      width={56}
-                      height={56}
-                    />
-                  </div>
-                  <div className="col-9 col-sm-10 align-items-center">
-                    <h3>RESEARCH & INNOVATION</h3>
-                    <p>
-                      Transform your product idea into a reality. Strategize and
-                      assess the key features of your product required to
-                      achieve your business objectives.
-                    </p>
-                  </div>
+            {feature.map((e, i) => (
+              <div
+                className="feature-slide-row d-flex align-items-center py-3"
+                key={i}
+              >
+                <div className="logo-container">
+                  <Image src={e.img} alt="" width={56} height={56} />
+                </div>
+                <div className="align-items-center">
+                  <h3>{e.title}</h3>
+                  <p>{e.desc}</p>
                 </div>
               </div>
-            </div>
-            <div className="row feature-slide-row">
-              <div className="col-lg-12">
-                <div className="row align-items-center py-3">
-                  <div className="col-3 col-sm-2 align-items-center justify-content-center">
-                    <Image
-                      src="/icons/Rect-1-circle.svg"
-                      alt=""
-                      width={56}
-                      height={56}
-                    />
-                  </div>
-                  <div className="col-9 col-sm-10 align-items-center">
-                    <h3>IDEATION AND DESIGN</h3>
-                    <p>
-                      Craft a distinct and precise visual identity for your
-                      brand and product through personalized designs.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="row feature-slide-row">
-              <div className="col-lg-12">
-                <div className="row align-items-center py-3">
-                  <div className="col-3 col-sm-2 align-items-center justify-content-center">
-                    <Image
-                      src="/icons/Rect-1-circle.svg"
-                      alt=""
-                      width={56}
-                      height={56}
-                    />
-                  </div>
-                  <div className="col-9 col-sm-10 align-items-center">
-                    <h3>SCALE AND MARKET</h3>
-                    <p>
-                      Our goal is to assist your growth by ensuring that your
-                      project meets the constantly-evolving market demands.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="row feature-slide-row">
-              <div className="col-lg-12">
-                <div className="row align-items-center py-3">
-                  <div className="col-3 col-sm-2 align-items-center justify-content-center">
-                    <Image
-                      src="/icons/Rect-4-circle.svg"
-                      alt=""
-                      width={56}
-                      height={56}
-                    />
-                  </div>
-                  <div className="col-9 col-sm-10 align-items-center">
-                    <h3>PROCESS OPTIMIZATION</h3>
-                    <p>
-                      We adopt the systematic approach of identifying,
-                      analyzing, and improving business processes to increase
-                      efficiency and enhance quality.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

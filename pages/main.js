@@ -37,7 +37,7 @@ const Main = () => {
           <div className="main__wrap">
             <div className="container">
               <div className="row">
-                <div className="col-12 col-md-8">
+                <div className="col-12 col-md-7">
                   <div className="">
                     <div className="main__title title title_big" data-aos>
                       <span className="title__box dev-title mb-3"></span>
@@ -60,7 +60,7 @@ const Main = () => {
                   </div>
                 </div>
                 <div
-                  className="col-12 col-md-4 d-flex align-items-center justify-content-center
+                  className="col-12 col-md-5 d-flex align-items-center justify-content-center
 "
                 >
                   <Image

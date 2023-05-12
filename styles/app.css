@@ -8261,7 +8261,12 @@ html {
 .feature-list-div-container {
 }
 .feature-slide-row {
-  height: 150px;
+}
+
+.logo-container{
+min-width: 50px;
+margin-inline: 20px;
+
 }
 .ellipse-blue-full {
   position: absolute;
@@ -10950,7 +10955,6 @@ html {
 @media only screen and (max-width: 474px) {
   .feature-slide-row {
     /* border: 1px solid blueviolet; */
-    height: 280px;
   }
   .work__wave {
     left: -50px;
