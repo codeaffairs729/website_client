@@ -125,9 +125,17 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
   // function for update image
   const onClickUpdate = async (e) => {
     e.preventDefault()
-    console.log('slug is empty')
-    if (!slug) {
-      notifyError("slug shouldn't be empty")
+
+    if (!title) {
+      notifyError("title shouldn't be empty")
+      return
+    }
+    if (!slug || slug == `''` || slug == `""`) {
+      notifyError("Slug shouldn't be empty")
+      return
+    }
+    if (!imageField) {
+      notifyError("imageField shouldn't be empty")
       return
     }
     const formData = new FormData()
@@ -157,12 +165,16 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
   // function for creating blog
   const onClickUpload = async (e) => {
     e.preventDefault()
-    if (!slug) {
-      notifyError("slug shouldn't be empty")
+    if (!title) {
+      notifyError("Title shouldn't be empty")
+      return
+    }
+    if (!slug || slug == `''` || slug == `""`) {
+      notifyError("Slug shouldn't be empty")
       return
     }
     if (!imageField) {
-      notifyError('Oops! You must upload file')
+      notifyError("ImageField shouldn't be empty")
       return
     }
     const formData = new FormData()
