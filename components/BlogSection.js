@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 export default function BlogSection({ data }) {
   const blogData = data.filter((e, i) => i < 3)
-
   return (
     <div className="container justify-content-center blog-container">
       <h2>Our Featured Blogs!</h2>
@@ -29,7 +28,7 @@ export default function BlogSection({ data }) {
                     is
                   </p> */}
                 </div>
-                <Link href={`/blogs/${e.id}`} className="">
+                <Link href={`/blogs/${e.slug}`} className="">
                   <button type="button" className="blog-btn">
                     READ MORE
                   </button>
