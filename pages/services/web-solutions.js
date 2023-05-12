@@ -5,6 +5,7 @@ import Head from 'next/head'
 const techTitle = 'Web Solutions'
 import ScheduleForm from '../../components/schedule'
 import Image from 'next/image'
+import styles from '../../styles/Services.module.css'
 
 // const contentHeader=()=><div></div>
 const contentHeader1 = () => {
@@ -118,9 +119,16 @@ const content1 = () => {
         </p>
         {/* content 7 */}
         <h2 className="hire-h2">Our Web Development Step-By-Step Process</h2>
-        <h3 className="hire-h3">
-          Planning - Design - Development - Testing - Maintenance
-        </h3>
+        <div className={`${styles.services_image_container}`}>
+          <Image
+            src="/services_images/web_development.png"
+            alt="digital marketing"
+            width={800}
+            height={800}
+            priority={true}
+            objectFit="contain"
+          />
+        </div>
         <h2 className="hire-h2 margin-bottom-8">Technologies We Excel At:</h2>
         <div
           id="ruby-rails"
