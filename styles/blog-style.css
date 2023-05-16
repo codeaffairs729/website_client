@@ -111,9 +111,13 @@
   max-width: 100%;
 }
 
+.htmlContent ul {
+  padding-left: 40px;
+}
 .htmlContent ul li {
   list-style: disc;
 }
+
 .htmlContent ol li {
   list-style: decimal;
 }

@@ -81,7 +81,7 @@ function AboutUs() {
       <div className={shimmer ? `${style.shimmer}` : `${style.display_None}`}>
         <Shimmer />
       </div>
-      <div className={shimmer ? `${style.display_None}` : `${style.shimmer}`}>
+      <div className={shimmer ? `${style.display_None}` : ``}>
         {/* <Header /> */}
 
         <Head>
