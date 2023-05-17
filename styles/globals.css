@@ -193,7 +193,7 @@ hire-h2 .header__col:nth-child(2) .header__box:nth-child(8) .header__preview {
 .header-dropdown-body {
   /* max-width: 1050px; */
   height: 300px;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 /* .header__row .col-lg-4 {
@@ -782,6 +782,7 @@ body:not(.touch-device) .header-item[href]:before {
   /* font-size: 96px; */
   line-height: 1.5;
   font-weight: bold;
+  width: max-content;
 }
 
 /* Layout Component CSS Start */
@@ -3497,7 +3498,7 @@ body:not(.touch-device) .header-item[href]:before {
   .main__title {
     font-size: 40px;
     line-height: 1.1;
-    width: max-content;
+    width: auto;
   }
 
   .contact__arrow {
@@ -4057,6 +4058,7 @@ body:not(.touch-device) .header-item[href]:before {
   .main__title {
     font-size: 30px;
     line-height: 1.5;
+    width: auto;
   }
   .main-big-blue-circle {
     display: none;
