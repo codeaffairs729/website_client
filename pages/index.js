@@ -25,9 +25,9 @@ const Design = dynamic(() => import('./design'), {
   ssr: false,
 })
 
-// const Teams = dynamic(() => import('./teams'), {
-//   ssr: false,
-// })
+const Teams = dynamic(() => import('./teams'), {
+  ssr: false,
+})
 
 export default function Home({ data, caseData }) {
   // <----------------Don't delete ---------->
@@ -79,7 +79,7 @@ export default function Home({ data, caseData }) {
         <Access />
         <Layouts />
         {/* <Partners /> */}
-        {/* <Design /> */}
+        <Design />
         {/* <Teams /> */}
         <BlogSection data={data} />
         {/* <CaseStudy data={caseData} /> */}

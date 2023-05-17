@@ -59,10 +59,7 @@ const Main = () => {
                     ></div>
                   </div>
                 </div>
-                <div
-                  className="col-12 col-md-5 d-flex align-items-center justify-content-center
-"
-                >
+                <div className="col-12 col-lg-5 col-md-5 d-flex align-items-center justify-content-center desktop_image">
                   <Image
                     src="/images/Desktop Asset Group.png"
                     alt="3D Desktop Assets Group"

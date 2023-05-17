@@ -194,7 +194,7 @@ function AboutUs() {
             </div>
             <div className="col-lg-5 col-md-6 about-area-7-pic-1-outer d-flex align-items-center">
               <img
-                className="w-100"
+                className="w-100 h-75"
                 src="aboutUsImages/team_pic_9.webp"
                 alt="Aim Board"
               />
@@ -296,13 +296,13 @@ function AboutUs() {
           </div>
         </div>
 
-        <div className="container-fluid mt-5 about-area-8">
-          <div className="container about-area-8-container">
+        <div className="container-fluid about-area-8">
+          <div className="container about-area-8-container d-flex flex-column justify-content-center align-items-center  ">
             <h2 className="text-center about-area-8-heading">
               We Connect Globally
             </h2>
             <img
-              className="w-100"
+              className="w-75"
               src="aboutUsImages/global_connections.webp"
               alt="3D Global Map"
               useMap="#world-map"

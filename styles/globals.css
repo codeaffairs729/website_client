@@ -193,6 +193,7 @@ hire-h2 .header__col:nth-child(2) .header__box:nth-child(8) .header__preview {
 .header-dropdown-body {
   /* max-width: 1050px; */
   height: 300px;
+  margin-top:20px;
 }
 
 /* .header__row .col-lg-4 {
@@ -2046,7 +2047,7 @@ body:not(.touch-device) .header-item[href]:before {
   background-size: cover;
   position: relative;
   overflow: hidden;
-  min-height: 1000px;
+  min-height: 900px;
 }
 
 @media (max-width: 1000px) {
@@ -3496,6 +3497,7 @@ body:not(.touch-device) .header-item[href]:before {
   .main__title {
     font-size: 40px;
     line-height: 1.1;
+    width: max-content;
   }
 
   .contact__arrow {
@@ -4999,7 +5001,7 @@ body:not(.touch-device) .header-item[href]:before {
 
   .about-area-2-circle2 {
     bottom: 2%;
-    left: 50%;
+    left: 40%;
   }
 }
 

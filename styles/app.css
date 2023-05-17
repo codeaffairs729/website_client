@@ -2942,9 +2942,15 @@ body:not(.touch-device) .header__item:hover .header__body {
   background: #5956e9;
 }
 .home-header {
-  font-size: 52px;
+  font-size: 60px;
   font-weight: bolder;
   line-height: 1.2;
+}
+@media (max-width:767px) {
+  .home-header{
+    font-size: 38px;
+  }
+
 }
 
 .title__box {
@@ -3037,6 +3043,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 }
 .main__title {
   margin-bottom: 21px;
+  width: max-content;
 }
 
 .main__info {
@@ -3061,6 +3068,23 @@ body:not(.touch-device) .header__item:hover .header__body {
 
 .main__btn {
   height: 82px;
+}
+
+.desktop_image{
+  position: absolute;
+  right:-20px;
+  top:270px;
+}
+
+@media (max-width:1220px) {
+  .desktop_image{
+    right: 50px;
+  }
+}
+@media (max-width:767px) {
+  .desktop_image{
+    position: initial;
+  }
 }
 
 .main__btn:not(:last-child) {
@@ -8342,7 +8366,7 @@ margin-inline: 20px;
     top: 100px;
   }
   .home-header {
-    font-size: 38px;
+    font-size: 46px;
   }
 }
 @media only screen and (min-width: 1540px) {
@@ -9557,6 +9581,7 @@ margin-inline: 20px;
   .main__title {
     /* max-width: 400px; */
     margin-bottom: 40px;
+    width: auto;
   }
   .main__title br {
     display: none;
@@ -11417,6 +11442,8 @@ top: 7641px; */
 /* access page */
 .access-top-heading-text {
   font-size: 40px;
+  position: relative;
+  z-index: 3;
 }
 
 @media (max-width: 1000px) {
