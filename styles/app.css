@@ -8195,7 +8195,7 @@ html {
 }
 /* <----------Blog Section list ------->*/
 .blog-container {
-  padding: 50px 60px 100px;
+  padding: 0px 60px 100px;
 }
 .card-desc {
   height: 160px;
@@ -9433,7 +9433,7 @@ html {
   }
   /* <----------Blog Section list ------->*/
   .blog-container {
-    padding: 50px 40px 100px;
+    padding: 0px 40px 100px;
   }
   .card-desc {
     height: 125px;

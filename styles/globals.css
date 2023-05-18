@@ -890,6 +890,11 @@ body:not(.touch-device) .header-item[href]:before {
 .layouts {
   padding: 100px 0 165px;
 }
+@media (max-width: 767px) {
+  .layouts {
+    padding: 20px 0 30px;
+  }
+}
 
 .layouts__view {
   z-index: 1;
@@ -919,7 +924,7 @@ body:not(.touch-device) .header-item[href]:before {
 .access-main-cloud {
   margin-inline: auto;
   width: 65%;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .access-salesforce-cloud {
@@ -4259,9 +4264,9 @@ body:not(.touch-device) .header-item[href]:before {
 
   /* Access Component CSS Start */
   .access-main-cloud {
-    margin-top: 17px;
     width: 60%;
-    margin-bottom: 137px;
+    margin-top: 40px;
+    margin-bottom: 180px;
   }
 
   .access__cloud:first-child {
@@ -4367,7 +4372,7 @@ body:not(.touch-device) .header-item[href]:before {
   }
 
   .main {
-    padding: 90px 0 100px;
+    padding: 90px 0 20px;
   }
   /* Header Component CSS End */
 
