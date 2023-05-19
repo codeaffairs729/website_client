@@ -153,7 +153,7 @@ function AboutUs() {
                       loaded ? 'blur-image-loaded' : 'blur-image'
                     }
                   `}
-                    src="aboutUsImages/team_pic_1.webp"
+                    src="aboutUsImages/diveroid2.jpg"
                     alt="Udham, Ankush & Mehakpal(Boss)"
                   />
                 </div>

@@ -99,6 +99,19 @@ const Footer = () => {
               </div> */}
               <div className={` ${FooterCss.contact_details_container}`}>
                 <div className={`${FooterCss.india_container}`}>
+                  <span>
+                    <Image
+                      src="/footer-images/US_logo.svg"
+                      alt="us-flag-logo"
+                      width={32}
+                      height={24}
+                    />
+                  </span>
+                  <span className={FooterCss.usa_text}>
+                    &nbsp;&nbsp;+1 760 683 9821
+                  </span>
+                </div>
+                <div className={`${FooterCss.india_container}`}>
                   <span className="">
                     <Image
                       src="/footer-images/india_logo.svg"
@@ -112,19 +125,6 @@ const Footer = () => {
                   </span>
                 </div>
 
-                <div className={`${FooterCss.india_container}`}>
-                  <span>
-                    <Image
-                      src="/footer-images/US_logo.svg"
-                      alt="us-flag-logo"
-                      width={32}
-                      height={24}
-                    />
-                  </span>
-                  <span className={FooterCss.usa_text}>
-                    &nbsp;&nbsp;+1 760 683 9821
-                  </span>
-                </div>
                 {/* <div className={` ${FooterCss.email_container} `}>
                   <span>
                     <Image
@@ -254,6 +254,156 @@ const Footer = () => {
                 : `w-100 col-md-6 col-sm-12 p-3 ${FooterCss.right_container}`
             }
           >
+            <div
+              className={
+                isShort
+                  ? `accordion-item ${FooterCss.industries_container}`
+                  : `${FooterCss.industries_container}`
+              }
+            >
+              {isShort ? (
+                <div
+                  className={`${FooterCss.btn_container}`}
+                  onClick={() => handleAreaExpandIndustries2()}
+                >
+                  <button
+                    id="headingThree"
+                    className={` accordion-header accordion-button ${FooterCss.button}`}
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="true"
+                    aria-controls="collapseThree"
+                  >
+                    Quick Links
+                  </button>
+                  {areaExapandIndustries2 ? (
+                    <Image src="/footer-images/up.png" width={16} height={16} />
+                  ) : (
+                    <Image
+                      src="/footer-images/down.png"
+                      alt="down-arrow-png"
+                      width={16}
+                      height={16}
+                    />
+                  )}
+                </div>
+              ) : (
+                <span className={`${FooterCss.stack_text}`}>Quick Links</span>
+              )}
+
+              <div
+                id="collapseThree"
+                className={
+                  isShort
+                    ? `accordion-collapse collapse accordion-body   ${FooterCss.our_stack_items_container}`
+                    : `${FooterCss.our_stack_items_container}`
+                }
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <Link href="/">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    {/* <Image
+                      src={'/icons/react_native.webp'}
+                      alt="React-native-icon"
+                      height={16}
+                      width={16}
+                    /> */}
+                    <div className={`${FooterCss.stack_item_text}`}>Home</div>
+                  </div>
+                </Link>
+                <Link href="/about-us">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    {/* <Image
+                      src={'/footer-images/nextjs-white-bg.png'}
+                      alt="NextJS Icon"
+                      height={16}
+                      width={16}
+                    /> */}
+                    <div className={`${FooterCss.stack_item_text}`}>
+                      About Us
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/hire-freelancer">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    {/* <Image
+                      src={'/footer-images/nuxt-seeklogo.com.svg'}
+                      alt="NuxtJs Icon"
+                      height={16}
+                      width={16}
+                    /> */}
+                    <div className={`${FooterCss.stack_item_text}`}>
+                      Hire a Freelancer
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/hire-team">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    {/* <Image
+                      src={'/icons/node_2.webp'}
+                      alt="nodejs-logo"
+                      height={16}
+                      width={16}
+                    /> */}
+                    <div className={`${FooterCss.stack_item_text}`}>
+                      Hire a Team
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/careers">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    {/* <Image
+                      src={'/footer-images/devops.png'}
+                      alt="DevOps-logo"
+                      height={16}
+                      width={16}
+                    /> */}
+                    <div className={`${FooterCss.stack_item_text}`}>Career</div>
+                  </div>
+                </Link>
+                <Link href="/contact">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    {/* <Image
+                      src={'/footer-images/openai-invert.png'}
+                      alt="Open-AI-logo"
+                      height={16}
+                      width={16}
+                    /> */}
+                    <div className={`${FooterCss.stack_item_text}`}>
+                      Contact Us
+                    </div>
+                  </div>
+                </Link>
+                {/* <Link href="/services/web-solutions/#shopify">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    <Image
+                      src={'/images/shopify_icon.webp'}
+                      alt="Shopify-logo"
+                      height={16}
+                      width={16}
+                    />
+                    <div className={`${FooterCss.stack_item_text}`}>
+                      Shopify
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/services/web-solutions/#ruby-rails">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    <Image
+                      src={'/footer-images/Ruby.svg'}
+                      alt="Ruby-logo"
+                      height={16}
+                      width={16}
+                    />
+                    <div className={`${FooterCss.stack_item_text}`}>
+                      Ruby on Rails
+                    </div>
+                  </div>
+                </Link> */}
+              </div>
+            </div>
             <div
               className={
                 isShort
@@ -434,7 +584,7 @@ const Footer = () => {
                     aria-expanded="true"
                     aria-controls="collapseTwo"
                   >
-                    Industries
+                    Industries We Serve
                   </button>
                   {areaExapandIndustries1 ? (
                     <Image src="/footer-images/up.png" width={16} height={16} />
@@ -448,7 +598,9 @@ const Footer = () => {
                   )}
                 </div>
               ) : (
-                <span className={`${FooterCss.stack_text}`}>Industries</span>
+                <span className={`${FooterCss.stack_text}`}>
+                  Industries We Serve
+                </span>
               )}
 
               <div
@@ -549,154 +701,6 @@ const Footer = () => {
                     Automotive
                   </div>
                 </div>
-              </div>
-            </div>
-            <div
-              className={
-                isShort
-                  ? `accordion-item ${FooterCss.industries_container}`
-                  : `${FooterCss.industries_container}`
-              }
-            >
-              {isShort ? (
-                <div
-                  className={`${FooterCss.btn_container}`}
-                  onClick={() => handleAreaExpandIndustries2()}
-                >
-                  <button
-                    id="headingThree"
-                    className={` accordion-header accordion-button ${FooterCss.button}`}
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="true"
-                    aria-controls="collapseThree"
-                  >
-                    Hire Developers
-                  </button>
-                  {areaExapandIndustries2 ? (
-                    <Image src="/footer-images/up.png" width={16} height={16} />
-                  ) : (
-                    <Image
-                      src="/footer-images/down.png"
-                      alt="down-arrow-png"
-                      width={16}
-                      height={16}
-                    />
-                  )}
-                </div>
-              ) : (
-                <span className={`${FooterCss.stack_text}`}>
-                  Hire Developers
-                </span>
-              )}
-
-              <div
-                id="collapseThree"
-                className={
-                  isShort
-                    ? `accordion-collapse collapse accordion-body   ${FooterCss.our_stack_items_container}`
-                    : `${FooterCss.our_stack_items_container}`
-                }
-                aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample"
-              >
-                <Link href="/services/mobile-solutions/#mobile_react">
-                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
-                    <Image
-                      src={'/icons/react_native.webp'}
-                      alt="React-native-icon"
-                      height={16}
-                      width={16}
-                    />
-                    <div className={`${FooterCss.stack_item_text}`}>
-                      React Native
-                    </div>
-                  </div>
-                </Link>
-                <Link href="/services/reactjs-nextjs">
-                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
-                    <Image
-                      src={'/footer-images/nextjs-white-bg.png'}
-                      alt="NextJS Icon"
-                      height={16}
-                      width={16}
-                    />
-                    <div className={`${FooterCss.stack_item_text}`}>NextJS</div>
-                  </div>
-                </Link>
-                <Link href="/services/vuejs-nuxtjs">
-                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
-                    <Image
-                      src={'/footer-images/nuxt-seeklogo.com.svg'}
-                      alt="NuxtJs Icon"
-                      height={16}
-                      width={16}
-                    />
-                    <div className={`${FooterCss.stack_item_text}`}>NuxtJs</div>
-                  </div>
-                </Link>
-                <Link href="/services/web-solutions/#nodejs">
-                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
-                    <Image
-                      src={'/icons/node_2.webp'}
-                      alt="nodejs-logo"
-                      height={16}
-                      width={16}
-                    />
-                    <div className={`${FooterCss.stack_item_text}`}>NodeJS</div>
-                  </div>
-                </Link>
-                <Link href="/services/devops">
-                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
-                    <Image
-                      src={'/footer-images/devops.png'}
-                      alt="DevOps-logo"
-                      height={16}
-                      width={16}
-                    />
-                    <div className={`${FooterCss.stack_item_text}`}>DevOps</div>
-                  </div>
-                </Link>
-                <Link href="/services/openAi">
-                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
-                    <Image
-                      src={'/footer-images/openai-invert.png'}
-                      alt="Open-AI-logo"
-                      height={16}
-                      width={16}
-                    />
-                    <div className={`${FooterCss.stack_item_text}`}>
-                      Open AI
-                    </div>
-                  </div>
-                </Link>
-                <Link href="/services/web-solutions/#shopify">
-                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
-                    <Image
-                      src={'/images/shopify_icon.webp'}
-                      alt="Shopify-logo"
-                      height={16}
-                      width={16}
-                    />
-                    <div className={`${FooterCss.stack_item_text}`}>
-                      Shopify
-                    </div>
-                  </div>
-                </Link>
-                <Link href="/services/web-solutions/#ruby-rails">
-                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
-                    <Image
-                      src={'/footer-images/Ruby.svg'}
-                      alt="Ruby-logo"
-                      height={16}
-                      width={16}
-                    />
-                    <div className={`${FooterCss.stack_item_text}`}>
-                      Ruby on Rails
-                    </div>
-                  </div>
-                </Link>
               </div>
             </div>
           </div>
