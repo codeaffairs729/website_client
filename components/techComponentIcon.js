@@ -1,14 +1,19 @@
 import React from 'react'
+import styles from '../styles/techComponent.module.css'
 const TechComponentIcon = ({ path }) => {
   return (
-    <div className="tech-container">
+    <div className={styles.techcontainer}>
       {path.map((e, i) => (
         <div
-          className="tech-container-div  d-flex flex-column justify-content-center align-items-center"
+          className={`d-flex flex-column justify-content-center align-items-center ${styles.techcontainerdiv}`}
           key={i}
         >
-          <img className="tech-container-img" src={e.path} alt={e.altImg} />
-          <p className="tech-container-para">{e.name}</p>
+          <img
+            className={styles.techcontainerimg}
+            src={e.path}
+            alt={e.altImg}
+          />
+          <p className={styles.techcontainerpara}>{e.name}</p>
         </div>
       ))}
     </div>

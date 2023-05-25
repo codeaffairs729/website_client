@@ -6,6 +6,7 @@ import Datetime from 'react-datetime'
 import { BsCalendar2Date } from 'react-icons/bs'
 // import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { toast } from 'react-toastify'
+import styles from '../styles/assisstanceModel.module.css'
 
 const ScheduleForm = ({ title, requestOrigin }) => {
   const image = useRef(null)
@@ -147,7 +148,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
       pattern: '[0-9]{3}[0-9]{3}[0-9]{4}',
       icon: (
         <svg
-          className="form-name-icon"
+          className={styles.formnameicon}
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -170,7 +171,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
         return (
           <input
             type="text"
-            className="form-container-input-field"
+            className={styles.formcontainerinputfield}
             placeholder="Name*"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -182,7 +183,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
     {
       icon: (
         <svg
-          className="form-email-icon"
+          className={styles.formnameicon}
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -216,7 +217,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
             id="email"
             // name="email"
             type="email"
-            className="form-container-input-field"
+            className={styles.formcontainerinputfield}
             placeholder="Your emaild*"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -228,11 +229,12 @@ const ScheduleForm = ({ title, requestOrigin }) => {
     {
       icon: (
         <svg
-          className="form-phone-icon"
+          className={styles.formnameicon}
           xmlns="http://www.w3.org/2000/svg"
           width="16"
           height="16"
           aria-labelledby="form-email-icon"
+          style={{ left: 2 }}
         >
           <path
             fill="black"
@@ -244,7 +246,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
         return (
           <input
             type="tel"
-            className="form-container-input-field"
+            className={styles.formcontainerinputfield}
             placeholder="Your phone*"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
@@ -254,13 +256,13 @@ const ScheduleForm = ({ title, requestOrigin }) => {
       },
     },
     {
-      icon: <BsCalendar2Date className="form-date-icon" />,
+      icon: <BsCalendar2Date className={styles.formdateicon} />,
 
       render: () => {
         return (
-          <div className="date-time">
+          <div className={styles.datetime}>
             <Datetime
-              className="date-value"
+              className={styles.datevalue}
               initialValue={'Select a date and time*'}
               selected={date}
               onChange={(date) => setDate(date)}
@@ -273,7 +275,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
     {
       icon: (
         <svg
-          className="text-area-icon"
+          className={styles.textareaicon}
           width="18"
           height="19"
           viewBox="0 0 18 19"
@@ -374,7 +376,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
       ref={(submitBtnRef) => {
         submitBtn = submitBtnRef
       }}
-      className="form-container-input-btn"
+      className={styles.formcontainerinputbtn}
       type="submit"
       onClick={submitEnquiryForm}
     >

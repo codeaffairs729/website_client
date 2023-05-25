@@ -6,6 +6,8 @@ import { ToastContainer } from 'react-toastify'
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Link from 'next/link'
+import styles from '../styles/blogStyle.module.css'
+
 const config = {
   buttons: ['bold', 'italic', 'link', 'unlink', 'underline', 'source'],
 }
@@ -13,6 +15,7 @@ const ReactQuill = dynamic(import('react-quill'), {
   ssr: false,
   loading: () => <p>Loading ...</p>,
 })
+
 const modules = {
   toolbar: [
     [{ header: [1, 2, 3, 4, 5, 6, false] }],
@@ -196,7 +199,7 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
       )
       const json = await response.json()
       notify(json.message)
-      router.push(db === 'blogs' ? '/blogs' : '/case-studies')
+      // router.push(db === 'blogs' ? '/blogs' : '/case-studies')
     } catch (error) {
       // notifyError(json.message)
     }
@@ -207,12 +210,13 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
   return (
     <div className="rich-text-containar d-flex flex-column justify-content-center">
       {/* <Link href={db === 'blogs' ? '/blogs' : '/case-studies'}> */}
-      <div className="blog-back-btn cursor_pointer d-flex ">
+      <div className={`cursor_pointer d-flex ${styles.blogbackbtn}`}>
+        {/* <div className="blog-back-btn cursor_pointer d-flex "> */}
         <div className="align-self-center">
           <img src="/icons/left-angle.png" style={{ height: '24px' }} />
         </div>
         <div
-          className="fs-6  fw-semibold fw-bold"
+          className="fs-6 fw-semibold fw-bold"
           style={{ color: '#2522BA' }}
           onClick={handleOnBack}
         >
@@ -221,7 +225,7 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
       </div>
       {/* </Link> */}
       <ToastContainer />
-      <div className="edit-blog">
+      <div className={styles.editblog}>
         <h1 className="text-center">{pageName}</h1>
         <form>
           <div className="mb-3">
@@ -266,11 +270,11 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
               ref={ref}
               onChange={handleSelectImage}
             />
-            <p className="fs-6 text-secondary file-error">
+            <p className={`fs-6 text-secondary ${styles.fileerror}`}>
               Image must be at least 1920 pixels width and 1080 pixels height
             </p>
             {imagePreview === null ? (
-              <div className="upload-banner-img">
+              <div className={styles.uploadbannerimg}>
                 {image && (
                   <img
                     src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${image}`}
@@ -279,7 +283,7 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
                 )}
               </div>
             ) : (
-              <div className="upload-banner-img">
+              <div className={styles.uploadbannerimg}>
                 <img src={imagePreview} alt="Image Preview" width="300" />
               </div>
             )}
@@ -306,7 +310,7 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
           <div className="text-end">
             <button
               type="submit"
-              className="editor-btn"
+              className={styles.editorbtn}
               onClick={btnName === 'Update' ? onClickUpdate : onClickUpload}
             >
               {btnName}

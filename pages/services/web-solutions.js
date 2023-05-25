@@ -6,30 +6,37 @@ const techTitle = 'Web Solutions'
 import ScheduleForm from '../../components/schedule'
 import Image from 'next/image'
 import styles from '../../styles/Services.module.css'
+import hireService from '../../styles/hireService.module.css'
 
 // const contentHeader=()=><div></div>
 const contentHeader1 = () => {
   return (
     <>
-      <div className="tech-service-body">
-        <div className="tech-service-body-left">
-          <h1 className="hire-h1">{techTitle}</h1>
-          <ul className="hire-list-icon">
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">Built fully-functional website</p>
+      <div className={hireService.techservicebody}>
+        <div className={hireService.techservicebodyleft}>
+          <h1 className={hireService.hireh1}>{techTitle}</h1>
+          <ul
+            className={`${hireService.hirelisticon} ${hireService.hire_list_items_services} `}
+          >
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
+                Built fully-functional website
+              </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Develop Highly Interactive Website
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 We always keep things on the right track
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">Easy-to-customize websites.</p>
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
+                Easy-to-customize websites.
+              </p>
             </li>
           </ul>
           {/* <span className="d-flex margine-bottom-16px">
@@ -77,7 +84,7 @@ const contentHeader1 = () => {
             </p>
           </span> */}
         </div>
-        <div className="tech-service-body-right">
+        <div className={hireService.techservicebodyright}>
           {/* <img src="/icons/service-icon/Frame.webp" alt="" /> */}
 
           <Image
@@ -98,7 +105,7 @@ const content1 = () => {
     <>
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           At Code Garage Tech, we offer full web development services, from
           initial planning to final delivery and third-party testing. Backed by
           a team of dedicated and skilled developers, we have established
@@ -118,7 +125,9 @@ const content1 = () => {
           <br />
         </p>
         {/* content 7 */}
-        <h2 className="hire-h2">Our Web Development Step-By-Step Process</h2>
+        <h2 className={hireService.hireh2}>
+          Our Web Development Step-By-Step Process
+        </h2>
         <div className={`${styles.services_image_container}`}>
           <Image
             src="/services_images/web_development.png"
@@ -129,12 +138,16 @@ const content1 = () => {
             objectFit="contain"
           />
         </div>
-        <h2 className="hire-h2 margin-bottom-8">Technologies We Excel At:</h2>
+        <h2 className={`${hireService.hireh2} ${hireService.marginbottom8}`}>
+          {/* <h2 className="hire-h2 margin-bottom-8"> */}
+          Technologies We Excel At:
+        </h2>
         <div
           id="ruby-rails"
-          className="d-flex align-items-center margin-top-32px"
+          className={`d-flex align-items-center ${hireService.margintop32px}`}
+          // className="d-flex align-items-center margin-top-32px"
         >
-          <div className="heading-icon">
+          <div className={hireService.headingicon}>
             <Image
               src="/icons/rails.webp"
               alt="React Native png"
@@ -142,10 +155,12 @@ const content1 = () => {
               height={45}
             />
           </div>
-          <h3 className="hire-icon-text">Ruby on Rails Development</h3>
+          <h3 className={hireService.hireicontext}>
+            Ruby on Rails Development
+          </h3>
         </div>
 
-        <p className="hire-p margin-bottom-24px">
+        <p className={`${hireService.hirep} ${hireService.marginbottom24px}`}>
           Code Garage Tech chooses the Ruby on Rails framework for web
           development because we know how to leverage its real power. We have a
           tonne of expertise in creating Ruby on Rails web applications of all
@@ -157,10 +172,13 @@ const content1 = () => {
           on Rails applications.
         </p>
 
-        <h3 className="hire-h3">
+        <h3 className={hireService.hireh3}>
           Our Ruby on Rails Development Services Include:
         </h3>
-        <ul className="hire-list margin-bottom-24px">
+        <ul
+          className={`${hireService.hirelist} ${hireService.marginbottom24px}`}
+        >
+          {/* <ul className="hire-list margin-bottom-24px"> */}
           <li>Enterprise Modernization </li>
           <li>Rails Application Migration</li>
           <li>Legacy Code Audit</li>
@@ -172,9 +190,10 @@ const content1 = () => {
         </ul>
         <div
           id="react-nextjs"
-          className="d-flex align-items-center margin-top-32px"
+          className={`d-flex align-items-center ${hireService.margintop32px}`}
+          // className="d-flex align-items-center margin-top-32px"
         >
-          <div className="heading-icon">
+          <div className={hireService.headingicon}>
             <Image
               src="/icons/react_native.webp"
               alt="React Native png"
@@ -182,11 +201,11 @@ const content1 = () => {
               height={45}
             />
           </div>
-          <h3 className="hire-icon-text">
+          <h3 className={hireService.hireicontext}>
             ReactJs Development / NextJs Development
           </h3>
         </div>
-        <p className="hire-p margin-bottom-24px">
+        <p className={`${hireService.hirep}  ${hireService.marginbottom24px}`}>
           We use React/NextJs Development because it is a dynamic and flexible
           web app framework. We can create web as well as mobile applications
           utilizing the same codebase with the help of React/NextJs.
@@ -199,10 +218,12 @@ const content1 = () => {
           advantages of using React/NextJs. are numerous for developers as well
           as clients.
         </p>
-        <h3 className="hire-h3">
+        <h3 className={hireService.hireh3}>
           Choose Next.Js development services because it offers:{' '}
         </h3>
-        <ul className="hire-list margin-bottom-24px">
+        <ul
+          className={`${hireService.hirelist} ${hireService.marginbottom24px}`}
+        >
           <li>Multiple Rendering Capabilities</li>
           <li>Internationalization routing</li>
           <li>Auto Code Splitting</li>
@@ -212,8 +233,11 @@ const content1 = () => {
           <li>Image Optimization</li>
           <li>Improved SEO</li>
         </ul>
-        <div id="vuejs" className="d-flex align-items-center margin-top-32px">
-          <div className="heading-icon">
+        <div
+          id="vuejs"
+          className={`d-flex align-items-center ${hireService.margintop32px}`}
+        >
+          <div className={hireService.headingicon}>
             <Image
               src="/icons/vuejs.webp"
               alt="React Native png"
@@ -221,11 +245,11 @@ const content1 = () => {
               height={45}
             />
           </div>
-          <h3 className="hire-icon-text">
+          <h3 className={hireService.hireicontext}>
             VueJs Development/ NuxtJs Development
           </h3>
         </div>
-        <p className="hire-p margin-bottom-24px">
+        <p className={`${hireService.hirep}  ${hireService.marginbottom24px}`}>
           VueJs/NuxtJs Development is an adaptable, scalable, and responsive web
           application framework that supports functional, beautiful, and fast
           front-end experiences. <br />
@@ -236,10 +260,12 @@ const content1 = () => {
           <br />
           <br />
         </p>
-        <h3 className="hire-h3">
+        <h3 className={hireService.hireh3}>
           Choose VueJs/NuxtJs development services because:{' '}
         </h3>
-        <ul className="hire-list margin-bottom-24px">
+        <ul
+          className={`${hireService.hirelist} ${hireService.marginbottom24px}`}
+        >
           <li>It offers a Performance boost</li>
           <li>It is Easy to Deploy and Use</li>
           <li>It offers Automatic Code Splitting</li>
@@ -249,8 +275,11 @@ const content1 = () => {
           <li>Image Optimization</li>
           <li>Improved SEO</li>
         </ul>
-        <div id="nodejs" className="d-flex align-items-center margin-top-32px">
-          <div className="heading-icon">
+        <div
+          id="nodejs"
+          className={`d-flex align-items-center ${hireService.margintop32px}`}
+        >
+          <div className={hireService.headingicon}>
             <Image
               src="/icons/nodejs.webp"
               alt="React Native png"
@@ -258,9 +287,9 @@ const content1 = () => {
               height={45}
             />
           </div>
-          <h3 className="hire-icon-text">NodeJs Development</h3>
+          <h3 className={hireService.hireicontext}>NodeJs Development</h3>
         </div>
-        <p className="hire-p margin-bottom-24px">
+        <p className={`${hireService.hirep}  ${hireService.marginbottom24px}`}>
           As a preeminent Node.js development company, Code Garage Tech create
           scalable, real-time, and fast applications. Hire our adept and
           dedicated developers to fulfill your Node JS web development
@@ -272,16 +301,24 @@ const content1 = () => {
           event-driven APIs to develop real-time mobile, desktop, and web
           applications.
         </p>
-        <h3 className="hire-h3">Our Node JS Development Services provide: </h3>
-        <ul className="hire-list margin-bottom-24px">
+        <h3 className={hireService.hireh3}>
+          Our Node JS Development Services provide:{' '}
+        </h3>
+        <ul
+          className={`${hireService.hirelist} ${hireService.marginbottom24px}`}
+        >
           <li>100% Transparency</li>
           <li>Flexible-Engagement-Models</li>
           <li>Timely Delivery</li>
           <li>Experienced Developers</li>
           <li>Technical Support</li>
         </ul>
-        <div id="laravel" className="d-flex align-items-center margin-top-32px">
-          <div className="heading-icon">
+        <div
+          id="laravel"
+          className={`d-flex align-items-center ${hireService.margintop32px}`}
+          // className="d-flex align-items-center margin-top-32px"
+        >
+          <div className={hireService.headingicon}>
             <Image
               src="/icons/laravel.webp"
               alt="React Native png"
@@ -289,9 +326,9 @@ const content1 = () => {
               height={45}
             />
           </div>
-          <h3 className="hire-icon-text">Laravel Development</h3>
+          <h3 className={hireService.hireicontext}>Laravel Development</h3>
         </div>
-        <p className="hire-p margin-bottom-24px">
+        <p className={`${hireService.hirep}  ${hireService.marginbottom24px}`}>
           As a leading Laravel development company, we offer cutting-edge
           services that will help your business to reach new heights of success.
           We offer Laravel development solutions to businesses of all sizes.{' '}
@@ -301,8 +338,12 @@ const content1 = () => {
           development services and we effectively execute integration processes
           and customization while developing Laravel applications.
         </p>
-        <h3 className="hire-h3">Our Laravel Development Services Include:</h3>
-        <ul className="hire-list margin-bottom-24px">
+        <h3 className={hireService.hireh3}>
+          Our Laravel Development Services Include:
+        </h3>
+        <ul
+          className={`${hireService.hirelist} ${hireService.marginbottom24px}`}
+        >
           <li>Customized Laravel Development Services</li>
           <li>Third-Party Integrations</li>
           <li>Laravel Enterprise Solutions</li>
@@ -311,8 +352,11 @@ const content1 = () => {
           <li>CRM Development</li>
           <li>Laravel Extension Development</li>
         </ul>
-        <div id="shopify" className="d-flex align-items-center margin-top-32px">
-          <div className="heading-icon">
+        <div
+          id="shopify"
+          className={`d-flex align-items-center ${hireService.margintop32px}`}
+        >
+          <div className={hireService.headingicon}>
             <Image
               src="/images/shopify_icon.webp"
               alt="React Native png"
@@ -320,9 +364,9 @@ const content1 = () => {
               height={45}
             />
           </div>
-          <h3 className="hire-icon-text">Shopify Development </h3>
+          <h3 className={hireService.hireicontext}>Shopify Development </h3>
         </div>
-        <p className="hire-p margin-bottom-24px">
+        <p className={`${hireService.hirep}  ${hireService.marginbottom24px}`}>
           As a preeminent development company, we offer a significant range of
           Shopify services to aid you to build a scalable, robust, highly
           secure, and sales-driven Shopify store. <br />
@@ -332,8 +376,12 @@ const content1 = () => {
           targets. Our main aim is to bring experience, dedication, and
           expertise with our solutions.
         </p>
-        <h3 className="hire-h3">Our Shopify Development Services Include:</h3>
-        <ul className="hire-list margin-bottom-24px">
+        <h3 className={hireService.hireh3}>
+          Our Shopify Development Services Include:
+        </h3>
+        <ul
+          className={`${hireService.hirelist} ${hireService.marginbottom24px}`}
+        >
           <li> Theme Design as well as customization</li>
           <li>Shopify Integration</li>
           <li> Setup as well as Configuration</li>
@@ -344,9 +392,9 @@ const content1 = () => {
         </ul>
         <div
           id="wordpress"
-          className="d-flex align-items-center margin-top-32px"
+          className={`d-flex align-items-center ${hireService.margintop32px}`}
         >
-          <div className="heading-icon">
+          <div className={hireService.headingicon}>
             <Image
               src="/icons/wordpress.webp"
               alt="React Native png"
@@ -354,9 +402,9 @@ const content1 = () => {
               height={45}
             />
           </div>
-          <h3 className="hire-icon-text">WordPress Development </h3>
+          <h3 className={hireService.hireicontext}>WordPress Development </h3>
         </div>
-        <p className="hire-p margin-bottom-24px">
+        <p className={`${hireService.hirep}  ${hireService.marginbottom24px}`}>
           WordPress is one of the most powerful and convenient Content
           Management Systems that has umpteen features and makes your experience
           more fascinating as well as pleasing. <br />
@@ -366,10 +414,12 @@ const content1 = () => {
           high-performing digital experiences that take your business to the new
           height of success with WordPress Development Solutions.
         </p>
-        <h3 className="hire-h3">
+        <h3 className={hireService.hireh3}>
           Our WordPress Development Services Include:{' '}
         </h3>
-        <ul className="hire-list margin-bottom-24px">
+        <ul
+          className={`${hireService.hirelist} ${hireService.marginbottom24px}`}
+        >
           <li>WordPress SEO</li>
           <li> Designing</li>
           <li> Customization</li>
@@ -384,7 +434,7 @@ const content1 = () => {
 
 const content7 = () => (
   <>
-    <div className="margin-top-32px">
+    <div className={hireService.margintop32px}>
       <TechComponent
         techList={'frontTech'}
         frontActive={true}
@@ -396,7 +446,7 @@ const content7 = () => (
 
 // const content6 = () => <TechComponent techList={"frontTech"} />;
 const content3 = () => (
-  <div className="form-service">
+  <div className={hireService.formservice}>
     <ScheduleForm
       title={'Schedule a Meeting'}
       requestOrigin={'Request generated from web services page'}

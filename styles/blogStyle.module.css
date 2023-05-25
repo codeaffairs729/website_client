@@ -1,0 +1,286 @@
+.p {
+  font-size: 16px;
+}
+.blogpagecontainer .hire-h2 {
+  color: #0a0a23;
+}
+.bloglistcontainer {
+  padding: 100px 0px 200px;
+}
+.blogpagecontainer {
+  margin-top: 50px;
+  padding: 150px;
+  padding-top: 0px;
+}
+.background_image_container {
+  height: 100%;
+  width: 100%;
+  margin-top: 90px;
+}
+/* .blog-shades {
+  padding: 48px;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+} */
+
+.ql-editor .ql-blank {
+  height: 500px;
+}
+.bloglistcontainer div h1 {
+  margin-bottom: 72px;
+}
+.bloglistdesc {
+  height: 170px;
+}
+
+.breadcumbarea {
+  background: url(/images/blog-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 130px 0 130px;
+  margin-top: 100px;
+}
+.controlbtndiv {
+  position: relative;
+  top: 100px;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 15px;
+  padding: 20px;
+}
+.logout {
+  color: aliceblue;
+  border-radius: 10px;
+  height: 46px;
+  /* width: 100px; */
+}
+.create-btn {
+  color: aliceblue;
+  border-radius: 10px;
+  height: 46px;
+  /* width: 100px; */
+}
+.blogbackbtn {
+  position: relative;
+  top: 150px;
+  left: 60px;
+  z-index: 1;
+}
+.cardtitle {
+  transition: all 0.5s ease-out;
+}
+.cardtitle:hover {
+  text-decoration: underline;
+}
+.link-text:hover {
+  text-decoration: underline;
+}
+
+/* ........create blog..... */
+.editblog {
+  margin: 70px 60px 100px;
+  border: 0.5px solid gray;
+  padding: 90px;
+  margin-top: 200px;
+}
+.editblog h1 {
+  margin-bottom: 70px;
+}
+.ql-container {
+  height: 500px;
+}
+
+.editorbtn {
+  margin-top: 75px;
+  /* margin-left: 1042px; */
+  width: 110px;
+  height: 46px;
+  color: aliceblue;
+  background: #2522ba;
+  border: 1px solid #2522ba;
+  border-radius: 16px;
+  /* #0b57d0 */
+  transition: all 0.5s ease-out;
+}
+.editorbtn:hover {
+  color: aliceblue;
+  background: #2972e7;
+  border-radius: 16px;
+  /* #0b57d0 */
+}
+.htmlContent p {
+  font-size: 18px;
+}
+
+.htmlContent img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.htmlContent ul {
+  padding-left: 40px;
+}
+.htmlContent ul li {
+  list-style: disc;
+}
+
+.htmlContent ol li {
+  list-style: decimal;
+}
+
+.uploadbannerimg {
+  border: 0.5px solid lightgrey;
+  padding: 15px;
+}
+.fileerror {
+  padding: 5px;
+}
+
+.textblue {
+  color: #2522ba;
+}
+
+/* modal for delete */
+.modalbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.modalbtn:hover {
+  opacity: 1;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn,
+.deletebtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+  z-index: 1071;
+}
+.modal {
+  z-index: 1070;
+}
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #f44336;
+  z-index: 1072;
+}
+
+/* Add padding and center-align text to the container */
+.modalcontainer {
+  padding: 16px;
+  text-align: center;
+}
+
+/* modal */
+.blogmodalcontent {
+  border-radius: 0px;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* Modal Content/Box */
+.modalcontent {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 0px;
+}
+
+.modalcontainer h2 {
+  margin-bottom: 40px;
+}
+.modalcontainer p {
+  margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .deletebtn {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .blogpagecontainer {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .blogpagecontainer {
+    margin-top: 50px;
+    padding: 50px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .blogpagecontainer {
+    padding: 20px;
+  }
+  .blogshades {
+    padding: 0px;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .background_image_container {
+    height: 50vh;
+    background-size: contain;
+  }
+  .blogpagecontainer {
+    margin-top: 0px;
+    padding: 20px;
+    padding-top: 0px;
+  }
+}
+.hirecontainer {
+  position: relative;
+  margin: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  /* outline: rgb(230, 5, 5) solid; */
+  max-width: 1440px;
+}

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import TechComponentIcon from './techComponentIcon'
+import styles from '../styles/hireService.module.css'
 
 const TechComponent = ({ techList, frontActive, backActive, mobileActive }) => {
   const mobileTech = [
@@ -115,13 +116,15 @@ const TechComponent = ({ techList, frontActive, backActive, mobileActive }) => {
   }, [])
   return (
     <>
-      <div className="service-footer d-flex flex-column justify-content-center align-items-center">
-        <h2 className="hire-h2 service-header text-center">
+      <div
+        className={`${styles.servicefooter} d-flex flex-column justify-content-center align-items-center`}
+      >
+        <h2 className={`${styles.hireh2} service-header text-center`}>
           The Technologies And Services We Use For Website & CMS Development
         </h2>
-        <ul className="service-footer-nav-container">
+        <ul className={styles.servicefooternavcontainer}>
           <li
-            className="cursor_pointer"
+            className={styles.cursor_pointer}
             onClick={handleOnMobile}
             style={{
               color: activeMobile ? 'blue' : 'black',
@@ -130,21 +133,23 @@ const TechComponent = ({ techList, frontActive, backActive, mobileActive }) => {
             Mobile
           </li>
           <li
-            className="cursor_pointer"
+            className={styles.cursor_pointer}
             onClick={handleOnFrontend}
             style={{ color: activeFront ? 'blue' : 'black' }}
           >
             Frontend
           </li>
           <li
-            className="cursor_pointer"
+            className={styles.cursor_pointer}
             onClick={handleOnBackend}
             style={{ color: activeBack ? 'blue' : 'black' }}
           >
             Backend
           </li>
         </ul>
-        <div className="service-container service-footer-nav-container-logo">
+        <div
+          className={`${styles.servicecontainer} ${styles.servicefooternavcontainerlogo}`}
+        >
           <TechComponentIcon path={path} />
         </div>
       </div>

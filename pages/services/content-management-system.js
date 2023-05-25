@@ -6,36 +6,39 @@ import Image from 'next/image'
 import ScheduleForm from '../../components/schedule'
 import styles from '../../styles/Services.module.css'
 const techTitle = 'Content Management System'
+import hireService from '../../styles/hireService.module.css'
 const contentHeader1 = () => {
   return (
     <>
-      <div className="tech-service-body">
-        <div className="tech-service-body-left">
-          <h1 className="hire-h1">{techTitle}</h1>
-          <ul className="hire-list-icon">
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+      <div className={hireService.techservicebody}>
+        <div className={hireService.techservicebodyleft}>
+          <h1 className={hireService.hireh1}>{techTitle}</h1>
+          <ul
+            className={`${hireService.hirelisticon} ${hireService.hire_list_items_services} `}
+          >
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Open Source Scalable Reliable CMS
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 The Flexible Platform Empowering Website Creators
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 The Platform Millions of Websites Are Built On
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Create a website you&apos;re proud of
               </p>
             </li>
           </ul>
         </div>
-        <div className="tech-service-body-right">
+        <div className={hireService.techservicebodyright}>
           {/* <img src="/icons/service-icon/cloud.webp" alt="3D Cloud" /> */}
           <Image
             src="/icons/service-icon/Frame.webp"
@@ -55,7 +58,7 @@ const content1 = () => {
     <>
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           Code Garage Tech offers comprehensive web content management system
           solutions. With our supreme and first-class CMS applications you can
           easily manage as well as organize the data of your business. We aid
@@ -78,8 +81,8 @@ const content1 = () => {
         {/* image required */}
 
         {/* content-7 */}
-        <div className="shade-1">
-          <div className="grey-shade"></div>
+        <div className={hireService.shade1}>
+          <div className={hireService.greyshade}></div>
 
           <div className={`${styles.services_image_container}`}>
             <Image
@@ -91,44 +94,54 @@ const content1 = () => {
               objectFit="contain"
             />
           </div>
-          <h2 className="hire-h2 margin-bottom-24px">
+          <h2
+            className={`${hireService.hireh2} ${hireService.marginbottom24px}`}
+          >
             Pertinent CMS Features That We Offer:{' '}
           </h2>
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>Quality Performance, Flexible & Scalable</b>
           </h3>
-          <p className="hire-p margin-bottom-24px">
+          <p
+            className={`${hireService.hirep}  ${hireService.marginbottom24px}`}
+          >
             We ensure that our CMS solutions offer numerous levels of caching as
             well as cloud based facilities for great performance that is
             scalable as well as supports the seamless performance of websites.
           </p>
 
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>Integrable & Extensible </b>
           </h3>
-          <p className="hire-p margin-bottom-24px">
+          <p
+            className={`${hireService.hirep}  ${hireService.marginbottom24px}`}
+          >
             We offer vigorous Content Management Systems that are both
             integrable and compatible with other technologies, platforms, mobile
             applications, social networks, and CRM systems.
           </p>
 
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>
               Easy To Adapt & Operate For Content Editors And Site
               Administrators
             </b>
           </h3>
-          <p className="hire-p margin-bottom-24px">
+          <p
+            className={`${hireService.hirep}  ${hireService.marginbottom24px}`}
+          >
             We understand the requirement for a dynamic and intuitive Content
             Management System that can contribute to the online businesses
             that&apos;s why we have convenient to use as well as secure content
             management technology.
           </p>
 
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>Advanced & Improved Security Management</b>{' '}
           </h3>
-          <p className="hire-p margin-bottom-24px">
+          <p
+            className={`${hireService.hirep}  ${hireService.marginbottom24px}`}
+          >
             We offer advanced management solutions and with the help of that you
             get numerous pre-built authentication choices for your site that
             works like an advanced security system. We offer features such as
@@ -136,10 +149,12 @@ const content1 = () => {
             that contribute to safeguarding the website data.
           </p>
 
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>Online Applications & Marketing Tools </b>
           </h3>
-          <p className="hire-p margin-bottom-24px">
+          <p
+            className={`${hireService.hirep}  ${hireService.marginbottom24px}`}
+          >
             Code Garage Tech offers you a range of digital marketing tools that
             are customer-focused and improve marketing by covering numerous
             channels.
@@ -151,7 +166,7 @@ const content1 = () => {
 }
 
 const content3 = () => (
-  <div className="form-service">
+  <div className={hireService.formservice}>
     <ScheduleForm
       title={'Schedule a Meeting'}
       requestOrigin={'Request generated from CMS page'}

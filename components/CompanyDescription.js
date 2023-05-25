@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import Form from './GeneralForm'
+import styles from '../styles/assisstanceModel.module.css'
 const CompanyDescription = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -30,7 +31,7 @@ const CompanyDescription = () => {
         return (
           <input
             type="text"
-            className="form-container-input-field contact-field-input-2"
+            className={`${styles.formcontainerinputfield} contact-field-input-2`}
             placeholder="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -61,7 +62,7 @@ const CompanyDescription = () => {
         return (
           <input
             type="email"
-            className="form-container-input-field contact-field-input-2"
+            className={`${styles.formcontainerinputfield} contact-field-input-2`}
             placeholder="Your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -72,7 +73,7 @@ const CompanyDescription = () => {
     {
       icon: (
         <svg
-          className="form-phone-icon"
+          className={styles.formphoneicon}
           width="20"
           height="20"
           viewBox="0 0 20 20"
@@ -93,7 +94,7 @@ const CompanyDescription = () => {
         return (
           <input
             type="tel"
-            className="form-container-input-field contact-field-input-2"
+            className={`${styles.formcontainerinputfield} contact-field-input-2`}
             placeholder="Your phone"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
@@ -125,7 +126,7 @@ const CompanyDescription = () => {
         return (
           <textarea
             type="text"
-            className="form-container-input-field contact-field-input-2"
+            className={`${styles.formcontainerinputfield} contact-field-input-2`}
             placeholder="Write your query.."
             value={query}
             onChange={(e) => setQuery(e.target.value)}

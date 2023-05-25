@@ -1,3 +1,5 @@
+import styles from '../styles/blogStyle.module.css'
+
 const DeleteModal = ({ handleOnDelete }) => {
   const handleOnPopUp = (event) => {
     event.preventDefault()
@@ -12,14 +14,18 @@ const DeleteModal = ({ handleOnDelete }) => {
         aria-hidden="true"
       >
         <div className="modal-dialog">
-          <div className="blog-modal-content modal-content">
-            <div className="modal-container">
+          <div
+            className={`modal-content ${styles.blogmodalcontent} ${styles.modalcontent}`}
+          >
+            {/* <div className="blog-modal-content modal-content"> */}
+            <div className={styles.modalcontainer}>
               <h2>Delete Account</h2>
               <p>Are you sure you want to delete your blog?</p>
-              <div className="clearfix">
+              <div className={styles.clearfix}>
                 <button
                   type="button"
-                  className={`modal-btn cancelbtn`}
+                  className={`${styles.modalbtn} ${styles.cancelbtn}`}
+                  // className={`modal-btn cancelbtn`}
                   data-bs-dismiss="modal"
                   onClick={(event) => handleOnPopUp(event)}
                 >
@@ -27,7 +33,8 @@ const DeleteModal = ({ handleOnDelete }) => {
                 </button>
                 <button
                   type="button"
-                  className={`modal-btn deletebtn`}
+                  className={`${styles.modalbtn} ${styles.deletebtn}`}
+                  // className={`modal-btn deletebtn`}
                   data-bs-dismiss="modal"
                   onClick={() => handleOnDelete()}
                 >

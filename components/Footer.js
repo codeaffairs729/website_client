@@ -363,6 +363,17 @@ const Footer = () => {
                     <div className={`${FooterCss.stack_item_text}`}>Career</div>
                   </div>
                 </Link>
+                <Link href="/blogs">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    {/* <Image
+                      src={'/footer-images/openai-invert.png'}
+                      alt="Open-AI-logo"
+                      height={16}
+                      width={16}
+                    /> */}
+                    <div className={`${FooterCss.stack_item_text}`}>Blogs</div>
+                  </div>
+                </Link>
                 <Link href="/contact">
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
                     {/* <Image
@@ -551,6 +562,19 @@ const Footer = () => {
                     </div>
                   </div>
                 </Link>
+                <Link href="/services/mobile-solutions/#mobile_react">
+                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                    <Image
+                      src={'/icons/react_native.webp'}
+                      alt="React-Native-icon"
+                      height={16}
+                      width={16}
+                    />
+                    <div className={`${FooterCss.stack_item_text}`}>
+                      React Native
+                    </div>
+                  </div>
+                </Link>
 
                 {/* <div className={`${FooterCss.stack_items}`}>
                   <Image
@@ -662,12 +686,12 @@ const Footer = () => {
                 <div className={`${FooterCss.stack_items}`}>
                   <Image
                     src={'/footer-images/travel.png'}
-                    alt="Travel-icon"
+                    alt="Packing & Moving"
                     height={16}
                     width={16}
                   />
                   <div className={`${FooterCss.stack_item_text}`}>
-                    Travel & Tourism
+                    Packing & Moving
                   </div>
                 </div>
                 <div className={`${FooterCss.stack_items}`}>
@@ -700,6 +724,15 @@ const Footer = () => {
                   <div className={`${FooterCss.stack_item_text}`}>
                     Automotive
                   </div>
+                </div>
+                <div className={`${FooterCss.stack_items}`}>
+                  <Image
+                    src={'/footer-images/ai.png'}
+                    alt="AI & ML"
+                    height={16}
+                    width={16}
+                  />
+                  <div className={`${FooterCss.stack_item_text}`}>AI & ML</div>
                 </div>
               </div>
             </div>

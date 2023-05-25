@@ -1,0 +1,385 @@
+/* General from CSS */
+
+.assistgenformcontainer {
+  width: 100%;
+  background: #ffffff;
+  /* border: 1px solid #27272E; */
+  border-radius: 32px;
+  box-sizing: border-box;
+}
+.assistinputfield {
+  width: 100%;
+  margin-top: -10px;
+  /* padding: 28px; */
+}
+
+.assistforminputdetail {
+  position: relative;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.assistinputicon {
+  color: #292930;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+.assistformcontainerheader {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  text-align: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  color: #292930;
+}
+
+.assistformcontainerinputfield {
+  width: 100%;
+  height: 39px;
+  padding-left: 48px;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #e3e6e9;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #292930;
+  transition: all 0.25s;
+}
+.attachment {
+  width: 100%;
+  height: 39px;
+  padding-left: 48px;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #e3e6e9;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #292930;
+  transition: all 0.25s;
+}
+
+.assist-attachment {
+  border: 1px solid blue;
+  margin-top: 15px;
+}
+.assistformcontainerinputbtn {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  width: 100%;
+  cursor: pointer;
+  height: 45px;
+  background: #93caaf;
+  color: white;
+  border-radius: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  transition: all 0.25s;
+  display: inline-block;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.assistformcontainerinput textarea {
+  /* margin-bottom: 66px; */
+  padding-top: 10px;
+  width: 100%;
+  display: inline-block;
+  height: 84px;
+  padding-left: 48px;
+  border: 1px solid #e3e6e9;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #292930;
+  transition: all 0.25s;
+  vertical-align: middle;
+  resize: none;
+}
+
+.assistformtextarea {
+  position: relative;
+}
+
+.assisttextareaicon {
+  position: absolute;
+  top: -29px;
+
+  z-index: 1;
+  /* transform: translateY(-50%); */
+}
+.assist-small-para {
+  margin-block: 24px;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  color: #27272e;
+}
+.assistdatetime {
+  height: 39px;
+  width: 100%;
+}
+
+.assist-date-value input {
+  color: rgb(128, 123, 123);
+  padding-left: 50px;
+}
+
+.attachmentoptional {
+  color: slategray;
+}
+@media screen and (max-width: 767px) {
+  .assistgenformcontainer {
+    /* width: 350px; */
+  }
+
+  .assistformcontainerheader {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .assistinputfield {
+    padding: 28px;
+  }
+
+  .assist-small-para {
+    margin-block: 10px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .assistgenformcontainer {
+    border: none;
+  }
+
+  .assistinputfield {
+    padding-inline: 4px;
+  }
+}
+
+/* Gen-Form css */
+
+/* General from CSS */
+
+.gen-form-container {
+  width: 100%;
+  background: #ffffff;
+  /* border: 1px solid #27272E; */
+  border-radius: 32px;
+  box-sizing: border-box;
+  margin: 0px auto;
+  width: 100%;
+}
+.input-field {
+  width: 100%;
+  padding: 28px;
+}
+
+.form-input-detail {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+}
+.input-icon {
+  color: #292930;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.input-icon:nth-child(2) {
+  position: absolute;
+  left: 100px;
+}
+.form-container-header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  text-align: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  color: #292930;
+}
+
+.formcontainerinputfield {
+  width: 100%;
+  height: 39px;
+  padding-left: 48px;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #e3e6e9;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #292930;
+  transition: all 0.25s;
+}
+.attachment {
+  width: 100%;
+  height: 39px;
+  padding-left: 48px;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #e3e6e9;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #292930;
+  transition: all 0.25s;
+}
+
+.attachment {
+  border: 1px solid blue;
+  margin-top: 15px;
+}
+.formcontainerinputbtn {
+  margin-top: 15px;
+  width: 100%;
+  cursor: pointer;
+  height: 60px;
+  background: #93caaf;
+  color: white;
+  border-radius: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  transition: all 0.25s;
+  display: inline-block;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.form-container-input textarea {
+  /* margin-bottom: 66px; */
+  padding-top: 10px;
+  width: 100%;
+  display: inline-block;
+  height: 128px;
+  padding-left: 48px;
+  border: 1px solid #e3e6e9;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  resize: none;
+  color: #292930;
+  transition: all 0.25s;
+  vertical-align: middle;
+}
+
+.formtextarea {
+  position: absolute;
+}
+
+.formnameicon {
+  position: relative;
+  left: -5px;
+  top: -1px;
+}
+.jobapplyupImgtext {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  color: #5956e9;
+}
+.jobapplyupImglink:hover {
+  color: #5956e9;
+  cursor: pointer;
+}
+.masktypealpha {
+  mask-type: alpha;
+}
+.formphoneicon {
+  position: relative;
+  top: -2px;
+}
+.formemailicon {
+  position: relative;
+  left: -8px;
+}
+
+.formdateicon {
+  position: relative;
+  left: 2px;
+  top: -2px;
+}
+.textareaicon {
+  position: absolute;
+  /* left:8px; */
+  top: -48px;
+  z-index: 1;
+  /* transform: translateY(-50%); */
+}
+.small-para {
+  margin-block: 24px;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  color: #27272e;
+}
+.datetime {
+  height: 39px;
+  width: 100%;
+}
+
+.datevalue input {
+  color: rgb(128, 123, 123);
+  padding-left: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .gen-form-container {
+    width: 350px;
+  }
+
+  .form-container-header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .input-field {
+    padding: 28px;
+  }
+
+  .small-para {
+    margin-block: 10px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .gen-form-container {
+    border: none;
+    width: 100%;
+  }
+
+  .input-field {
+    padding-inline: 4px;
+  }
+}

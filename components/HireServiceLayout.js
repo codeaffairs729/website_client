@@ -1,6 +1,7 @@
 import Header from '../pages/includes/header'
 // import Footer from '../pages/includes/footer'
 import Image from 'next/image'
+import styles from '../styles/hireService.module.css'
 const HireServiceLayout = ({
   bannerComponent,
   contentHeader,
@@ -17,11 +18,11 @@ const HireServiceLayout = ({
   return (
     <>
       {/* <Header /> */}
-      <div className="hire-container ">
+      <div className={styles.hirecontainer}>
         {isIconExit && (
           <div>
             {/* <div className="blue-circle"></div> */}
-            <div className="banner-cloud">
+            <div className={styles.bannercloud}>
               <Image
                 src="/img/cloud.webp"
                 alt="cloud-jpg"
@@ -31,7 +32,7 @@ const HireServiceLayout = ({
               />
             </div>
 
-            <div className="banner-type">
+            <div className={styles.bannertype}>
               <Image
                 src="/images/type.webp"
                 alt="cloud-jpg"
@@ -47,12 +48,15 @@ const HireServiceLayout = ({
         {contentHeader1 && contentHeader1()}
       </div>
       {bannerComponent()}
-      <div className="hire-container "></div>
+      <div className={styles.hirecontainer}></div>
       {content4 && content4()}
-      <div className="hire-container "></div>
+      <div className={styles.hirecontainer}></div>
       {content5 && content5()}
-      <div className="hire-container hire-container-body-content ">
-        <div className="hire-container-body-left-content">
+      <div
+        className={`${styles.hirecontainer} ${styles.hirecontainerbodycontent}`}
+      >
+        {/* <div className="hire-container hire-container-body-content "> */}
+        <div className={styles.hirecontainerbodyleftcontent}>
           <div className="hire-team-c1 hire-container-body-left-content1">
             {content1 && content1()}
           </div>
@@ -63,7 +67,7 @@ const HireServiceLayout = ({
 
         {content3 && content3()}
       </div>
-      <div className="hire-container margin-bottom-100">
+      <div className={`${styles.hirecontainer} ${styles.marginbottom100}`}>
         {content7 && content7()}
       </div>
       <div>{content6 && content6()}</div>

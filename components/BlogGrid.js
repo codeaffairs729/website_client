@@ -1,9 +1,10 @@
 import Link from 'next/link'
+import styles from '../styles/blogStyle.module.css'
 
 const BlogGrid = ({ data, authorized, setDelId, db }) => {
   return (
     <>
-      <div className="container blog-list-container">
+      <div className={`container ${styles.bloglistcontainer} `}>
         <div className="row d-flex justify-content-center">
           {data.map((e, i) => (
             <div
@@ -21,9 +22,11 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
                 />
               </div>
               <div className="card-body">
-                <div className="blog-list-desc">
+                <div className={styles.bloglistdesc}>
+                  {/* <div className="blog-list-desc"> */}
                   <Link href={`/${db}/${e.id}`}>
-                    <h3 className=" card-title pt-2 cursor_pointer">
+                    <h3 className={`pt-2 cursor_pointer ${styles.cardtitle}`}>
+                      {/* <h3 className=" card-title pt-2 cursor_pointer"> */}
                       {e.title}
                     </h3>
                   </Link>
@@ -32,7 +35,9 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
                 <div className="d-flex justify-content-between">
                   <span className="text-primary fw-bold">
                     <Link href={`/${db}/${e.slug}`}>
-                      <span className="text-blue link-text fs-6 fw-semibold cursor_pointer">
+                      <span
+                        className={`${styles.textblue} link-text fs-6 fw-semibold cursor_pointer `}
+                      >
                         READ MORE
                       </span>
                     </Link>
@@ -41,13 +46,15 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
                     <>
                       <Link href={`/${db}/edit/${e.slug}`}>
                         <span className="text-primary fw-bold">
-                          <span className=" text-blue link-text fs-6 fw-semibold cursor_pointer">
+                          <span
+                            className={` ${styles.textblue} link-text fs-6 fw-semibold cursor_pointer`}
+                          >
                             EDIT
                           </span>
                         </span>
                       </Link>
                       <button
-                        className="text-blue fs-6 fw-semibold cursor_pointer  fw-bold"
+                        className={`${styles.textblue} fs-6 fw-semibold cursor_pointer fw-bold`}
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal"
                         onClick={() => setDelId(e.id)}

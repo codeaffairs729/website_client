@@ -5,34 +5,39 @@ import Head from 'next/head'
 import Image from 'next/image'
 import ScheduleForm from '../../components/schedule'
 const techTitle = 'Deployment and Host Management'
+import hireService from '../../styles/hireService.module.css'
 const contentHeader1 = () => {
   return (
     <>
-      <div className="tech-service-body">
-        <div className="tech-service-body-left">
-          <h1 className="hire-h1">{techTitle}</h1>
-          <ul className="hire-list-icon">
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+      <div className={hireService.techservicebody}>
+        <div className={hireService.techservicebodyleft}>
+          <h1 className={hireService.hireh1}>{techTitle}</h1>
+          <ul
+            className={`${hireService.hirelisticon} ${hireService.hire_list_items_services} `}
+          >
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Re-Engineering your Development & Deployment Process
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Platform Scalability And Flexibility
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Simple To Use And Contextualize
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">Easy To Upgrade And Update</p>
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
+                Easy To Upgrade And Update
+              </p>
             </li>
           </ul>
         </div>
-        <div className="tech-service-body-right">
+        <div className={hireService.techservicebodyright}>
           {/* <img src="/icons/service-icon/cloud.webp" alt="3D Cloud" /> */}
           <Image
             src="/icons/service-icon/Frame.webp"
@@ -52,10 +57,10 @@ const content1 = () => {
     <>
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
-        <h2 className="hire-h2 margin-bottom-24px">
+        <h2 className={`${hireService.hireh2} ${hireService.marginbottom24px}`}>
           One-Stop Solution For All Businesses{' '}
         </h2>
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           We are a team of professionals that are dedicated to the deployment
           and management of systems. We take pride in our work, and we love what
           we do.
@@ -65,7 +70,10 @@ const content1 = () => {
           extensive experience working with various types of software,
           including:
         </p>
-        <ul className="hire-list margin-bottom-24px">
+        <ul
+          className={`${hireService.hirelist} ${hireService.marginbottom24px}`}
+        >
+          {/* <ul className="hire-list margin-bottom-24px"> */}
           <li>Linux and Windows Servers</li>
           <li>Cloud Servers</li>
           <li>Hypervisors (KVM, Xen)</li>
@@ -74,16 +82,20 @@ const content1 = () => {
           <li>Heroku</li>
           <li>Microsoft Azure</li>
         </ul>
-        <div className="shade-1">
-          <div className="grey-shade"></div>
-          <h2 className="hire-h2 margin-bottom-24px">
+        <div className={hireService.shade1}>
+          <div className={hireService.greyshade}></div>
+          <h2
+            className={`${hireService.hireh2} ${hireService.marginbottom24px}`}
+          >
             <strong>
               Why Choose Code Garage Tech for Deployment and Host Management
               services
             </strong>
           </h2>
 
-          <ul className="hire-list margin-bottom-24px">
+          <ul
+            className={`${hireService.hirelist} ${hireService.marginbottom24px}`}
+          >
             <li>
               We offer a wide range of services including deployment, hosting
               and maintenance. Our team of experts will take care of everything
@@ -104,10 +116,10 @@ const content1 = () => {
           </ul>
         </div>
         {/* content-7 */}
-        <h2 className="hire-h2">
+        <h2 className={hireService.hireh2}>
           <b>Advantages of Deployment and Host Management Services</b>
         </h2>
-        <ul className="hire-list">
+        <ul className={`${hireService.hirelist}`}>
           <li>
             The ability to test the application before it goes live, which
             improves the overall quality of the product.
@@ -126,7 +138,7 @@ const content1 = () => {
           <li>Save time on manual tasks like configuration changes/updates</li>
         </ul>
 
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           If you&apos;re looking for a deployment and hosting provider that can
           help you get your site off the ground, look no further. We&apos;ve
           been in business since 2015, and we know what it takes to make a
@@ -142,7 +154,7 @@ const content1 = () => {
 }
 
 const content3 = () => (
-  <div className="form-service">
+  <div className={hireService.formservice}>
     <ScheduleForm
       title={'Schedule a Meeting'}
       requestOrigin={'Request generated from Deployment Host Management page'}

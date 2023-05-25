@@ -22,7 +22,7 @@ function AboutUs() {
   const sideImgArr = [
     ['aboutUsImages/about-img1.webp', 'Mehakpal Singh(Founder)'],
     ['aboutUsImages/about-img2.webp', 'Poonam Thakur(HR Manager)'],
-    ['aboutUsImages/about-img4.webp', 'Naresh Bhatia(Chartered Accountant)'],
+    ['aboutUsImages/naresh_pic.png', 'Naresh Bhatia(Chartered Accountant)'],
     ['aboutUsImages/about-img3.webp', 'Kannav Sharma(Lawyer)'],
   ]
 
@@ -52,7 +52,7 @@ function AboutUs() {
       'As a proactive and result-oriented finance professional, he has a strong track record of handling multiple assignments efficiently. He has 15 years of experience and is very diligent in handling Accounts & Finance, Direct & Indirect Tax, Internal Auditing, and Risk Assessment of the company.',
       'www.twitter.com',
       'www.instagram.com',
-      'aboutUsImages/about-img4.webp',
+      'aboutUsImages/naresh_pic.png',
     ],
     [
       'Kannav Sharma',
@@ -71,7 +71,7 @@ function AboutUs() {
 
   setTimeout(() => {
     setShimmer(false)
-  }, '1000')
+  }, '500')
 
   useEffect(() => {
     handleImageLoad('useEffect')
@@ -176,7 +176,9 @@ function AboutUs() {
               </h2>
               <p className="about-area-7-para">
                 We&apos;re on a mission to make the IT world more
-                process-driven.
+                process-driven.To pursue innovation and drive technological
+                advancements in order to revolutionize the industry and deliver
+                cutting-edge solutions.
                 <br />
                 <br />
                 We believe in empowering entrepreneurs by providing valuable
@@ -184,10 +186,10 @@ function AboutUs() {
                 <br />
                 <br />
                 Our IT services emphasize delivering optimal solutions with
-                top-notch services in web development, mobile development, and
-                digital marketing. Providing overall satisfaction to clients is
-                our pertinent priority and we aim to serve them with the best
-                and most reliable solutions.
+                top-notch services in web design and development, mobile
+                development, and digital marketing. Providing overall
+                satisfaction to clients is our pertinent priority and we aim to
+                serve them with the best and most reliable solutions.
                 <br />
                 <br />
               </p>

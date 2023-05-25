@@ -6,34 +6,39 @@ import Image from 'next/image'
 import ScheduleForm from '../../components/schedule'
 import styles from '../../styles/Services.module.css'
 const techTitle = 'E-commerce Solutions'
+import hireService from '../../styles/hireService.module.css'
 const contentHeader1 = () => {
   return (
     <>
-      <div className="tech-service-body">
-        <div className="tech-service-body-left">
-          <h1 className="hire-h1">{techTitle}</h1>
-          <ul className="hire-list-icon">
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+      <div className={hireService.techservicebody}>
+        <div className={hireService.techservicebodyleft}>
+          <h1 className={hireService.hireh1}>{techTitle}</h1>
+          <ul
+            className={`${hireService.hirelisticon} ${hireService.hire_list_items_services} `}
+          >
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 100% customizable and 3rd party integrations
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 All three module (admin, sellers & buyer)
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">Online /offline payment module</p>
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
+                Online /offline payment module
+              </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Build your shop, manage your order with e-commerce websites.
               </p>
             </li>
           </ul>
         </div>
-        <div className="tech-service-body-right">
+        <div className={hireService.techservicebodyright}>
           {/* <img src="/icons/service-icon/cloud.webp" alt="3D Cloud" /> */}
           <Image
             src="/icons/service-icon/Frame.webp"
@@ -53,7 +58,7 @@ const content1 = () => {
     <>
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           At Code Garage Tech, we combine our expertise and experience for
           developing Ecommerce solutions like Ecommerce design, shopping
           campaigns, Ecommerce SEO, and much more that helps in making your
@@ -77,9 +82,11 @@ const content1 = () => {
           Advantages of Hiring Ecommerce Experts{' '}
         </h2> */}
         {/* image required */}
-        <div className="shade-1">
-          <div className="grey-shade"></div>
-          <h2 className="hire-h2 margin-bottom-24px">
+        <div className={hireService.shade1}>
+          <div className={hireService.greyshade}></div>
+          <h2
+            className={`${hireService.hireh2} ${hireService.marginbottom24px}`}
+          >
             Advantages of Hiring Ecommerce Experts
           </h2>
           <div className={`${styles.services_image_container}`}>
@@ -92,60 +99,62 @@ const content1 = () => {
               objectFit="contain"
             />
           </div>
-          <h2 className="hire-h2 margin-bottom-24px">
+          <h2
+            className={`${hireService.hireh2} ${hireService.marginbottom24px}`}
+          >
             Boost Your Sales With Our E-Commerce Website Development Solutions{' '}
           </h2>
 
-          <p className="hire-p">
+          <p className={hireService.hirep}>
             Our skilled and experienced developers closely observe your business
             requirements and challenges to create a customized eCommerce website
             and platform. We are a preeminent eCommerce development company
             emphasized on custom eCommerce solutions, including:
           </p>
 
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>Development</b>{' '}
           </h3>
-          <p className="hire-p">
+          <p className={hireService.hirep}>
             We are adept in creating smooth payment systems, functional
             features, and exquisite layouts that boost your brand online. Our
             main goal is to make the procedure of buying from your eCommerce
             website seamless and hassle-free.
           </p>
 
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>Strategy</b>
           </h3>
-          <p className="hire-p">
+          <p className={hireService.hirep}>
             We craft pleasing designs with the use of contemporary techniques
             lined up with present industry trends. We adopt a long-term strategy
             for your business that make your eCommerce website a huge success.
           </p>
 
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>Consulting </b>
           </h3>
-          <p className="hire-p">
+          <p className={hireService.hirep}>
             Our dedicated sales and marketing team will provide you with great
             guidance and tactics on how to boost your eCommerce online store
             sales. We offer effective services and are entirely committed to
             seeing you succeed.
           </p>
 
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>UI/UX </b>
           </h3>
-          <p className="hire-p">
+          <p className={hireService.hirep}>
             We aesthetically design your ecommerce store so that your customers
             can easily navigate your site and make a purchase. Our main
             objective is to make your customer&apos;s experience fascinating and
             also encourage them to purchase your product or services again and
             again.
           </p>
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>Support</b>
           </h3>
-          <p className="hire-p">
+          <p className={hireService.hirep}>
             Being a professional ecommerce development company, we make sure
             that you have our support every time. You can fully rely on us as we
             offer round the clock technical support.
@@ -157,7 +166,7 @@ const content1 = () => {
 }
 
 const content3 = () => (
-  <div className="form-service">
+  <div className={hireService.formservice}>
     <ScheduleForm
       title={'Schedule a Meeting'}
       requestOrigin={'Request generated from Ecommerce-Solutions page'}

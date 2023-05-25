@@ -7,6 +7,7 @@ import ScheduleForm from '../components/schedule'
 const techTitle = 'Hire Certified and Professional Software Developers'
 import HireServiceLayout from '../components/HireServiceLayout'
 import { useRouter } from 'next/router'
+import styles from '../styles/hireService.module.css'
 
 const bannerImage = [
   { name: 'Ruby on Rails', path: 'icons/rails.webp', altImg: 'Rails PNG' },
@@ -28,12 +29,15 @@ const bannerImage = [
 const contentHeader = () => {
   return (
     <>
-      <div className="hire-container-body service-body">
-        <div className="hire-container-body-left">
-          <h1 className="hire-h1">{techTitle}</h1>
-          <ul className="margin-bottom-24px">
+      <div className={`${styles.hirecontainerbody} ${styles.servicebody} `}>
+        {/* <div className="hire-container-body service-body"> */}
+        <div className={styles.hirecontainerbodyleft}>
+          <h1 className={styles.hireh1}>{techTitle}</h1>
+          <ul
+            className={`${styles.hire_list_items} ${styles.marginbottom24px} `}
+          >
             <li>
-              <span className="tick">
+              <span className={styles.tick}>
                 <RxCheck />
               </span>
               Adept in creating a MVP/Prototype in initial phase so that you can
@@ -41,26 +45,26 @@ const contentHeader = () => {
               changes accordingly
             </li>
             <li>
-              <span className="tick">
+              <span className={styles.tick}>
                 <RxCheck />
               </span>
               Build scalable and robust desktop, mobile and web applications
             </li>
             <li>
-              <span className="tick">
+              <span className={styles.tick}>
                 <RxCheck />
               </span>
               Full cycle managed DevOps
             </li>
             <li>
-              <span className="tick ">
+              <span className={styles.tick}>
                 <RxCheck />
               </span>
               Use Hassle-free time tracking software with transparent billing
             </li>
           </ul>
         </div>
-        <div className="hire-container-body-right">
+        <div className={styles.hirecontainerbodyright}>
           <ScheduleForm
             title={'Schedule a Meeting'}
             requestOrigin={'Request generated from hire-freelancer page'}
@@ -76,10 +80,10 @@ const content1 = () => {
       {/* hire container body content */}
 
       <div className="hire-container-body-left-content-1">
-        <h2 className="hire-h2">
+        <h2 className={styles.hireh2}>
           Sustain, Prosper And Achieve New Heights Of Success.{' '}
         </h2>
-        <p className="hire-p">
+        <p className={styles.hirep}>
           A collaboration with Code Garage Tech developers offers access to
           technical expertise as well as comprehensive development solutions.
           Moreover, we offer other benefits to our partners. We understand that
@@ -89,7 +93,7 @@ const content1 = () => {
         </p>
       </div>
       <div className="hire-container-body-left-content-2">
-        <ul className="body-list">
+        <ul className={`${styles.hire_list_items} ${styles.bodylist}`}>
           <li>
             An uncomplicated way to avoid the &quot;talent war.&quot; When you
             require a knowledgeable MySQL architect or experienced C developers
@@ -113,7 +117,7 @@ const content1 = () => {
             get exactly what they asked for in their initial proposal.
           </li>
         </ul>
-        <p className="hire-p ">
+        <p className={styles.hirep}>
           Contact us right away to learn more about hiring developers from Code
           Garage Tech to add to your internal efforts.
         </p>
@@ -124,11 +128,11 @@ const content1 = () => {
 
 const content2 = () => (
   <div>
-    <h2 className="hire-h2">
+    <h2 className={styles.hireh2}>
       Why Choose to Hire a Sole Developer from Code Garage Tech for Your
       Company?
     </h2>
-    <p className="hire-p">
+    <p className={styles.hirep}>
       We add value to your business by leveraging our professional and
       technological expertise. Hiring a developer is an amazing method to
       prosper your business via technology or to mitigate costs through
@@ -136,7 +140,7 @@ const content2 = () => (
       processes to provide our clients with access to certified and expert
       DevOps engineers and software developers. What else do we have to offer?
     </p>
-    <ul className="hire-list">
+    <ul className={`${styles.hire_list_items} ${styles.bodylist}`}>
       <li>
         Senior Developers and Engineers with a high level of experience of more
         than 9 years in custom mobile app development.{' '}
@@ -164,14 +168,14 @@ const content2 = () => (
       </li>
     </ul>
 
-    <p className="hire-p">
+    <p className={styles.hirep}>
       Do you want to check our prior work and make sure we do the things that we
       say? Ask our partners from previous projects about their opinions of our
       services. In addition to the caliber of our hand-selected employees, we
       also strive to add value for our clients in other ways as well.
     </p>
 
-    <ul className="hire-list">
+    <ul className={`${styles.hire_list_items} ${styles.bodylist}`}>
       <li>
         We offer extensive initial deep discussions and we work together to
         develop an environment where achieving success is our pertinent goal.
@@ -189,7 +193,7 @@ const content2 = () => (
         the hiring method that best fits your business approach.{' '}
       </li>
     </ul>
-    <p className="hire-p">
+    <p className={styles.hirep}>
       Discover more about our engagement models and also learn how they assist
       you to make investments that are more profitable. We&quot;re always here
       to build a sturdy technological foundation to craft success.
@@ -199,101 +203,101 @@ const content2 = () => (
 
 const content3 = () => (
   <>
-    <div className="hire-container-body-right-content ">
-      <h2 className="hire-h2">Our Domain Expertise</h2>
-      <ul>
+    <div className={styles.hirecontainerbodyrightcontent}>
+      <h2 className={styles.hireh2}>Our Domain Expertise</h2>
+      <ul className={styles.hire_list_items}>
         <li>
-          <span className="tick">
+          <span className={styles.tick}>
             <RxCheck />
           </span>
           DevOps
         </li>
         <li>
-          <span className="tick">
+          <span className={styles.tick}>
             <RxCheck />
           </span>
           Full cycle Software Product Development
         </li>
         <li>
-          <span className="tick">
+          <span className={styles.tick}>
             <RxCheck />
           </span>
           Artificial Intelligence
         </li>
         <li>
-          <span className="tick">
+          <span className={styles.tick}>
             <RxCheck />
           </span>
           JavaScript
         </li>
         <li>
-          <span className="tick">
+          <span className={styles.tick}>
             <RxCheck />
           </span>
           Python
         </li>
         <li>
-          <span className="tick">
+          <span className={styles.tick}>
             <RxCheck />
           </span>
           Mobile Application iOS
         </li>
         <li>
-          <span className="tick">
+          <span className={styles.tick}>
             <RxCheck />
           </span>
           Android development​
         </li>
         <li>
-          <span className="tick">
+          <span className={styles.tick}>
             <RxCheck />
           </span>
           Angular, React, Bootstrap​
         </li>
         <li>
-          <span className="tick">
+          <span className={styles.tick}>
             <RxCheck />
           </span>
           Quality Assurance Testing
         </li>
         <li>
-          <span className="tick">
+          <span className={styles.tick}>
             <RxCheck />
           </span>
           Project Management
         </li>
         <li>
-          <span className="tick">
+          <span className={styles.tick}>
             <RxCheck />
           </span>
           Node.js
         </li>
         <li>
-          <span className="tick">
+          <span className={styles.tick}>
             <RxCheck />
           </span>
           Ruby on Rails
         </li>
         <li>
-          <span className="tick">
+          <span className={styles.tick}>
             <RxCheck />
           </span>
           Nuxt.js
         </li>
         <li>
-          <span className="tick">
+          <span className={styles.tick}>
             <RxCheck />
           </span>
           React Native
         </li>
         <li>
-          <span className="tick">
+          <span className={styles.tick}>
             <RxCheck />
           </span>
           Laravel
         </li>
         <li>
-          <span className="tick">
+          <span className={styles.tick}>
             <RxCheck />
           </span>
           Yii2
@@ -358,9 +362,9 @@ var settings = {
 const bannerComponent = () => (
   <Slider {...settings}>
     {bannerImage.map((e, i) => (
-      <div className="nav-logo-slider" key={i}>
+      <div className={styles.navlogoslider} key={i}>
         <img src={e.path} alt={e.altImg} />
-        <p className="small-text">{e.name}</p>
+        <p className={styles.smalltext}>{e.name}</p>
       </div>
     ))}
   </Slider>
@@ -372,7 +376,7 @@ const HireFreelancer = () => {
     router.push('/')
   }
   return (
-    <>
+    <div className={styles.root}>
       <Head>
         <title>Hire a freelancer software developer - Code Garage Tech</title>
         <link
@@ -386,8 +390,8 @@ const HireFreelancer = () => {
 "
         />
       </Head>
-
-      <div className="blog-back-btn cursor_pointer d-flex ">
+      <div className={`${styles.cursor_pointer} d-flex ${styles.blogbackbtn}`}>
+        {/* <div className="blog-back-btn cursor_pointer d-flex "> */}
         <div className="align-self-center">
           <img src="/icons/left-angle.png" style={{ height: '24px' }} />
         </div>
@@ -409,7 +413,7 @@ const HireFreelancer = () => {
         contentHeader={contentHeader}
         requestOrigin={'Requested from Hire a freelancer page'}
       />
-    </>
+    </div>
   )
 }
 

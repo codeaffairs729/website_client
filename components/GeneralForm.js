@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+import styles from '../styles/genform.module.css'
 
 const GenenralForm = ({
   fields,
@@ -10,13 +11,17 @@ const GenenralForm = ({
   return (
     <>
       <form>
-        <div className="gen-form-container d-flex flex-column align-items-center">
-          <div className="input-field">
-            <h2 className="form-container-header">{title}</h2>
-            <div className="form-container-input d-flex flex-column justify-content-center align-items-center">
+        <div
+          className={`d-flex flex-column align-items-center ${styles.genformcontainer}`}
+        >
+          <div className={styles.inputfield}>
+            <h2 className={styles.formcontainerheader}>{title}</h2>
+            <div
+              className={`d-flex flex-column justify-content-center align-items-center ${styles.formcontainerinput}`}
+            >
               {fields.map((e, i) => (
-                <div className="form-input-detail" key={i}>
-                  <span className="input-icon">{e.icon}</span>
+                <div className={styles.forminputdetail} key={i}>
+                  <span className={styles.inputicon}>{e.icon}</span>
                   {e.render && e.render()}
                 </div>
               ))}

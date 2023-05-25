@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import BlogGrid from './BlogGrid'
 import DeleteModal from './DeleteModal'
+import styles from '../styles/blogStyle.module.css'
 
 const BlogList = ({ authorized, blogData, notify, notifyError, db }) => {
   const [data, setData] = useState(blogData)
@@ -50,13 +51,17 @@ const BlogList = ({ authorized, blogData, notify, notifyError, db }) => {
       <DeleteModal handleOnDelete={handleOnDelete} />
       {authorized && (
         <>
-          <div className="control-btn-div cursor_pointer d-flex fs-6 fw-semibold text-primary fw-bold">
+          <div
+            className={`cursor_pointer d-flex fs-6 fw-semibold text-primary fw-bold ${styles.controlbtndiv}`}
+          >
+            {/* <div className="control-btn-div cursor_pointer d-flex fs-6 fw-semibold text-primary fw-bold"> */}
             <div onClick={handleOnCreate}>Create Blog</div>
             <div onClick={handleOnLogout}>Logout</div>
           </div>
         </>
       )}
-      <div className="breadcumb-area">
+      <div className={styles.breadcumbarea}>
+        {/* <div className="breadcumb-area"> */}
         {db === 'case-study' ? (
           <h1 className="text-center text-light">CASE STUDY</h1>
         ) : (

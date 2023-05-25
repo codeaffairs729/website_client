@@ -4,15 +4,17 @@ const techTitle = 'Hire a Team '
 import HireServiceLayout from '../components/HireServiceLayout'
 import Head from 'next/head'
 import ScheduleForm from '../components/schedule'
+import styles from '../styles/hireService.module.css'
 
 const contentHeader = () => {
   return (
     <>
-      <div className="hire-container-body service-body">
-        <div className="hire-team hire-container-body-left">
-          <h1 className="hire-h1">{techTitle}</h1>
-          <h2 className="hire-h2">Together We Can Achieve More</h2>
-          <p className="hire-p margin-bottom-24px">
+      <div className={`${styles.hirecontainerbody} ${styles.servicebody} `}>
+        <div className={`${styles.hireteam} ${styles.hirecontainerbodyleft}`}>
+          {/* <div className="hire-team hire-container-body-left"> */}
+          <h1 className={styles.hireh1}>{techTitle}</h1>
+          <h2 className={styles.hireh2}>Together We Can Achieve More</h2>
+          <p className={`${styles.hirep} ${styles.marginbottom24px}`}>
             Code Garage Tech has helped numerous businesses envision and also
             implement successful projects in various development frameworks and
             languages since 2015. <br />
@@ -24,7 +26,7 @@ const contentHeader = () => {
             whole process.
           </p>
         </div>
-        <div className="hire-container-body-right">
+        <div className={styles.hirecontainerbodyright}>
           <ScheduleForm
             title={'Schedule a Meeting'}
             requestOrigin={'Request generated from hire-team page'}
@@ -37,11 +39,13 @@ const contentHeader = () => {
 
 const content4 = () => {
   return (
-    <div className="hire-container">
+    <div className={styles.hirecontainer}>
       {/* hire container body content */}
-      <div className="hire-team hire-container-body-left-content-1">
-        <h2 className="hire-h2">We offer Solutions to Scale Any Project</h2>
-        <p className="hire-p">
+      <div className={`${styles.hireteam} hire-container-body-left-content-1`}>
+        <h2 className={styles.hireh2}>
+          We offer Solutions to Scale Any Project
+        </h2>
+        <p className={styles.hirep}>
           Whether you need a few developers and the potential to exercise
           complete control over their work or you choose to decentralize
           development throughout the whole product life cycle, Code Garage Tech
@@ -51,10 +55,10 @@ const content4 = () => {
         </p>
       </div>
       <div className="hire-container-body-left-content-2">
-        <h3 className="hire-h3">
+        <h3 className={styles.hireh3}>
           <strong>How Our Experts Handle The Project Efficiently</strong>
         </h3>
-        <ul className="hire-list">
+        <ul className={styles.hirelist}>
           <li>
             An uncomplicated way to avoid the &quot;talent war.&quot; When you
             require a knowledgeable MySQL architect or experienced C developers
@@ -78,7 +82,7 @@ const content4 = () => {
             get exactly what they asked for in their initial proposal.
           </li>
         </ul>
-        <p className="hire-p">
+        <p className={styles.hirep}>
           Contact us right away to learn more about hiring developers from Code
           Garage Tech to add to your internal efforts.
         </p>
@@ -88,51 +92,51 @@ const content4 = () => {
 }
 
 const content5 = () => (
-  <div className="hire-container">
+  <div className={styles.hirecontainer}>
     <div>
-      <h2 className="hire-h2 text-center">
+      <h2 className={`${styles.hireh2} text-center`}>
         Select From A Variety Of Hiring Models
       </h2>
-      <p className="hire-p">
+      <p className={styles.hirep}>
         We offer flexibility to each of our clients to select the engagement
         model that best suits their needs.
       </p>
     </div>
-    <div className="hiring-models">
-      <div className="hiring-model">
-        <h3 className="hire-h3">Adept Team</h3>
-        <p className="hire-p">
+    <div className={styles.hiringmodels}>
+      <div className={styles.hiringmodel}>
+        <h3 className={styles.hireh3}>Adept Team</h3>
+        <p className={styles.hirep}>
           Have a project that requires complete attention or needs services like
           software development for the long term, choose our pay-as-you-go
           service model provided by our adept time.{' '}
         </p>
         <ul>
           <li>
-            <span className="tick">
+            <span className={styles.tick}>
               <RxCheck />
             </span>
             160 Hours of part & full time{' '}
           </li>
           <li>
-            <span className="tick">
+            <span className={styles.tick}>
               <RxCheck />
             </span>
             Daily progress updates
           </li>
           <li>
-            <span className="tick">
+            <span className={styles.tick}>
               <RxCheck />
             </span>
             Monthly billing
           </li>
           <li>
-            <span className="tick">
+            <span className={styles.tick}>
               <RxCheck />
             </span>
             No hidden costs
           </li>
           <li>
-            <span className="tick">
+            <span className={styles.tick}>
               <RxCheck />
             </span>
             You need to pay only for measurable work
@@ -140,79 +144,79 @@ const content5 = () => (
         </ul>
       </div>
 
-      <div className="hiring-model">
-        <h3 className="hire-h3">Fixed Price Model </h3>
-        <p className="hire-p">
+      <div className={styles.hiringmodel}>
+        <h3 className={styles.hireh3}>Fixed Price Model </h3>
+        <p className={styles.hirep}>
           A fixed-price model would be the best option if your project is well
           planned out. A one-time fixed-price contract is stated below:
         </p>
         <ul>
           <li>
-            <span className="tick">
+            <span className={styles.tick}>
               <RxCheck />
             </span>
             No setup fees
           </li>
           <li>
-            <span className="tick">
+            <span className={styles.tick}>
               <RxCheck />
             </span>
             Daily progress updates
           </li>
           <li>
-            <span className="tick">
+            <span className={styles.tick}>
               <RxCheck />
             </span>
             No hidden costs
           </li>
           <li>
-            <span className="tick">
+            <span className={styles.tick}>
               <RxCheck />
             </span>
             Fixed budget & deadlines
           </li>
           <li>
-            <span className="tick">
+            <span className={styles.tick}>
               <RxCheck />
             </span>
             Milestone based payment{' '}
           </li>
         </ul>
       </div>
-      <div className="hiring-model">
-        <h3 className="hire-h3">Hourly </h3>
-        <p className="hire-p">
+      <div className={styles.hiringmodel}>
+        <h3 className={styles.hireh3}>Hourly </h3>
+        <p className={styles.hirep}>
           Our hourly pricing model is also here if your business requires
           ongoing work for an unspecified number of projects. It is based on
           hours and you can pay for your work under this hour-wise contract
         </p>
         <ul>
           <li>
-            <span className="tick">
+            <span className={styles.tick}>
               <RxCheck />
             </span>
             No hidden costs{' '}
           </li>
           <li>
-            <span className="tick">
+            <span className={styles.tick}>
               <RxCheck />
             </span>
             Monthly billing
           </li>
           <li>
-            <span className="tick">
+            <span className={styles.tick}>
               <RxCheck />
             </span>
             Daily progress updates
           </li>
           <li>
-            <span className="tick">
+            <span className={styles.tick}>
               <RxCheck />
             </span>
             You need to pay only for measurable work
           </li>
           <li>
-            <span className="tick">
+            <span className={styles.tick}>
               <RxCheck />
             </span>
             Requirement-based working hours{' '}
@@ -222,10 +226,10 @@ const content5 = () => (
     </div>
 
     <div>
-      <h2 className="hire-h2 text-center">
+      <h2 className={`${styles.hireh2} text-center`}>
         Choosing the Best Model for Your Business
       </h2>
-      <p className="hire-p">
+      <p className={styles.hirep}>
         No matter what solution you choose, you can rely on our ability to
         consistently provide high-quality work and adhere to our communication
         standards. With considerable knowledge available in the particular
@@ -244,27 +248,29 @@ const content5 = () => (
 )
 
 const bannerComponent = () => (
-  <div className="hire-container hire-free-banner">
-    <div className="top-rated shadow bg-warning rounded text-dark">
+  <div className={`${styles.hirecontainer} ${styles.hirefreebanner}`}>
+    {/* <div className="hire-container hire-free-banner"> */}
+    <div className={`${styles.toprated} shadow bg-warning rounded text-dark`}>
+      {/* <div className="top-rated shadow bg-warning rounded text-dark"> */}
       Top rated on
     </div>
     <img
-      className="hire-logo"
+      className={styles.hirelogo}
       src="icons/hire/good-firms-logo.webp"
       alt="Good Firm - Logo"
     />
     <img
-      className="hire-logo"
+      className={styles.hirelogo}
       src="icons/hire/upwork-logo-png-transparent.webp"
       alt="Upwork - Logo"
     />
     <img
-      className="hire-logo"
+      className={styles.hirelogo}
       src="icons/hire/clutch_logo.webp"
       alt="Clutch - Logo"
     />
     <img
-      className="hire-logo"
+      className={styles.hirelogo}
       src="icons/hire/PeoplePerHour_logo.webp"
       alt="People Per Hour - Logo"
     />

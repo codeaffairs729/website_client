@@ -5,37 +5,41 @@ import Head from 'next/head'
 import Image from 'next/image'
 import ScheduleForm from '../../components/schedule'
 const techTitle = 'Nuxt.Js Development Services'
+import hireService from '../../styles/hireService.module.css'
+
 const contentHeader1 = () => {
   return (
     <>
-      <div className="tech-service-body">
-        <div className="tech-service-body-left">
-          <h1 className="hire-h1">{techTitle}</h1>
-          <ul className="hire-list-icon">
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+      <div className={hireService.techservicebody}>
+        <div className={hireService.techservicebodyleft}>
+          <h1 className={hireService.hireh1}>{techTitle}</h1>
+          <ul
+            className={`${hireService.hirelisticon} ${hireService.hire_list_items_services} `}
+          >
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Open source framework of Vue.js
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Quick to la unch and simple to update
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Develop stunning applications as well as websites
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Integrates the best of server-side and client-side development
                 worlds
               </p>
             </li>
           </ul>
         </div>
-        <div className="tech-service-body-right">
+        <div className={hireService.techservicebodyright}>
           {/* <img src="/icons/service-icon/cloud.webp" alt="3D Cloud" /> */}
           <Image
             src="/icons/service-icon/Frame.webp"
@@ -55,15 +59,15 @@ const content1 = () => {
     <>
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           Nuxt.js is an open source framework of Vue.js that helps you develop
           stunning applications as well as websites with ease.
           <br /> <br />
         </p>
-        <h2 className="hire-h2 margin-bottom-24px">
+        <h2 className={`${hireService.hireh2} ${hireService.marginbottom24px}`}>
           <strong>Web Development Powerful And Simple</strong>
         </h2>
-        <p className=" hire-p margin-bottom-24px">
+        <p className={`${hireService.hirep}  ${hireService.marginbottom24px}`}>
           NuxtJs development is the latest method of developing web
           applications. It integrates the best of server-side and client-side
           development worlds to build data-driven, SEO friendly, performant
@@ -75,57 +79,59 @@ const content1 = () => {
           Advantages of Hiring Ecommerce Experts{' '}
         </h2> */}
         {/* image required */}
-        <div className="shade-1">
-          <div className="grey-shade"></div>
-          <h2 className="hire-h2 margin-bottom-24px">
+        <div className={hireService.shade1}>
+          <div className={hireService.greyshade}></div>
+          <h2
+            className={`${hireService.hireh2} ${hireService.marginbottom24px}`}
+          >
             We Offer A Wide Range Of Nuxt.Js Development Services.
           </h2>
 
-          <p className="hire-p">
+          <p className={hireService.hirep}>
             As a Nuxt.Js expert agency, we provide high-quality and professional
             application development services utilizing Nuxt.Js which serve the
             various requirements of clients globally.
           </p>
 
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>Web Development</b>{' '}
           </h3>
-          <p className="hire-p">
+          <p className={hireService.hirep}>
             Our clients rely on our expertise to build static as well as dynamic
             web apps with Nuxt.js framework. We create applications that are
             quick to launch and simple to update in the shortest amount of time.
           </p>
 
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>Application Upgrade Solutions</b>
           </h3>
-          <p className="hire-p">
+          <p className={hireService.hirep}>
             Our application upgrade solutions aid you update an application
             developed on Nuxt.js framework to the newest version. Our services
             are designed to make your business a success.
           </p>
 
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>Plugin Development </b>
           </h3>
-          <p className="hire-p">
+          <p className={hireService.hirep}>
             We have a vast experience in creating a range of plugins as per
             business requirements. At Code Garage Tech, we have created numerous
             customized plugins to meet the demands of clients.
           </p>
 
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>SSR Development Services</b>
           </h3>
-          <p className="hire-p">
+          <p className={hireService.hirep}>
             We support our Nuxt.js development solutions, with solid SSR
             development solutions. Banking on these solutions, our clients can
             escalate conversion rates and optimize user engagement.
           </p>
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>Maintenance and Support</b>
           </h3>
-          <p className="hire-p">
+          <p className={hireService.hirep}>
             At Code Garage Tech, our maintenance and support solutions for
             Nuxt.js development include 24*7 support for application performance
             requirements.
@@ -135,20 +141,22 @@ const content1 = () => {
           Nuxt.Js Development Procedure
           </h2> */}
         {/* Image required */}
-        <h2 className="hire-h2 margin-bottom-24px">Why Choose Us?</h2>
+        <h2 className={`${hireService.hireh2} ${hireService.marginbottom24px}`}>
+          Why Choose Us?
+        </h2>
 
-        <h3 className="hire-h3">
+        <h3 className={hireService.hireh3}>
           <b>Highest Quality Development</b>{' '}
         </h3>
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           As a professional Nuxt.js focused agency, you can rely on us as we
           follow meticulous development standards and provide services of the
           greatest professional quality.
         </p>
-        <h3 className="hire-h3">
+        <h3 className={hireService.hireh3}>
           <b>Full-Stack Development Capabilities </b>{' '}
         </h3>
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           Nuxt.js requires a back-end stack that is worth of its flexibility and
           speed. Our team of professional developers develop superior
           applications that span the full stack.
@@ -159,7 +167,7 @@ const content1 = () => {
 }
 
 const content3 = () => (
-  <div className="form-service">
+  <div className={hireService.formservice}>
     <ScheduleForm
       title={'Schedule a Meeting'}
       requestOrigin={'Request generated from vue next page'}

@@ -1,3 +1,4 @@
+import styles from '../styles/assisstanceModel.module.css'
 const ScheduleMeetingForm = ({
   fields,
   title,
@@ -10,13 +11,17 @@ const ScheduleMeetingForm = ({
   // const [phone,setPhone]=useState('');
   return (
     <>
-      <div className="assist-gen-form-container d-flex flex-column align-items-center">
-        <div className="assist-input-field">
-          <h2 className="assist-form-container-header">{title}</h2>
-          <div className="assist-form-container-input d-flex flex-column justify-content-center align-items-center">
+      <div
+        className={`${styles.assistgenformcontainer} d-flex flex-column align-items-center`}
+      >
+        <div className={styles.assistinputfield}>
+          <h2 className={styles.assistformcontainerheader}>{title}</h2>
+          <div
+            className={`${styles.assistformcontainerinput} d-flex flex-column justify-content-center align-items-center`}
+          >
             {fields.map((e, i) => (
-              <div className="assist-form-input-detail" key={i}>
-                <span className="assist-input-icon">{e.icon}</span>
+              <div className={styles.assistforminputdetail} key={i}>
+                <span className={styles.assistinputicon}>{e.icon}</span>
                 {e.render && e.render()}
               </div>
             ))}

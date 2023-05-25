@@ -6,33 +6,40 @@ import Head from 'next/head'
 import ScheduleForm from '../../components/schedule'
 const techTitle = 'Mobile Solutions'
 import Image from 'next/image'
+import hireService from '../../styles/hireService.module.css'
 
 const contentHeader1 = () => {
   return (
     <>
-      <div className="tech-service-body">
-        <div className="tech-service-body-left">
-          <h1 className="hire-h1">{techTitle}</h1>
-          <ul className="hire-list-icon">
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">Superior Mobile Applications.</p>
+      <div className={hireService.techservicebody}>
+        <div className={hireService.techservicebodyleft}>
+          <h1 className={hireService.hireh1}>{techTitle}</h1>
+          <ul
+            className={`${hireService.hirelisticon} ${hireService.hire_list_items_services} `}
+          >
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
+                Superior Mobile Applications.
+              </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">Seamless Experience To Users.</p>
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
+                Seamless Experience To Users.
+              </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Develop Custom Android & Ios Applications.
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Niche-Specific, Target-Oriented Applications
               </p>
             </li>
           </ul>
         </div>
-        <div className="tech-service-body-right text-center">
+        <div className={`${hireService.techservicebodyright} text-center`}>
           {/* <img src="/icons/service-icon/mobile-front-color-service.webp" /> */}
           <div>
             <Image
@@ -54,7 +61,7 @@ const content1 = () => {
     <>
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           Code Garage Tech is a preeminent mobile app development agency that is
           specifically driven by creativity and innovation. We have proved
           ourselves as a customer-trusted and credible company for over 6 years.
@@ -72,43 +79,47 @@ const content1 = () => {
           <br />
         </p>
         {/* content-7 */}
-        <h2 className="hire-h2">
+        <h2 className={hireService.hireh2}>
           <strong>
             Our Mobile Application Development Solutions For Various Platforms:
           </strong>
         </h2>
-        <ul className="hire-list">
+        <ul className={hireService.hirelist}>
           <li>Android App Development</li>
           <li>iOS App Development</li>
           <li>Progressive Web App Development</li>
           <li>Cross-platform App Development</li>
         </ul>
 
-        <h2 className="hire-h2">
+        <h2 className={hireService.hireh2}>
           Partner With Us to Launch, Run & Grow Your Business Worldwide
         </h2>
-        <div id="android" className="d-flex align-items-center margin-top-32px">
-          <div className="heading-icon">
+        <div
+          id="android"
+          className={`d-flex align-items-center ${hireService.margintop32px}`}
+        >
+          {/* <div id="android" className="d-flex align-items-center margin-top-32px"> */}
+          <div className={hireService.headingicon}>
             <Image
               src="/icons/android.webp"
-              alt="React Native png"
+              alt="android png"
               width={45}
               height={45}
             />
           </div>
-          <h3 className="hire-icon-text">Android App Development</h3>
+          <h3 className={hireService.hireicontext}>Android App Development</h3>
         </div>
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           We are a reliable Android app development company, renowned for
           boosting your development strategy, designing smooth experiences,
           build-up viable solutions, and developing applications that add unique
           value to the lives of users. We design as well as develop custom
           Android applications for all sizes of businesses and domains.
         </p>
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           <strong>Our Android Development Services: </strong>
         </p>
-        <ul className="hire-list">
+        <ul className={hireService.hirelist}>
           <li> UI/UX Design</li>
           <li> Universal App Development</li>
           <li>Custom Android App Development</li>
@@ -119,18 +130,16 @@ const content1 = () => {
           <li>Android App Security</li>
           <li> App Maintenance & Support </li>
         </ul>
-        <div id="ios" className="d-flex align-items-center margin-top-32px">
-          <div className="heading-icon">
-            <Image
-              src="/icons/ios.webp"
-              alt="React Native png"
-              width={45}
-              height={45}
-            />
+        <div
+          id="ios"
+          className={`d-flex align-items-center ${hireService.margintop32px}`}
+        >
+          <div className={hireService.headingicon}>
+            <Image src="/icons/ios.webp" alt="ios png" width={45} height={45} />
           </div>
-          <h3 className="hire-icon-text">iOS App Development</h3>
+          <h3 className={hireService.hireicontext}>iOS App Development</h3>
         </div>
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           If you want effective results, it is vital to develop niche-specific,
           feature-rich, adaptable, and target-oriented mobile applications. We
           develop top-quality iOS mobile solutions with a specific blend of
@@ -138,10 +147,10 @@ const content1 = () => {
           iterative development approach and create applications with a scope
           for improvement as the application runs.
         </p>
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           <strong>Our iOS App Development Services:</strong>
         </p>
-        <ul className="hire-list">
+        <ul className={hireService.hirelist}>
           <li> UI/UX Design</li>
           <li> Universal App Development</li>
           <li>Custom iOS App Development</li>
@@ -154,19 +163,19 @@ const content1 = () => {
         </ul>
         <div
           id="mobile_react"
-          className="d-flex align-items-center margin-top-32px"
+          className={`d-flex align-items-center ${hireService.margintop32px}`}
         >
-          <div className="heading-icon">
+          <div className={hireService.headingicon}>
             <Image
               src="/icons/react_native.webp"
-              alt="React Native png"
+              alt="react png"
               width={45}
               height={45}
             />
           </div>
-          <h3 className="hire-icon-text">React Native Development</h3>
+          <h3 className={hireService.hireicontext}>React Native Development</h3>
         </div>
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           React Native is one of the most eminent programming languages these
           days and businesses over the globe are swiftly implementing it to
           develop fully-featured as well as appealing cross-platform apps and
@@ -177,10 +186,10 @@ const content1 = () => {
           <br />
           <br />
         </p>
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           <strong>Our React Native Development Services:</strong>
         </p>
-        <ul className="hire-list">
+        <ul className={hireService.hirelist}>
           <li>React Native Application Development</li>
           <li>React Native Android and iOS Applications</li>
           <li> Integration and Migration Services</li>
@@ -188,18 +197,21 @@ const content1 = () => {
           <li> UI/UX Design</li>
           <li> Support and Maintenance Services</li>
         </ul>
-        <div id="flutter" className="d-flex align-items-center margin-top-32px">
-          <div className="heading-icon">
+        <div
+          id="flutter"
+          className={`d-flex align-items-center ${hireService.margintop32px}`}
+        >
+          <div className={hireService.headingicon}>
             <Image
               src="/images/flutter.webp"
-              alt="React Native png"
+              alt="flutter png"
               width={45}
               height={45}
             />
           </div>
-          <h3 className="hire-icon-text">Flutter Development</h3>
+          <h3 className={hireService.hireicontext}>Flutter Development</h3>
         </div>
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           Our Flutter mobile app development services are specifically designed
           to aid you develop a multi-platform existence. We at Code Garage Tech,
           have adept flutter apps developers who create, design, test and launch
@@ -207,10 +219,10 @@ const content1 = () => {
           applications for businesses of all sizes that are secure, reliable,
           and secure at the same time.
         </p>
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           <strong>Our Flutter Development Services:</strong>{' '}
         </p>
-        <ul className="hire-list">
+        <ul className={hireService.hirelist}>
           <li>Custom Flutter App Development</li>
           <li>Cross-app Flutter App Development</li>
           <li> Support and Maintenance Services</li>
@@ -226,7 +238,7 @@ const content1 = () => {
 const content7 = () => (
   <>
     <div className="hire-container-body-left-content-2"></div>
-    <div className="margin-top-32px">
+    <div className={hireService.margintop32px}>
       <TechComponent
         techList={'mobileTech'}
         frontActive={false}
@@ -242,7 +254,7 @@ const content7 = () => (
 //   </div>
 // );
 const content3 = () => (
-  <div className="form-service">
+  <div className={hireService.formservice}>
     <ScheduleForm
       title={'Schedule a Meeting'}
       requestOrigin={'Request generated from mobile solution page'}

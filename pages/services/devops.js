@@ -5,33 +5,40 @@ import Head from 'next/head'
 const techTitle = 'DevOps'
 import ScheduleForm from '../../components/schedule'
 import Image from 'next/image'
+import hireService from '../../styles/hireService.module.css'
 const contentHeader1 = () => {
   return (
     <>
-      <div className="tech-service-body">
-        <div className="tech-service-body-left">
-          <h1 className="hire-h1">{techTitle}</h1>
-          <ul className="hire-list-icon">
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">Devops Culture Out-Of-The-Box</p>
+      <div className={hireService.techservicebody}>
+        <div className={hireService.techservicebodyleft}>
+          <h1 className={hireService.hireh1}>{techTitle}</h1>
+          <ul
+            className={`${hireService.hirelisticon} ${hireService.hire_list_items_services} `}
+          >
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
+                Devops Culture Out-Of-The-Box
+              </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">Wider Variety Of Devops Skills</p>
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
+                Wider Variety Of Devops Skills
+              </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Instant Access To High-Level Pool Of Devops Talents
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Configuration Management, Delivery Pipeline And Continuous
                 Integration (Ci/Cd)
               </p>
             </li>
           </ul>
         </div>
-        <div className="tech-service-body-right">
+        <div className={hireService.techservicebodyright}>
           {/* <img src="/icons/service-icon/cloud.webp"  /> */}
           {/* <div> */}
           <Image
@@ -53,7 +60,7 @@ const content1 = () => {
     <>
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
-        <p className="hire-p margin-bottom-24px">
+        <p className={`${hireService.hirep}  ${hireService.marginbottom24px}`}>
           DevOps leverages monitoring, automation, collaboration, Cloud
           adoption, and tool-chain pipelines. <br />
           <br />
@@ -77,67 +84,81 @@ const content1 = () => {
           <br />
         </p>
         {/* content-7 */}
-        <div className="shade-1">
-          <div className="grey-shade"></div>
-          <h2 className="hire-h2 margin-bottom-24px">
+        <div className={hireService.shade1}>
+          <div className={hireService.greyshade}></div>
+          <h2
+            className={`${hireService.hireh2} ${hireService.marginbottom24px}`}
+          >
             <b>We attain DevOps Success through:</b>
           </h2>
-          <ul className="hire-p hire-list">
+          <ul className={`${hireService.hirep}  ${hireService.hirelist}`}>
             <li>
-              <h3 className="hire-h3">
+              <h3 className={hireService.hireh3}>
                 <strong>Assessment and Planning</strong>
               </h3>
             </li>
           </ul>
-          <p className="hire-p list-p margin-bottom-24px">
+          <p
+            className={`${hireService.hirep}  ${hireService.listp} ${hireService.marginbottom24px}`}
+          >
+            {/* <p className="${hireService.hirep}  list-p margin-bottom-24px"> */}
             We develop a DevOps Assessment roadmap just by envisioning the right
             state and also recognizing the trackable metrics.{' '}
           </p>
-          <ul className="hire-list">
+          <ul className={hireService.hirelist}>
             <li>
-              <h3 className="hire-h3">
+              <h3 className={hireService.hireh3}>
                 <strong>Process Implementation</strong>
               </h3>
             </li>
           </ul>
-          <p className="hire-p list-p margin-bottom-24px">
+          <p
+            className={`${hireService.hirep}  ${hireService.listp} ${hireService.marginbottom24px}`}
+          >
             We expedite DevOps implementation with design, analysis, automation
             construction, and implementation in the recognized areas.
           </p>
-          <ul className="hire-list">
+          <ul className={hireService.hirelist}>
             <li>
-              <h3 className="hire-h3">
+              <h3 className={hireService.hireh3}>
                 <strong>Pilot Framework Creation</strong>
               </h3>
             </li>
           </ul>
-          <p className="hire-p list-p margin-bottom-24px">
+          <p
+            className={`${hireService.hirep}  list-p ${hireService.marginbottom24px}`}
+          >
             We use as well as combine your existing tools with our licensed
             automation tools to build a perfect pilot framework.
           </p>
-          <ul className="hire-list">
+          <ul className={hireService.hirelist}>
             <li>
-              <h3 className="hire-h3">
+              <h3 className={hireService.hireh3}>
                 <strong>CI/CD Pipeline</strong>
               </h3>
             </li>
           </ul>
-          <p className="hire-p list-p margin-bottom-24px">
+          <p
+            className={`${hireService.hirep}  list-p ${hireService.marginbottom24px}`}
+          >
             We bridge the DevOps gap via constant development, constant
             integration, constant testing and constant deployment.
           </p>
 
           <div className="">
-            <p className="hire-p margin-bottom-24px">
+            <p
+              className={`${hireService.hirep}  ${hireService.marginbottom24px}`}
+            >
               Want to develop a DevOps Framework Talk to an Expert
             </p>
           </div>
         </div>
         <div
           id="automation"
-          className="d-flex align-items-center margin-top-32px"
+          className={`d-flex align-items-center ${hireService.margintop32px}`}
+          // className="d-flex align-items-center margin-top-32px"
         >
-          <div className="heading-icon">
+          <div className={hireService.headingicon}>
             <Image
               src="/icons/Unionautomation.svg"
               alt="React Native png"
@@ -145,11 +166,11 @@ const content1 = () => {
               height={45}
             />
           </div>
-          <h3 className="hire-icon-text">
+          <h3 className={hireService.hireicontext}>
             <b>Automation</b>
           </h3>
         </div>
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           We at Code Garage Tech offer reliable DevOps automation testing
           solutions by adopting a strategy that emphasizes integration,
           collaboration, automation and collaboration. We aid you incorporate
@@ -160,8 +181,11 @@ const content1 = () => {
           startups in aligning their operations and development for greater
           efficiency.
         </p>
-        <div id="ci/cd" className="d-flex align-items-center margin-top-32px">
-          <div className="heading-icon">
+        <div
+          id="ci/cd"
+          className={`d-flex align-items-center ${hireService.margintop32px}`}
+        >
+          <div className={hireService.headingicon}>
             <Image
               src="/icons/VectorCICD.svg"
               alt="React Native png"
@@ -169,11 +193,11 @@ const content1 = () => {
               height={45}
             />
           </div>
-          <h3 className="hire-icon-text">
+          <h3 className={hireService.hireicontext}>
             <b>CI/CD </b>
           </h3>
         </div>
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           Continuous Integration and Continuous Deployment (CI/CD) are crucial
           in the contemporary era of tech as it revamped the way software used
           to develop. Incorporating CI/CD leads to swiftly build and faster
@@ -184,8 +208,11 @@ const content1 = () => {
           developers who offer CI/CD design and deployment solutions, CI/CD
           implementation solutions, and plug-ins.
         </p>
-        <div id="cloud" className="d-flex align-items-center margin-top-32px">
-          <div className="heading-icon">
+        <div
+          id="cloud"
+          className={`d-flex align-items-center ${hireService.margintop32px}`}
+        >
+          <div className={hireService.headingicon}>
             <Image
               src="/img/cloud.webp"
               alt="React Native png"
@@ -193,11 +220,11 @@ const content1 = () => {
               height={45}
             />
           </div>
-          <h3 className="hire-icon-text">
+          <h3 className={hireService.hireicontext}>
             <b>Cloud Engineering </b>
           </h3>
         </div>
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           At Code Garage Tech, we have skilled Cloud Computing engineers who
           manage your complexities and challenges to simplify your software
           development procedure. Our team ensures to deliver reliable Cloud
@@ -217,7 +244,7 @@ const content7 = () => <></>
 
 // const content6 = () => <TechComponent />;
 const content3 = () => (
-  <div className="form-service">
+  <div className={hireService.formservice}>
     <ScheduleForm
       title={'Schedule a Meeting'}
       requestOrigin={'Request generated from DevOps page'}

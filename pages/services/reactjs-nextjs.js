@@ -5,34 +5,39 @@ import Head from 'next/head'
 import Image from 'next/image'
 import ScheduleForm from '../../components/schedule'
 const techTitle = 'Next.Js Development Services'
+import hireService from '../../styles/hireService.module.css'
 const contentHeader1 = () => {
   return (
     <>
-      <div className="tech-service-body">
-        <div className="tech-service-body-left">
-          <h1 className="hire-h1">{techTitle}</h1>
-          <ul className="hire-list-icon">
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+      <div className={hireService.techservicebody}>
+        <div className={hireService.techservicebodyleft}>
+          <h1 className={hireService.hireh1}>{techTitle}</h1>
+          <ul
+            className={`${hireService.hirelisticon} ${hireService.hire_list_items_services} `}
+          >
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Headless commerce development solutions.
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Code splitting feature that allows the apps to load swift.
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Allows easy crawling of the particular pages.
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">Built-in Saas and CSS support.</p>
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
+                Built-in Saas and CSS support.
+              </p>
             </li>
           </ul>
         </div>
-        <div className="tech-service-body-right">
+        <div className={hireService.techservicebodyright}>
           {/* <img src="/icons/service-icon/cloud.webp" alt="3D Cloud" /> */}
           <Image
             src="/icons/service-icon/Frame.webp"
@@ -52,7 +57,7 @@ const content1 = () => {
     <>
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           Next.js is a framework of react that offers building blocks to build
           contemporary web applications. Code Garage Tech is a “Next.js Expert
           agency as we provide Next. js-based headless commerce development
@@ -61,69 +66,71 @@ const content1 = () => {
         </p>
 
         {/* content-7 */}
-        <div className="shade-1">
-          <div className="grey-shade"></div>
-          <h2 className="hire-h2 margin-bottom-24px">
+        <div className={hireService.shade1}>
+          <div className={hireService.greyshade}></div>
+          <h2
+            className={`${hireService.hireh2} ${hireService.marginbottom24px}`}
+          >
             Why Go for Next.js Development Solutions?
           </h2>
           {/* image required */}
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>Multiple Rendering Capabilities</b>
           </h3>
 
-          <p className="hire-p">
+          <p className={hireService.hirep}>
             Next.js offers numerous methods to render the content. It can be SSG
             (Static Site Generation), SSR (Server Side Rendering), or a hybrid
             solution.
           </p>
 
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>TypeScript Support</b>{' '}
           </h3>
-          <p className="hire-p">
+          <p className={hireService.hirep}>
             Next.js has an integrated TypeScript support, which offers built-in
             types for Pages, zero-configuration setup, APIs and more.
           </p>
 
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>Auto Code Splitting</b>
           </h3>
-          <p className="hire-p">
+          <p className={hireService.hirep}>
             Next.js has a code splitting feature that allows the apps to load
             swift. It is based on a request that it has to run the needed bundle
             of the code.
           </p>
 
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>Improved SEO</b>
           </h3>
-          <p className="hire-p">
+          <p className={hireService.hirep}>
             Next.js has the support of SSR (Server Side Rendering), it can
             return HTML pages, that allows easy crawling of the particular pages
             by the search engines.
           </p>
 
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>Component Reusability</b>
           </h3>
-          <p className="hire-p">
+          <p className={hireService.hirep}>
             Next.js is based on React. Thus, it allows you to reuse the
             components. Moreover, according to the requirement of developing
             more UI instances, next.js allows utilizing a component numerous
             times.
           </p>
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>Built-in CSS Support</b>
           </h3>
-          <p className="hire-p">
+          <p className={hireService.hirep}>
             Next.js offer built-in Saas and CSS support. Therefore, it allows
             importing of CSS files from JavaScript files by lengthening the
             import beyond JavaScript.
           </p>
-          <h3 className="hire-h3">
+          <h3 className={hireService.hireh3}>
             <b>Easy to Integrate</b>
           </h3>
-          <p className="hire-p">
+          <p className={hireService.hirep}>
             Next.js is based on React that allows convenient integration as well
             as deployment. Moreover, it has a significant community to back the
             same.
@@ -133,24 +140,29 @@ const content1 = () => {
           Next.js Headless Development Process
         </h2> */}
         {/* image required */}
-        <h2 className="hire-h2 margin-bottom-24px margin-top-32px">
+        <h2
+          className={`${hireService.hireh2} ${hireService.marginbottom24px} ${hireService.margintop32px}`}
+        >
+          {/* <h2 className="hire-h2 margin-bottom-24px margin-top-32px"> */}
           Why Choose Us?
         </h2>
-        <h3 className="hire-h3 margin-bottom-24px">
+        <h3 className={`${hireService.hireh3} ${hireService.marginbottom24px}`}>
           <b>Ease of Use & Simplicity </b>
         </h3>
 
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           Simplicity is the major feature of Next.js. Code Garage Tech’s
           developers as well as designers have thorough understanding and
           knowledge of JS & HTML, we can start the Next.js development
           conveniently and implement it to your project.
         </p>
-        <h3 className="hire-h3 margin-bottom-24px">
+        <h3
+          className={`${hireService.hireh3}  ${hireService.marginbottom24px}`}
+        >
           <b>High Quality UI/UX </b>
         </h3>
 
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           Our Next.js developers aid to develop superior quality UI/UX design
           trends that are panoramic, highly aesthetic, and are easy to use.
         </p>
@@ -160,7 +172,7 @@ const content1 = () => {
 }
 
 const content3 = () => (
-  <div className="form-service">
+  <div className={hireService.formservice}>
     <ScheduleForm
       title={'Schedule a Meeting'}
       requestOrigin={'Request generated from Nextjs page'}

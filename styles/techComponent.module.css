@@ -1,4 +1,4 @@
-.tech-container {
+.techcontainer {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -7,29 +7,29 @@
   gap: 45px;
 }
 
-.tech-container-div {
+.techcontainerdiv {
   padding: 20px;
   width: 98px;
   height: 162px;
 }
 
-.tech-container-img {
+.techcontainerimg {
   /* width: 98px; */
   height: 53px;
 }
 
-.tech-container-para {
+.techcontainerpara {
   margin-top: 16px;
   text-align: center;
 }
 
 @media screen and (max-width: 991px) {
-  .tech-container {
+  .techcontainer {
     gap: 40px;
   }
 }
 @media screen and (max-width: 479px) {
-  .tech-container {
+  .techcontainer {
     gap: 15px;
   }
 }

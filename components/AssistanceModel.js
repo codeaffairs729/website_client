@@ -6,6 +6,7 @@ import Datetime from 'react-datetime'
 // import { BsCalendar2Date } from "react-icons/bs";
 // import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { ToastContainer, toast } from 'react-toastify'
+import styles from '../styles/assisstanceModel.module.css'
 
 const AssistanceModel = ({ title, requestOrigin }) => {
   const image = useRef(null)
@@ -135,7 +136,7 @@ const AssistanceModel = ({ title, requestOrigin }) => {
       pattern: '[0-9]{3}[0-9]{3}[0-9]{4}',
       icon: (
         <svg
-          className="form-name-icon"
+          className={styles.formnameicon}
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -158,7 +159,7 @@ const AssistanceModel = ({ title, requestOrigin }) => {
         return (
           <input
             type="text"
-            className="assist-form-container-input-field"
+            className={styles.assistformcontainerinputfield}
             placeholder="Name*"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -170,7 +171,7 @@ const AssistanceModel = ({ title, requestOrigin }) => {
     {
       icon: (
         <svg
-          className="form-email-icon"
+          className={styles.formemailicon}
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -203,7 +204,7 @@ const AssistanceModel = ({ title, requestOrigin }) => {
             id="email"
             name="email"
             type="email"
-            className="assist-form-container-input-field form-control"
+            className={`${styles.assistformcontainerinputfield} form-control`}
             placeholder="Your email*"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -226,7 +227,7 @@ const AssistanceModel = ({ title, requestOrigin }) => {
         return (
           <input
             type="tel"
-            className="assist-form-container-input-field"
+            className={styles.assistformcontainerinputfield}
             placeholder="Your phone*"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
@@ -240,9 +241,9 @@ const AssistanceModel = ({ title, requestOrigin }) => {
 
       render: () => {
         return (
-          <div className="assist-date-time">
+          <div className={styles.assistdatetime}>
             <Datetime
-              className="assist-date-value"
+              className={styles.assistdatevalue}
               initialValue={'Select a date and time*'}
               selected={date}
               onChange={(date) => setDate(date)}
@@ -255,7 +256,7 @@ const AssistanceModel = ({ title, requestOrigin }) => {
     {
       icon: (
         <svg
-          className="assist-text-area-icon"
+          className={styles.assisttextareaicon}
           width="18"
           height="19"
           viewBox="0 0 18 19"
@@ -292,10 +293,11 @@ const AssistanceModel = ({ title, requestOrigin }) => {
         //  type="file" id="myFile" name="filename"/>
         <>
           <div
-            className="job-apply-upImg-text d-flex mb-4"
+            className={`${styles.jobapplyupImgtext} d-flex mb-4`}
+            // className="job-apply-upImg-text d-flex mb-4"
             onClick={() => image.click()}
           >
-            <a className="job-apply-upImg-link">
+            <a className={styles.jobapplyupImglink}>
               <svg
                 width="24"
                 height="24"
@@ -306,7 +308,7 @@ const AssistanceModel = ({ title, requestOrigin }) => {
               >
                 <mask
                   id="mask0_1102_2677"
-                  className="mask-type-alpha"
+                  className={styles.masktypealpha}
                   maskUnits="userSpaceOnUse"
                   x="5"
                   y="3"
@@ -326,7 +328,7 @@ const AssistanceModel = ({ title, requestOrigin }) => {
               </svg>
               <span>
                 Attachment file{' '}
-                <span className="attachment-optional">(optional)</span>
+                <span className={styles.attachmentoptional}>(optional)</span>
               </span>
             </a>
           </div>
@@ -335,7 +337,7 @@ const AssistanceModel = ({ title, requestOrigin }) => {
               image = selectImage
             }}
             onChange={uploadToClient}
-            className="attachment d-none"
+            className={`${styles.attachment} d-none`}
             name="resume"
             id="resume"
             type="file"
@@ -352,7 +354,7 @@ const AssistanceModel = ({ title, requestOrigin }) => {
       ref={(submitBtnRef) => {
         submitBtn = submitBtnRef
       }}
-      className="assist-form-container-input-btn"
+      className={styles.assistformcontainerinputbtn}
       type="submit"
       onClick={submitEnquiryForm}
     >

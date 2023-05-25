@@ -3,7 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
-
+import styles from '../../styles/blogStyle.module.css'
+import hireService from '../../styles/hireService.module.css'
 export default function BlogDetails({ blogData }) {
   const router = useRouter()
   const [name, setName] = useState('')
@@ -31,7 +32,7 @@ export default function BlogDetails({ blogData }) {
       {blogData.map((e, i) => (
         <>
           <div
-            className="background_image_container"
+            className={styles.background_image_container}
             style={{
               display: 'flex',
               justifyContent: 'center',
@@ -46,12 +47,12 @@ export default function BlogDetails({ blogData }) {
               objectFit="cover"
             />
           </div>
-          <div className="hire-container  blog-page-container " key={i}>
-            <div className="blog-shades">
+          <div className={`${styles.blogpagecontainer} `} key={i}>
+            <div className={styles.blogshades}>
               <br />
-              <h1 className="hire-h1">{blogData[i]?.title}</h1>
+              <h1 className={hireService.hireh1}>{blogData[i]?.title}</h1>
 
-              <div className="htmlContent">
+              <div className={styles.htmlContent}>
                 <div dangerouslySetInnerHTML={{ __html: e.content }} />
               </div>
             </div>

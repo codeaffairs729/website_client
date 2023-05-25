@@ -5,6 +5,7 @@ import Head from 'next/head'
 import ScheduleForm from '../../components/schedule'
 import Image from 'next/image'
 import styles from '../../styles/Services.module.css'
+import hireService from '../../styles/hireService.module.css'
 const techTitle = 'Chatwoot'
 
 const contentHeader = () => <div></div>
@@ -13,29 +14,35 @@ const contentHeaderLeft = () => <div></div>
 const contentHeader1 = () => {
   return (
     <>
-      <div className="tech-service-body">
-        <div className="tech-service-body-left">
-          <h1 className="hire-h1">{techTitle}</h1>
-          <ul className="hire-list-icon">
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+      <div className={hireService.techservicebody}>
+        <div className={hireService.techservicebodyleft}>
+          <h1 className={hireService.hireh1}>{techTitle}</h1>
+          <ul
+            className={`${hireService.hirelisticon} ${hireService.hire_list_items_services} `}
+          >
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Seamless Conversational Experience
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 You&apos;ll Get Notified Instantly After Receiving A Message
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">Omnichannel Support Center</p>
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
+                Omnichannel Support Center
+              </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">Enhanced Customer Experience </p>
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
+                Enhanced Customer Experience
+              </p>
             </li>
           </ul>
         </div>
-        <div className="tech-service-body-right">
+        <div className={hireService.techservicebodyright}>
           {/* <img src="/icons/service-icon/chatwoot.webp" alt="chatwoot-image"/> */}
           <Image
             src="/icons/service-icon/chatwoot.webp"
@@ -55,35 +62,42 @@ const content1 = () => {
     <>
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
-        <h2 className="hire-h2 margin-bottom-24px">
+        <h2 className={`${hireService.hireh2} ${hireService.marginbottom24px}`}>
+          {/* <h2 className="hire-h2 margin-bottom-24px"> */}
           All-In-One Communication Channel!
         </h2>
-        <h3 className="hire-h3">
+        <h3 className={hireService.hireh3}>
           <b>Connect & Convert</b>{' '}
         </h3>
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           Engage your customer in smooth conversational experiences that help to
           drive high-quality conversions and leads.
         </p>
-        <h3 className="hire-h3">Offer Enriched Customer Experience </h3>
-        <p className="hire-p margin-bottom-24px">
+        <h3 className={hireService.hireh3}>
+          Offer Enriched Customer Experience{' '}
+        </h3>
+        <p className={`${hireService.hirep}  ${hireService.marginbottom24px}`}>
           Communicate easily with your customers in more than 100 languages.
         </p>
 
-        <h3 className="hire-h3">
+        <h3 className={hireService.hireh3}>
           <b>Proactive Customer Outreach</b>{' '}
         </h3>
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           Solve your customer issues immediately as you will be notified
           instantly after receiving a message.
         </p>
         {/* content-7 */}
-        <div className="shade-1">
-          <div className="grey-shade"></div>
-          <h2 className="hire-h2 margin-bottom-24px">
+        <div className={hireService.shade1}>
+          <div className={hireService.greyshade}></div>
+          <h2
+            className={`${hireService.hireh2} ${hireService.marginbottom24px}`}
+          >
             <b>Omnichannel Support Center</b>
           </h2>
-          <p className="hire-p margin-bottom-24px">
+          <p
+            className={`${hireService.hirep}  ${hireService.marginbottom24px}`}
+          >
             Chatwoot allows you to connect with eminent customer communication
             platforms such as Website live chat, Email, WhatsApp, Facebook,
             Instagram, Twitter, etc. This aids you deliver a reliable CX across
@@ -94,16 +108,18 @@ const content1 = () => {
             success.
           </p>
         </div>
-        <h2 className="hire-h2 margin-bottom-24px">
+        <h2 className={`${hireService.hireh2} ${hireService.marginbottom24px}`}>
           <b>Connect With Customers To Grow Your Business</b>
         </h2>
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           Chatwoot supports self-hosted installations by default and you can
           easily own your customer data. The framework offers a wonderful
           experience to everyone, including your employees, partners, and
           customers.{' '}
         </p>
-        <h3 className="hire-h3 margin-bottom-24px">
+        <h3
+          className={`${hireService.hireh3}  ${hireService.marginbottom24px}`}
+        >
           <b>Privacy Compliant, Open-source, and Self-hosted</b>
         </h3>
         <div className={`${styles.services_image_container}`}>
@@ -116,7 +132,9 @@ const content1 = () => {
             objectFit="contain"
           />
         </div>
-        <h3 className="hire-h3 margin-bottom-24px">
+        <h3
+          className={`${hireService.hireh3}  ${hireService.marginbottom24px}`}
+        >
           <b>Build End-To-End Engagement From Anywhere</b>
         </h3>
         <div className={`${styles.services_image_container}`}>
@@ -129,8 +147,8 @@ const content1 = () => {
             objectFit="contain"
           />
         </div>
-        <div className="shade-1">
-          <div className="grey-shade"></div>
+        <div className={hireService.shade1}>
+          <div className={hireService.greyshade}></div>
           {/* <h2 className="hire-h2 margin-bottom-24px">
             <b>Privacy Compliant, Open-source, and Self-hosted</b>
           </h2> */}
@@ -140,10 +158,12 @@ const content1 = () => {
           {/* commented above as it required images */}
           <div></div>
           <div>
-            <h2 className="hire-h2 margin-bottom-24px">
+            <h2
+              className={`${hireService.hireh2} ${hireService.marginbottom24px}`}
+            >
               <b>Communication, On The Go</b>
             </h2>
-            <p className="hire-p">
+            <p className={hireService.hirep}>
               We offer a Chatwoot framework that allows you to communicate,
               reply to messages, as well as collaborate with your customers
               instantly.{' '}
@@ -174,7 +194,7 @@ const content4 = () => <div></div>
 const content5 = () => <div></div>
 const content2 = () => <div></div>
 const content3 = () => (
-  <div className="form-service">
+  <div className={hireService.formservice}>
     <ScheduleForm
       title={'Schedule a Meeting'}
       requestOrigin={'Request generated from Chatwoot page'}

@@ -1,5 +1,6 @@
 import React from 'react'
 import Slider from 'react-slick'
+import styles from '../styles/hireService.module.css'
 const Banner = () => {
   const bannerImage = [
     {
@@ -83,7 +84,7 @@ const Banner = () => {
     <Slider {...settings}>
       {bannerImage.map((e, i) => (
         <picture key={i}>
-          <div className="nav-logo-slider">
+          <div className={styles.navlogoslider}>
             <img src={e.path} alt={e.altImg} />
           </div>
         </picture>

@@ -5,40 +5,43 @@ import Head from 'next/head'
 import Image from 'next/image'
 import ScheduleForm from '../../components/schedule'
 import styles from '../../styles/Services.module.css'
+import hireService from '../../styles/hireService.module.css'
 
 const techTitle = 'UI / UX'
 const contentHeader1 = () => {
   return (
     <>
-      <div className="tech-service-body">
-        <div className="tech-service-body-left">
-          <h1 className="hire-h1">{techTitle}</h1>
-          <ul className="hire-list-icon">
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+      <div className={hireService.techservicebody}>
+        <div className={hireService.techservicebodyleft}>
+          <h1 className={hireService.hireh1}>{techTitle}</h1>
+          <ul
+            className={`${hireService.hirelisticon} ${hireService.hire_list_items_services} `}
+          >
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Build Interactive Experiences with our innovative UI/UX Design
                 Services.
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 We build creative, effective & professionals UI/UX Designs
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 Best Quality design with 100% satisfaction
               </p>
             </li>
-            <li className="margine-bottom-16px">
-              <p className="margin-left-25px">
+            <li className={hireService.marginebottom16px}>
+              <p className={hireService.marginleft25px}>
                 With our vast experience, we bring domain and industry best
                 practices.
               </p>
             </li>
           </ul>
         </div>
-        <div className="tech-service-body-right">
+        <div className={hireService.techservicebodyright}>
           {/* <img src="/icons/service-icon/cloud.webp" alt="3D Cloud" /> */}
           <Image
             src="/icons/service-icon/cloud.webp"
@@ -58,7 +61,7 @@ const content1 = () => {
     <>
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
-        <p className="hire-p">
+        <p className={hireService.hirep}>
           As you know, a first impression is the last one and when a user visits
           your site or app, the first look, as well as experience, will leave a
           long-lasting impression on the user’s mind. Thus, it is crucial that
@@ -83,14 +86,18 @@ const content1 = () => {
           responsive web design using the latest tools and technologies.
         </p>
         {/* content 7 */}
-        <div className="shade-1">
-          <div className="grey-shade"></div>
+        <div className={hireService.shade1}>
+          <div className={hireService.greyshade}></div>
           {/* <h2 className="hire-h2 margin-bottom-24px text-center">
             Our UI/UX Process
           </h2> */}
           {/* image required */}
 
-          <h2 className="hire-h2 margin-bottom-24px">Our UI/UX Process</h2>
+          <h2
+            className={`${hireService.hireh2} ${hireService.marginbottom24px}`}
+          >
+            Our UI/UX Process
+          </h2>
           <div className={`${styles.services_image_container}`}>
             <Image
               src="/services_images/uiux.png"
@@ -102,50 +109,52 @@ const content1 = () => {
             />
           </div>
 
-          <h2 className="hire-h2 margin-bottom-24px">
+          <h2
+            className={`${hireService.hireh2} ${hireService.marginbottom24px}`}
+          >
             Innovative & Creative User Experience Design Services
           </h2>
-          <ul className="hire-list">
+          <ul className={hireService.hirelist}>
             <li>
-              <h3 className="hire-h3">
+              <h3 className={hireService.hireh3}>
                 <b>UX Strategy and Consulting</b>
               </h3>
             </li>
           </ul>
-          <p className="hire-p margin-left-22px">
+          <p className={`${hireService.hirep}  ${hireService.marginleft22px}`}>
             Our entire team initially understands the needs of your business to
             identify indispensable aspects to build an integrated UX.
           </p>
-          <ul className="hire-list">
+          <ul className={hireService.hirelist}>
             <li>
-              <h3 className="hire-h3">
+              <h3 className={hireService.hireh3}>
                 <strong>Website Design</strong>
               </h3>
             </li>
           </ul>
-          <p className="hire-p margin-left-22px">
+          <p className={`${hireService.hirep}  ${hireService.marginleft22px}`}>
             We build fast-loading, clutter-free, and responsive websites for
             brands to prosper business.
           </p>
-          <ul className="hire-list">
+          <ul className={hireService.hirelist}>
             <li>
-              <h3 className="hire-h3">
+              <h3 className={hireService.hireh3}>
                 <strong>Cross Platform Compatibility </strong>
               </h3>
             </li>
           </ul>
-          <p className="hire-p margin-left-22px">
+          <p className={`${hireService.hirep}  ${hireService.marginleft22px}`}>
             We focus on the core principles of UI functionality and design to
             deliver a great and consistent experience.
           </p>
-          <ul className="hire-list">
+          <ul className={hireService.hirelist}>
             <li>
-              <h3 className="hire-h3">
+              <h3 className={hireService.hireh3}>
                 <strong>Mobile App Design </strong>
               </h3>
             </li>
           </ul>
-          <p className="hire-p margin-left-22px">
+          <p className={`${hireService.hirep}  ${hireService.marginleft22px}`}>
             For us, every pixel counts, and our effective Mobile Application
             design solutions cover distinctive aspects like user experience, UI
             design, and revamping of existing mobile applications.
@@ -157,7 +166,7 @@ const content1 = () => {
 }
 
 const content3 = () => (
-  <div className="form-service">
+  <div className={hireService.formservice}>
     <ScheduleForm
       title={'Schedule a Meeting'}
       requestOrigin={'Request generated from ui-ux page'}

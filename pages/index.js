@@ -75,6 +75,7 @@ export default function Home({ data, caseData }) {
         </a>
         <Main />
         <FeatureList />
+        {/* <CaseStudy data={caseData} /> */}
         {/* <Package /> */}
         <Access />
         <Layouts />
@@ -82,7 +83,6 @@ export default function Home({ data, caseData }) {
         <Design />
         {/* <Teams /> */}
         <BlogSection data={data} />
-        {/* <CaseStudy data={caseData} /> */}
       </div>
     </>
   )

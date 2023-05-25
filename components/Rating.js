@@ -9,15 +9,15 @@ const Rating = () => {
           <div className="d-flex flex-column justify-content-between rating-border-left">
             <div>
               <Image
-                src="/img/rating/clutch-sigle.svg"
+                src="/img/rating/clutch_new.png"
                 alt="clutch-logo"
                 width={78}
-                height={32}
+                height={23}
               />
             </div>
             <div className="rating-img">
               <Image
-                src="/img/rating/five-star.svg"
+                src="/img/rating/five-star.full.svg"
                 alt="five-star-img"
                 width={143}
                 height={20}

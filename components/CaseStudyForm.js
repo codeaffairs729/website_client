@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import { ToastContainer } from 'react-toastify'
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import styles from '../styles/blogStyle.module.css'
 
 const CaseStudyForm = ({ action, data, db }) => {
   const router = useRouter()
@@ -143,7 +144,7 @@ const CaseStudyForm = ({ action, data, db }) => {
 
       router.push(db == 'blogs' ? '/blogs' : '/case-study')
     } catch (error) {
-      notifyError(json.message)
+      notifyError(error)
     }
   }
   // function for update image
@@ -368,7 +369,7 @@ const CaseStudyForm = ({ action, data, db }) => {
       <div className="text-end">
         <button
           type="submit"
-          className="editor-btn"
+          className={styles.editorbtn}
           onClick={action === 'update' ? onClickUpdate : onClickUpload}
         >
           {action === 'update' ? 'Update' : 'Submit'}
