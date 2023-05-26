@@ -9,10 +9,10 @@ import 'slick-carousel/slick/slick-theme.css'
 import Head from 'next/head'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
-// import style from '../styles/ShimmerCareers.module.css'
-// const Shimmer = dynamic(() => import('../components/ShimmerCareers'), {
-//   ssr: false,
-// })
+import style from '../styles/ShimmerCareers.module.css'
+const Shimmer = dynamic(() => import('../components/ShimmerCareers'), {
+  ssr: false,
+})
 
 const Careers = () => {
   const [loaded, setLoaded] = useState(false)
@@ -22,9 +22,9 @@ const Careers = () => {
     setLoaded(true)
   }
 
-  // setTimeout(() => {
-  //   setShimmer(false)
-  // }, '500')
+  setTimeout(() => {
+    setShimmer(false)
+  }, '500')
 
   const [email, setEmail] = useState('')
   const [jobPosition, setJobPosition] = useState('')
@@ -210,10 +210,10 @@ const Careers = () => {
           content="Web Development Technology, App Development Technology"
         ></meta>
       </Head>
-      {/* <div className={shimmer ? `${style.shimmer}` : `${style.display_None}`}>
+      <div className={shimmer ? `${style.shimmer}` : `${style.display_None}`}>
         <Shimmer />
-      </div> */}
-      <div>
+      </div>
+      <div className={shimmer ? `${style.display_None}` : ``}>
         <div className="container-fluid career-area-2">
           <div className="row">
             <div className="col-lg-3 col-md-3"></div>
