@@ -11,7 +11,10 @@ export default function BlogSection({ data }) {
       <div className="row blog-list">
         {blogData.map((e, i) => (
           <div className="col-12 col-lg-4" key={i}>
-            <div className="card m-2 shadow p-3 bg-body-tertiary">
+            <div
+              className="card m-2 shadow p-3 bg-body-tertiary"
+              style={{ borderRadius: 24 }}
+            >
               <div className="card-img text-center">
                 <Image
                   src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${e.image}`}
