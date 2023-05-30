@@ -66,7 +66,7 @@ function AboutUs() {
   ]
 
   const SideImagesChangeHandle = (index) => {
-    setCompanyFacesDesc(index.target.id)
+    setCompanyFacesDesc(index)
   }
 
   setTimeout(() => {

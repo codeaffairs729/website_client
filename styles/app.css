@@ -3637,6 +3637,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 
 .access__pic {
   width: 100%;
+  height: 100%;
 }
 
 .access__circles {

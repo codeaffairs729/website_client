@@ -7,7 +7,6 @@ import { useRouter } from 'next/router'
 const Footer = () => {
   const size = useWindowSize()
   const router = useRouter()
-  const currentPath = router.pathname
   const [areaExapand, setAriaExpand] = useState(false)
   const [areaExapandIndustries1, setAriaExpandIndustries1] = useState(false)
   const [areaExapandIndustries2, setAriaExpandIndustries2] = useState(false)
@@ -16,30 +15,28 @@ const Footer = () => {
   const handleAreaExpand = () => {
     setTimeout(() => {
       setAriaExpand(!areaExapand)
-    }, '100')
+    }, '0')
   }
   const handleAreaExpandIndustries1 = () => {
     setTimeout(() => {
       setAriaExpandIndustries1(!areaExapandIndustries1)
-    }, '100')
+    }, '0')
   }
   const handleAreaExpandIndustries2 = () => {
     setTimeout(() => {
       setAriaExpandIndustries2(!areaExapandIndustries2)
-    }, '100')
+    }, '0')
   }
 
   function useWindowSize() {
     const [windowSize, setWindowSize] = useState({
       width: undefined,
-      height: undefined,
     })
 
     useEffect(() => {
       function handleResize() {
         setWindowSize({
           width: window.innerWidth,
-          height: window.innerHeight,
         })
       }
 
@@ -52,7 +49,7 @@ const Footer = () => {
     return windowSize
   }
   const width = size.width
-  const height = size.height
+
   let isShort = false
 
   if (width <= 800) {
@@ -62,7 +59,7 @@ const Footer = () => {
   }
 
   return (
-    <div className="col">
+    <div>
       <div className={`row ${FooterCss.footer_container}`}>
         <div className={`col-md-6 col-sm-12 ${FooterCss.left_container} `}>
           <div className={` ${FooterCss.left_footer_details}`}>
@@ -81,22 +78,7 @@ const Footer = () => {
                 to meet evolving needs with our optimal <br />
                 approaches.
               </div>
-              {/* <div style={{ margin: 0 }} className="freelancer-btn">
-                <a
-                  href="/hire-freelancer"
-                  target="_blank"
-                  className="freelancer-main__btn"
-                >
-                  Hire a freelancer
-                </a>
-                <a
-                  href="/hire-team"
-                  target="_blank"
-                  className="freelancer-main__btn"
-                >
-                  Hire a team
-                </a>
-              </div> */}
+
               <div className={` ${FooterCss.contact_details_container}`}>
                 <div className={`${FooterCss.india_container}`}>
                   <span>
@@ -112,7 +94,7 @@ const Footer = () => {
                   </span>
                 </div>
                 <div className={`${FooterCss.india_container}`}>
-                  <span className="">
+                  <span>
                     <Image
                       src="/footer-images/india_logo.svg"
                       alt="india-flag-logo"
@@ -125,19 +107,6 @@ const Footer = () => {
                   </span>
                 </div>
 
-                {/* <div className={` ${FooterCss.email_container} `}>
-                  <span>
-                    <Image
-                      src="/footer-images/Group.svg"
-                      width={32}
-                      height={24}
-                    />
-                  </span>
-
-                  <span className={FooterCss.email_text}>
-                    &nbsp;&nbsp;hr@codegaragetech.com
-                  </span>
-                </div> */}
                 <div className={` ${FooterCss.email_container} `}>
                   <span>
                     <Image
@@ -304,23 +273,11 @@ const Footer = () => {
               >
                 <Link href="/">
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
-                    {/* <Image
-                      src={'/icons/react_native.webp'}
-                      alt="React-native-icon"
-                      height={16}
-                      width={16}
-                    /> */}
                     <div className={`${FooterCss.stack_item_text}`}>Home</div>
                   </div>
                 </Link>
                 <Link href="/about-us">
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
-                    {/* <Image
-                      src={'/footer-images/nextjs-white-bg.png'}
-                      alt="NextJS Icon"
-                      height={16}
-                      width={16}
-                    /> */}
                     <div className={`${FooterCss.stack_item_text}`}>
                       About Us
                     </div>
@@ -328,12 +285,6 @@ const Footer = () => {
                 </Link>
                 <Link href="/hire-freelancer">
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
-                    {/* <Image
-                      src={'/footer-images/nuxt-seeklogo.com.svg'}
-                      alt="NuxtJs Icon"
-                      height={16}
-                      width={16}
-                    /> */}
                     <div className={`${FooterCss.stack_item_text}`}>
                       Hire a Freelancer
                     </div>
@@ -341,12 +292,6 @@ const Footer = () => {
                 </Link>
                 <Link href="/hire-team">
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
-                    {/* <Image
-                      src={'/icons/node_2.webp'}
-                      alt="nodejs-logo"
-                      height={16}
-                      width={16}
-                    /> */}
                     <div className={`${FooterCss.stack_item_text}`}>
                       Hire a Team
                     </div>
@@ -354,65 +299,21 @@ const Footer = () => {
                 </Link>
                 <Link href="/careers">
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
-                    {/* <Image
-                      src={'/footer-images/devops.png'}
-                      alt="DevOps-logo"
-                      height={16}
-                      width={16}
-                    /> */}
                     <div className={`${FooterCss.stack_item_text}`}>Career</div>
                   </div>
                 </Link>
                 <Link href="/blogs">
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
-                    {/* <Image
-                      src={'/footer-images/openai-invert.png'}
-                      alt="Open-AI-logo"
-                      height={16}
-                      width={16}
-                    /> */}
                     <div className={`${FooterCss.stack_item_text}`}>Blogs</div>
                   </div>
                 </Link>
                 <Link href="/contact">
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
-                    {/* <Image
-                      src={'/footer-images/openai-invert.png'}
-                      alt="Open-AI-logo"
-                      height={16}
-                      width={16}
-                    /> */}
                     <div className={`${FooterCss.stack_item_text}`}>
                       Contact Us
                     </div>
                   </div>
                 </Link>
-                {/* <Link href="/services/web-solutions/#shopify">
-                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
-                    <Image
-                      src={'/images/shopify_icon.webp'}
-                      alt="Shopify-logo"
-                      height={16}
-                      width={16}
-                    />
-                    <div className={`${FooterCss.stack_item_text}`}>
-                      Shopify
-                    </div>
-                  </div>
-                </Link>
-                <Link href="/services/web-solutions/#ruby-rails">
-                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
-                    <Image
-                      src={'/footer-images/Ruby.svg'}
-                      alt="Ruby-logo"
-                      height={16}
-                      width={16}
-                    />
-                    <div className={`${FooterCss.stack_item_text}`}>
-                      Ruby on Rails
-                    </div>
-                  </div>
-                </Link> */}
               </div>
             </div>
             <div
@@ -575,16 +476,6 @@ const Footer = () => {
                     </div>
                   </div>
                 </Link>
-
-                {/* <div className={`${FooterCss.stack_items}`}>
-                  <Image
-                    src={'/footer-images/Tizen.svg'}
-                    alt="Tizen Icon"
-                    height={16}
-                    width={16}
-                  />
-                  <div className={`${FooterCss.stack_item_text}`}>Tizen</div>
-                </div> */}
               </div>
             </div>
             <div
@@ -748,30 +639,6 @@ const Footer = () => {
           className={`col-lg-4 col-sm-12  ${FooterCss.footer_copyright_right}`}
         >
           <div className={`${FooterCss.right_links_container}`}>
-            {/* <Link href="/careers">
-              <div
-                className="cursor_pointer"
-                style={{ color: 'white', fontSize: 16 }}
-              >
-                <span className={`${FooterCss.footer_links}`}>Careers</span>
-              </div>
-            </Link>
-            <Link href="/user-blog-list">
-              <div
-                className="cursor_pointer"
-                style={{ color: 'white', fontSize: 16 }}
-              >
-                <span className={`${FooterCss.footer_links}`}>Blogs</span>
-              </div>
-            </Link>
-            <Link href="/contact">
-              <div
-                className="cursor_pointer"
-                style={{ color: 'white', fontSize: 16 }}
-              >
-                <span className={`${FooterCss.footer_links}`}>Contact Us</span>
-              </div>
-            </Link> */}
             <div>All Rights Reserved.</div>
           </div>
         </div>

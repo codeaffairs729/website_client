@@ -16,8 +16,6 @@ const SliderButton = ({ gotoPrev, gotoNext }) => {
   )
 }
 
-import Head from 'next/head'
-
 const Design = () => {
   const gotoNext = () => {
     sliderRef.current.slickNext()

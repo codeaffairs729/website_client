@@ -210,7 +210,7 @@ const Careers = () => {
           content="Web Development Technology, App Development Technology"
         ></meta>
       </Head>
-      <div className={shimmer ? `${style.shimmer}` : `${style.display_None}`}>
+      <div className={shimmer ? `` : `${style.display_None}`}>
         <Shimmer />
       </div>
       <div className={shimmer ? `${style.display_None}` : ``}>

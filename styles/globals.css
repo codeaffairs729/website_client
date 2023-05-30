@@ -5054,7 +5054,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 @media only screen and (min-width: 1023px) {
   .about-area-4-main-data-outer {
-    min-height: 428px;
+    min-height: 500px;
   }
   .about-area-4-sideImages-row {
     display: flex;
