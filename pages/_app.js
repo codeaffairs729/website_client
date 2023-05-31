@@ -49,7 +49,7 @@ function MyApp({ Component, pageProps }) {
       <Header />
       <Component {...pageProps} />
       <ChatwootWidget />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
