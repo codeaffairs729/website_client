@@ -10,6 +10,7 @@ const Footer = () => {
   const [areaExapand, setAriaExpand] = useState(false)
   const [areaExapandIndustries1, setAriaExpandIndustries1] = useState(false)
   const [areaExapandIndustries2, setAriaExpandIndustries2] = useState(false)
+  const [isLoaded, setIsLoaded] = useState(false)
   const pathname = router.pathname
 
   const handleAreaExpand = () => {
@@ -34,6 +35,10 @@ const Footer = () => {
     })
 
     useEffect(() => {
+      setTimeout(() => {
+        setIsLoaded(true)
+      }, '1000')
+
       function handleResize() {
         setWindowSize({
           width: window.innerWidth,
@@ -59,7 +64,11 @@ const Footer = () => {
   }
 
   return (
-    <div>
+    <div
+      style={{
+        display: isLoaded ? 'block' : 'none',
+      }}
+    >
       <div className={`row ${FooterCss.footer_container}`}>
         <div className={`col-md-6 col-sm-12 ${FooterCss.left_container} `}>
           <div className={` ${FooterCss.left_footer_details}`}>
