@@ -82,7 +82,7 @@ export default function Home({ data, caseData }) {
         {/* <Partners /> */}
         <Design />
         {/* <Teams /> */}
-        <BlogSection data={data} />
+        {/* <BlogSection data={data} /> */}
       </div>
     </>
   )
