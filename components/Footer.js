@@ -37,7 +37,7 @@ const Footer = () => {
     useEffect(() => {
       setTimeout(() => {
         setIsLoaded(true)
-      }, '1000')
+      }, '500')
 
       function handleResize() {
         setWindowSize({

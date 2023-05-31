@@ -5592,7 +5592,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 
 .design {
   position: relative;
-  margin-bottom: 110px;
+  margin-bottom: 0;
 }
 
 .design__wrap {
@@ -10272,7 +10272,7 @@ html {
     display: none;
   }
   .design {
-    margin-bottom: 80px;
+    margin-bottom: 0;
   }
   .design__wrap {
     margin-bottom: 42px;

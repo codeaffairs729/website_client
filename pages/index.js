@@ -2,7 +2,7 @@
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Main from './main'
-import CaseStudy from '../components/CaseStudy'
+
 const BlogSection = dynamic(() => import('../components/BlogSection'), {
   ssr: false,
 })
@@ -22,6 +22,10 @@ const Partners = dynamic(() => import('./partners'), {
   ssr: false,
 })
 const Design = dynamic(() => import('./design'), {
+  ssr: false,
+})
+
+const Industries = dynamic(() => import('./industries'), {
   ssr: false,
 })
 
@@ -82,6 +86,7 @@ export default function Home({ data, caseData }) {
         {/* <Partners /> */}
         <Design />
         {/* <Teams /> */}
+        <Industries />
         <BlogSection data={data} />
       </div>
     </>
