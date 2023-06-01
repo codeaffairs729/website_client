@@ -15,7 +15,7 @@ const data = [
       'Enhanced Checkout',
     ],
     id: '0',
-    imgUrl: '/../public/Industries/Ecommerce.jpg',
+    imgUrl: '/Industries/Ecommerce.jpg',
   },
   {
     title: 'Healthcare',
@@ -29,7 +29,7 @@ const data = [
       'Better Health Tracking and Management',
     ],
     id: '1',
-    imgUrl: '/../public/Industries/Healthcare.jpg',
+    imgUrl: '/Industries/Healthcare.jpg',
   },
 
   {
@@ -44,7 +44,7 @@ const data = [
       'Marketing Features',
     ],
     id: '6',
-    imgUrl: '/../public/Industries/realestate.webp',
+    imgUrl: '/Industries/realestate.webp',
   },
   {
     title: 'AI & ML',
@@ -58,7 +58,7 @@ const data = [
       'Easy Deployment',
     ],
     id: '7',
-    imgUrl: '/../public/Industries/AI.webp',
+    imgUrl: '/Industries/AI.webp',
   },
 ]
 
