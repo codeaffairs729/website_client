@@ -86,7 +86,7 @@ export default function Home({ data, caseData }) {
         {/* <Partners /> */}
         <Design />
         {/* <Teams /> */}
-        {/* <Industries /> */}
+        <Industries />
         <BlogSection data={data} />
       </div>
     </>
