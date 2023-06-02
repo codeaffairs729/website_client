@@ -715,7 +715,7 @@ const Careers = () => {
                 </div>
                 <div className="p-5 pt-0">
                   <h3 className="career-area-9-sub-heading mb-3">
-                    We Always Have Game Time Friday
+                    We Always Have Game Time
                   </h3>
                   <p className="career-area-9-para">
                     We make the weekend a blast by playing exciting games every
@@ -746,7 +746,7 @@ const Careers = () => {
                 <div className="p-5 pb-4 img-fluid">
                   <img
                     className="w-100 career-area-9-img-1"
-                    src="/career_images/career-area-9-img-5.webp"
+                    src="/career_images/party.webp"
                     alt="Celebrate Each Occasion"
                   />
                 </div>
@@ -788,9 +788,9 @@ const Careers = () => {
           <div className="row text-center career-area-6-row">
             <div className="col-lg-12">
               <h2 className="career-area-6-heading">
-                Do You Think this can be
+                Do You Think This Can Be
                 <br />
-                the place for you?
+                The Place For You?
               </h2>
             </div>
             <div className="col-lg-12">

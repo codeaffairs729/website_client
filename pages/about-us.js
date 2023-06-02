@@ -171,34 +171,34 @@ function AboutUs() {
                 Our
                 <span className="title__color about-area-7-heading-span">
                   {' '}
-                  Mission
+                  Vision
                 </span>
               </h2>
               <p className="about-area-7-para">
-                We&apos;re on a mission to make the IT world more
-                process-driven.To pursue innovation and drive technological
-                advancements in order to revolutionize the industry and deliver
-                cutting-edge solutions.
+                Our vision is to develop future-oriented solutions to assure
+                growth for people seeking a technological transition in their
+                modern business modules.
                 <br />
                 <br />
                 We believe in empowering entrepreneurs by providing valuable
-                software and delivering quality to society.
-                <br />
-                <br />
-                Our IT services emphasize delivering optimal solutions with
-                top-notch services in web design and development, mobile
-                development, and digital marketing. Providing overall
-                satisfaction to clients is our pertinent priority and we aim to
-                serve them with the best and most reliable solutions.
+                software and delivering quality to society. Our IT services
+                emphasize delivering optimal solutions with top-notch services
+                in web design and development, mobile development, and digital
+                marketing. Providing overall satisfaction to clients is our
+                pertinent priority and we aim to serve them with the best and
+                most reliable solutions.
                 <br />
                 <br />
               </p>
             </div>
-            <div className="col-lg-5 col-md-6 about-area-7-pic-1-outer d-flex align-items-center">
-              <img
-                className="w-100 h-75"
-                src="aboutUsImages/team_pic_9.webp"
+            <div className="col-lg-5 col-md-6 about-area-7-pic-1-outer d-flex align-items-center justify-content-center ">
+              <Image
+                // className="w-100 h-100"
+                src="/aboutUsImages/target_arrow.png"
                 alt="Aim Board"
+                width={400}
+                height={400}
+                objectFit="contain"
               />
             </div>
           </div>
@@ -260,20 +260,17 @@ function AboutUs() {
                   <br />
                   <br />
                   Code Garage Tech was founded with an apparent idea in mind -
-                  to make brilliant software that influences and that we can be
-                  proud of. We offer specialized solutions to support businesses
-                  of all sizes.
+                  to create exceptional software that we can take pride in.
                   <br />
                   <br />
                   By leveraging the power of new technologies, our goal is to
                   deliver quality-centered software services to aspiring
-                  businesses. Our main motto is to deliver value in terms of
-                  sales and revenue.
+                  businesses.
                   <br />
                   <br />
-                  Our vision is to develop future-oriented solutions to assure
-                  growth for people seeking technological transition in their
-                  modern business modules.
+                  We are a team of enthusiastic individuals propelled by a
+                  relentless commitment to craft innovative solutions and
+                  provide unparalleled outcomes.
                 </p>
               </div>
             </div>
