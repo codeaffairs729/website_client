@@ -478,7 +478,7 @@ const Careers = () => {
                     </div>
                     <div>
                       <div className="rating-container-headline fs-5">
-                        glassdoor
+                        Glassdoor
                       </div>
                       <div>
                         <span className="Warning">
