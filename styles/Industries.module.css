@@ -90,7 +90,7 @@
   line-height: 110%;
   letter-spacing: -0.025em;
   color: #292930;
-  opacity: 0.67;
+  opacity: 0.7;
   margin-bottom: 5%;
 }
 
@@ -102,7 +102,7 @@
   line-height: 110%;
   letter-spacing: -0.025em;
   color: #292930;
-  opacity: 0.67;
+  opacity: 0.7;
 }
 .right_item_container {
   display: flex;
@@ -139,7 +139,7 @@
   line-height: 21px;
   letter-spacing: 0.02em;
   color: #000000;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .right_heading {
   font-family: 'DM Sans';
