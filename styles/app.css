@@ -4926,8 +4926,8 @@ body:not(.touch-device) .header__item:hover .header__body {
 
 .teams__circle {
   position: absolute;
-  top: 0;
-  right: calc(50% - 638px);
+  top: -90px;
+  right: calc(50% - 338px);
   width: 88px;
   height: 88px;
   border-radius: 50%;
