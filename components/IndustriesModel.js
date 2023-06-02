@@ -6,7 +6,13 @@ const IndustriesModel = ({ item }) => {
   return (
     <div className={`${styles.right_item_container}`}>
       <div className={`${styles.image_container}`}>
-        <Image src={item.imgUrl} height={300} width={500} objectFit="cover" />
+        <Image
+          src={item.imgUrl}
+          height={300}
+          width={500}
+          objectFit="cover"
+          alt={item.img_alt}
+        />
       </div>
       <div className={`${styles.right_lower_container}`}>
         <div className={`${styles.right_lower_items_container}`}>
@@ -23,6 +29,7 @@ const IndustriesModel = ({ item }) => {
                     src={'/Industries/check_icon.png'}
                     width={24}
                     height={24}
+                    alt="check_icon"
                   />
                   <div style={{ paddingLeft: 10, margin: 10 }}>{point}</div>
                 </div>

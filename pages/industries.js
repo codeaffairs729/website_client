@@ -16,6 +16,7 @@ const data = [
     ],
     id: '0',
     imgUrl: '/Industries/Ecommerce.jpg',
+    img_alt: 'Ecommerce',
   },
   {
     title: 'Healthcare',
@@ -30,6 +31,7 @@ const data = [
     ],
     id: '1',
     imgUrl: '/Industries/Healthcare.jpg',
+    img_alt: 'HealthCare',
   },
 
   {
@@ -45,6 +47,7 @@ const data = [
     ],
     id: '6',
     imgUrl: '/Industries/realestate.webp',
+    img_alt: 'real_Estate',
   },
   {
     title: 'AI & ML',
@@ -59,6 +62,7 @@ const data = [
     ],
     id: '7',
     imgUrl: '/Industries/AI.webp',
+    img_alt: 'AI_image',
   },
 ]
 
