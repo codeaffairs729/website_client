@@ -75,11 +75,11 @@
   width: 90%;
   border-radius: 14px;
   padding: 2rem;
+  transition: all 1s ease-out;
 }
 
 .lower_grid_items_container:hover {
-  background-color: #5956e9;
-  transition: background-color 1s ease-out;
+  /* background-color: #5956e9; */
 }
 
 .lower_title {

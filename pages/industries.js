@@ -45,7 +45,7 @@ const data = [
       'SEO Improvements',
       'Marketing Features',
     ],
-    id: '6',
+    id: '2',
     imgUrl: '/Industries/realestate.webp',
     img_alt: 'real_Estate',
   },
@@ -60,7 +60,7 @@ const data = [
       'Head-to-Head Model Competitions',
       'Easy Deployment',
     ],
-    id: '7',
+    id: '3',
     imgUrl: '/Industries/AI.webp',
     img_alt: 'AI_image',
   },
@@ -126,6 +126,7 @@ const Industries = () => {
   const [selected, setSelected] = useState('0')
 
   const handleMouseEnter = (item) => {
+    console.log('item.id', item.id)
     setItem(item)
     setSelected(item.id)
   }
@@ -133,6 +134,7 @@ const Industries = () => {
   const handleMouseLeave = () => {
     setSelected(null)
   }
+  console.log('selected', selected)
 
   return (
     <>
@@ -150,21 +152,23 @@ const Industries = () => {
             </div>
           </div>
 
-          <div className={`${styles.left_lower_container}`}>
+          <div className={`${styles.left_lower_container} `}>
             <div className="row" key={1}>
               {data.map((item, index) => {
                 return (
                   <div
-                    className={`col ${styles.lower_grid_container}`}
+                    className={`col ${styles.lower_grid_container} cursor_pointer`}
                     key={item.title}
+                    onMouseEnter={() => handleMouseEnter(item)}
+                    // onMouseLeave={() => handleMouseLeave()}
                   >
                     <div
                       className={`${styles.lower_grid_items_container}`}
-                      onMouseEnter={() => handleMouseEnter(item)}
-                      onMouseLeave={() => handleMouseLeave()}
                       style={{
                         backgroundColor:
-                          selected === '0' && index === 0 ? '#5956e9' : '',
+                          selected === item.id && index == item.id
+                            ? '#5956e9'
+                            : '',
                       }}
                     >
                       <div
