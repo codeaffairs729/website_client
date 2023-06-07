@@ -65,7 +65,7 @@ export default function Home({ data, caseData }) {
     <>
       <div className="page">
         <a
-          href="https://api.whatsapp.com/send?phone=7606839821"
+          href="https://api.whatsapp.com/send?phone=17606839821"
           className="whatsapp-btn-outer"
           title="Contact Us on whatsapp"
         >
