@@ -92,9 +92,6 @@ export default function Home({ data, caseData }) {
         </a>
 
         <Main />
-        <a href="http://localhost:3001/?twitter" className="cursor_pointer">
-          <h1>twitter-ads</h1>
-        </a>
         <FeatureList />
         {/* <CaseStudy data={caseData} /> */}
         {/* <Package /> */}
