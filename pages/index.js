@@ -2,6 +2,8 @@
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Main from './main'
+import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
 
 const BlogSection = dynamic(() => import('../components/BlogSection'), {
   ssr: false,
@@ -34,31 +36,42 @@ const Teams = dynamic(() => import('./teams'), {
 })
 
 export default function Home({ data, caseData }) {
+  const Router = useRouter()
   // <----------------Don't delete ---------->
   // ---code for open chatwoot based on url---
 
-  // const Router = useRouter();
-  // const { email } = Router.query;
-  // // console.log('email:', email)
-  // const isEmpty = Object.keys(Router.query).length;
-  // // console.log('team:', isEmpty)
-  // // const isEmpty = Object.keys(ChatwootWidget).length
+  // const { twitter } = Router.query
+  // console.log('Router ', Router.asPath=="/?twitter-ads")
 
-  // // function handleComponentRender() {
-  // //   // console.log('Dynamic component rendered!')
-  // }
-  // useEffect(() => {
+  // const [isEmpty, setIsEmpty] = useState(Object.keys(Router?.query).length)
 
-  //   if (isEmpty) {
-  //     // console.log(
-  //     //   'window : ',
-  //     //   window.$chatwoot.setConversation('xyz', 'xyzz@xyz.com')
-  //     // )
-  //     // console.log('chatwoot dialog open\n')
-  //     // console.log('\nEmail :', email)
-  //     // window.$chatwoot.setConversation('xyz', email)
-  //   }
-  // }, [])
+  // console.log(
+  //   'window?.$chatwoot',
+  //   // window?.$chatwoot,
+  //   'isEmpty:',
+  //   isEmpty,
+  //   'Params data',
+  //   Router?.query
+  // )
+
+  useEffect(() => {
+    if (Router.asPath === '/?twitter-ads') {
+      console.log('Inside if else ')
+      setTimeout(() => {
+        window?.$chatwoot?.setConversation('xyz', 'xyzz@xyz.com')
+      }, 1000)
+    }
+
+    // if (twitter == '') {
+    //   console.log(
+    //     'window inside useEffect: ',
+    //     window?.$chatwoot.setConversation('xyz', 'xyzz@xyz.com')
+    //   )
+    //   setTimeout(() => {
+    //     window?.$chatwoot.setConversation('xyz', 'xyzz@xyz.com')
+    //   }, 100)
+    // }
+  }, [])
   // const d = new Date()
   // let ms = useEffect(() => {}, [])
   return (
@@ -77,7 +90,11 @@ export default function Home({ data, caseData }) {
             height={50}
           />
         </a>
+
         <Main />
+        <a href="http://localhost:3001/?twitter" className="cursor_pointer">
+          <h1>twitter-ads</h1>
+        </a>
         <FeatureList />
         {/* <CaseStudy data={caseData} /> */}
         {/* <Package /> */}
