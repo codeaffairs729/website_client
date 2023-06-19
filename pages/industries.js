@@ -134,7 +134,6 @@ const Industries = () => {
   const handleMouseLeave = () => {
     setSelected(null)
   }
-  console.log('selected', selected)
 
   return (
     <>

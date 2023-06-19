@@ -641,7 +641,7 @@ const Footer = () => {
       </div>
       <div className={`row ${FooterCss.footer_footer_container}`}>
         <div className={`col-lg-8 col-sm-12 ${FooterCss.footer_copyright}`}>
-          © Copyright 2022. Code Garage Tech Private Ltd.
+          © Copyright 2023. Code Garage Tech Private Ltd.
         </div>
 
         <div

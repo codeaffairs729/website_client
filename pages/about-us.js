@@ -21,7 +21,7 @@ function AboutUs() {
   }
   const sideImgArr = [
     ['aboutUsImages/about-img1.webp', 'Mehakpal Singh(Founder)'],
-    ['aboutUsImages/about-img2.webp', 'Poonam Thakur(HR Manager)'],
+    ['aboutUsImages/about-img2.webp', 'Preeti Parihar(HR Manager)'],
     ['aboutUsImages/naresh_pic.png', 'Naresh Bhatia(Chartered Accountant)'],
     ['aboutUsImages/about-img3.webp', 'Kannav Sharma(Lawyer)'],
   ]
@@ -37,10 +37,10 @@ function AboutUs() {
       '/aboutUsImages/about-img1.webp',
     ],
     [
-      'Poonam Thakur',
+      'Preeti Parihar',
       'HR Manager',
-      'Poonam',
-      'Poonam integrates and implements the technology via improved training, staffing, and communication with all the employees. Moreover, she also recommend approaches, business solutions, and processes to the management.',
+      'Preeti',
+      'Preeti integrates and implements the technology via improved training, staffing, and communication with all the employees. Moreover, she also recommend approaches, business solutions, and processes to the management.',
       'www.twitter.com',
       'www.instagram.com',
       'aboutUsImages/about-img2.webp',
