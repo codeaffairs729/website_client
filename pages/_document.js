@@ -22,6 +22,10 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <meta
+          name="p:domain_verify"
+          content="32cbd3add98943d7190bda6e54ab32cb"
+        />
         {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
