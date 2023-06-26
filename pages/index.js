@@ -37,43 +37,23 @@ const Teams = dynamic(() => import('./teams'), {
 
 export default function Home({ data, caseData }) {
   const Router = useRouter()
-  // <----------------Don't delete ---------->
-  // ---code for open chatwoot based on url---
-
-  // const { twitter } = Router.query
-  // console.log('Router ', Router.asPath=="/?twitter-ads")
-
-  // const [isEmpty, setIsEmpty] = useState(Object.keys(Router?.query).length)
-
-  // console.log(
-  //   'window?.$chatwoot',
-  //   // window?.$chatwoot,
-  //   'isEmpty:',
-  //   isEmpty,
-  //   'Params data',
-  //   Router?.query
-  // )
 
   useEffect(() => {
     if (Router.asPath === '/?twitter-ads') {
       console.log('Inside if else ')
-      setTimeout(() => {
-        window?.$chatwoot?.setConversation('xyz', 'xyzz@xyz.com')
-      }, 1000)
-    }
 
-    // if (twitter == '') {
-    //   console.log(
-    //     'window inside useEffect: ',
-    //     window?.$chatwoot.setConversation('xyz', 'xyzz@xyz.com')
-    //   )
-    //   setTimeout(() => {
-    //     window?.$chatwoot.setConversation('xyz', 'xyzz@xyz.com')
-    //   }, 100)
-    // }
+      const openChatwoot = () => {
+        window.$chatwoot.toggle('open')
+      }
+
+      window.addEventListener('chatwoot:ready', openChatwoot)
+
+      return () => {
+        window.removeEventListener('chatwoot:ready', openChatwoot)
+      }
+    }
   }, [])
-  // const d = new Date()
-  // let ms = useEffect(() => {}, [])
+
   return (
     <>
       <div className="page">
