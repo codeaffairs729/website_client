@@ -1,0 +1,142 @@
+ 
+  /* modal for delete */
+  .modalbtn {
+    background-color: #04aa6d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .modalbtn:hover {
+    opacity: 1;
+  }
+  
+  /* Float cancel and delete buttons and add an equal width */
+  
+  
+  /* Add a color to the cancel button */
+  .cancelbtn {
+    background-color: #ccc;
+    color: black;
+    z-index: 1071;
+  }
+  .modal {
+    z-index: 1070;
+  }
+  /* Add a color to the delete button */
+  .deletebtn {
+    background-color: #f44336;
+    z-index: 1072;
+  }
+  
+  /* Add padding and center-align text to the container */
+  .modalcontainer {
+    /* padding: 16px; */
+    text-align: center;
+  }
+  
+  /* modal */
+  .blogmodalcontent {
+    border-radius: 0px;
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 2px solid #bb0404;
+    width: 80%;
+  }
+  
+  .modal_dialog{
+    max-width: 390px;
+    margin: auto;
+  }
+  /* Modal Content/Box */
+  .modalcontent {
+    background-color: #fefefe;
+    border: 1px solid #f0f3ef;
+    border-radius: 16px;
+    overflow: hidden;
+    /* margin-left: 100%; */
+    /* margin-top: 25%; */
+    width: 180%;
+  }
+  
+  .modalcontainer h2 {
+    margin-bottom: 40px;
+  }
+  
+  
+  /* The Modal Close Button (x) */
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+  
+  /* Change styles for cancel button and delete button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn,
+    .deletebtn {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .blogpagecontainer {
+      padding: 20px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .blogpagecontainer {
+      margin-top: 50px;
+      padding: 50px;
+    }
+  }
+  @media only screen and (max-width: 479px) {
+    .blogpagecontainer {
+      padding: 20px;
+    }
+    .blogshades {
+      padding: 0px;
+      box-shadow: none;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .background_image_container {
+      height: 50vh;
+      background-size: contain;
+    }
+    .blogpagecontainer {
+      margin-top: 0px;
+      padding: 20px;
+      padding-top: 0px;
+    }
+  }
+  .hirecontainer {
+    position: relative;
+    margin: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    /* outline: rgb(230, 5, 5) solid; */
+    max-width: 1440px;
+  }
+  

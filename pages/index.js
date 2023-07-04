@@ -3,8 +3,12 @@ import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Main from './main'
 import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
+import LandingModal from '../components/LandingModal'
 
+import RequestCallBack from '../components/RequestCallBack'
+
+import DeleteModal from '../components/DeleteModal'
 const BlogSection = dynamic(() => import('../components/BlogSection'), {
   ssr: false,
 })
@@ -35,13 +39,16 @@ const Teams = dynamic(() => import('./teams'), {
   ssr: false,
 })
 
+const CaseStudySection = dynamic(() =>
+  import('./../components/CaseStudySection')
+)
+
 export default function Home({ data, caseData }) {
   const Router = useRouter()
+  const buttonRef = useRef(null)
 
   useEffect(() => {
     if (Router.asPath === '/?twitter-ads') {
-      console.log('Inside if else ')
-
       const openChatwoot = () => {
         window.$chatwoot.toggle('open')
       }
@@ -52,6 +59,15 @@ export default function Home({ data, caseData }) {
         window.removeEventListener('chatwoot:ready', openChatwoot)
       }
     }
+
+    if (Router.asPath === '/?request-contact') {
+      const modal = document.getElementById('exampleModal')
+      modal.classList.add('show')
+      modal.classList.add('fade')
+      modal.setAttribute('aria-hidden', 'false')
+    }
+
+    clearTimeout()
   }, [])
 
   return (
@@ -71,15 +87,13 @@ export default function Home({ data, caseData }) {
           />
         </a>
 
+        <LandingModal />
         <Main />
         <FeatureList />
-        {/* <CaseStudy data={caseData} /> */}
-        {/* <Package /> */}
+        {/* <CaseStudySection data={data} /> */}
         <Access />
         <Layouts />
-        {/* <Partners /> */}
         <Design />
-        {/* <Teams /> */}
         <Industries />
         <BlogSection data={data} />
       </div>

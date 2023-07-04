@@ -1,0 +1,29 @@
+.main_container {
+  margin-block: 60px 200px;
+  /* border: 0.5px solid lightgray; */
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 500px;
+}
+
+.image_container {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.case_title {
+  text-align: start;
+  color: grey;
+  padding: 4px 8px;
+  margin-block: 5px;
+  height:80px;
+}
+
+@media only screen and (max-width: 1160px){
+  .main_container {
+    margin-block: 30px 60px;
+  }
+  .case_title {
+    
+  }
+}

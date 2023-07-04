@@ -5020,12 +5020,52 @@ body:not(.touch-device) .header-item[href]:before {
   } */
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
+  .modal {
+    background: rgba(0, 0, 0, 0.3);
+  }
   .modal-dialog {
-    max-width: 410px;
+    /* max-width: 410px; */
+    /* max-width: 392px; */
+    max-width: 662px;
+    position: relative;
+    overflow: hidden;
+  }
+  .modal-content {
+    overflow: hidden;
+    padding: 0px;
+    border-radius: 16px;
+  }
+  .modal-body {
+    padding: 0px;
+    border-radius: 16px;
+  }
+  .modal-content .btn-close {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    z-index: 999;
   }
 }
 
+@media (max-width: 768px) {
+  .modal {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .modal-dialog {
+    max-width: 405px;
+  }
+  .modal-content {
+    border-radius: 16px;
+  }
+
+  .modal-content .btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+}
 @media only screen and (min-width: 1200px) {
   /* About Us Component CSS Start */
   .about-area-8-container {
