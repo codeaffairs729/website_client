@@ -6,36 +6,25 @@ import { useRouter } from 'next/router'
 import { useEffect, useState, useRef } from 'react'
 import LandingModal from '../components/LandingModal'
 
-import RequestCallBack from '../components/RequestCallBack'
-
-import DeleteModal from '../components/DeleteModal'
 const BlogSection = dynamic(() => import('../components/BlogSection'), {
   ssr: false,
 })
 const FeatureList = dynamic(() => import('../components/FeatureList'), {
   ssr: false,
 })
-const Package = dynamic(() => import('./package'), {
-  ssr: false,
-})
+
 const Layouts = dynamic(() => import('./layouts'), {
   ssr: false,
 })
 const Access = dynamic(() => import('./access'), {
   ssr: false,
 })
-const Partners = dynamic(() => import('./partners'), {
-  ssr: false,
-})
+
 const Design = dynamic(() => import('./design'), {
   ssr: false,
 })
 
 const Industries = dynamic(() => import('./industries'), {
-  ssr: false,
-})
-
-const Teams = dynamic(() => import('./teams'), {
   ssr: false,
 })
 
@@ -45,29 +34,25 @@ const CaseStudySection = dynamic(() =>
 
 export default function Home({ data, caseData }) {
   const Router = useRouter()
-  const buttonRef = useRef(null)
 
   useEffect(() => {
-    if (Router.asPath === '/?twitter-ads') {
-      const openChatwoot = () => {
-        window.$chatwoot.toggle('open')
-      }
-
-      window.addEventListener('chatwoot:ready', openChatwoot)
-
-      return () => {
-        window.removeEventListener('chatwoot:ready', openChatwoot)
-      }
+    const openChatwoot = () => {
+      console.log('hello')
+      window.$chatwoot.toggle('open')
     }
-
+    if (Router.asPath === '/?twitter-ads') {
+      window.addEventListener('chatwoot:ready', openChatwoot)
+    }
     if (Router.asPath === '/?request-contact') {
       const modal = document.getElementById('exampleModal')
       modal.classList.add('show')
       modal.classList.add('fade')
       modal.setAttribute('aria-hidden', 'false')
     }
-
     clearTimeout()
+    return () => {
+      window.removeEventListener('chatwoot:ready', openChatwoot)
+    }
   }, [])
 
   return (
