@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/caseStudy.module.css'
+import styles from '../styles/CaseStudyNew.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 const CaseStudyModal = ({ item }) => {

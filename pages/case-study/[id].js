@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import styles from './../../styles/CaseStudy.module.css'
+import styles from './../../styles/CaseStudyNew.module.css'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 

@@ -1,44 +1,45 @@
 import React from 'react'
 import Slider from 'react-slick'
-import styles from '../styles/hireService.module.css'
+// import styles from '../styles/hireService.module.css'
+const styles = {
+  mainDiv: {
+    border: '1px solid red',
+    // position: 'relative',
+    display: 'flex', // Add this property
+    justifyContent: 'center', // Add this property
+    alignItems: 'center', // Add this property
+  },
+  mainDivP: {
+    color: '#333333',
+    fontSize: '15px',
+    fontWeight: '900',
+    textAlign: 'center', // Add this property
+    width: '100%', // Add this property
+  },
+}
+
 const TechSlide = () => {
   const bannerImage = [
+    {
+      path: '/techSlideImg/tech_img1.png',
+      name: 'Web Development',
+    },
+    {
+      path: '/techSlideImg/tech_img2.png',
+      name: 'Devops',
+    },
+    {
+      path: '/techSlideImg/tech_img4.png',
+      name: 'Mobile App Dev',
+    },
+    {
+      path: '/techSlideImg/tech_img5.png',
+      name: 'IT Consulting',
+    },
     // {
-    //   path: '/techSlideImg/Rectangle 18721.svg',
-    //   altImg: 'Rectangle-1',
+    //   path: '/techSlideImg/tech_img6.png',
+    //   name: 'UI/UX Design',
     // },
-    // {
-    //   path: '/techSlideImg/Rectangle 18722.svg',
-    //   altImg: 'Rectangle-2',
-    // },
-    // {
-    //   path: '/techSlideImg/Rectangle 18723.svg',
-    //   altImg: 'Rectangle-3',
-    // },
-    // {
-    //   path: '/techSlideImg/Rectangle 18724.svg',
-    //   altImg: 'Rectangle-4',
-    // },
-    {
-      path: '/techSlideImg/consultant_tech.png',
-      altImg: 'consultant',
-    },
-    {
-      path: '/techSlideImg/devops.png',
-      altImg: 'devops',
-    },
-    {
-      path: '/techSlideImg/mobile_tech.png',
-      altImg: 'mobile tech',
-    },
-    {
-      path: '/techSlideImg/ux&ui.png',
-      altImg: 'ui-ux',
-    },
-    {
-      path: '/techSlideImg/webdev_tech.png',
-      altImg: 'mobile tech',
-    },
   ]
 
   var settings = {
@@ -95,11 +96,18 @@ const TechSlide = () => {
   return (
     <Slider {...settings}>
       {bannerImage.map((e, i) => (
-        <picture key={i}>
-          <div className="flex justify-content-center align-content-center align-items-center">
-            <img src={e.path} alt={e.altImg} className="w-100 h-100 " />
+        <div key={i} style={styles.mainDiv}>
+          <div className="mb-4">
+            <img
+              src={e.path}
+              alt={e.name}
+              className="w-100"
+              style={{ height: '90px' }}
+            />
           </div>
-        </picture>
+          <p style={styles.mainDivP}>{e.name}</p>
+          <div></div>
+        </div>
       ))}
     </Slider>
   )
