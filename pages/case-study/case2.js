@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import styles from '../../styles/caseanalysis1.module.css'
+import styles from '../../styles/caseanalysis.module.css'
 
 const CaseAnalysisPage2 = () => {
   return (
@@ -8,17 +8,17 @@ const CaseAnalysisPage2 = () => {
       <Head>
         <title>Case Analysis</title>
       </Head>
-      <h1 className={styles.title}>Case Analysis</h1>
+      {/* <h1 className={styles.title}>Case Analysis</h1> */}
       <div className={styles.content}>
-        <h2 className={styles['section-title']}>
+        <h1 className={styles['section-title']}>
           Dtechtive - Performance Optimization
-        </h2>
+        </h1>
         <p className={styles['section-description']}>
-          Introduction: Dtechtive - A website that discovers the datasets other
-          search engines cannot reach, by connecting Data Users and Data
+          0 Introduction: Dtechtive - A website that discovers the datasets
+          other search engines cannot reach, by connecting Data Users and Data
           Providers in a unique ecosystem
         </p>
-        <h2 className={styles['section-title']}>Case Description:</h2>
+        <h3 className={styles['section-subtitle']}>Case Description:</h3>
         <p className={styles['section-description']}>
           While we were working on Dtechtive, we encountered a problem with the
           server. Specifically, the issue was having two databases from which

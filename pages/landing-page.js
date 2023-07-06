@@ -1,9 +1,9 @@
-import RequestCallBack from '../components/RequestCallBack'
+import TechSlide from '../components/TechSlide'
 
 const LandPage = () => {
   return (
     <div style={{ marginTop: '150px', marginBottom: '150px' }}>
-      <RequestCallBack />
+      <TechSlide />
     </div>
   )
 }

@@ -4,7 +4,8 @@ import Image from 'next/image'
 import Main from './main'
 import { useRouter } from 'next/router'
 import { useEffect, useState, useRef } from 'react'
-import LandingModal from '../components/LandingModal'
+// import LandingModal from '../components/LandingModal'
+import { fetchHomePageData } from '../utils/fetchData'
 
 const BlogSection = dynamic(() => import('../components/BlogSection'), {
   ssr: false,
@@ -28,6 +29,10 @@ const Industries = dynamic(() => import('./industries'), {
   ssr: false,
 })
 
+// const LandingModal = dynamic(() => import('../components/LandingModal'), {
+//   ssr: true,
+// })
+
 const CaseStudySection = dynamic(() =>
   import('./../components/CaseStudySection')
 )
@@ -36,23 +41,22 @@ export default function Home({ data, caseData }) {
   const Router = useRouter()
 
   useEffect(() => {
-    const openChatwoot = () => {
-      console.log('hello')
-      window.$chatwoot.toggle('open')
-    }
-    if (Router.asPath === '/?twitter-ads') {
-      window.addEventListener('chatwoot:ready', openChatwoot)
-    }
-    if (Router.asPath === '/?request-contact') {
-      const modal = document.getElementById('exampleModal')
-      modal.classList.add('show')
-      modal.classList.add('fade')
-      modal.setAttribute('aria-hidden', 'false')
-    }
-    clearTimeout()
-    return () => {
-      window.removeEventListener('chatwoot:ready', openChatwoot)
-    }
+    // don't delete chatwoot code
+    // const openChatwoot = () => {
+    //   console.log('hello')
+    //   window.$chatwoot.toggle('open')
+    // }
+    // if (Router.asPath === '/?twitter-ads') {
+    //   window.addEventListener('chatwoot:ready', openChatwoot)
+    // }
+    // if (Router.asPath === '/request-contact') {
+    //   const modal = document.getElementById('exampleModal')
+    //   modal.classList.add('show')
+    //   modal.setAttribute('aria-hidden', 'false')
+    // }
+    // return () => {
+    //   window.removeEventListener('chatwoot:ready', openChatwoot)
+    // }
   }, [])
 
   return (
@@ -72,7 +76,7 @@ export default function Home({ data, caseData }) {
           />
         </a>
 
-        <LandingModal />
+        {/* <LandingModal /> */}
         <Main />
         <FeatureList />
         {/* <CaseStudySection data={data} /> */}
@@ -87,13 +91,14 @@ export default function Home({ data, caseData }) {
 }
 
 export async function getStaticProps() {
-  const data = await (
-    await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blogs`)
-  ).json()
+  // const data = await (
+  //   await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blogs`)
+  // ).json()
 
-  const caseData = await (
-    await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/case-study`)
-  ).json()
+  // const caseData = await (
+  //   await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/case-study`)
+  // ).json()
+  const { data, caseData } = await fetchHomePageData()
 
   return {
     props: {

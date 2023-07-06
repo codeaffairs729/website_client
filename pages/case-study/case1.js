@@ -8,18 +8,19 @@ const CaseAnalysisPage1 = () => {
       <Head>
         <title>Case Analysis</title>
       </Head>
-      <h1 className={styles.title}>Case Analysis</h1>
+      {/* <h1 className={styles.title}>Case Analysis</h1> */}
       <div className={styles.content}>
-        <h3 className={styles['section-title']}>
+        <h1 className={styles['section-title']}>
           DIVEROID presents the beauty of the underwater to the world.
+        </h1>
+        <h3 className={styles['section-subtitle']}>
+          <strong>Introduction</strong>
         </h3>
         <p className={styles['section-description']}>
-          <strong>Introduction</strong>
-          <br />
           Diveroid is a renowned company in the sea diving industry that offers
           a range of diving appliances and an accompanying mobile application.
         </p>
-        <h2 className={styles['section-title']}>Case Description</h2>
+        <h2 className={styles['section-subtitle']}>Case Description</h2>
         <p className={styles['section-description']}>
           The objective was to develop version 3 of the Diveroid application,
           leveraging technologies such as Node.js, Express, and MySQL. The
@@ -28,7 +29,7 @@ const CaseAnalysisPage1 = () => {
           Additionally, our team was tasked with optimizing the deployment
           infrastructure to reduce costs.
         </p>
-        <h2 className={styles['section-title']}>Our Approach/Solution</h2>
+        <h2 className={styles['section-subtitle']}>Our Approach/Solution</h2>
         <p className={styles['section-description']}>
           When we first started the project, we faced many challenges but after
           careful planning, our team devised an effective solution to overcome
@@ -69,7 +70,7 @@ const CaseAnalysisPage1 = () => {
             </p>
           </li>
         </ul>
-        <h2 className={styles['section-title']}>Results</h2>
+        <h2 className={styles['section-subtitle']}>Results</h2>
         <p className={styles['section-description']}>
           Our modernized approach helped our client to maximize the business
           value and reduce operating costs. Their whole system is now

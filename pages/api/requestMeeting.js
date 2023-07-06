@@ -1,10 +1,10 @@
 const handler = (req, res) => {
   console.log('Request call back', req.body)
-  const { name, email, phone, message } = req.body
+  const { name, email, phone, message, resumeName, resumeBase64, resumeType } =
+    req.body
   if (req.method === 'POST') {
     try {
       // Save data to the database from here
-      const { phone, date } = req.body
       const mail = require('@sendgrid/mail')
       mail.setApiKey(process.env.SENDGRID_API_KEY)
       mail
@@ -27,6 +27,17 @@ const handler = (req, res) => {
   
                               <p>Regards,<br>
                               Codegaragetech</p>`,
+          attachments:
+            resumeName !== ''
+              ? [
+                  {
+                    content: `${resumeBase64}`,
+                    filename: `${resumeName}`,
+                    type: `${resumeType}`,
+                    disposition: 'attachment',
+                  },
+                ]
+              : [],
         })
         .then(() => {
           res.status(200).json({ status: 'success' })

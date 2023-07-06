@@ -775,7 +775,9 @@ body:not(.touch-device) .header-item[href]:before {
 .whatsapp-btn-outer {
   display: none;
 }
-
+.whatsapp-btn-outer_request {
+  display: none;
+}
 .whatsapp-btn {
   width: 50px;
 }
@@ -4262,6 +4264,20 @@ body:not(.touch-device) .header-item[href]:before {
     bottom: 75px;
     right: 12px;
     z-index: 99999;
+  }
+
+  .whatsapp-btn-outer_request{
+    display: inline-block;
+    padding: 16px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 99999;
+
   }
 
   /* Access Component CSS Start */

@@ -1,25 +1,49 @@
 .container {
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 20px;
-  }
-  
-  .title {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .section-title {
-    margin-bottom: 10px;
-  }
-  
-  .section-description {
-    margin-bottom: 20px;
-  }
-  .approach-list {
-    margin-bottom: 20px;
-  }
-  .approach-list1 {
-    font-weight: bold;
-    margin-top: 20px;
-  }
+  max-width: 1220px;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 100%;
+  letter-spacing: -0.025em;
+  color: #292930;
+  margin-left: 4px;
+  margin-bottom: 24px;
+}
+
+.section-subtitle {
+  font-size: 2rem;
+  font-family: 'PT Sans';
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.section-description {
+  font-family: 'Poppins';
+  list-style-position: outside;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #292930;
+}
+
+.approach-list {
+  margin-bottom: 20px;
+}
+.approach-list1 {
+  font-weight: bold;
+  margin-top: 20px;
+}

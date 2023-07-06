@@ -13,7 +13,7 @@ const LandingModal = () => {
   return (
     <>
       <div
-        className="modal fade"
+        className="modal fade show"
         id="exampleModal"
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
@@ -21,12 +21,12 @@ const LandingModal = () => {
       >
         <div className="modal-dialog">
           <div className="modal-content">
-            <GrFormClose
+            {/* <GrFormClose
               className="btn-close cursor_pointer"
               data-bs-dismiss="modal"
               size={30}
               onClick={hideModal}
-            />
+            /> */}
 
             <div className="modal-body">
               <RequestCallBack />
