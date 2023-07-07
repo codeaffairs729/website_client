@@ -199,7 +199,9 @@ const RequestCallBack = ({ closeBtn }) => {
               className="flex flex-col align-items-center justify-content-center align-content-center border border-1 border-grey w-100 rounded mb-4 px-2 py-1 cursor_pointer"
               onClick={() => image.click()}
             >
-              <p className="d-flex align-items-center justify-content-center align-content-center px-2 pb-1 text-black-50">{resumeName}</p>
+              <p className="d-flex align-items-center justify-content-center align-content-center px-2 pb-1 text-black-50">
+                {resumeName}
+              </p>
               <div>
                 <div className=" d-flex align-items-center justify-content-center align-content-center text-black-50 py-1">
                   <a className=" text-black-50">
