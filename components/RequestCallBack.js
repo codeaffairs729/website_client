@@ -196,16 +196,16 @@ const RequestCallBack = ({ closeBtn }) => {
               />
             </div>
             <div
-              className="border border-1 border-grey w-100 rounded mb-4 px-2 py-1 cursor_pointer"
+              className="flex flex-col align-items-center justify-content-center align-content-center border border-1 border-grey w-100 rounded mb-4 px-2 py-1 cursor_pointer"
               onClick={() => image.click()}
             >
-              <p className="px-2 pb-1 text-black-50">{resumeName}</p>
+              <p className="d-flex align-items-center justify-content-center align-content-center px-2 pb-1 text-black-50">{resumeName}</p>
               <div>
-                <div className="job-apply-upImg-text d-flex text-black-50 py-1">
-                  <a className="job-apply-upImg-link text-black-50">
+                <div className=" d-flex align-items-center justify-content-center align-content-center text-black-50 py-1">
+                  <a className=" text-black-50">
                     <svg
-                      width="24"
-                      height="24"
+                      width="18"
+                      height="18"
                       viewBox="0 0 24 24"
                       fill="#7f7f7f"
                       xmlns="http://www.w3.org/2000/svg"
@@ -233,8 +233,7 @@ const RequestCallBack = ({ closeBtn }) => {
                       </g>
                     </svg>
                     <span className="text-black-50">
-                      Attachment file{' '}
-                      <span className="attachment-optional">(optional)</span>
+                      Attachment file <span className="">(optional)</span>
                     </span>
                   </a>
                 </div>

@@ -36,6 +36,10 @@ const TechSlide = () => {
       path: '/techSlideImg/tech_img5.png',
       name: 'IT Consulting',
     },
+    {
+      path: '/techSlideImg/tech_img7.png',
+      name: 'E-Commerce',
+    },
     // {
     //   path: '/techSlideImg/tech_img6.png',
     //   name: 'UI/UX Design',

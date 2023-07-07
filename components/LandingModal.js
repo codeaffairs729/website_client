@@ -13,7 +13,7 @@ const LandingModal = () => {
   return (
     <>
       <div
-        className="modal fade show"
+        className="modal fade show d-flex justify-content-center align-items-center align-content-between"
         id="exampleModal"
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
