@@ -12,7 +12,6 @@ const Footer = () => {
   const [areaExapandIndustries2, setAriaExpandIndustries2] = useState(false)
   const [isLoaded, setIsLoaded] = useState(false)
   const pathname = router.pathname
-
   const handleAreaExpand = () => {
     setTimeout(() => {
       setAriaExpand(!areaExapand)
@@ -63,6 +62,9 @@ const Footer = () => {
     isShort = false
   }
 
+  if (pathname === '/request-contact') {
+    return null
+  }
   return (
     <div
       style={{

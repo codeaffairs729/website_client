@@ -51,24 +51,28 @@
 
 .flag_icon_container {
   display: flex;
-  padding: 4px 8px;
+  padding: 2px 0px;
+  margin-inline: 8px;
   /* overflow: hidden; */
   gap: 5px;
+  min-width: 80px;
+  justify-content: center;
 }
 
 .flag_icon_container select {
-  border: none;   
+  border: none;
   background: none;
-  width: 80px;
-  border-right: 1px solid lightgray;
-  margin-right: 2px;
+  /* min-width: 60px; */
+  /* width: auto; */
+  /* border-right: 1px solid lightgray; */
+  /* margin-right: 2px; */
 }
 
 .flag_icon_container p {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
   padding: 4px 2px;
 }
 
@@ -93,11 +97,9 @@
   overflow: hidden;
   padding: 15px;
   margin: 85px 15px;
-  background: rgb(90,95,225,0.2)
+  background: rgb(90, 95, 225, 0.2);
   /* display: none; */
 }
-
-
 
 .live_btn {
   padding: 8px 8px;
@@ -120,7 +122,7 @@
 
 .phone_input input {
   overflow: hidden;
-  width: 178px;
+  /* width: 178px; */
   /* border: 1px solid red; */
 }
 @media only screen and (max-width: 768px) {

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import ScheduleMeetingForm from './scheduleMeetingForm'
 import 'react-datetime/css/react-datetime.css'
@@ -13,6 +13,7 @@ import Link from 'next/link'
 import TechSlide from './TechSlide'
 
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
+
 const countryCodes = require('country-codes-list')
 
 const RequestCallBack = ({ closeBtn }) => {
@@ -29,6 +30,9 @@ const RequestCallBack = ({ closeBtn }) => {
   const [resumeBase64, setResumeBase64] = useState('')
   const [createObjectURL, setCreateObjectURL] = useState('')
   const image = useRef(null)
+
+  const [dropdownWidth, setDropdownWidth] = useState('')
+  const selectRef = useRef(null)
 
   const uploadToClient = async (event) => {
     if (event.target.files && event.target.files[0]) {
@@ -108,13 +112,32 @@ const RequestCallBack = ({ closeBtn }) => {
     'countryCode',
     ' +{countryCallingCode}'
   )
-  const countryCode = [
+  const countryCodeobj = [
     ...new Set(Object.values(myCountryCodesObject).sort((a, b) => a - b)),
   ]
+
+  const countryCode = countryCodeobj.map((code) => code.trim())
 
   const openChatwoot = () => {
     window.$chatwoot.toggle('open')
   }
+  useEffect(() => {
+    const selectedOptionText =
+      selectRef.current.options[selectRef.current.selectedIndex].text.trim()
+    const width = selectedOptionText.length + 'em'
+    if (width === '7em') {
+      width = '5em'
+    }
+    if (width === '2em') {
+      width = '3em'
+    }
+    if (width === '6em') {
+      width = '5em'
+    }
+    console.log({ width })
+    setDropdownWidth(width)
+  }, [selectedOption])
+
   return (
     <>
       <div className={`${styles.main_container}`}>
@@ -160,11 +183,14 @@ const RequestCallBack = ({ closeBtn }) => {
             >
               <div className={`${styles.flag_icon_container}`}>
                 <select
+                  id="mySelect"
+                  ref={selectRef}
                   value={selectedOption}
                   className="d-flex align-content-center justify-content-center fs-6 text-black-50 "
                   onChange={(e) => setSelectedOption(e.target.value)}
+                  style={{ width: dropdownWidth }}
                 >
-                  <option value="+91">+91</option>
+                  <option value="+1">+1</option>
 
                   {countryCode.map((el, index) => (
                     <option key={index} value={`${el}`}>
@@ -173,14 +199,18 @@ const RequestCallBack = ({ closeBtn }) => {
                   ))}
                 </select>
               </div>
-              <div>
+              <div style={{ width: '226px' }}>
                 <input
                   id="tel"
                   type="tel"
-                  className="py-2  rounded"
+                  className="py-2"
                   placeholder="Phone Number (optional)"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
+                  style={{
+                    borderLeft: '1px solid lightgrey',
+                    padding: '4px 6px',
+                  }}
                 />
               </div>
             </div>
@@ -204,7 +234,7 @@ const RequestCallBack = ({ closeBtn }) => {
               </p>
               <div>
                 <div className=" d-flex align-items-center justify-content-center align-content-center text-black-50 py-1">
-                  <a className=" text-black-50">
+                  <a className=" text-black-50 d-flex align-items-center justify-content-center align-content-center">
                     <svg
                       width="18"
                       height="18"
@@ -252,6 +282,7 @@ const RequestCallBack = ({ closeBtn }) => {
                   accept=".doc, .docx, .pdf"
                 />
               </div>
+              <p className=" px-2 pb-1 "></p>
             </div>
             <div className="">
               <button
