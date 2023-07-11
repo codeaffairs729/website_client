@@ -159,11 +159,6 @@ const Header = () => {
             </button>
             <Link href="/">
               <div className="cursor_pointer header__logo">
-                {/* <img
-                className="header__pic"
-                src="/logo/cgt_new_logo_alt.webp"
-                alt="Code Garage Tech - Logo"
-              /> */}
                 <div className="header__pic">
                   <Image
                     src="/logo/cgt_new_logo_alt.webp"
@@ -1214,18 +1209,15 @@ const Header = () => {
                 </Link> */}
               </nav>
               <div className="header__photo">
-                {/* <img
-                className="header__pic"
-                src="/img/menu-pic.webp"
-                alt="3D Computer System"
-              /> */}
                 <div className="header__pic">
-                  <Image
-                    src="/img/menu-pic.webp"
-                    alt="3D Computer System"
-                    width={350}
-                    height={308}
-                  />
+                  <div style={{ zIndex: '999' }}>
+                    <Image
+                      src="/img/menu-pic.webp"
+                      alt="3D Computer System"
+                      width={350}
+                      height={308}
+                    />
+                  </div>
                 </div>
               </div>
             </div>

@@ -55,53 +55,13 @@ const TechSlide = () => {
     arrows: false,
     autoplay: true,
     initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          dots: false,
-          infinite: true,
-          speed: 500,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-          autoplay: true,
-          initialSlide: 0,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          dots: false,
-          infinite: true,
-          speed: 500,
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          arrows: false,
-          autoplay: true,
-          initialSlide: 0,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          dots: false,
-          infinite: true,
-          speed: 500,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-          autoplay: true,
-          initialSlide: 0,
-        },
-      },
-    ],
+    autoplaySpeed:1300
   }
   return (
     <Slider {...settings}>
       {bannerImage.map((e, i) => (
         <div key={i} style={styles.mainDiv}>
-          <div className="mb-4">
+          <div className="mb-4 py-1">
             <img
               src={e.path}
               alt={e.name}
