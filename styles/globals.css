@@ -4266,7 +4266,7 @@ body:not(.touch-device) .header-item[href]:before {
     z-index: 99999;
   }
 
-  .whatsapp-btn-outer_request{
+  .whatsapp-btn-outer_request {
     display: inline-block;
     padding: 16px;
     border-radius: 8px;
@@ -4277,7 +4277,6 @@ body:not(.touch-device) .header-item[href]:before {
     position: fixed;
     bottom: 0px;
     z-index: 99999;
-
   }
 
   /* Access Component CSS Start */

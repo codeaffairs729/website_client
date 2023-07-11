@@ -55,7 +55,7 @@ const TechSlide = () => {
     arrows: false,
     autoplay: true,
     initialSlide: 0,
-    autoplaySpeed:1300
+    autoplaySpeed: 1300,
   }
   return (
     <Slider {...settings}>
