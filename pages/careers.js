@@ -809,6 +809,7 @@ const Careers = () => {
           modalBodyShow={true}
           modalFooterShow={false}
           modalTitle={'Enter Your Details Below'}
+          formType={'join-exception'}
           modalBody={
             <div>
               <input
@@ -858,6 +859,8 @@ const Careers = () => {
                 <option value="Laravel/PHP Developer">
                   Laravel/PHP Developer
                 </option>
+                <option value="Sales Executive">Sales Executive</option>
+                <option value="Online Bidder/BDE">Online Bidder/BDE</option>
                 <option value="Shopify Developer">Shopify Developer</option>
               </select>
               <select
