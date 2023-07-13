@@ -5046,6 +5046,10 @@ body:not(.touch-device) .header-item[href]:before {
     position: relative;
     overflow: hidden;
   }
+
+  .modal-dialog-careers {
+    max-width: 400px;
+  }
   .modal-content {
     overflow: hidden;
     padding: 0px;
