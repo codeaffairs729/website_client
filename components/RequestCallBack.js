@@ -1,13 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
-import ScheduleMeetingForm from './scheduleMeetingForm'
 import 'react-datetime/css/react-datetime.css'
-import Datetime from 'react-datetime'
-// import { BsCalendar2Date } from "react-icons/bs";
-// import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { ToastContainer, toast } from 'react-toastify'
 import styles from '../styles/requestCallBack.module.css'
-import Image from 'next/image'
 import Link from 'next/link'
 
 import TechSlide from './TechSlide'
@@ -23,15 +18,14 @@ const RequestCallBack = ({ closeBtn }) => {
   const [email, setEmail] = useState('')
   const [buttonText, setButtonText] = useState('Submit')
   const [selectedOption, setSelectedOption] = useState('')
-  const submitBtn = useRef(null)
   const [resume, setResume] = useState('')
   const [resumeName, setResumeName] = useState('')
   const [resumeType, setResumeType] = useState('')
   const [resumeBase64, setResumeBase64] = useState('')
   const [createObjectURL, setCreateObjectURL] = useState('')
-  const image = useRef(null)
-
   const [dropdownWidth, setDropdownWidth] = useState('')
+  const image = useRef(null)
+  const submitBtn = useRef(null)
   const selectRef = useRef(null)
 
   const uploadToClient = async (event) => {
@@ -64,8 +58,8 @@ const RequestCallBack = ({ closeBtn }) => {
   const submitEnquiryForm = (e) => {
     e.preventDefault()
 
-    submitBtn.disabled = true
-    submitBtn.innerHTML =
+    submitBtn.current.disabled = true
+    submitBtn.current.innerHTML =
       '<span class="spinner-border spinner-border-sm"></span> Loading...'
     fetch('/api/requestMeeting', {
       method: 'POST',
@@ -90,21 +84,14 @@ const RequestCallBack = ({ closeBtn }) => {
           setEmail('')
           setName('')
           setMessage('')
-          submitBtn.innerHTML = 'Submitted'
-          submitBtn.disabled = false
-          submitBtn.innerHTML = 'Submitted'
-          toast.success('Success! Email Sent Successful', {
-            position: 'top-right',
-            autoClose: 5000,
-            hideProgressBar: true,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          })
+
+          submitBtn.current.innerHTML = 'Submitted'
+          submitBtn.current.disabled = false
+          submitBtn.current.innerHTML = 'Submitted'
+          toast.success('Thanks for contacting!')
         } else {
-          submitBtn.disabled = false
-          submitBtn.innerHTML = 'Send Now'
+          submitBtn.current.disabled = false
+          submitBtn.current.innerHTML = 'Send Now'
         }
       })
   }
@@ -125,6 +112,7 @@ const RequestCallBack = ({ closeBtn }) => {
     const selectedOptionText =
       selectRef.current.options[selectRef.current.selectedIndex].text.trim()
     const width = selectedOptionText.length + 'em'
+    console.log('width:', width)
     if (width === '7em') {
       width = '5em'
     }
@@ -134,7 +122,6 @@ const RequestCallBack = ({ closeBtn }) => {
     if (width === '6em') {
       width = '5em'
     }
-    console.log({ width })
     setDropdownWidth(width)
   }, [selectedOption])
 
@@ -179,14 +166,14 @@ const RequestCallBack = ({ closeBtn }) => {
               />
             </div>
             <div
-              className={`${styles.phone_input} mb-4 d-flex align-content-center border border-1 border-grey w-100 rounded overflow-hidden`}
+              className={`${styles.phone_input} mb-4  border border-1 border-grey w-100 rounded`}
             >
-              <div className={`${styles.flag_icon_container}`}>
+              <div className={`${styles.flag_icon_container} left-phone-input`}>
                 <select
                   id="mySelect"
                   ref={selectRef}
                   value={selectedOption}
-                  className="d-flex align-content-center justify-content-center fs-6 text-black-50 "
+                  className="d-flex align-content-center justify-content-center fs-6 text-black-50"
                   onChange={(e) => setSelectedOption(e.target.value)}
                   style={{ width: dropdownWidth }}
                 >
@@ -199,7 +186,7 @@ const RequestCallBack = ({ closeBtn }) => {
                   ))}
                 </select>
               </div>
-              <div style={{ width: '226px' }}>
+              <div className="right-phone-input">
                 <input
                   id="tel"
                   type="tel"
@@ -286,6 +273,7 @@ const RequestCallBack = ({ closeBtn }) => {
             </div>
             <div className="">
               <button
+                ref={submitBtn}
                 id="submit"
                 type="submit"
                 className={`${styles.request_btn} border border-2 border-mute w-100 fw-bold`}
@@ -315,14 +303,6 @@ const RequestCallBack = ({ closeBtn }) => {
             className={`${styles.tech_container} rounded-2`}
             style={{ position: 'relative' }}
           >
-            {/* <div className="row">
-                <div className="col p-lg-4">Devops</div>
-                <div className="col p-lg-4">Cloud</div>
-              </div>
-              <div className="row">
-                <div className="col p-lg-4">Mobile</div>
-                <div className="col p-lg-4">Design</div>
-              </div> */}
             <TechSlide />
           </div>
           <div className={`${styles.live_btn_container}`}>
