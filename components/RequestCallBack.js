@@ -86,9 +86,10 @@ const RequestCallBack = ({ closeBtn }) => {
           setMessage('')
 
           submitBtn.current.innerHTML = 'Submitted'
-          submitBtn.current.disabled = false
+          submitBtn.current.disabled = true
           submitBtn.current.innerHTML = 'Submitted'
-          toast.success('Thanks for contacting!')
+          setResumeName('')
+          toast.success('Thanks for contacting !')
         } else {
           submitBtn.current.disabled = false
           submitBtn.current.innerHTML = 'Send Now'
