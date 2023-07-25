@@ -137,7 +137,7 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
       notifyError("Slug shouldn't be empty")
       return
     }
-    if (!imageField) {
+    if (btnName === 'Save' && !imageField) {
       notifyError("imageField shouldn't be empty")
       return
     }
@@ -199,7 +199,7 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
       )
       const json = await response.json()
       notify(json.message)
-      // router.push(db === 'blogs' ? '/blogs' : '/case-studies')
+      router.push(db === 'blogs' ? '/blogs' : '/case-studies')
     } catch (error) {
       // notifyError(json.message)
     }
