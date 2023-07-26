@@ -184,9 +184,9 @@ function AboutUs() {
                 software and delivering quality to society. Our IT services
                 emphasize delivering optimal solutions with top-notch services
                 in web design and development, mobile development, and digital
-                marketing. Providing overall satisfaction to clients is our
-                pertinent priority and we aim to serve them with the best and
-                most reliable solutions.
+                marketing. By leveraging the power of new technologies, our goal
+                is to deliver quality-centered software services to aspiring
+                businesses.
                 <br />
                 <br />
               </p>
@@ -253,24 +253,24 @@ function AboutUs() {
                   During our journey of 7 years, they have grown up with us.
                   <br />
                   <br />
-                  We build as well as scale your brand by crafting digital
-                  experiences that create lasting impact. We want to see your
-                  business succeed and we pride ourselves on working hard to
-                  make sure it happens.
+                  Code Garage was founded with an apparent idea in mind - to
+                  create exceptional software that we can take pride in. We
+                  built many brands by crafting digital experiences that create
+                  lasting impact.
                   <br />
                   <br />
-                  Code Garage Tech was founded with an apparent idea in mind -
-                  to create exceptional software that we can take pride in.
+                  During our remarkable journey, we encountered numerous
+                  challenges, yet our unwavering dedication and determination
+                  led us to overcome each one of them.
                   <br />
                   <br />
-                  By leveraging the power of new technologies, our goal is to
-                  deliver quality-centered software services to aspiring
-                  businesses.
+                  By embracing innovation and staying at the forefront of
+                  technological advancements, we have continuously empowered
+                  businesses with transformative solutions tailored to their
+                  unique needs, that helped us establish robust connections with
+                  enterprises across the globe.
                   <br />
                   <br />
-                  We are a team of enthusiastic individuals propelled by a
-                  relentless commitment to craft innovative solutions and
-                  provide unparalleled outcomes.
                 </p>
               </div>
             </div>
