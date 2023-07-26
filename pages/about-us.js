@@ -259,7 +259,7 @@ function AboutUs() {
                   lasting impact.
                   <br />
                   <br />
-                  During our remarkable journey, we encountered numerous
+                  Throughout our remarkable journey, we encountered numerous
                   challenges, yet our unwavering dedication and determination
                   led us to overcome each one of them.
                   <br />
