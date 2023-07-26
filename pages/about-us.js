@@ -21,8 +21,9 @@ function AboutUs() {
   }
   const sideImgArr = [
     ['aboutUsImages/about-img1.webp', 'Mehakpal Singh(Founder)'],
+    ['/aboutUsImages/about-img6.jpg', , 'Ankush Mahajan(CTO)'],
     ['aboutUsImages/about-img2.jpg', 'Himani Choudhary(HR Manager)'],
-    ['aboutUsImages/naresh_pic.png', 'Naresh Bhatia(Chartered Accountant)'],
+    ['aboutUsImages/naresh_pic.jpg', 'Naresh Bhatia(Chartered Accountant)'],
     ['aboutUsImages/about-img3.webp', 'Kannav Sharma(Lawyer)'],
   ]
 
@@ -35,6 +36,15 @@ function AboutUs() {
       'www.twitter.com',
       'www.instagram.com',
       '/aboutUsImages/about-img1.webp',
+    ],
+    [
+      'Ankush Mahajan',
+      'CTO',
+      'Ankush',
+      "The guy, who empowers excellence with technology leadership. With a master's degree in computer science and over 8 years of experience in the software development industry, he possesses a strong academic background and extensive professional expertise. He manages the business procedures of the organization taking into account the crucial requirements and future enhancements.",
+      'www.twitter.com',
+      'www.instagram.com',
+      '/aboutUsImages/about-img6.jpg',
     ],
     [
       'Himani Choudhary',
@@ -52,7 +62,7 @@ function AboutUs() {
       'As a proactive and result-oriented finance professional, he has a strong track record of handling multiple assignments efficiently. He has 15 years of experience and is very diligent in handling Accounts & Finance, Direct & Indirect Tax, Internal Auditing, and Risk Assessment of the company.',
       'www.twitter.com',
       'www.instagram.com',
-      'aboutUsImages/naresh_pic.png',
+      'aboutUsImages/naresh_pic.jpg',
     ],
     [
       'Kannav Sharma',
