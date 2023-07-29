@@ -55,7 +55,8 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
   let name
   let token
   let id
-  const slugRegex = /^[a-z0-9]+(-[a-z0-9]+)?$/
+  const slugRegex = /^[a-z0-9]+(-[a-z0-9]+)*$/
+
   const containerRef = useRef(null)
   const startPosRef = useRef(null)
   const resizeDirectionRef = useRef(null)
@@ -138,6 +139,12 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
       notifyError("Slug shouldn't be empty")
       return
     }
+
+    if (!slugRegex.test(slug)) {
+      notifyError('Invalid slug')
+      return
+    }
+
     if (btnName === 'Save' && !imageField) {
       notifyError("imageField shouldn't be empty")
       return

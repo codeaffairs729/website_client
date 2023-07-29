@@ -313,7 +313,7 @@ const Footer = () => {
                     <div className={`${FooterCss.stack_item_text}`}>Career</div>
                   </div>
                 </Link>
-                <Link href="/blogs">
+                <Link href="/user-blog-list">
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
                     <div className={`${FooterCss.stack_item_text}`}>Blogs</div>
                   </div>

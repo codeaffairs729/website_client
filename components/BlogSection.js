@@ -55,7 +55,7 @@ export default function BlogSection({ data }) {
         ))}
       </div>
       <div className="text-end cursor_pointer">
-        <Link href="/blogs">
+        <Link href="/user-blog-list">
           <div className="blog-arrow">
             <span className="fw-semibold link-underline-opacity-50 my-4 mx-2 blogs-link ">
               Read other blogs
