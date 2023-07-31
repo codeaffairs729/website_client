@@ -2285,6 +2285,7 @@ body:not(.touch-device) .header-item[href]:before {
   line-height: 30px;
   letter-spacing: 1px;
   color: #333333;
+  margin-block: auto;
 }
 
 .about-area-4-main-para span {
@@ -3844,6 +3845,8 @@ body:not(.touch-device) .header-item[href]:before {
 
   .about-area-4-main-desc-outer {
     padding: 1rem;
+    display: flex;
+    justify-content: center;
   }
 
   .about-area-5-heading {
@@ -5115,7 +5118,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 @media only screen and (min-width: 1023px) {
   .about-area-4-main-data-outer {
-    min-height: 500px;
+    min-height: 552px;
   }
   .about-area-4-sideImages-row {
     display: flex;
@@ -5239,6 +5242,9 @@ body:not(.touch-device) .header-item[href]:before {
     font-size: 9px;
     line-height: 15px;
     letter-spacing: 0px;
+  }
+  .about-area-4-main-data-outer {
+    min-height: 586px;
   }
 }
 @media (max-width: 500px) {
