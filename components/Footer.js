@@ -539,19 +539,17 @@ const Footer = () => {
                 aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample"
               >
-                <Link href="/services/ecommerce-solutions">
-                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
-                    <Image
-                      src={'/footer-images/commerce.png'}
-                      alt="E-commerce-Icon"
-                      height={16}
-                      width={16}
-                    />
-                    <div className={`${FooterCss.stack_item_text}`}>
-                      E-commerce
-                    </div>
+                <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                  <Image
+                    src={'/footer-images/commerce.png'}
+                    alt="E-commerce-Icon"
+                    height={16}
+                    width={16}
+                  />
+                  <div className={`${FooterCss.stack_item_text}`}>
+                    E-commerce
                   </div>
-                </Link>
+                </div>
                 <div className={`${FooterCss.stack_items} cursor_pointer`}>
                   <Image
                     src={'/footer-images/healthcare.png'}
