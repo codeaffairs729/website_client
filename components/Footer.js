@@ -539,7 +539,7 @@ const Footer = () => {
                 aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample"
               >
-                {/* <Link href="/services/ecommerce-solutions">
+                <Link href="/services/ecommerce-solutions">
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
                     <Image
                       src={'/footer-images/commerce.png'}
@@ -551,7 +551,7 @@ const Footer = () => {
                       E-commerce
                     </div>
                   </div>
-                </Link> */}
+                </Link>
                 <div className={`${FooterCss.stack_items} cursor_pointer`}>
                   <Image
                     src={'/footer-images/healthcare.png'}
