@@ -7,11 +7,11 @@ const Qra = () => {
   useEffect(() => {
     if (router.asPath === '/qra') {
       console.log('qra')
-      router.push('/')
+      // router.push('/')
     }
   }, [])
 
-  return null
+  return <h1>Ankush Sir</h1>
 }
 
 export default Qra
