@@ -5,10 +5,10 @@ const Qrm = () => {
   const router = useRouter()
   console.log('router as path', router.asPath)
   useEffect(() => {
-    // router.push('/')
+    router.push('/')
   }, [])
 
-  return <h1>Mehek sir</h1>
+  return null
 }
 
 export default Qrm
