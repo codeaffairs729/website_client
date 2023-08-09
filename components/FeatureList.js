@@ -36,7 +36,9 @@ const FeatureList = () => {
       </div>
       <div className="row align-items-center  gx-5 feature-overflow-hiiden">
         <div className="col-md-12 col-lg-6">
-          <div className="feature-small-text">Think No Limits</div>
+          <div className="feature-small-text">
+            Definite Process, Remarkable Outcomes
+          </div>
           <h2 className="mb-4">Leading The Way In Crafting New Innovations</h2>
           <p className="mb-4">
             We understand that your goals are unique and believe that business
