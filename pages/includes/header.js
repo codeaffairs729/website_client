@@ -199,7 +199,7 @@ const Header = () => {
                     className={`btn-outline-danger cursor_pointer header__head ${
                       visible === 'flex' ? 'service-underline' : ''
                     } ${serviceMenu ? 'service-menu-head nav-css' : ''}`}
-                    // onClick={toggleSidebarInternalMenu}
+                    onClick={toggleSidebarInternalMenu}
                     onMouseOver={handleOnShowMenu}
                   >
                     Services
