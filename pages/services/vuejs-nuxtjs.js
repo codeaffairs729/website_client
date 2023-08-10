@@ -116,7 +116,7 @@ const content1 = () => {
           </h3>
           <p className={hireService.hirep}>
             We have a vast experience in creating a range of plugins as per
-            business requirements. At Code Garage Tech, we have created numerous
+            business requirements. At Code Garage, we have created numerous
             customized plugins to meet the demands of clients.
           </p>
 
@@ -132,8 +132,8 @@ const content1 = () => {
             <b>Maintenance and Support</b>
           </h3>
           <p className={hireService.hirep}>
-            At Code Garage Tech, our maintenance and support solutions for
-            Nuxt.js development include 24*7 support for application performance
+            At Code Garage, our maintenance and support solutions for Nuxt.js
+            development include 24*7 support for application performance
             requirements.
           </p>
         </div>

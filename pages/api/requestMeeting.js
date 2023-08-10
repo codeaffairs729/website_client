@@ -26,7 +26,7 @@ const handler = (req, res) => {
                               </p>
   
                               <p>Regards,<br>
-                              Codegaragetech</p>`,
+                              CodeGarageTech Team</p>`,
           attachments:
             resumeName !== ''
               ? [
