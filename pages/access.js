@@ -132,7 +132,7 @@ const Access = () => {
                 alt="3D Pnk Ball"
               /> */}
               <div>
-                <div className="access__pic sphere__pic">
+                <div className="access__pic sphere__pic azure-floating">
                   <Image
                     src="/images/Sphere.webp"
                     alt="3D Pnk Ball"
@@ -145,7 +145,7 @@ const Access = () => {
                 src="images/azure.webp"
                 alt="Azure Image"
               /> */}
-                <div className="access-azure-cloud">
+                <div className="access-azure-cloud azure-floating">
                   <Image
                     src="/images/azure.webp"
                     alt="Azure Image"

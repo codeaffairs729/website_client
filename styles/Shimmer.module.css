@@ -2,10 +2,11 @@
   position: relative;
   overflow: hidden;
   background-color: #f4f4f4;
+  --shimmer-bg-color: rgba(222, 215, 215, 0.832);
 }
 
 .gray {
-  background-color: rgb(175, 172, 172);
+  background-color: var(--shimmer-bg-color);
 }
 .display_None {
   display: none;
@@ -26,7 +27,7 @@
   height: 60%;
   width: 30%;
   border-radius: 20px;
-  background-color: rgb(175, 172, 172);
+  background-color: var(--shimmer-bg-color);
 }
 .lower_container {
   width: 100%;
@@ -36,7 +37,7 @@
 }
 .lower_container_item {
   margin: 20px;
-  background-color: rgb(175, 172, 172);
+  background-color: var(--shimmer-bg-color);
   width: 35%;
   height: 100%;
   border-radius: 20px;

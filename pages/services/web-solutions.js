@@ -93,6 +93,7 @@ const contentHeader1 = () => {
             width={378}
             height={378}
             priority={true}
+            objectFit="cover"
           />
         </div>
       </div>

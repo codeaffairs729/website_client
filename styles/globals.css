@@ -1055,6 +1055,10 @@ body:not(.touch-device) .header-item[href]:before {
   animation: heroku-floating 6s ease-in-out infinite;
 }
 
+.azure-floating {
+  transform: translatey(0px);
+  animation: azure-floating 6s ease-in-out infinite;
+}
 .salesforce-floating {
   transform: translatey(0px);
   animation: salesforce-floating 6s ease-in-out infinite;
@@ -1068,6 +1072,18 @@ body:not(.touch-device) .header-item[href]:before {
 .sphere-floating {
   transform: translatey(0px);
   animation: sphere-floating 6s ease-in-out infinite;
+}
+
+@keyframes azure-floating {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 
 @keyframes digitalocean-floating {
