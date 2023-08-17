@@ -13,7 +13,7 @@
 @media (max-width: 1000px) {
   .services_image_container {
     /* width: 85vw; */
-    height: 90vh;
+    height: 30vh;
   }
   .openai_image{
     height: 70vh;
