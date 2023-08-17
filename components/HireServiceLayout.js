@@ -1,5 +1,3 @@
-import Header from '../pages/includes/header'
-// import Footer from '../pages/includes/footer'
 import Image from 'next/image'
 import styles from '../styles/hireService.module.css'
 
@@ -76,11 +74,12 @@ const HireServiceLayout = ({
                 {content1 && content1()}
               </div>
               <div className="hire-team-c1 hire-container-body-left-content2">
-                {content2 && content2()}
+                {/* {content2 && content2()} */}
               </div>
             </div>
-
-            {content3 && content3()}
+            <div className={styles.hirecontainerbodyrightcontent}>
+              {content3 && content3()}
+            </div>
           </div>
           <div className={`${styles.hirecontainer} ${styles.marginbottom100}`}>
             {content7 && content7()}

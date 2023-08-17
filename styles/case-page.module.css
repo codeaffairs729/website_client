@@ -39,13 +39,15 @@
 .video {
   position: relative;
   width: 100%;
-  height: auto;
-  /* background: rgba(214, 112, 112, 0.3); */
+  height: 100%;
+  /* height: auto; */
+  background: rgba(214, 112, 112, 0.3);
 
 }
 
 .video img {
   width: 100%;
+  height: 100%;
 }
 
 .overlay_text {
@@ -279,7 +281,8 @@
   }
   .result_section div:nth-child(1) img {
     width: 100%;
-    left: 0px;
+    transform: translateX(0%);
+
   }
 
   .result_section div:nth-child(1) {
@@ -307,8 +310,8 @@
 }
 
 @media (max-width: 767px) {
-  .videoContainer {
-    height: 35vw;
+  .videoContainer{
+    height: 45vw;
   }
   .case_container {
     margin-block: 35px;

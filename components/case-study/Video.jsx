@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from '../../styles/case-page.module.css'
-import ReactPlayer from 'react-player'
 
 const Video = () => {
   return (
