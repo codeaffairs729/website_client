@@ -9,7 +9,11 @@ const Header = dynamic(() => import('./includes/header'), {
   ssr: false,
 })
 
-import ShimmerEffect from '../components/ShimmerHome'
+// import ShimmerEffect from '../components/ShimmerHome'
+
+const ShimmerEffect = dynamic(() => import('../components/ShimmerHome'), {
+  ssr: false,
+})
 
 const Main = () => {
   const [show, SetShow] = useState(true)

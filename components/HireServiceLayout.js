@@ -1,10 +1,21 @@
 import Image from 'next/image'
+import dynamic from 'next/dynamic'
 import styles from '../styles/hireService.module.css'
+// import ShimmerServices from './ShimmerService'
+// import ShimmerHire from './ShimmerHire'
 
-import ShimmerServices from './ShimmerService'
-import ShimmerHire from './ShimmerHire'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
+
+const ShimmerServices = dynamic(() => import('./ShimmerService'), {
+  ssr: false,
+})
+
+const ShimmerHire = dynamic(() =>
+  import('./ShimmerHire', {
+    ssr: false,
+  })
+)
 
 const HireServiceLayout = ({
   bannerComponent,
