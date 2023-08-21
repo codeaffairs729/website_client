@@ -9,27 +9,28 @@ const Header = dynamic(() => import('./includes/header'), {
   ssr: false,
 })
 
-// import ShimmerEffect from '../components/ShimmerHome'
+import ShimmerEffect from '../components/ShimmerHome'
 
-const ShimmerEffect = dynamic(() => import('../components/ShimmerHome'), {
-  ssr: false,
-})
+// const ShimmerEffect = dynamic(() => import('../components/ShimmerHome'), {
+//   ssr: false,
+// })
 
 const Main = () => {
-  const [show, SetShow] = useState(false)
+  const [show, SetShow] = useState(true)
 
-  // useState(() => {
-  //   setTimeout(() => {
-  //     SetShow(false)
-  //   }, 500)
-  // }, [])
+  useState(() => {
+    setTimeout(() => {
+      SetShow(false)
+    }, 500)
+  }, [])
 
   return (
     <>
       {show ? (
-        <></>
+        <>
+          <ShimmerEffect />
+        </>
       ) : (
-        // <ShimmerEffect />
         <div className="main">
           <Head>
             <title>

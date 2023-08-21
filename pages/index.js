@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useEffect, useState, useRef } from 'react'
 
-const ShimmerEffect = dynamic(() => import('./../components/ShimmerHome'), {
-  ssr: false,
-})
+// const ShimmerEffect = dynamic(() => import('./../components/ShimmerHome'), {
+//   ssr: false,
+// })
 
 // import ShimmerEffect from './../components/ShimmerHome'
 
@@ -48,11 +48,11 @@ export default function Home({ data, caseData }) {
   const Router = useRouter()
   const [show, SetShow] = useState(true)
 
-  useState(() => {
-    setTimeout(() => {
-      SetShow(false)
-    }, 500)
-  }, [])
+  // useState(() => {
+  //   setTimeout(() => {
+  //     SetShow(false)
+  //   }, 500)
+  // }, [])
 
   useEffect(() => {
     // don't delete chatwoot code
@@ -89,8 +89,8 @@ export default function Home({ data, caseData }) {
             height={50}
           />
         </a>
-        {show ? <ShimmerEffect /> : <Main />}
-
+        {/* {show ? <ShimmerEffect /> : <Main />} */}
+        <Main />
         <FeatureList />
         {/* <CaseStudySection data={data} /> */}
         <Access />
