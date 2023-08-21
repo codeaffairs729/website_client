@@ -83,13 +83,13 @@ const Main = () => {
                     </div>
                   </div>
                   <div className="col-12 col-lg-5 col-md-5 d-flex align-items-center justify-content-center desktop_image">
-                    <Image
+                    {/* <Image
                       src="/images/Desktop Asset Group.png"
                       alt="3D Desktop Assets Group"
                       width={478}
                       height={355}
                       priority={true}
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>
