@@ -33,7 +33,7 @@ const Design = () => {
     speed: 700,
     infinite: false,
     autoplay: true,
-    lazyLoad: 'ondemand',
+    lazyload: 'progressive',
     responsive: [
       {
         breakpoint: 1024,
