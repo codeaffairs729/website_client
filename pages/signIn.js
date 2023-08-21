@@ -95,7 +95,13 @@ const SignIn = () => {
               <div className="entry__row">
                 <div className="entry__details">
                   <div className="entry__title title title_sm sign_title">
-                    The world most powerful design tool.
+                    The world most powerful design{' '}
+                    <span
+                      className="cursor_pointer"
+                      onClick={() => sentryErrorTest()}
+                    >
+                      tool
+                    </span>
                   </div>
                   <div className="entry__info">
                     Create your own website with the Fastest Page Building

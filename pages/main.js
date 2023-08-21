@@ -16,19 +16,20 @@ const ShimmerEffect = dynamic(() => import('../components/ShimmerHome'), {
 })
 
 const Main = () => {
-  const [show, SetShow] = useState(true)
+  const [show, SetShow] = useState(false)
 
-  useState(() => {
-    setTimeout(() => {
-      SetShow(false)
-    }, 500)
-  }, [])
+  // useState(() => {
+  //   setTimeout(() => {
+  //     SetShow(false)
+  //   }, 500)
+  // }, [])
 
   return (
     <>
       {show ? (
-        <ShimmerEffect />
+        <></>
       ) : (
+        // <ShimmerEffect />
         <div className="main">
           <Head>
             <title>
