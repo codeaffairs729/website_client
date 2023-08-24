@@ -45,6 +45,14 @@ const FeatureList = () => {
             advice and solutions should be tailored accordingly. Allow us to
             assist you with top-notch software development solutions.
           </p>
+          <div className="circle-center">
+            <Image
+              src="/icons/circle-center.png"
+              alt=""
+              width={120}
+              height={120}
+            />
+          </div>
         </div>
         <div className="col-md-12 col-lg-6">
           <div className="feature-list-div-container">

@@ -8355,6 +8355,13 @@ html {
   right: 100px;
 }
 
+.circle-center{
+  position: absolute;
+  left: 50%; 
+  top: 50%; 
+  transform: translate(-300%, 95%); 
+}
+
 .feature-slide-row h3 {
   margin-bottom: 8px;
   font-size: 18px;
@@ -8441,12 +8448,14 @@ html {
   .design__hand {
     right: 0;
   }
+  
 }
 
 @media only screen and (min-width: 1600px) {
   .work__hand:first-child {
     left: 0;
   }
+
 
   .work__hand:nth-child(2) {
     right: 0;
@@ -9758,6 +9767,10 @@ screen and (max-height: 300px) {
   .feature-list p {
     font: size 16px;
   }
+  .circle-center{
+    display:none;
+  }
+
 
   .feature-list {
     padding: 0px 20px 100px;

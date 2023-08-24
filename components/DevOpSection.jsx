@@ -42,17 +42,23 @@ const DevOpSection = () => {
                 </li>
               </ul>
             </div>
-            <div className="">
-              {/* <img src="/icons/service-icon/cloud.webp"  /> */}
-              {/* <div> */}
-              <Image
-                src="/devops/devops.png"
-                alt="devops image"
-                width={500}
-                height={350}
-                priority={true}
-              />
-              {/* </div> */}
+            <div className={hireService.imageContainer}>
+              <div className={hireService.topImage}>
+                <Image
+                  src="/dev_ops/devops.png"
+                  alt="bottom image"
+                  width={1000}
+                  height={607}
+                />
+              </div>
+              <div className={hireService.overlayImage}>
+                <Image
+                  src="/dev_ops/devops_bg.png"
+                  alt="upper image"
+                  width={670}
+                  height={407}
+                />
+              </div>
             </div>
           </div>
         </div>
