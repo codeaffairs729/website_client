@@ -63,7 +63,7 @@ function MyApp({ Component, pageProps }) {
       />
       <Header />
       <Component {...pageProps} />
-      <ChatwootWidget />
+      {/* <ChatwootWidget /> */}
       <Footer />
     </>
   )

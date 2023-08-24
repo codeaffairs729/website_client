@@ -96,7 +96,7 @@ export default function Home({ data, caseData }) {
         <Main />
         <FeatureList />
         {/* <CaseStudySection data={data} /> */}
-        <DevOps />
+        {/* <DevOps /> */}
         <Access />
         <Layouts />
         <Design />

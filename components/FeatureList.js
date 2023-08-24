@@ -74,11 +74,11 @@ const FeatureList = () => {
         </div>
       </div>
       <div className="ellipse-blue-full">
-        <Image
+        <img
           src="/icons/Ellipse-blue-full.svg"
-          alt=""
-          width={56}
-          height={56}
+          alt="ellipse-blue"
+          // width={56}
+          // height={56}
         />
       </div>
     </div>
