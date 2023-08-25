@@ -4,7 +4,7 @@ import hireService from '../styles/hireService.module.css'
 const techTitle = 'Our DevOps Culture'
 import { gitlab } from '../utils/data'
 
-const DevOpSection = () => {
+const DevOpsStatic = () => {
   return (
     <>
       <div className={hireService.maindevcontainer}>
@@ -44,19 +44,11 @@ const DevOpSection = () => {
             </div>
             <div className={hireService.imageContainer}>
               <div className={hireService.topImage}>
-                <img
-                  src="/dev_ops/devops.png"
+                <Image
+                  src="/devops/devops_main_2.webp"
                   alt="bottom image"
                   width={1000}
                   height={607}
-                />
-              </div>
-              <div className={hireService.overlayImage}>
-                <img
-                  src="/dev_ops/devops_bg.png"
-                  alt="upper image"
-                  width={670}
-                  height={407}
                 />
               </div>
             </div>
@@ -67,4 +59,4 @@ const DevOpSection = () => {
   )
 }
 
-export default DevOpSection
+export default DevOpsStatic
