@@ -31,7 +31,6 @@ const Design = () => {
     arrows: false,
     accessibility: false,
     speed: 700,
-    infinite: false,
     autoplay: true,
     lazyload: 'progressive',
     responsive: [

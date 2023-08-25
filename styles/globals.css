@@ -2090,6 +2090,10 @@ body:not(.touch-device) .header-item[href]:before {
     min-height: 1200px;
   }
 }
+.header__row {
+  padding: 55px 30px;
+  height: 450px;
+}
 
 .about-area-2-grey-circle {
   height: 390px;
@@ -3025,7 +3029,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .career-area-6 {
-  margin-bottom:5vw;
+  margin-bottom: 5vw;
   margin-bottom: 70px;
   position: relative;
 }
@@ -4091,12 +4095,23 @@ body:not(.touch-device) .header-item[href]:before {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .header__row {
+    padding: 55px 30px;
+    height: 200px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .main__title {
     font-size: 30px;
     line-height: 1.5;
     width: auto;
   }
+  .header-dropdown-body {
+    height: 313px;
+    margin-top: 20px;
+    /* background: #ffffff; */
+}
   .main-big-blue-circle {
     display: none;
   }
@@ -4395,6 +4410,10 @@ body:not(.touch-device) .header-item[href]:before {
 
   .header__head:before {
     bottom: 0;
+  }
+  .header__row {
+    padding: 10px 30px;
+    height: 980px;
   }
 
   .service-menu-head {

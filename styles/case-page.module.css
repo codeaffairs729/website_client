@@ -42,7 +42,6 @@
   height: 100%;
   /* height: auto; */
   background: rgba(214, 112, 112, 0.3);
-
 }
 
 .video img {
@@ -60,12 +59,12 @@
   left: 0;
   height: 98%;
   width: 35vw;
-  background: rgb(14, 14, 14,0.2);
+  background: rgb(14, 14, 14, 0.2);
   padding: 2px;
 }
 
 .overlay_text p {
-  font-size:4.5vw;
+  font-size: 4.5vw;
   color: #ffff;
 }
 /* -----------About page--------- */
@@ -192,6 +191,11 @@
   width: 25vw;
   /* border-radius: 25px; */
 }
+.Casestudy_img img {
+  height: 250px;
+  width: 340px;
+  border-radius: 50px;
+}
 .effort_section div:nth-child(1) {
   width: 390px;
   height: 100%;
@@ -282,7 +286,6 @@
   .result_section div:nth-child(1) img {
     width: 100%;
     transform: translateX(0%);
-
   }
 
   .result_section div:nth-child(1) {
@@ -310,7 +313,7 @@
 }
 
 @media (max-width: 767px) {
-  .videoContainer{
+  .videoContainer {
     height: 45vw;
   }
   .case_container {
