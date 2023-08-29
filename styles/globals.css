@@ -4095,12 +4095,6 @@ body:not(.touch-device) .header-item[href]:before {
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .header__row {
-    padding: 55px 30px;
-    height: 200px;
-  }
-}
 @media only screen and (max-width: 767px) {
   .main__title {
     font-size: 30px;
@@ -4111,7 +4105,7 @@ body:not(.touch-device) .header-item[href]:before {
     height: 313px;
     margin-top: 20px;
     /* background: #ffffff; */
-}
+  }
   .main-big-blue-circle {
     display: none;
   }
@@ -4413,7 +4407,7 @@ body:not(.touch-device) .header-item[href]:before {
   }
   .header__row {
     padding: 10px 30px;
-    height: 980px;
+    height: 935px;
   }
 
   .service-menu-head {
