@@ -8394,6 +8394,7 @@ html {
   left: 50%;
   top: 50%;
   transform: translate(-300%, 95%);
+  padding: 1px;
 }
 
 .feature-slide-row h3 {

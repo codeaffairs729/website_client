@@ -168,9 +168,9 @@
 .imageContainer {
   position: relative;
   width: 70vw;
-  height: 500px;
+  height: 350px;
   overflow: hidden;
-  margin-left: 15px;
+  align-items: center;
 }
 
 .topImage {
@@ -1026,6 +1026,9 @@
     padding-top: 6px;
     padding-left: 5px;
   }
+  .hireh2 {
+    width: 308px;
+  }
 }
 @media screen and (max-width: 991px) {
   .servicecontainer {
@@ -1196,5 +1199,8 @@
 
   .adjustservicebody {
     margin-top: -10vw;
+  }
+  .adjustmaincontainer {
+    padding: 0 7px;
   }
 }

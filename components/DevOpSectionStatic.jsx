@@ -43,13 +43,13 @@ const DevOpsStatic = () => {
                   </li>
                 </ul>
               </div>
-              <div className={hireService.imageContainer}>
+              <div className="row align-items-center  gx-5 feature-overflow-hiiden">
                 <div className={hireService.topImage}>
                   <Image
-                    src="/devops/devops_main_2.webp"
+                    src="/devops/devops_main_3.png"
                     alt="bottom image"
-                    width={1100}
-                    height={610}
+                    width={600}
+                    height={382}
                   />
                 </div>
               </div>

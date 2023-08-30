@@ -2090,10 +2090,6 @@ body:not(.touch-device) .header-item[href]:before {
     min-height: 1200px;
   }
 }
-.header__row {
-  padding: 55px 30px;
-  height: 450px;
-}
 
 .about-area-2-grey-circle {
   height: 390px;
@@ -4405,10 +4401,6 @@ body:not(.touch-device) .header-item[href]:before {
   .header__head:before {
     bottom: 0;
   }
-  .header__row {
-    padding: 10px 30px;
-    height: 935px;
-  }
 
   .service-menu-head {
     display: inline-block;
@@ -5291,5 +5283,17 @@ body:not(.touch-device) .header-item[href]:before {
     position: relative;
     font-size: 0.85rem;
     top: -157px;
+  }
+}
+@media (max-width: 767px) {
+  .header__row {
+    padding: 10px 30px;
+    height: 860px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .header__row {
+    padding: 10px 30px;
+    height: 932px;
   }
 }
