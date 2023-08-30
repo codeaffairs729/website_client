@@ -1206,7 +1206,7 @@ const Header = () => {
                     Careers
                   </div>
                 </Link>
-                <Link href="/caseStudies">
+                <Link href="/contact">
                   <div
                     className={
                       currentPath === '/contact'
@@ -1215,7 +1215,7 @@ const Header = () => {
                     }
                     onClick={handleSidebar}
                   >
-                    Case Studies
+                    Contact Us
                   </div>
                 </Link>
                 {/* <Link href="/user-blog-list">

@@ -222,7 +222,7 @@ const Casestudy = ({ Casedata }) => {
 
   return (
     <>
-      <div className={style.container}>
+      {/* <div className={style.container}>
         <img
           src="/case_study/Ellipse_blue.png"
           className={style.ellipse_blue_img}
@@ -239,7 +239,7 @@ const Casestudy = ({ Casedata }) => {
         <About Casedata={data} />
         <Challenges Casedata={data} />
         <Effort Casedata={data} />
-      </div>
+      </div> */}
     </>
   )
 }

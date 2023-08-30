@@ -79,7 +79,7 @@ export const CaseStudyPage = () => {
     },
     {
       id: '3',
-      title: 'Move It Pro',
+      title: '',
       about:
         'A SAS mobile and web application that is specifically designed for the residential and commercial moving and storage industry. It offers streamlined online transportation services from various providers, with the aim of simplifying the management of moving operations. It has the ability to conduct and create an estimate on-site.The application empowers movers to view their jobs, alert the customer through a GPS when they are en route, access the customer digital invoice, and capture payment once the move is complete. ',
       Active: '20,000',
@@ -191,31 +191,14 @@ export const CaseStudyPage = () => {
 
   return (
     <>
-      {/* <DeleteModal handleOnDelete={handleOnDelete} /> */}
-      {/* {authorized && (
-      <>
-        <div
-          className={`cursor_pointer d-flex fs-6 fw-semibold text-primary fw-bold ${styles.controlbtndiv}`}
-        >
-          <div onClick={handleOnCreate}>Create Blog</div>
-          <div onClick={handleOnLogout}>Logout</div>
-        </div>
-      </>
-    )} */}
-      <div className={styles.breadcumbarea}>
-        {/* <div className="breadcumb-area"> */}
+      {/* <div className={styles.breadcumbarea}>
         <h1 className="text-center text-light">CASE STUDY</h1>
-        {/* {db === 'case-study' ? (
-        <h1 className="text-center text-light">CASE STUDY</h1>
-      ) : (
-        <h1 className="text-center text-light">OUR LATEST BLOGS</h1>
-      )} */}
+        
       </div>
       <BlogGrid
         data={data}
         authorized={true}
-        //setDelId={setDelId}
-      />
+      /> */}
     </>
   )
 }
