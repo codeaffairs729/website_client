@@ -3103,13 +3103,13 @@ body:not(.touch-device) .header__item:hover .header__body {
 
 .desktop_image {
   position: absolute;
-  right: -20px;
+  right: 185px;
   top: 270px;
 }
 
 @media (max-width: 1220px) {
   .desktop_image {
-    right: 50px;
+    right: 114px;
   }
 }
 
@@ -3818,7 +3818,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   right: calc(50% - -450px);
   width: 150px;
   height: 150px;
-  background: #5956e9;
+  background: #9a99ef;
 }
 
 .access__ball:nth-child(7) {
@@ -8394,7 +8394,11 @@ html {
   left: 50%;
   top: 50%;
   transform: translate(-300%, 95%);
-  padding: 1px;
+}
+
+.circle-center img {
+  height: 120px;
+  width: 120px;
 }
 
 .feature-slide-row h3 {

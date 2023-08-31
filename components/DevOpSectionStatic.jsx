@@ -9,12 +9,12 @@ const DevOpsStatic = () => {
     <>
       <div className={hireService.maindevcontainer}>
         <div className={hireService.adjustmaincontainer}>
-          <div className={hireService.hirecontainer}>
+          <div className={hireService.devopscontainer}>
             <div
-              className={`${hireService.techservicebody}  ${hireService.adjustservicebody}`}
+              className={`${hireService.techservicebody} ${hireService.adjustservicebody}`}
             >
-              <div className={hireService.techservicebodyleft}>
-                <h1 className={hireService.hireh2}>{techTitle}</h1>
+              <div className={hireService.devopsservicebodyleft}>
+                <h1 className={hireService.hireh5}>{techTitle}</h1>
                 <ul
                   className={`${hireService.listicon} ${hireService.hire_list_items_services} `}
                 >
@@ -43,13 +43,13 @@ const DevOpsStatic = () => {
                   </li>
                 </ul>
               </div>
-              <div className="row align-items-center  gx-5 feature-overflow-hiiden">
+              <div>
                 <div className={hireService.topImage}>
                   <Image
                     src="/devops/devops_main_3.png"
                     alt="bottom image"
-                    width={600}
-                    height={382}
+                    width={800}
+                    height={509}
                   />
                 </div>
               </div>

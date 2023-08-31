@@ -126,15 +126,15 @@ const content1 = () => {
           <br />
         </p>
         {/* content 7 */}
-        <h2 className={hireService.hireh2}>
+        {/* <h2 className={hireService.hireh2}>
           Our Web Development Step-By-Step Process
-        </h2>
+        </h2> */}
         <div className={`${styles.services_image_container}`}>
           <Image
             src="/services_images/web_development.png"
             alt="digital marketing"
-            width={800}
-            height={800}
+            width={900}
+            height={900}
             priority={true}
             objectFit="contain"
           />

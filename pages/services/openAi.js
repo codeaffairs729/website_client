@@ -60,18 +60,16 @@ const content1 = () => {
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
         <p className={hireService.hirep}>
-          Do you want to leverage the power of <strong>OpenAI</strong> to
-          develop powerful mobile apps for your business? CodeGarage is a
-          top-notch AI application development company as we design, build, and
-          deliver custom AI app development solutions using OpenAPIs such as{' '}
-          <strong>Chat GPT</strong>. <br />
+          Do you want to leverage the power of OpenAI to develop powerful mobile
+          apps for your business? CodeGarage is a top-notch AI application
+          development company as we design, build, and deliver custom AI app
+          development solutions using OpenAPIs such as Chat GPT. <br />
           <br />
-          <strong>OpenAI</strong> offers robust APIs that assist developers to
-          create intelligent and excellent mobile app solutions. The mobile
-          applications developed using <strong>Artificial Intelligence</strong>{' '}
-          (AI) assist many enterprises to automate operations as well as tasks.
-          Hence, it aids to improve staff efficiency, and productivity, saving
-          efforts and time. <br />
+          OpenAI offers robust APIs that assist developers to create intelligent
+          and excellent mobile app solutions. The mobile applications developed
+          using Artificial Intelligence (AI) assist many enterprises to automate
+          operations as well as tasks. Hence, it aids to improve staff
+          efficiency, and productivity, saving efforts and time. <br />
           <br />
         </p>
         <a
@@ -81,9 +79,9 @@ const content1 = () => {
         >
           Get a Free Quote
         </a>
-        <h2 className={`${hireService.hireh2} ${hireService.marginbottom24px}`}>
+        {/* <h2 className={`${hireService.hireh2} ${hireService.marginbottom24px}`}>
           Our Process of Building AI Apps Using Open AI
-        </h2>
+        </h2> */}
         <div
           className={`${styles.services_image_container} ${styles.openai_image} `}
         >
@@ -100,24 +98,24 @@ const content1 = () => {
           Out-of-the-box Open AI App Development Solutions
         </h2>
         <p>
-          The world is thrilled by the intelligence of <strong>Chat GPT</strong>
-          and everyone is talking about its distinctive implications. ChatGPT is
-          an ideal example of a robust OpenAI application.
+          The world is thrilled by the intelligence of Chat GPT and everyone is
+          talking about its distinctive implications. ChatGPT is an ideal
+          example of a robust OpenAI application.
           <br />
           <br />
-          Do you want to develop an <strong>OpenAI application ChatGPT</strong>?
-          Want to know about the capabilities of Artificial Intelligence (AI)
-          for your upcoming big project and want to make it a huge success?
+          Do you want to develop an OpenAI application ChatGPT? Want to know
+          about the capabilities of Artificial Intelligence (AI) for your
+          upcoming big project and want to make it a huge success?
           CodeGarageTech can help, we provide custom AI application development
           solutions. Our team of developers has thorough knowledge and
           experience in using AI to develop outstanding applications for
           numerous industries.
           <br />
           <br />
-          Well, <strong>OpenAI</strong> seems like the latest innovation, but at
-          Code Garage we have built simple to complex solutions using{' '}
-          <strong>OpenAI</strong>. Hence, you can choose us and relish the perks
-          of collaborating with a reliable AI development Company.
+          Well, OpenAI seems like the latest innovation, but at Code Garage we
+          have built simple to complex solutions using OpenAI. Hence, you can
+          choose us and relish the perks of collaborating with a reliable AI
+          development Company.
         </p>
         {/* content 7 */}
         <div className={hireService.shade1}>
@@ -147,9 +145,7 @@ const content1 = () => {
           </p>
           <ul className={hireService.hirelist}>
             <li>
-              <h3 className={hireService.hireh3}>
-                <strong>AI & ML App Development </strong>
-              </h3>
+              <h3 className={hireService.hireh3}>AI & ML App Development</h3>
             </li>
           </ul>
           <p className={`${hireService.hirep}  ${hireService.marginleft22px}`}>
@@ -159,9 +155,7 @@ const content1 = () => {
           </p>
           <ul className={hireService.hirelist}>
             <li>
-              <h3 className={hireService.hireh3}>
-                <strong>DevOps Development </strong>
-              </h3>
+              <h3 className={hireService.hireh3}>DevOps Development</h3>
             </li>
           </ul>
           <p className={`${hireService.hirep}  ${hireService.marginleft22px}`}>
@@ -173,7 +167,7 @@ const content1 = () => {
           <ul className={hireService.hirelist}>
             <li>
               <h3 className={hireService.hireh3}>
-                <strong>API Development & Integration</strong>
+                API Development & Integration
               </h3>
             </li>
           </ul>
@@ -186,7 +180,7 @@ const content1 = () => {
           <ul className={hireService.hirelist}>
             <li>
               <h3 className={hireService.hireh3}>
-                <strong>Chatbot Application Development </strong>
+                Chatbot Application Development
               </h3>
             </li>
           </ul>
@@ -198,9 +192,7 @@ const content1 = () => {
           </p>
           <ul className={hireService.hirelist}>
             <li>
-              <h3 className={hireService.hireh3}>
-                <strong>Testing & Debugging </strong>
-              </h3>
+              <h3 className={hireService.hireh3}>Testing & Debugging</h3>
             </li>
           </ul>
           <p className={`${hireService.hirep}  ${hireService.marginleft22px}`}>
