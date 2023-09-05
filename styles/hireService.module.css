@@ -205,6 +205,13 @@
   z-index: 2;
   /* margin-top:5vw; */
 }
+.AIimage {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: transform 0.2s;
+  z-index: 2;
+}
 
 .overlayImage {
   position: absolute;

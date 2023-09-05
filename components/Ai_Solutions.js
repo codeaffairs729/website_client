@@ -86,7 +86,7 @@ const Aisolutions = () => {
                       alt="AIimage"
                       height={300}
                       width={340}
-                    ></Image>
+                    />
                   </div>
                 </div>
               </div>
