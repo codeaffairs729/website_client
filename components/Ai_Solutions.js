@@ -82,8 +82,8 @@ const Aisolutions = () => {
                   </div>
                   <div className={hireService.AIimage}>
                     <Image
-                      src="/dev_ops/Aitool_pic.png"
-                      alt=""
+                      src="/dev_ops/AItool_pic.png"
+                      alt="AIimage"
                       height={300}
                       width={340}
                     ></Image>
