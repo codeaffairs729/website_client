@@ -47,6 +47,15 @@
   margin-left: 4px;
   margin-bottom: 24px;
 }
+.hireh6 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 57px;
+  letter-spacing: -0.025em;
+  color: black;
+  margin-top: -47px;
+}
 .hire-desc {
   font-family: 'Poppins';
   font-style: normal;
@@ -458,6 +467,9 @@
   .techservicebodyright {
     width: 350px;
   }
+  .AIservicebodyright {
+    width: 350px;
+  }
   /* .hire-container-body-right {
     max-width: 300px;
   } */
@@ -483,10 +495,16 @@
   .techservicebody {
     padding-block: 0px 36px;
   }
+  .AIservicebody {
+    padding-block: 0px 36px;
+  }
   .techservicebodyright {
     padding-right: 0px;
   }
 
+  .AIservicebodyright {
+    padding-right: 0px;
+  }
   .hiringmodel:nth-child(2) {
     border-left: none;
     padding-left: 0px;
@@ -612,6 +630,9 @@
   .techservicebodyright {
     width: 250px;
   }
+  .AIservicebodyright {
+    width: 250px;
+  }
   .hirecontainerbodycontent {
     margin-top: -25px;
   }
@@ -721,13 +742,6 @@
   background-position: left top;
   text-align: left;
 }
-
-.maindevcontainer {
-  margin-left: 5vw;
-  margin-right: 5vw;
-  display: flex;
-  justify-content: center;
-}
 .adjustmaincontainer {
   max-width: 1600px;
   max-height: 1000px;
@@ -744,6 +758,126 @@
   background-position: left top;
   text-align: left;
 }
+.maindevcontainer {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  display: flex;
+  justify-content: center;
+}
+.mainAIcontainer {
+  margin-bottom: 143px;
+  display: flex;
+  justify-content: center;
+  margin-right: 5vw;
+}
+.Aicontainerrighttext {
+  margin-top: 190px;
+  margin-left: 50px;
+}
+.Aiconatinerright {
+  margin-top: -70px;
+  width: auto;
+}
+/* .solcontainer {
+  margin-left: 25px;
+} */
+.AIcontainer {
+  max-width: 2000px;
+  max-height: 2000px;
+  background-image: url('/dev_ops/AIbackground_image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 20px;
+  margin-left: 50px;
+  padding-top: 70px;
+}
+
+.solutiontext {
+  margin-bottom: 30px;
+  width: 490px;
+  color: rgb(167, 172, 176);
+  margin-top: 20px;
+}
+
+.AIservicebody {
+  display: flex;
+  padding-block: 0px 80px;
+  justify-content: space-between;
+}
+
+.Aicontainerleftttext {
+  margin-left: 40px;
+}
+.AIlisticon li {
+  /* content: ''; */
+  /* display: inline-block; */
+  /* background-repeat: no-repeat; */
+  background-position: left top;
+  text-align: left;
+  font-weight: bold;
+  list-style-type: disc;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.AIlisticon ul {
+  color: black;
+  padding: 0;
+}
+.AIimage {
+  margin-left: 50px;
+}
+.AIservicebodyleft {
+  flex-basis: 55%;
+}
+.AIservicebodyright {
+  padding-right: 74px;
+  width: 400px;
+}
+
+.Aiservicebodyleft {
+  flex-basis: 55%;
+  width: 450px;
+  margin-left: 25px;
+}
+.AIcontainer {
+  position: relative;
+}
+.AItopcircle,
+.AIbottomcircle1,
+.AIbottomcircle2 {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+.AItopcircle {
+  top: -4%;
+  left: 87%;
+}
+
+.AIbottomcircle1 {
+  bottom: -7%;
+  left: 5%;
+}
+.AIbottomcircle2 {
+  bottom: -11%;
+  right: 0%;
+}
+.AItopcircle img {
+  height: 50px;
+  width: 50px;
+}
+
+.AIbottomcircle2 img {
+  height: 60px;
+  width: 60px;
+}
+
+.AIbottomcircle1 img {
+  height: 100px;
+  width: 100px;
+}
+
 .adjustvicebodyleft {
   margin-top: 2vw;
 }
@@ -902,9 +1036,23 @@
   gap: 20px;
   margin-top: 127px;
 }
+.AIservicebody {
+  min-height: 370px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 45px;
+  margin-top: 127px;
+}
 
 .adjustservicebody {
   margin-top: 0vw;
+}
+
+.adjusAIservicebody {
+  margin-top: -4vw;
+  margin-bottom: -66px;
+  margin-top: -2vw;
 }
 .tech-service-body-left-left {
   flex-basis: 60%;
@@ -1028,7 +1176,7 @@
   padding: 35px 175px 87px;
 }
 .marginleft30px {
-  margin-left: 30px;
+  margin-left: 9px;
 }
 /* media query */
 
@@ -1059,6 +1207,57 @@
     padding-right: 53px;
     margin-right: 35px;
   }
+  .AIcontainer {
+    padding-left: 90px;
+    padding-right: 53px;
+    margin-right: 35px;
+  }
+  .Aicontainerrighttext {
+    width: 300px;
+  }
+  .mainAIcontainer {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .hireh6 {
+    margin-left: 30px;
+  }
+  .solutiontext {
+    margin-left: 12px;
+  }
+  .Aiservicebodyleft {
+    margin-left: 50px;
+  }
+  .Aicontainerleftttext {
+    margin-left: 71px;
+  }
+  .Aicontainerrighttext {
+    margin-left: 56px;
+  }
+  .AIimage {
+    padding-left: -19px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .AIcontainer {
+    padding-right: 95px;
+    margin-left: 67px;
+    padding-top: 123px;
+    padding-bottom: 36px;
+  }
+  .AItopcircle {
+    top: -2%;
+    left: 89%;
+  }
+  .AIbottomcircle1 {
+    bottom: -6%;
+    left: 5%;
+  }
+  .AIbottomcircle2 {
+    bottom: -8%;
+    right: -1%;
+  }
 }
 @media screen and (max-width: 991px) {
   .servicecontainer {
@@ -1075,6 +1274,9 @@
     margin-left: -5vw;
   }
   .techservicebodyleft {
+    text-align: center;
+  }
+  .AIservicebodyleft {
     text-align: center;
   }
 
@@ -1106,6 +1308,10 @@
     flex-direction: column-reverse;
     justify-content: center;
   }
+  .AIservicebody {
+    flex-direction: column;
+    justify-content: center;
+  }
   .servicebody {
     flex-direction: column;
   }
@@ -1135,8 +1341,22 @@
   .adjustservicebody {
     margin-top: -6vw;
   }
+  .adjusAItservicebody {
+    margin-top: -6vw;
+  }
   .devopsservicebodyleft {
     padding-left: 256px;
+  }
+  .Aiconatinerright {
+    margin-top: -208px;
+    margin-left: -26px;
+  }
+
+  .AIimage {
+    margin-left: 128px;
+  }
+  .Aicontainerrighttext {
+    margin-left: 115px;
   }
 }
 
@@ -1180,6 +1400,9 @@
   .formservice {
     border: none;
     padding: 0px;
+  }
+  .mainAIcontainer {
+    margin-left: 155px;
   }
   .devopsservicebodyleft {
     width: 279px;
@@ -1239,10 +1462,45 @@
   .adjustservicebody {
     margin-top: -10vw;
   }
+  .adjustAIservicebody {
+    margin-top: -10vw;
+  }
   .adjustmaincontainer {
     padding: 0 7px;
   }
   .hireh2 {
     width: 324px;
+  }
+  .AIcontainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -169px;
+  }
+  .Aiservicebodyleft {
+    margin-left: 100px;
+    margin-top: -84px;
+  }
+  .solutiontext {
+    width: 320px;
+    margin-left: 55px;
+  }
+  .hireh6 {
+    margin-top: 25px;
+  }
+  .AItopcircle {
+    display: none;
+  }
+  .AIbottomcircle1 {
+    display: none;
+  }
+  .AIbottomcircle2 {
+    display: none;
+  }
+  .Aiconatinerright {
+    margin-top: -208px;
+    margin-left: -20px;
+  }
+  .AIimage {
+    margin-left: 85px;
   }
 }

@@ -43,7 +43,11 @@ const DevOpsStatic = dynamic(() =>
     ssr: false,
   })
 )
-
+const AiSolutions = dynamic(() =>
+  import('../components/Ai_Solutions', {
+    ssr: false,
+  })
+)
 // const LandingModal = dynamic(() => import('../components/LandingModal'), {
 //   ssr: true,
 // })
@@ -103,6 +107,7 @@ export default function Home({ data, caseData }) {
         {/* <CaseStudySection data={data} /> */}
         {/* <DevOps /> */}
         <DevOpsStatic />
+        <AiSolutions />
         <Access />
         <Layouts />
         <Design />
