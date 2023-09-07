@@ -5627,6 +5627,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 .design {
   position: relative;
   margin-bottom: 0;
+  margin-top: 120px;
 }
 
 .design__wrap {

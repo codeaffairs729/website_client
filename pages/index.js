@@ -109,7 +109,7 @@ export default function Home({ data, caseData }) {
         <DevOpsStatic />
         <AiSolutions />
         <Access />
-        <Layouts />
+        {/* <Layouts /> */}
         <Design />
         <Industries />
         <BlogSection data={data} />

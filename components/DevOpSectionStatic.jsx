@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import style from './../styles/devops.module.css'
 import hireService from '../styles/hireService.module.css'
-const techTitle = 'Our DevOps Culture'
 import { gitlab } from '../utils/data'
 
 const DevOpsStatic = () => {
@@ -9,49 +8,59 @@ const DevOpsStatic = () => {
     <>
       <div className={hireService.maindevcontainer}>
         <div className={hireService.adjustmaincontainer}>
-          <div className={hireService.devopscontainer}>
+          <div className="" data-aos="animation-scale-y">
+            <h1 className={hireService.hireh5}>
+              FOSTERING GROWTH THROUGH<br></br> DEVOPS CULTURE
+            </h1>
+          </div>
+          <div className="" data-aos="animation-scale-x">
             <div
-              className={`${hireService.techservicebody} ${hireService.adjustservicebody}`}
+              className={`${hireService.techAIservicebody} ${hireService.adjustservicebody}`}
             >
               <div className={hireService.devopsservicebodyleft}>
-                <h1 className={hireService.hireh5}>{techTitle}</h1>
                 <ul
-                  className={`${hireService.listicon} ${hireService.hire_list_items_services} `}
+                  className={`${hireService.listicon} ${hireService.hire_list_items_services}`}
                 >
                   <li className={hireService.marginebottom16px}>
                     <p className={hireService.marginleft25px}>
-                      Continues Development & Integeration
+                      Efficient Scaling
                     </p>
                   </li>
                   <li className={hireService.marginebottom16px}>
                     <p className={hireService.marginleft25px}>
-                      24 x 7 Monitoring
+                      Rapid Deployment
                     </p>
                   </li>
                   <li className={hireService.marginebottom16px}>
                     <p className={hireService.marginleft25px}>
-                      Systematic Planing
+                      Business-IT Alignment
                     </p>
                   </li>
                   <li className={hireService.marginebottom16px}>
-                    <p className={hireService.marginleft25px}>Optimum SEO</p>
+                    <p className={hireService.marginleft25px}>
+                      Risk Mitigation
+                    </p>
                   </li>
                   <li className={hireService.marginebottom16px}>
                     <p className={hireService.marginleft25px}>
-                      Reliable Search Queries
+                      Resource Optimization
+                    </p>
+                  </li>
+                  <li className={hireService.marginebottom16px}>
+                    <p className={hireService.marginleft25px}>
+                      24X7 Monitoring
                     </p>
                   </li>
                 </ul>
               </div>
-              <div>
-                <div className={hireService.topImage}>
-                  <Image
-                    src="/devops/devops_main_3.png"
-                    alt="bottom image"
-                    width={800}
-                    height={509}
-                  />
-                </div>
+
+              <div className={hireService.topImage}>
+                <Image
+                  src="/devops/devops_main_img.png"
+                  alt="bottom image"
+                  width={1400}
+                  height={867}
+                />
               </div>
             </div>
           </div>
