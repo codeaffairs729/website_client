@@ -8,7 +8,7 @@
 .devopsservicebodyleft {
   flex-basis: 60%;
   margin-top: 104px;
-  margin-left: 40px;
+  margin-left: 5px;
 }
 .devopsbodyright {
   margin-left: -40px;
@@ -56,12 +56,13 @@
 }
 .hireh6 {
   font-family: 'Poppins';
-  font-weight: 500;
+  font-weight: 400;
   font-size: 3.5rem;
   letter-spacing: 2%;
   color: black;
   font-style: normal;
   margin-left: 20px;
+  margin-top: 25px;
 }
 .hire-desc {
   font-family: 'Poppins';
@@ -777,11 +778,11 @@
   margin-left: 80px;
 }
 .Aicontainerrighttext {
-  margin-left: -80px;
+  margin-left: 55px;
 }
 .Aiconatinerright {
   width: auto;
-  margin-left: 120px;
+  margin-top: -10px;
 }
 
 .AIcontainer {
@@ -789,7 +790,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  border-radius: 20px;
+  border-radius: 3rem;
   margin-left: 50px;
   position: relative;
 }
@@ -824,9 +825,6 @@
 .AIlisticon ul {
   color: black;
   padding: 0;
-}
-.AIimage {
-  margin-left: -50px;
 }
 .AIservicebodyright {
   padding-right: 74px;
@@ -1034,7 +1032,7 @@
 .techAIservicebody {
   min-height: 370px;
   display: flex;
-  margin-top: -85px;
+  margin-top: -70px;
 }
 .AIservicebody {
   min-height: 370px;
@@ -1209,6 +1207,7 @@
   .hireh6 {
     margin-left: 30px;
     margin-top: 30px;
+    font-weight: 400;
   }
   .Aiservicebodyleft {
     margin-left: 0px;
@@ -1341,9 +1340,6 @@
   }
   .adjusAItservicebody {
     margin-top: -6vw;
-  }
-  .hireh6 {
-    padding-top: 20px;
   }
   .devopsservicebodyleft {
     padding-left: 146px;
@@ -1489,7 +1485,7 @@
     line-height: 2.5rem;
     width: 460px;
     margin-bottom: 35px;
-    margin-left: 25px;
+    margin-left: 3rem;
   }
   .devopsbodyright {
     margin-left: -29px;
@@ -1500,6 +1496,7 @@
     justify-content: center;
     padding-top: 0px;
     width: 500px;
+    border-radius: 0rem;
   }
   .solutiontext {
     width: 320px;
@@ -1509,6 +1506,7 @@
   .hireh6 {
     font-size: 3rem;
     margin-top: 25px;
+    margin-left: 3.6rem;
   }
   .AItopcircle {
     display: none;
@@ -1522,12 +1520,13 @@
   .Aiconatinerright {
     margin-top: -20px;
     margin-left: -45px;
+    width: 400px;
   }
   .AIimage {
-    margin-left: 85px;
+    margin-left: 110px;
   }
   .Aicontainerleftttext {
-    margin-left: 70px;
+    margin-left: 68px;
   }
   .mainAIcontainer {
     margin-left: 20px;
