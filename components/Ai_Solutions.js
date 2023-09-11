@@ -9,7 +9,7 @@ const Aisolutions = () => {
       <div className={hireService.mainAIcontainer}>
         <div className={hireService.adjustmainAIcontainer}>
           <div
-            className={`bg-white border border-5 border-white shadow shadow-left shadow-bottom ${hireService.AIcontainer}`}
+            className={` border border-5 border-white shadow shadow-left shadow-bottom ${hireService.AIcontainer}`}
           >
             <div className={hireService.AItopcircle}>
               <img src="/dev_ops/Ellipsetop.png" height={50} width={50} />

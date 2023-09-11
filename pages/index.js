@@ -112,7 +112,7 @@ export default function Home({ data, caseData }) {
         {/* <Layouts /> */}
         <Design />
         <Industries />
-        <BlogSection data={data} />
+        {/* <BlogSection data={data} /> */}
       </div>
     </>
   )

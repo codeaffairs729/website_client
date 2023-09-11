@@ -786,10 +786,11 @@
 }
 
 .AIcontainer {
-  background-image: url('/dev_ops/AIbackground_image.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-image: linear-gradient(
+    to right,
+    rgba(236, 242, 246, 0.8),
+    rgba(255, 255, 255, 0.8)
+  );
   border-radius: 3rem;
   margin-left: 50px;
   position: relative;
