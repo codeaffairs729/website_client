@@ -27,9 +27,7 @@ const Main = () => {
   return (
     <>
       {show ? (
-        <>
-          <ShimmerEffect />
-        </>
+        <>{/* <ShimmerEffect /> */}</>
       ) : (
         <div className="main">
           <Head>

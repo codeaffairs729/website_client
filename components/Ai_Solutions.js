@@ -12,7 +12,12 @@ const Aisolutions = () => {
             className={` border border-5 border-white shadow shadow-left shadow-bottom ${hireService.AIcontainer}`}
           >
             <div className={hireService.AItopcircle}>
-              <img src="/dev_ops/Ellipsetop.png" height={50} width={50} />
+              <img
+                src="/dev_ops/Ellipsetop.png"
+                height={50}
+                width={50}
+                alt="pink-circle"
+              />
             </div>
             <div className="layouts__head" data-aos="animation-scale-y">
               <h1 className={hireService.hireh6}>{techTitle}</h1>
@@ -103,7 +108,7 @@ const Aisolutions = () => {
                     <Image
                       src="/dev_ops/AItool_pic.png"
                       alt="AIimage"
-                      height={300}
+                      height={323}
                       width={340}
                     />
                   </div>
@@ -111,10 +116,10 @@ const Aisolutions = () => {
               </div>
             </div>
             <div className={hireService.AIbottomcircle1}>
-              <img src="/dev_ops/Ellipsebottom1.png" />
+              <img src="/dev_ops/Ellipsebottom1.png" alt="blue_circle" />
             </div>
             <div className={hireService.AIbottomcircle2}>
-              <img src="/dev_ops/Ellipsebottom2.png" />
+              <img src="/dev_ops/Ellipsebottom2.png" alt="bottom_blue" />
             </div>
           </div>
         </div>

@@ -6,9 +6,9 @@
   z-index: 1;
 }
 .devopsservicebodyleft {
-  flex-basis: 60%;
+  flex-basis: 80%;
   margin-top: 104px;
-  margin-left: 5px;
+  margin-left: 52px;
 }
 .devopsbodyright {
   margin-left: -40px;
@@ -761,7 +761,6 @@
 .listicon li {
   background-image: url('/devops/check-icon.png');
   background-size: 24px 24px;
-  margin-left: 2vw;
   background-repeat: no-repeat;
   background-position: left top;
   text-align: left;
@@ -770,11 +769,9 @@
 }
 .maindevcontainer {
   margin-top: 10px;
-  justify-content: center;
 }
 .mainAIcontainer {
   margin-bottom: 143px;
-  justify-content: center;
   margin-left: 80px;
 }
 .Aicontainerrighttext {
@@ -793,7 +790,6 @@
   );
   border-radius: 3rem;
   margin-left: 50px;
-  position: relative;
 }
 
 .solutiontext {
@@ -813,9 +809,6 @@
   margin-left: 40px;
 }
 .AIlisticon li {
-  /* content: ''; */
-  /* display: inline-block; */
-  /* background-repeat: no-repeat; */
   background-position: left top;
   text-align: left;
   font-weight: bold;
@@ -844,8 +837,6 @@
 .AIbottomcircle1,
 .AIbottomcircle2 {
   position: absolute;
-  height: 100px;
-  width: 100px;
 }
 .AItopcircle {
   top: -4%;
@@ -857,7 +848,7 @@
   right: 2%;
 }
 .AIbottomcircle2 {
-  bottom: -12%;
+  bottom: -7%;
   left: 5%;
 }
 .AItopcircle img {
@@ -1237,8 +1228,7 @@
     right: 6%;
   }
   .AIbottomcircle2 {
-    bottom: -8%;
-    left: 13%;
+    display: none;
   }
   /* .devopsservicebodyleft {
     margin-top: 30px;
