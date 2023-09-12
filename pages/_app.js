@@ -25,9 +25,9 @@ const Footer = dynamic(() => import('../components/Footer'), {
 // const Footer = dynamic(() => import('./includes/footer'), {
 //   ssr: true,
 // })
-const ChatwootWidget = dynamic(() => import('../components/ChatwootWidget'), {
-  ssr: false,
-})
+// const ChatwootWidget = dynamic(() => import('../components/ChatwootWidget'), {
+//   ssr: false,
+// })
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     AOS.init()
@@ -63,7 +63,7 @@ function MyApp({ Component, pageProps }) {
       />
       <Header />
       <Component {...pageProps} />
-      <ChatwootWidget />
+      {/* <ChatwootWidget /> */}
       <Footer />
     </>
   )
