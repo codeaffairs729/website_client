@@ -59,34 +59,24 @@ const Main = () => {
                 <div className="row">
                   <div className="col-12 col-md-7">
                     <div className="">
-                      <div className="main__title title title_big" data-aos>
+                      <div className="main__title title title_big">
                         <span className="title__box dev-title mb-3"></span>
-                        <h1 className="home-header" data-aos="fade-up">
+                        <h1 className="home-header">
                           Simplifying Processes
                           <br /> Through Scalable IT Solutions!
                         </h1>
                       </div>
-                      <div
-                        className="main__info info ms-3 main-info"
-                        data-aos="fade-left"
-                      >
+                      <div className="main__info info ms-3 main-info">
                         We have extensive experience in developing
                         high-performance, scalable software solutions using
                         full-stack technologies that drive business
                         transformation
                       </div>
                       <Rating />
-                      <div
-                        className="main__scroll ms-3"
-                        data-aos="animation-scale-y"
-                        data-aos-delay="650"
-                      ></div>
+                      <div className="main__scroll ms-3"></div>
                     </div>
                   </div>
-                  <div
-                    className="col-12 col-lg-5 col-md-5 d-flex align-items-center justify-content-center desktop_image"
-                    data-aos="fade-up"
-                  >
+                  <div className="col-12 col-lg-5 col-md-5 d-flex align-items-center justify-content-center desktop_image">
                     <Image
                       src="/images/Desktop Asset Group.png"
                       alt="3D Desktop Assets Group"

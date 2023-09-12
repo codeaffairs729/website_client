@@ -61,7 +61,7 @@ const data = [
       'IoT Security Auditing',
     ],
     id: '3',
-    imgUrl: '/Industries/Iot.jpg',
+    imgUrl: '/Industries/iot.jpg',
     img_alt: 'AI_image',
   },
 ]

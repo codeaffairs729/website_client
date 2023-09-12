@@ -29,7 +29,7 @@ const FeatureList = () => {
       <div>
         <Image
           src="/icons/Ellipse-blue-full.svg"
-          alt=""
+          alt="blue-circle"
           width={56}
           height={56}
         />
@@ -40,7 +40,7 @@ const FeatureList = () => {
             Definite Process, Remarkable Outcomes
           </div>
           <h2 className="mb-4">Leading The Way In Crafting New Innovations</h2>
-          <p className="mb-4" data-aos="animation-scale-x">
+          <p className="mb-4">
             We understand that your goals are unique and believe that business
             advice and solutions should be tailored accordingly. Allow us to
             assist you with top-notch software development solutions.
@@ -48,7 +48,7 @@ const FeatureList = () => {
           <div className="circle-center">
             <img
               src="icons/Center_circle.png"
-              alt=""
+              alt="center-circle"
               // width={120}
               // height={120}
             />
@@ -61,13 +61,10 @@ const FeatureList = () => {
                 className="feature-slide-row d-flex align-items-center py-3"
                 key={i}
               >
-                <div className="logo-container" data-aos="fade-left">
+                <div className="logo-container">
                   <Image src={e.img} alt="" width={56} height={56} />
                 </div>
-                <div
-                  className="align-items-center"
-                  data-aos="animation-scale-y"
-                >
+                <div className="align-items-center">
                   <h3>{e.title}</h3>
                   <p>{e.desc}</p>
                 </div>
@@ -76,7 +73,7 @@ const FeatureList = () => {
           </div>
         </div>
 
-        <div className="ellipse-blue-full" data-aos="fade-left">
+        <div className="ellipse-blue-full">
           <Image
             src="/icons/Ellipse-blue-full.svg"
             alt="ellipse-blue"
