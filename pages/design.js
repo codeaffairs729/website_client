@@ -31,8 +31,8 @@ const Design = () => {
     arrows: false,
     accessibility: false,
     speed: 700,
+    infinite: true,
     autoplay: true,
-    lazyload: 'progressive',
     responsive: [
       {
         breakpoint: 1024,

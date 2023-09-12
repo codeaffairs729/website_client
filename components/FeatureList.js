@@ -29,30 +29,20 @@ const FeatureList = () => {
       <div>
         <Image
           src="/icons/Ellipse-blue-full.svg"
-          alt="blue-circle"
+          alt=""
           width={56}
           height={56}
         />
       </div>
       <div className="row align-items-center  gx-5 feature-overflow-hiiden">
         <div className="col-md-12 col-lg-6">
-          <div className="feature-small-text">
-            Definite Process, Remarkable Outcomes
-          </div>
+          <div className="feature-small-text">Think No Limits</div>
           <h2 className="mb-4">Leading The Way In Crafting New Innovations</h2>
           <p className="mb-4">
             We understand that your goals are unique and believe that business
             advice and solutions should be tailored accordingly. Allow us to
             assist you with top-notch software development solutions.
           </p>
-          <div className="circle-center">
-            <img
-              src="icons/Center_circle.png"
-              alt="center-circle"
-              // width={120}
-              // height={120}
-            />
-          </div>
         </div>
         <div className="col-md-12 col-lg-6">
           <div className="feature-list-div-container">
@@ -72,15 +62,14 @@ const FeatureList = () => {
             ))}
           </div>
         </div>
-
-        <div className="ellipse-blue-full">
-          <Image
-            src="/icons/Ellipse-blue-full.svg"
-            alt="ellipse-blue"
-            width={56}
-            height={56}
-          />
-        </div>
+      </div>
+      <div className="ellipse-blue-full">
+        <Image
+          src="/icons/Ellipse-blue-full.svg"
+          alt=""
+          width={56}
+          height={56}
+        />
       </div>
     </div>
   )

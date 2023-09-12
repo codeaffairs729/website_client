@@ -102,9 +102,9 @@ const Access = () => {
       <ToastContainer />
       <div className="access">
         <div className="access__center center">
-          {/* <h2 className="access-top-heading access-top-heading-text">
+          <h2 className="access-top-heading access-top-heading-text">
             We Simplify and Streamline Each Step In Your App.
-          </h2> */}
+          </h2>
           <div
             className="access__view connect__view"
             data-aos
@@ -132,7 +132,7 @@ const Access = () => {
                 alt="3D Pnk Ball"
               /> */}
               <div>
-                <div className="access__pic sphere__pic azure-floating">
+                <div className="access__pic sphere__pic">
                   <Image
                     src="/images/Sphere.webp"
                     alt="3D Pnk Ball"
@@ -145,7 +145,7 @@ const Access = () => {
                 src="images/azure.webp"
                 alt="Azure Image"
               /> */}
-                <div className="access-azure-cloud azure-floating">
+                <div className="access-azure-cloud">
                   <Image
                     src="/images/azure.webp"
                     alt="Azure Image"
