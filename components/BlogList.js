@@ -9,7 +9,6 @@ const BlogList = ({ authorized, blogData, notify, notifyError, db }) => {
   const [delId, setDelId] = useState()
   const router = useRouter()
 
-  console.log({ db })
   const handleOnLogout = () => {
     localStorage.clear()
     router.push('/signIn')

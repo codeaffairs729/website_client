@@ -5,7 +5,6 @@ const handler = (req, res) => {
 
       // Save data to the database from here
       const {
-        name,
         email,
         jobPosition,
         experience,
@@ -35,7 +34,7 @@ const handler = (req, res) => {
                             </p>
 
                             <p>Regards,<br>
-                            CodeGarageTech Team</p>`,
+                            Codegaragetech</p>`,
           attachments: [
             {
               content: `${resumeBase64}`,
@@ -53,13 +52,13 @@ const handler = (req, res) => {
             subject: 'via CodeGarageTech',
             text: 'Job Application',
             html: `<p>
-                                    Hi ${name},<br>
+                                    Hi ${email},<br>
                                 </p>
 
                                 <p>We have recieved your email and will contact you soon.</p>
 
                                 <p>Regards,<br>
-                                CodeGarageTech Team</p>`,
+                                Codegaragetech</p>`,
           })
         })
     } catch (err) {

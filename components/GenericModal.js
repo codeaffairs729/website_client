@@ -13,18 +13,14 @@ const GenericModal = (props) => {
   return (
     <>
       <div className={`modal fade ${genModalshow && 'show'}`} id="myModal">
-        <div
-          className={`modal-dialog ${
-            source === 'careers' && 'modal-dialog-careers'
-          }`}
-        >
+        <div className="modal-dialog">
           <div className="modal-content">
             <div
               className={`modal-header justify-content-center ${
                 modalHeaderShow ? 'flex' : 'd-none'
               }`}
             >
-              <div className="modal-title mb-4">{modalTitle}</div>
+              <div className="modal-title">{modalTitle}</div>
               <button
                 type="button"
                 className="btn-close genModalCrossBtn"

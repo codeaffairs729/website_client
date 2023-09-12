@@ -8,7 +8,7 @@ import hireService from '../../styles/hireService.module.css'
 export default function BlogDetails({ blogData }) {
   const router = useRouter()
   const [name, setName] = useState('')
-  console.log('blogData', blogData.length, blogData)
+
   // useEffect used for solving hydration errror because name is not defined at server side
 
   useEffect(() => {

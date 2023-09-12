@@ -5,9 +5,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/app.css'
 import '../styles/globals.css'
 import 'aos/dist/aos.css'
-import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
-
 // import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
 // import '../styles/gen-form.css'
 // import '../styles/service.css'
@@ -25,9 +22,9 @@ const Footer = dynamic(() => import('../components/Footer'), {
 // const Footer = dynamic(() => import('./includes/footer'), {
 //   ssr: true,
 // })
-// const ChatwootWidget = dynamic(() => import('../components/ChatwootWidget'), {
-//   ssr: false,
-// })
+const ChatwootWidget = dynamic(() => import('../components/ChatwootWidget'), {
+  ssr: false,
+})
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     AOS.init()
@@ -49,21 +46,9 @@ function MyApp({ Component, pageProps }) {
 
     // </GoogleReCaptchaProvider>
     <>
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
       <Header />
       <Component {...pageProps} />
-      {/* <ChatwootWidget /> */}
+      <ChatwootWidget />
       <Footer />
     </>
   )

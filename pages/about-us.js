@@ -21,9 +21,8 @@ function AboutUs() {
   }
   const sideImgArr = [
     ['aboutUsImages/about-img1.webp', 'Mehakpal Singh(Founder)'],
-    ['/aboutUsImages/about-img6.jpg', , 'Ankush Mahajan(CTO)'],
-    ['aboutUsImages/about-img2.jpg', 'Himani Choudhary(HR Manager)'],
-    ['aboutUsImages/naresh_pic.jpg', 'Naresh Bhatia(Chartered Accountant)'],
+    ['aboutUsImages/about-img2.webp', 'Preeti Parihar(HR Manager)'],
+    ['aboutUsImages/naresh_pic.png', 'Naresh Bhatia(Chartered Accountant)'],
     ['aboutUsImages/about-img3.webp', 'Kannav Sharma(Lawyer)'],
   ]
 
@@ -38,22 +37,13 @@ function AboutUs() {
       '/aboutUsImages/about-img1.webp',
     ],
     [
-      'Ankush Mahajan',
-      'CTO',
-      'Ankush',
-      "The guy, who empowers excellence with technology leadership. With a master's degree in computer science and over 8 years of experience in the software development industry, he possesses a strong academic background and extensive professional expertise. He manages the business procedures of the organization taking into account the crucial requirements and future enhancements.",
-      'www.twitter.com',
-      'www.instagram.com',
-      '/aboutUsImages/about-img6.jpg',
-    ],
-    [
-      'Himani Choudhary',
+      'Preeti Parihar',
       'HR Manager',
-      'Himani',
-      'Himani integrates and implements the technology via improved training, staffing, and communication with all the employees. Moreover, she also recommend approaches, business solutions, and processes to the management.',
+      'Preeti',
+      'Preeti integrates and implements the technology via improved training, staffing, and communication with all the employees. Moreover, she also recommend approaches, business solutions, and processes to the management.',
       'www.twitter.com',
       'www.instagram.com',
-      'aboutUsImages/about-img2.jpg',
+      'aboutUsImages/about-img2.webp',
     ],
     [
       'Naresh Bhatia',
@@ -62,7 +52,7 @@ function AboutUs() {
       'As a proactive and result-oriented finance professional, he has a strong track record of handling multiple assignments efficiently. He has 15 years of experience and is very diligent in handling Accounts & Finance, Direct & Indirect Tax, Internal Auditing, and Risk Assessment of the company.',
       'www.twitter.com',
       'www.instagram.com',
-      'aboutUsImages/naresh_pic.jpg',
+      'aboutUsImages/naresh_pic.png',
     ],
     [
       'Kannav Sharma',
@@ -163,7 +153,7 @@ function AboutUs() {
                       loaded ? 'blur-image-loaded' : 'blur-image'
                     }
                   `}
-                    src="aboutUsImages/diveroid2.webp"
+                    src="aboutUsImages/diveroid2.jpg"
                     alt="Udham, Ankush & Mehakpal(Boss)"
                   />
                 </div>
@@ -194,9 +184,9 @@ function AboutUs() {
                 software and delivering quality to society. Our IT services
                 emphasize delivering optimal solutions with top-notch services
                 in web design and development, mobile development, and digital
-                marketing. By leveraging the power of new technologies, our goal
-                is to deliver quality-centered software services to aspiring
-                businesses.
+                marketing. Providing overall satisfaction to clients is our
+                pertinent priority and we aim to serve them with the best and
+                most reliable solutions.
                 <br />
                 <br />
               </p>
@@ -263,24 +253,24 @@ function AboutUs() {
                   During our journey of 7 years, they have grown up with us.
                   <br />
                   <br />
-                  Code Garage was founded with an apparent idea in mind - to
-                  create exceptional software that we can take pride in. We
-                  built many brands by crafting digital experiences that create
-                  lasting impact.
+                  We build as well as scale your brand by crafting digital
+                  experiences that create lasting impact. We want to see your
+                  business succeed and we pride ourselves on working hard to
+                  make sure it happens.
                   <br />
                   <br />
-                  Throughout our remarkable journey, we encountered numerous
-                  challenges, yet our unwavering dedication and determination
-                  led us to overcome each one of them.
+                  Code Garage Tech was founded with an apparent idea in mind -
+                  to create exceptional software that we can take pride in.
                   <br />
                   <br />
-                  By embracing innovation and staying at the forefront of
-                  technological advancements, we have continuously empowered
-                  businesses with transformative solutions tailored to their
-                  unique needs, that helped us establish robust connections with
-                  enterprises across the globe.
+                  By leveraging the power of new technologies, our goal is to
+                  deliver quality-centered software services to aspiring
+                  businesses.
                   <br />
                   <br />
+                  We are a team of enthusiastic individuals propelled by a
+                  relentless commitment to craft innovative solutions and
+                  provide unparalleled outcomes.
                 </p>
               </div>
             </div>
@@ -434,8 +424,8 @@ function AboutUs() {
                             </div> */}
                 <div className="col-lg-6 col-md-6 d-flex about-area-4-main-desc-outer">
                   <div className="row h-100">
-                    <div className="col-lg-12  d-flex flex-column justify-content-center">
-                      <p className="about-area-4-main-para  ">
+                    <div className="col-lg-12">
+                      <p className="about-area-4-main-para">
                         <span className="fw-bolder">
                           About {companyFacesDetail[companyFacesDesc][2]}
                         </span>

@@ -192,15 +192,15 @@ const Header = () => {
               <nav className="header__nav">
                 <div
                   className={`header__item ${
-                    serviceMenu && 'service-menu-header-item '
+                    serviceMenu && 'service-menu-header-item'
                   }`}
                   // style={{ display: `${visible}` }}
                 >
                   {/* <Link href="#"> */}
                   <div
-                    className={`btn-outline-danger cursor_pointer header__head ${
-                      visible === 'flex' ? 'service-underline' : ''
-                    } ${serviceMenu ? 'service-menu-head nav-css' : ''}`}
+                    className={`cursor_pointer header__head ${
+                      serviceMenu ? 'service-menu-head nav-css' : ''
+                    }`}
                     onClick={toggleSidebarInternalMenu}
                     onMouseOver={handleOnShowMenu}
                   >
@@ -220,15 +220,8 @@ const Header = () => {
 
                     // style={{opacity:"1"}}
                   >
-                    <div
-                      className="header__center center header-dropdown-body"
-                      style={{ display: `${visible}` }}
-                    >
-                      <div
-                        className="service-menu-visible header__row row"
-                        style={{ display: `${visible}` }}
-                        onMouseLeave={handleOnLeave}
-                      >
+                    <div className="header__center center header-dropdown-body">
+                      <div className="header__row row">
                         <div className="col-lg-4 col-md-4 col-sm-4">
                           <div
                             className={`header__category cursor_pointer ${
@@ -1186,8 +1179,8 @@ const Header = () => {
                   <div
                     className={
                       currentPath === '/about-us'
-                        ? 'cursor_pointer header__item nav-css underline_text '
-                        : 'cursor_pointer header__item nav-css blue-underline'
+                        ? 'cursor_pointer header__item nav-css underline_text'
+                        : 'cursor_pointer header__item nav-css'
                     }
                     onClick={handleSidebar}
                   >
@@ -1199,7 +1192,7 @@ const Header = () => {
                     className={
                       currentPath === '/careers'
                         ? 'cursor_pointer header__item nav-css underline_text'
-                        : 'cursor_pointer header__item nav-css blue-underline'
+                        : 'cursor_pointer header__item nav-css'
                     }
                     onClick={handleSidebar}
                   >
@@ -1211,7 +1204,7 @@ const Header = () => {
                     className={
                       currentPath === '/contact'
                         ? 'cursor_pointer header__item nav-css underline_text'
-                        : 'cursor_pointer header__item nav-css blue-underline'
+                        : 'cursor_pointer header__item nav-css'
                     }
                     onClick={handleSidebar}
                   >
