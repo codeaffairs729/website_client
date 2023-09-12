@@ -2675,6 +2675,9 @@ body:not(.touch-device) .header__item:hover .header__body {
   visibility: visible;
   opacity: 1;
 }
+.header__body{
+  margin-top: 20px;
+}
 
 .header__item.active .header__body {
   -webkit-transform: translateY(0);

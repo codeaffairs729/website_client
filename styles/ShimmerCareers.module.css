@@ -2,11 +2,10 @@
   position: relative;
   overflow: hidden;
   background-color: #f4f4f4;
-  --shimmer-bg-color: rgba(222, 215, 215, 0.832);
 }
 
 .gray {
-  background-color: var(--shimmer-bg-color);
+  background-color: rgb(175, 172, 172);
 }
 .display_None {
   display: none;
@@ -32,7 +31,7 @@
 }
 
 .left_container_items {
-  background-color: rgba(222, 215, 215, 0.832);
+  background-color: rgb(175, 172, 172);
   height: 80%;
   width: 80%;
   position: absolute;
@@ -42,7 +41,7 @@
   border-radius: 32px;
 }
 .right_container_items {
-  background-color: rgba(222, 215, 215, 0.832);
+  background-color: rgb(175, 172, 172);
   position: absolute;
   width: 37%;
   height: 60%;
@@ -51,7 +50,7 @@
   border-radius: 32px;
 }
 .right_container_items_2 {
-  background-color: rgba(222, 215, 215, 0.832);
+  background-color: rgb(175, 172, 172);
   position: absolute;
 
   height: 40%;
@@ -64,7 +63,7 @@
 .right_container_top {
   width: 100%;
   height: 35%;
-  background-color: rgba(222, 215, 215, 0.832);
+  background-color: rgb(175, 172, 172);
   border-radius: 32px;
   position: relative;
 }
@@ -102,7 +101,7 @@
   .right_container_top {
     width: 70vw;
     height: 25%;
-    background-color: rgba(222, 215, 215, 0.832);
+    background-color: rgb(175, 172, 172);
     border-radius: 32px;
     position: relative;
     left: -30%;

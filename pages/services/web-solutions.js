@@ -93,7 +93,6 @@ const contentHeader1 = () => {
             width={378}
             height={378}
             priority={true}
-            objectFit="cover"
           />
         </div>
       </div>
@@ -107,12 +106,12 @@ const content1 = () => {
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
         <p className={hireService.hirep}>
-          At Code Garage, we offer full web development services, from initial
-          planning to final delivery and third-party testing. Backed by a team
-          of dedicated and skilled developers, we have established ourselves as
-          one of the most renowned and trusted custom website development
-          companies. We work with you to meet your most challenging needs for
-          professional website application development services. Our
+          At Code Garage Tech, we offer full web development services, from
+          initial planning to final delivery and third-party testing. Backed by
+          a team of dedicated and skilled developers, we have established
+          ourselves as one of the most renowned and trusted custom website
+          development companies. We work with you to meet your most challenging
+          needs for professional website application development services. Our
           professionals can offer cost-effective end-to-end web development
           services. <br />
           <br />
@@ -126,15 +125,15 @@ const content1 = () => {
           <br />
         </p>
         {/* content 7 */}
-        {/* <h2 className={hireService.hireh2}>
+        <h2 className={hireService.hireh2}>
           Our Web Development Step-By-Step Process
-        </h2> */}
+        </h2>
         <div className={`${styles.services_image_container}`}>
           <Image
             src="/services_images/web_development.png"
             alt="digital marketing"
-            width={900}
-            height={900}
+            width={800}
+            height={800}
             priority={true}
             objectFit="contain"
           />
@@ -162,10 +161,10 @@ const content1 = () => {
         </div>
 
         <p className={`${hireService.hirep} ${hireService.marginbottom24px}`}>
-          Code Garage chooses the Ruby on Rails framework for web development
-          because we know how to leverage its real power. We have a tonne of
-          expertise in creating Ruby on Rails web applications of all sizes.{' '}
-          <br />
+          Code Garage Tech chooses the Ruby on Rails framework for web
+          development because we know how to leverage its real power. We have a
+          tonne of expertise in creating Ruby on Rails web applications of all
+          sizes. <br />
           <br />
           Our developers have deep knowledge of the Ruby on Rails framework and
           can even handle the most complex tasks. We make an effort to bring
@@ -212,11 +211,12 @@ const content1 = () => {
           utilizing the same codebase with the help of React/NextJs.
           <br />
           <br />
-          We, at Code Garage, completely leverage the real power of React/Next
-          Js to develop fully-functional websites and applications that suit
-          your particular business requirements. From developing swift dynamic
-          and static to future-rich, robust websites and apps, the advantages of
-          using React/NextJs. are numerous for developers as well as clients.
+          We, at Code Garage Tech, completely leverage the real power of
+          React/Next Js to develop fully-functional websites and applications
+          that suit your particular business requirements. From developing swift
+          dynamic and static to future-rich, robust websites and apps, the
+          advantages of using React/NextJs. are numerous for developers as well
+          as clients.
         </p>
         <h3 className={hireService.hireh3}>
           Choose Next.Js development services because it offers:{' '}
@@ -254,9 +254,9 @@ const content1 = () => {
           application framework that supports functional, beautiful, and fast
           front-end experiences. <br />
           <br />
-          We, at Code Garage, leverage the power of VueJs/NuxtJs Development
-          fully, and our team carefully follows all development standards and
-          also delivers high-quality web applications.
+          We, at Code Garage Tech, leverage the power of VueJs/NuxtJs
+          Development fully, and our team carefully follows all development
+          standards and also delivers high-quality web applications.
           <br />
           <br />
         </p>
@@ -290,15 +290,16 @@ const content1 = () => {
           <h3 className={hireService.hireicontext}>NodeJs Development</h3>
         </div>
         <p className={`${hireService.hirep}  ${hireService.marginbottom24px}`}>
-          As a preeminent Node.js development company, Code Garage create
+          As a preeminent Node.js development company, Code Garage Tech create
           scalable, real-time, and fast applications. Hire our adept and
           dedicated developers to fulfill your Node JS web development
           requirements. <br />
           <br />
-          We, at Code Garage, offer Node JS web development services that are
-          specifically crafted to add efficiency on both client-side as well as
-          server-side. Our developers can harness asynchronous and event-driven
-          APIs to develop real-time mobile, desktop, and web applications.
+          We, at Code Garage Tech, offer Node JS web development services that
+          are specifically crafted to add efficiency on both client-side as well
+          as server-side. Our developers can harness asynchronous and
+          event-driven APIs to develop real-time mobile, desktop, and web
+          applications.
         </p>
         <h3 className={hireService.hireh3}>
           Our Node JS Development Services provide:{' '}
@@ -333,7 +334,7 @@ const content1 = () => {
           We offer Laravel development solutions to businesses of all sizes.{' '}
           <br />
           <br />
-          We, at Code Garage, have years of experience in providing Laravel
+          We, at Code Garage Tech, have years of experience in providing Laravel
           development services and we effectively execute integration processes
           and customization while developing Laravel applications.
         </p>
@@ -370,10 +371,10 @@ const content1 = () => {
           Shopify services to aid you to build a scalable, robust, highly
           secure, and sales-driven Shopify store. <br />
           <br />
-          We, at Code Garage, offer reliable Shopify services to provide you
-          with exactly what you need to achieve your business growth targets.
-          Our main aim is to bring experience, dedication, and expertise with
-          our solutions.
+          We, at Code Garage Tech, offer reliable Shopify services to provide
+          you with exactly what you need to achieve your business growth
+          targets. Our main aim is to bring experience, dedication, and
+          expertise with our solutions.
         </p>
         <h3 className={hireService.hireh3}>
           Our Shopify Development Services Include:
@@ -408,7 +409,7 @@ const content1 = () => {
           Management Systems that has umpteen features and makes your experience
           more fascinating as well as pleasing. <br />
           <br />
-          We, at Code Garage, always aim to provide out-of-the-box website
+          We, at Code Garage Tech, always aim to provide out-of-the-box website
           solutions using futuristic WordPress innovation. Our adept team offers
           high-performing digital experiences that take your business to the new
           height of success with WordPress Development Solutions.
@@ -456,7 +457,9 @@ const WebSolutions = () => {
   return (
     <>
       <Head>
-        <title>Effective Web Solutions for your business - Code Garage</title>
+        <title>
+          Effective Web Solutions for your business - Code Garage Tech
+        </title>
         <link
           rel="canonical"
           href="https://codegaragetech.com/services/web-solutions"
@@ -464,7 +467,7 @@ const WebSolutions = () => {
         <meta
           name="description"
           content="
-          At Code Garage, we offer full web development solutions, from initial planning to final delivery and third-party testing. Get in Touch with us now!"
+          At Code Garage Tech, we offer full web development solutions, from initial planning to final delivery and third-party testing. Get in Touch with us now!"
         />
       </Head>
       <HireServiceLayout

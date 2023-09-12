@@ -1,32 +1,35 @@
 .services_image_container {
   height: 55vh;
-  /* width: 55vw; */
+  width: 55vw;
   display: flex;
   /* align-items: center;
   justify-content: center; */
 }
-.openai_image {
+.openai_image{
   height: 48vh;
+  
 }
 
 @media (max-width: 1000px) {
   .services_image_container {
-    /* width: 85vw; */
-    height: 30vh;
+    width: 85vw;
+    height: 90vh;
   }
-  .openai_image {
-    height: 32vh;
+  .openai_image{
+    height: 70vh;
+    
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 430px) {
   .services_image_container {
-    /* width: 95vw; */
-    height: 25vh;
+    width: 95vw;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .openai_image {
-    height: 25vh;
+  .openai_image{
+    height: 40vh;
+    
   }
 }

@@ -117,8 +117,9 @@ const content1 = () => {
           <p
             className={`${hireService.hirep}  ${hireService.marginbottom24px}`}
           >
-            Code Garage&apos;s security model carefully focuses on all facets of
-            the field including data transfer, application, and backup security.
+            Code Garage Tech&apos;s security model carefully focuses on all
+            facets of the field including data transfer, application, and backup
+            security.
           </p>
           <h3 className={hireService.hireh3}>
             <b>CUSTOMER SERVICE</b>{' '}
