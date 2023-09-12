@@ -1203,7 +1203,10 @@
     padding-left: -19px;
   }
   .adjustmaincontainer {
-    padding-left: 95px;
+    padding-left: 112px;
+  }
+  .devopsservicebodyleft {
+    margin-left: 22px;
   }
 }
 
@@ -1223,13 +1226,6 @@
   .AIbottomcircle2 {
     display: none;
   }
-  /* .devopsservicebodyleft {
-    margin-top: 30px;
-  } */
-  /* .devopsbodyright{
-    margin-left:125px;
-    margin-top: 0px;
-  } */
   .adjustservicebody {
     gap: 0px;
     margin-left: 0px;
