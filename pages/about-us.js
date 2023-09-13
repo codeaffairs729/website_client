@@ -434,8 +434,8 @@ function AboutUs() {
                             </div> */}
                 <div className="col-lg-6 col-md-6 d-flex about-area-4-main-desc-outer">
                   <div className="row h-100">
-                    <div className="col-lg-12">
-                      <p className="about-area-4-main-para">
+                    <div className="col-lg-12  d-flex flex-column justify-content-center">
+                      <p className="about-area-4-main-para  ">
                         <span className="fw-bolder">
                           About {companyFacesDetail[companyFacesDesc][2]}
                         </span>
