@@ -51,12 +51,8 @@
 
 .flag_icon_container {
   display: flex;
-  padding: 2px 0px;
-  margin-inline: 8px;
-  /* overflow: hidden; */
-  gap: 5px;
-  min-width: 80px;
   justify-content: center;
+  min-width: 85px;
 }
 
 .flag_icon_container select {
@@ -121,9 +117,22 @@
 }
 
 .phone_input input {
-  overflow: hidden;
+  /* overflow: hidden; */
   /* width: 178px; */
   /* border: 1px solid red; */
+}
+
+.phone_input {
+  display: flex;
+}
+
+.phone_input div:nth-child(1) {
+  flex-basis: 50%;
+  /* border: 1px solid red; */
+}
+.phone_input div:nth-child(2) {
+  flex-basis: 50%;
+  /* border: 1px solid green; */
 }
 @media only screen and (max-width: 768px) {
   .right_container {
