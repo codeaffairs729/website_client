@@ -84,12 +84,12 @@ const content1 = () => {
           Sustain, Prosper And Achieve New Heights Of Success.{' '}
         </h2>
         <p className={styles.hirep}>
-          A collaboration with Code Garage Tech developers offers access to
-          technical expertise as well as comprehensive development solutions.
-          Moreover, we offer other benefits to our partners. We understand that
-          employing a few developers frequently comes with budget limitations,
-          our goal is to generate opportunities for value addition throughout
-          the entire process. We offer:
+          A collaboration with Code Garage developers offers access to technical
+          expertise as well as comprehensive development solutions. Moreover, we
+          offer other benefits to our partners. We understand that employing a
+          few developers frequently comes with budget limitations, our goal is
+          to generate opportunities for value addition throughout the entire
+          process. We offer:
         </p>
       </div>
       <div className="hire-container-body-left-content-2">
@@ -99,16 +99,16 @@ const content1 = () => {
             require a knowledgeable MySQL architect or experienced C developers
             to develop a new website for your business, hiring in-house depicts
             competing with other businesses in your area for a small or medium
-            talent pool. We at Code Garage Tech aid you circumvent the struggle
-            by providing instant access to qualified and professional people.
+            talent pool. We at Code Garage aid you circumvent the struggle by
+            providing instant access to qualified and professional people.
           </li>
           <li>
             Cost reductions across the board, up to 60% when compared to
             traditional in-house as well as centralized development models. At
-            Code Garage Tech, we have learned how to lower overhead costs,
-            source talent that is within your budget, and produce outcomes on
-            time and within your budget in order to help your business better
-            focus on attaining those indispensable KPIs.{' '}
+            Code Garage, we have learned how to lower overhead costs, source
+            talent that is within your budget, and produce outcomes on time and
+            within your budget in order to help your business better focus on
+            attaining those indispensable KPIs.{' '}
           </li>
           <li>
             Dependable outcomes using a &quot;right the first time&quot;
@@ -129,8 +129,7 @@ const content1 = () => {
 const content2 = () => (
   <div>
     <h2 className={styles.hireh2}>
-      Why Choose to Hire a Sole Developer from Code Garage Tech for Your
-      Company?
+      Why Choose to Hire a Sole Developer from Code Garage for Your Company?
     </h2>
     <p className={styles.hirep}>
       We add value to your business by leveraging our professional and
@@ -164,7 +163,7 @@ const content2 = () => (
       </li>
       <li>
         Umpteen testimonials from pleased clients who have personally seen the
-        difference made by Code Garage Tech developers.
+        difference made by Code Garage developers.
       </li>
     </ul>
 

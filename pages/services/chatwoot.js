@@ -103,7 +103,7 @@ const content1 = () => {
             Instagram, Twitter, etc. This aids you deliver a reliable CX across
             various platforms- from a sole dashboard. <br />
             <br />
-            At Code Garage Tech, we offer good customer service by providing a
+            At Code Garage, we offer good customer service by providing a
             Chatwoot framework that helps your business achieve new heights of
             success.
           </p>

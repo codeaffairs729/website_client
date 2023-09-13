@@ -202,6 +202,7 @@ hire-h2 .header__col:nth-child(2) .header__box:nth-child(8) .header__preview {
   /* max-width: 1050px; */
   height: 445px;
   margin-top: 20px;
+  /* background: #ffffff; */
 }
 
 /* .header__row .col-lg-4 {
@@ -1054,6 +1055,10 @@ body:not(.touch-device) .header-item[href]:before {
   animation: heroku-floating 6s ease-in-out infinite;
 }
 
+.azure-floating {
+  transform: translatey(0px);
+  animation: azure-floating 6s ease-in-out infinite;
+}
 .salesforce-floating {
   transform: translatey(0px);
   animation: salesforce-floating 6s ease-in-out infinite;
@@ -1067,6 +1072,18 @@ body:not(.touch-device) .header-item[href]:before {
 .sphere-floating {
   transform: translatey(0px);
   animation: sphere-floating 6s ease-in-out infinite;
+}
+
+@keyframes azure-floating {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 
 @keyframes digitalocean-floating {

@@ -59,9 +59,8 @@ const content1 = () => {
       <div className="hire-container-body-left-content-1">
         <p className={hireService.hirep}>
           Next.js is a framework of react that offers building blocks to build
-          contemporary web applications. Code Garage Tech is a “Next.js Expert
-          agency as we provide Next. js-based headless commerce development
-          solutions.
+          contemporary web applications. Code Garage is a “Next.js Expert agency
+          as we provide Next. js-based headless commerce development solutions.
           <br /> <br />
         </p>
 
@@ -151,10 +150,10 @@ const content1 = () => {
         </h3>
 
         <p className={hireService.hirep}>
-          Simplicity is the major feature of Next.js. Code Garage Tech’s
-          developers as well as designers have thorough understanding and
-          knowledge of JS & HTML, we can start the Next.js development
-          conveniently and implement it to your project.
+          Simplicity is the major feature of Next.js. Code Garage’s developers
+          as well as designers have thorough understanding and knowledge of JS &
+          HTML, we can start the Next.js development conveniently and implement
+          it to your project.
         </p>
         <h3
           className={`${hireService.hireh3}  ${hireService.marginbottom24px}`}

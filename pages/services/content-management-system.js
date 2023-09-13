@@ -59,7 +59,7 @@ const content1 = () => {
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
         <p className={hireService.hirep}>
-          Code Garage Tech offers comprehensive web content management system
+          Code Garage offers comprehensive web content management system
           solutions. With our supreme and first-class CMS applications you can
           easily manage as well as organize the data of your business. We aid
           you in organizing your crucial business assets with the right
@@ -67,7 +67,7 @@ const content1 = () => {
           <br /> <br />
           We have more than 7 years of experience in offering web maintenance
           solutions. With our latest management and administrative tools, we at
-          Code Garage Tech, are capable of providing cost-effective website
+          Code Garage, are capable of providing cost-effective website
           maintenance services that simplify your work.
           <br /> <br /> Now you can manage as well as deploy the content of your
           website in a seamless and hassle-free way with our effective
@@ -155,8 +155,8 @@ const content1 = () => {
           <p
             className={`${hireService.hirep}  ${hireService.marginbottom24px}`}
           >
-            Code Garage Tech offers you a range of digital marketing tools that
-            are customer-focused and improve marketing by covering numerous
+            Code Garage offers you a range of digital marketing tools that are
+            customer-focused and improve marketing by covering numerous
             channels.
           </p>
         </div>

@@ -12,13 +12,15 @@ const Header = () => {
   const [autoplay2, setAutoplay2] = useState(true)
   const [autoplay3, setAutoplay3] = useState(true)
   const [serviceMenu, setServiceMenu] = useState(false)
+
   const header = useRef(null)
 
   const [careerLink, setCareerLink] = useState(false)
   const [aboutUsLink, setAboutUsLink] = useState(false)
   const router = useRouter()
-  const [visible, setVisible] = useState('')
+  const [visible, setVisible] = useState('none')
   const currentPath = router.pathname
+
   const headerSearch = () => {
     const searchBarShowHide = headerSearchBar ? false : true
     setHeaderSearchBar(searchBarShowHide)

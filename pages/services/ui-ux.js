@@ -68,10 +68,10 @@ const content1 = () => {
           UI and UX should be seamless and appealing enough to attract your
           users to use the site or app for a longer time. <br />
           <br />
-          At Code Garage Tech, we have experienced and skilled UI/UX designers
-          who have a creative vision to craft as well as implement a flawless
-          user experience & interaction to fulfill the requirements of the end
-          user. <br />
+          At Code Garage, we have experienced and skilled UI/UX designers who
+          have a creative vision to craft as well as implement a flawless user
+          experience & interaction to fulfill the requirements of the end user.{' '}
+          <br />
           <br />
           Our UI/UX developers follow reliable design concepts and practices to
           craft interactive as well as seamless apps by using new tools and

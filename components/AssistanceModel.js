@@ -67,6 +67,9 @@ const AssistanceModel = ({ title, requestOrigin }) => {
 
   const submitEnquiryForm = (e) => {
     e.preventDefault()
+    console.log('type of date', typeof date)
+    console.log('date===null', date === null)
+    return
     if (name == '' || email == '' || phone == '') {
       // setFileAlert(true);
       return

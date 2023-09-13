@@ -206,7 +206,7 @@ const NodejsBlog = () => {
             that's the reason why hiring a software development service is one
             of the best and reliable options for many companies nowadays. <br />
             <br />
-            At Code Garage Tech, we always strive to explore the most reliable
+            At Code Garage, we always strive to explore the most reliable
             technologies and modern approaches across distinctive industries,
             all this to deliver top-notch software solutions that perfectly suit
             the requirements and goals of our clients.

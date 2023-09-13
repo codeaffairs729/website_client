@@ -59,13 +59,13 @@ const handler = (req, res) => {
             subject: 'via CodeGarageTech',
             text: 'Job Application',
             html: `<p>
-                                    Hi ${email},<br>
+                                    Hi ${name},<br>
                                 </p>
 
                                 <p>We have recieved your email and will contact you soon.</p>
 
                                 <p>Regards,<br>
-                                Codegaragetech</p>`,
+                                CodeGarageTech Team</p>`,
           })
         })
     } catch (err) {

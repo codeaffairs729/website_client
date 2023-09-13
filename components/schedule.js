@@ -21,6 +21,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
   const [resumeType, setResumeType] = useState('')
   const [resumeBase64, setResumeBase64] = useState('')
   const [createObjectURL, setCreateObjectURL] = useState('')
+  const [buttonColor, setButtonColor] = useState('#4c938b9e')
 
   const submitBtn = useRef(null)
 
@@ -65,23 +66,19 @@ const ScheduleForm = ({ title, requestOrigin }) => {
   // };
 
   const submitEnquiryForm = (e) => {
-    if (name == '' || email == '' || phone == '') {
-      // setFileAlert(true);
+    if (!phone.match(/^(\d{3})[-\s]?(\d{3})[-\s]?(\d{4})$/)) {
+      toast.error('Enter valid phone no')
+      return
+    }
+    if (name == '') {
+      toast.error('Please enter your name')
       return
     }
     if (!email.match(/[^\s@]+@[^\s@]+\.[^\s@]+/gi)) {
-      // toast.error('Email is not valid', {
-      //   position: 'top-right',
-      //   autoClose: 5000,
-      //   hideProgressBar: true,
-      //   closeOnClick: true,
-      //   pauseOnHover: true,
-      //   draggable: true,
-      //   progress: undefined,
-      // })
-      console.log('Please enter a valid email')
+      toast.error('Please enter valid email address')
       return
     }
+
     submitBtn.disabled = true
     submitBtn.innerHTML =
       '<span class="spinner-border spinner-border-sm"></span> Loading...'
@@ -216,6 +213,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
             // pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             id="email"
             // name="email"
+
             type="email"
             className={styles.formcontainerinputfield}
             placeholder="Your emaild*"
@@ -246,6 +244,7 @@ const ScheduleForm = ({ title, requestOrigin }) => {
         return (
           <input
             type="tel"
+            pattern="[0-9]{10}"
             className={styles.formcontainerinputfield}
             placeholder="Your phone*"
             value={phone}
@@ -379,6 +378,16 @@ const ScheduleForm = ({ title, requestOrigin }) => {
       className={styles.formcontainerinputbtn}
       type="submit"
       onClick={submitEnquiryForm}
+      style={{
+        background: `${
+          name == '' ||
+          !email.match(/[^\s@]+@[^\s@]+\.[^\s@]+/gi) ||
+          !phone.match(/^(\d{3})[-\s]?(\d{3})[-\s]?(\d{4})$/) ||
+          Object.keys(date).length === 0
+            ? '#4c938b9e'
+            : '#4C938B'
+        }`,
+      }}
     >
       Submit
     </button>
