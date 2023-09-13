@@ -2675,7 +2675,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   visibility: visible;
   opacity: 1;
 }
-.header__body{
+.header__body {
   margin-top: 20px;
 }
 
@@ -8202,7 +8202,7 @@ html {
   padding: 0px 60px 100px;
 }
 .card-desc {
-  height: 160px;
+  height: 200px;
 }
 .blog-list {
   /* border: 0.5px solid #ccc; */
@@ -8215,18 +8215,17 @@ html {
 }
 
 .blog-btn {
-  width: 145px;
-  height: 46px;
+  width: 120px;
+  height: 40px;
   color: #ffffff;
   font-family: 'Mukta', Sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   background-color: #5956e9;
   border-style: solid;
   border-color: #21cdc0;
   border-radius: 12px;
-  margin: 0px 0px 10px 0px;
-  margin-top: 16px;
+  margin-top: 25px;
   transition: 0.35s ease-in-out;
 }
 
@@ -8236,10 +8235,10 @@ html {
 
 .card-body {
   position: relative;
-  padding: 11px 22px 0px 22px;
+  padding: 0.5em 0.5em 0em;
 }
 .card-body h3 {
-  font-size: 24px;
+  font-size: 1.3em;
   color: #273353;
 }
 .card-body p {
@@ -8247,8 +8246,20 @@ html {
   color: #666666;
 }
 
+.blogs-link {
+  color: #5956e9;
+  text-decoration: underline;
+}
 .blog-list-container {
   padding: 100px 0px 200px;
+}
+
+.blog-arrow{
+  transition: all 3s;
+}
+
+.blog-arrow :hover{
+  transform: translatex(2px);
 }
 /* <----------Feature list ------->*/
 .feature-list {
@@ -9442,6 +9453,10 @@ html {
   .card-desc {
     height: 125px;
   }
+
+  .card-body {
+    padding: 0.5em 1.2em 0em;
+  }
 }
 
 @media (max-width: 900px) {
@@ -9464,6 +9479,10 @@ html {
   .header__item:not(:last-child) {
     /* margin-right: 35px; */
     margin-right: 35px;
+  }
+
+  .card-desc {
+    height: 166px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -10995,6 +11014,12 @@ html {
   .freelancer-btn {
     flex-direction: column;
   }
+  .card-body {
+    padding: 0.5em 0.8em 0em;
+  }
+  .card-desc {
+    height: 165px;
+  }
 }
 .entry__pic__entry__pic_white-size {
   width: 140%;
@@ -11545,4 +11570,15 @@ top: 7641px; */
 
 .resizer.down {
   bottom: -5px;
+}
+
+/* Custom CSS for line truncation */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4; /* Number of lines to display */
+  /* Adjust the height based on your requirements */
+  height: 100px; /* (line-height * number of lines) */
 }
