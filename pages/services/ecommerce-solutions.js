@@ -59,15 +59,15 @@ const content1 = () => {
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
         <p className={hireService.hirep}>
-          At Code Garage, we combine our expertise and experience for developing
-          Ecommerce solutions like Ecommerce design, shopping campaigns,
-          Ecommerce SEO, and much more that helps in making your Ecommerce
-          business a huge success.
+          At Code Garage Tech, we combine our expertise and experience for
+          developing Ecommerce solutions like Ecommerce design, shopping
+          campaigns, Ecommerce SEO, and much more that helps in making your
+          Ecommerce business a huge success.
           <br /> <br />
           As a professional Ecommerce service provider, we offer reliable
           customized e-commerce solutions for developing a rewarding online
           e-commerce store that produces more sales as well as profit to your
-          business. At Code Garage, we offer custom Ecommerce solutions for
+          business. At Code Garage Tech, we offer custom Ecommerce solutions for
           developing, designing, analytics, marketing, and hosting across
           industry verticals globally.
           <br /> <br /> We have helped our clients in boosting up their business

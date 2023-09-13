@@ -15,7 +15,7 @@ const contentHeader = () => {
           <h1 className={styles.hireh1}>{techTitle}</h1>
           <h2 className={styles.hireh2}>Together We Can Achieve More</h2>
           <p className={`${styles.hirep} ${styles.marginbottom24px}`}>
-            Code Garage has helped numerous businesses envision and also
+            Code Garage Tech has helped numerous businesses envision and also
             implement successful projects in various development frameworks and
             languages since 2015. <br />
             <br />
@@ -48,7 +48,7 @@ const content4 = () => {
         <p className={styles.hirep}>
           Whether you need a few developers and the potential to exercise
           complete control over their work or you choose to decentralize
-          development throughout the whole product life cycle, Code Garage
+          development throughout the whole product life cycle, Code Garage Tech
           staffs accordingly. To meet distinctive needs, we provide a variety of
           engagement models, and we make the move to a greater level of
           engagement when required.
@@ -64,16 +64,16 @@ const content4 = () => {
             require a knowledgeable MySQL architect or experienced C developers
             to develop a new website for your business, hiring in-house depicts
             competing with other businesses in your area for a small or medium
-            talent pool. We at Code Garage aid you circumvent the struggle by
-            providing instant access to qualified and professional people.
+            talent pool. We at Code Garage Tech aid you circumvent the struggle
+            by providing instant access to qualified and professional people.
           </li>
           <li>
             Cost reductions across the board, up to 60% when compared to
             traditional in-house as well as centralized development models. At
-            Code Garage, we have learned how to lower overhead costs, source
-            talent that is within your budget, and produce outcomes on time and
-            within your budget in order to help your business better focus on
-            attaining those indispensable KPIs.{' '}
+            Code Garage Tech, we have learned how to lower overhead costs,
+            source talent that is within your budget, and produce outcomes on
+            time and within your budget in order to help your business better
+            focus on attaining those indispensable KPIs.{' '}
           </li>
           <li>
             Dependable outcomes using a &quot;right the first time&quot;

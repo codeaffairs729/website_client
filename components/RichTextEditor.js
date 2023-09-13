@@ -55,8 +55,6 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
   let name
   let token
   let id
-  const slugRegex = /^[a-z0-9]+(-[a-z0-9]+)*$/
-
   const containerRef = useRef(null)
   const startPosRef = useRef(null)
   const resizeDirectionRef = useRef(null)
@@ -139,13 +137,7 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
       notifyError("Slug shouldn't be empty")
       return
     }
-
-    if (!slugRegex.test(slug)) {
-      notifyError('Invalid slug')
-      return
-    }
-
-    if (btnName === 'Save' && !imageField) {
+    if (!imageField) {
       notifyError("imageField shouldn't be empty")
       return
     }
@@ -184,10 +176,6 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
       notifyError("Slug shouldn't be empty")
       return
     }
-    if (!slugRegex.test(slug)) {
-      notifyError('Invalid slug')
-      return
-    }
     if (!imageField) {
       notifyError("ImageField shouldn't be empty")
       return
@@ -211,7 +199,7 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
       )
       const json = await response.json()
       notify(json.message)
-      router.push(db === 'blogs' ? '/blogs' : '/case-studies')
+      // router.push(db === 'blogs' ? '/blogs' : '/case-studies')
     } catch (error) {
       // notifyError(json.message)
     }
@@ -269,11 +257,7 @@ const RichTextEditor = ({ pageName, btnName, uploadbtn, data, db }) => {
                 setSlug(e.target.value)
               }}
             />
-            <p className={`fs-6 text-secondary ${styles.fileerror}`}>
-              E.g. enhanch-speed-of-your-application
-            </p>
           </div>
-
           <div className="mb-3">
             <label htmlFor="formFileMultiple" className="form-label">
               {uploadbtn}

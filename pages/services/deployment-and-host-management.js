@@ -88,7 +88,8 @@ const content1 = () => {
             className={`${hireService.hireh2} ${hireService.marginbottom24px}`}
           >
             <strong>
-              Why Choose Code Garage for Deployment and Host Management services
+              Why Choose Code Garage Tech for Deployment and Host Management
+              services
             </strong>
           </h2>
 

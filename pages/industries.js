@@ -35,19 +35,19 @@ const data = [
   },
 
   {
-    title: 'Supply Chain Management',
+    title: 'Real Estate',
     heading:
-      "Elevate each phase of your supply chain's life cycle through the creation of our logistics and transportation applications that enhance the operational efficiency and productivity of your business.",
+      'Simplifying your business procedures and minimizing functional obstacles to boost efficiency. ',
     points: [
-      'Transportation Management',
-      'Fleet Management',
-      'Optimized Tracking',
-      'Distribution Management',
-      'Inventory Management',
+      'Simple navigation',
+      'Advanced search options',
+      'Responsive design',
+      'SEO Improvements',
+      'Marketing Features',
     ],
     id: '2',
-    imgUrl: '/Industries/supply.jpg',
-    img_alt: 'supply-chain-management',
+    imgUrl: '/Industries/realestate.webp',
+    img_alt: 'real_Estate',
   },
   {
     title: 'AI & ML',

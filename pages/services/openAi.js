@@ -115,7 +115,7 @@ const content1 = () => {
           <br />
           <br />
           Well, <strong>OpenAI</strong> seems like the latest innovation, but at
-          Code Garage we have built simple to complex solutions using{' '}
+          Code Garage Tech we have built simple to complex solutions using{' '}
           <strong>OpenAI</strong>. Hence, you can choose us and relish the perks
           of collaborating with a reliable AI development Company.
         </p>
@@ -154,7 +154,7 @@ const content1 = () => {
           </ul>
           <p className={`${hireService.hirep}  ${hireService.marginleft22px}`}>
             Wondering to build a powerful mobile application using ML and AI?
-            Code Garage, as one of the top-notch AI application development
+            Code Garage Tech, as one of the top-notch AI application development
             companies, can provide you with reliable app solutions.
           </p>
           <ul className={hireService.hirelist}>
@@ -166,9 +166,9 @@ const content1 = () => {
           </ul>
           <p className={`${hireService.hirep}  ${hireService.marginleft22px}`}>
             Do you want to know how AI can help streamline the application
-            development and delivery procedure? We at Code Garage can assist you
-            in enhancing the efficiency of your mobile application development
-            process using ML and AI.
+            development and delivery procedure? We at Code Garage Tech can
+            assist you in enhancing the efficiency of your mobile application
+            development process using ML and AI.
           </p>
           <ul className={hireService.hirelist}>
             <li>
@@ -179,7 +179,7 @@ const content1 = () => {
           </ul>
           <p className={`${hireService.hirep}  ${hireService.marginleft22px}`}>
             Do you want some help developing reliable and scalable APIs? Code
-            Garage, design, build, and implement custom APIs that can
+            Garage Tech, design, build, and implement custom APIs that can
             conveniently manage huge data as well as user requests that are
             needed to smoothly integrate with the backend of your mobile app.
           </p>
@@ -242,7 +242,7 @@ const OpenAI = () => {
   return (
     <>
       <Head>
-        <title>OpenAI (ChatGPT) - </title>
+        <title>OpenAI (ChatGPT) - Code Garage Tech</title>
         <link
           rel="canonical"
           href="https://codegaragetech.com/services/openAi"

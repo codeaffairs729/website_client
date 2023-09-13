@@ -2657,46 +2657,34 @@ body:not(.touch-device) .header__item:hover .header__head:before {
   top: calc(100% - 48px);
   left: 0;
   right: 0;
-  padding-top: 20px;
-  /* -webkit-transform: translateY(20px); */
-  /* -ms-transform: translateY(20px); */
-  /* transform: translateY(20px); */
-
-  /* -webkit-transition: all 0.25s; */
-  /* -o-transition: all 0.25s; */
-  transition: all 0.25s;
-}
-
-.service-menu-visible {
-  /* opacity: 0; */
-  display: none;
+  padding-top: 23px;
+  -webkit-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  transform: translateY(20px);
+  visibility: hidden;
+  opacity: 0;
   -webkit-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
-  /* visibility: hidden; */
 }
 
 body:not(.touch-device) .header__item:hover .header__body {
-  /* -webkit-transform: translateY(0); */
-  /* -ms-transform: translateY(0); */
-  /* transform: translateY(0); */
-  /* visibility: visible; */
-  /* opacity: 1; */
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
 }
-.header__body {
+.header__body{
   margin-top: 20px;
-}
-.service-menu-visible:hover {
-  /* opacity: 1; */
-  /* display: flex; */
 }
 
 .header__item.active .header__body {
-  /* -webkit-transform: translateY(0);
+  -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
-  visibility: visible; */
-  /* opacity: 1; */
+  visibility: visible;
+  opacity: 1;
 }
 
 .header__row {
@@ -2708,9 +2696,6 @@ body:not(.touch-device) .header__item:hover .header__body {
   border-radius: 32px;
   -webkit-box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-  /* background: rgba(216, 78, 78, 0.253); */
-  /* height: 1000px; */
-  /* display: flex */
 }
 
 .header__col {
@@ -8217,7 +8202,7 @@ html {
   padding: 0px 60px 100px;
 }
 .card-desc {
-  height: 200px;
+  height: 160px;
 }
 .blog-list {
   /* border: 0.5px solid #ccc; */
@@ -8230,17 +8215,18 @@ html {
 }
 
 .blog-btn {
-  width: 120px;
-  height: 40px;
+  width: 145px;
+  height: 46px;
   color: #ffffff;
   font-family: 'Mukta', Sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   background-color: #5956e9;
   border-style: solid;
   border-color: #21cdc0;
   border-radius: 12px;
-  margin-top: 25px;
+  margin: 0px 0px 10px 0px;
+  margin-top: 16px;
   transition: 0.35s ease-in-out;
 }
 
@@ -8250,10 +8236,10 @@ html {
 
 .card-body {
   position: relative;
-  padding: 0.5em 0.5em 0em;
+  padding: 11px 22px 0px 22px;
 }
 .card-body h3 {
-  font-size: 1.3em;
+  font-size: 24px;
   color: #273353;
 }
 .card-body p {
@@ -8261,20 +8247,8 @@ html {
   color: #666666;
 }
 
-.blogs-link {
-  color: #5956e9;
-  text-decoration: underline;
-}
 .blog-list-container {
   padding: 100px 0px 200px;
-}
-
-.blog-arrow {
-  transition: all 3s;
-}
-
-.blog-arrow :hover {
-  transform: translatex(2px);
 }
 /* <----------Feature list ------->*/
 .feature-list {
@@ -9468,10 +9442,6 @@ html {
   .card-desc {
     height: 125px;
   }
-
-  .card-body {
-    padding: 0.5em 1.2em 0em;
-  }
 }
 
 @media (max-width: 900px) {
@@ -9494,10 +9464,6 @@ html {
   .header__item:not(:last-child) {
     /* margin-right: 35px; */
     margin-right: 35px;
-  }
-
-  .card-desc {
-    height: 166px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -9578,7 +9544,7 @@ html {
     /* display: none; */
   }
   .header__body {
-    /* display: none; */
+    display: none;
   }
   .header__search {
     z-index: 16;
@@ -11029,12 +10995,6 @@ html {
   .freelancer-btn {
     flex-direction: column;
   }
-  .card-body {
-    padding: 0.5em 0.8em 0em;
-  }
-  .card-desc {
-    height: 165px;
-  }
 }
 .entry__pic__entry__pic_white-size {
   width: 140%;
@@ -11410,18 +11370,18 @@ top: 7641px; */
 .header__item:hover {
   /* color: #292930; */
   color: #27272e;
-  /* border-bottom: 2px solid blue; */
+  border-bottom: 2px solid blue;
 }
 .header__item:hover {
   /* color: #292930; */
   color: #27272e;
-  /* border-bottom: 2px solid blue; */
+  border-bottom: 2px solid blue;
 }
 
 .header__item:hover .icon-arrow-down {
   /* color: #292930;
   border-bottom: 3px solid blue; */
-  /* transform: rotate(180deg); */
+  transform: rotate(180deg);
 }
 
 .header__head {
@@ -11585,15 +11545,4 @@ top: 7641px; */
 
 .resizer.down {
   bottom: -5px;
-}
-
-/* Custom CSS for line truncation */
-.line-clamp-3 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 4; /* Number of lines to display */
-  /* Adjust the height based on your requirements */
-  height: 100px; /* (line-height * number of lines) */
 }

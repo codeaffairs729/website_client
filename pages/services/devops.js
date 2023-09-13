@@ -64,17 +64,17 @@ const content1 = () => {
           DevOps leverages monitoring, automation, collaboration, Cloud
           adoption, and tool-chain pipelines. <br />
           <br />
-          At Code Garage, we offer devops services to ensure swift on-boarding
-          of apps by automating the end-to-end delivery and also facilitate
-          constant integration as well as development across preeminent cloud
-          platforms.
+          At Code Garage Tech, we offer devops services to ensure swift
+          on-boarding of apps by automating the end-to-end delivery and also
+          facilitate constant integration as well as development across
+          preeminent cloud platforms.
           <br />
           <br />
-          We at Code Garage, aim to help business and organizations to line up
-          with the goals, reliably and swifty, producing top-quality
+          We at Code Garage Tech, aim to help business and organizations to line
+          up with the goals, reliably and swifty, producing top-quality
           software-based products & services. Achieve your business objectives
-          by creating applications at the speed of business with Code
-          Garage&apos;s extensive DevOps solutions. <br />
+          by creating applications at the speed of business with Code Garage
+          Tech&apos;s extensive DevOps solutions. <br />
           <br />
           With our DevOps consulting, we aid businesses of all sizes achieve
           elevated coherence in Development as well as Operations. Our DevOps
@@ -171,14 +171,15 @@ const content1 = () => {
           </h3>
         </div>
         <p className={hireService.hirep}>
-          We at Code Garage offer reliable DevOps automation testing solutions
-          by adopting a strategy that emphasizes integration, collaboration,
-          automation and collaboration. We aid you incorporate the necessary
-          changes in your technology culture and landscape. We effectively
-          leverage collaboration, monitoring, automation, cloud adoption, and
-          tool-chain pipelines to ensure swift onboarding of apps. Through our
-          DevOps consulting services, we assist businesses and startups in
-          aligning their operations and development for greater efficiency.
+          We at Code Garage Tech offer reliable DevOps automation testing
+          solutions by adopting a strategy that emphasizes integration,
+          collaboration, automation and collaboration. We aid you incorporate
+          the necessary changes in your technology culture and landscape. We
+          effectively leverage collaboration, monitoring, automation, cloud
+          adoption, and tool-chain pipelines to ensure swift onboarding of apps.
+          Through our DevOps consulting services, we assist businesses and
+          startups in aligning their operations and development for greater
+          efficiency.
         </p>
         <div
           id="ci/cd"
@@ -203,9 +204,9 @@ const content1 = () => {
           deliveries that does not affect the quality of software. The main
           concept of CI/CD pipeline is about making some alterations to code,
           developing, testing and delivering effective softwares responding to
-          business needs. We at Code Garage, have an adept team of developers
-          who offer CI/CD design and deployment solutions, CI/CD implementation
-          solutions, and plug-ins.
+          business needs. We at Code Garage Tech, have an adept team of
+          developers who offer CI/CD design and deployment solutions, CI/CD
+          implementation solutions, and plug-ins.
         </p>
         <div
           id="cloud"
@@ -224,15 +225,15 @@ const content1 = () => {
           </h3>
         </div>
         <p className={hireService.hirep}>
-          At Code Garage, we have skilled Cloud Computing engineers who manage
-          your complexities and challenges to simplify your software development
-          procedure. Our team ensures to deliver reliable Cloud Engineering
-          services in order to meet your business requirements. We thoroughly
-          understand the complexity of the Cloud computing ecosystem and also
-          know the challenges that most businesses face relating to its adoption
-          as well as growth. Regardless of where you are in the Cloud adoption
-          curve, we at Code Garage offer customized cloud engineering services
-          to match the demand of your business.
+          At Code Garage Tech, we have skilled Cloud Computing engineers who
+          manage your complexities and challenges to simplify your software
+          development procedure. Our team ensures to deliver reliable Cloud
+          Engineering services in order to meet your business requirements. We
+          thoroughly understand the complexity of the Cloud computing ecosystem
+          and also know the challenges that most businesses face relating to its
+          adoption as well as growth. Regardless of where you are in the Cloud
+          adoption curve, we at Code Garage Tech offer customized cloud
+          engineering services to match the demand of your business.
         </p>
       </div>
     </>

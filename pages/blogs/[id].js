@@ -8,7 +8,7 @@ import hireService from '../../styles/hireService.module.css'
 export default function BlogDetails({ blogData }) {
   const router = useRouter()
   const [name, setName] = useState('')
-  console.log('blogData', blogData.length, blogData)
+
   // useEffect used for solving hydration errror because name is not defined at server side
 
   useEffect(() => {
@@ -64,7 +64,7 @@ export default function BlogDetails({ blogData }) {
 }
 
 export async function getServerSideProps({ params }) {
-  const res = await fetch(
+  const res = await await fetch(
     `${process.env.NEXT_PUBLIC_BASE_URL}/blogs/slug/${params.id}`
   )
   const blogData = await res.json()

@@ -8,16 +8,11 @@ const GenericModal = (props) => {
     modalFooterShow,
     modalTitle,
     modalBody,
-    source,
   } = props
   return (
     <>
       <div className={`modal fade ${genModalshow && 'show'}`} id="myModal">
-        <div
-          className={`modal-dialog ${
-            source === 'careers' && 'modal-dialog-careers'
-          }`}
-        >
+        <div className="modal-dialog">
           <div className="modal-content">
             <div
               className={`modal-header justify-content-center ${

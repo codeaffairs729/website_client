@@ -2,49 +2,38 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/blogStyle.module.css'
-import { HiArrowSmRight } from 'react-icons/hi'
 
 export default function BlogSection({ data }) {
-  console.log({ data })
-  const blogData = data.filter((e, i) => i < 4)
+  const blogData = data.filter((e, i) => i < 3)
   return (
     <div className="container justify-content-center blog-container">
       <h2>Our Featured Blogs!</h2>
       <div className="row blog-list">
         {blogData.map((e, i) => (
-          <div className="col-12 col-lg-3 p-2" key={i}>
+          <div className="col-12 col-lg-4" key={i}>
             <div
-              className="card  shadow p-4 bg-body-tertiary"
-              style={{ borderRadius: '12px' }}
+              className="card m-2 shadow p-3 bg-body-tertiary"
+              style={{ borderRadius: 24 }}
             >
-              <Link href={`/blogs/${e.slug}`} className="">
-                <div
-                  className="card-img text-center cursor_pointer"
-                  style={{ borderRadius: '12px', overflow: 'hidden' }}
-                >
-                  <Image
-                    src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${e.image}`}
-                    width={620}
-                    height={350}
-                    objectFit=""
-                    // objectPosition="50% 50%"
-                    alt="a snow-capped mountain range"
-                  />
+              <div className="card-img text-center">
+                <Image
+                  src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${e.image}`}
+                  width={554}
+                  height={383}
+                  objectFit="contain"
+                  objectPosition="50% 50%"
+                  alt="a snow-capped mountain range"
+                />
+              </div>
+              <div className="card-body">
+                <div className="card-desc">
+                  <h3 className="card-title pt-2">{e.title}</h3>
+                  {/* <p className="card-text pt-2">
+                    When we talk about a website&apos;s performance, page speed
+                    is
+                  </p> */}
                 </div>
-              </Link>
-              <div className="card-body ">
-                <div className="card-desc   ">
-                  <Link href={`/blogs/${e.slug}`}>
-                    <h3 className="card-title cursor_pointer">{e.title}</h3>
-                  </Link>
-                  <p
-                    className="line-clamp-3"
-                    dangerouslySetInnerHTML={{
-                      __html: e.content,
-                    }}
-                  ></p>
-                </div>
-                <Link href={`/blogs/${e.slug}`} className="cursor_pointer">
+                <Link href={`/blogs/${e.slug}`} className="">
                   <button type="button" className="blog-btn">
                     READ MORE
                   </button>
@@ -53,16 +42,6 @@ export default function BlogSection({ data }) {
             </div>
           </div>
         ))}
-      </div>
-      <div className="text-end cursor_pointer">
-        <Link href="/user-blog-list">
-          <div className="blog-arrow">
-            <span className="fw-semibold link-underline-opacity-50 my-4 mx-2 blogs-link ">
-              Read other blogs
-            </span>
-            <HiArrowSmRight size={24} color="#5956e9" />
-          </div>
-        </Link>
       </div>
     </div>
   )

@@ -62,7 +62,7 @@ const content1 = () => {
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
         <p className={hireService.hirep}>
-          Code Garage is a preeminent mobile app development agency that is
+          Code Garage Tech is a preeminent mobile app development agency that is
           specifically driven by creativity and innovation. We have proved
           ourselves as a customer-trusted and credible company for over 6 years.
           We have delivered 900+ mobile apps with a 98% success rate, and our
@@ -179,7 +179,7 @@ const content1 = () => {
           React Native is one of the most eminent programming languages these
           days and businesses over the globe are swiftly implementing it to
           develop fully-featured as well as appealing cross-platform apps and
-          native user experience. We at Code Garage, have a long history of
+          native user experience. We at Code Garage Tech, have a long history of
           creating feature-rich business applications. We have adept react
           native developers who have wide domain competence to deliver
           end-to-end solutions.
@@ -213,8 +213,8 @@ const content1 = () => {
         </div>
         <p className={hireService.hirep}>
           Our Flutter mobile app development services are specifically designed
-          to aid you develop a multi-platform existence. We at Code Garage, have
-          adept flutter apps developers who create, design, test and launch
+          to aid you develop a multi-platform existence. We at Code Garage Tech,
+          have adept flutter apps developers who create, design, test and launch
           completely developed flutter applications. We develop react native
           applications for businesses of all sizes that are secure, reliable,
           and secure at the same time.

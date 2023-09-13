@@ -211,15 +211,15 @@ const ProgressiveWebApp = () => {
             $25,000 – $60,000 or more.
           </p>
           <h2 className="hire-h2">
-            How Can Code Garage Help You Achieve the Heights of Success?
+            How Can Code Garage Tech Help You Achieve the Heights of Success?
           </h2>
           <p className="hire-p">
-            Code Garage is a PWA development company that has served many
+            Code Garage Tech is a PWA development company that has served many
             clients around the globe. The company offers complete transparency,
             but customisation is what distinguishes it from other companies.
-            Code Garage has professional experts who have the necessary hands-on
-            expertise to offer you cutting-edge solutions that meet your
-            business requirement.
+            Code Garage Tech has professional experts who have the necessary
+            hands-on expertise to offer you cutting-edge solutions that meet
+            your business requirement.
           </p>
         </div>
       </div>
