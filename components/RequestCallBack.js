@@ -16,14 +16,14 @@ const RequestCallBack = ({ closeBtn }) => {
   const [message, setMessage] = useState('')
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
-  const [buttonText, setButtonText] = useState('Submit')
-  const [selectedOption, setSelectedOption] = useState('')
   const [resume, setResume] = useState('')
   const [resumeName, setResumeName] = useState('')
   const [resumeType, setResumeType] = useState('')
   const [resumeBase64, setResumeBase64] = useState('')
   const [createObjectURL, setCreateObjectURL] = useState('')
-  const [dropdownWidth, setDropdownWidth] = useState('')
+  const [stdCodeWidth, setStdCodeWidth] = useState('')
+  const [searchText, setSearchText] = useState('+1')
+  const [searchList, setSearchList] = useState([])
   const image = useRef(null)
   const submitBtn = useRef(null)
   const selectRef = useRef(null)
@@ -70,7 +70,7 @@ const RequestCallBack = ({ closeBtn }) => {
       body: JSON.stringify({
         name: name,
         email: email,
-        phone: selectedOption + ' ' + phone,
+        phone: searchText + ' ' + phone,
         message: message,
         resumeName: resumeName,
         resumeType: resumeType,
@@ -86,9 +86,10 @@ const RequestCallBack = ({ closeBtn }) => {
           setMessage('')
 
           submitBtn.current.innerHTML = 'Submitted'
-          submitBtn.current.disabled = false
+          submitBtn.current.disabled = true
           submitBtn.current.innerHTML = 'Submitted'
-          toast.success('Thanks for contacting!')
+          setResumeName('')
+          toast.success('Thanks for contacting !')
         } else {
           submitBtn.current.disabled = false
           submitBtn.current.innerHTML = 'Send Now'
@@ -108,22 +109,33 @@ const RequestCallBack = ({ closeBtn }) => {
   const openChatwoot = () => {
     window.$chatwoot.toggle('open')
   }
+
+  const handleOnType = (e) => {
+    setSearchText(e.target.value)
+    const list = countryCode.filter((code) => code.includes(e.target.value))
+    setSearchList(list)
+    if (e.target.value.length === 0) setSearchList([])
+  }
+
+  const handleOnSelect = (el) => {
+    setSearchText(el)
+    setSearchList([])
+  }
   useEffect(() => {
-    const selectedOptionText =
-      selectRef.current.options[selectRef.current.selectedIndex].text.trim()
-    const width = selectedOptionText.length + 'em'
+    const width = searchText.length + 'em'
+
     console.log('width:', width)
     if (width === '7em') {
-      width = '5em'
+      width = '4em'
     }
     if (width === '2em') {
       width = '3em'
     }
     if (width === '6em') {
-      width = '5em'
+      width = '4em'
     }
-    setDropdownWidth(width)
-  }, [selectedOption])
+    setStdCodeWidth(width)
+  }, [searchText])
 
   return (
     <>
@@ -166,27 +178,33 @@ const RequestCallBack = ({ closeBtn }) => {
               />
             </div>
             <div
-              className={`${styles.phone_input} mb-4  border border-1 border-grey w-100 rounded`}
+              className={`${styles.phone_input} mb-4  border border-1 border-grey rounded`}
             >
-              <div className={`${styles.flag_icon_container} left-phone-input`}>
-                <select
+              <div className={`${styles.flag_icon_container}`}>
+                <input
                   id="mySelect"
-                  ref={selectRef}
-                  value={selectedOption}
-                  className="d-flex align-content-center justify-content-center fs-6 text-black-50"
-                  onChange={(e) => setSelectedOption(e.target.value)}
-                  style={{ width: dropdownWidth }}
+                  value={searchText}
+                  className="fs-6 text-black-50 d-flex justify-content-center "
+                  onChange={(e) => handleOnType(e)}
+                  style={{ width: stdCodeWidth }}
+                />
+                <ul
+                  className={`overflow-auto  ${
+                    searchList.length !== 0 && 'border border-secondary-subtle '
+                  }`}
                 >
-                  <option value="+1">+1</option>
-
-                  {countryCode.map((el, index) => (
-                    <option key={index} value={`${el}`}>
+                  {searchList.map((el, index) => (
+                    <li
+                      className="cursor_pointer fs-6"
+                      onClick={() => handleOnSelect(el)}
+                      key={index}
+                    >
                       {el}
-                    </option>
+                    </li>
                   ))}
-                </select>
+                </ul>
               </div>
-              <div className="right-phone-input">
+              <div className="overflow-hidden ">
                 <input
                   id="tel"
                   type="tel"
@@ -197,6 +215,7 @@ const RequestCallBack = ({ closeBtn }) => {
                   style={{
                     borderLeft: '1px solid lightgrey',
                     padding: '4px 6px',
+                    width: '180px',
                   }}
                 />
               </div>
