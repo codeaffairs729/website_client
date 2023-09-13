@@ -12,19 +12,21 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
               style={{ width: '350px' }}
               key={i}
             >
-              <div>
-                <img
-                  src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${
-                    db === 'case-study' ? e.banner_img : e.image
-                  }`}
-                  style={{ width: '100%', height: '158px' }}
-                  alt="a snow-capped mountain range"
-                />
+              <div className="cursor_pointer">
+                <Link href={`/${db}/${e.slug}`}>
+                  <img
+                    src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${
+                      db === 'case-study' ? e.banner_img : e.image
+                    }`}
+                    style={{ width: '100%', height: '158px' }}
+                    alt="a snow-capped mountain range"
+                  />
+                </Link>
               </div>
               <div className="card-body">
                 <div className={styles.bloglistdesc}>
                   {/* <div className="blog-list-desc"> */}
-                  <Link href={`/${db}/${e.id}`}>
+                  <Link href={`/${db}/${e.slug}`}>
                     <h3 className={`pt-2 cursor_pointer ${styles.cardtitle}`}>
                       {/* <h3 className=" card-title pt-2 cursor_pointer"> */}
                       {e.title}
@@ -44,7 +46,7 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
                   </span>
                   {authorized && (
                     <>
-                      <Link href={`/${db}/edit/${e.slug}`}>
+                      <Link href={`/${db}/edit/${e.id}`}>
                         <span className="text-primary fw-bold">
                           <span
                             className={` ${styles.textblue} link-text fs-6 fw-semibold cursor_pointer`}

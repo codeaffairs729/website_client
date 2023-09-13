@@ -127,7 +127,7 @@ const Like = () => {
                       >
                         Every business has its own set of requirements, and we
                         are here to fulfill those requirements with transparency
-                        in custom web development services. Code Garage Tech is
+                        in custom web development services. Code Garage is
                         devoted to providing one-of-a-kind solutions for each
                         website design project and has assisted many customers
                         in realizing their goals.{' '}
@@ -223,7 +223,7 @@ const Like = () => {
                       <div className="collapse" id="collapseUptoDateonITTrends">
                         Our team of professional developers offers support and
                         maintenance services to enhance our client&apos;s
-                        business life. At Code Garage Tech, our client&apos;s
+                        business life. At Code Garage, our client&apos;s
                         satisfaction is indispensable because we don&apos;t want
                         them to face any kind of lag.
                       </div>

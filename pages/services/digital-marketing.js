@@ -60,7 +60,7 @@ const content1 = () => {
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
         <p className={`${hireService.hirep}  ${hireService.marginbottom24px}`}>
-          At Code Garage Tech, we are wholly focused on growth, and our digital
+          At Code Garage, we are wholly focused on growth, and our digital
           marketing team creates comprehensive paid media strategies and SEO
           that line up with the goals of your business. We have unique skill
           sets that aid us to capture the ideas of competitive markets and
@@ -176,9 +176,7 @@ const DigitalMarketing = () => {
   return (
     <>
       <Head>
-        <title>
-          Best and Reliable Digital Marketing Services- Code Garage Tech
-        </title>
+        <title>Best and Reliable Digital Marketing Services- Code Garage</title>
         <link
           rel="canonical"
           href="https://codegaragetech.com/services/digital-marketing"

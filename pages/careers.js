@@ -616,13 +616,13 @@ const Careers = () => {
                   <h2 className="career-area-8-heading">We&apos;re Fun</h2>
                   <p className="career-area-8-para">
                     Having a friendly workspace is all you need to be more
-                    productive and we at Code Garage Tech find fun in little
-                    things that make our day full of positive vibes. We Lift
-                    Spirits by making our office environment lively with great
-                    music. We believe that fun is essential to a good work
-                    environment. That&apos;s why we offer flexible hours, fun
-                    events, and challenging projects. We want you to feel like
-                    you&apos;re not just working—you&apos;re exuberant!
+                    productive and we at Code Garage find fun in little things
+                    that make our day full of positive vibes. We Lift Spirits by
+                    making our office environment lively with great music. We
+                    believe that fun is essential to a good work environment.
+                    That&apos;s why we offer flexible hours, fun events, and
+                    challenging projects. We want you to feel like you&apos;re
+                    not just working—you&apos;re exuberant!
                   </p>
                 </div>
               </div>
@@ -809,6 +809,7 @@ const Careers = () => {
           modalBodyShow={true}
           modalFooterShow={false}
           modalTitle={'Enter Your Details Below'}
+          source={'careers'}
           modalBody={
             <div>
               <input
@@ -858,6 +859,8 @@ const Careers = () => {
                 <option value="Laravel/PHP Developer">
                   Laravel/PHP Developer
                 </option>
+                <option value="Sales Executive">Sales Executive</option>
+                <option value="Online Bidder/BDE">Online Bidder/BDE</option>
                 <option value="Shopify Developer">Shopify Developer</option>
               </select>
               <select

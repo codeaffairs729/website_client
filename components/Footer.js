@@ -313,7 +313,7 @@ const Footer = () => {
                     <div className={`${FooterCss.stack_item_text}`}>Career</div>
                   </div>
                 </Link>
-                <Link href="/blogs">
+                <Link href="/user-blog-list">
                   <div className={`${FooterCss.stack_items} cursor_pointer`}>
                     <div className={`${FooterCss.stack_item_text}`}>Blogs</div>
                   </div>
@@ -539,19 +539,17 @@ const Footer = () => {
                 aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample"
               >
-                <Link href="/services/ecommerce-solutions">
-                  <div className={`${FooterCss.stack_items} cursor_pointer`}>
-                    <Image
-                      src={'/footer-images/commerce.png'}
-                      alt="E-commerce-Icon"
-                      height={16}
-                      width={16}
-                    />
-                    <div className={`${FooterCss.stack_item_text}`}>
-                      E-commerce
-                    </div>
+                <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                  <Image
+                    src={'/footer-images/commerce.png'}
+                    alt="E-commerce-Icon"
+                    height={16}
+                    width={16}
+                  />
+                  <div className={`${FooterCss.stack_item_text}`}>
+                    E-commerce
                   </div>
-                </Link>
+                </div>
                 <div className={`${FooterCss.stack_items} cursor_pointer`}>
                   <Image
                     src={'/footer-images/healthcare.png'}
@@ -629,12 +627,12 @@ const Footer = () => {
                 </div>
                 <div className={`${FooterCss.stack_items}`}>
                   <Image
-                    src={'/footer-images/ai.png'}
-                    alt="AI & ML"
+                    src={'/footer-images/travel.png'}
+                    alt="Travel"
                     height={16}
                     width={16}
                   />
-                  <div className={`${FooterCss.stack_item_text}`}>AI & ML</div>
+                  <div className={`${FooterCss.stack_item_text}`}>Travel</div>
                 </div>
               </div>
             </div>

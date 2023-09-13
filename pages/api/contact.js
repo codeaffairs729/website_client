@@ -25,7 +25,7 @@ const handler = (req, res) => {
                     </p>
 
                     <p>Regards,<br>
-                    Codegaragetech</p>`,
+                    CodeGarageTech Team</p>`,
         })
         .then(() => {
           res.status(200).json({ status: 'success' })
@@ -41,7 +41,7 @@ const handler = (req, res) => {
                         <p>We have recieved your email and will contact you soon.</p>
 
                         <p>Regards,<br>
-                        Codegaragetech</p>`,
+                        CodeGarageTech Team</p>`,
           })
         })
     } catch (err) {
