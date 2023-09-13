@@ -45,6 +45,14 @@ const FeatureList = () => {
             advice and solutions should be tailored accordingly. Allow us to
             assist you with top-notch software development solutions.
           </p>
+          <div className="circle-center">
+            <img
+              src="icons/Center_circle.png"
+              alt=""
+              // width={120}
+              // height={120}
+            />
+          </div>
         </div>
         <div className="col-md-12 col-lg-6">
           <div className="feature-list-div-container">
@@ -64,14 +72,15 @@ const FeatureList = () => {
             ))}
           </div>
         </div>
-      </div>
-      <div className="ellipse-blue-full">
-        <Image
-          src="/icons/Ellipse-blue-full.svg"
-          alt=""
-          width={56}
-          height={56}
-        />
+
+        <div className="ellipse-blue-full">
+          <Image
+            src="/icons/Ellipse-blue-full.svg"
+            alt="ellipse-blue"
+            width={56}
+            height={56}
+          />
+        </div>
       </div>
     </div>
   )

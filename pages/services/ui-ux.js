@@ -95,9 +95,7 @@ const content1 = () => {
 
           <h2
             className={`${hireService.hireh2} ${hireService.marginbottom24px}`}
-          >
-            Our UI/UX Process
-          </h2>
+          ></h2>
           <div className={`${styles.services_image_container}`}>
             <Image
               src="/services_images/uiux.png"

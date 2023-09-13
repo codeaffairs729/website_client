@@ -94,6 +94,19 @@ const Footer = () => {
                 <div className={`${FooterCss.india_container}`}>
                   <span>
                     <Image
+                      src="/footer-images/india_logo.svg"
+                      alt="india-flag-logo"
+                      width={32}
+                      height={24}
+                    />
+                  </span>
+                  <span className={FooterCss.india_text}>
+                    &nbsp;&nbsp;+91 814 639 4889
+                  </span>
+                </div>
+                <div className={`${FooterCss.india_container}`}>
+                  <span>
+                    <Image
                       src="/footer-images/US_logo.svg"
                       alt="us-flag-logo"
                       width={32}
@@ -102,19 +115,6 @@ const Footer = () => {
                   </span>
                   <span className={FooterCss.usa_text}>
                     &nbsp;&nbsp;+1 760 683 9821
-                  </span>
-                </div>
-                <div className={`${FooterCss.india_container}`}>
-                  <span>
-                    <Image
-                      src="/footer-images/india_logo.svg"
-                      alt="india-flag-logo"
-                      width={32}
-                      height={24}
-                    />
-                  </span>
-                  <span className={FooterCss.india_text}>
-                    &nbsp;&nbsp;+91 8146394889
                   </span>
                 </div>
 
@@ -139,10 +139,9 @@ const Footer = () => {
                 </div>
               </div>
               <div className={` ${FooterCss.address_text}  `}>
-                The Atrium Quarkcity, industrial <br />
-                area,SAS-Nagar,Mohali,Punjab
-                <br />
-                -160059
+                The Atrium Quarkcity, Industrial <br />
+                Area, Sahibzada Ajit Singh Nagar, Mohali,
+                <br /> Punjab -160059
               </div>
 
               <div className={`${FooterCss.social_links_container}`}>
@@ -539,7 +538,7 @@ const Footer = () => {
                 aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample"
               >
-                <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                <div className={`${FooterCss.stack_items}`}>
                   <Image
                     src={'/footer-images/commerce.png'}
                     alt="E-commerce-Icon"
@@ -550,7 +549,7 @@ const Footer = () => {
                     E-commerce
                   </div>
                 </div>
-                <div className={`${FooterCss.stack_items} cursor_pointer`}>
+                <div className={`${FooterCss.stack_items}`}>
                   <Image
                     src={'/footer-images/healthcare.png'}
                     alt="Healthcare-Icon"

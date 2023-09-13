@@ -1,20 +1,15 @@
 import React from 'react'
 import styles from '../../styles/case-page.module.css'
 
-const Video = () => {
+const Video = ({ Casedata }) => {
+  console.log(Casedata)
   return (
     <div className={styles.videoContainer}>
-      {/* <video controls autoplay className={styles.video}>
-        <img src="/Industries/AI.webp" />
-      </video> */}
-
+      {/* Render the image and overlay text */}
       <div className={styles.video}>
-        <img src="/case_study/scuba_diving.png" />
+        <img src={Casedata.img} />
         <div className={styles.overlay_text}>
-          <p>
-            Mobile App <br />
-            for Divers
-          </p>
+          <p>{Casedata.title}</p>
         </div>
       </div>
     </div>

@@ -13,43 +13,76 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
               key={i}
             >
               <div className="cursor_pointer">
-                <Link href={`/${db}/${e.slug}`}>
-                  <img
-                    src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${
-                      db === 'case-study' ? e.banner_img : e.image
-                    }`}
-                    style={{ width: '100%', height: '158px' }}
-                    alt="a snow-capped mountain range"
-                  />
-                </Link>
+                <div className="cursor_pointer">
+                  {typeof db === 'undefined' ? (
+                    <Link href={`/caseStudies/${e.id}`}>
+                      <a>
+                        <img
+                          src={e.img}
+                          style={{ width: '100%', height: '158px' }}
+                          alt="a snow-capped mountain range"
+                        />
+                      </a>
+                    </Link>
+                  ) : (
+                    <Link href={`/${db}/${e.slug}`}>
+                      <a>
+                        <img
+                          src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${
+                            db === 'case-study' ? e.banner_img : e.image
+                          }`}
+                          style={{ width: '100%', height: '158px' }}
+                          alt="a snow-capped mountain range"
+                        />
+                      </a>
+                    </Link>
+                  )}
+                </div>
               </div>
               <div className="card-body">
                 <div className={styles.bloglistdesc}>
                   {/* <div className="blog-list-desc"> */}
-                  <Link href={`/${db}/${e.slug}`}>
-                    <h3 className={`pt-2 cursor_pointer ${styles.cardtitle}`}>
-                      {/* <h3 className=" card-title pt-2 cursor_pointer"> */}
-                      {e.title}
-                    </h3>
-                  </Link>
+
+                  {typeof db === 'undefined' ? (
+                    <Link href={`/caseStudies/${e.id}`}>
+                      <h3 className={`pt-2 cursor_pointer ${styles.cardtitle}`}>
+                        {/* <h3 className=" card-title pt-2 cursor_pointer"> */}
+                        {e.title}
+                        <div className={styles.truncate}>{e.about}</div>
+                      </h3>
+                    </Link>
+                  ) : (
+                    <Link href={`/${db}/${e.slug}`}>
+                      <h3 className={`pt-2 cursor_pointer ${styles.cardtitle}`}>
+                        {/* <h3 className=" card-title pt-2 cursor_pointer"> */}
+                        {e.title}
+                      </h3>
+                    </Link>
+                  )}
                 </div>
                 <br />
                 <div className="d-flex justify-content-between">
                   <span className="text-primary fw-bold">
-                    <Link href={`/${db}/${e.slug}`}>
+                    <Link
+                      href={
+                        typeof db === 'undefined'
+                          ? `/caseStudies/${e.id}`
+                          : `/${db}/${e.slug}`
+                      }
+                    >
                       <span
-                        className={`${styles.textblue} link-text fs-6 fw-semibold cursor_pointer `}
+                        className={`${styles.textblue} link-text fs-6 fw-semibold cursor_pointer`}
                       >
                         READ MORE
                       </span>
                     </Link>
                   </span>
-                  {authorized && (
+                  {authorized && typeof db !== 'undefined' && (
                     <>
                       <Link href={`/${db}/edit/${e.id}`}>
                         <span className="text-primary fw-bold">
                           <span
-                            className={` ${styles.textblue} link-text fs-6 fw-semibold cursor_pointer`}
+                            className={`${styles.textblue} link-text fs-6 fw-semibold cursor_pointer`}
                           >
                             EDIT
                           </span>

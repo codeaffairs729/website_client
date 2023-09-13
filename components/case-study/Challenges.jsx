@@ -1,24 +1,18 @@
+import React from 'react'
 import listStyle from '../../styles/hireService.module.css'
 import style from '../../styles/case-page.module.css'
 
-const Challenges = () => {
-  const list = [
-    'Underwater image enhancement',
-    'In-app implementation of Buhlmann Decompression',
-    'Complex system design',
-    'Synchronization of log data with the cloud, such as Images, Videos, Meta-data information',
-    'Complex scientific data analysis and representation',
-    'Complex environment simulation for testing',
-  ]
+const Challenges = ({ Casedata }) => {
+  console.log(Casedata)
   return (
     <>
       <div className={style.challenge_main}>
         <div className={style.challenge_img}>
           <div>
-            <img src="/case_study/Group_pic1.png" />
+            <img src={Casedata.challengeimg1} height={500} width={250} />
           </div>
           <div>
-            <img src="/case_study/Group_pic2.png" />
+            <img src={Casedata.challengeimg2} height={500} width={250} />
           </div>
         </div>
         <div>
@@ -27,7 +21,7 @@ const Challenges = () => {
             <ul
               className={`${listStyle.hirelisticon} ${listStyle.hire_list_items_services} `}
             >
-              {list.map((item, index) => (
+              {Casedata.Challenges.map((item, index) => (
                 <li key={index} className={listStyle.marginebottom16px}>
                   <p className={listStyle.marginleft25px}>{item}</p>
                 </li>

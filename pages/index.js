@@ -1,9 +1,22 @@
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
-import Main from './main'
+// import Main from './main'
 import { useRouter } from 'next/router'
 import { useEffect, useState, useRef } from 'react'
 
+// const ShimmerEffect = dynamic(() => import('./../components/ShimmerHome'), {
+//   ssr: false,
+// })
+
+// import ShimmerEffect from './../components/ShimmerHome'
+
+const Main = dynamic(() => import('./main'), {
+  ssr: false,
+})
+
+const DevOps = dynamic(() => import('../components/DevOpSection'), {
+  ssr: false,
+})
 const BlogSection = dynamic(() => import('../components/BlogSection'), {
   ssr: false,
 })
@@ -25,6 +38,11 @@ const Design = dynamic(() => import('./design'), {
 const Industries = dynamic(() => import('./industries'), {
   ssr: false,
 })
+const DevOpsStatic = dynamic(() =>
+  import('../components/DevOpSectionStatic', {
+    ssr: false,
+  })
+)
 
 // const LandingModal = dynamic(() => import('../components/LandingModal'), {
 //   ssr: true,
@@ -36,6 +54,13 @@ const CaseStudySection = dynamic(() =>
 
 export default function Home({ data, caseData }) {
   const Router = useRouter()
+  const [show, SetShow] = useState(true)
+
+  // useState(() => {
+  //   setTimeout(() => {
+  //     SetShow(false)
+  //   }, 500)
+  // }, [])
 
   useEffect(() => {
     // don't delete chatwoot code
@@ -72,9 +97,12 @@ export default function Home({ data, caseData }) {
             height={50}
           />
         </a>
+        {/* {show ? <ShimmerEffect /> : <Main />} */}
         <Main />
         <FeatureList />
         {/* <CaseStudySection data={data} /> */}
+        {/* <DevOps /> */}
+        <DevOpsStatic />
         <Access />
         <Layouts />
         <Design />
