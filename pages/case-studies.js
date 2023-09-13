@@ -7,7 +7,7 @@ import style from '../styles/case-page.module.css'
 const CaseStudies = () => {
   return (
     <>
-      {/* <div className={style.container}>
+      <div className={style.container}>
         <img
           src="/case_study/Ellipse_blue.png"
           className={style.ellipse_blue_img}
@@ -24,7 +24,7 @@ const CaseStudies = () => {
         <About />
         <Challenges />
         <Effort />
-      </div> */}
+      </div>
     </>
   )
 }

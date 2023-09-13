@@ -60,9 +60,7 @@ export default function BlogSection({ data }) {
             <span className="fw-semibold link-underline-opacity-50 my-4 mx-2 blogs-link ">
               Read other blogs
             </span>
-            <svg className="icon icon-arrow-right" aria-labelledby="fwd-icon">
-              <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
-            </svg>
+            <HiArrowSmRight size={24} color="#5956e9" />
           </div>
         </Link>
       </div>

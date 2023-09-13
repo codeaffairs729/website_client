@@ -4,7 +4,6 @@ import GenericModal from '../components/GenericModal'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
 import Slider from 'react-slick'
-import BuildingPicsSlider from './buildingPicsSlider'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Head from 'next/head'
@@ -784,9 +783,6 @@ const Careers = () => {
           </div>
           <div className="rounded-circle career-area-9-circle-1"></div>
           <div className="rounded-circle career-area-9-circle-2"></div>
-        </div>
-        <div>
-          <BuildingPicsSlider />
         </div>
         <div className="container-fluid career-area-6">
           <div className="row text-center career-area-6-row">

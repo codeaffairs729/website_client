@@ -100,8 +100,8 @@ const content1 = () => {
           >
             Chatwoot allows you to connect with eminent customer communication
             platforms such as Website live chat, Email, WhatsApp, Facebook,
-            Instagram, Twitter, etc. This platform aids you deliver a reliable
-            CX across various platforms- from a sole dashboard. <br />
+            Instagram, Twitter, etc. This aids you deliver a reliable CX across
+            various platforms- from a sole dashboard. <br />
             <br />
             At Code Garage, we offer good customer service by providing a
             Chatwoot framework that helps your business achieve new heights of

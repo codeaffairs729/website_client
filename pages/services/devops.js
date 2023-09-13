@@ -38,18 +38,17 @@ const contentHeader1 = () => {
             </li>
           </ul>
         </div>
-        <div className={hireService.devopsimage}>
-          <div className={hireService.adjustdevopsimg}>
-            {/* <img src="/icons/service-icon/cloud.webp"  /> */}
-            {/* <div> */}
-            <Image
-              src="/devops/devops.png"
-              alt="devops image"
-              width={692}
-              height={420}
-            />
-            {/* </div> */}
-          </div>
+        <div className={hireService.techservicebodyright}>
+          {/* <img src="/icons/service-icon/cloud.webp"  /> */}
+          {/* <div> */}
+          <Image
+            src="/icons/service-icon/cloud.webp"
+            alt="3D Cloud"
+            width={378}
+            height={280}
+            priority={true}
+          />
+          {/* </div> */}
         </div>
       </div>
     </>
