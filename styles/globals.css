@@ -3025,7 +3025,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .career-area-6 {
-  margin-top: 150px;
+  margin-bottom: 5vw;
   margin-bottom: 70px;
   position: relative;
 }
@@ -4096,6 +4096,11 @@ body:not(.touch-device) .header-item[href]:before {
     font-size: 30px;
     line-height: 1.5;
     width: auto;
+  }
+  .header-dropdown-body {
+    height: 313px;
+    margin-top: 20px;
+    /* background: #ffffff; */
   }
   .main-big-blue-circle {
     display: none;
@@ -5278,5 +5283,17 @@ body:not(.touch-device) .header-item[href]:before {
     position: relative;
     font-size: 0.85rem;
     top: -157px;
+  }
+}
+@media (max-width: 767px) {
+  .header__row {
+    padding: 10px 30px;
+    height: 860px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .header__row {
+    padding: 10px 30px;
+    height: 932px;
   }
 }

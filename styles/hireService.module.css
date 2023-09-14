@@ -21,7 +21,15 @@
   margin-left: 4px;
   margin-bottom: 24px;
 }
-
+.hireh6 {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 3.5rem;
+  color: black;
+  font-style: normal;
+  margin-left: 57px;
+  margin-top: 50px;
+}
 .hire-desc {
   font-family: 'Poppins';
   font-style: normal;
@@ -157,6 +165,10 @@
 .techservicebody {
   display: flex;
   padding-block: 0px 116px;
+  justify-content: space-between;
+}
+.techAIservicebody {
+  padding-block: 0px 30px;
   justify-content: space-between;
 }
 .techservicebodyleft {
@@ -357,7 +369,10 @@
   border-radius: 32px;
   padding: 20px;
 }
-
+.mainAIcontainer {
+  margin-top: 25px;
+  padding: 0px 65px 0px;
+}
 .smalltext {
   font-size: 14px;
 }
@@ -400,6 +415,9 @@
   .techservicebodyright {
     width: 350px;
   }
+  .AIservicebodyright {
+    width: 350px;
+  }
   /* .hire-container-body-right {
     max-width: 300px;
   } */
@@ -425,10 +443,19 @@
   .techservicebody {
     padding-block: 0px 36px;
   }
+  .techAIservicebody {
+    padding-block: 0px 36px;
+  }
+  /* .AIservicebody {
+    padding-block: 0px 36px;
+  } */
   .techservicebodyright {
     padding-right: 0px;
   }
 
+  .AIservicebodyright {
+    padding-right: 0px;
+  }
   .hiringmodel:nth-child(2) {
     border-left: none;
     padding-left: 0px;
@@ -551,6 +578,9 @@
   .techservicebodyright {
     width: 250px;
   }
+  .AIservicebodyright {
+    width: 250px;
+  }
   .hirecontainerbodycontent {
     margin-top: -25px;
   }
@@ -659,6 +689,95 @@
   background-repeat: no-repeat;
   background-position: left top;
   text-align: left;
+}
+
+.Aicontainerrighttext {
+  margin-left: 55px;
+  margin-top: 26px;
+}
+.AIcontainer {
+  background-image: linear-gradient(
+    to right,
+    rgba(236, 242, 246, 0.8),
+    rgba(255, 255, 255, 0.8)
+  );
+  border-radius: 3rem;
+  margin-left: 50px;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  padding-top: 9px;
+}
+
+.solutiontext {
+  margin-bottom: 30px;
+  width: 460px;
+  color: rgb(167, 172, 176);
+  margin-left: 74px;
+  margin-top: 38px;
+  font-size: 18px;
+  font-family: 'Poppins';
+}
+
+.AIservicebody {
+  display: flex;
+  padding-block: 0px 80px;
+}
+
+.Aicontainerleftttext {
+  margin-left: 124px;
+  margin-top: 50px;
+}
+.AIlisticon li {
+  background-position: left top;
+  text-align: left;
+  font-weight: 600;
+  list-style-type: disc;
+  font-size: 20px;
+  font-family: 'Poppins';
+}
+.AIlisticon ul {
+  color: black;
+  padding: 0;
+}
+.AIservicebodyright {
+  padding-right: 74px;
+  width: 400px;
+}
+.AIbottomcircle1 {
+  bottom: -9%;
+  right: 2%;
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  background-color: #d9d9db;
+  border-radius: 50%;
+  z-index: 1;
+}
+.AItopcircle {
+  top: -4%;
+  left: 87%;
+  background-color: #fab8c4;
+  border-radius: 50px;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+}
+.AIbottomcircle2 {
+  bottom: 38%;
+  left: 50%;
+  height: 45px;
+  width: 45px;
+  background-color: #5956e9;
+  border-radius: 50px;
+  position: absolute;
+}
+.Aiconatinerright {
+  margin-left: 80px;
+}
+.adjustvicebodyleft {
+  margin-top: 2vw;
 }
 
 .hirelisticon li::before {
@@ -810,10 +929,19 @@
 .techservicebody {
   min-height: 370px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  margin-top: 127px;
+  margin-top: 90px;
+}
+.techAIservicebody {
+  min-height: 370px;
+  display: flex;
+  margin-top: -70px;
+}
+.AIservicebody {
+  display: flex;
+  gap: 70px;
+  margin-top: 10px;
+
+  margin-left: 15px;
 }
 .tech-service-body-left-left {
   flex-basis: 60%;
@@ -946,6 +1074,31 @@
     width: 92%;
   }
 }
+
+@media screen and (max-width: 1180px) {
+  .AIbottomcircle1 {
+    bottom: -6%;
+    right: 5%;
+  }
+  .adjustservicebody {
+    gap: 0px;
+    margin-left: 0px;
+  }
+  .Aiconatinerright {
+    margin: 0px;
+  }
+
+  .AIservicebody {
+    gap: 0px;
+  }
+  .AIbottomcircle2 {
+    bottom: 41%;
+    left: 58%;
+  }
+  .Aiservicebodyleft {
+    margin-left: 0px;
+  }
+}
 @media screen and (max-width: 991px) {
   .servicecontainer {
     padding-left: 45px;
@@ -953,6 +1106,9 @@
   }
 
   .techservicebodyleft {
+    text-align: center;
+  }
+  .AIservicebodyleft {
     text-align: center;
   }
 
@@ -984,6 +1140,14 @@
     flex-direction: column-reverse;
     justify-content: center;
   }
+  .techAIservicebody {
+    flex-direction: column-reverse;
+  }
+  .AIservicebody {
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+  }
   .servicebody {
     flex-direction: column;
   }
@@ -1009,6 +1173,42 @@
 
   .secondary-header {
     font-size: 80px;
+  }
+  .adjusAItservicebody {
+    margin-top: -6vw;
+  }
+  .Aicontainerleftttext {
+    margin-left: 155px;
+  }
+  .AIimage {
+    margin-left: 93px;
+  }
+  .AIcontainer {
+    padding-top: 10px;
+    margin-left: -70px;
+  }
+  .mainAIcontainer {
+    padding: 0px;
+  }
+  .hireh6 {
+    margin-left: 85px;
+    margin-top: 30px;
+  }
+  .Aiservicebodyleft {
+    margin-left: 43px;
+    margin-top: -15px;
+  }
+
+  .Aiconatinerright {
+    margin-top: -46px;
+    margin-left: 145px;
+  }
+  .AIbottomcircle2 {
+    bottom: 51%;
+    left: 79%;
+  }
+  .solutiontext {
+    width: 580px;
   }
 }
 
@@ -1100,5 +1300,51 @@
 
   .secondary-header {
     font-size: 35px;
+  }
+
+  .adjustAIservicebody {
+    margin-top: -10vw;
+  }
+  .AIcontainer {
+    width: 500px;
+    border-radius: 0rem;
+  }
+  .solutiontext {
+    width: 330px;
+    margin-left: 52px;
+    margin-top: 0px;
+  }
+  .hireh6 {
+    margin-top: 25px;
+    margin-left: 49px;
+  }
+  .AItopcircle {
+    display: none;
+  }
+  .AIbottomcircle1 {
+    display: none;
+  }
+  .AIbottomcircle2 {
+    display: none;
+  }
+  .Aiconatinerright {
+    margin-top: -48px;
+    width: 410px;
+    margin-left: 23px;
+  }
+  .Aicontainerleftttext {
+    margin-left: 80px;
+    width: 320px;
+  }
+  .mainAIcontainer {
+    margin-left: 38px;
+    margin-top: 10px;
+  }
+  .Aiservicebodyleft {
+    margin-left: -5px;
+    margin-top: -15px;
+  }
+  .AIimage {
+    margin-left: 20px;
   }
 }
