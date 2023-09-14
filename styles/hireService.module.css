@@ -1081,14 +1081,20 @@
     margin-left: 0px;
   }
   .Aiconatinerright {
-    margin: 0px;
+    width: 50%;
   }
 
   .AIservicebody {
     gap: 0px;
   }
   .Aiservicebodyleft {
-    margin-left: 0px;
+    width: 50%;
+  }
+  .solutiontext {
+    width: 74%;
+  }
+  .mainAIcontainer {
+    padding: 0px 118px 0px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -1180,14 +1186,16 @@
     margin-left: -83px;
   }
   .hireh6 {
-    margin-left: 85px;
+    margin-left: 170px;
     margin-top: 30px;
   }
   .Aiservicebodyleft {
     margin-left: 43px;
     margin-top: -15px;
   }
-
+  .solutiontext {
+    margin-left: 123px;
+  }
   .Aiconatinerright {
     margin-top: -46px;
     margin-left: 145px;
@@ -1198,6 +1206,13 @@
   }
   .solutiontext {
     width: 580px;
+  }
+  .mainAIcontainer {
+    padding: 0px;
+  }
+  .Aiconatinerright,
+  .Aicontainerleftttext {
+    width: 100%;
   }
 }
 
@@ -1296,7 +1311,7 @@
   }
   .AIcontainer {
     width: 500px;
-    margin-left: -129px;
+    margin-left: -44px;
     border-radius: 0rem;
   }
   .solutiontext {
@@ -1306,7 +1321,7 @@
   }
   .hireh6 {
     margin-top: 25px;
-    margin-left: 49px;
+    margin-left: 54px;
   }
   .AItopcircle {
     display: none;
@@ -1327,7 +1342,6 @@
     width: 320px;
   }
   .mainAIcontainer {
-    margin-left: 38px;
     margin-top: 10px;
   }
   .Aiservicebodyleft {
