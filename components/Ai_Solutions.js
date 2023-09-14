@@ -6,7 +6,7 @@ const techTitle = 'AI ENHANCED SOLUTIONS'
 const Aisolutions = () => {
   return (
     <>
-      <div className={` feature-list container ${hireService.mainAIcontainer}`}>
+      <div className={hireService.mainAIcontainer}>
         <div className={hireService.AIcontainer}>
           <div className={hireService.AItopcircle}></div>
           <div className={hireService.hireh6}>{techTitle}</div>

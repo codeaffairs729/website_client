@@ -1091,10 +1091,6 @@
   .AIservicebody {
     gap: 0px;
   }
-  .AIbottomcircle2 {
-    bottom: 41%;
-    left: 58%;
-  }
   .Aiservicebodyleft {
     margin-left: 0px;
   }
@@ -1185,10 +1181,7 @@
   }
   .AIcontainer {
     padding-top: 10px;
-    margin-left: -70px;
-  }
-  .mainAIcontainer {
-    padding: 0px;
+    margin-left: -83px;
   }
   .hireh6 {
     margin-left: 85px;
@@ -1307,6 +1300,7 @@
   }
   .AIcontainer {
     width: 500px;
+    margin-left: -129px;
     border-radius: 0rem;
   }
   .solutiontext {
