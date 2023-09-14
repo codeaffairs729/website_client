@@ -1076,10 +1076,6 @@
 }
 
 @media screen and (max-width: 1180px) {
-  .AIbottomcircle1 {
-    bottom: -6%;
-    right: 5%;
-  }
   .adjustservicebody {
     gap: 0px;
     margin-left: 0px;

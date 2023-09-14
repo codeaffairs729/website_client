@@ -24,9 +24,9 @@ const FeatureList = dynamic(() => import('../components/FeatureList'), {
   ssr: false,
 })
 
-const Layouts = dynamic(() => import('./layouts'), {
-  ssr: false,
-})
+// const Layouts = dynamic(() => import('./layouts'), {
+//   ssr: false,
+// })
 const Access = dynamic(() => import('./access'), {
   ssr: false,
 })
@@ -103,7 +103,7 @@ export default function Home({ data, caseData }) {
         {/* <DevOps /> */}
         <AiSolutions />
         <Access />
-        <Layouts />
+        {/* <Layouts /> */}
         <Design />
         <Industries />
         <BlogSection data={data} />
