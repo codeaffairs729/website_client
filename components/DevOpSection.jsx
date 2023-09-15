@@ -7,13 +7,13 @@ const DevOpSection = () => {
     <div className={style.container}>
       <div className={style.image_container}>
         <h1>Our DevOps Culture</h1>
-        <img
+        {/* <img
           src="/dev_ops/devops_main_1.png"
           // height={500}
           // width={500}
           // layout="fill"
           alt="dev-ops-png"
-        />
+        /> */}
         {/* <div className={style.icons_div}>
           <img src={gitlab} />
           <p>GitLab</p>
