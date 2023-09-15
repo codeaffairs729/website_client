@@ -22,7 +22,7 @@
   margin-bottom: 24px;
 }
 .hireh6 {
-  font-family: 'Poppins';
+  font-family: 'Poppins,Arial, Helvetica, sans-serif';
   font-weight: 400;
   font-size: 3.5rem;
   color: black;
@@ -744,6 +744,10 @@
 .AIservicebodyright {
   padding-right: 74px;
   width: 400px;
+  width: 50%;
+}
+.AIservicebodyleft {
+  width: 50%;
 }
 .AIbottomcircle1 {
   bottom: -9%;
@@ -1091,10 +1095,7 @@
     width: 50%;
   }
   .solutiontext {
-    width: 74%;
-  }
-  .mainAIcontainer {
-    padding: 0px 118px 0px;
+    width: 79%;
   }
 }
 @media screen and (max-width: 991px) {
@@ -1186,7 +1187,7 @@
     margin-left: -83px;
   }
   .hireh6 {
-    margin-left: 170px;
+    margin-left: 111px;
     margin-top: 30px;
   }
   .Aiservicebodyleft {
