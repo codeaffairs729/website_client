@@ -38,11 +38,11 @@ const Design = dynamic(() => import('./design'), {
 const Industries = dynamic(() => import('./industries'), {
   ssr: false,
 })
-const AiSolutions = dynamic(() =>
-  import('../components/Ai_Solutions', {
-    ssr: false,
-  })
-)
+// const AiSolutions = dynamic(() =>
+//   import('../components/Ai_Solutions', {
+//     ssr: false,
+//   })
+// )
 // const LandingModal = dynamic(() => import('../components/LandingModal'), {
 //   ssr: true,
 // })
@@ -101,7 +101,7 @@ export default function Home({ data, caseData }) {
         <FeatureList />
         {/* <CaseStudySection data={data} /> */}
         {/* <DevOps /> */}
-        <AiSolutions />
+        {/* <AiSolutions /> */}
         <Access />
         {/* <Layouts /> */}
         <Design />
