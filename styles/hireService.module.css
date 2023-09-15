@@ -1092,6 +1092,9 @@
   .solutiontext {
     width: 79%;
   }
+  .AIbottomcircle1{
+    display:none;
+  }
 }
 @media screen and (max-width: 991px) {
   .servicecontainer {
