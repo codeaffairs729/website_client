@@ -17,9 +17,9 @@ const Main = dynamic(() => import('./main'), {
 // const DevOps = dynamic(() => import('../components/DevOpSection'), {
 //   ssr: false,
 // })
-const BlogSection = dynamic(() => import('../components/BlogSection'), {
-  ssr: false,
-})
+// const BlogSection = dynamic(() => import('../components/BlogSection'), {
+//   ssr: false,
+// })
 const FeatureList = dynamic(() => import('../components/FeatureList'), {
   ssr: false,
 })
@@ -106,7 +106,7 @@ export default function Home({ data, caseData }) {
         {/* <Layouts /> */}
         <Design />
         <Industries />
-        <BlogSection data={data} />
+        {/* <BlogSection data={data} /> */}
       </div>
     </>
   )
