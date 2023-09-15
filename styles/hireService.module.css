@@ -1072,7 +1072,12 @@
   margin-left: 30px;
 }
 /* media query */
-
+.Aiconatinerright {
+  width: 50%;
+}
+.Aiservicebodyleft {
+  width: 50%;
+}
 @media screen and (max-width: 1439px) {
   .hirecontainer {
     width: 92%;
@@ -1083,12 +1088,6 @@
   .adjustservicebody {
     gap: 0px;
     margin-left: 0px;
-  }
-  .Aiconatinerright {
-    width: 50%;
-  }
-  .Aiservicebodyleft {
-    width: 50%;
   }
   .solutiontext {
     width: 79%;
