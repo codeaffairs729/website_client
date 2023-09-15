@@ -16,20 +16,20 @@ const Main = dynamic(() => import('./main'), {
 
 // const DevOps = dynamic(() => import('../components/DevOpSection'), {
 //   ssr: false,
-// })
+// // })
 // const BlogSection = dynamic(() => import('../components/BlogSection'), {
 //   ssr: false,
 // })
-const FeatureList = dynamic(() => import('../components/FeatureList'), {
-  ssr: false,
-})
+// const FeatureList = dynamic(() => import('../components/FeatureList'), {
+//   ssr: false,
+// })
 
 // const Layouts = dynamic(() => import('./layouts'), {
 //   ssr: false,
 // })
-const Access = dynamic(() => import('./access'), {
-  ssr: false,
-})
+// const Access = dynamic(() => import('./access'), {
+//   ssr: false,
+// })
 
 const Design = dynamic(() => import('./design'), {
   ssr: false,
@@ -98,11 +98,11 @@ export default function Home({ data, caseData }) {
         </a>
         {/* {show ? <ShimmerEffect /> : <Main />} */}
         <Main />
-        <FeatureList />
+        {/* <FeatureList /> */}
         {/* <CaseStudySection data={data} /> */}
         {/* <DevOps /> */}
         {/* <AiSolutions /> */}
-        <Access />
+        {/* <Access /> */}
         {/* <Layouts /> */}
         <Design />
         <Industries />

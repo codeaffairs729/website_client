@@ -22,7 +22,7 @@
   margin-bottom: 24px;
 }
 .hireh6 {
-  font-family: 'Poppins,Arial, Helvetica, sans-serif';
+  font-family: 'Poppins';
   font-weight: 400;
   font-size: 3.5rem;
   color: black;
@@ -944,8 +944,6 @@
   display: flex;
   gap: 70px;
   margin-top: 10px;
-
-  margin-left: 15px;
 }
 .tech-service-body-left-left {
   flex-basis: 60%;
@@ -1074,9 +1072,11 @@
 /* media query */
 .Aiconatinerright {
   width: 50%;
+  margin-left: 90px;
 }
 .Aiservicebodyleft {
   width: 50%;
+  padding-left: 34px;
 }
 @media screen and (max-width: 1439px) {
   .hirecontainer {
@@ -1090,10 +1090,10 @@
     margin-left: 0px;
   }
   .solutiontext {
-    width: 79%;
+    width: 96%;
   }
-  .AIbottomcircle1{
-    display:none;
+  .AIservicebody {
+    gap: 0px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -1195,10 +1195,10 @@
   .solutiontext {
     margin-left: 123px;
   }
-  .Aiconatinerright {
+  /* .Aiconatinerright {
     margin-top: -46px;
     margin-left: 145px;
-  }
+  } */
   .AIbottomcircle2 {
     bottom: 51%;
     left: 79%;
@@ -1209,8 +1209,13 @@
   .mainAIcontainer {
     padding: 0px;
   }
-  .Aiconatinerright,
-  .Aicontainerleftttext {
+  .Aiconatinerright {
+    width: 60%;
+    margin-left: 175px;
+    margin-top: -50px;
+  }
+
+  .Aiservicebodyleft {
     width: 100%;
   }
 }
@@ -1332,9 +1337,8 @@
     display: none;
   }
   .Aiconatinerright {
-    margin-top: -48px;
     width: 410px;
-    margin-left: 23px;
+    margin-left: 55px;
   }
   .Aicontainerleftttext {
     margin-left: 80px;
