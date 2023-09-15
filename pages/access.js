@@ -102,9 +102,9 @@ const Access = () => {
       <ToastContainer />
       <div className="access">
         <div className="access__center center">
-          {/* <h2 className="access-top-heading access-top-heading-text">
+          <h2 className="access-top-heading access-top-heading-text">
             We Simplify and Streamline Each Step In Your App.
-          </h2> */}
+          </h2>
           <div
             className="access__view connect__view"
             data-aos

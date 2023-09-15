@@ -11,38 +11,34 @@ import { useEffect, useState, useRef } from 'react'
 // import ShimmerEffect from './../components/ShimmerHome'
 
 const Main = dynamic(() => import('./main'), {
-  ssr: true,
+  ssr: false,
 })
 
 // const DevOps = dynamic(() => import('../components/DevOpSection'), {
 //   ssr: false,
-// // })
-// const BlogSection = dynamic(() => import('../components/BlogSection'), {
-//   ssr: false,
 // })
-// const FeatureList = dynamic(() => import('../components/FeatureList'), {
-//   ssr: false,
-// })
+const BlogSection = dynamic(() => import('../components/BlogSection'), {
+  ssr: false,
+})
+const FeatureList = dynamic(() => import('../components/FeatureList'), {
+  ssr: false,
+})
 
-// const Layouts = dynamic(() => import('./layouts'), {
-//   ssr: false,
-// })
-// const Access = dynamic(() => import('./access'), {
-//   ssr: false,
-// })
+const Layouts = dynamic(() => import('./layouts'), {
+  ssr: false,
+})
+const Access = dynamic(() => import('./access'), {
+  ssr: false,
+})
 
 const Design = dynamic(() => import('./design'), {
-  ssr: true,
+  ssr: false,
 })
 
 const Industries = dynamic(() => import('./industries'), {
-  ssr: true,
+  ssr: false,
 })
-// const AiSolutions = dynamic(() =>
-//   import('../components/Ai_Solutions', {
-//     ssr: false,
-//   })
-// )
+
 // const LandingModal = dynamic(() => import('../components/LandingModal'), {
 //   ssr: true,
 // })
@@ -98,15 +94,14 @@ export default function Home({ data, caseData }) {
         </a>
         {/* {show ? <ShimmerEffect /> : <Main />} */}
         <Main />
-        {/* <FeatureList /> */}
+        <FeatureList />
         {/* <CaseStudySection data={data} /> */}
         {/* <DevOps /> */}
-        {/* <AiSolutions /> */}
-        {/* <Access /> */}
-        {/* <Layouts /> */}
+        <Access />
+        <Layouts />
         <Design />
         <Industries />
-        {/* <BlogSection data={data} /> */}
+        <BlogSection data={data} />
       </div>
     </>
   )

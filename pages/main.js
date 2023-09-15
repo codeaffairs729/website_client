@@ -9,7 +9,7 @@ const Header = dynamic(() => import('./includes/header'), {
   ssr: false,
 })
 
-// import ShimmerEffect from '../components/ShimmerHome'
+import ShimmerEffect from '../components/ShimmerHome'
 
 // const ShimmerEffect = dynamic(() => import('../components/ShimmerHome'), {
 //   ssr: false,
@@ -27,7 +27,9 @@ const Main = () => {
   return (
     <>
       {show ? (
-        <>{/* <ShimmerEffect /> */}</>
+        <>
+          <ShimmerEffect />
+        </>
       ) : (
         <div className="main">
           <Head>
@@ -75,8 +77,8 @@ const Main = () => {
                       <Rating />
                       <div
                         className="main__scroll ms-3"
-                        // data-aos="animation-scale-y"
-                        // data-aos-delay="650"
+                        data-aos="animation-scale-y"
+                        data-aos-delay="650"
                       ></div>
                     </div>
                   </div>

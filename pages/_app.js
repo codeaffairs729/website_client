@@ -17,7 +17,7 @@ import 'react-toastify/dist/ReactToastify.css'
 // import '../styles/blog-style.css'
 // import '../styles/Services.module.css'
 const Header = dynamic(() => import('./includes/header'), {
-  ssr: true,
+  ssr: false,
 })
 const Footer = dynamic(() => import('../components/Footer'), {
   ssr: true,
@@ -26,7 +26,7 @@ const Footer = dynamic(() => import('../components/Footer'), {
 //   ssr: true,
 // })
 const ChatwootWidget = dynamic(() => import('../components/ChatwootWidget'), {
-  ssr: true,
+  ssr: false,
 })
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

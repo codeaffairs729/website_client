@@ -32,7 +32,7 @@ const Design = () => {
     accessibility: false,
     speed: 700,
     infinite: false,
-    autoplay: false,
+    autoplay: true,
     lazyload: 'progressive',
     responsive: [
       {
@@ -80,7 +80,7 @@ const Design = () => {
               >
                 <div
                   className="design-slide-pink"
-                  // data-aos="animation-translate-y"
+                  data-aos="animation-translate-y"
                   data-aos-delay="0"
                 >
                   <div className="design__view">
@@ -115,7 +115,7 @@ const Design = () => {
                 </div>
                 <div
                   className="design-slide-blue"
-                  // data-aos="animation-translate-y"
+                  data-aos="animation-translate-y"
                   data-aos-delay="200"
                 >
                   <div className="design__view">
@@ -155,7 +155,7 @@ const Design = () => {
                 </div>
                 <div
                   className="design-slide-green"
-                  // data-aos="animation-translate-y"
+                  data-aos="animation-translate-y"
                   data-aos-delay="400"
                 >
                   <div className="design__view">
@@ -193,7 +193,7 @@ const Design = () => {
                 </div>
                 <div
                   className="design-slide-pink"
-                  // data-aos="animation-translate-y"
+                  data-aos="animation-translate-y"
                 >
                   <div className="design__view">
                     <Image
@@ -232,7 +232,7 @@ const Design = () => {
                 </div>
                 <div
                   className="design-slide-blue"
-                  // data-aos="animation-translate-y"
+                  data-aos="animation-translate-y"
                 >
                   <div className="design__view design-view-buyma-bg">
                     <Image
@@ -265,7 +265,7 @@ const Design = () => {
                 </div>
                 <div
                   className="design-slide-green"
-                  // data-aos="animation-translate-y"
+                  data-aos="animation-translate-y"
                   data-aos-delay="0"
                 >
                   <div className="design__view">
@@ -300,7 +300,7 @@ const Design = () => {
                 </div>
                 <div
                   className="design-slide-pink"
-                  // data-aos="animation-translate-y"
+                  data-aos="animation-translate-y"
                 >
                   <div className="design__view">
                     <Image
@@ -334,7 +334,7 @@ const Design = () => {
                 </div>
                 <div
                   className="design-slide-blue"
-                  // data-aos="animation-translate-y"
+                  data-aos="animation-translate-y"
                 >
                   <div className="design__view">
                     <Image
