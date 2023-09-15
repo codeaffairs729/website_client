@@ -6,7 +6,7 @@ const DevOpSection = () => {
   return (
     <div className={style.container}>
       <div className={style.image_container}>
-        <h1>Our DevOps Culture</h1>
+        {/* <h1>Our DevOps Culture</h1> */}
         <img
           src="/dev_ops/devops_main_1.png"
           // height={500}
