@@ -19,9 +19,9 @@ import 'react-toastify/dist/ReactToastify.css'
 const Header = dynamic(() => import('./includes/header'), {
   ssr: false,
 })
-const Footer = dynamic(() => import('../components/Footer'), {
-  ssr: true,
-})
+// const Footer = dynamic(() => import('../components/Footer'), {
+//   ssr: true,
+// })
 // const Footer = dynamic(() => import('./includes/footer'), {
 //   ssr: true,
 // })
@@ -64,7 +64,7 @@ function MyApp({ Component, pageProps }) {
       <Header />
       <Component {...pageProps} />
       <ChatwootWidget />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
