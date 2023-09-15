@@ -75,8 +75,8 @@ const Main = () => {
                       <Rating />
                       <div
                         className="main__scroll ms-3"
-                        data-aos="animation-scale-y"
-                        data-aos-delay="650"
+                        // data-aos="animation-scale-y"
+                        // data-aos-delay="650"
                       ></div>
                     </div>
                   </div>

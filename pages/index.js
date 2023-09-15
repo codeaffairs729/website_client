@@ -11,7 +11,7 @@ import { useEffect, useState, useRef } from 'react'
 // import ShimmerEffect from './../components/ShimmerHome'
 
 const Main = dynamic(() => import('./main'), {
-  ssr: false,
+  ssr: true,
 })
 
 // const DevOps = dynamic(() => import('../components/DevOpSection'), {
@@ -32,11 +32,11 @@ const Main = dynamic(() => import('./main'), {
 // })
 
 const Design = dynamic(() => import('./design'), {
-  ssr: false,
+  ssr: true,
 })
 
 const Industries = dynamic(() => import('./industries'), {
-  ssr: false,
+  ssr: true,
 })
 // const AiSolutions = dynamic(() =>
 //   import('../components/Ai_Solutions', {
