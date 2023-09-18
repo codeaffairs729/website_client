@@ -97,12 +97,12 @@ export default function Home({ data, caseData }) {
         <FeatureList />
         {/* <CaseStudySection data={data} /> */}
         {/* <DevOps /> */}
-        <FeatureList />
         <Access />
         <Layouts />
         <Design />
         <Industries />
         <BlogSection data={data} />
+        <FeatureList />
       </div>
     </>
   )
