@@ -1,9 +1,15 @@
-// import * as Sentry from '@sentry/nextjs'
+// This file configures the initialization of Sentry on the server.
+// The config you add here will be used whenever the server handles a request.
+// https://docs.sentry.io/platforms/javascript/guides/nextjs/
 
-// Sentry.init({
-//   dsn: 'https://188cc9babe6e15b908a2de770363e310@o4504490778951680.ingest.sentry.io/4505724408823808',
+import * as Sentry from "@sentry/nextjs";
 
-//   tracesSampleRate: 1,
+Sentry.init({
+  dsn: "https://188cc9babe6e15b908a2de770363e310@o4504490778951680.ingest.sentry.io/4505724408823808",
 
-//   debug: false,
-// })
+  // Adjust this value in production, or use tracesSampler for greater control
+  tracesSampleRate: 1,
+
+  // Setting this option to true will print useful information to the console while you're setting up Sentry.
+  debug: false,
+});
