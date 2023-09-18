@@ -1,30 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
-import style from './../styles/devops.module.css'
+// import style from './../styles/devops.module.css'
 import hireService from '../styles/hireService.module.css'
 const techTitle = 'AI ENHANCED SOLUTIONS'
 const Aisolutions = () => {
   return (
     <>
-      <div className={hireService.mainAIcontainer}>
-        <div
-          className={` border border-5 border-white shadow shadow-left shadow-bottom ${hireService.AIcontainer}`}
-        >
-          <div className={hireService.AItopcircle}>
-            <img
-              src="/dev_ops/Ellipsetop.png"
-              height={50}
-              width={50}
-              alt="pink-circle"
-            />
-          </div>
-          {/* <div className="layouts__head" data-aos="animation-scale-y"> */}
-          <h1 className={hireService.hireh6}>{techTitle}</h1>
-          {/* </div> */}
+      <div className={` feature-list container ${hireService.mainAIcontainer}`}>
+        <div className={hireService.AIcontainer}>
+          <div className={hireService.AItopcircle}></div>
+          <div className={hireService.hireh6}>{techTitle}</div>
           <div
             className={`${hireService.AIservicebody} ${hireService.adjusAIservicebody}`}
           >
-            {/* <div className="" data-aos="fade-up"> */}
             <div className={hireService.Aiservicebodyleft}>
               <div className={hireService.solutiontext}>
                 Experience the fusion of cutting-edge technology and visionary
@@ -65,10 +53,8 @@ const Aisolutions = () => {
                   </li>
                 </ul>
               </div>
+              <div className={hireService.AIbottomcircle2} />
             </div>
-            {/* </div> */}
-
-            {/* <div className="" data-aos="fade-left"> */}
             <div className={hireService.Aiconatinerright}>
               <div className={hireService.Aicontainerrighttext}>
                 <ul
@@ -104,21 +90,15 @@ const Aisolutions = () => {
 
               <div className={hireService.AIimage}>
                 <Image
-                  src="/dev_ops/AItool_pic.png"
+                  src="/dev_ops/AItool_pic.webp"
                   alt="AIimage"
-                  height={311}
-                  width={346}
+                  height={300}
+                  width={340}
                 />
               </div>
             </div>
-            {/* </div> */}
           </div>
-          <div className={hireService.AIbottomcircle1}>
-            <img src="/dev_ops/Ellipsebottom1.png" alt="blue_circle" />
-          </div>
-          <div className={hireService.AIbottomcircle2}>
-            <img src="/dev_ops/Ellipsebottom2.png" alt="bottom_blue" />
-          </div>
+          <div className={hireService.AIbottomcircle1} />
         </div>
       </div>
     </>
