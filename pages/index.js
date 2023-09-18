@@ -108,7 +108,6 @@ export default function Home({ data, caseData }) {
         <Design />
         <Industries />
         <BlogSection data={data} />
-        <FeatureList />
       </div>
     </>
   )

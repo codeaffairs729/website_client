@@ -137,69 +137,71 @@ const Industries = () => {
 
   return (
     <>
-      <div className={`row ${styles.main_container}`}>
-        <div
-          className={`col-lg-7 col-md-12 col-sm-12 ${styles.left_container}`}
-        >
-          <div className={`${styles.left_upper_container}`}>
-            <div className={`${styles.left_text_second}`}>
-              Industries <br /> We Serve{' '}
+      <div className="feature-list container ">
+        <div className={` row ${styles.main_container}`}>
+          <div
+            className={`col-lg-7 col-md-12 col-sm-12 ${styles.left_container}`}
+          >
+            <div className={`${styles.left_upper_container}`}>
+              <div className={`${styles.left_text_second}`}>
+                Industries <br /> We Serve{' '}
+              </div>
+              <div className={`${styles.left_text_third}`}>
+                We provide innovative and valuable digital solutions that cater
+                to a wide range of business objectives and niches.{' '}
+              </div>
             </div>
-            <div className={`${styles.left_text_third}`}>
-              We provide innovative and valuable digital solutions that cater to
-              a wide range of business objectives and niches.{' '}
-            </div>
-          </div>
 
-          <div className={`${styles.left_lower_container} `}>
-            <div className="row" key={1}>
-              {data.map((item, index) => {
-                return (
-                  <div
-                    className={`col ${styles.lower_grid_container} cursor_pointer`}
-                    key={item.title}
-                    onMouseEnter={() => handleMouseEnter(item)}
-                    // onMouseLeave={() => handleMouseLeave()}
-                  >
+            <div className={`${styles.left_lower_container} `}>
+              <div className="row" key={1}>
+                {data.map((item, index) => {
+                  return (
                     <div
-                      className={`${styles.lower_grid_items_container}`}
-                      style={{
-                        backgroundColor:
-                          selected === item.id && index == item.id
-                            ? '#5956e9'
-                            : '',
-                      }}
+                      className={`col ${styles.lower_grid_container} cursor_pointer`}
+                      key={item.title}
+                      onMouseEnter={() => handleMouseEnter(item)}
+                      // onMouseLeave={() => handleMouseLeave()}
                     >
                       <div
-                        className={`${styles.lower_title}`}
+                        className={`${styles.lower_grid_items_container}`}
                         style={{
-                          color: selected === item.id ? 'white' : '',
-                          opacity: selected === item.id ? 1 : 0.67,
-                          fontWeight: selected === item.id ? 700 : 400,
+                          backgroundColor:
+                            selected === item.id && index == item.id
+                              ? '#5956e9'
+                              : '',
                         }}
                       >
-                        {item.title}
-                      </div>
-                      <div
-                        className={`${styles.lower_heading}`}
-                        style={{
-                          color: selected === item.id ? 'white' : '',
-                          opacity: selected === item.id ? 1 : 0.67,
-                        }}
-                      >
-                        {item.heading}
+                        <div
+                          className={`${styles.lower_title}`}
+                          style={{
+                            color: selected === item.id ? 'white' : '',
+                            opacity: selected === item.id ? 1 : 0.67,
+                            fontWeight: selected === item.id ? 700 : 400,
+                          }}
+                        >
+                          {item.title}
+                        </div>
+                        <div
+                          className={`${styles.lower_heading}`}
+                          style={{
+                            color: selected === item.id ? 'white' : '',
+                            opacity: selected === item.id ? 1 : 0.67,
+                          }}
+                        >
+                          {item.heading}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                )
-              })}
+                  )
+                })}
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          className={`col-lg-5 col-md-12 col-sm-12 ${styles.right_container} `}
-        >
-          <IndustriesModel item={item} />
+          <div
+            className={`col-lg-5 col-md-12 col-sm-12 ${styles.right_container} `}
+          >
+            <IndustriesModel item={item} />
+          </div>
         </div>
       </div>
     </>
