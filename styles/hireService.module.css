@@ -7,8 +7,8 @@
 }
 .devopsservicebodyleft {
   flex-basis: 60%;
-  margin-left: 47px;
-  margin-top: 122px;
+  margin-left: 37px;
+  margin-top: 128px;
 }
 .devopsbodyright {
   margin-left: -40px;
@@ -50,7 +50,7 @@
   font-style: normal;
   font-size: 60px;
   font-weight: 400;
-  line-height: 57px;
+  line-height: 85px;
   letter-spacing: -0.025em;
   color: #000000;
 }
@@ -471,6 +471,11 @@
     font-size: 20px;
     line-height: 24px;
   }
+  .hireh5 {
+    width: 800px;
+    margin-left: -18px;
+  }
+
   .black-circle {
     /* right: 3px; */
   }
@@ -1153,7 +1158,7 @@
     padding-left: -19px;
   }
   .devopsservicebodyleft {
-    flex-basis: 81%;
+    flex-basis: 96%;
   }
   .topImage {
     margin-left: -131px;
@@ -1195,6 +1200,7 @@
   }
   .topImage {
     margin-left: -13px;
+    margin-top: 20px;
   }
   .techservicebodyleft {
     text-align: center;
@@ -1272,7 +1278,7 @@
     margin-left: 155px;
   }
   .AIimage {
-    margin-left: 121px;
+    margin-left: 130px;
   }
   .AIcontainer {
     padding-top: 10px;
@@ -1438,7 +1444,7 @@
   }
   .hireh6 {
     margin-top: 25px;
-    margin-left: 57px;
+    margin-left: 65px;
   }
   .AItopcircle {
     display: none;
@@ -1470,6 +1476,8 @@
   .hireh5 {
     font-size: 43px;
     line-height: 2.7rem;
+    width: 444px;
+    margin-left: -1px;
   }
   .topImage {
     margin-left: -14px;
