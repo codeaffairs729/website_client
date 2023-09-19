@@ -3799,12 +3799,11 @@ body:not(.touch-device) .header__item:hover .header__body {
   right: calc(50% - 476px);
   width: 48px;
   height: 48px; */
-  /* top: -100px;
+/* top: -100px;
   right: calc(50% - -450px);
   width: 150px;
   height: 150px;
   background: #5956e9; */
-
 
 .access__ball:nth-child(7) {
   right: calc(50% - 758px);
@@ -8218,12 +8217,13 @@ html {
   padding: 0px 60px 100px;
 }
 .card-desc {
-  height: 200px;
+  height: 90px;
 }
 .blog-list {
   /* border: 0.5px solid #ccc; */
   z-index: 700;
   /* height: 5000px; */
+  justify-content: center;
 }
 .blog-container h2 {
   font-size: 48px;
@@ -8251,11 +8251,11 @@ html {
 
 .card-body {
   position: relative;
-  padding: 0.5em 0.5em 0em;
+  padding: 0em 1em 0em;
 }
 .card-body h3 {
-  font-size: 1.3em;
-  color: #273353;
+  font-size: 15px;
+  color: #292930;
 }
 .card-body p {
   font-size: 16px;
@@ -8525,7 +8525,7 @@ html {
     margin-right: 0;
   }
   .card-desc {
-    height: 190px;
+    height: 104px;
   }
 }
 
@@ -9022,7 +9022,7 @@ html {
     padding: 40px;
   }
   .card-desc {
-    height: 240px;
+    height: 95px;
   }
 }
 @media (max-width: 1104px) {
@@ -9471,7 +9471,7 @@ html {
   }
 
   .card-body {
-    padding: 0.5em 1.2em 0em;
+    padding: 0em 0em 0em;
   }
 }
 
@@ -9498,7 +9498,8 @@ html {
   }
 
   .card-desc {
-    height: 166px;
+    height: 100px;
+    width: 196px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -11034,7 +11035,8 @@ html {
     padding: 0.5em 0.8em 0em;
   }
   .card-desc {
-    height: 165px;
+    height: 77px;
+    width: 250px;
   }
 }
 .entry__pic__entry__pic_white-size {

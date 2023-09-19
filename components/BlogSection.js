@@ -6,62 +6,62 @@ import { HiArrowSmRight } from 'react-icons/hi'
 
 export default function BlogSection({ data }) {
   console.log({ data })
-  const blogData = data.filter((e, i) => i < 4)
+  const blogData = data.filter((e, i) => i < 3)
   return (
-    <div className="container justify-content-center blog-container">
+    <div className="container blog-container">
       <h2>Our Featured Blogs!</h2>
-      <div className="row blog-list">
+      <div className={`row blog-list ${styles.blog_list}`}>
         {blogData.map((e, i) => (
-          <div className="col-12 col-lg-3 p-2" key={i}>
-            <div
-              className="card  shadow p-4 bg-body-tertiary"
-              style={{ borderRadius: '12px' }}
-            >
+          <div className={`col-12 col-lg-3 ${styles.customcol}`} key={i}>
+            <div className={`card   ${styles.customcard}`}>
               <Link href={`/blogs/${e.slug}`} className="">
                 <div
-                  className="card-img text-center cursor_pointer"
-                  style={{ borderRadius: '12px', overflow: 'hidden' }}
+                  className={`card-img text-center cursor_pointer ${styles.card_img}`}
+                  style={{ overflow: 'hidden' }}
                 >
                   <Image
                     src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${e.image}`}
-                    width={620}
-                    height={350}
-                    objectFit=""
+                    width={1600}
+                    height={1499}
+                    objectFit="cover"
                     // objectPosition="50% 50%"
                     alt="a snow-capped mountain range"
                   />
                 </div>
               </Link>
-              <div className="card-body ">
+              <div className={`card-body ${styles.cardbody}`}>
+                <div className={styles.cardheading}>Technology Insights</div>
                 <div className="card-desc   ">
                   <Link href={`/blogs/${e.slug}`}>
-                    <h3 className="card-title cursor_pointer">{e.title}</h3>
+                    <h3 className={` cursor_pointer ${styles.cardtitle}`}>
+                      {e.title}
+                    </h3>
                   </Link>
-                  <p
-                    className="line-clamp-3"
-                    dangerouslySetInnerHTML={{
-                      __html: e.content,
-                    }}
-                  ></p>
                 </div>
                 <Link href={`/blogs/${e.slug}`} className="cursor_pointer">
-                  <button type="button" className="blog-btn">
+                  {/* <button type="button" className="blog-btn">
                     READ MORE
-                  </button>
+                  </button> */}
+                  <a className={styles.design__link}>
+                    Read
+                    <svg className={styles.icon} aria-labelledby="fwd-icon">
+                      <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
                 </Link>
               </div>
             </div>
           </div>
         ))}
       </div>
-      <div className="text-end cursor_pointer">
+      <div className={`cursor_pointer ${styles.text_end}`}>
         <Link href="/user-blog-list">
-          <div className="blog-arrow">
-            <span className="fw-semibold link-underline-opacity-50 my-4 mx-2 blogs-link ">
-              Read other blogs
-            </span>
-            <HiArrowSmRight size={24} color="#5956e9" />
-          </div>
+          <a className={styles.design}>
+            More Blogs
+            <svg className={styles.icon} aria-labelledby="fwd-icon">
+              <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </a>
         </Link>
       </div>
     </div>

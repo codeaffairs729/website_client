@@ -235,6 +235,116 @@
   clear: both;
   display: table;
 }
+.customcard {
+  flex-direction: row;
+  border: none;
+  padding: 0px;
+}
+.customcol {
+  width: 33%;
+  margin-right: 2px;
+}
+.text_end {
+  text-align: right !important;
+  margin-right: 38px;
+  color: #5956e9;
+  margin-top: 30px;
+}
+.design {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+  color: #5956e9;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.design .icon {
+  margin-top: 3px;
+  margin-left: 7px;
+  font-size: 16px;
+  font-weight: bold;
+  fill: #5956e9;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  -o-transition: transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+  width: 0.57em;
+  height: 1em;
+}
+
+.design:hover .icon {
+  -webkit-transform: translateX(3px);
+  -ms-transform: translateX(3px);
+  transform: translateX(3px);
+  color: #5956e9;
+  fill: #5956e9;
+}
+.cardheading {
+  font-size: 24px;
+  font-family: 'DM Sans';
+  color: #a5abb8;
+  width: 216px;
+  margin-bottom: 7px;
+  margin-top: -9px;
+}
+
+.cardtitle {
+  font-weight: normal;
+  font-family: 'Poppins';
+  margin-left: 5px;
+  line-height: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.design__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+  color: #292930;
+  margin-left: 7px;
+}
+
+.design__link .icon {
+  margin-top: -2px;
+  margin-left: 10px;
+  font-size: 14px;
+  fill: #292930;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  -o-transition: transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+  width: 0.57em;
+  height: 1em;
+}
+
+.design__link:hover .icon {
+  -webkit-transform: translateX(3px);
+  -ms-transform: translateX(3px);
+  transform: translateX(3px);
+  color: #5956e9;
+  fill: #5956e9;
+}
 
 /* Change styles for cancel button and delete button on extra small screens */
 @media screen and (max-width: 300px) {
@@ -243,10 +353,39 @@
     width: 100%;
   }
 }
-
+@media only screen and (max-width: 1439px) {
+  .cardheading {
+    width: 215px;
+  }
+  .cardbody {
+    width: 45%;
+    padding: 0em 0.4em 0em;
+  }
+  .text_end {
+    margin-right: -16px;
+    margin-top: 40px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .blogpagecontainer {
     padding: 20px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .customcol {
+    width: 75%;
+    margin-left: 68px;
+    margin-bottom: 15px;
+  }
+  .cardheading {
+    width: 217px;
+  }
+  .customcard {
+    gap: 21px;
+    margin-bottom: 20px;
+  }
+  .card_img {
+    width: 34%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -262,6 +401,34 @@
   .blogshades {
     padding: 0px;
     box-shadow: none;
+  }
+  .card_img {
+    width: 79%;
+    margin-left: 30px;
+  }
+  .blog_list {
+    flex-direction: column;
+  }
+  .customcol {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .customcard {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .cardheading {
+    width: 100%;
+    margin-top: 13px;
+  }
+  .cardbody {
+    width: 100%;
+    margin-left: 17px;
+    margin-bottom: 31px;
+  }
+  .text_end {
+    margin-right: 40px;
   }
 }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import hireService from '../styles/hireService.module.css'
-const techTitle = 'AI ENHANCED SOLUTIONS'
+const techTitle = 'AI Enhanced Solutions'
 const Aisolutions = () => {
   return (
     <>
