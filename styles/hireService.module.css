@@ -6,9 +6,13 @@
   z-index: 1;
 }
 .devopsservicebodyleft {
-  flex-basis: 60%;
   margin-left: 37px;
-  margin-top: 128px;
+  margin-top: 88px;
+}
+.topImage {
+  position: absolute;
+  top: 12%;
+  left: 30%;
 }
 .devopsbodyright {
   margin-left: -40px;
@@ -60,7 +64,6 @@
   font-size: 57px;
   color: #000000;
   font-style: normal;
-  margin-left: 57px;
   margin-top: 50px;
 }
 .AIimage {
@@ -602,9 +605,7 @@
     transform: rotate(-46deg);
   }
 }
-.topImage {
-  margin-left: -150px;
-}
+
 @media screen and (max-width: 479px) {
   .hireh1 {
     font-size: 2rem;
@@ -735,7 +736,6 @@
 
 .Aicontainerrighttext {
   margin-left: 55px;
-  margin-top: 26px;
 }
 
 .AIcontainer {
@@ -754,12 +754,9 @@
 }
 
 .solutiontext {
-  margin-bottom: 30px;
-  width: 460px;
+  width: 467px;
   color: rgb(167, 172, 176);
   font-weight: 400;
-  margin-left: 74px;
-  margin-top: 38px;
   font-size: 18px;
   font-family: 'Poppins';
 }
@@ -770,8 +767,8 @@
 }
 
 .Aicontainerleftttext {
-  margin-left: 124px;
-  margin-top: 50px;
+  margin-left: 30px;
+  margin-top: 69px;
 }
 .AIlisticon li {
   background-position: left top;
@@ -815,7 +812,7 @@
 }
 .AIbottomcircle2 {
   bottom: 38%;
-  left: 50%;
+  left: 43%;
   height: 45px;
   width: 45px;
   background-color: #5956e9;
@@ -979,7 +976,6 @@
   min-height: 370px;
   display: flex;
   justify-content: space-between;
-  margin-top: -60px;
   gap: 20px;
 }
 .techAIservicebody {
@@ -988,7 +984,7 @@
 .AIservicebody {
   display: flex;
   gap: 70px;
-  margin-top: 10px;
+  margin-top: 41px;
 }
 .tech-service-body-left-left {
   flex-basis: 60%;
@@ -1142,30 +1138,25 @@
   .devopsbodyright {
     margin-top: -70px;
   }
-  .hireh6 {
-    margin-left: 30px;
-    margin-top: 30px;
-    font-weight: 400;
-  }
+
   .Aiservicebodyleft {
-    margin-left: 0px;
-    margin-top: 5px;
+    margin-left: 8px;
   }
-  .Aicontainerleftttext {
-    margin-left: 71px;
-  }
-  .AIimage {
-    padding-left: -19px;
-  }
-  .devopsservicebodyleft {
-    flex-basis: 96%;
-  }
+  /* .Aicontainerleftttext {
+    margin-left: 98px;
+
+  } */
+}
+@media screen and (max-width: 1365px) {
   .topImage {
-    margin-left: -131px;
-    margin-top: 69px;
+    top: 15%;
+    right: -8%;
+  }
+  .AIbottomcircle2 {
+    bottom: 38%;
+    left: 50%;
   }
 }
-
 @media screen and (max-width: 1180px) {
   .AIcontainer {
     /* margin-left: 67px; */
@@ -1176,7 +1167,7 @@
     left: 89%;
   }
   .AIbottomcircle1 {
-    bottom: -3%;
+    bottom: -8%;
     right: 6%;
   }
   .AIbottomcircle2 {
@@ -1192,15 +1183,17 @@
   .AIservicebody {
     gap: 0px;
   }
+  .topImage {
+    top: 25%;
+    right: -8%;
+    margin-left: 64px;
+  }
 }
+
 @media screen and (max-width: 991px) {
   .servicecontainer {
     padding-left: 45px;
     padding-right: 45px;
-  }
-  .topImage {
-    margin-left: -13px;
-    margin-top: 20px;
   }
   .techservicebodyleft {
     text-align: center;
@@ -1267,15 +1260,12 @@
     margin-top: -6vw;
   }
   .devopsservicebodyleft {
-    padding-left: 138px;
+    padding-left: 143px;
     margin-top: 0px;
   }
   .Aiconatinerright {
     margin-top: -8px;
     margin-left: 41px;
-  }
-  .Aicontainerleftttext {
-    margin-left: 155px;
   }
   .AIimage {
     margin-left: 130px;
@@ -1285,15 +1275,15 @@
     margin-left: -83px;
   }
   .hireh6 {
-    margin-left: 92px;
+    margin-left: 0px;
     margin-top: 30px;
   }
-  .Aiservicebodyleft {
+  /* .Aiservicebodyleft {
     margin-top: -15px;
-  }
-  .solutiontext {
+  } */
+  /* .solutiontext {
     margin-left: 123px;
-  }
+  } */
   /* .Aiconatinerright {
     margin-top: -46px;
     margin-left: 145px;
@@ -1309,16 +1299,21 @@
     padding: 0px;
   }
   .Aiconatinerright {
-    width: 60%;
-    margin-left: 132px;
-    margin-top: -27px;
+    margin-left: 45px;
+    margin-top: 2px;
+    width: 62%;
   }
-
   .Aiservicebodyleft {
+    margin-left: 34px;
     width: 100%;
   }
   .AIservicebody {
     flex-direction: column;
+  }
+
+  .topImage {
+    position: inherit;
+    margin-left: -49px;
   }
 }
 
@@ -1423,9 +1418,9 @@
   }
   .devopsservicebodyleft {
     margin-top: 0px;
-    /* width: 490px; */
+    width: 356px;
     padding-left: 0px;
-    margin-left: 24px;
+    margin-left: 29px;
   }
 
   .devopsbodyright {
@@ -1439,12 +1434,10 @@
   }
   .solutiontext {
     width: 330px;
-    margin-left: 52px;
     margin-top: 0px;
   }
   .hireh6 {
-    margin-top: 25px;
-    margin-left: 65px;
+    margin-left: 23px;
   }
   .AItopcircle {
     display: none;
@@ -1457,30 +1450,33 @@
   }
   .Aiconatinerright {
     width: 410px;
-    margin-left: 53px;
+    margin-left: 3px;
   }
   .Aicontainerleftttext {
-    margin-left: 80px;
+    margin-left: 21px;
     width: 320px;
   }
   .mainAIcontainer {
     margin-top: 10px;
   }
   .Aiservicebodyleft {
-    margin-left: -9px;
-    margin-top: -15px;
+    padding-left: 2px;
   }
   .AIimage {
-    margin-left: 47px;
+    margin-left: 35px;
   }
   .hireh5 {
     font-size: 43px;
-    line-height: 2.7rem;
+    line-height: 3.2rem;
     width: 444px;
     margin-left: -1px;
   }
   .topImage {
-    margin-left: -14px;
-    margin-top: 9px;
+    margin: -28px;
+    margin-top: 23px;
+    margin-bottom: 15px;
+  }
+  .maindevcontainer {
+    padding-bottom: 20px;
   }
 }

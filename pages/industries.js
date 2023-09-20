@@ -50,18 +50,18 @@ const data = [
     img_alt: 'supply-chain-management',
   },
   {
-    title: 'AI & ML',
+    title: 'Internet of Things (IoT)',
     heading:
-      'Bringing a diverse array of modern technologies that have the goal of improving efficiency, and accessibility. ',
+      'Streamline your business operations through the integration of cutting-edge IoT technologies, dedicated to improving efficiency and accessibility across various industries ',
     points: [
-      'Preprocessing of Data',
-      'Diverse Algorithms',
-      'Human-Friendly Insights',
-      'Head-to-Head Model Competitions',
-      'Easy Deployment',
+      'IoT Architecture and Design',
+      'IoT Prototyping and Development',
+      'IoT Analytics Tools',
+      'IoT Ethics and Privacy',
+      'IoT Security Auditing',
     ],
     id: '3',
-    imgUrl: '/Industries/AI.webp',
+    imgUrl: '/Industries/iot.jpg',
     img_alt: 'AI_image',
   },
 ]

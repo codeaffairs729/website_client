@@ -65,7 +65,7 @@ const Main = () => {
                         <span className="title__box dev-title mb-3"></span>
                         <h1 className="home-header">
                           Simplifying Processes
-                          <br /> With Scalable IT Solutions!
+                          <br /> Through Scalable IT Solutions!
                         </h1>
                       </div>
                       <div className="main__info info ms-3 main-info">

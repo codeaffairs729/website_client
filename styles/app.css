@@ -8217,7 +8217,8 @@ html {
   padding: 0px 60px 100px;
 }
 .card-desc {
-  height: 90px;
+  height: 75px;
+  width: 179px;
 }
 .blog-list {
   /* border: 0.5px solid #ccc; */
@@ -9023,6 +9024,7 @@ html {
   }
   .card-desc {
     height: 95px;
+    width: 125px;
   }
 }
 @media (max-width: 1104px) {
@@ -9498,8 +9500,8 @@ html {
   }
 
   .card-desc {
-    height: 100px;
-    width: 196px;
+    height: 94px;
+    width: 186px;
   }
 }
 @media only screen and (max-width: 767px) {

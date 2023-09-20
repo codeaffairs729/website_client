@@ -292,7 +292,7 @@
   font-size: 24px;
   font-family: 'DM Sans';
   color: #a5abb8;
-  width: 216px;
+  width: 222px;
   margin-bottom: 7px;
   margin-top: -9px;
 }
@@ -321,7 +321,8 @@
   line-height: 1.1;
   letter-spacing: -0.045em;
   color: #292930;
-  margin-left: 7px;
+  margin-left: 5px;
+  margin-top: 23px;
 }
 
 .design__link .icon {
@@ -353,9 +354,14 @@
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 1439px) {
   .cardheading {
-    width: 215px;
+    width: 131px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   .cardbody {
     width: 45%;
@@ -365,7 +371,14 @@
     margin-right: -16px;
     margin-top: 40px;
   }
+  .design__link {
+    margin-top: 0px;
+  }
+  .card_img {
+    width: 100px;
+  }
 }
+
 @media only screen and (max-width: 1024px) {
   .blogpagecontainer {
     padding: 20px;
@@ -378,11 +391,11 @@
     margin-bottom: 15px;
   }
   .cardheading {
-    width: 217px;
+    width: 290px;
   }
   .customcard {
     gap: 21px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   .card_img {
     width: 34%;
@@ -417,6 +430,7 @@
   .customcard {
     flex-direction: column;
     gap: 0px;
+    margin-bottom: 0px;
   }
   .cardheading {
     width: 100%;
@@ -424,11 +438,15 @@
   }
   .cardbody {
     width: 100%;
-    margin-left: 17px;
-    margin-bottom: 31px;
+    margin-left: 53px;
+    margin-bottom: 20px;
+    margin-top: 5px;
   }
   .text_end {
     margin-right: 40px;
+  }
+  .design__link {
+    margin-top: 0px;
   }
 }
 
