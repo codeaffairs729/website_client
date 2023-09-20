@@ -833,7 +833,7 @@ const Header = () => {
                                   className="row cursor_pointer"
                                   onClick={handleSidebar}
                                 >
-                                  <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                  <div className="col-xl-2  col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
                                   src="/icons/android_2.webp"
@@ -862,7 +862,7 @@ const Header = () => {
                                   className="row cursor_pointer"
                                   onClick={handleSidebar}
                                 >
-                                  <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
                                   src="/icons/android_2.webp"
@@ -889,7 +889,7 @@ const Header = () => {
                                   className="row cursor_pointer"
                                   onClick={handleSidebar}
                                 >
-                                  <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
                                   src="/img/cloud.webp"
@@ -931,7 +931,7 @@ const Header = () => {
                                   className="row cursor_pointer"
                                   onClick={handleSidebar}
                                 >
-                                  <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
                                   src="/images/content-management-system.webp"
@@ -958,7 +958,7 @@ const Header = () => {
                                   className="row cursor_pointer"
                                   onClick={handleSidebar}
                                 >
-                                  <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
                                   src="/images/bag-front-color.webp"
@@ -987,7 +987,7 @@ const Header = () => {
                                   className="row cursor_pointer"
                                   onClick={handleSidebar}
                                 >
-                                  <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
                                   src="/images/notebook-iso-color.webp"
@@ -1016,7 +1016,7 @@ const Header = () => {
                                   className="row cursor_pointer"
                                   onClick={handleSidebar}
                                 >
-                                  <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
                                   src="/images/customer-relationship-management.webp"
@@ -1045,7 +1045,7 @@ const Header = () => {
                                   className="row cursor_pointer"
                                   onClick={handleSidebar}
                                 >
-                                  <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
                                   src="/icons/digital-marketing.webp"
@@ -1073,7 +1073,7 @@ const Header = () => {
                                   className="row cursor_pointer"
                                   onClick={handleSidebar}
                                 >
-                                  <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                   className="header-solutions-icon"
                                   src="/icons/deployment-host-management.webp"
@@ -1101,7 +1101,7 @@ const Header = () => {
                                   className="row cursor_pointer"
                                   onClick={handleSidebar}
                                 >
-                                  <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                     className="header-solutions-icon"
                                     src="/icons/strapi-frame.webp"
@@ -1127,7 +1127,7 @@ const Header = () => {
                                   className="row cursor_pointer"
                                   onClick={handleSidebar}
                                 >
-                                  <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                     className="header-solutions-icon"
                                     src="/icons/chatwoot.webp"
@@ -1153,7 +1153,7 @@ const Header = () => {
                                   className="row cursor_pointer"
                                   onClick={handleSidebar}
                                 >
-                                  <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     {/* <img
                                     className="header-solutions-icon"
                                     src="/icons/chatwoot.webp"

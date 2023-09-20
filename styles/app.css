@@ -9535,7 +9535,7 @@ html {
     z-index: 10;
     min-height: 100vh;
     background: #fff;
-    padding: 125px 0 40px;
+    padding: 87px 0 40px;
     -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     transform: translateX(-100%);
@@ -9565,7 +9565,7 @@ html {
     max-width: 350px;
   }
   .header__item:not(:last-child) {
-    margin: 0 0 24px;
+    margin: 0 0 10px;
   }
   .header__item[href],
   .header__head {

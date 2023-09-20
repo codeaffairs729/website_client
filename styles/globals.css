@@ -201,7 +201,6 @@ hire-h2 .header__col:nth-child(2) .header__box:nth-child(8) .header__preview {
 .header-dropdown-body {
   /* max-width: 1050px; */
   height: 445px;
-  margin-top: 20px;
   /* background: #ffffff; */
 }
 
@@ -5200,6 +5199,11 @@ body:not(.touch-device) .header-item[href]:before {
   .career-area-8-para {
     margin-left: 17px;
   }
+  .header__row {
+    padding: 43px 30px;
+
+    height: 399px;
+  }
 }
 
 @media only screen and (min-width: 279px) and (max-width: 768px) {
@@ -5271,6 +5275,9 @@ body:not(.touch-device) .header-item[href]:before {
   .about-area-4-main-data-outer {
     min-height: 586px;
   }
+  .header__row {
+    padding: 29px 30px;
+  }
 }
 @media (max-width: 500px) {
   .access-top-heading {
@@ -5278,5 +5285,19 @@ body:not(.touch-device) .header-item[href]:before {
     position: relative;
     font-size: 0.85rem;
     top: -157px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .header__row {
+    height: 958px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .dropdown_body {
+    margin-top: 0px;
+  }
+  .header__body {
+    margin-top: 0px;
+    padding-top: 10px;
   }
 }
