@@ -48,8 +48,8 @@ const DevOpsStatic = () => {
             <Image
               src="/dev_ops/devops_pic.png"
               alt="bottom image"
-              width={884}
-              height={548}
+              width={1400}
+              height={868}
               objectFit="fill"
             />
           </div>

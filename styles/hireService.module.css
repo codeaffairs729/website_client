@@ -11,8 +11,9 @@
 }
 .topImage {
   position: absolute;
-  top: 12%;
+  top: 5%;
   left: 30%;
+  width: 1050px;
 }
 .devopsbodyright {
   margin-left: -40px;
@@ -142,7 +143,7 @@
   background-image: url('/dev_ops/check-icon.png');
   background-size: 24px 24px;
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: left center;
   text-align: left;
   line-height: 1.5rem;
   font-size: 27px;
@@ -181,7 +182,7 @@
   line-height: 30px;
   letter-spacing: 0.04em;
 
-  color: #4d3d5e;
+  color: rgb(167, 172, 176);
 }
 
 .hirelist li {
@@ -1149,7 +1150,7 @@
 }
 @media screen and (max-width: 1365px) {
   .topImage {
-    top: 15%;
+    top: 1%;
     right: -8%;
   }
   .AIbottomcircle2 {
@@ -1184,8 +1185,9 @@
     gap: 0px;
   }
   .topImage {
-    top: 25%;
+    top: 23%;
     right: -8%;
+    width: 758px;
     margin-left: 64px;
   }
 }
@@ -1313,7 +1315,8 @@
 
   .topImage {
     position: inherit;
-    margin-left: -49px;
+    margin-left: -129px;
+    width: 970px;
   }
 }
 
@@ -1472,9 +1475,10 @@
     margin-left: -1px;
   }
   .topImage {
-    margin: -28px;
+    width: 446px;
     margin-top: 23px;
     margin-bottom: 15px;
+    margin-left: -43px;
   }
   .maindevcontainer {
     padding-bottom: 20px;
