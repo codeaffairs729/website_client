@@ -1,8 +1,8 @@
-import BlogList from '../components/BlogList'
+import Testbloglist from '../components/Testbloglist'
 export default function Testblog({ blogData }) {
   return (
     <>
-      <BlogList blogData={blogData} db={'blogs'} />
+      <Testbloglist blogData={blogData} db={'blogs'} />
     </>
   )
 }

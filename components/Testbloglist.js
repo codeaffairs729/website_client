@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-import BlogGrid from './BlogGrid'
+import Testbloggrid from './Testbloggrid'
 import DeleteModal from './DeleteModal'
 import styles from '../styles/blogStyle.module.css'
 import Image from 'next/image'
@@ -112,7 +112,7 @@ const Testblogist = ({ authorized, blogData, notify, notifyError, db }) => {
           </div>
         </div>
       </div>
-      <BlogGrid
+      <Testbloggrid
         data={data}
         authorized={authorized}
         setDelId={setDelId}

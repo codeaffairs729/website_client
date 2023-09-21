@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styles from '../styles/blogStyle.module.css'
 
-const BlogGriTestbloggrid = ({ data, authorized, setDelId, db }) => {
+const Testbloggrid = ({ data, authorized, setDelId, db }) => {
   const blog_category = [
     {
       category: 'Web Development & Optimization',
@@ -166,4 +166,4 @@ const BlogGriTestbloggrid = ({ data, authorized, setDelId, db }) => {
   )
 }
 
-export default BlogGriTestbloggrid
+export default Testbloggrid
