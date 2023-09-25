@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import styles from '../styles/blogStyle.module.css'
-
 const Testbloggrid = ({ data, authorized, setDelId, db }) => {
   const blog_category = [
     {
@@ -94,9 +93,11 @@ const Testbloggrid = ({ data, authorized, setDelId, db }) => {
                 <div className={`cursor_pointer ${styles.blogimage}`}>
                   <Link href={`/${db}/${e.slug}`}>
                     <img
-                      src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${
-                        db === 'case-study' ? e.banner_img : e.image
-                      }`}
+                      src={
+                        typeof db === 'undefined'
+                          ? e.img
+                          : `${process.env.NEXT_PUBLIC_BASE_URL}/upload/${e.image}`
+                      }
                       style={{ width: '100%', height: '158px' }}
                       alt="a snow-capped mountain range"
                     />
@@ -105,13 +106,14 @@ const Testbloggrid = ({ data, authorized, setDelId, db }) => {
                 <div className={`card-body ${styles.title}`}>
                   <div className={styles.bloglistdesc}>
                     <div className={styles.blogheading}>
-                      {getCategoryForBlog(e.title)}
+                      {typeof db === 'undefined'
+                        ? 'Technology Insights'
+                        : getCategoryForBlog(e.title)}
                     </div>
                     {/* <div className="blog-list-desc"> */}
                     <Link href={`/${db}/${e.slug}`}>
                       <h3 className={`pt-2 cursor_pointer ${styles.blogtitle}`}>
-                        {/* <h3 className=" card-title pt-2 cursor_pointer"> */}
-                        {e.title}
+                        {typeof db === 'undefined' ? e.title : e.title}
                       </h3>
                     </Link>
                   </div>
@@ -132,7 +134,7 @@ const Testbloggrid = ({ data, authorized, setDelId, db }) => {
                         </a>
                       </Link>
                     </span>
-                    {authorized && (
+                    {/* {authorized && (
                       <>
                         <Link href={`/${db}/edit/${e.id}`}>
                           <span className="text-primary fw-bold">
@@ -152,7 +154,7 @@ const Testbloggrid = ({ data, authorized, setDelId, db }) => {
                           DELETE
                         </button>
                       </>
-                    )}
+                    )} */}
                   </div>
                 </div>
               </div>

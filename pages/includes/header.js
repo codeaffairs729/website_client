@@ -1284,7 +1284,7 @@ const Header = () => {
               Get in Touch
             </a>
           </div> */}
-          <div className="header__bg js-header-bg"></div>
+          {/* <div className="header__bg js-header-bg"></div> */}
         </div>
       </header>
     </>

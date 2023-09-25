@@ -27,7 +27,7 @@ const Aisolutions = () => {
               >
                 <li className={hireService.marginebottom16px}>
                   <p className={hireService.marginleft26px}>
-                    Image and speech recognitaion
+                    Image & Speech Recognitaion
                   </p>
                 </li>
                 <li className={hireService.marginebottom16px}>
@@ -97,7 +97,6 @@ const Aisolutions = () => {
             </div>
           </div>
         </div>
-        <div className={hireService.AIbottomcircle1} />
       </div>
       {/* </div> */}
     </>

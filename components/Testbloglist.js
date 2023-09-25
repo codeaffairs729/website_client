@@ -72,7 +72,7 @@ const Testblogist = ({ authorized, blogData, notify, notifyError, db }) => {
       <div
         className={`  pt-5 feature-list container ${styles.mainblogcontainer}`}
       >
-        <div className={styles.bluecircle}></div>
+        {/* <div className={styles.bluecircle}></div> */}
         <div className={styles.blogcontainer}>
           <div className={styles.blogcloud1}>
             <Image

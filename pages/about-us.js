@@ -112,9 +112,9 @@ function AboutUs() {
               <h1 className="text-center about-area-6-heading">
                 We Clear Your Path,
                 <br />
-                <span className="title__color"> We help you succeed,</span>
+                <span className="title__color"> We Help You Succeed,</span>
                 <br />
-                We keep you successfull
+                We Keep You Successfull
               </h1>
             </div>
             <div className="col-lg-12">
