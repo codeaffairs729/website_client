@@ -54,11 +54,11 @@ const data = [
     heading:
       'Streamline your business operations through the integration of cutting-edge IoT technologies, dedicated to improving efficiency and accessibility across various industries ',
     points: [
-      'IoT Architecture and Design',
-      'IoT Prototyping and Development',
-      'IoT Analytics Tools',
-      'IoT Ethics and Privacy',
-      'IoT Security Auditing',
+      'Device Integration',
+      'Remote Monitoring and Control',
+      'IoT Application Development',
+      'Cloud IoT Platforms',
+      'Ecosystem Management',
     ],
     id: '3',
     imgUrl: '/Industries/iot.jpg',

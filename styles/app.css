@@ -225,7 +225,7 @@ button {
 }
 /* sticky header css */
 .is-sticky {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -3563,7 +3563,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 .access {
   position: relative;
   padding: 200px 0 0;
-  background: #ecf2f6;
+  background: #ecf2f685;
   text-align: center;
 }
 

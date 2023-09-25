@@ -16,9 +16,7 @@ const DevOpsStatic = () => {
           className={`${hireService.techservicebody} ${hireService.adjustservicebody}`}
         >
           <div className={hireService.devopsservicebodyleft}>
-            <ul
-              className={`${hireService.listicon} ${hireService.hire_list_items_services}`}
-            >
+            <ul className={`${hireService.listicon}`}>
               <li className={hireService.marginebottom16px}>
                 <p className={hireService.marginleft25px}>Efficient Scaling</p>
               </li>
@@ -46,7 +44,7 @@ const DevOpsStatic = () => {
 
           <div className={hireService.topImage}>
             <Image
-              src="/dev_ops/devops_pic.png"
+              src="/dev_ops/devops_new.png"
               alt="bottom image"
               width={1400}
               height={868}
@@ -54,6 +52,11 @@ const DevOpsStatic = () => {
             />
           </div>
         </div>
+
+        <h5>
+          Accelerating Progress with DevOps Excellence. Elevating IT to new
+          heights, one innovation at a time.
+        </h5>
       </div>
     </>
   )

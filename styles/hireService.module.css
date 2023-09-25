@@ -6,13 +6,13 @@
   z-index: 1;
 }
 .devopsservicebodyleft {
-  margin-left: 37px;
-  margin-top: 88px;
+  margin-left: 64px;
+  margin-top: 53px;
 }
 .topImage {
   position: absolute;
   top: 5%;
-  left: 30%;
+  left: 26%;
   width: 1050px;
 }
 .devopsbodyright {
@@ -30,13 +30,11 @@
 .hireh1 {
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: 500;
-  font-size: 3rem;
-  line-height: 100%;
-  letter-spacing: -0.025em;
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 123%;
   color: #292930;
-  margin-left: 4px;
-  margin-bottom: 24px;
+  width: 500px;
 }
 
 .hireh2 {
@@ -146,8 +144,9 @@
   background-position: left center;
   text-align: left;
   line-height: 1.5rem;
-  font-size: 27px;
+  font-size: 24px;
   color: #4d3d5e;
+  font-family: 'Poppins';
 }
 .maindevcontainer {
   margin-top: 10px;
@@ -183,6 +182,14 @@
   letter-spacing: 0.04em;
 
   color: rgb(167, 172, 176);
+}
+.maindevcontainer h5 {
+  font-size: 1.125rem;
+  font-family: Poppins;
+  font-weight: 400;
+  color: #999fae;
+  width: 40%;
+  margin-top: 26px;
 }
 
 .hirelist li {
@@ -233,6 +240,7 @@
   position: relative;
   margin: auto;
   width: 82%;
+  margin-top: 142px;
   /* padding-inline: 60px; */
   /* padding-right: 60px; */
   /* max-width: 1440px; */
@@ -479,7 +487,6 @@
     width: 800px;
     margin-left: -18px;
   }
-
   .black-circle {
     /* right: 3px; */
   }
@@ -609,7 +616,7 @@
 
 @media screen and (max-width: 479px) {
   .hireh1 {
-    font-size: 2rem;
+    width: 377px;
   }
   .hireh2 {
     font-size: 1.5rem;
@@ -792,16 +799,7 @@
 .AIservicebodyleft {
   width: 50%;
 }
-.AIbottomcircle1 {
-  bottom: -8%;
-  right: -4%;
-  position: absolute;
-  height: 130px;
-  width: 130px;
-  background-color: #d9d9db;
-  border-radius: 50%;
-  z-index: 1;
-}
+
 .AItopcircle {
   top: -4%;
   left: 87%;
@@ -1147,15 +1145,22 @@
     margin-left: 98px;
 
   } */
+  .hireh1 {
+    width: 471px;
+  }
 }
 @media screen and (max-width: 1365px) {
   .topImage {
-    top: 1%;
+    top: 3%;
     right: -8%;
   }
   .AIbottomcircle2 {
     bottom: 38%;
     left: 50%;
+  }
+  .maindevcontainer h5 {
+    width: 45%;
+    margin-top: 0px;
   }
 }
 @media screen and (max-width: 1180px) {
@@ -1166,10 +1171,6 @@
   .AItopcircle {
     top: -2%;
     left: 89%;
-  }
-  .AIbottomcircle1 {
-    bottom: -8%;
-    right: 6%;
   }
   .AIbottomcircle2 {
     display: none;
@@ -1185,10 +1186,13 @@
     gap: 0px;
   }
   .topImage {
-    top: 23%;
-    right: -8%;
-    width: 758px;
-    margin-left: 64px;
+    top: 10%;
+    left: 32%;
+    width: 822px;
+  }
+  .maindevcontainer h5 {
+    width: 55%;
+    margin-top: 0px;
   }
 }
 
@@ -1203,6 +1207,9 @@
 
   .tech-service-body-left-right {
     text-align: center;
+  }
+  .hireh1 {
+    width: 350px;
   }
   .tech-service-body-left-right img {
     height: 230px;
@@ -1255,7 +1262,6 @@
     font-size: 80px;
   }
   .adjustservicebody {
-    margin-top: -6vw;
     gap: 0px;
   }
   .adjusAItservicebody {
@@ -1303,7 +1309,7 @@
   .Aiconatinerright {
     margin-left: 45px;
     margin-top: 2px;
-    width: 62%;
+    width: 71%;
   }
   .Aiservicebodyleft {
     margin-left: 34px;
@@ -1317,6 +1323,10 @@
     position: inherit;
     margin-left: -129px;
     width: 970px;
+  }
+  .maindevcontainer h5 {
+    width: 100%;
+    margin-top: 30px;
   }
 }
 
@@ -1445,9 +1455,7 @@
   .AItopcircle {
     display: none;
   }
-  .AIbottomcircle1 {
-    display: none;
-  }
+
   .AIbottomcircle2 {
     display: none;
   }
