@@ -143,9 +143,9 @@
   background-repeat: no-repeat;
   background-position: left center;
   text-align: left;
-  line-height: 1.5rem;
-  font-size: 24px;
-  color: #4d3d5e;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: rgb(167, 172, 176);
   font-family: 'Poppins';
 }
 .maindevcontainer {
@@ -187,9 +187,8 @@
   font-size: 1.125rem;
   font-family: Poppins;
   font-weight: 400;
-  color: #999fae;
+  color: #000000;
   width: 40%;
-  margin-top: 26px;
 }
 
 .hirelist li {

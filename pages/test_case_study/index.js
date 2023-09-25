@@ -6,7 +6,7 @@ export const CaseStudyPage = () => {
   const data = [
     {
       id: '1',
-      title: 'Diveroid',
+      // title: 'Diveroid',
       about:
         'This case study focuses on a mobile application specially designed to record underwater diving adventures. Through this app, users can effortlessly capture underwater photos and create videos. This application ensures safety by offering details about pressure, temperature, and other factors under water. The app safety alerts will notify you if you have reached your depth stop, or ascending too fast. In the case of an emergency, the app will let you know what to do at the current depth to stay safe. It also supports free diving mode with features including, a stopwatch for static apnea, and boat calling. This application functions without any phone signal and displays information, such as dive duration, and no-decompression limit (NDL) to prevent accidents and decompression sickness.',
       Active: '20,000',
@@ -43,7 +43,7 @@ export const CaseStudyPage = () => {
     },
     {
       id: '2',
-      title: 'Buyma',
+      // title: 'Buyma',
       about:
         'An e-commerce website that enables international buyers to access products from diverse countries, particularly fashion-related items that might not be readily available in their local markets. Here, users can find limited edition items and local trends across the globe. Within this website, users can also customise their products according to their requirements and can directly connect with the seller if they have any queries.To save on international shipping costs, this website offers the option of consolidating multiple items from different orders into a single shipment, helping users save on shipping fees.',
       Active: '20,000',
@@ -113,7 +113,7 @@ export const CaseStudyPage = () => {
     },
     {
       id: '4',
-      title: 'VideoChatAPro',
+      // title: 'VideoChatAPro',
       about:
         'A web application that allows customers to connect with service providers via video chat. Contractors and technicians specializing in plumbing, HVAC, landscaping, electrical work, appliances, or automotive repair can assist customers instantly through video chat and are available 24/7 to provide guidance on any do-it-yourself repairs or installations. ',
       Active: '20,000',
