@@ -1,4 +1,4 @@
-import Testbloglist from './test_case_Studies'
+import Testbloglist from './test_case_study'
 export default function Testcase_studies({ blogData }) {
   return (
     <>
