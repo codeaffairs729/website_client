@@ -9,7 +9,7 @@ import Effort from '../../components/case-study/Effort'
 import Challenges from '../../components/case-study/Challenges'
 import style from '../../styles/case-page.module.css'
 
-const Casestudy = ({ Casedata }) => {
+const Casestudy = () => {
   const router = useRouter()
   const id = router.query.id
   console.log(id)
@@ -17,7 +17,7 @@ const Casestudy = ({ Casedata }) => {
   const alldata = [
     {
       id: '1',
-      title: 'Mobile App For DIvers',
+      // title: 'Mobile App For DIvers',
       about:
         'This case study focuses on a mobile application specially designed to record underwater diving adventures. Through this app, users can effortlessly capture underwater photos and create videos. This application ensures safety by offering details about pressure, temperature, and other factors under water. The app safety alerts will notify you if you have reached your depth stop, or ascending too fast. In the case of an emergency, the app will let you know what to do at the current depth to stay safe. It also supports free diving mode with features including, a stopwatch for static apnea, and boat calling. This application functions without any phone signal and displays information, such as dive duration, and no-decompression limit (NDL) to prevent accidents and decompression sickness.',
       Active: '20,000',
@@ -54,7 +54,7 @@ const Casestudy = ({ Casedata }) => {
     },
     {
       id: '2',
-      title: 'International E-Commerce',
+      // title: 'International E-Commerce',
       about:
         'An e-commerce website that enables international buyers to access products from diverse countries, particularly fashion-related items that might not be readily available in their local markets. Here, users can find limited edition items and local trends across the globe. Within this website, users can also customise their products according to their requirements and can directly connect with the seller if they have any queries.To save on international shipping costs, this website offers the option of consolidating multiple items from different orders into a single shipment, helping users save on shipping fees.',
       Active: '20,000',
@@ -124,7 +124,7 @@ const Casestudy = ({ Casedata }) => {
     },
     {
       id: '4',
-      title: 'Video Call Support App',
+      // title: 'Video Call Support App',
       about:
         'A web application that allows customers to connect with service providers via video chat. Contractors and technicians specializing in plumbing, HVAC, landscaping, electrical work, appliances, or automotive repair can assist customers instantly through video chat and are available 24/7 to provide guidance on any do-it-yourself repairs or installations. ',
       Active: '20,000',
@@ -161,7 +161,7 @@ const Casestudy = ({ Casedata }) => {
     },
     {
       id: '5',
-      title: 'Customer Engagement App',
+      // title: 'Customer Engagement App',
       about:
         'A SAS web and mobile application that is designed to generate high-quality leads, manage your sales team, and track as well as close deals- all on one platform. It is an open-source, and centralized system named Chatwoot that connects with popular customer communication channels, such as WhatsApp, Email, Website live-chat, Instagram, Facebook, Twitter, Line, etc.',
       Active: '20,000',

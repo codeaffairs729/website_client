@@ -21,11 +21,9 @@ const Testblogist = ({ authorized, blogData, notify, notifyError, db }) => {
 
   const handleOnCreate = () => {
     router.push(
-      db === 'blogs'
-        ? '/blogs/create'
-        : db === 'case-study'
-        ? '/case-study/create'
-        : '/case-studies/create'
+      db === 'blogs' ? '/blogs/create' : db === 'case-study'
+      // ? '/case-study/create'
+      // : '/case-studies/create'
     )
   }
 

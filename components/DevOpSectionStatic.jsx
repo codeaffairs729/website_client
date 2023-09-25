@@ -44,11 +44,11 @@ const DevOpsStatic = () => {
 
           <div className={hireService.topImage}>
             <Image
-              src="/dev_ops/devops_new.png"
+              src="/dev_ops/main_devops.png"
               alt="bottom image"
               width={1400}
               height={868}
-              objectFit="fill"
+              objectFit="contain"
             />
           </div>
         </div>

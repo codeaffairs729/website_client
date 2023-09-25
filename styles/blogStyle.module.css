@@ -15,7 +15,7 @@
 .background_image_container {
   height: 100%;
   width: 100%;
-  margin-top: 90px;
+  gap: 90px;
 }
 /* .blog-shades {
   padding: 48px;
@@ -109,6 +109,8 @@
 }
 .htmlContent p {
   font-size: 18px;
+  color: #292930;
+  font-family: 'Poppins';
 }
 
 .htmlContent img {
@@ -389,7 +391,7 @@
   width: 50%;
 }
 .blogh1 {
-  color: #fab8c4;
+  color: #5956e9;
   font-size: 20px;
   font-family: 'DM Sans';
   font-weight: 700;
@@ -504,14 +506,76 @@
   left: 609px;
   position: absolute;
 }
+.notebook {
+  position: absolute;
+  left: 499px;
+  top: 315px;
+  height: 127px;
+  width: 160px;
+}
+.disk {
+  position: absolute;
+  right: 113px;
+  top: 331px;
+  height: 100px;
+  width: 100px;
+}
 .blogcloud2 {
   position: absolute;
   top: 14px;
   right: 98px;
 }
+.cube {
+  position: absolute;
+  top: -37px;
+  right: -30px;
+}
 
 .card {
   width: 600px;
+}
+.singleblogleftcontainer {
+  width: 40%;
+}
+.headingcontainer h1 {
+  color: #5956e9;
+  font-size: 20px;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+/* .background{
+  background-image: url('/blogs/blogcover.png');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+} */
+.bg {
+  margin-top: 130px;
+  background-image: url('/blogs/blogcover.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  position: inherit;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.singleblogleftcontainer h5 {
+  color: #999fae;
+  font-size: 1rem;
+  font-family: 'DM Sans';
+  font-weight: 400;
+  width: 320px;
+  margin-top: 50px;
+}
+.singleblogrightcontainer {
 }
 
 /* Change styles for cancel button and delete button on extra small screens */
@@ -557,10 +621,46 @@
   .blogcontainerright {
     margin-top: 103px;
   }
-  .blogimage {
+  .notebook {
+    left: 464px;
+    top: 355px;
+    height: 91px;
+    width: 108px;
+  }
+  .disk {
+    right: 20px;
+    top: 359px;
+    height: 72px;
+    width: 75px;
+  }
+  .blogcloud2 {
+    right: -45px;
   }
 }
+@media screen and (max-width: 1365px) {
+  .disk {
+    right: -49px;
+    top: 359px;
 
+    width: 112px;
+  }
+  .notebook {
+    width: 164px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .disk {
+    right: -65px;
+    top: 334px;
+    height: 154px;
+    width: 112px;
+  }
+  .notebook {
+    width: 164px;
+    left: 382px;
+    top: 320px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .blogpagecontainer {
     padding: 20px;
@@ -597,6 +697,26 @@
   }
   .bloglistcontaine {
     padding-top: 0px;
+  }
+  .notebook {
+    left: 352px;
+    top: 338px;
+    height: 52px;
+    width: 102px;
+  }
+  .disk {
+    right: -11px;
+    top: 339px;
+    height: 52px;
+    width: 69px;
+  }
+  .blogcloud2 {
+    right: -16px;
+    top: 15px;
+    width: 89px;
+  }
+  .singleblogleftcontainer {
+    width: 34%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -682,11 +802,21 @@
   .background_image_container {
     height: 50vh;
     background-size: contain;
+    flex-direction: column;
+    gap: 20px;
   }
-  .blogpagecontainer {
-    margin-top: 0px;
-    padding: 20px;
-    padding-top: 0px;
+  .singleblogleftcontainer {
+    width: 100%;
+  }
+  .notebook {
+    display: none;
+  }
+  .disk {
+    display: none;
+  }
+  .blogcloud2 {
+    top: -40px;
+    right: 42px;
   }
 }
 .hirecontainer {

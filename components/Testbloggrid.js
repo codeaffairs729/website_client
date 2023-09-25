@@ -122,7 +122,11 @@ const Testbloggrid = ({ data, authorized, setDelId, db }) => {
                     className={`d-flex justify-content-between ${styles.readtxt}`}
                   >
                     <span className="text-primary fw-bold">
-                      <Link href={`/${db}/${e.slug}`}>
+                      <Link
+                        href={
+                          db ? `/${db}/${e.slug}` : `/test_case_study/${e.id}`
+                        }
+                      >
                         <a className={styles.blog__link}>
                           Read
                           <svg
