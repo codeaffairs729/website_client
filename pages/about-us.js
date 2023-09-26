@@ -114,7 +114,7 @@ function AboutUs() {
                 <br />
                 <span className="title__color"> We Help You Succeed,</span>
                 <br />
-                We Keep You Successfull
+                We Keep You Successful
               </h1>
             </div>
             <div className="col-lg-12">

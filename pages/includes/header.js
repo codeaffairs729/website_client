@@ -28,17 +28,19 @@ const Header = () => {
 
   const handleSidebar = (e) => {
     sideBarHandler ? setSideBarHandler(false) : setSideBarHandler(true)
-    setServiceMenu(false)
+
     header.parentElement.style.overflowY = 'unset'
     setVisible('none')
   }
 
   const toggleSidebarInternalMenu = () => {
-    serviceMenu ? setServiceMenu(false) : setServiceMenu(true)
-    // sideBarHandler
-    //   ? (header.parentElement.style.overflow = 'scroll')
-    //   : (header.parentElement.style.overflowY = 'unset')
+    setServiceMenu(!serviceMenu)
+    setVisible(serviceMenu ? 'none' : 'flex')
   }
+  // sideBarHandler
+  //   ? (header.parentElement.style.overflow = 'scroll')
+  //   : (header.parentElement.style.overflowY = 'unset')
+
   // sticky header upon scroll
   const [sticky, setSticky] = useState('')
   const [isActive, setActive] = useState('')
@@ -200,7 +202,7 @@ const Header = () => {
                   <div
                     className={`btn-outline-danger cursor_pointer header__head ${
                       visible === 'flex' ? 'service-underline' : ''
-                    } ${serviceMenu ? 'service-menu-head nav-css' : ''}`}
+                    } ${serviceMenu ? 'service-menu-head  nav-css' : ''}`}
                     onClick={toggleSidebarInternalMenu}
                     onMouseOver={handleOnShowMenu}
                   >
