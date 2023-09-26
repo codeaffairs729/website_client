@@ -121,11 +121,7 @@ const Header = () => {
             content="width=device-width, initial-scale=0.96, maximum-scale=2.0"
           />
           <meta name="format-detection" content="telephone=no" />
-          <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="img/apple-touch-icon.webp"
-          />
+          <link rel="icon" sizes="180x180" href="/logo/cgt_new_favicon.webp" />
           <link
             rel="icon"
             type="image.webp"

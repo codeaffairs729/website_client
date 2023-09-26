@@ -152,7 +152,7 @@ const Contact = () => {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="img/apple-touch-icon.webp"
+          href="/logo/cgt_new_favicon.webp"
         />
         <link
           rel="icon"

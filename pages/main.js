@@ -33,11 +33,17 @@ const Main = () => {
       ) : (
         <div className="main">
           <Head>
+            <link
+              rel="icon"
+              alt="icon"
+              type="image.webp"
+              sizes="32x32"
+              href="/logo/cgt_new_favicon.webp"
+            />
             <title>
               Code Garage Tech - Custom Web & App Development Company
             </title>
             <link rel="canonical" href="https://codegaragetech.com/" />
-
             <meta
               name="description"
               content="Looking for reliable custom web software & app development services in India & USA? Code Garage Tech is here! We offer scalable, robust, and quality services"
