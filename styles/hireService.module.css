@@ -499,6 +499,9 @@
   .techservicebody {
     padding-block: 0px 36px;
   }
+  .techservicebodydev {
+    padding-block: 0px 36px;
+  }
   .techAIservicebody {
     padding-block: 0px 36px;
   }
@@ -978,6 +981,12 @@
   gap: 20px;
   margin-top: 140px;
 }
+.techservicebodydev {
+  min-height: 370px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
 .techAIservicebody {
   display: flex;
 }
@@ -1233,6 +1242,10 @@
     flex-direction: column-reverse;
   }
   .techservicebody {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .techservicebodydev {
     flex-direction: column-reverse;
     justify-content: center;
   }

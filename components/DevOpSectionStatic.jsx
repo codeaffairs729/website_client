@@ -13,7 +13,7 @@ const DevOpsStatic = () => {
         </div>
 
         <div
-          className={`${hireService.techservicebody} ${hireService.adjustservicebody}`}
+          className={`${hireService.techservicebodydev} ${hireService.adjustservicebody}`}
         >
           <div className={hireService.devopsservicebodyleft}>
             <ul className={`${hireService.listicon}`}>
