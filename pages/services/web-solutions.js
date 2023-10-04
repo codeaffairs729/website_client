@@ -87,7 +87,7 @@ const contentHeader1 = () => {
             objectFit="cover"
           />
           <Image
-            src="/icons/service-icon/keypad.png"
+            src="/icons/service-icon/Keypad.png"
             alt="Frame JPG"
             width={416}
             height={38}
@@ -124,7 +124,7 @@ const contentHeader1 = () => {
           </div>
           <div className={hireService.cube}>
             <Image
-              src="/icons/service-icon/cube.png"
+              src="/icons/service-icon/Cube.png"
               alt="blogimage"
               height={40.65}
               width={43.85}
