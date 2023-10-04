@@ -146,7 +146,7 @@
   .information-section .main-heading:before {
     width: 80px;
     height: 80px;
-    right: -23%;
+    right: -25%;
     top: -15px;
   }
   .blog-item {
@@ -164,4 +164,17 @@
 }
 
 @media only screen and (max-width: 575px) {
+  .information-section .main-heading:before {
+    width: 80px;
+    height: 80px;
+    right: -5%;
+    top: -15px;
+  }
+  .case-study-section .main-heading {
+    font-size: 2.2rem;
+    padding-bottom: 0rem !important;
+  }
+  .case-study-section {
+    background-image: none;
+  }
 }

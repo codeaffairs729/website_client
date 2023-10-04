@@ -8242,7 +8242,7 @@ html {
   border-style: solid;
   border-color: #21cdc0;
   border-radius: 12px;
-  margin-top: 25px;
+  margin-top: 51px;
   transition: 0.35s ease-in-out;
 }
 
@@ -8259,7 +8259,7 @@ html {
   color: #292930;
 }
 .card-body p {
-  font-size: 16px;
+  font-size: 14px;
   color: #666666;
 }
 
@@ -9501,8 +9501,15 @@ html {
 
   .card-desc {
     height: 94px;
-    width: 186px;
+    width: 600px;
+    padding-top:2rem;
   }
+  .line-clamp-3 {
+    width: 611px;
+}
+.blog-btn{
+  margin-top:2rem;
+}
 }
 @media only screen and (max-width: 767px) {
   body {
@@ -11040,6 +11047,13 @@ html {
     height: 77px;
     width: 250px;
   }
+    .line-clamp-3 {
+      width: 100%;
+  
+  }
+  .blog-btn {
+    margin-top: 4rem;
+}
 }
 .entry__pic__entry__pic_white-size {
   width: 140%;
@@ -11595,10 +11609,9 @@ top: 7641px; */
 /* Custom CSS for line truncation */
 .line-clamp-3 {
   display: -webkit-box;
-  -webkit-box-orient: vertical;
+  /* -webkit-box-orient: vertical; */
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 4; /* Number of lines to display */
-  /* Adjust the height based on your requirements */
-  height: 100px; /* (line-height * number of lines) */
+  -webkit-line-clamp: 1;
+  height: 42px;
 }

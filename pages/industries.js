@@ -137,7 +137,7 @@ const Industries = () => {
 
   return (
     <>
-      <div className="feature-list container ">
+      <div className={`feature-list container ${styles.industries}`}>
         <div className={` row ${styles.main_container}`}>
           <div
             className={`col-lg-7 col-md-12 col-sm-12 ${styles.left_container}`}

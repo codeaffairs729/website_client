@@ -10,7 +10,9 @@
   align-items: flex-start;
   margin-top: 50px;
 }
-
+.industries {
+  padding-bottom: 0px;
+}
 .left_upper_container {
   display: flex;
   flex-direction: column;

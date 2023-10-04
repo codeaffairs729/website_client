@@ -106,6 +106,30 @@ const BlogList = ({ authorized, blogData, notify, notifyError, db }) => {
         setDelId={setDelId}
         db={db}
       />
+      <div className={`container-fluid about-area-5 ${styles.about_area_5}`}>
+        <div
+          className={`container about-area-5-container ${styles.about_area}`}
+        >
+          <div className="row">
+            <div className="col-lg-12">
+              <h2
+                className={`about-area-5-heading ${styles.about_area_5_heading}`}
+              >
+                Looking for solutions tailored to your needs?
+              </h2>
+            </div>
+          </div>
+          <div className="d-flex flex-wrap align-items-content">
+            <a
+              href="./contact"
+              target="_blank"
+              className={`btn btn_pink career-area-1-btn px-5" ${styles.btn}`}
+            >
+              Reach Out To Us Today.
+            </a>
+          </div>
+        </div>
+      </div>
     </>
   )
 }

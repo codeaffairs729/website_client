@@ -212,7 +212,7 @@
 
   margin: auto;
   margin-top: 40px;
-  gap: 0em;
+  gap: 2em;
   /* background: rgba(214, 112, 112, 0.3); */
 }
 .result_section div:nth-child(1) {
@@ -249,6 +249,17 @@
 @media (max-width: 1023px) {
   .challenge_main {
     flex-direction: column;
+    margin-bottom: 3rem;
+  }
+  .case_container {
+    margin: auto;
+    margin-block: 50px;
+  }
+  .case_container h1 {
+    margin-bottom: 0px;
+  }
+  .case-page_effort_section {
+    margin-top: 13px;
   }
   .effort_section {
     flex-direction: column-reverse;
@@ -361,5 +372,13 @@
   } */
   .casestudycontainer {
     padding: 0px 38px 100px;
+  }
+  .case_container h1 {
+    font-size: 1.9rem;
+  }
+  .challenge_main h1 {
+    font-size: 2.5em;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
   }
 }

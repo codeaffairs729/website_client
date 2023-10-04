@@ -1,14 +1,14 @@
-import Testbloggrid from '../../components/Testbloggrid'
 import styles from '../../styles/blogStyle.module.css'
+import BlogGrid from '../../components/BlogGrid'
 import Link from 'next/link'
 import Image from 'next/image'
 export const CaseStudyPage = () => {
   const data = [
     {
       id: '1',
-      // title: 'Diveroid',
+      title: 'Mobile App For Divers',
       about:
-        'This case study focuses on a mobile application specially designed to record underwater diving adventures. Through this app, users can effortlessly capture underwater photos and create videos. This application ensures safety by offering details about pressure, temperature, and other factors under water. The app safety alerts will notify you if you have reached your depth stop, or ascending too fast. In the case of an emergency, the app will let you know what to do at the current depth to stay safe. It also supports free diving mode with features including, a stopwatch for static apnea, and boat calling. This application functions without any phone signal and displays information, such as dive duration, and no-decompression limit (NDL) to prevent accidents and decompression sickness.',
+        'This case study focuses on a mobile application specially designed to record underwater diving adventures. Through this app, users can effortlessly capture underwater photos and create videos. This application ensures safety by offering details about pressure, temperature, and other factors under water. The app’s safety alerts will notify you if you have reached your depth stop, or ascending too fast. In the case of an emergency, the app will let you know what to do at the current depth to stay safe. It also supports free diving mode with features including, a stopwatch for static apnea, and boat calling. This application functions without any phone signal and displays information, such as dive duration, and no-decompression limit (NDL) to prevent accidents and decompression sickness',
       Active: '20,000',
       Logs: '10 Lakh',
       AppDownloads: '50k, in one year',
@@ -22,18 +22,27 @@ export const CaseStudyPage = () => {
       ],
       Solutions: [
         {
-          info: 'For a real-time image enhancement experience, we integrated an AI model into the mobile application that dynamically refines and enriches the visuals of photos and videos. We also created a logbook within the mobile app (client side) that compiles images, videos, and metadata information. Client-side compilation is vital due to the lack of cellular network availability underwater. Upon the diver return and subsequent reconnection of the app to the internet, a seamless mechanism automatically synchronizes the data with the cloud.',
-          solimg: '/case_study/turtle.png',
+          info: 'To deliver a captivating real-time image enhancement experience, we seamlessly integrated an AI model into the mobile application. This AI model dynamically refines and enriches the visuals of both photos and videos, ensuring users receive high-quality visuals, even in challenging conditions.',
+          solimg: '/case_study/Divers1.png',
         },
         {
-          info: ' We organized a meeting with Physics Ph.D. holders who helped us in implementing the Buhlmann Decompression. Their expertise provided some insights, and with the help of that, we were able to design complex scientific algorithms to represent gathered data.',
-          solimg: '/case_study/effort_pixel_2.png',
+          info: 'Recognize the absence of cellular network availability underwater, we designed a client-side logbook within the mobile app. This logbook compiles images, videos, and metadata information locally on the users device during the dive.',
+          solimg: '/case_study/Divers2.png',
         },
         {
-          info: 'We acquired the necessary equipment, such as pressure chambers, and established a dark room to simulate a virtual environment for testing purposes. This helped us in conducting controlled experiments and accurately assessing the performance under various conditions. By utilizing pressure chambers and a dark room to simulate a virtual environment, we replicated real-world scenarios of our applications capabilities.',
-          solimg: '/case_study/Group_pic_7.png',
+          info: 'To ensure data integrity, we developed a seamless mechanism that automatically synchronizes the compiled data with the cloud once the diver returns and the app reconnects to the internet. This ensures that the users valuable content and metadata are safely stored and accessible from anywhere.',
+          solimg: '/case_study/Divers3.png',
+        },
+        {
+          info: 'Collaborated with Physics Ph.D. holders who provided invaluable insights and expertise, particularly in implementing the Buhlmann Decompression model. Their input enabled us to design complex scientific algorithms that accurately represent the data gathered during dives, enhancing the applications safety and reliability.',
+          solimg: '/case_study/Divers4.png',
+        },
+        {
+          info: 'To rigorously test and assess the applications performance under various conditions, we acquired essential equipment such as pressure chambers. Additionally, we established a controlled dark room to simulate a virtual underwater environment, allowing us to conduct precise and controlled experiments.',
+          solimg: '/case_study/Divers5.png',
         },
       ],
+
       Results:
         'This innovative mobile application and hardware device have proven invaluable to scuba divers, as it significantly reduces their expenses by eliminating the need to purchase separate types of equipment, such as a Diving computer and GoPro camera. In contrast to other exorbitantly priced diving gears, the hardware device and application serve as a cost-saving measure. Together, the app and device provided a user-friendly diving experience.',
       img: '/case_study/scuba_diving.png',
@@ -43,7 +52,7 @@ export const CaseStudyPage = () => {
     },
     {
       id: '2',
-      // title: 'Buyma',
+      title: 'International E-Commerce',
       about:
         'An e-commerce website that enables international buyers to access products from diverse countries, particularly fashion-related items that might not be readily available in their local markets. Here, users can find limited edition items and local trends across the globe. Within this website, users can also customise their products according to their requirements and can directly connect with the seller if they have any queries.To save on international shipping costs, this website offers the option of consolidating multiple items from different orders into a single shipment, helping users save on shipping fees.',
       Active: '20,000',
@@ -80,7 +89,7 @@ export const CaseStudyPage = () => {
     },
     {
       id: '3',
-      title: '',
+      title: 'Logistics Management',
       about:
         'A SAS mobile and web application that is specifically designed for the residential and commercial moving and storage industry. It offers streamlined online transportation services from various providers, with the aim of simplifying the management of moving operations. It has the ability to conduct and create an estimate on-site.The application empowers movers to view their jobs, alert the customer through a GPS when they are en route, access the customer digital invoice, and capture payment once the move is complete. ',
       Active: '20,000',
@@ -113,7 +122,7 @@ export const CaseStudyPage = () => {
     },
     {
       id: '4',
-      // title: 'VideoChatAPro',
+      title: 'Video Call Support',
       about:
         'A web application that allows customers to connect with service providers via video chat. Contractors and technicians specializing in plumbing, HVAC, landscaping, electrical work, appliances, or automotive repair can assist customers instantly through video chat and are available 24/7 to provide guidance on any do-it-yourself repairs or installations. ',
       Active: '20,000',
@@ -150,7 +159,7 @@ export const CaseStudyPage = () => {
     },
     {
       id: '5',
-      title: 'Peasy AI',
+      title: 'Customer Engagement App',
       about:
         'A SAS web and mobile application that is designed to generate high-quality leads, manage your sales team, and track as well as close deals- all on one platform. It is an open-source, and centralized system named Chatwoot that connects with popular customer communication channels, such as WhatsApp, Email, Website live-chat, Instagram, Facebook, Twitter, Line, etc.',
       Active: '20,000',
@@ -187,18 +196,17 @@ export const CaseStudyPage = () => {
       challengeimg2: '/case_study/peasy_challenge_2.png',
     },
   ]
-
   console.log(data)
 
   return (
     <>
-      <div
+      {/* <div
         className={`  pt-5 feature-list container ${styles.mainblogcontainer}`}
       >
         <div className={styles.bluecircle}></div>
         <div className={styles.blogcontainer}>
           <div className={styles.blogcontainerleft}>
-            {/* <div className="breadcumb-area"> */}
+          
             <div className={styles.circle} />
 
             <div className={styles.blogh2}>Applied Business Analysis</div>
@@ -219,8 +227,37 @@ export const CaseStudyPage = () => {
             />
           </div>
         </div>
-      </div>
-      <Testbloggrid data={data} authorized={true} />
+      </div> */}
+      <section className="information-section py-5  ">
+        <div className="container">
+          <div className="row mt-5">
+            <div className="col12 col-md-5 pt-4 mr-5">
+              <h5 className="heading-h6 text-color-indigo  fw-bold">
+                Applied Business Analysis
+              </h5>
+              <h2 className="display-2 py-2 main-heading">Case Studies</h2>
+              <p className="fw-normal text-muted">
+                Explore our real-world case studies showcasing our mastery in
+                crafting tailored IT solutions. See how we've empowered
+                businesses to overcome hurdles, implement visionary solutions,
+                and attain remarkable results.
+              </p>
+            </div>
+            <div className={`col-12 col-md-7 ml-5`}>
+              <div className={styles.casestudycontainer}>
+                <img
+                  src="/blogs/3d-disk.png"
+                  alt=""
+                  height={'354'}
+                  width={'599.89'}
+                  className={`img-fluid mx-auto `}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <BlogGrid data={data} authorized={true} />
     </>
   )
 }

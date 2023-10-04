@@ -104,7 +104,11 @@ export default function Home({ data, caseData }) {
         <Layouts />
         <Design />
         <Industries />
-        <BlogSection data={data} linktext="More Blogs" />
+        <BlogSection
+          data={data}
+          linktext="More Blogs"
+          heading="Our Featured Blogs"
+        />
       </div>
     </>
   )

@@ -11,10 +11,20 @@ import hireService from '../../styles/hireService.module.css'
 const contentHeader1 = () => {
   return (
     <>
-      <div className={hireService.techservicebody}>
+      <div
+        className={` feature-list container ${hireService.mobileservicebody}`}
+      >
         <div className={hireService.techservicebodyleft}>
-          <h1 className={hireService.hireh1}>{techTitle}</h1>
-          <ul
+          <div className={hireService.yellowcircle}></div>
+          <h6>Services</h6>
+          <div className={` mt-5 ${hireService.hiretext}`}>{techTitle}</div>
+          <div className={hireService.hireh9}>
+            Explore our mobile solutions tailored to boost your digital impact
+            on smartphones and tablets. From mobile app development to
+            responsive design, we're your partners in maximizing your mobile
+            presence. Dive into our solutions and amplify your mobile reach.
+          </div>
+          {/* <ul
             className={`${hireService.hirelisticon} ${hireService.hire_list_items_services} `}
           >
             <li className={hireService.marginebottom16px}>
@@ -37,17 +47,54 @@ const contentHeader1 = () => {
                 Niche-Specific, Target-Oriented Applications
               </p>
             </li>
-          </ul>
+          </ul> */}
+        </div>
+        <div className={hireService.mobilecloud}>
+          <Image
+            src="/blogs/blogcloud.png"
+            alt="blogimage"
+            height={119.36}
+            width={162}
+            objectFit="contain"
+          />
         </div>
         <div className={`${hireService.techservicebodyright} text-center`}>
           {/* <img src="/icons/service-icon/mobile-front-color-service.webp" /> */}
-          <div>
+
+          <Image
+            src="/icons/service-icon/mobile.png"
+            alt="mobile-front-color-service Image"
+            width={1363}
+            height={1200}
+            priority={true}
+            objectFit="cover"
+          />
+          <div className={hireService.mobilesphere}>
             <Image
-              src="/icons/service-icon/mobile-front-color-service.webp"
-              alt="mobile-front-color-service Image"
-              width={159}
-              height={280}
+              src="/icons/service-icon/Sphere.png"
+              alt="Frame JPG"
+              width={16}
+              height={16}
               priority={true}
+              objectFit="contain"
+            />
+          </div>
+          <div className={hireService.mobilecloud2}>
+            <Image
+              src="/blogs/blogcloud.png"
+              alt="blogimage"
+              height={64.75}
+              width={94.61}
+              objectFit="contain"
+            />
+          </div>
+          <div className={hireService.mobilecube}>
+            <Image
+              src="/icons/service-icon/cube.png"
+              alt="blogimage"
+              height={40.65}
+              width={43.85}
+              objectFit="contain"
             />
           </div>
         </div>
@@ -62,35 +109,73 @@ const content1 = () => {
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
         <p className={hireService.hirep}>
-          Code Garage is a preeminent mobile app development agency that is
-          specifically driven by creativity and innovation. We have proved
-          ourselves as a customer-trusted and credible company for over 6 years.
-          We have delivered 900+ mobile apps with a 98% success rate, and our
-          client&apos;s testimonials are evidence of that. <br /> <br />
-          We have a team of adept mobile app developers who have expertise in
-          developing mobile solutions that meet market requirements, empower the
-          brand identity of companies, and inspire business expansion and
-          growth.
+          Code Garage is not just a mobile app development agency; we are a
+          creative and innovative powerhouse dedicated to pushing the boundaries
+          of what mobile technology can achieve. With over seven years of
+          industry experience, we have solidified our reputation as a trusted
+          and credible partner for our clients. Our track record speaks for
+          itself, with a portfolio boasting over 900 successful mobile apps and
+          a remarkable 98% success rate, backed by glowing testimonials from our
+          satisfied customers.
           <br /> <br />
-          From start-ups to enterprises, we have experienced a wide experience
-          in providing creative mobile app solutions to a vast number of clients
-          across multiple industries.
+          Our team comprises highly skilled and versatile mobile app developers
+          who possess a deep understanding of the ever-evolving mobile
+          landscape. We specialize in crafting mobile solutions that not only
+          meet the demands of the market but also elevate your brand identity,
+          fostering business expansion and growth.
+          <br />
+          <br />
+          From startups with bold ideas to established enterprises looking to
+          stay ahead of the curve, our diverse clientele spans various
+          industries. We take pride in delivering innovative mobile app
+          solutions that cater to the unique needs and aspirations of each
+          client
           <br />
           <br />
         </p>
         {/* content-7 */}
         <h2 className={hireService.hireh2}>
           <strong>
-            Our Mobile Application Development Solutions For Various Platforms:
+            Our Mobile Application Development Solutions span across various
+            platforms:
           </strong>
         </h2>
         <ul className={hireService.hirelist}>
-          <li>Android App Development</li>
-          <li>iOS App Development</li>
-          <li>Progressive Web App Development</li>
-          <li>Cross-platform App Development</li>
+          <li>
+            <b>Android App Development:</b> We excel in creating feature-rich
+            and user-friendly Android apps that leverage the vast Android
+            ecosystem to reach a wide audience.
+          </li>
+          <br />
+          <li>
+            <b>iOS App Development:</b> Our iOS apps are meticulously crafted to
+            deliver a seamless and engaging user experience, aligning with
+            Apple's high standards for quality and design.
+          </li>
+          <br />
+          <li>
+            <b>Progressive Web App Development:</b> We harness the power of
+            progressive web apps to provide cross-platform experiences that
+            combine the best of web and mobile.
+          </li>
+          <br />
+          <li>
+            <b>Cross-platform App Development:</b> Our expertise in
+            cross-platform development allows us to build apps that run smoothly
+            on multiple platforms, minimizing development time and costs while
+            maximizing reach.
+          </li>
+          <br />
         </ul>
-
+        <p className={hireService.hirep}>
+          Choosing Code Garage means partnering with a team that is dedicated to
+          turning your mobile app vision into a reality. We are driven by a
+          passion for innovation and a commitment to delivering exceptional
+          mobile solutions that not only meet your immediate goals but also
+          position your business for sustained success in the dynamic world of
+          mobile technology.
+          <br /> <br />
+        </p>
         <h2 className={hireService.hireh2}>
           Partner With Us to Launch, Run & Grow Your Business Worldwide
         </h2>
@@ -110,26 +195,84 @@ const content1 = () => {
           <h3 className={hireService.hireicontext}>Android App Development</h3>
         </div>
         <p className={hireService.hirep}>
-          We are a reliable Android app development company, renowned for
-          boosting your development strategy, designing smooth experiences,
-          build-up viable solutions, and developing applications that add unique
-          value to the lives of users. We design as well as develop custom
-          Android applications for all sizes of businesses and domains.
+          We are a trusted and innovative Android app development company,
+          recognized for our ability to enhance your development strategy, craft
+          seamless user experiences, create practical solutions, and develop
+          applications that bring distinctive value to users' lives. Our
+          expertise extends to designing and developing custom Android
+          applications tailored to businesses of all sizes and across various
+          domains.
         </p>
         <p className={hireService.hirep}>
-          <strong>Our Android Development Services: </strong>
+          <strong>
+            Our comprehensive suite of Android Development Services encompasses:{' '}
+          </strong>
         </p>
         <ul className={hireService.hirelist}>
-          <li> UI/UX Design</li>
-          <li> Universal App Development</li>
-          <li>Custom Android App Development</li>
-          <li>Android Gaming App Development</li>
-          <li>Enterprise Android App</li>
-          <li>Android App Testing</li>
-          <li>Wearable Apps</li>
-          <li>Android App Security</li>
-          <li> App Maintenance & Support </li>
+          <li>
+            <b>Android UI/UX Design:</b> We prioritize user-centric design,
+            ensuring that your Android app delivers an engaging and intuitive
+            interface that keeps users coming back.
+          </li>
+          <br />
+          <li>
+            <b>Android Universal App Development:</b> We specialize in building
+            Android apps that perform seamlessly across a wide range of devices,
+            offering a consistent user experience.
+          </li>
+          <br />
+          <li>
+            <b>Android Custom Android App Development:</b> From concept to
+            execution, we create bespoke Android applications that align
+            perfectly with your business goals and audience needs.
+          </li>
+          <br />
+          <li>
+            <b>Android Gaming App Development:</b> Tap into the thriving world
+            of mobile gaming with our Android game development services,
+            delivering immersive and entertaining experiences.
+          </li>
+          <br />
+          <li>
+            <b>Enterprise Android App:</b> Empower your organization with
+            tailor-made enterprise Android apps that enhance productivity,
+            communication, and efficiency.
+          </li>
+          <br />
+          <li>
+            <b>Android App Testing:</b> Rigorous testing ensures the reliability
+            and performance of your Android app, identifying and resolving
+            issues before they impact users.
+          </li>
+          <br />
+          <li>
+            <b>Wearable Apps:</b> Stay ahead of the curve with wearable app
+            development, connecting your brand with users through smartwatches
+            and other wearable devices.
+          </li>
+          <br />
+          <li>
+            <b>Android App Security:</b> We prioritize the security of your app
+            and user data, implementing robust security measures to safeguard
+            against potential threats.
+          </li>
+          <br />
+          <li>
+            <b>Android App Maintenance & Support:</b> Our commitment extends
+            beyond development. We provide ongoing maintenance and support
+            services to keep your Android app running smoothly and up-to-date.
+          </li>
+          <br />
         </ul>
+        <p className={hireService.hirep}>
+          Choosing our Android app development services means partnering with a
+          team dedicated to realizing your vision and exceeding your
+          expectations. We thrive on innovation and a relentless pursuit of
+          excellence, ensuring that your Android app not only meets your
+          immediate objectives but also positions your business for long-term
+          success in the ever-evolving mobile landscape.
+          <br /> <br />
+        </p>
         <div
           id="ios"
           className={`d-flex align-items-center ${hireService.margintop32px}`}
@@ -140,27 +283,86 @@ const content1 = () => {
           <h3 className={hireService.hireicontext}>iOS App Development</h3>
         </div>
         <p className={hireService.hirep}>
-          If you want effective results, it is vital to develop niche-specific,
-          feature-rich, adaptable, and target-oriented mobile applications. We
-          develop top-quality iOS mobile solutions with a specific blend of
-          excellent coding and apparent system architecture. We follow the
-          iterative development approach and create applications with a scope
-          for improvement as the application runs.
+          Achieving effective results in the mobile app landscape demands a
+          strategic approach that prioritizes niche-specific, feature-rich,
+          adaptable, and target-oriented solutions. At our core, we specialize
+          in crafting high-caliber iOS mobile applications that seamlessly blend
+          excellent coding practices with clear system architecture. We embrace
+          an iterative development approach, ensuring that our applications not
+          only meet your immediate needs but also leave room for continuous
+          enhancement and refinement as they evolve..
         </p>
         <p className={hireService.hirep}>
-          <strong>Our iOS App Development Services:</strong>
+          <strong>
+            Our comprehensive suite of iOS App Development Services encompasses:
+          </strong>
         </p>
         <ul className={hireService.hirelist}>
-          <li> UI/UX Design</li>
-          <li> Universal App Development</li>
-          <li>Custom iOS App Development</li>
-          <li>iOS Gaming App Development</li>
-          <li>Apple Wearable App Development</li>
-          <li>iOS App Testing</li>
-          <li>Enterprise iOS AppS</li>
-          <li>iOS App Security</li>
-          <li> App Maintenance & Support</li>
+          <li>
+            <b>iOS UI/UX Design:</b> We put user experience at the forefront,
+            ensuring that your iOS app boasts an intuitive and visually
+            appealing interface that keeps users engaged.
+          </li>
+          <br />
+          <li>
+            <b>iOS Universal App Development</b> Our expertise extends to
+            creating iOS apps that offer a consistent and optimized experience
+            across a wide range of Apple devices.
+          </li>
+          <br />
+          <li>
+            <b>Custom iOS App Development</b> We bring your unique app ideas to
+            life, tailoring iOS applications to align seamlessly with your
+            business objectives and user expectations.
+          </li>
+          <br />
+          <li>
+            <b>iOS Gaming App Development</b> Dive into the world of mobile
+            gaming with our iOS game development services, delivering
+            captivating and immersive gaming experiences.
+          </li>
+          <br />
+          <li>
+            <b>Apple Wearable App Development</b> Stay ahead of the curve by
+            extending your brand's presence to Apple's wearable devices,
+            offering users seamless access through smartwatches and other
+            wearables.
+          </li>
+          <br />
+          <li>
+            <b>Enterprise iOS AppS</b> Empower your business with custom
+            enterprise iOS apps designed to enhance productivity, streamline
+            processes, and improve communication within your organization.
+          </li>
+          <br />
+          <li>
+            <b>iOS App Testing</b> Rigorous testing ensures the reliability,
+            performance, and security of your iOS app, guaranteeing a smooth
+            user experience.
+          </li>
+          <br />
+          <li>
+            <b>iOS App Security</b> We prioritize the security of your iOS app
+            and user data, implementing robust measures to safeguard against
+            potential threats and vulnerabilities.
+          </li>
+          <br />
+          <li>
+            <b>iOS App Maintenance & Support</b> Our commitment extends beyond
+            development. We provide ongoing maintenance and support services to
+            ensure your iOS app remains up-to-date, efficient, and hassle-free.
+          </li>
+          <br />
         </ul>
+        <p className={hireService.hirep}>
+          Choosing our iOS app development services means partnering with a team
+          dedicated to transforming your app vision into a reality. We thrive on
+          innovation and a relentless pursuit of excellence, ensuring that your
+          iOS app not only meets your immediate objectives but also positions
+          your business for long-term success in the dynamic and ever-evolving
+          world of mobile technology.
+          <br /> <br />
+        </p>
         <div
           id="mobile_react"
           className={`d-flex align-items-center ${hireService.margintop32px}`}
@@ -176,27 +378,72 @@ const content1 = () => {
           <h3 className={hireService.hireicontext}>React Native Development</h3>
         </div>
         <p className={hireService.hirep}>
-          React Native is one of the most eminent programming languages these
-          days and businesses over the globe are swiftly implementing it to
-          develop fully-featured as well as appealing cross-platform apps and
-          native user experience. We at Code Garage, have a long history of
-          creating feature-rich business applications. We have adept react
-          native developers who have wide domain competence to deliver
-          end-to-end solutions.
+          In today's fast-paced technological landscape, React Native stands out
+          as one of the most prominent programming languages, with businesses
+          worldwide swiftly adopting it to create fully-featured and visually
+          captivating cross-platform apps that offer native user experiences. At
+          Code Garage Tech, we have a rich history of crafting feature-rich
+          business applications, and our skilled React Native developers possess
+          extensive domain expertise to deliver comprehensive end-to-end
+          solutions.
           <br />
           <br />
         </p>
         <p className={hireService.hirep}>
-          <strong>Our React Native Development Services:</strong>
+          <strong>
+            Our comprehensive suite of React Native Development Services
+            encompasses:
+          </strong>
         </p>
         <ul className={hireService.hirelist}>
-          <li>React Native Application Development</li>
-          <li>React Native Android and iOS Applications</li>
-          <li> Integration and Migration Services</li>
-          <li>React Native Consulting</li>
-          <li> UI/UX Design</li>
-          <li> Support and Maintenance Services</li>
+          <li>
+            <b>React Native Application Development:</b> We specialize in
+            developing robust and scalable React Native applications that cater
+            to your specific business needs and user expectations.
+          </li>
+          <br />
+          <li>
+            <b>React Native Android and iOS Applications:</b> Our expertise
+            extends to crafting both Android and iOS applications using React
+            Native, ensuring that your app reaches a wide audience.
+          </li>
+          <br />
+          <li>
+            <b>React Native Integration and Migration Services:</b> Seamlessly
+            integrate React Native into your existing ecosystem or migrate your
+            current applications to React Native, harnessing the power of this
+            versatile framework.
+          </li>
+          <br />
+          <li>
+            <b>React Native Consulting:</b> Benefit from our expert insights and
+            guidance to make informed decisions about your React Native
+            projects, from architecture to implementation strategies.
+          </li>
+          <br />
+          <li>
+            <b>Reat Native UI/UX Design:</b> We prioritize the user experience,
+            ensuring that your React Native app boasts an intuitive and visually
+            appealing interface that captivates users.
+          </li>
+          <br />
+          <li>
+            <b>React Native Support and Maintenance Services:</b> Our commitment
+            extends beyond development. We provide ongoing support and
+            maintenance to keep your React Native apps up-to-date, efficient,
+            and problem-free.
+          </li>
+          <br />
         </ul>
+        <p className={hireService.hirep}>
+          Choosing Code Garage Tech for your React Native development needs
+          means partnering with a team dedicated to bringing your app vision to
+          life. We are driven by innovation and a relentless pursuit of
+          excellence, ensuring that your React Native app not only meets your
+          immediate objectives but also positions your business for enduring
+          success in the dynamic world of cross-platform development.
+          <br /> <br />
+        </p>
         <div
           id="flutter"
           className={`d-flex align-items-center ${hireService.margintop32px}`}
@@ -212,24 +459,72 @@ const content1 = () => {
           <h3 className={hireService.hireicontext}>Flutter Development</h3>
         </div>
         <p className={hireService.hirep}>
-          Our Flutter mobile app development services are specifically designed
-          to aid you develop a multi-platform existence. We at Code Garage, have
-          adept flutter apps developers who create, design, test and launch
-          completely developed flutter applications. We develop react native
-          applications for businesses of all sizes that are secure, reliable,
-          and secure at the same time.
+          Our Flutter mobile app development services are strategically tailored
+          to help you establish a versatile presence across multiple platforms.
+          At Code Garage Tech, we house a team of adept Flutter app developers
+          who are skilled in every aspect of the development cycle, from
+          conceptualization to design, testing, and successful launch. Our
+          commitment is to create secure, reliable, and efficient Flutter
+          applications that cater to businesses of all sizes.
         </p>
         <p className={hireService.hirep}>
-          <strong>Our Flutter Development Services:</strong>{' '}
+          <strong>
+            Our comprehensive suite of Flutter Development Services encompasses
+          </strong>{' '}
         </p>
         <ul className={hireService.hirelist}>
-          <li>Custom Flutter App Development</li>
-          <li>Cross-app Flutter App Development</li>
-          <li> Support and Maintenance Services</li>
-          <li>Flutter App Design Solutions</li>
-          <li>Advanced & Native Flutter App Development</li>
-          <li>Flutter App Upgrade</li>
+          <li>
+            <b>Custom Flutter App Development:</b> We specialize in crafting
+            bespoke Flutter applications, tailored to your unique business
+            requirements and vision, ensuring that your app stands out in a
+            competitive market.
+          </li>
+          <br />
+          <li>
+            <b>Cross-app Flutter App Development</b>
+          </li>{' '}
+          Harness the power of Flutter's cross-platform capabilities to create
+          applications that seamlessly run on both Android and iOS devices,
+          optimizing development time and costs.
+          <br />
+          <li>
+            <b>Flutter App Support and Maintenance Services</b>
+          </li>{' '}
+          Our commitment extends beyond development. We provide ongoing support
+          and maintenance services to ensure your Flutter apps remain
+          up-to-date, efficient, and trouble-free.
+          <br />
+          <li>
+            <b>Flutter App Design Solutions</b>
+          </li>{' '}
+          Prioritizing user experience, we design Flutter apps with intuitive
+          interfaces that engage users and provide a visually appealing and
+          smooth navigation experience.
+          <br />
+          <li>
+            <b>Flutter App Upgrade</b>
+          </li>{' '}
+          Stay ahead of the curve by upgrading your existing Flutter
+          applications with the latest features, enhancements, and security
+          updates.
+          <br />
+          <li>
+            <b>Advanced & Native Flutter App Development</b>
+          </li>{' '}
+          We offer advanced and native Flutter app development services that
+          leverage the full potential of the framework, ensuring a premium user
+          experience.
+          <br />
         </ul>
+        <p className={hireService.hirep}>
+          Choosing Code Garage Tech for your Flutter app development needs means
+          partnering with a team dedicated to realizing your app vision. We are
+          driven by innovation and a relentless pursuit of excellence, ensuring
+          that your Flutter app not only meets your immediate objectives but
+          also positions your business for enduring success in the dynamic world
+          of multi-platform development.
+          <br /> <br />
+        </p>
       </div>
     </>
   )
@@ -286,7 +581,7 @@ const MobileSolutions = () => {
         content7={content7}
         contentHeader1={contentHeader1}
         techTitle={techTitle}
-        bannerComponent={Banner}
+        bannerComponent={<Banner techTitle={techTitle} />}
       />
     </>
   )

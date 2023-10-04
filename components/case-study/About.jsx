@@ -1,44 +1,72 @@
 import style from '../../styles/case-page.module.css'
-
+import Image from 'next/image'
 const About = ({ Casedata }) => {
   console.log(Casedata)
 
   return (
     <>
-      <div className={style.about}>
-        <img src="/case_study/type_blue.png" className={style.type_blue_img} />
-        <h2 className="text-center">About the Project</h2>
-        <p>{Casedata.about}</p>
-      </div>
-      <div className={style.stats}>
-        <div className="d-flex justify-content-center align-items-center">
-          <div className={style.stats_div_img}>
-            <img src="/case_study/Profile-2.png" />
+      <section>
+        <div className="about-section">
+          <div className="row">
+            <div className="col-12 pt-4 fw-semibold lead">
+              <p>{Casedata.about} </p>
+            </div>
           </div>
-          <div className={`d-flex flex-column ${style.stats_div_info}`}>
-            <span>Active Users</span>
-            <span>{Casedata.Active}</span>
+          <div className="row d-flex justify-content-center pt-xl-3 attraction">
+            <div className="col-12 col-lg-6 my-3">
+              <div className="d-flex align-items-center">
+                <div className="flex-shrink-0">
+                  <img src="/Newimages/color.png" alt="..." />
+                </div>
+                <div className="flex-grow-1 ms-3">
+                  <h4 className="fw-bold text-color-indigo">Active Users</h4>
+                  <h4 className="fw-bold">{Casedata.Active}</h4>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-lg-6 col-xl-5 my-3 ">
+              <div className="d-flex align-items-center">
+                <div className="flex-shrink-0">
+                  <img
+                    src="/Newimages/Camera.png"
+                    alt="..."
+                    height={'84'}
+                    width="84"
+                  />
+                </div>
+                <div className="flex-grow-1 ms-3">
+                  <h4 className="fw-bold text-color-indigo">Logs Created</h4>
+                  <h4 className="fw-bold">{Casedata.Logs}</h4>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-lg-6 my-3">
+              <div className="d-flex align-items-center">
+                <div className="flex-shrink-0">
+                  <img
+                    src="/Newimages/file.png"
+                    alt="..."
+                    height={'84'}
+                    width="84"
+                  />
+                </div>
+                <div className="flex-grow-1 ms-3">
+                  <h4 className="fw-bold text-color-indigo">App Downloads</h4>
+                  <h4 className="fw-bold">{Casedata.AppDownloads}</h4>
+                </div>
+              </div>
+            </div>
           </div>
+          {/* <div className="frame">
+            <Image
+              src="/blogs/Frame.png"
+              objectFit="conatin"
+              height={130}
+              width={101}
+            ></Image>
+          </div> */}
         </div>
-        <div className="d-flex justify-content-center align-items-center">
-          <div className={style.stats_div_img}>
-            <img src="/case_study/Camera.png" />
-          </div>
-          <div className={`d-flex flex-column ${style.stats_div_info}`}>
-            <span>Logs Created</span>
-            <span>{Casedata.Logs}</span>
-          </div>
-        </div>
-        <div className="d-flex justify-content-center align-items-center">
-          <div className={style.stats_div_img}>
-            <img src="/case_study/Group.png" />
-          </div>
-          <div className={`d-flex flex-column ${style.stats_div_info}`}>
-            <span>App Downloads</span>
-            <span>{Casedata.AppDownloads}</span>
-          </div>
-        </div>
-      </div>
+      </section>
     </>
   )
 }

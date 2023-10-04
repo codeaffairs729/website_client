@@ -830,7 +830,7 @@
   left: -2rem;
   top: 45rem;
 }
-.display_circle{
+.display_circle {
   content: '';
   position: absolute;
   display: block;
@@ -1399,12 +1399,13 @@
     width: 55%;
     margin-top: 0px;
   }
-  .display_circle{
+  .display_circle {
     left: -8rem;
     top: 0rem;
   }
   .servicecloud {
     right: 21rem;
+    top: -2rem;
   }
   .mouse {
     top: 9.5rem;
@@ -1455,10 +1456,10 @@
     left: 2rem;
     width: 555px;
   }
-.display_circle{
-  left: 28rem;
-  top: -20rem;
-}
+  .display_circle {
+    left: 28rem;
+    top: -20rem;
+  }
   .mobileservicebodyright {
     left: 9rem;
     width: 555px;
@@ -1514,9 +1515,6 @@
 
   .service-container-body-right img {
     width: 300px;
-  }
-  .hirelisticon li {
-    background-position: left center;
   }
   .service-container-body-right-content {
     display: flex;
@@ -1798,7 +1796,9 @@
     padding-bottom: 20px;
   }
   .hireh1 {
-    font-size: 3.8rem;
+    font-size: 3.2rem;
+    margin-bottom: 24px;
+    margin-top: 0rem !important;
   }
   .hirelisticon li {
     background-position: left top;
@@ -1810,18 +1810,19 @@
   .servicecloud,
   .mobilecube,
   .mobilecloud2,
-  .mobilesphere,.display_circle {
+  .mobilesphere,
+  .display_circle {
     right: 2rem;
     display: none;
   }
   .techservicebodyright {
-    width: 80%;
-    left: 1.5rem;
-    top: 1rem;
+    width: 91%;
+    left: -0.5rem;
+    top: -1rem;
   }
   .mobileservicebodyright {
     width: 80%;
-    left: 2.8rem;
+    left: 2.1rem;
     top: 1rem;
   }
   .techservicebody {
@@ -1831,7 +1832,10 @@
     /* margin-top: 74px; */
   }
   .hiretext {
-    font-size: 4rem;
+    font-size: 2.7rem;
+    margin-left: 8px;
+    margin-top: 0rem !important;
+    margin-bottom: 34px;
   }
   .hirecontainer {
     width: 100%;
@@ -1840,4 +1844,11 @@
   .hirelisticon p {
     font-size: 1.3rem;
   }
+  .hirelisticon li {
+    background-position: left center;
+  }
+}
+.Aicontainerleftttext ul,
+.Aicontainerrighttext ul {
+  padding-left: 0rem;
 }

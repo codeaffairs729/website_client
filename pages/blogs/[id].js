@@ -149,7 +149,11 @@ export default function BlogDetails({ data, blogData }) {
                 </div>
               </div>
             </div>
-            <BlogSection data={data} linktext="All Blogs" />
+            <BlogSection
+              data={data}
+              linktext="All Blogs"
+              heading="Explore More Blogs"
+            />
           </div>
         </>
       ))}
