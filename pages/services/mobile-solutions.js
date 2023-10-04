@@ -90,7 +90,7 @@ const contentHeader1 = () => {
           </div>
           <div className={hireService.mobilecube}>
             <Image
-              src="/icons/service-icon/cube.png"
+              src="/icons/service-icon/Cube.png"
               alt="blogimage"
               height={40.65}
               width={43.85}
