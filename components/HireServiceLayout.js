@@ -79,7 +79,13 @@ const HireServiceLayout = ({
           {content5 && content5()}
           <div className={styles.maindiv}>
             <div className={styles.blue}></div>
-            {/* <div className={styles.black}></div> */}
+            {/* <div className={styles.black}>
+            <Image
+            src="/images/half-ellipse.png"
+            height={60}
+            width={60}
+            objectFit="cover"
+            /></div> */}
             <div
               className={`feature-list container ${styles.hirecontainer} ${styles.hirecontainerbodycontent}`}
             >

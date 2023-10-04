@@ -15,6 +15,19 @@ const Shimmer = dynamic(() => import('../components/ShimmerCareers'), {
   ssr: false,
 })
 
+const Activity = dynamic(() => import('../components/Activity'), {
+  ssr: false,
+})
+const Ratings = dynamic(() => import('../components/Ratings'), {
+  ssr: false,
+})
+const Growth = dynamic(() => import('../components/Growth'), {
+  ssr: false,
+})
+const Funactivity = dynamic(() => import('../components/Funactivity'), {
+  ssr: false,
+})
+
 const Careers = () => {
   const [loaded, setLoaded] = useState(false)
   const [shimmer, setShimmer] = useState(true)
@@ -197,95 +210,9 @@ const Careers = () => {
         <Shimmer />
       </div>
       <div className={shimmer ? `${style.display_None}` : ``}>
-        <div className="container-fluid career-area-2">
-          <div className="row">
-            <div className="col-lg-3 col-md-3"></div>
-            <div className="col-lg-9 col-md-9 career-area-2-text-outer">
-              <h1 className="career-area-2-heading">
-                A Place Where Active Mode Is Always On!
-              </h1>
-              <p className="career-area-2-para">
-                We are relaxed, energetic, & joyful. We are playful & have fun
-                while doing serious & important work. Join us now!
-              </p>
-            </div>
-          </div>
-          {/* <div className='rounded-circle career-area-2-circle' ></div> */}
-          <img
-            className={`career-area-2-img-1 ${
-              loaded ? 'blur-image-loaded' : 'blur-image'
-            }
-          `}
-            src="/career_images/career-area-2-img-1.webp"
-            alt="Vishav Playing Chess"
-          />
-          {/* <div className="career-area-2-img-1">
-          <Image
-            className="career-area-2-img-1"
-            src="/career_images/career-area-2-img-1.webp"
-            alt="Vishav Playing Chess"
-            width={310}
-            height={755}
-            blurDataURL="/career_images/career-area-2-img-1.webp"
-            placeholder="blur"
-          />
-        </div> */}
-          <img
-            className={`career-area-2-img-2 ${
-              loaded ? 'blur-image-loaded' : 'blur-image'
-            }
-          `}
-            src="/career_images/career-area-2-img-2.webp"
-            alt="CGT - Pool Party"
-          />
-          {/* <div className="career-area-2-img-2">
-          <Image
-            src="/career_images/career-area-2-img-2.webp"
-            alt="CGT - Pool Party"
-            width={120}
-            height={197}
-            blurDataURL="/career_images/career-area-2-img-2.webp"
-            placeholder="blur"
-          />
-        </div> */}
-          <img
-            className={`career-area-2-img-3 ${
-              loaded ? 'blur-image-loaded' : 'blur-image'
-            }
-          `}
-            src="/career_images/career-area-2-img-3.webp"
-            alt="CGT - Old Memories"
-          />
-          {/* <div>
-          <Image
-            className="career-area-2-img-3"
-            src="/career_images/career-area-2-img-3.webp"
-            alt="CGT - Old Memories"
-            width={180}
-            height={152}
-            blurDataURL="/career_images/career-area-2-img-3.webp"
-            placeholder="blur"
-          />
-        </div> */}
-          <img
-            className={`career-area-2-img-4 ${
-              loaded ? 'blur-image-loaded' : 'blur-image'
-            }
-          `}
-            src="/career_images/career-area-2-img-4.webp"
-            alt="Some Old Faces of CGT"
-            onLoad={handleImageLoad}
-          />
-
-          <img
-            className="career-area-2-typing-icon"
-            src="images/type.webp"
-            alt="3D Spanners Tool"
-          />
-        </div>
-
+        <Funactivity />
         <div className="container-fluid career-area-1">
-          <div className="row career-area-1-row rounded-pill">
+          <div className={`row career-area-1-row rounded-pill ${style.p0}`}>
             <div className="col-lg-12 career-area-1-col1">
               <h2 className="career-area-1-heading">
                 Extraordinary Problem Require Extraordinary People
@@ -306,208 +233,7 @@ const Careers = () => {
           </div>
         </div>
 
-        <div className="container-fluid my-5 career-area-3">
-          <div className="row career-area-3-outer-row border-top-5 p-5">
-            <div className="col-lg-12">
-              <h2 className="mb-4 career-area-3-heading">
-                Hop on a Hyper Growth ride
-                {/* &gt;&gt;&gt; */}
-              </h2>
-            </div>
-            <div className="col-lg-6 col-md-6 career-area-3-para d-flex align-items-center">
-              <p>
-                We Experiment, Adapt & Continually Grow. You won&apos;t find a
-                more dedicated, diligent team of professionals anywhere else who
-                utilize Web & App development technology cheerfully. We want to
-                see your career success and we pride ourselves on working hard
-                to make sure it happens. Mark your part as an inclusive,
-                collaborative, diverse, and supportive team. At Code Garage
-                Tech, we push the boundaries to make your career go boom!
-              </p>
-            </div>
-            <div className="col-lg-6 col-md-6 career-area-3-circle-outer text-end">
-              <img
-                className="career-area-3-img-rocket"
-                src="/career_images/ROCKET.webp"
-                alt="3D Rocket Backgroound Imageebp"
-              />
-              {/* <div className='about-area-circle career-area-3-circle1' ></div>
-                        <img className='career-area-3-cursor' src='img/cursor.webp' alt='' />
-                        <div className='about-area-circle career-area-3-circle2' ></div> */}
-            </div>
-            <div className="about-area-circle career-area-3-circle3"></div>
-            <img
-              className="career-area-3-cursor"
-              src="/img/cursor-1.webp"
-              alt="3D Cursor"
-            />
-            <img
-              className="career-area-3-cloud-1"
-              src="/img/cloud.webp"
-              alt="3D Cloud"
-            />
-            <img
-              className="career-area-3-cloud-2"
-              src="/img/cloud.webp"
-              alt="3D Cloud"
-            />
-          </div>
-          {/* <img className='career-area-3-line-circle' src='images/career-line-circle.webp' alt='' /> */}
-        </div>
-
-        <div className="container-fluid career-area-4">
-          <div className="row justify-content-center align-items-center career-area-4-row">
-            <div className="career-area-4-heading">
-              Our Best Perks Are
-              <br />
-              Pe<span className="text-danger">o</span>ple Themselves
-            </div>
-            <div className="rounded-circle career-area-4-circle1"></div>
-            <div className="rounded-circle career-area-4-circle2"></div>
-            <div
-              className="rounded-circle career-area-4-circle3"
-              role="img"
-              aria-label="2 Girls having fun at Swiming Pool"
-            ></div>
-            <div className="rounded-circle career-area-4-circle4"></div>
-          </div>
-          <div className="rounded-circle career-area-4-circle5"></div>
-        </div>
-
-        <div className="container-fluid career-area-5">
-          <div className="container career-area-5-container">
-            <div className="row">
-              <div className="col-lg-12 pb-5">
-                <h2 className="text-center career-area-5-heading">
-                  Watch Out For
-                </h2>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-lg-4 col-md-4 px-4 career-area-5-gray-box-outer">
-                <div className="career-area-5-gray-box py-2">
-                  <div className="rating-container-followers d-flex flex-column align-items-center">
-                    <p className="rating-container-followers-linkedin-text fs-5">
-                      3000 + Followers
-                    </p>
-                    <img
-                      src="/icons/Linkedin-Logo.webp"
-                      alt="LinkedIn - Logo"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-4 px-4 career-area-5-gray-box-outer">
-                <div className="career-area-5-gray-box py-3">
-                  <div className="rating-container py-3 d-flex justify-content-evenly">
-                    <div>
-                      <img src="/icons/google-icon.webp" alt="Google Icon" />
-                    </div>
-                    <div>
-                      <div className="rating-container-headline fs-5">
-                        Google
-                      </div>
-                      <div>
-                        <span className="Warning">
-                          <Image
-                            src="/icons/star-full-icon.svg"
-                            height={16}
-                            width={16}
-                          />
-                        </span>
-                        <span className="Warning">
-                          <Image
-                            src="/icons/star-full-icon.svg"
-                            height={16}
-                            width={16}
-                          />
-                        </span>
-                        <span className="Warning">
-                          <Image
-                            src="/icons/star-full-icon.svg"
-                            height={16}
-                            width={16}
-                          />
-                        </span>
-                        <span className="Warning">
-                          <Image
-                            src="/icons/star-full-icon.svg"
-                            height={16}
-                            width={16}
-                          />
-                        </span>
-                        <span className="Warning pr-2">
-                          <Image
-                            src="/icons/star-full-icon.svg"
-                            height={16}
-                            width={16}
-                          />
-                        </span>
-                      </div>
-                    </div>
-                    <div className="mt-3">5/5</div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-4 px-4 career-area-5-gray-box-outer">
-                <div className="career-area-5-gray-box py-3">
-                  <div className="rating-container py-3 d-flex justify-content-evenly">
-                    <div>
-                      <img
-                        src="/icons/glassdoor-icon-48.webp"
-                        alt="Glassdoor Icon"
-                      />
-                    </div>
-                    <div>
-                      <div className="rating-container-headline fs-5">
-                        Glassdoor
-                      </div>
-                      <div>
-                        <span className="Warning">
-                          <Image
-                            src="/icons/star-full-icon.svg"
-                            height={16}
-                            width={16}
-                          />
-                        </span>
-                        <span className="Warning">
-                          <Image
-                            src="/icons/star-full-icon.svg"
-                            height={16}
-                            width={16}
-                          />
-                        </span>
-                        <span className="Warning">
-                          <Image
-                            src="/icons/star-full-icon.svg"
-                            height={16}
-                            width={16}
-                          />
-                        </span>
-                        <span className="Warning">
-                          <Image
-                            src="/icons/star-full-icon.svg"
-                            height={16}
-                            width={16}
-                          />
-                        </span>
-                        <span className="Warning">
-                          <Image
-                            src="/icons/star-full-icon.svg"
-                            height={16}
-                            width={16}
-                          />
-                        </span>
-                      </div>
-                    </div>
-                    <div className="mt-3">5/5</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Growth />
 
         {/* <div className='container-fluid career-area-7' >
                 <div className='container career-area-7-container' >
@@ -590,59 +316,8 @@ const Careers = () => {
                     </p>
                 </div>
             </div> */}
-
-        <div className="container-fluid career-area-8">
-          <div className="career-area-8-row row">
-            <div className="d-flex flex-column flex-md-row">
-              <div className="col-lg-6 col-md-6 d-flex align-items-center">
-                <div className="career-area-8-text-div-1">
-                  <h2 className="career-area-8-heading">We&apos;re Fun</h2>
-                  <p className="career-area-8-para">
-                    Having a friendly workspace is all you need to be more
-                    productive and we at Code Garage find fun in little things
-                    that make our day full of positive vibes. We Lift Spirits by
-                    making our office environment lively with great music. We
-                    believe that fun is essential to a good work environment.
-                    That&apos;s why we offer flexible hours, fun events, and
-                    challenging projects. We want you to feel like you&apos;re
-                    not just working—you&apos;re exuberant!
-                  </p>
-                </div>
-              </div>
-
-              <div className="col-lg-6 col-md-6 d-flex justify-content-center">
-                <img
-                  className="career-area-8-img-2"
-                  src="/career_images/career-area-8-img-2.webp"
-                  alt="Sweet Memory of Theatre - CGT"
-                />
-              </div>
-            </div>
-            <div className="d-flex flex-column-reverse flex-md-row">
-              <div className="m-2 col-lg-6 col-md-6 d-flex justify-content-center">
-                <img
-                  className="career-area-8-img-2"
-                  src="/career_images/career-area-8-img-22.webp"
-                  alt="Process Oriented"
-                />
-              </div>
-              <div className="m-2 col-lg-6 col-md-6 d-flex align-items-center">
-                <div className="career-area-8-text-div-1">
-                  <h2 className="career-area-8-heading">
-                    We&apos;re Process-Oriented
-                  </h2>
-                  <p className="career-area-8-para mt-3">
-                    One of the most important things about our process is that
-                    we&apos;re focused on the client. We believe that great work
-                    doesn&apos;t just happen—it needs to be created by people
-                    who are passionate about it and committed to excellence.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <Ratings />
+        <Activity />
         <JoiningReasons />
         <div className="container-fluid career-area-6">
           <div className="row text-center career-area-6-row">

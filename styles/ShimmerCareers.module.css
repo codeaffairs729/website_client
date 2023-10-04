@@ -11,6 +11,9 @@
 .display_None {
   display: none;
 }
+.p0 {
+  padding-left: 6rem;
+}
 .container {
   width: 100%;
   margin-top: 120px;

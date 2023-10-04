@@ -81,7 +81,7 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
   }
   return (
     <>
-      <section className="blog-section  ">
+      <div className="blog-section  ">
         <div className="container">
           <div className="maincontainer">
             <div className="row blog-list my-5 ">
@@ -130,7 +130,7 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </>
   )
 }

@@ -66,7 +66,7 @@ const BlogList = ({ authorized, blogData, notify, notifyError, db }) => {
           <h1 className="text-center text-light">OUR LATEST BLOGS</h1>
         )}
       </div> */}
-      <section className=" container information-section py-5  ">
+      <div className={`container information-section py-5 pa-1 ${styles.pa_1}`}>
         <div className="container">
           {db === 'case-study' ? (
             <h1 className="text-center text-light">CASE STUDY</h1>
@@ -99,7 +99,7 @@ const BlogList = ({ authorized, blogData, notify, notifyError, db }) => {
             </div>
           )}
         </div>
-      </section>
+      </div>
       <BlogGrid
         data={data}
         authorized={authorized}

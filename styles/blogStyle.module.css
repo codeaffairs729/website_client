@@ -1,5 +1,6 @@
 .blogdiv {
   position: relative;
+  left: 6rem;
 }
 .casestudypage {
   position: relative;
@@ -228,7 +229,10 @@
   font-weight: bold;
   color: #f1f1f1;
 }
-
+.pa_1{
+  padding-bottom:0rem !important;
+  margin-bottom:0rem;
+}
 .close:hover,
 .close:focus {
   color: #f44336;
@@ -676,14 +680,17 @@ height: 100%;
   .disk {
     width: 85px;
     top: 17.5rem;
+    right:1rem;
   }
   .blogcloud2 {
     top: -3rem;
+    right:1rem;
     width: 87px;
   }
   .blogdiv {
     top: 3rem;
-    left: 3rem;
+    left: 6rem;
+    width:40%
   }
 }
 @media screen and (max-width: 1128px) {
@@ -726,10 +733,11 @@ height: 100%;
   .disk {
     right: 4rem;
     width: 85px;
+    right: -2rem;
   }
   .blogcloud2 {
     top: -3rem;
-    right: 4rem;
+    right: -2rem;
     width: 87px;
   }
 }

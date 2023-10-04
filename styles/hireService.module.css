@@ -830,12 +830,24 @@
   left: -2rem;
   top: 45rem;
 }
+.display_circle{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+  background: #e9e9e9;
+  left: -11rem;
+  top: 2rem;
+  z-index: -1;
+}
 .black {
   position: absolute;
-  height: 60px;
-  width: 60px;
-  border-radius: 50px;
-  background-color: #27272e;
+  /* height: 60px;
+  width: 60px; */
+  border-radius: 150px;
+  /* background-color: #27272e; */
   right: -2rem;
   top: 15rem;
 }
@@ -1303,10 +1315,10 @@
   }
   .black {
     position: absolute;
-    height: 44px;
-    width: 44px;
-    border-radius: 50px;
-    background-color: #27272e;
+    height: 66px;
+    width: 66px;
+    /* border-radius: 50px;
+    background-color: #27272e; */
     right: 0rem;
     top: 15rem;
   }
@@ -1387,6 +1399,10 @@
     width: 55%;
     margin-top: 0px;
   }
+  .display_circle{
+    left: -8rem;
+    top: 0rem;
+  }
   .servicecloud {
     right: 21rem;
   }
@@ -1439,7 +1455,10 @@
     left: 2rem;
     width: 555px;
   }
-
+.display_circle{
+  left: 28rem;
+  top: -20rem;
+}
   .mobileservicebodyright {
     left: 9rem;
     width: 555px;
@@ -1791,7 +1810,7 @@
   .servicecloud,
   .mobilecube,
   .mobilecloud2,
-  .mobilesphere {
+  .mobilesphere,.display_circle {
     right: 2rem;
     display: none;
   }
@@ -1802,7 +1821,7 @@
   }
   .mobileservicebodyright {
     width: 80%;
-    left: 2.5rem;
+    left: 2.8rem;
     top: 1rem;
   }
   .techservicebody {

@@ -99,6 +99,7 @@ export default function BlogDetails({ data, blogData }) {
                   </p>
                 </div>
                 <div className={`col-12 col-lg-6 ${styles.blogdiv}`}>
+                  <div className={hireService.display_circle}></div>
                   <div className={styles.blogcloud2}>
                     <Image
                       src="/blogs/blogcloud.png"
@@ -148,7 +149,7 @@ export default function BlogDetails({ data, blogData }) {
                 </div>
               </div>
             </div>
-            <BlogSection data={data} linktext="See Other Blogs" />
+            <BlogSection data={data} linktext="All Blogs" />
           </div>
         </>
       ))}

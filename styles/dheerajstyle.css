@@ -12,6 +12,7 @@
   background-position: 20% 34%, center bottom;
   background-size: 50%;
   background-repeat: no-repeat;
+  margin-top: -3rem;
 }
 .blog-section1:not(.featured-blog-section) {
   /* background-image: url('../public/Newimages/case-study-bg.png'); */
@@ -52,7 +53,6 @@
   top: -26px;
   z-index: -1;
 }
-
 .blog-list .blog-list-item {
   border-bottom: 1px solid #e9e9e9;
 }
@@ -117,6 +117,9 @@
   }
   .frame {
     left: -2rem;
+  }
+  .blog-section:not(.featured-blog-section) {
+    margin-top: -1rem;
   }
 }
 
