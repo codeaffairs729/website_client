@@ -4,7 +4,7 @@ import Image from 'next/image'
 import styles from '../styles/blogStyle.module.css'
 import { HiArrowSmRight } from 'react-icons/hi'
 
-export default function BlogSection({ data }) {
+export default function BlogSection({ data, linktext }) {
   const blog_category = [
     {
       category: 'Web Development & Optimization',
@@ -90,8 +90,8 @@ export default function BlogSection({ data }) {
             <div className={`card   ${styles.customcard}`}>
               <Link href={`/blogs/${e.slug}`} className="">
                 <div
-                  className={`card-img text-center cursor_pointer ${styles.card_img}`}
-                  style={{ overflow: 'hidden' }}
+                  className={`card-img text-center cursor_pointer ${styles.cardimg}`}
+                  style={{ overflow: 'hidden', marginTop: '1rem' }}
                 >
                   <Image
                     src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${e.image}`}
@@ -129,7 +129,7 @@ export default function BlogSection({ data }) {
       <div className={`cursor_pointer ${styles.text_end}`}>
         <Link href="/user-blog-list">
           <a className={styles.design}>
-            More Blogs
+            {linktext}
             <svg className={styles.icon} aria-labelledby="fwd-icon">
               <use xlinkHref="img/sprite.svg#icon-arrow-right"></use>
             </svg>

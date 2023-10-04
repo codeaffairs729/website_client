@@ -31,13 +31,48 @@
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 3.125rem;
+  font-size: 5rem;
   line-height: 123%;
   color: #292930;
-  width: 500px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
+  width: 537px;
 }
-
+.hiretext {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 123%;
+  color: #292930;
+  margin-bottom: 50px;
+  width: 50%;
+}
+.hireh8 {
+  color: #999fae;
+  font-family: 'Poppins';
+  font-size: 1rem;
+  font-style: normal;
+  width: 86%;
+}
+.hireh9 {
+  color: #999fae;
+  font-family: 'Poppins';
+  font-size: 1rem;
+  font-style: normal;
+  width: 550px;
+}
+.techservicebody h6 {
+  color: #fab8c4;
+  font-family: 'DM sans';
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.mobileservicebody h6 {
+  color: #fab8c4;
+  font-family: 'DM sans';
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 .hireh2 {
   font-family: 'DM Sans';
   font-style: normal;
@@ -188,7 +223,7 @@
   font-size: 1.125rem;
   font-family: Poppins;
   font-weight: 400;
-  color: #000000;
+  color: rgb(167, 172, 176);
   width: 40%;
 }
 
@@ -223,11 +258,85 @@
   color: #333333;
 }
 .techservicebodyleft {
-  flex-basis: 55%;
+  flex-basis: 50%;
 }
 .techservicebodyright {
-  padding-right: 74px;
-  width: 400px;
+  position: relative;
+}
+.mobileservicebodyright {
+  position: relative;
+}
+.servicecloud {
+  height: 119.34px;
+  width: 162px;
+  right: 26rem;
+  top: -3rem;
+  position: absolute;
+}
+.servicecloud2 {
+  right: -5rem;
+  top: 5rem;
+  position: absolute;
+  height: 64.75px;
+  width: 94.61px;
+}
+.mouse {
+  width: 55.02px;
+  height: 59.67px;
+  right: 0rem;
+  top: 9.5rem;
+  position: absolute;
+}
+.cube {
+  width: 43.85px;
+  height: 40.65px;
+  right: -4rem;
+  top: -1.5rem;
+  position: absolute;
+}
+.sphere {
+  width: 16px;
+  height: 16px;
+  right: 2rem;
+  top: 3.5rem;
+  position: absolute;
+}
+.yellowcircle {
+  border-radius: 50%;
+  position: absolute;
+  background-color: #ffdc60;
+  height: 120px;
+  width: 120px;
+  left: 17rem;
+  box-shadow: 0 6px 2px -2px rgba(0, 0, 0, 0.2);
+}
+.mobilecloud {
+  height: 119.34px;
+  width: 162px;
+  right: 27rem;
+  top: 0rem;
+  position: absolute;
+}
+.mobilesphere {
+  width: 16px;
+  height: 16px;
+  right: 1rem;
+  top: 9rem;
+  position: absolute;
+}
+.mobilecloud2 {
+  right: -4rem;
+  top: 13rem;
+  position: absolute;
+  height: 64.75px;
+  width: 94.61px;
+}
+.mobilecube {
+  width: 43.85px;
+  height: 40.65px;
+  right: -3rem;
+  top: 4.5rem;
+  position: absolute;
 }
 .devopsimage {
   padding-left: 40px;
@@ -261,7 +370,6 @@
   width: 98vw;
   height: 105%;
   overflow: hidden;
-  background: #fafafa;
 }
 .bannercloud {
   position: absolute;
@@ -293,9 +401,9 @@
   width: 82%;
   /* height: 50vw; */
   margin: auto;
-  margin-top: 71px;
   display: flex;
   justify-content: space-between;
+  padding: 0px;
   /* align-items: center; */
   gap: 50px;
   /* background: rgba(0, 0, 0, 0.25); */
@@ -310,7 +418,9 @@
   /* background: rgba(95, 226, 99, 0.25); */
   /* display: none; */
 }
-
+.mobilediv {
+  position: relative;
+}
 .hirecontainerbody {
   display: flex;
   margin-top: 170px;
@@ -384,6 +494,8 @@
 
 .hirecontainerbodyleftcontent {
   /* flex-basis: 60%; */
+  /* flex-basis: 100%; */
+  width: 60%;
 }
 
 .hirecontainerbodyrightcontent {
@@ -467,14 +579,14 @@
     left: 37%;
     top: 96%;
   }
-  .techservicebodyright {
-    width: 350px;
-  }
   /* .hire-container-body-right {
     max-width: 300px;
   } */
   .hireh2 {
     line-height: 32px;
+  }
+  .hiretext {
+    width: 100%;
   }
   .hireh2blue {
     line-height: 32px;
@@ -499,6 +611,9 @@
   .techservicebody {
     padding-block: 0px 36px;
   }
+  .mobileservicebody {
+    padding-block: 0px 36px;
+  }
   .techservicebodydev {
     padding-block: 0px 36px;
   }
@@ -508,9 +623,6 @@
   /* .AIservicebody {
     padding-block: 0px 36px;
   } */
-  .techservicebodyright {
-    padding-right: 0px;
-  }
 
   .hiringmodel:nth-child(2) {
     border-left: none;
@@ -545,12 +657,6 @@
     width: 100%;
   }
 
-  .hirecontainer {
-    padding-left: 60px;
-    padding-right: 60px;
-    margin-bottom: 35px;
-  }
-
   .hirecontainerbodyrightcontent {
     border-left: none;
   }
@@ -579,7 +685,7 @@
   }
 
   .hirecontainerbodyleftcontent {
-    width: 100%;
+    width: 93%;
     /* margin-top: -45px; */
   }
 
@@ -631,9 +737,6 @@
   .hireh3 {
     font-size: 1.25rem;
     margin-bottom: 4px;
-  }
-  .techservicebodyright {
-    width: 250px;
   }
   .hirecontainerbodycontent {
     margin-top: -25px;
@@ -715,7 +818,27 @@
     display: none;
   } */
 }
-
+.maindiv {
+  position: relative;
+}
+.blue {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  background-color: #5956e9;
+  left: -2rem;
+  top: 45rem;
+}
+.black {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  background-color: #27272e;
+  right: -2rem;
+  top: 15rem;
+}
 /* hire team page */
 .margineleft8px {
   margin-left: 8px;
@@ -733,7 +856,7 @@
   width: 100%;
 } */
 .hirelisticon {
-  margin-left: 10px;
+  margin-left: -30px;
 }
 .hirelisticon li {
   /* content: ''; */
@@ -978,7 +1101,13 @@
   min-height: 370px;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  margin-top: 140px;
+  gap: 178px;
+}
+.mobileservicebody {
+  min-height: 370px;
+  display: flex;
+  justify-content: space-between;
   margin-top: 140px;
 }
 .techservicebodydev {
@@ -1038,7 +1167,7 @@
   display: flex !important;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  gap: 20px;
 }
 
 .navlogoslider {
@@ -1142,7 +1271,7 @@
     padding-left: 5px;
   }
   .hireh2 {
-    width: 815px;
+    /* width: 815px; */
   }
   .devopsbodyright {
     margin-top: -70px;
@@ -1156,7 +1285,7 @@
 
   } */
   .hireh1 {
-    width: 471px;
+    width: 549px;
   }
 }
 @media screen and (max-width: 1365px) {
@@ -1171,6 +1300,60 @@
   .maindevcontainer h5 {
     width: 45%;
     margin-top: 0px;
+  }
+  .black {
+    position: absolute;
+    height: 44px;
+    width: 44px;
+    border-radius: 50px;
+    background-color: #27272e;
+    right: 0rem;
+    top: 15rem;
+  }
+  .hireh8 {
+    width: 100%;
+  }
+  .mouse {
+    right: 4rem;
+    top: 9.5rem;
+  }
+  .sphere {
+    right: 6rem;
+    top: 3.5rem;
+  }
+  .servicecloud2 {
+    top: 5rem;
+    right: -2rem;
+  }
+  .cube {
+    right: -5rem;
+    top: 1.5rem;
+  }
+  .servicecloud {
+    width: 122px;
+    right: 31rem;
+    top: 0rem;
+  }
+  .techservicebody {
+    gap: 111px;
+  }
+  .mobileservicebody {
+    gap: 111px;
+  }
+  .mobilecloud {
+    right: 23rem;
+  }
+  .mobilesphere {
+    right: 0rem;
+    top: 9rem;
+  }
+  .mobilecube {
+    right: -4rem;
+    top: 0rem;
+  }
+  .mobilecloud2 {
+    right: -6rem;
+    top: 14rem;
   }
 }
 @media screen and (max-width: 1180px) {
@@ -1204,6 +1387,47 @@
     width: 55%;
     margin-top: 0px;
   }
+  .servicecloud {
+    right: 21rem;
+  }
+  .mouse {
+    top: 9.5rem;
+    right: -1rem;
+  }
+  .cube {
+    right: -2rem;
+  }
+  .mobilecloud2 {
+    right: -4rem;
+    top: 14rem;
+  }
+  .mobilecube {
+    right: -3rem;
+    top: 2rem;
+  }
+  .sphere {
+    right: 2rem;
+    top: 3.5rem;
+  }
+  .servicecloud2 {
+    top: 5rem;
+    right: -49px;
+  }
+  .techservicebody {
+    gap: 10px;
+  }
+  .mobileservicebody {
+    gap: 10px;
+  }
+  .hireh8 {
+    width: 92%;
+  }
+  .hireh9 {
+    width: 364px;
+  }
+  .mobilecloud {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1211,15 +1435,58 @@
     padding-left: 45px;
     padding-right: 45px;
   }
-  .techservicebodyleft {
-    text-align: center;
+  .techservicebodyright {
+    left: 2rem;
+    width: 555px;
   }
 
+  .mobileservicebodyright {
+    left: 9rem;
+    width: 555px;
+  }
+  .servicecloud {
+    right: 1rem;
+    top: 25rem;
+  }
   .tech-service-body-left-right {
     text-align: center;
   }
   .hireh1 {
-    width: 350px;
+    width: 100%;
+  }
+  .mouse {
+    right: 11rem;
+  }
+  .sphere {
+    right: 12rem;
+  }
+  .servicecloud2 {
+    right: 4rem;
+  }
+  .cube {
+    right: 4rem;
+    top: -2rem;
+  }
+  .techservicebody {
+    gap: 40px;
+  }
+  .mobilecube {
+    right: -4rem;
+  }
+  .mobilecloud2 {
+    right: -4rem;
+    top: 16rem;
+  }
+  .mobilecloud,
+  .yellowcircle {
+    display: none;
+  }
+  .mobilesphere {
+    right: 0rem;
+    top: 10rem;
+  }
+  .hireh9 {
+    width: 100%;
   }
   .tech-service-body-left-right img {
     height: 230px;
@@ -1229,7 +1496,9 @@
   .service-container-body-right img {
     width: 300px;
   }
-
+  .hirelisticon li {
+    background-position: left center;
+  }
   .service-container-body-right-content {
     display: flex;
     justify-content: center;
@@ -1242,6 +1511,10 @@
     flex-direction: column-reverse;
   }
   .techservicebody {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .mobileservicebody {
     flex-direction: column-reverse;
     justify-content: center;
   }
@@ -1504,5 +1777,48 @@
   }
   .maindevcontainer {
     padding-bottom: 20px;
+  }
+  .hireh1 {
+    font-size: 3.8rem;
+  }
+  .hirelisticon li {
+    background-position: left top;
+  }
+  .sphere,
+  .cube,
+  .mouse,
+  .servicecloud2,
+  .servicecloud,
+  .mobilecube,
+  .mobilecloud2,
+  .mobilesphere {
+    right: 2rem;
+    display: none;
+  }
+  .techservicebodyright {
+    width: 80%;
+    left: 1.5rem;
+    top: 1rem;
+  }
+  .mobileservicebodyright {
+    width: 80%;
+    left: 2.5rem;
+    top: 1rem;
+  }
+  .techservicebody {
+    margin-top: 74px;
+  }
+  .mobileservicebody {
+    /* margin-top: 74px; */
+  }
+  .hiretext {
+    font-size: 4rem;
+  }
+  .hirecontainer {
+    width: 100%;
+    padding: 0px;
+  }
+  .hirelisticon p {
+    font-size: 1.3rem;
   }
 }

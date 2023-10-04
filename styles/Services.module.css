@@ -1,13 +1,12 @@
 .services_image_container {
-  height: 55vh;
+  height: 28rem;
   /* width: 55vw; */
   display: flex;
   /* align-items: center;
   justify-content: center; */
 }
-.openai_image{
+.openai_image {
   height: 48vh;
-  
 }
 
 @media (max-width: 1000px) {
@@ -15,9 +14,8 @@
     /* width: 85vw; */
     height: 30vh;
   }
-  .openai_image{
+  .openai_image {
     height: 70vh;
-    
   }
 }
 @media (max-width: 480px) {
@@ -28,8 +26,7 @@
     align-items: center;
     justify-content: center;
   }
-  .openai_image{
+  .openai_image {
     height: 40vh;
-    
   }
 }

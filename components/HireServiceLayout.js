@@ -54,9 +54,9 @@ const HireServiceLayout = ({
           <div className={styles.hirecontainer}>
             {isIconExit && (
               <div>
-                <div className={styles.bannercloud}>
+                {/* <div className={styles.bannercloud}>
                   <Image src="/img/cloud.webp" alt="cloud-jpg" layout="fill" />
-                </div>
+                </div> */}
 
                 <div className={styles.bannertype}>
                   <Image
@@ -72,24 +72,28 @@ const HireServiceLayout = ({
             {contentHeader && contentHeader()}
             {contentHeader1 && contentHeader1()}
           </div>
-          {bannerComponent()}
+          {bannerComponent}
           <div className={styles.hirecontainer}></div>
           {content4 && content4()}
           <div className={styles.hirecontainer}></div>
           {content5 && content5()}
-          <div
-            className={`${styles.hirecontainer} ${styles.hirecontainerbodycontent}`}
-          >
-            <div className={styles.hirecontainerbodyleftcontent}>
-              <div className="hire-team-c1 hire-container-body-left-content1">
-                {content1 && content1()}
+          <div className={styles.maindiv}>
+            <div className={styles.blue}></div>
+            {/* <div className={styles.black}></div> */}
+            <div
+              className={`feature-list container ${styles.hirecontainer} ${styles.hirecontainerbodycontent}`}
+            >
+              <div className={styles.hirecontainerbodyleftcontent}>
+                <div className="hire-team-c1 hire-container-body-left-content1">
+                  {content1 && content1()}
+                </div>
+                <div className="hire-team-c1 hire-container-body-left-content2">
+                  {/* {content2 && content2()} */}
+                </div>
               </div>
-              <div className="hire-team-c1 hire-container-body-left-content2">
-                {/* {content2 && content2()} */}
+              <div className={styles.hirecontainerbodyrightcontent}>
+                {content3 && content3()}
               </div>
-            </div>
-            <div className={styles.hirecontainerbodyrightcontent}>
-              {content3 && content3()}
             </div>
           </div>
           <div className={`${styles.hirecontainer} ${styles.marginbottom100}`}>

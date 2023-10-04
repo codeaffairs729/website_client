@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import BlogGrid from './BlogGrid'
 import DeleteModal from './DeleteModal'
 import styles from '../styles/blogStyle.module.css'
-
+import Image from 'next/image'
 const BlogList = ({ authorized, blogData, notify, notifyError, db }) => {
   const [data, setData] = useState(blogData)
   const [delId, setDelId] = useState()
@@ -58,14 +58,48 @@ const BlogList = ({ authorized, blogData, notify, notifyError, db }) => {
           </div>
         </>
       )}
-      <div className={styles.breadcumbarea}>
-        {/* <div className="breadcumb-area"> */}
+      {/* <div className={styles.breadcumbarea}>
+       
         {db === 'case-study' ? (
           <h1 className="text-center text-light">CASE STUDY</h1>
         ) : (
           <h1 className="text-center text-light">OUR LATEST BLOGS</h1>
         )}
-      </div>
+      </div> */}
+      <section className=" container information-section py-5  ">
+        <div className="container">
+          {db === 'case-study' ? (
+            <h1 className="text-center text-light">CASE STUDY</h1>
+          ) : (
+            <div className=" row mt-5">
+              <div className="col12 col-md-5 pt-4 ">
+                <h5 className="heading-h6 text-color-pink  fw-bold">
+                  Information
+                </h5>
+                <h2 className="display-2  py-2 main-heading">Our Blogs</h2>
+                <p className="fw-normal text-muted">
+                  Uncover game-changing insights that fuel innovation in
+                  software development. Explore our thoughtfully curated
+                  collection of blogs, meticulously designed to empower every
+                  step of your IT journey.
+                </p>
+              </div>
+              <div className="col-12 col-md-7 ">
+                <div className={styles.blogcontainer}>
+                  <Image
+                    src="/Newimages/blogimg-01.png"
+                    alt=""
+                    height={554}
+                    width={600}
+                    objectFit="contain"
+                    className="img-fluid mx-auto"
+                  />
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </section>
       <BlogGrid
         data={data}
         authorized={authorized}

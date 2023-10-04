@@ -9,34 +9,18 @@ import hireService from '../../styles/hireService.module.css'
 const contentHeader1 = () => {
   return (
     <>
-      <div className={hireService.techservicebody}>
+      <div className={`feature-list container ${hireService.techservicebody}`}>
         <div className={hireService.techservicebodyleft}>
           <h1 className={hireService.hireh1}>{techTitle}</h1>
-          <ul
-            className={`${hireService.hirelisticon} ${hireService.hire_list_items_services} `}
+          <p
+            className={`${hireService.hirep}  list-p ${hireService.marginbottom24px}`}
           >
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Devops Culture Out-Of-The-Box
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Wider Variety Of Devops Skills
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Instant Access To High-Level Pool Of Devops Talents
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Configuration Management, Delivery Pipeline And Continuous
-                Integration (Ci/Cd)
-              </p>
-            </li>
-          </ul>
+            Discover our DevOps services that are designed to elevate your
+            software development processes to new heights. We offer a wide
+            spectrum of DevOps skills and expertise that go beyond the ordinary,
+            fostering a culture of collaboration and innovation within your
+            organization.
+          </p>
         </div>
         <div className={hireService.techservicebodyright}>
           {/* <img src="/icons/service-icon/cloud.webp"  /> */}
@@ -61,25 +45,26 @@ const content1 = () => {
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
         <p className={`${hireService.hirep}  ${hireService.marginbottom24px}`}>
-          DevOps leverages monitoring, automation, collaboration, Cloud
-          adoption, and tool-chain pipelines. <br />
+          DevOps represents a powerful approach that harnesses monitoring,
+          automation, collaboration, cloud adoption, and robust tool-chain
+          pipelines to revolutionize software development and delivery. At Code
+          Garage Tech, we offer cutting-edge DevOps services aimed at
+          streamlining the onboarding of applications, automating end-to-end
+          delivery, and facilitating continuous integration and development on
+          leading cloud platforms.
           <br />
-          At Code Garage, we offer devops services to ensure swift on-boarding
-          of apps by automating the end-to-end delivery and also facilitate
-          constant integration as well as development across preeminent cloud
-          platforms.
           <br />
+          Our mission at Code Garage Tech is to empower businesses and
+          organizations to align seamlessly with their goals, consistently and
+          efficiently producing top-tier software-based products and services.
+          With our comprehensive DevOps solutions, you can achieve your business
+          objectives by developing applications at the speed of business. <br />
           <br />
-          We at Code Garage, aim to help business and organizations to line up
-          with the goals, reliably and swifty, producing top-quality
-          software-based products & services. Achieve your business objectives
-          by creating applications at the speed of business with Code
-          Garage&apos;s extensive DevOps solutions. <br />
-          <br />
-          With our DevOps consulting, we aid businesses of all sizes achieve
-          elevated coherence in Development as well as Operations. Our DevOps
-          engineers create a DevOps strategy that will help you obtain excellent
-          coordination and deliver an extraordinary user experience.
+          Through our DevOps consulting services, we assist businesses of all
+          sizes in achieving enhanced cohesion between Development and
+          Operations. Our DevOps engineers are dedicated to crafting a tailored
+          DevOps strategy that fosters excellent coordination and ensures the
+          delivery of an exceptional user experience.
           <br />
           <br />
         </p>
@@ -89,12 +74,12 @@ const content1 = () => {
           <h2
             className={`${hireService.hireh2} ${hireService.marginbottom24px}`}
           >
-            <b>We attain DevOps Success through:</b>
+            <b>We attain DevOps success through a structured approach:</b>
           </h2>
           <ul className={`${hireService.hirep}  ${hireService.hirelist}`}>
             <li>
               <h3 className={hireService.hireh3}>
-                <strong>Assessment and Planning</strong>
+                <strong>Assemble and Planning</strong>
               </h3>
             </li>
           </ul>
@@ -102,8 +87,9 @@ const content1 = () => {
             className={`${hireService.hirep}  ${hireService.listp} ${hireService.marginbottom24px}`}
           >
             {/* <p className="${hireService.hirep}  list-p margin-bottom-24px"> */}
-            We develop a DevOps Assessment roadmap just by envisioning the right
-            state and also recognizing the trackable metrics.{' '}
+            We kickstart the DevOps journey by conducting a thorough assessment
+            and planning phase, envisioning the ideal state, and identifying
+            trackable metrics to guide our efforts.{' '}
           </p>
           <ul className={hireService.hirelist}>
             <li>
@@ -115,8 +101,9 @@ const content1 = () => {
           <p
             className={`${hireService.hirep}  ${hireService.listp} ${hireService.marginbottom24px}`}
           >
-            We expedite DevOps implementation with design, analysis, automation
-            construction, and implementation in the recognized areas.
+            Our team expedites the DevOps implementation process, encompassing
+            design, analysis, automation construction, and implementation in
+            identified areas to maximize efficiency and effectiveness.
           </p>
           <ul className={hireService.hirelist}>
             <li>
@@ -128,8 +115,9 @@ const content1 = () => {
           <p
             className={`${hireService.hirep}  list-p ${hireService.marginbottom24px}`}
           >
-            We use as well as combine your existing tools with our licensed
-            automation tools to build a perfect pilot framework.
+            We seamlessly integrate your existing tools with our proprietary
+            automation solutions to establish a robust pilot framework, setting
+            the stage for streamlined operations.
           </p>
           <ul className={hireService.hirelist}>
             <li>
@@ -141,15 +129,24 @@ const content1 = () => {
           <p
             className={`${hireService.hirep}  list-p ${hireService.marginbottom24px}`}
           >
-            We bridge the DevOps gap via constant development, constant
-            integration, constant testing and constant deployment.
+            Bridging the DevOps gap, we establish a continuous integration and
+            continuous deployment (CI/CD) pipeline that ensures constant
+            development, continuous integration, ongoing testing, and seamless
+            deployment.
           </p>
-
+          <p className={`${hireService.hirep} ${hireService.marginbottom24px}`}>
+            At Code Garage Tech, we believe that DevOps is not just a
+            methodology but a transformative journey that enhances
+            collaboration, accelerates innovation, and drives your business
+            forward. Partner with us to embark on this journey and experience
+            the benefits of DevOps-driven excellence in software development and
+            delivery. <br />
+          </p>
           <div className="">
             <p
               className={`${hireService.hirep}  ${hireService.marginbottom24px}`}
             >
-              Want to develop a DevOps Framework Talk to an Expert
+              Want to develop a DevOps Framework? Talk to an Expert
             </p>
           </div>
         </div>
@@ -171,14 +168,25 @@ const content1 = () => {
           </h3>
         </div>
         <p className={hireService.hirep}>
-          We at Code Garage offer reliable DevOps automation testing solutions
-          by adopting a strategy that emphasizes integration, collaboration,
-          automation and collaboration. We aid you incorporate the necessary
-          changes in your technology culture and landscape. We effectively
-          leverage collaboration, monitoring, automation, cloud adoption, and
-          tool-chain pipelines to ensure swift onboarding of apps. Through our
-          DevOps consulting services, we assist businesses and startups in
-          aligning their operations and development for greater efficiency.
+          We take pride in delivering dependable DevOps automation testing
+          solutions that revolve around a strategy rooted in integration,
+          collaboration, and automation. Our approach is aimed at not only
+          streamlining your testing processes but also fostering a
+          transformative shift in your technology culture and landscape. We
+          excel at harnessing the power of collaboration, monitoring,
+          automation, cloud adoption, and robust tool-chain pipelines to ensure
+          the seamless onboarding of applications.
+          <br />
+          <br />
+          Through our dedicated DevOps consulting services, we extend our
+          expertise to businesses and startups, assisting them in aligning their
+          operations and development efforts for greater efficiency and
+          effectiveness. Our mission is to empower organizations with the tools
+          and strategies necessary to thrive in today's fast-paced technology
+          landscape, where innovation, speed, and reliability are paramount. By
+          embracing DevOps principles, you can not only enhance your testing
+          processes but also drive your entire software development lifecycle
+          toward excellence
         </p>
         <div
           id="ci/cd"
@@ -197,15 +205,27 @@ const content1 = () => {
           </h3>
         </div>
         <p className={hireService.hirep}>
-          Continuous Integration and Continuous Deployment (CI/CD) are crucial
-          in the contemporary era of tech as it revamped the way software used
-          to develop. Incorporating CI/CD leads to swiftly build and faster
-          deliveries that does not affect the quality of software. The main
-          concept of CI/CD pipeline is about making some alterations to code,
-          developing, testing and delivering effective softwares responding to
-          business needs. We at Code Garage, have an adept team of developers
-          who offer CI/CD design and deployment solutions, CI/CD implementation
-          solutions, and plug-ins.
+          In the ever-evolving tech landscape, Continuous Integration and
+          Continuous Deployment (CI/CD) have emerged as indispensable pillars
+          that have revolutionized the software development process. The
+          integration of CI/CD practices brings about a seismic shift, enabling
+          swift build cycles and expedited software deliveries without
+          compromising quality. At its core, the CI/CD pipeline embodies the
+          essence of agility—making incremental code changes, followed by
+          seamless development, rigorous testing, and the delivery of highly
+          effective software that aligns seamlessly with evolving business
+          needs..
+          <br />
+          <br />
+          At Code Garage Tech, we recognize the paramount importance of CI/CD in
+          modern software development. Our adept team of developers is
+          well-versed in the intricacies of CI/CD and stands ready to provide a
+          spectrum of solutions, including CI/CD pipeline design and deployment,
+          CI/CD implementation strategies, and the integration of essential
+          plug-ins. We believe that the incorporation of CI/CD practices is not
+          merely a trend but a fundamental shift that empowers businesses to
+          respond swiftly, adapt to change, and consistently deliver software
+          solutions that meet and exceed the expectations of a dynamic market.
         </p>
         <div
           id="cloud"
@@ -224,15 +244,27 @@ const content1 = () => {
           </h3>
         </div>
         <p className={hireService.hirep}>
-          At Code Garage, we have skilled Cloud Computing engineers who manage
-          your complexities and challenges to simplify your software development
-          procedure. Our team ensures to deliver reliable Cloud Engineering
-          services in order to meet your business requirements. We thoroughly
-          understand the complexity of the Cloud computing ecosystem and also
-          know the challenges that most businesses face relating to its adoption
-          as well as growth. Regardless of where you are in the Cloud adoption
-          curve, we at Code Garage offer customized cloud engineering services
-          to match the demand of your business.
+          Our team boasts a cadre of highly skilled Cloud Computing engineers
+          who excel at navigating the intricacies and challenges inherent in the
+          software development process. We are committed to simplifying this
+          journey for you, leveraging our expertise to deliver reliable Cloud
+          Engineering services tailored to meet your unique business
+          requirements. With a deep understanding of the intricate Cloud
+          computing ecosystem, we recognize the diverse challenges that
+          businesses encounter when adopting and scaling within this dynamic
+          landscape.
+          <br />
+          <br />
+          We firmly believe that one size does not fit all in the realm of Cloud
+          adoption. Regardless of where you currently stand on the Cloud
+          adoption curve, we stand ready to offer customized cloud engineering
+          services that precisely align with the evolving needs of your
+          business. Our mission is to not only provide solutions but to serve as
+          your trusted partner on the journey, ensuring that Cloud computing
+          becomes a seamless and integral part of your software development
+          strategy. With Code Garage Tech by your side, you can embrace the
+          power of the Cloud with confidence, knowing that we are dedicated to
+          simplifying complexities and empowering your business for success.
         </p>
       </div>
     </>

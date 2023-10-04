@@ -198,10 +198,10 @@ const Footer = () => {
                 >
                   <div>
                     <Image
-                      src={'/images/Twitter3d.webp'}
+                      src={'/images/twitter_new_logo.png'}
                       alt="3D Twitter Icon"
-                      height={35}
-                      width={35}
+                      height={37}
+                      width={37}
                     />
                   </div>
                 </a>
