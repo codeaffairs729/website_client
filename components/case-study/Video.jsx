@@ -214,7 +214,7 @@ const Video = ({ Casedata }) => {
             <div className={`col-12 col-lg-7 ${styles.casestudypage}`}>
               <div className={styles.cube}>
                 <Image
-                  src="/blogs/cube.png"
+                  src="/blogs/Cube.png"
                   alt="blogimage"
                   height={81.77}
                   width={111}
