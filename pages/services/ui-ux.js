@@ -16,7 +16,7 @@ const contentHeader1 = () => {
         <div className={hireService.techservicebodyleft}>
           <h1 className={hireService.hireh1}>{techTitle}</h1>
           <p
-            className={`${hireService.hirep}  list-p ${hireService.marginbottom24px}`}
+            className={`${hireService.hireh8}  list-p ${hireService.marginbottom24px}`}
           >
             Embark on a journey of building interactive and captivating
             experiences with our innovative UI/UX Design Services. At the heart

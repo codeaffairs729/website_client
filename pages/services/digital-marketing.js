@@ -15,7 +15,7 @@ const contentHeader1 = () => {
         <div className={hireService.techservicebodyleft}>
           <h1 className={hireService.hireh1}>{techTitle}</h1>
           <p
-            className={`${hireService.hirep}  list-p ${hireService.marginbottom24px}`}
+            className={`${hireService.hireh8}  list-p ${hireService.marginbottom24px}`}
           >
             Discover our Digital Marketing (PPC, SEO, ORM) Services, where we
             excel in the art of digitally transforming your business. Our

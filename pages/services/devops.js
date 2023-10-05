@@ -14,7 +14,7 @@ const contentHeader1 = () => {
         <div className={hireService.techservicebodyleft}>
           <h1 className={hireService.hireh1}>{techTitle}</h1>
           <p
-            className={`${hireService.hirep}  list-p ${hireService.marginbottom24px}`}
+            className={`${hireService.hireh8}  list-p ${hireService.marginbottom24px}`}
           >
             Discover our DevOps services that are designed to elevate your
             software development processes to new heights. We offer a wide

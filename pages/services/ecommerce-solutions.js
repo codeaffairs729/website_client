@@ -15,7 +15,7 @@ const contentHeader1 = () => {
         <div className={hireService.techservicebodyleft}>
           <h1 className={hireService.hireh1}>{techTitle}</h1>
           <p
-            className={`${hireService.hirep}  list-p ${hireService.marginbottom24px}`}
+            className={`${hireService.hireh8}  list-p ${hireService.marginbottom24px}`}
           >
             Unlock the potential of our E-commerce Solutions, where we offer
             fully customizable options and seamless 3rd party integrations to

@@ -15,7 +15,7 @@ const contentHeader1 = () => {
         <div className={hireService.techservicebodyleft}>
           <h1 className={hireService.hireh1}>{techTitle}</h1>
           <p
-            className={`${hireService.hirep}  list-p ${hireService.marginbottom24px}`}
+            className={`${hireService.hireh8}  list-p ${hireService.marginbottom24px}`}
           >
             Our dedicated and adept team of AI app developers is well-versed in
             harnessing the power of cutting-edge technologies, particularly
@@ -195,6 +195,67 @@ const content1 = () => {
             Our team of AI application developers test the mobile app thoroughly
             and do various arduous manual as well as automated tests just to
             deliver the best and most reliable quality services.
+          </p>
+          <ul className={hireService.hirelist}>
+            <li>
+              <h3 className={hireService.hireh3}>
+                <strong>Natural Language Processing (NLP) Solutions </strong>
+              </h3>
+            </li>
+          </ul>
+          <p className={`${hireService.hirep}  ${hireService.marginleft22px}`}>
+            Unlock the power of NLP with our expertise in developing solutions
+            for natural language understanding, sentiment analysis, and language
+            translation.
+          </p>
+          <ul className={hireService.hirelist}>
+            <li>
+              <h3 className={hireService.hireh3}>
+                <strong>DALL·E App Development </strong>
+              </h3>
+            </li>
+          </ul>
+          <p className={`${hireService.hirep}  ${hireService.marginleft22px}`}>
+            We specialize in crafting tailor-made applications that harness the
+            power of DALL·E to produce captivating visual content, catering to
+            the unique needs of businesses.
+          </p>
+          <ul className={hireService.hirelist}>
+            <li>
+              <h3 className={hireService.hireh3}>
+                <strong>Codex App Development </strong>
+              </h3>
+            </li>
+          </ul>
+          <p className={`${hireService.hirep}  ${hireService.marginleft22px}`}>
+            Incorporating Codex into applications can significantly boost
+            productivity, enhance code generation, and streamline various
+            processes, making it a valuable tool for businesses seeking
+            automation solutions.
+          </p>
+          <ul className={hireService.hirelist}>
+            <li>
+              <h3 className={hireService.hireh3}>
+                <strong>ChatGPT and Whisper API Integration </strong>
+              </h3>
+            </li>
+          </ul>
+          <p className={`${hireService.hirep}  ${hireService.marginleft22px}`}>
+            We provide the seamless integration of AI-powered chat features into
+            your applications, utilizing the ChatGPT and Whisper API for a
+            cohesive user experience.
+          </p>
+          <ul className={hireService.hirelist}>
+            <li>
+              <h3 className={hireService.hireh3}>
+                <strong>AI Analytics and Insights Services </strong>
+              </h3>
+            </li>
+          </ul>
+          <p className={`${hireService.hirep}  ${hireService.marginleft22px}`}>
+            Gain valuable AI-driven insights with our analytics services.
+            Leverage AI to uncover hidden patterns and make data-driven
+            decisions.
           </p>
           <h2
             className={`${hireService.hireh2} ${hireService.marginbottom24px}`}
