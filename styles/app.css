@@ -8227,8 +8227,9 @@ html {
   justify-content: center;
 }
 .blog-container h2 {
-  font-size: 48px;
+  font-size: 2.5rem;
   margin-bottom: 48px;
+  margin-top: 2rem;
 }
 
 .blog-btn {
@@ -9502,7 +9503,7 @@ html {
   .card-desc {
     height: 94px;
     width: 600px;
-    padding-top:2rem;
+    padding-top:1rem;
   }
   .line-clamp-3 {
     width: 611px;
@@ -11046,6 +11047,7 @@ html {
   .card-desc {
     height: 77px;
     width: 250px;
+    padding-top: 0.5rem;
   }
     .line-clamp-3 {
       width: 100%;

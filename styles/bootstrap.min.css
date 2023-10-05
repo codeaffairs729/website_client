@@ -147,7 +147,7 @@ h2 {
 }
 .col-lg-6 {
   flex: 0 0 auto;
-  width: 20%;
+  width: 100%;
 }
 .h3,
 h3 {

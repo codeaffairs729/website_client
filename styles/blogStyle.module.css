@@ -284,9 +284,9 @@
 }
 .text_end {
   text-align: right !important;
-  margin-right: 38px;
+  margin-right: 3.8rem;
   color: #5956e9;
-  margin-top: 30px;
+  margin-top: 1.1rem;
 }
 .design {
   display: -webkit-inline-box;
@@ -345,6 +345,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin-bottom: 0rem;
 }
 
 .design__link {
@@ -362,6 +363,7 @@
   color: #292930;
   margin-top: 23px;
   text-decoration: none;
+  margin-left: 0.35rem;
 }
 
 .design__link .icon {
@@ -657,17 +659,18 @@ height: 100%;
   }
   .cardbody {
     width: 45%;
-    padding: 0em 0.4em 0em;
+    padding: 0.5em 0.4em 0em;
   }
   .text_end {
-    margin-right: -16px;
+    margin-right: 9px;
     margin-top: 40px;
   }
   .design__link {
-    margin-top: 0px;
+    margin: 0rem;
+    margin-left: 0.35rem;
   }
   .cardimg {
-    width: 100%;
+    width: 76%;
     margin-top: 2rem;
   }
   .blogcontainerleft {
@@ -783,11 +786,21 @@ height: 100%;
 @media only screen and (max-width: 991px) {
   .customcol {
     width: 75%;
-    margin-left: 68px;
     margin-bottom: 15px;
   }
   .cardheading {
     width: 290px;
+  }
+  .cardimg {
+    width: 76%;
+    margin-top: 0rem !important;
+  }
+  .design__link {
+    margin: 0rem;
+  }
+  .text_end {
+    margin-right: 4rem;
+    margin-top: 0px;
   }
   .customcard {
     gap: 21px;
@@ -858,6 +871,10 @@ height: 100%;
   .about_area {
     gap: 0rem;
   }
+  .cardtitle {
+    width: 37%;
+    margin: 0rem;
+  }
 }
 @media only screen and (max-width: 768px) {
   .blogpagecontainer {
@@ -885,29 +902,25 @@ height: 100%;
   .customcol {
     width: 100%;
     margin-left: 0px;
-    margin-bottom: 0px;
   }
   .customcard {
     flex-direction: column;
     gap: 0px;
     margin-bottom: 0px;
+    align-items: center;
   }
   .cardheading {
     width: 100%;
     margin-top: 13px;
   }
   .cardbody {
-    width: 100%;
-    margin-left: 53px;
+    width: 81%;
+    margin-left: 0px;
     margin-bottom: 20px;
     margin-top: 5px;
   }
   .text_end {
     margin-right: 40px;
-  }
-  .design__link {
-    margin-top: 0px;
-    margin-left: 0.3rem;
   }
   .ml_5 {
     margin: 0rem;
@@ -939,6 +952,10 @@ height: 100%;
   }
   .blogimage {
     width: 50%;
+  }
+  .cardtitle {
+    margin-left: 0px;
+    width: 93%;
   }
 }
 

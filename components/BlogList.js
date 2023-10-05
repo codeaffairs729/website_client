@@ -125,7 +125,7 @@ const BlogList = ({ authorized, blogData, notify, notifyError, db }) => {
               target="_blank"
               className={`btn btn_pink career-area-1-btn px-5" ${styles.btn}`}
             >
-              Reach Out To Us Today.
+              Contact Us
             </a>
           </div>
         </div>

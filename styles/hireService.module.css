@@ -325,8 +325,8 @@
   position: absolute;
 }
 .mobilecloud2 {
-  right: -4rem;
-  top: 13rem;
+  right: -8rem;
+  top: 9.5rem;
   position: absolute;
   height: 64.75px;
   width: 94.61px;
@@ -334,8 +334,8 @@
 .mobilecube {
   width: 43.85px;
   height: 40.65px;
-  right: -3rem;
-  top: 4.5rem;
+  right: -6rem;
+  top: 0.5rem;
   position: absolute;
 }
 .devopsimage {
@@ -538,7 +538,6 @@
 }
 .mainAIcontainer {
   margin-top: 25px;
-  padding: 0px 65px 0px;
 }
 .smalltext {
   font-size: 14px;
@@ -909,7 +908,6 @@
 
 .AIservicebody {
   display: flex;
-  padding-block: 0px 80px;
 }
 
 .Aicontainerleftttext {
@@ -1491,11 +1489,11 @@
     gap: 40px;
   }
   .mobilecube {
-    right: -4rem;
+    right: -8rem;
   }
   .mobilecloud2 {
-    right: -4rem;
-    top: 16rem;
+    right: -8rem;
+    top: 12rem;
   }
   .mobilecloud,
   .yellowcircle {

@@ -481,39 +481,39 @@ const content1 = () => {
           </li>
           <br />
           <li>
-            <b>Cross-app Flutter App Development</b>
-          </li>{' '}
-          Harness the power of Flutter's cross-platform capabilities to create
-          applications that seamlessly run on both Android and iOS devices,
-          optimizing development time and costs.
+            <b>Cross-app Flutter App Development:</b> Harness the power of
+            Flutter's cross-platform capabilities to create applications that
+            seamlessly run on both Android and iOS devices, optimizing
+            development time and costs.
+          </li>
           <br />
           <li>
-            <b>Flutter App Support and Maintenance Services</b>
-          </li>{' '}
-          Our commitment extends beyond development. We provide ongoing support
-          and maintenance services to ensure your Flutter apps remain
-          up-to-date, efficient, and trouble-free.
+            <b>Flutter App Support and Maintenance Services:</b>
+            Our commitment extends beyond development. We provide ongoing
+            support and maintenance services to ensure your Flutter apps remain
+            up-to-date, efficient, and trouble-free.
+          </li>
           <br />
           <li>
-            <b>Flutter App Design Solutions</b>
-          </li>{' '}
-          Prioritizing user experience, we design Flutter apps with intuitive
-          interfaces that engage users and provide a visually appealing and
-          smooth navigation experience.
+            <b>Flutter App Design Solutions:</b>
+            Prioritizing user experience, we design Flutter apps with intuitive
+            interfaces that engage users and provide a visually appealing and
+            smooth navigation experience.
+          </li>
           <br />
           <li>
-            <b>Flutter App Upgrade</b>
-          </li>{' '}
-          Stay ahead of the curve by upgrading your existing Flutter
-          applications with the latest features, enhancements, and security
-          updates.
+            <b>Flutter App Upgrade:</b>
+            Stay ahead of the curve by upgrading your existing Flutter
+            applications with the latest features, enhancements, and security
+            updates.
+          </li>
           <br />
           <li>
-            <b>Advanced & Native Flutter App Development</b>
-          </li>{' '}
-          We offer advanced and native Flutter app development services that
-          leverage the full potential of the framework, ensuring a premium user
-          experience.
+            <b>Advanced & Native Flutter App Development:</b>
+            We offer advanced and native Flutter app development services that
+            leverage the full potential of the framework, ensuring a premium
+            user experience.
+          </li>
           <br />
         </ul>
         <p className={hireService.hirep}>
