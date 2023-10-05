@@ -6,36 +6,24 @@ import Image from 'next/image'
 import ScheduleForm from '../../components/schedule'
 const techTitle = 'Deployment and Host Management'
 import hireService from '../../styles/hireService.module.css'
+const heading = 'miscellaneous'
+
 const contentHeader1 = () => {
   return (
     <>
-      <div className={hireService.techservicebody}>
+      <div className={`feature-list container ${hireService.techservicebody}`}>
         <div className={hireService.techservicebodyleft}>
           <h1 className={hireService.hireh1}>{techTitle}</h1>
-          <ul
-            className={`${hireService.hirelisticon} ${hireService.hire_list_items_services} `}
+          <p
+            className={`${hireService.hirep}  list-p ${hireService.marginbottom24px}`}
           >
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Re-Engineering your Development & Deployment Process
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Platform Scalability And Flexibility
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Simple To Use And Contextualize
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Easy To Upgrade And Update
-              </p>
-            </li>
-          </ul>
+            Experience a transformative shift in your development and deployment
+            processes with our Deployment and Host Management services. We
+            specialize in re-engineering your workflows to optimize efficiency
+            and streamline operations. Our services offer platform scalability
+            and flexibility, enabling your digital infrastructure to adapt
+            seamlessly to your evolving needs.
+          </p>
         </div>
         <div className={hireService.techservicebodyright}>
           {/* <img src="/icons/service-icon/cloud.webp" alt="3D Cloud" /> */}
@@ -123,18 +111,23 @@ const content1 = () => {
             The ability to test the application before it goes live, which
             improves the overall quality of the product.
           </li>
+          <br />
           <li>
             Reducing downtime. If an application is not properly tested, it can
             be prone to bugs and errors, which can cause problems for customers.
           </li>
+          <br />
           <li>
             Improving customer satisfaction by providing a better user
             experience. For example, if a customer is having issues with your
             website, it is much better than ignoring them or simply telling them
             that everything is working fine.
           </li>
+          <br />
           <li>Easy to test and customize according to your requirements</li>
+          <br />
           <li>Save time on manual tasks like configuration changes/updates</li>
+          <br />
         </ul>
 
         <p className={hireService.hirep}>
@@ -181,7 +174,7 @@ const DeploymentHostManagement = () => {
         isIconExit={true}
         contentHeader1={contentHeader1}
         techTitle={techTitle}
-        bannerComponent={Banner}
+        bannerComponent={<Banner techTitle={heading} />}
         requestOrigin={'Requested from Miscellaneous page'}
       />
     </>

@@ -245,7 +245,7 @@ const Casestudy = () => {
           className={style.ellipse_black_circle}
         />
         <Video Casedata={data} />
-        <div className={`feature-list container ${style.casestudycontainer}`}>
+        <div className={` container ${style.casestudycontainer}`}>
           {/* <About Casedata={data} /> */}
           <Challenges Casedata={data} />
           <Effort Casedata={data} />

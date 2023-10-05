@@ -6,6 +6,7 @@ const techTitle = 'DevOps'
 import ScheduleForm from '../../components/schedule'
 import Image from 'next/image'
 import hireService from '../../styles/hireService.module.css'
+const heading = 'miscellaneous'
 const contentHeader1 = () => {
   return (
     <>
@@ -308,7 +309,7 @@ const DevOps = () => {
         techTitle={techTitle}
         // techImage={techImage}
         isIconExit={true}
-        bannerComponent={Banner}
+        bannerComponent={<Banner techTitle={heading} />}
         requestOrigin={'Requested from devops solution page'}
       />
     </>

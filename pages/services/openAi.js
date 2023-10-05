@@ -6,38 +6,26 @@ import Image from 'next/image'
 import ScheduleForm from '../../components/schedule'
 import styles from '../../styles/Services.module.css'
 import hireService from '../../styles/hireService.module.css'
-
+const heading = 'miscellaneous'
 const techTitle = 'Open AI Services Provider'
 const contentHeader1 = () => {
   return (
     <>
-      <div className={hireService.techservicebody}>
+      <div className={`feature-list container ${hireService.techservicebody}`}>
         <div className={hireService.techservicebodyleft}>
           <h1 className={hireService.hireh1}>{techTitle}</h1>
-          <ul
-            className={`${hireService.hirelisticon} ${hireService.hire_list_items_services} `}
+          <p
+            className={`${hireService.hirep}  list-p ${hireService.marginbottom24px}`}
           >
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Dedicated & Adept team of AI App Developers
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Well-versed with OpenAI APIs such as GPT
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Best and reliable coding practices
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Highly safe and secure app solutions
-              </p>
-            </li>
-          </ul>
+            Our dedicated and adept team of AI app developers is well-versed in
+            harnessing the power of cutting-edge technologies, particularly
+            OpenAI APIs like GPT. With a deep understanding of these APIs, we
+            bring creativity and innovation to the forefront of every project.
+            Our commitment to best and reliable coding practices ensures that
+            the apps we develop are not only functional but also maintainable
+            and scalable in the long run. Moreover, prioritizing the security of
+            your app is our top concern.
+          </p>
         </div>
         <div className={hireService.techservicebodyright}>
           {/* <img src="/icons/service-icon/cloud.webp" alt="3D Cloud" /> */}
@@ -60,18 +48,16 @@ const content1 = () => {
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
         <p className={hireService.hirep}>
-          Do you want to leverage the power of <strong>OpenAI</strong> to
-          develop powerful mobile apps for your business? CodeGarage is a
-          top-notch AI application development company as we design, build, and
-          deliver custom AI app development solutions using OpenAPIs such as{' '}
-          <strong>Chat GPT</strong>. <br />
+          Do you want to leverage the power of OpenAI to develop powerful mobile
+          apps for your business? CodeGarage is a top-notch AI application
+          development company as we design, build, and deliver custom AI app
+          development solutions using OpenAPIs such as Chat GPT. <br />
           <br />
-          <strong>OpenAI</strong> offers robust APIs that assist developers to
-          create intelligent and excellent mobile app solutions. The mobile
-          applications developed using <strong>Artificial Intelligence</strong>{' '}
-          (AI) assist many enterprises to automate operations as well as tasks.
-          Hence, it aids to improve staff efficiency, and productivity, saving
-          efforts and time. <br />
+          OpenAI offers robust APIs that assist developers to create intelligent
+          and excellent mobile app solutions. The mobile applications developed
+          using Artificial Intelligence (AI) assist many enterprises to automate
+          operations as well as tasks. Hence, it aids in improving staff
+          efficiency, and productivity, saving efforts and time. <br />
           <br />
         </p>
         <a
@@ -81,9 +67,9 @@ const content1 = () => {
         >
           Get a Free Quote
         </a>
-        <h2 className={`${hireService.hireh2} ${hireService.marginbottom24px}`}>
+        {/* <h2 className={`${hireService.hireh2} ${hireService.marginbottom24px}`}>
           Our Process of Building AI Apps Using Open AI
-        </h2>
+        </h2> */}
         <div
           className={`${styles.services_image_container} ${styles.openai_image} `}
         >
@@ -100,24 +86,24 @@ const content1 = () => {
           Out-of-the-box Open AI App Development Solutions
         </h2>
         <p>
-          The world is thrilled by the intelligence of <strong>Chat GPT</strong>
-          and everyone is talking about its distinctive implications. ChatGPT is
-          an ideal example of a robust OpenAI application.
+          The world is thrilled by the intelligence of ChatGPT and everyone is
+          talking about its distinctive implications. ChatGPT is an ideal
+          example of a robust OpenAI application
           <br />
           <br />
-          Do you want to develop an <strong>OpenAI application ChatGPT</strong>?
-          Want to know about the capabilities of Artificial Intelligence (AI)
-          for your upcoming big project and want to make it a huge success?
+          Do you want to develop an OpenAI application ChatGPT? Want to know
+          about the capabilities of Artificial Intelligence (AI) for your
+          upcoming big project and want to make it a huge success?
           CodeGarageTech can help, we provide custom AI application development
           solutions. Our team of developers has thorough knowledge and
           experience in using AI to develop outstanding applications for
-          numerous industries.
+          numerous industries
           <br />
           <br />
-          Well, <strong>OpenAI</strong> seems like the latest innovation, but at
-          Code Garage we have built simple to complex solutions using{' '}
-          <strong>OpenAI</strong>. Hence, you can choose us and relish the perks
-          of collaborating with a reliable AI development Company.
+          Well, OpenAI seems like the latest innovation, but at Code Garage Tech
+          we have built simple to complex solutions using OpenAI. Hence, you can
+          choose us and relish the perks of collaborating with a reliable AI
+          development Company
         </p>
         {/* content 7 */}
         <div className={hireService.shade1}>
@@ -255,7 +241,7 @@ const OpenAI = () => {
         isIconExit={true}
         contentHeader1={contentHeader1}
         techTitle={techTitle}
-        bannerComponent={Banner}
+        bannerComponent={<Banner techTitle={heading} />}
         requestOrigin={'Requested from Miscellaneous page'}
       />
     </>

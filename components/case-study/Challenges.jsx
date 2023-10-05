@@ -17,7 +17,7 @@ const Challenges = ({ Casedata }) => {
           <div className={listStyle.techservicebodyleft}>
             <h1 className={style.challenge_header}>Challenges:</h1>
             <ul
-              className={`${listStyle.hirelisticon} ${listStyle.hire_list_items_services} `}
+              className={`${listStyle.hirelisticon} ${listStyle.challenges} `}
             >
               {Casedata.Challenges.map((challenge, index) => (
                 <li key={index} className={listStyle.marginebottom16px}>

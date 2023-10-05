@@ -58,7 +58,7 @@ const contentHeader1 = () => {
             objectFit="contain"
           />
         </div>
-        <div className={`${hireService.techservicebodyright} text-center`}>
+        <div className={`${hireService.webservicebodyright} text-center`}>
           {/* <img src="/icons/service-icon/mobile-front-color-service.webp" /> */}
 
           <Image

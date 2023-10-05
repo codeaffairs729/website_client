@@ -1025,3 +1025,7 @@ height: 100%;
 .aboutus {
   padding-bottom: 0rem !important;
 }
+.contact_us {
+  justify-content: flex-start;
+  margin-top: -8rem;
+}

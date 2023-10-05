@@ -6,38 +6,25 @@ import Image from 'next/image'
 import ScheduleForm from '../../components/schedule'
 import styles from '../../styles/Services.module.css'
 import hireService from '../../styles/hireService.module.css'
-
+const heading = 'miscellaneous'
 const techTitle = 'Digital Marketing (PPC, SEO, ORM)'
 const contentHeader1 = () => {
   return (
     <>
-      <div className={hireService.techservicebody}>
+      <div className={`feature-list container ${hireService.techservicebody}`}>
         <div className={hireService.techservicebodyleft}>
           <h1 className={hireService.hireh1}>{techTitle}</h1>
-          <ul
-            className={`${hireService.hirelisticon} ${hireService.hire_list_items_services} `}
+          <p
+            className={`${hireService.hirep}  list-p ${hireService.marginbottom24px}`}
           >
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Transform Your Business Digitally
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Identifying & Reaching Your Target Audience
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Supporting Overall Business Goals
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Aligning Social Strategy With Other Parts Of The Business
-              </p>
-            </li>
-          </ul>
+            Discover our Digital Marketing (PPC, SEO, ORM) Services, where we
+            excel in the art of digitally transforming your business. Our
+            approach begins with the meticulous task of identifying and reaching
+            your precise target audience, ensuring that your efforts are
+            laser-focused and efficient. We go beyond isolated campaigns,
+            working to support your overall business goals by crafting a digital
+            strategy that seamlessly aligns with every facet of your enterprise.
+          </p>
         </div>
         <div className={hireService.techservicebodyright}>
           {/* <img src="/icons/service-icon/cloud.webp" alt="3D Cloud" /> */}
@@ -60,11 +47,16 @@ const content1 = () => {
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
         <p className={`${hireService.hirep}  ${hireService.marginbottom24px}`}>
-          At Code Garage, we are wholly focused on growth, and our digital
-          marketing team creates comprehensive paid media strategies and SEO
-          that line up with the goals of your business. We have unique skill
-          sets that aid us to capture the ideas of competitive markets and
-          achieve the results.
+          At Code Garage Tech, our unwavering focus is on fostering growth, and
+          our dedicated digital marketing team is at the forefront of this
+          mission. We specialize in crafting comprehensive paid media strategies
+          and SEO initiatives meticulously aligned with the specific goals of
+          your business. What sets us apart is our unique skill set, honed
+          through experience and innovation, enabling us to not only capture the
+          essence of competitive markets but also consistently deliver
+          exceptional results. With Code Garage Tech as your digital marketing
+          partner, you can count on our expertise to drive your business
+          forward, realizing its full potential in the digital landscape.
         </p>
 
         {/* content-7 */}
@@ -97,68 +89,80 @@ const content1 = () => {
           <p
             className={`${hireService.hirep}  ${hireService.marginbottom24px}`}
           >
-            Creating result oriented marketing strategies and supporting
-            implementation. We formulate strategies to build a powerful brand
-            and increase high brand value.
+            We specialize in creating marketing strategies that deliver tangible
+            results, providing steadfast support during the implementation
+            phase. Our goal is to not just promote your brand but also enhance
+            its overall value in the market.
           </p>
 
           <h3 className={hireService.hireh3}>
-            <b>Search Engine Optimization (SEO)</b>
+            <b>Search Engine Optimization(SEO):</b>
           </h3>
           <p
             className={`${hireService.hirep}  ${hireService.marginbottom24px}`}
           >
-            Want to rank your website on #1 page of Google? We are here to help
-            you! We apply unique strategies and legit methods that help you gain
-            organic traffic and more website visitors.
+            If you aspire to secure the top spot on Google's search results,
+            look no further. Our unique and ethical SEO strategies are designed
+            to boost organic traffic and attract a higher volume of website
+            visitors. We're here to help you dominate search engine rankings.
           </p>
 
           <h3 className={hireService.hireh3}>
-            <b>Pay-Per-Click (PPC)</b>
+            <b>Pay-Per-Click (PPC):</b>
           </h3>
           <p
             className={`${hireService.hirep}  ${hireService.marginbottom24px}`}
           >
-            Want to reach your potential customers? You can do it with
-            Pay-per-click advertising. We can increase your sales, deliver
-            high-quality leads, and develop a solid brand recognition by
-            applying effective PPC strategies.
+            Need to reach your potential customers directly? Our Pay-per-click
+            advertising services are tailored to drive sales, generate
+            high-quality leads, and establish a strong brand presence. With
+            effective PPC strategies, we guide your business toward success.
           </p>
 
           <h3 className={hireService.hireh3}>
-            <b>Social Media Marketing & (SMM)</b>
+            <b>Social Media Marketing (SMM):</b>
           </h3>
           <p
             className={`${hireService.hirep}  ${hireService.marginbottom24px}`}
           >
-            We are here to build a dynamic presence of brand across numerous
-            social media platforms with effective social media marketing
-            strategies. Our team makes your brand attractive to the audience by
-            emphasizing on design aesthetics.
+            Harness the power of social media with our dynamic marketing
+            strategies. We strategically enhance your brand's presence across
+            various social platforms, making it more appealing to your target
+            audience through compelling design aesthetics.
           </p>
 
           <h3 className={hireService.hireh3}>
-            <b>Social Media Optimization (SMO)</b>
+            <b>Social Media Optimization (SMO):</b>
           </h3>
           <p
             className={`${hireService.hirep}  ${hireService.marginbottom24px}`}
           >
-            We are here to optimize your brand and business. Our social media
-            optimization experts have helped more than hundreds of businesses to
-            get leads and brand visibility from social media channels.
+            We excel in optimizing your brand's online presence. Our SMO experts
+            have a proven track record of helping numerous businesses acquire
+            leads and enhance brand visibility through effective social media
+            channel management.
           </p>
 
           <h3 className={hireService.hireh3}>
-            <b>Online Reputation Management (ORM)</b>
+            <b>Online Reputation Management (ORM):</b>
           </h3>
           <p
             className={`${hireService.hirep}  ${hireService.marginbottom24px}`}
           >
-            Business reputation management is indispensable to growing a
-            business. We develop, protect and restore your business&apos;s
-            online reputation through efficacious, and customized strategies.
+            Protecting and managing your business's online reputation is
+            paramount. Our customized and effective ORM strategies are designed
+            to develop, safeguard, and restore your brand's online image. Count
+            on us to ensure a positive and enduring reputation for your business
+            in the digital realm.
           </p>
         </div>
+        <p className={`${hireService.hirep}  ${hireService.marginbottom24px}`}>
+          At Code Garage Tech, we're not just a digital marketing agency; we're
+          your partners in growth. Our services are geared towards elevating
+          your brand, expanding your reach, and fostering a positive online
+          reputation. Join us on this journey to unlock the full potential of
+          your business in the digital landscape.
+        </p>
       </div>
     </>
   )
@@ -196,7 +200,7 @@ const DigitalMarketing = () => {
         isIconExit={true}
         contentHeader1={contentHeader1}
         techTitle={techTitle}
-        bannerComponent={Banner}
+        bannerComponent={<Banner techTitle={heading} />}
         requestOrigin={'Requested from Miscellaneous page'}
       />
     </>

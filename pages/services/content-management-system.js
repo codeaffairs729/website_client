@@ -7,36 +7,24 @@ import ScheduleForm from '../../components/schedule'
 import styles from '../../styles/Services.module.css'
 const techTitle = 'Content Management System'
 import hireService from '../../styles/hireService.module.css'
+const heading = 'miscellaneous'
 const contentHeader1 = () => {
   return (
     <>
-      <div className={hireService.techservicebody}>
+      <div className={`feature-list container ${hireService.techservicebody}`}>
         <div className={hireService.techservicebodyleft}>
           <h1 className={hireService.hireh1}>{techTitle}</h1>
-          <ul
-            className={`${hireService.hirelisticon} ${hireService.hire_list_items_services} `}
+          <p
+            className={`${hireService.hirep}  list-p ${hireService.marginbottom24px}`}
           >
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Open Source Scalable Reliable CMS
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                The Flexible Platform Empowering Website Creators
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                The Platform Millions of Websites Are Built On
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Create a website you&apos;re proud of
-              </p>
-            </li>
-          </ul>
+            Unlock the potential of our Content Management System (CMS)
+            services—a reliable and scalable open-source platform. Our flexible
+            CMS empowers website creators by providing a robust foundation for
+            their digital endeavors. Trusted by millions, it's the platform of
+            choice for crafting websites that inspire pride. With our CMS
+            services, you can create a website that not only meets your needs
+            but also reflects your vision and brand with distinction.
+          </p>
         </div>
         <div className={hireService.techservicebodyright}>
           {/* <img src="/icons/service-icon/cloud.webp" alt="3D Cloud" /> */}
@@ -59,20 +47,20 @@ const content1 = () => {
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
         <p className={hireService.hirep}>
-          Code Garage offers comprehensive web content management system
-          solutions. With our supreme and first-class CMS applications you can
+          Code Garage Tech offers comprehensive web content management system
+          solutions. With our supreme and first-class CMS applications, you can
           easily manage as well as organize the data of your business. We aid
           you in organizing your crucial business assets with the right
           implementation of our CMS solutions.
           <br /> <br />
           We have more than 7 years of experience in offering web maintenance
           solutions. With our latest management and administrative tools, we at
-          Code Garage, are capable of providing cost-effective website
+          Code Garage Tech, are capable of providing cost-effective website
           maintenance services that simplify your work.
           <br /> <br /> Now you can manage as well as deploy the content of your
           website in a seamless and hassle-free way with our effective
-          applications such as. Etc. We help you get dynamic outcomes with our
-          unique and effective CMS services. Whether it is enterprise content
+          applications. Etc. We help you get dynamic outcomes with our unique
+          and effective CMS services. Whether it is enterprise content
           management, document content management, portal content management,
           source content management, or web content management, we have reliable
           tools and resources to support several Content Management Systems.
@@ -111,7 +99,7 @@ const content1 = () => {
           </p>
 
           <h3 className={hireService.hireh3}>
-            <b>Integrable & Extensible </b>
+            <b>Integrable & Extensible</b>
           </h3>
           <p
             className={`${hireService.hirep}  ${hireService.marginbottom24px}`}
@@ -131,9 +119,9 @@ const content1 = () => {
             className={`${hireService.hirep}  ${hireService.marginbottom24px}`}
           >
             We understand the requirement for a dynamic and intuitive Content
-            Management System that can contribute to the online businesses
-            that&apos;s why we have convenient to use as well as secure content
-            management technology.
+            Management System that can contribute to online businesses that’s
+            why we have convenient to use as well as secure content management
+            technology
           </p>
 
           <h3 className={hireService.hireh3}>
@@ -142,21 +130,21 @@ const content1 = () => {
           <p
             className={`${hireService.hirep}  ${hireService.marginbottom24px}`}
           >
-            We offer advanced management solutions and with the help of that you
-            get numerous pre-built authentication choices for your site that
+            We offer advanced management solutions and with the help of that,
+            you get numerous pre-built authentication choices for your site that
             works like an advanced security system. We offer features such as
             customized user roles, content permissions, and module permissions
-            that contribute to safeguarding the website data.
+            that contribute to safeguarding website data
           </p>
 
           <h3 className={hireService.hireh3}>
-            <b>Online Applications & Marketing Tools </b>
+            <b>Online Applications & Marketing Tools</b>
           </h3>
           <p
             className={`${hireService.hirep}  ${hireService.marginbottom24px}`}
           >
-            Code Garage offers you a range of digital marketing tools that are
-            customer-focused and improve marketing by covering numerous
+            Code Garage Tech offers you a range of digital marketing tools that
+            are customer-focused and improve marketing by covering numerous
             channels.
           </p>
         </div>
@@ -197,7 +185,7 @@ const ContentManagementSystem = () => {
         isIconExit={true}
         contentHeader1={contentHeader1}
         techTitle={techTitle}
-        bannerComponent={Banner}
+        bannerComponent={<Banner techTitle={heading} />}
         requestOrigin={'Requested from Miscellaneous page'}
       />
     </>

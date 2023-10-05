@@ -7,40 +7,30 @@ import Image from 'next/image'
 import Link from 'next/link'
 const techTitle = 'Strapi'
 import hireService from '../../styles/hireService.module.css'
-
+const heading = 'miscellaneous'
 const contentHeader = () => <div></div>
 const contentHeaderLeft = () => <div></div>
 
 const contentHeader1 = () => {
   return (
     <>
-      <div className={hireService.techservicebody}>
+      <div className={`feature-list container ${hireService.techservicebody}`}>
         <div className={hireService.techservicebodyleft}>
           <h1 className={hireService.hireh1}>{techTitle}</h1>
-          <ul
-            className={`${hireService.hirelisticon} ${hireService.hire_list_items_services} `}
+          <p
+            className={`${hireService.hirep}  list-p ${hireService.marginbottom24px}`}
           >
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Leading Open-Source Headless Cms
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                100% Reliable And Fully Customizable.
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Build Your Projects In No-Time
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Best And Reliable Softwares
-              </p>
-            </li>
-          </ul>
+            Discover our Strapi Services, where we harness the power of the
+            leading open-source headless CMS. Our solutions are not only 100%
+            reliable but also fully customizable, allowing you to tailor them to
+            your specific needs. With our expertise, you can build your projects
+            with remarkable speed, ensuring efficient and effective development.
+            We are committed to delivering the best and most reliable software,
+            enabling you to achieve your goals with confidence and precision.
+            When you choose our Strapi Services, you're choosing a partner
+            dedicated to providing top-tier solutions that empower your projects
+            and enhance your digital presence.
+          </p>
         </div>
         <div className={hireService.techservicebodyright}>
           <Image
@@ -255,7 +245,7 @@ const Strapi = () => {
         contentHeaderLeft={contentHeaderLeft}
         techTitle={techTitle}
         // techImage={techImage}
-        bannerComponent={bannerComponent}
+        bannerComponent={<Banner techTitle={heading} />}
         contentHeader={contentHeader}
         requestOrigin={'Requested from Mobile solution page'}
       />

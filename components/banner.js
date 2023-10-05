@@ -93,6 +93,36 @@ const Banner = ({ techTitle }) => {
       path: '/icons/swift.webp',
       title: 'Mobile Solutions',
     },
+    {
+      path: '/images/video-chat-a-pro.webp',
+      altImg: '',
+      title: 'miscellaneous',
+    },
+    {
+      path: '/images/desmania-design.webp',
+      altImg: 'Desmania Design - Logo',
+      title: 'miscellaneous',
+    },
+    {
+      path: '/images/vaayu.webp',
+      altImg: 'Vaayu - Logo',
+      title: 'miscellaneous',
+    },
+    {
+      path: '/images/domino-data-lab.webp',
+      altImg: 'Domino Data Lab - Logo',
+      title: 'miscellaneous',
+    },
+    {
+      path: '/images/ucview_2.webp',
+      altImg: 'UcView - Logo',
+      title: 'miscellaneous',
+    },
+    {
+      path: '/images/golden-circle-app.webp',
+      altImg: 'Golden Circle App - Logo',
+      title: 'miscellaneous',
+    },
   ]
 
   var settings = {

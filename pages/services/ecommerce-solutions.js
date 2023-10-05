@@ -7,36 +7,22 @@ import ScheduleForm from '../../components/schedule'
 import styles from '../../styles/Services.module.css'
 const techTitle = 'E-commerce Solutions'
 import hireService from '../../styles/hireService.module.css'
+const heading = 'miscellaneous'
 const contentHeader1 = () => {
   return (
     <>
-      <div className={hireService.techservicebody}>
+      <div className={`feature-list container ${hireService.techservicebody}`}>
         <div className={hireService.techservicebodyleft}>
           <h1 className={hireService.hireh1}>{techTitle}</h1>
-          <ul
-            className={`${hireService.hirelisticon} ${hireService.hire_list_items_services} `}
+          <p
+            className={`${hireService.hirep}  list-p ${hireService.marginbottom24px}`}
           >
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                100% customizable and 3rd party integrations
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                All three module (admin, sellers & buyer)
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Online /offline payment module
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Build your shop, manage your order with e-commerce websites.
-              </p>
-            </li>
-          </ul>
+            Unlock the potential of our E-commerce Solutions, where we offer
+            fully customizable options and seamless 3rd party integrations to
+            elevate your online business. Our comprehensive platform encompasses
+            all three vital modules—Admin, Sellers, and Buyers—ensuring a
+            seamless and collaborative experience.
+          </p>
         </div>
         <div className={hireService.techservicebodyright}>
           {/* <img src="/icons/service-icon/cloud.webp" alt="3D Cloud" /> */}
@@ -46,6 +32,7 @@ const contentHeader1 = () => {
             width={442}
             height={483}
             priority={true}
+            objectFit="contain"
           />
         </div>
       </div>
@@ -59,21 +46,26 @@ const content1 = () => {
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
         <p className={hireService.hirep}>
-          At Code Garage, we combine our expertise and experience for developing
-          Ecommerce solutions like Ecommerce design, shopping campaigns,
-          Ecommerce SEO, and much more that helps in making your Ecommerce
-          business a huge success.
+          At Code Garage Tech, we take pride in our fusion of expertise and
+          experience, culminating in the development of comprehensive e-commerce
+          solutions that encompass everything from e-commerce design to shopping
+          campaigns and e-commerce SEO, all geared toward ensuring the
+          resounding success of your e-commerce business.
           <br /> <br />
-          As a professional Ecommerce service provider, we offer reliable
-          customized e-commerce solutions for developing a rewarding online
-          e-commerce store that produces more sales as well as profit to your
-          business. At Code Garage, we offer custom Ecommerce solutions for
-          developing, designing, analytics, marketing, and hosting across
-          industry verticals globally.
-          <br /> <br /> We have helped our clients in boosting up their business
-          scope as well as targeting international and local customers by
-          creating effective e-commerce online stores. We want your customers to
-          have a convenient online shopping experience.
+          As dedicated e-commerce service providers, we understand the
+          significance of tailor-made solutions. That's why we offer reliable
+          and highly customized e-commerce solutions, designed to create a
+          thriving online store that generates not only increased sales but also
+          higher profits for your business. At Code Garage Tech, our commitment
+          to excellence extends to every facet of e-commerce, including
+          development, design, analytics, marketing, and hosting, serving
+          diverse industry verticals on a global scale.
+          <br /> <br /> Our track record is a testament to our ability to
+          empower clients to expand their business horizons and effectively
+          target both international and local customers. We are driven by the
+          vision of providing your customers with a seamless and convenient
+          online shopping experience, ultimately contributing to the growth and
+          success of your e-commerce venture.
           <br /> <br />
         </p>
 
@@ -87,7 +79,7 @@ const content1 = () => {
           <h2
             className={`${hireService.hireh2} ${hireService.marginbottom24px}`}
           >
-            Advantages of Hiring Ecommerce Experts
+            Advantages of Hiring E-commerce Experts
           </h2>
           <div className={`${styles.services_image_container}`}>
             <Image
@@ -106,60 +98,73 @@ const content1 = () => {
           </h2>
 
           <p className={hireService.hirep}>
-            Our skilled and experienced developers closely observe your business
-            requirements and challenges to create a customized eCommerce website
-            and platform. We are a preeminent eCommerce development company
-            emphasized on custom eCommerce solutions, including:
+            Our team of skilled and experienced developers operates in close
+            alignment with your unique business requirements and challenges to
+            craft a customized eCommerce website and platform tailored to your
+            specific needs. As a premier eCommerce development company, we place
+            a strong emphasis on providing bespoke eCommerce solutions that
+            encompass the following key areas:
           </p>
 
           <h3 className={hireService.hireh3}>
-            <b>Development</b>{' '}
+            <b>E-commerce Development:</b>{' '}
           </h3>
           <p className={hireService.hirep}>
-            We are adept in creating smooth payment systems, functional
-            features, and exquisite layouts that boost your brand online. Our
-            main goal is to make the procedure of buying from your eCommerce
-            website seamless and hassle-free.
+            With our expertise, we excel at creating seamless payment systems,
+            functional features, and captivating layouts that enhance your
+            brand's online presence. Our primary objective is to streamline the
+            purchasing process on your eCommerce website, ensuring a hassle-free
+            experience for your customers.
           </p>
 
           <h3 className={hireService.hireh3}>
-            <b>Strategy</b>
+            <b>E-commerce Strategy:</b>
           </h3>
           <p className={hireService.hirep}>
-            We craft pleasing designs with the use of contemporary techniques
-            lined up with present industry trends. We adopt a long-term strategy
-            for your business that make your eCommerce website a huge success.
+            We approach e-commerce with a focus on long-term success, utilizing
+            contemporary techniques aligned with current industry trends. Our
+            strategic approach aims to transform your eCommerce website into a
+            resounding success, driving sustained growth for your business.
           </p>
 
           <h3 className={hireService.hireh3}>
-            <b>Consulting </b>
+            <b>E-commerce Consulting: </b>
           </h3>
           <p className={hireService.hirep}>
-            Our dedicated sales and marketing team will provide you with great
-            guidance and tactics on how to boost your eCommerce online store
-            sales. We offer effective services and are entirely committed to
-            seeing you succeed.
+            Count on our dedicated sales and marketing team to offer invaluable
+            guidance and tactics for boosting sales on your e-commerce online
+            store. Our commitment to your success is unwavering, and we provide
+            effective services to help you achieve your goals
           </p>
 
           <h3 className={hireService.hireh3}>
-            <b>UI/UX </b>
+            <b>E-commerce UI/UX:</b>
           </h3>
           <p className={hireService.hirep}>
-            We aesthetically design your ecommerce store so that your customers
-            can easily navigate your site and make a purchase. Our main
-            objective is to make your customer&apos;s experience fascinating and
-            also encourage them to purchase your product or services again and
-            again.
+            We prioritize the aesthetics and functionality of your e-commerce
+            store, ensuring that customers can effortlessly navigate your site
+            and make purchases. Our ultimate goal is to create a captivating
+            customer experience that not only encourages repeat purchases but
+            also strengthens your brand's appeal.
           </p>
           <h3 className={hireService.hireh3}>
-            <b>Support</b>
+            <b>E-commerce Support:</b>
           </h3>
           <p className={hireService.hirep}>
-            Being a professional ecommerce development company, we make sure
-            that you have our support every time. You can fully rely on us as we
-            offer round the clock technical support.
+            As a trusted and professional e-commerce development company, we
+            understand the importance of ongoing support. You can rely on our
+            round-the-clock technical assistance to address any concerns or
+            issues, ensuring the continuous and smooth operation of your
+            eCommerce platform.
           </p>
         </div>
+        <br />
+        <p className={hireService.hirep}>
+          At Code Garage Tech, we are dedicated to going above and beyond in
+          crafting tailored eCommerce solutions that not only meet your
+          immediate needs but also position your business for sustained growth
+          and success in the dynamic world of online commerce.
+        </p>
       </div>
     </>
   )
@@ -197,7 +202,7 @@ const ContentManagementSystem = () => {
         isIconExit={true}
         contentHeader1={contentHeader1}
         techTitle={techTitle}
-        bannerComponent={Banner}
+        bannerComponent={<Banner techTitle={heading} />}
         requestOrigin={'Requested from Miscellaneous page'}
       />
     </>

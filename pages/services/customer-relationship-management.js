@@ -8,37 +8,25 @@ const techTitle = 'Customer Relationship Management'
 import Image from 'next/image'
 import styles from '../../styles/Services.module.css'
 import hireService from '../../styles/hireService.module.css'
+const heading = 'miscellaneous'
 
 const contentHeader1 = () => {
   return (
     <>
-      <div className={hireService.techservicebody}>
+      <div className={`feature-list container ${hireService.techservicebody}`}>
         <div className={hireService.techservicebodyleft}>
           <h1 className={hireService.hireh1}>{techTitle}</h1>
-          <ul
-            className={`${hireService.hirelisticon} ${hireService.hire_list_items_services} `}
+          <p
+            className={`${hireService.hirep}  list-p ${hireService.marginbottom24px}`}
           >
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Take care of your customer experience with our CMS Services.
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                Our services are fully customized
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                We have highly scalable features.
-              </p>
-            </li>
-            <li className={hireService.marginebottom16px}>
-              <p className={hireService.marginleft25px}>
-                We construct a data-friendly CRM
-              </p>
-            </li>
-          </ul>
+            Elevate your customer experience with our Customer Relationship
+            Management (CRM) services, where we prioritize your unique needs and
+            preferences. Our commitment to customization ensures that our
+            services align seamlessly with your business objectives. We place a
+            strong emphasis on constructing a data-friendly CRM that empowers
+            you with valuable insights, helping you forge stronger and more
+            meaningful relationships with your customers.
+          </p>
         </div>
         <div className={`${hireService.techservicebodyright} text-center`}>
           {/* <img src="/icons/service-icon/mobile-front-color-service.webp" /> */}
@@ -64,11 +52,11 @@ const content1 = () => {
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
         <h2 className={`${hireService.hireh2}`}>
-          <b>BUILT-IN/LOADED WITH ADVANCED FEATURES</b>
+          <b>Built-in/Loaded with Advanced Feature</b>
         </h2>
         <p className={`${hireService.hirep}  ${hireService.marginbottom24px}`}>
           Our CRM services comprise numerous comprehensive and versatile
-          features of rich quality for industries.
+          features of rich quality for industries
         </p>
         {/* content-7 */}
         <h3 className={hireService.hireh3}>
@@ -197,7 +185,7 @@ const CustomerRelationshipManager = () => {
         content7={content7}
         contentHeader1={contentHeader1}
         techTitle={techTitle}
-        bannerComponent={Banner}
+        bannerComponent={<Banner techTitle={heading} />}
       />
     </>
   )

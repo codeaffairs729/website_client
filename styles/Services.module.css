@@ -21,7 +21,7 @@
 @media (max-width: 480px) {
   .services_image_container {
     /* width: 95vw; */
-    height: 25vh;
+    height: 39vh;
     display: flex;
     align-items: center;
     justify-content: center;
