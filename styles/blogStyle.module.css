@@ -433,7 +433,8 @@
   width: 521px;
 }
 .casestudycontainer {
-  /* margin-left: 7rem; */
+  left: 5rem;
+  position: relative;
 }
 .blogcontainerleft {
   width: 50%;
@@ -703,8 +704,8 @@ height: 100%;
     width: 134px;
   }
   .casestudycontainer {
-    /* margin-left: 10rem; */
-    margin-top: 2rem;
+    left: 8rem;
+    top: 4rem;
     width: 61%;
   }
   .notebook {
@@ -756,8 +757,8 @@ height: 100%;
     width: 471px;
   }
   .casestudycontainer {
-    margin-left: 3rem;
     width: 75%;
+    left: 6rem;
   }
   .notebook {
     width: 93px;
@@ -834,9 +835,7 @@ height: 100%;
     left: -5rem;
   }
   .casestudycontainer {
-    margin-left: 1rem;
     width: 100%;
-    margin-top: 3rem;
   }
   .glass {
     top: 21rem;
@@ -992,8 +991,9 @@ height: 100%;
     height: 226px;
   }
   .casestudycontainer {
-    margin: 0rem;
     width: 100%;
+    top: 1rem;
+    left: 0rem;
   }
   .blogdiv {
     margin-left: 1rem;

@@ -67,6 +67,11 @@
 }
 .blog-item p {
   color: #999fae;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .blog-item h4 {
   color: #a5abb8;
