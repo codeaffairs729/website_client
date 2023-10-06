@@ -2,37 +2,37 @@ import listStyle from '../../styles/hireService.module.css'
 import style from '../../styles/case-page.module.css'
 import Image from 'next/image'
 const Challenges = ({ Casedata }) => {
-  const isVideoChatPro = Casedata.title === 'Video Call Support App'
+  const isVideoChatPro = Casedata.title === 'Mobile App For Divers'
   return (
     <>
       <div className={style.challenge_main}>
         <div className={style.challengeimg}>
           {isVideoChatPro ? (
-            <div>
-              <Image
-                src={Casedata.challengeimg1}
-                height={401}
-                width={457}
-                objectFit="cover"
-              />
+            <div className={style.challenge_img}>
+              <div>
+                <img
+                  src={Casedata.challengeimg1}
+                  height={'600px'}
+                  width={'auto'}
+                />
+              </div>
+              <div>
+                <img
+                  src={Casedata.challengeimg2}
+                  height={'600px'}
+                  width={'auto'}
+                />
+              </div>
             </div>
           ) : (
             <>
-              <div className={style.challenge_img}>
-                <div>
-                  <img
-                    src={Casedata.challengeimg1}
-                    height={'600px'}
-                    width={'auto'}
-                  />
-                </div>
-                <div>
-                  <img
-                    src={Casedata.challengeimg2}
-                    height={'600px'}
-                    width={'auto'}
-                  />
-                </div>
+              <div>
+                <Image
+                  src={Casedata.challengeimg1}
+                  height={401}
+                  width={457}
+                  objectFit="contain"
+                />
               </div>
             </>
           )}

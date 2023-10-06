@@ -40,15 +40,15 @@ const Effort = ({ Casedata }) => {
         <div className={style.results}>
           <h1 className={style.challenge_header}>Results:</h1>
           <div className={style.result_section}>
-            <div>
-              <p>{Casedata.Results}</p>
-            </div>
             <Image
               src={Casedata.resimg}
-              height={302}
+              height={352}
               width={322}
               objectFit="contain"
             />
+            <div>
+              <p>{Casedata.Results}</p>
+            </div>
           </div>
         </div>
       </div>
