@@ -116,7 +116,7 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
                       </Link>
                       <Link
                         href={
-                          db ? `/${db}/${e.slug}` : `/test_case_study/${e.id}`
+                          db ? `/${db}/${e.slug}` : `/Case_Study_List/${e.id}`
                         }
                       >
                         <a href="#" className="fw-bold text-black ">

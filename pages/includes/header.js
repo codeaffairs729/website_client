@@ -1204,16 +1204,16 @@ const Header = () => {
                     Careers
                   </div>
                 </Link>
-                <Link href="/contact">
+                <Link href="/Case_Study_List">
                   <div
                     className={
-                      currentPath === '/contact'
+                      currentPath === '/Case_Study_List'
                         ? 'cursor_pointer header__item nav-css underline_text'
                         : 'cursor_pointer header__item nav-css blue-underline'
                     }
                     onClick={handleSidebar}
                   >
-                    Contact Us
+                    Case Studies
                   </div>
                 </Link>
                 {/* <Link href="/user-blog-list">

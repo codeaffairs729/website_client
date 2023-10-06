@@ -124,7 +124,7 @@ const Testbloggrid = ({ data, authorized, setDelId, db }) => {
                     <span className="text-primary fw-bold">
                       <Link
                         href={
-                          db ? `/${db}/${e.slug}` : `/test_case_study/${e.id}`
+                          db ? `/${db}/${e.slug}` : `/Case_Study_List/${e.id}`
                         }
                       >
                         <a className={styles.blog__link}>
