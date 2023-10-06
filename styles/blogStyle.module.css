@@ -433,7 +433,8 @@
   width: 521px;
 }
 .casestudycontainer {
-  left: 5rem;
+  left: 8rem;
+  top: 2rem;
   position: relative;
 }
 .blogcontainerleft {
@@ -835,7 +836,8 @@ height: 100%;
     left: -5rem;
   }
   .casestudycontainer {
-    width: 100%;
+    width: 82%;
+    top: 5rem;
   }
   .glass {
     top: 21rem;

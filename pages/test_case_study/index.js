@@ -248,8 +248,8 @@ export const CaseStudyPage = () => {
                 <img
                   src="/blogs/3d-disk.png"
                   alt=""
-                  height={'354'}
-                  width={'499.89'}
+                  height={'320'}
+                  width={'410.89'}
                   className={`img-fluid mx-auto `}
                 />
               </div>

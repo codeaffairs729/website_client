@@ -106,7 +106,7 @@ const Casestudy = () => {
       id: '3',
       title: 'Logistics Management',
       about:
-        'A SAS mobile and web application that is specifically designed for the residential and commercial moving and storage industry. It offers streamlined online transportation services from various providers, with the aim of simplifying the management of moving operations. It has the ability to conduct and create an estimate on-site.The application empowers movers to view their jobs, alert the customer through a GPS when they are en route, access the customer digital invoice, and capture payment once the move is complete. ',
+        "A SAAS mobile and web application that is specifically designed for the residential and commercial moving and storage industry. It offers streamlined online transportation services from various providers, with the aim of simplifying the management of moving operations. It has the ability to conduct and create an estimate on-site.The application empowers movers to view their jobs, alert the customer through a GPS when they are en route, access the customer's digital invoice, and capture payment once the move is complete.",
       Active: '20,000',
       Logs: '10 Lakh',
       AppDownloads: '50k, in one year',
@@ -118,22 +118,37 @@ const Casestudy = () => {
       ],
       Solutions: [
         {
-          info: 'The application requires collaboration between different teams, including developers, quality assurance, and operations, so that why we used the DevOps methodology to promote better communication and collaboration between these teams.We used microservices architecture, containerization (e.g., Docker), and serverless computing to decouple components and scale independently. Within this application, AWS services were implemented to make the app performance seamless. We implemented Google Maps functionality into the web application, allowing users to track the real-time location of their trucks.',
-          solimg: '/case_study/move_efforts.png',
-        },
-        {
-          info: 'Initially, the user was facing For managing a complex user interface, our UI/UX team strategically incorporated minimal elements and enabled extra features that can only be introduced when needed by the user. To ensure user-friendliness, we integrated instructional tutorials within the app, simplifying its usability and comprehension',
+          info: "To foster a culture of collaboration and streamline efficiency across the board, we've implemented DevOps practices as a cornerstone of our approach. DevOps bridges the gap between development, quality assurance, and operations teams, enhancing communication and cooperation",
           solimg: '/case_study/move1.png',
         },
+        {
+          info: "To harness the power of modern technology, we've adopted a cutting-edge approach by implementing a microservices architecture. This architectural paradigm allows us to break down complex systems into smaller, manageable components, enhancing flexibility and scalability.We've leveraged containerization technologies like Docker and embraced serverless computing to further decouple components and enable independent scaling. With this approach, your application can seamlessly adapt to evolving demands, ensuring optimal performance, cost-efficiency, and rapid scalability.",
+          solimg: '/case_study/move2.png',
+        },
+        {
+          info: "Within the framework of this application, we've harnessed the capabilities of AWS services to achieve nothing short of seamless performance. AWS's robust infrastructure and cloud solutions have been seamlessly integrated to ensure that your app operates at peak efficiency, without a hitch",
+          solimg: '/case_study/move3.png',
+        },
+        {
+          info: "We've taken real-time tracking to the next level by seamlessly integrating Google Maps functionality into our web application. Now, users can track trucks in real time with precision and ease",
+          solimg: '/case_study/move4.png',
+        },
+        {
+          info: 'Designed a complex user interface with minimal elements, and enabled additional features to appear only when needed. We integrated instructional tutorials to enhance the user-friendliness and usability of the application.',
+          solimg: '/case_study/move5.png',
+        },
       ],
-      OfflineOnlineWorkingandSynchronize:
-        'Truck drivers often need to operate in remote areas with limited network availability, so we developed a feature that ensures seamless data transfer between the front-end and back-end of the application. While offline, truck drivers can still access essential features, such as tracking shipments and managing orders. Any data entered or actions performed during offline mode are stored locally on the device. When the truck driver switches to online mode, the feature automatically synchronizes the offline data with the backend server. This ensures that all orders, shipment details, and delivery updates are accurately recorded in real-time.',
+      OfflineOnlineWorkingandSynchronize: [
+        {
+          info: 'Truck drivers often need to operate in remote areas with limited network availability, so we developed a feature that ensures seamless data transfer between the front-end and back-end of the application. While offline, truck drivers can still access essential features, such as tracking shipments and managing orders. Any data entered or actions performed during offline mode are stored locally on the device. When the truck driver switches to online mode, the feature automatically synchronizes the offline data with the backend server. This ensures that all orders, shipment details, and delivery updates are accurately recorded in real-time.',
+          solimage: '/case_study/move6.png',
+        },
+      ],
       Results:
-        'Overall, the solutions collectively contribute to a more efficient, reliable, and customer-centric moving and storage application. Despite having a complex infrastructure, the application bridged the operational gaps and set new standards of efficiency, user experience, and technological integration through regular updates. This transformative approach significantly simplifies the management of moving operations..',
+        'Overall, the solutions collectively contribute to a more efficient, reliable, and customer-centric moving and storage application. Despite having a complex infrastructure, the application bridged the operational gaps and set new standards of efficiency, user experience, and technological integration through regular updates. This transformative approach significantly simplifies the management of moving operations.',
       img: '/case_study/move-it-pro.png',
       resimg: '/case_study/move_results.png',
-      challengeimg1: '/case_study/move_challenge_1.png',
-      challengeimg2: '/case_study/move_challenge_2.png',
+      challengeimg1: '/case_study/move7.png',
     },
     {
       id: '4',
@@ -183,13 +198,13 @@ const Casestudy = () => {
       id: '5',
       title: 'Customer Engagement App',
       about:
-        'A SAS web and mobile application that is designed to generate high-quality leads, manage your sales team, and track as well as close deals- all on one platform. It is an open-source, and centralized system named Chatwoot that connects with popular customer communication channels, such as WhatsApp, Email, Website live-chat, Instagram, Facebook, Twitter, Line, etc.',
+        'A SAAS web and mobile application that is designed to generate high-quality leads, manage your sales team, and track as well as close deals- all on one platform. It is an open-source, and centralized system named Chatwoot that connects with popular customer communication channels, such as WhatsApp, Email, Website live-chat, Instagram, Facebook, Twitter, Line, etc.',
       Active: '20,000',
       Logs: '10 Lakh',
       AppDownloads: '50k, in one year',
       Challenges: [
         'Modifying existing framework (Overriding)',
-        'Mass emails -flagged as spam',
+        'Mass emails-flagged as spam',
         'Bridging external app to chatbot codebase',
         'Events tracking',
         'AI Integration',
@@ -198,24 +213,31 @@ const Casestudy = () => {
       ],
       Solutions: [
         {
-          info: 'When modifying existing frameworks, our approach involved thorough examination and testing of the existing code. Subsequently, our skilled engineers made informed adjustments to the code based on their expertise and implemented the changes accordingly.By developing a batch processing system, we established the capability to send a designated number of emails per day while also setting a limit. This strategic approach has facilitated the scalability of the application.',
-          solimg: '/case_study/peasy_efforts.png',
-        },
-        {
-          info: 'We designed a module within Chatwoot and subsequently developed several APIs so an external app can use them securely. We developed an application called Chatwoot that functions similarly to Google Tag Manager. This application made the support and marketing process easy.',
+          info: 'When modifying existing frameworks, our approach involved thorough examination and testing of the existing code. Subsequently, our skilled engineers made informed adjustments to the code based on their expertise and implemented the changes accordingly.',
           solimg: '/case_study/peasy1.png',
         },
         {
-          info: 'We integrated OpenAI into our customer support system to address inquiries in situations where a support executive is unavailable. When a support executive becomes accessible, the system transfers all data and queries to them for further handling.To provide easy directions to users, we integrated Botpress. The service provider then modifies the direction to provide a predefined answer.To offer easy directions to users, we implemented Botpress. The service provider then customizes the directions to deliver predetermined responses.There were multiple conditions, including the number of messages, messages categorized by country, and message type. Using these criteria, we calculated the cost of the service provider services.',
+          info: "To ensure control, scalability, and a seamless user experience, we've meticulously crafted a robust batch-processing system. This system plays a vital role in managing the number of emails sent per day, allowing us to set precise limits and optimize the application's performance",
           solimg: '/case_study/peasy2.png',
+        },
+        {
+          info: 'Developed multiple APIs for secure external app usage. We created an application similar to Google Tag Manager to simplify support and marketing processes. Moreover, we integrated OpenAI into the customer support system for handling inquiries.',
+          solimg: '/case_study/peasy3.png',
+        },
+        {
+          info: "To offer easy directions to users, we've seamlessly integrated Botpress into our system. With this intelligent platform, we not only provide easy-to-follow directions but also customize responses to deliver precise, predetermined information.",
+          solimg: '/case_study/peasy4.png',
+        },
+        {
+          info: "We've brought precision and transparency to the service provider's pricing model by implementing a sophisticated cost calculation system. This system takes into account a multitude of factors, including message volume, country categorization, and message type. ",
+          solimg: '/case_study/peasy5.png',
         },
       ],
       Results:
-        'The SAS web and mobile application, Chatwoot, now offers enhanced lead generation, sales team management, deal tracking, and customer communication capabilities across multiple channels. The challenges were met with comprehensive solutions, empowering businesses to streamline their operations and provide superior customer experiences.',
+        'The SAAS web and mobile application, Chatwoot, now offers enhanced lead generation, sales team management, deal tracking, and customer communication capabilities across multiple channels. The challenges were met with comprehensive solutions, empowering businesses to streamline their operations and provide superior customer experiences.',
       img: '/case_study/peasyAI.png',
       resimg: '/case_study/peasy_results.png',
-      challengeimg1: '/case_study/peasy_challenge_1.png',
-      challengeimg2: '/case_study/peasy_challenge_2.png',
+      challengeimg1: '/case_study/peasychallenge.png',
     },
   ]
 

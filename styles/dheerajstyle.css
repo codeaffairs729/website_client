@@ -146,7 +146,7 @@
 @media only screen and (max-width: 991px) {
   .information-section .main-heading,
   .case-study-section .main-heading {
-    font-size: 44px;
+    font-size: 41px;
   }
   .information-section .main-heading:before {
     width: 80px;

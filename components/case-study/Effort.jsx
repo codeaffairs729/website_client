@@ -15,7 +15,7 @@ const Effort = ({ Casedata }) => {
                     <Image
                       src={item.solimg}
                       height={252}
-                      width={422}
+                      width={320}
                       objectFit="contain"
                     />
                     <p>{item.info}</p>
@@ -36,6 +36,28 @@ const Effort = ({ Casedata }) => {
               )}
             </div>
           ))}
+
+          {/* Conditional rendering for "Online/Offline Working and Synchronize" */}
+          {Casedata.id === '3' && (
+            <div className={style.online}>
+              <h4 className={style.challenge_header}>
+                Offline/Online Working and Synchronize :
+              </h4>
+              <div className={style.effort_section}>
+                <div className={style.odd}>
+                  <p>{Casedata.OfflineOnlineWorkingandSynchronize[0].info}</p>
+                  <Image
+                    src={
+                      Casedata.OfflineOnlineWorkingandSynchronize[0].solimage
+                    }
+                    height={252}
+                    width={422}
+                    objectFit="contain"
+                  />
+                </div>
+              </div>
+            </div>
+          )}
         </div>
         <div className={style.results}>
           <h1 className={style.challenge_header}>Results:</h1>
