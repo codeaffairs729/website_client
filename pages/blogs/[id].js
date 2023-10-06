@@ -92,11 +92,11 @@ export default function BlogDetails({ data, blogData }) {
                   <h2 className="display-5 fw-semibold py-2">
                     {blogData[i]?.title}{' '}
                   </h2>
-                  <p className="fw-normal text-muted">
+                  {/* <p className="fw-normal text-muted">
                     Find out where we are on the path to{' '}
                     <br className="visible-lg" /> achieving the ultimate design
                     tool.
-                  </p>
+                  </p> */}
                 </div>
                 <div className={`col-12 col-lg-6 ${styles.blogdiv}`}>
                   <div className={hireService.display_circle}></div>

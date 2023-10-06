@@ -205,11 +205,11 @@ const Video = ({ Casedata }) => {
               <h2 className="display-2 fw-semibold py-2 main-heading">
                 {Casedata.title}
               </h2>
-              <p className="fw-normal text-muted">
+              {/* <p className="fw-normal text-muted">
                 Find out where we are on the path to{' '}
                 <br className="visible-lg" /> achieving the ultimate design
                 tool.
-              </p>
+              </p> */}
             </div>
             <div className={`col-12 col-lg-7 ${styles.casestudypage}`}>
               <div className={styles.cube}>
