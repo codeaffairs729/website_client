@@ -79,24 +79,28 @@ const Casestudy = () => {
       ],
       Solutions: [
         {
-          info: 'To manage large product catalogs, we used AWS services such as Amazon S3 (Simple Storage Service), Amazon RDS (Relational Database Service), and chose multi-tier database architecture to optimize dataset queries and faster retrieval times. Next, we offered a UI through which users can add text or photos to the product. Our frontend architecture is designed to provide a clear and intuitive layout for displaying customization options and previews of products.',
-          solimg: '/case_study/byuma_efforts.png',
-        },
-        {
-          info: ' We designed a backend architecture that supports the customization feature.We employed the WebAR framework to implement the Augmented Reality feature on the website. Techniques like LOD (Level of Detail) were employed to manage complex AR models. For enhanced security measures, we integrated a 3D payment gateway to add an additional layer of safety for users during the payment process.',
+          info: 'Maximized efficiency with AWS services such as Amazon S3 and Amazon RDS, implementing a robust multi-tier database architecture. Our approach ensures lightning-fast dataset queries and retrieval, propelling your project to new heights of performance and scalability.',
           solimg: '/case_study/byuma1.png',
         },
         {
-          info: 'We integrated multiple payment gateways based on the international target audience, geographical reach, and supported currencies. To streamline the integration process, we implemented an abstraction layer to manage interactions with different gateways.',
+          info: "Crafted with the user in mind, we've developed a seamless and user-friendly UI that simplifies the process of adding text or photos to products. Our meticulous design work extends to a clear and intuitive layout for customization options and product previews, ensuring that users can effortlessly bring their ideas to life. We've engineered a robust backend architecture specifically tailored to support this powerful customization feature.",
           solimg: '/case_study/byuma2.png',
+        },
+        {
+          info: "We've seamlessly integrated the WebAR framework for our AR feature. By harnessing the power of WebAR, we've unlocked a world of immersive possibilities, all accessible right from your device.But it doesn't stop there. We've taken it a step further by implementing LOD (Level of Detail) techniques to efficiently manage complex AR models.This ensures that you experience the magic of augmented reality with unparalleled performance and realism.",
+          solimg: '/case_study/byuma3.png',
+        },
+        {
+          info: "To make transactions as smooth as possible for our global audience, we've seamlessly integrated multiple payment gateways tailored to your international target audience, geographical reach, and supported currencies. This means users can pay with ease, no matter where they are or which currency they use. To further simplify and optimize the payment process, we've implemented an intelligent abstraction layer. This layer acts as a bridge, streamlining interactions with different payment gateways behind the scenes. So, while users enjoy a seamless checkout experience, we handle the complexity, making their payments quick, secure, and hassle-free.",
+          solimg: '/case_study/byuma4.png',
         },
       ],
       Results:
-        'The implementation of the solutions mentioned above has resulted in a user-focused, secure, e-commerce website. These outcomes have collectively contributed to increased customer satisfaction, higher conversion rates, and a stronger competitive position in the market, ensuring the ongoing success of the website.',
+        'The implementation of the solutions mentioned above has resulted in a user-focused, secure, e-commerce website. These outcomes have collectively contributed to increased customer satisfaction, higher conversion rates, and a stronger competitive position in the market, ensuring the ongoing success of the webs.',
       img: '/case_study/byuma.png',
-      resimg: '/case_study/byuma_results.png',
-      challengeimg1: '/case_study/byuma_challenge_1.png',
-      challengeimg2: '/case_study/byuma_challenge_2.png',
+      resimg: '/case_study/byuma5.png',
+      challengeimg1: '/case_study/byumachallenge.png',
+      // challengeimg2: '/case_study/byuma_challenge_2.png',
     },
     {
       id: '3',
