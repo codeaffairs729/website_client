@@ -122,7 +122,7 @@ export const CaseStudyPage = () => {
     },
     {
       id: '4',
-      title: 'Video Call Support',
+      title: 'Video Call Support App',
       about:
         'A web application that allows customers to connect with service providers via video chat. Contractors and technicians specializing in plumbing, HVAC, landscaping, electrical work, appliances, or automotive repair can assist customers instantly through video chat and are available 24/7 to provide guidance on any do-it-yourself repairs or installations. ',
       Active: '20,000',
