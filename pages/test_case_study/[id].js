@@ -198,7 +198,7 @@ const Casestudy = () => {
       id: '5',
       title: 'Customer Engagement App',
       about:
-        'A SAAS web and mobile application that is designed to generate high-quality leads, manage your sales team, and track as well as close deals- all on one platform. It is an open-source, and centralized system named Chatwoot that connects with popular customer communication channels, such as WhatsApp, Email, Website live-chat, Instagram, Facebook, Twitter, Line, etc.',
+        'A SAAS web and mobile application that is designed to generate high-quality leads, manage your sales team, and track as well as close deals- all on one platform. It is an open-source, and centralized system named Chatwoot that connects with popular customer communication channels, such as WhatsApp, Email, Website live-chat, Instagram, Facebook, Twitter, Line, etc.  With the help of this app, users can generate high-quality leads, manage their sales team, track and close deals. ',
       Active: '20,000',
       Logs: '10 Lakh',
       AppDownloads: '50k, in one year',
