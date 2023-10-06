@@ -249,7 +249,7 @@ export const CaseStudyPage = () => {
                   src="/blogs/3d-disk.png"
                   alt=""
                   height={'354'}
-                  width={'599.89'}
+                  width={'499.89'}
                   className={`img-fluid mx-auto `}
                 />
               </div>
