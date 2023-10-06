@@ -70,7 +70,7 @@
 /* -----------About page--------- */
 .case_container {
   margin: auto;
-  margin-block: 150px;
+  margin-block: 80px;
 }
 
 .about {
@@ -144,7 +144,6 @@
   position: relative;
   display: flex;
   margin: auto;
-  margin-block: 100px;
   align-items: center;
   gap: 95px;
   overflow-x: hidden;
@@ -153,7 +152,6 @@
 .challenge_img {
   display: flex;
   gap: 30px;
-  width: 660px;
   /* background: rgba(214, 112, 112, 0.3); */
   align-items: center;
   justify-content: center;
@@ -195,6 +193,7 @@
 }
 .effort_section div:nth-child(1) {
   border-radius: 25px;
+  align-items: center;
 }
 .effort_section p {
   flex: 1;

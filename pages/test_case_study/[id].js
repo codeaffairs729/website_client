@@ -133,14 +133,14 @@ const Casestudy = () => {
     },
     {
       id: '4',
-      title: 'Video Call Support',
+      title: 'Video Call Support App',
       about:
-        'A web application that allows customers to connect with service providers via video chat. Contractors and technicians specializing in plumbing, HVAC, landscaping, electrical work, appliances, or automotive repair can assist customers instantly through video chat and are available 24/7 to provide guidance on any do-it-yourself repairs or installations. ',
+        'A web application that allows customers to connect with service providers via video chat. Contractors and technicians specialising in plumbing, HVAC, landscaping, electrical work, appliances, or automotive repair can assist customers instantly through video chat and are available 24/7 to provide guidance on any do-it-yourself repairs or installations.  ',
       Active: '20,000',
       Logs: '10 Lakh',
       AppDownloads: '50k, in one year',
       Challenges: [
-        'Multi-zone scheduling overlapping',
+        'Multi-Zone Scheduling Overlapping',
         'Dynamic Search Engine Optimization',
         'Service Provider/Customer Engagement',
         'Seamless Calling Experience',
@@ -150,23 +150,30 @@ const Casestudy = () => {
       Solutions: [
         {
           info: 'To tackle the issue of overlapping schedules across multiple zones, we developed and implemented an intelligent scheduling algorithm that takes into account the schedules of all zones involved. This algorithm optimized time slots based on availability, priority, and constraints, eliminating the chances of overlapping.',
-          solimg: '/case_study/video_efforts.png',
-        },
-        {
-          info: 'For managing dynamic SEO, we took proactive steps by convening a meeting with SEO experts. This collaborative session enabled us to gain invaluable insights into the most effective techniques for optimizing meta tags and implementing best practices for site maps.  We refined our approach to dynamic SEO, ensuring that our meta tags are finely tuned to align with search engine algorithms and user intent.',
           solimg: '/case_study/video1.png',
         },
         {
-          info: 'We researched and identified relevant keywords related to their content and industry. For improving your website loading speed by optimizing images, using browser caching, and minimizing code.We implemented technical SEO by ensuring proper indexing of search engines by creating and submitting a sitemap. We used schema markup to provide structured data that search engines can understand. We fixed broken links, eliminated duplicate content, and managed 404 errors. We have implemented a comprehensive system for managing customer engagement and service-provider interactions. This includes the strategic use of reminders and the integration of Google Calendar to streamline and optimize the process. This proactive approach minimizes the chances of missed or delayed interactions, contributing to a smoother and more efficient customer experience. The integration of Google Calendar facilitated smooth communication and streamlined operational processes, ultimately leading to improved customer satisfaction and optimized service delivery.We bridge the gap between user engagement and user calls by implementing the feature of auto-connect. We simplified the process by implementing a feature that enables users to extend their calls with one click and turn off the call by providing an enhanced and user-friendly service environment. We introduced an in-app notifications feature to remind users about their scheduled calls with the service provider.To address the challenge of heavy-loading performance optimization, as well as Large Database/Query optimization, we integrated AWS services such as Amazon S3 (Simple Storage Service), Amazon EC2 (Elastic Compute Cloud), Amazon RDS (Relational Database Service), load balancer, and CDN for the easy implementation of caching and effectively reducing the need for repeated requests to the server. Through Continuous Integration/Continuous Deployment (CI/CD), we have invested in DevOps methodology, reducing the necessity for repetitive testing. Through this, we have integrated Deployment Process Optimization, which leverages automation testing rather than repeatedly conducting manual tests. This approach aims to balance the deployment process, ensuring both efficiency and security',
+          info: 'We collaborated with SEO experts to optimize meta tags and implement best practices for site maps. We refined our approach to dynamic SEO to align with search engine algorithms and user intent. Additionally, we conducted research to identify relevant keywords for our content and industry.',
           solimg: '/case_study/video2.png',
+        },
+        {
+          info: 'We improved the website loading speed by optimizing images, browser caching, and minimizing code. Additionally, we ensured proper indexing of search engines by creating and submitting a sitemap. We implemented schema markup for structured data and fix issues like broken links and duplicate content.',
+          solimg: '/case_study/video3.png',
+        },
+        {
+          info: 'Implemented a system for managing customer engagement and service-provider interactions, and integrated Google Calendar to streamline and optimize processes. We also introduced auto-connect and in-app notification features to enhance user experience.',
+          solimg: '/case_study/video4.png',
+        },
+        {
+          info: 'Integrated AWS services like Amazon S3, Amazon EC2, Amazon RDS, load balancer, and CDN to optimize performance and database queries. We utilized Continuous Integration/Continuous Deployment (CI/CD) and DevOps methodology to automate testing and deployment processes, ensuring efficiency and security.',
+          solimg: '/case_study/video5.png',
         },
       ],
       Results:
-        'The implementation of strategic solutions has provided progressive results to our web application, enabled users to effortlessly extend video chat calls with a single click, and led to a (40%) increase in call duration and user engagement. It also resulted in streamlined the calling process, resulting in a (15%) decrease in call interruptions. ',
+        'The implementation of strategic solutions has provided progressive results to our web application, enabled users to effortlessly extend video chat calls with a single click, and led to a (40%) increase in call duration and user engagement. It also resulted in streamlined the calling process, resulting in a (15%) decrease in call interruptions.',
       img: '/case_study/Videochat_pro.png',
-      resimg: '/case_study/video_results.png',
-      challengeimg1: '/case_study/video_challenge_1.png',
-      challengeimg2: '/case_study/video_challenge_2.png',
+      resimg: '/case_study/video6.png',
+      challengeimg1: '/case_study/videochatchallenge.png',
     },
     {
       id: '5',
