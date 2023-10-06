@@ -27,8 +27,8 @@ const Effort = ({ Casedata }) => {
                     <p> {item.info}</p>
                     <Image
                       src={item.solimg}
-                      height={202}
-                      width={322}
+                      height={300}
+                      width={422}
                       objectFit="contain"
                     />
                   </div>
