@@ -79,18 +79,10 @@ const contentHeader1 = () => {
           {/* <img src="/icons/service-icon/Frame.webp" alt="" /> */}
 
           <Image
-            src="/icons/service-icon/Frame.png"
+            src="/icons/service-icon/websolutions.png"
             alt="Frame JPG"
-            width={363}
-            height={300}
-            priority={true}
-            objectFit="cover"
-          />
-          <Image
-            src="/icons/service-icon/Keypad.png"
-            alt="Frame JPG"
-            width={416}
-            height={38}
+            width={1363}
+            height={1150}
             priority={true}
             objectFit="cover"
           />

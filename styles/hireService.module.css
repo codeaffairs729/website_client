@@ -42,7 +42,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 5rem;
-  line-height: 123%;
+  line-height: 107%;
   color: #292930;
   margin-bottom: 50px;
   width: 50%;
@@ -283,8 +283,8 @@
 .servicecloud {
   height: 119.34px;
   width: 162px;
-  right: 26rem;
-  top: -3rem;
+  right: 31rem;
+  top: -1rem;
   position: absolute;
 }
 .servicecloud2 {
@@ -297,8 +297,8 @@
 .mouse {
   width: 55.02px;
   height: 59.67px;
-  right: 0rem;
-  top: 9.5rem;
+  right: 2rem;
+  top: 9rem;
   position: absolute;
 }
 .cube {
@@ -335,7 +335,7 @@
   width: 16px;
   height: 16px;
   right: 1rem;
-  top: 9rem;
+  top: 8rem;
   position: absolute;
 }
 .mobilecloud2 {
@@ -363,7 +363,7 @@
   position: relative;
   margin: auto;
   width: 82%;
-  padding-bottom: 60px;
+  padding-bottom: 82px;
   /* padding-inline: 60px; */
   /* padding-right: 60px; */
   /* max-width: 1440px; */
@@ -1125,8 +1125,17 @@
   min-height: 370px;
   display: flex;
   justify-content: space-between;
-  margin-top: 140px;
+  margin-top: 8rem;
+  margin-bottom: 7rem;
   gap: 178px;
+  align-items: center;
+  position: relative;
+  top: 2rem;
+}
+.bannercomponent {
+  position: relative;
+  top: 0.95rem;
+  height: 2rem;
 }
 .mobileservicebody {
   min-height: 370px;
@@ -1341,8 +1350,8 @@
     width: 100%;
   }
   .mouse {
-    right: 4rem;
-    top: 9.5rem;
+    right: 3rem;
+    top: 10.5rem;
   }
   .sphere {
     right: 6rem;
@@ -1353,8 +1362,8 @@
     right: -2rem;
   }
   .cube {
-    right: -5rem;
-    top: 1.5rem;
+    right: -2rem;
+    top: -1.5rem;
   }
   .servicecloud {
     width: 122px;
@@ -1364,9 +1373,6 @@
   .techservicebody {
     gap: 111px;
     align-items: center;
-  }
-  .mobileservicebody {
-    gap: 111px;
   }
   .mobilecloud {
     right: 23rem;
@@ -1424,11 +1430,12 @@
     top: -2rem;
   }
   .mouse {
-    top: 9.5rem;
-    right: -1rem;
+    top: 8.5rem;
+    right: 2rem;
   }
   .cube {
     right: -2rem;
+    top: -2rem;
   }
   .mobilecloud2 {
     right: -4rem;
@@ -1439,7 +1446,6 @@
     top: 2rem;
   }
   .sphere {
-    right: 2rem;
     top: 3.5rem;
   }
   .servicecloud2 {
@@ -1479,12 +1485,12 @@
     top: -20rem;
   }
   .mobileservicebodyright {
-    left: 4rem;
+    left: 0rem;
     width: 555px;
   }
   .servicecloud {
     right: 1rem;
-    top: 25rem;
+    top: 32rem;
   }
   .tech-service-body-left-right {
     text-align: center;
@@ -1493,16 +1499,19 @@
     width: 100%;
   }
   .mouse {
-    right: 11rem;
+    right: 5rem;
+    top: 13rem;
   }
   .sphere {
-    right: 12rem;
+    right: 6rem;
+    top: 6rem;
   }
   .servicecloud2 {
-    right: 4rem;
+    right: -3rem;
+    top: 7rem;
   }
   .cube {
-    right: 4rem;
+    right: -2rem;
     top: -2rem;
   }
   .techservicebody {
@@ -1510,6 +1519,7 @@
   }
   .mobilecube {
     right: -8rem;
+    top: -1rem;
   }
   .mobilecloud2 {
     right: -8rem;
@@ -1521,7 +1531,7 @@
   }
   .mobilesphere {
     right: 0rem;
-    top: 10rem;
+    top: 8rem;
   }
   .hireh9 {
     width: 100%;
@@ -1548,6 +1558,7 @@
   .techservicebody {
     flex-direction: column-reverse;
     justify-content: center;
+    margin-bottom: 0rem;
   }
   .mobileservicebody {
     flex-direction: column-reverse;
@@ -1840,7 +1851,7 @@
     margin-bottom: 1rem;
   }
   .webservicebodyright {
-    width: 91%;
+    width: 85%;
   }
   .mobileservicebodyright {
     width: 80%;
@@ -1848,6 +1859,7 @@
   }
   .techservicebody {
     margin-top: 74px;
+    margin-bottom: 0rem;
   }
   .mobileservicebody {
     /* margin-top: 74px; */
@@ -1861,6 +1873,8 @@
   .hirecontainer {
     width: 100%;
     padding: 0px;
+    width: 100%;
+    padding-bottom: 3rem;
   }
   .hirelisticon p {
     font-size: 1.3rem;

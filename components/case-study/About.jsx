@@ -30,7 +30,7 @@ const About = ({ Casedata }) => {
                   <img
                     src="/Newimages/Camera.png"
                     alt="..."
-                    height={'84'}
+                    height="69"
                     width="84"
                   />
                 </div>

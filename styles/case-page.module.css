@@ -202,9 +202,18 @@
   padding-top: 3rem;
   font-size: 1.5rem;
 }
+.casestudy {
+  width: 320px;
+  height: 45%;
+  padding: 15px 30px;
+  align-items: center;
+}
 .effort_div {
   display: flex;
   flex-direction: column;
+}
+.row {
+  width: 100%;
 }
 
 .result_section {
@@ -213,7 +222,11 @@
   align-items: center;
   margin: auto;
   gap: 2em;
+
   /* background: rgba(214, 112, 112, 0.3); */
+}
+.results h1 {
+  margin-bottom: 0rem;
 }
 .result_section div:nth-child(1) {
   position: relative;
@@ -427,5 +440,8 @@
   }
   .results {
     margin-top: 1rem;
+  }
+  .casestudy {
+    height: 58%;
   }
 }

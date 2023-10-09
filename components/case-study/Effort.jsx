@@ -14,7 +14,7 @@ const Effort = ({ Casedata }) => {
                   <div className={style.odd}>
                     <Image
                       src={item.solimg}
-                      height={252}
+                      height={200}
                       width={320}
                       objectFit="contain"
                     />
@@ -27,8 +27,8 @@ const Effort = ({ Casedata }) => {
                     <p> {item.info}</p>
                     <Image
                       src={item.solimg}
-                      height={300}
-                      width={422}
+                      height={200}
+                      width={320}
                       objectFit="contain"
                     />
                   </div>
@@ -64,7 +64,7 @@ const Effort = ({ Casedata }) => {
           <div className={style.result_section}>
             <Image
               src={Casedata.resimg}
-              height={352}
+              height={300}
               width={322}
               objectFit="contain"
             />

@@ -62,10 +62,10 @@ const contentHeader1 = () => {
           {/* <img src="/icons/service-icon/mobile-front-color-service.webp" /> */}
 
           <Image
-            src="/icons/service-icon/mobile.png"
+            src="/icons/service-icon/mobile_logo.png"
             alt="mobile-front-color-service Image"
             width={1363}
-            height={1200}
+            height={1050}
             priority={true}
             objectFit="cover"
           />

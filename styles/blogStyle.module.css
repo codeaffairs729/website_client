@@ -334,8 +334,14 @@
   width: 222px;
   margin-bottom: 7px;
   margin-top: -9px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
-
+.para{
+  width: 28rem;
+}
 .cardtitle {
   font-weight: normal;
   font-family: 'Poppins';
@@ -682,6 +688,9 @@ height: 100%;
     top: 30%;
     right: 48%;
   }
+  .para{
+    width: 23rem;
+  }
   .card {
     width: 476px;
   }
@@ -691,8 +700,14 @@ height: 100%;
   .about_area {
     gap: 3rem;
   }
+  .casestudypage {
+    top:2rem;
+    }
 }
 @media screen and (max-width: 1365px) {
+  .casestudypage {
+    top:0rem;
+    }
   .clock {
     right: -2rem;
   }
@@ -803,6 +818,9 @@ height: 100%;
   .text_end {
     margin-right: 4rem;
     margin-top: 0px;
+  }
+  .para{
+    width: 42rem;
   }
   .customcard {
     gap: 21px;
@@ -1014,6 +1032,9 @@ height: 100%;
     font-family: 'Poppins';
     font-size: 1.5rem;
     line-height: 38px;
+  }
+  .para{
+    width: 24rem;
   }
 }
 .hirecontainer {

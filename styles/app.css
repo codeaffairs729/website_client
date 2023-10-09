@@ -2614,7 +2614,15 @@ body:not(.touch-device) .header__item[href]:hover:before {
   align-items: center;
   /* height: 78px; */
 }
-
+.header__head2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* height: 78px; */
+}
 .header__head .icon {
   margin-left: 11px;
   font-size: 8px;
@@ -2623,13 +2631,48 @@ body:not(.touch-device) .header__item[href]:hover:before {
   -o-transition: all 0.25s;
   transition: all 0.25s;
 }
+.header__head2 .icon {
+  margin-left: 11px;
+  font-size: 8px;
+  fill: #999fae;
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
 
 .header__head:before {
   right: 24px;
   bottom: 19px;
 }
+.header__head2:before {
+  right: 24px;
+  bottom: 19px;
+}
+body:not(.touch-device) .header__item:hover .header__head2 {
+  color: #292930;
+}
 
-body:not(.touch-device) .header__item:hover .header__head {
+body:not(.touch-device) .header__item:hover .header__head2 .icon {
+  fill: #5956e9;
+}
+
+body:not(.touch-device) .header__item:hover .header__head2:before {
+  width: calc(100% - 24px);
+}
+
+.header__item.active .header__head2 {
+  color: #292930;
+}
+
+.header__item.active .header__head2 .icon {
+  fill: #5956e9;
+}
+
+.header__item.active .header__head2:before {
+  width: calc(100% - 24px);
+}
+body:not(.touch-device) .header__item:hover .header__head2 {
   color: #292930;
 }
 
@@ -2667,7 +2710,19 @@ body:not(.touch-device) .header__item:hover .header__head:before {
   /* -o-transition: all 0.25s; */
   transition: all 0.25s;
 }
+.header__body2 {
+  position: absolute;
+  top: calc(100% - 48px);
+  right:0;
+  padding-top: 20px;
+  /* -webkit-transform: translateY(20px); */
+  /* -ms-transform: translateY(20px); */
+  /* transform: translateY(20px); */
 
+  /* -webkit-transition: all 0.25s; */
+  /* -o-transition: all 0.25s; */
+  transition: all 0.25s;
+}
 .service-menu-visible {
   /* opacity: 0; */
   display: none;
@@ -2687,6 +2742,16 @@ body:not(.touch-device) .header__item:hover .header__body {
 .header__body {
   margin-top: 20px;
 }
+body:not(.touch-device) .header__item:hover .header__body2 {
+  /* -webkit-transform: translateY(0); */
+  /* -ms-transform: translateY(0); */
+  /* transform: translateY(0); */
+  /* visibility: visible; */
+  /* opacity: 1; */
+}
+.header__body2 {
+  margin-top: 20px;
+}
 .service-menu-visible:hover {
   /* opacity: 1; */
   /* display: flex; */
@@ -2699,6 +2764,14 @@ body:not(.touch-device) .header__item:hover .header__body {
   visibility: visible; */
   /* opacity: 1; */
 }
+.header__item.active .header__body2 {
+  /* -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  visibility: visible; */
+  /* opacity: 1; */
+}
+
 
 .header__row {
   display: -webkit-box;
@@ -9570,6 +9643,7 @@ html {
   .header__photo {
     display: block;
     text-align: center;
+    margin-top:2rem;
   }
   .header__photo .header__pic {
     max-width: 350px;
@@ -9577,20 +9651,28 @@ html {
   .header__item:not(:last-child) {
     margin: 0 0 10px;
   }
-  .header__item[href],
+  .header__item[href], .header__head2,
   .header__head {
     padding: 0;
     font-size: 18px;
     letter-spacing: -0.025em;
   }
-  .header__head {
+  .header__head, .header__head {
     height: auto;
   }
-  .header__head .icon {
+  .header__head, .header__head .icon {
     /* display: none; */
   }
   .header__body {
     /* display: none; */
+  }
+  .header__body2 {
+    /* display: none; */
+    top: 12rem;
+    left: 1rem;
+    width: 90%;
+    height:30%;
+    z-index: 999;
   }
   .header__search {
     z-index: 16;
@@ -11456,7 +11538,17 @@ top: 7641px; */
   -o-transition: color 0.25s;
   transition: color 0.25s;
 }
+.header__head2 {
+  position: relative;
+  /* padding: 8px 0; */
+  letter-spacing: -0.04em;
+  /* color: #999fae; */
+  color: #292930;
 
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
 @media screen and (max-width: 479px) {
   .freelancer-main__btn {
     font: size 12px;

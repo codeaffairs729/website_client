@@ -72,7 +72,7 @@ const HireServiceLayout = ({
             {contentHeader && contentHeader()}
             {contentHeader1 && contentHeader1()}
           </div>
-          {bannerComponent}
+          <div className={styles.bannercomponent}>{bannerComponent}</div>
           <div className={styles.hirecontainer}></div>
           {content4 && content4()}
           <div className={styles.hirecontainer}></div>

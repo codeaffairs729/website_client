@@ -78,14 +78,20 @@ export default function BlogSection({ data, linktext, heading }) {
       id: '13',
     },
   ]
-  console.log({ data })
-  const blogData = data.filter((e, i) => i < 3)
+  const shuffledData = [...data]
+  for (let i = shuffledData.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[shuffledData[i], shuffledData[j]] = [shuffledData[j], shuffledData[i]]
+  }
+
+  // Get the first 3 blogs from the shuffled array
+  const randomBlogs = shuffledData.slice(0, 3)
 
   return (
     <div className="container blog-container">
       <h2>{heading}</h2>
       <div className={`row blog-list ${styles.blog_list}`}>
-        {blogData.map((e, i) => (
+        {randomBlogs.map((e, i) => (
           <div className={`col-12 col-lg-3 ${styles.customcol}`} key={i}>
             <div className={`card   ${styles.customcard}`}>
               <Link href={`/blogs/${e.slug}`} className="">

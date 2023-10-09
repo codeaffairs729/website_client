@@ -91,7 +91,7 @@ const Casestudy = () => {
           solimg: '/case_study/byuma3.png',
         },
         {
-          info: "To make transactions as smooth as possible for our global audience, we've seamlessly integrated multiple payment gateways tailored to your international target audience, geographical reach, and supported currencies. This means users can pay with ease, no matter where they are or which currency they use. To further simplify and optimize the payment process, we've implemented an intelligent abstraction layer. This layer acts as a bridge, streamlining interactions with different payment gateways behind the scenes. So, while users enjoy a seamless checkout experience, we handle the complexity, making their payments quick, secure, and hassle-free.",
+          info: 'We integrated multiple payment gateways based on the international target audience, geographical reach, and supported currencies. To streamline the integration process, we implemented an abstraction layer to manage interactions with different gateways.',
           solimg: '/case_study/byuma4.png',
         },
       ],
@@ -118,19 +118,19 @@ const Casestudy = () => {
       ],
       Solutions: [
         {
-          info: "To foster a culture of collaboration and streamline efficiency across the board, we've implemented DevOps practices as a cornerstone of our approach. DevOps bridges the gap between development, quality assurance, and operations teams, enhancing communication and cooperation",
+          info: "To foster a culture of collaboration and streamline efficiency across the board, we've implemented DevOps practices as a cornerstone of our approach. DevOps bridges the gap between development, quality assurance, and operations teams, enhancing communication and cooperation.",
           solimg: '/case_study/move1.png',
         },
         {
-          info: "To harness the power of modern technology, we've adopted a cutting-edge approach by implementing a microservices architecture. This architectural paradigm allows us to break down complex systems into smaller, manageable components, enhancing flexibility and scalability.We've leveraged containerization technologies like Docker and embraced serverless computing to further decouple components and enable independent scaling. With this approach, your application can seamlessly adapt to evolving demands, ensuring optimal performance, cost-efficiency, and rapid scalability.",
+          info: "To harness the power of modern technology, we've adopted a cutting-edge approach by implementing a microservices architecture. This architectural paradigm allows us to break down complex systems into smaller, manageable components, enhancing flexibility and scalability.We've leveraged containerization technologies like Docker and embraced serverless computing to further decouple components and enable independent scaling.",
           solimg: '/case_study/move2.png',
         },
         {
-          info: "Within the framework of this application, we've harnessed the capabilities of AWS services to achieve nothing short of seamless performance. AWS's robust infrastructure and cloud solutions have been seamlessly integrated to ensure that your app operates at peak efficiency, without a hitch",
+          info: "Within the framework of this application, we've harnessed the capabilities of AWS services to achieve nothing short of seamless performance. AWS's robust infrastructure and cloud solutions have been seamlessly integrated to ensure that your app operates at peak efficiency, without a hitch.",
           solimg: '/case_study/move3.png',
         },
         {
-          info: "We've taken real-time tracking to the next level by seamlessly integrating Google Maps functionality into our web application. Now, users can track trucks in real time with precision and ease",
+          info: "We've taken real-time tracking to the next level by seamlessly integrating Google Maps functionality into our web application. Now, users can track trucks in real time with precision and ease.",
           solimg: '/case_study/move4.png',
         },
         {
@@ -198,7 +198,7 @@ const Casestudy = () => {
       id: '5',
       title: 'Customer Engagement App',
       about:
-        'A SAAS web and mobile application that is designed to generate high-quality leads, manage your sales team, and track as well as close deals- all on one platform. It is an open-source, and centralized system named Chatwoot that connects with popular customer communication channels, such as WhatsApp, Email, Website live-chat, Instagram, Facebook, Twitter, Line, etc.  With the help of this app, users can generate high-quality leads, manage their sales team, track and close deals. ',
+        'A SAAS web and mobile application that is designed to generate high-quality leads, manage your sales team, and track as well as close deals- all on one platform. It is an open-source, and centralized system named Chatwoot that connects with popular customer communication channels, such as WhatsApp, Email, Website live-chat, Instagram, Facebook, Twitter, Line, etc  With the help of this app, users can generate high-quality leads, manage their sales team, track and close deals.',
       Active: '20,000',
       Logs: '10 Lakh',
       AppDownloads: '50k, in one year',

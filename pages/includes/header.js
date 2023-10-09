@@ -4,7 +4,8 @@ import Script from 'next/script'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
-
+import styles from '../../styles/case-page.module.css'
+import caseStudy from '../../pages/Case_Study_List/[id]'
 const Header = () => {
   const [headerSearchBar, setHeaderSearchBar] = useState(false)
   const [sideBarHandler, setSideBarHandler] = useState(false)
@@ -12,7 +13,7 @@ const Header = () => {
   const [autoplay2, setAutoplay2] = useState(true)
   const [autoplay3, setAutoplay3] = useState(true)
   const [serviceMenu, setServiceMenu] = useState(false)
-
+  const [caseMenu, setCaseMenu] = useState(false)
   const header = useRef(null)
 
   const [careerLink, setCareerLink] = useState(false)
@@ -20,7 +21,7 @@ const Header = () => {
   const router = useRouter()
   const [visible, setVisible] = useState('none')
   const currentPath = router.pathname
-
+  const [visible2, setVisible2] = useState('none')
   const headerSearch = () => {
     const searchBarShowHide = headerSearchBar ? false : true
     setHeaderSearchBar(searchBarShowHide)
@@ -36,6 +37,10 @@ const Header = () => {
   const toggleSidebarInternalMenu = () => {
     setServiceMenu(!serviceMenu)
     setVisible(serviceMenu ? 'none' : 'flex')
+  }
+  const toggleSidebarInternalMenu2 = () => {
+    setCaseMenu(!caseMenu)
+    setVisible2(caseMenu ? 'none' : 'flex')
   }
   // sideBarHandler
   //   ? (header.parentElement.style.overflow = 'scroll')
@@ -68,8 +73,15 @@ const Header = () => {
     setVisible('flex')
   }
 
+  const handleOnShowMenu2 = () => {
+    setVisible2('flex')
+  }
+
   const handleOnLeave = () => {
     setVisible('none')
+  }
+  const handleOnLeave2 = () => {
+    setVisible2('none')
   }
 
   const classes = `header-section is-sticky`
@@ -1204,18 +1216,18 @@ const Header = () => {
                     Careers
                   </div>
                 </Link>
-                <Link href="/Case_Study_List">
+                {/* <Link href="/contact">
                   <div
                     className={
-                      currentPath === '/Case_Study_List'
+                      currentPath === '/contact'
                         ? 'cursor_pointer header__item nav-css underline_text'
                         : 'cursor_pointer header__item nav-css blue-underline'
                     }
                     onClick={handleSidebar}
                   >
-                    Case Studies
+                    Contact Us
                   </div>
-                </Link>
+                </Link> */}
                 {/* <Link href="/user-blog-list">
                   <div
                     className={
@@ -1228,6 +1240,196 @@ const Header = () => {
                     Blogs
                   </div>
                 </Link> */}
+                <div
+                  className={`header__item2 ${
+                    caseMenu && 'service-menu text-start'
+                  }`}
+                >
+                  <div
+                    className={`btn-outline-danger cursor_pointer header__head2 ${
+                      visible2 === 'flex' ? 'service-underline' : ''
+                    } ${caseMenu ? ' nav-css' : ''}`}
+                    onClick={toggleSidebarInternalMenu2}
+                    onMouseOver={handleOnShowMenu2}
+                  >
+                    Case Studies
+                    <svg
+                      className="icon icon-arrow-down"
+                      aria-labelledby="arrow-down-icon"
+                    >
+                      <use xlinkHref="/img/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </div>
+                  {/* </Link> */}
+                  <div
+                    className={`header__body2 ${caseMenu && ' text-start'}`}
+
+                    // style={{opacity:"1"}}
+                  >
+                    <div
+                      className=" header-center center header-dropdown-body"
+                      style={{ display: `${visible2}` }}
+                    >
+                      <div
+                        className={`service-menu-visible header__row row ${styles.casestudy}`}
+                        style={{ display: `${visible2}` }}
+                        onMouseLeave={handleOnLeave2}
+                      >
+                        <div
+                          className={`col-lg-4 col-md-4 col-sm-4 ${styles.row}`}
+                        >
+                          <div
+                            className={`header__category cursor_pointer ${
+                              caseMenu && ''
+                            }`}
+                          >
+                            <Link
+                              href="/services/web-solutions"
+                              legacyBehavior={true}
+                            >
+                              <div onClick={handleSidebar}></div>
+                            </Link>
+                          </div>
+                          <div className="row">
+                            <div className="col-lg-12 header-solutions-outer">
+                              <Link href="/Case_Study_List/1">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
+                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                    {/* <img
+                                  className="header-solutions-icon"
+                                  src="/images/ror1.webp"
+                                  alt="ROR - Icon"
+                                /> */}
+                                    <div className="header-solutions-icon">
+                                      <Image
+                                        src="/blogs/mg_glass2.png"
+                                        alt="ROR - Icon"
+                                        height={20}
+                                        width={20}
+                                        objectFit="contain"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                    <div className="header__info">
+                                      Mobile App For Divers
+                                    </div>
+                                  </div>
+                                </div>
+                              </Link>
+                            </div>
+                            <div className="col-lg-12 header-solutions-outer">
+                              <Link href="/Case_Study_List/2">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
+                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                    <div className="header-solutions-icon">
+                                      <Image
+                                        src="/blogs/mg_glass2.png"
+                                        alt="React Icon"
+                                        height={35}
+                                        width={35}
+                                        objectFit="cover"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                    <div className="header__info">
+                                      International E-Commerce
+                                    </div>
+                                  </div>
+                                </div>
+                              </Link>
+                            </div>
+                            <div className="col-lg-12 header-solutions-outer">
+                              <Link href="/Case_Study_List/3">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
+                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                    <div className="header-solutions-icon">
+                                      <Image
+                                        src="/blogs/mg_glass2.png"
+                                        alt="Vuejs PNG Image"
+                                        height={35}
+                                        width={35}
+                                        objectFit="cover"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                    <div className="header__info">
+                                      Logistics Management
+                                    </div>
+                                  </div>
+                                </div>
+                              </Link>
+                            </div>
+                            <div
+                              className="col-lg-12 header-solutions-outer"
+                              style={{ position: 'relative' }}
+                            >
+                              <Link href="/Case_Study_List/4">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
+                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                    <div className="header-solutions-icon">
+                                      <Image
+                                        src="/blogs/mg_glass2.png"
+                                        alt="Nodejs PNG Image"
+                                        height={35}
+                                        width={35}
+                                        objectFit="cover"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                    <div className="header__info">
+                                      Video Call Support App
+                                    </div>
+                                  </div>
+                                </div>
+                              </Link>
+                            </div>
+                            <div className="col-lg-12 header-solutions-outer">
+                              <Link href="/Case_Study_List/5">
+                                <div
+                                  className="row cursor_pointer"
+                                  onClick={handleSidebar}
+                                >
+                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                    <div className="header-solutions-icon">
+                                      <Image
+                                        src="/blogs/mg_glass2.png"
+                                        alt="Laravel PNG Image"
+                                        height={35}
+                                        width={35}
+                                        objectFit="cover"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                    <div className="header__info">
+                                      Customer Engagement App
+                                    </div>
+                                  </div>
+                                </div>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </nav>
               <div className="header__photo">
                 <div className="header__pic">
