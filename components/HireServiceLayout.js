@@ -4,7 +4,7 @@ import styles from '../styles/hireService.module.css'
 // import ShimmerServices from './ShimmerService'
 // import ShimmerHire from './ShimmerHire'
 
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 
 const ShimmerServices = dynamic(() => import('./ShimmerService'), {
@@ -34,12 +34,29 @@ const HireServiceLayout = ({
   const Router = useRouter()
   const path = Router.asPath
 
+  const handleScroll = () => {
+    const bannerComponentElement = document.querySelector(
+      `.${styles.bannercomponent}`
+    )
+    const scrollY = window.scrollY
+    const initialOffset = 100
+
+    if (bannerComponentElement) {
+      bannerComponentElement.style.top = `${initialOffset - scrollY}px`
+    }
+  }
+
   useEffect(() => {
     setTimeout(() => {
       setShow(false)
     }, 1000)
-  }, [])
 
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
   return (
     <>
       {show ? (

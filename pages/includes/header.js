@@ -37,10 +37,12 @@ const Header = () => {
   const toggleSidebarInternalMenu = () => {
     setServiceMenu(!serviceMenu)
     setVisible(serviceMenu ? 'none' : 'flex')
+    setVisible2(caseMenu ? 'none' : 'none')
   }
   const toggleSidebarInternalMenu2 = () => {
     setCaseMenu(!caseMenu)
     setVisible2(caseMenu ? 'none' : 'flex')
+    setVisible(serviceMenu ? 'none' : 'none')
   }
   // sideBarHandler
   //   ? (header.parentElement.style.overflow = 'scroll')
@@ -70,11 +72,13 @@ const Header = () => {
   }
 
   const handleOnShowMenu = () => {
-    setVisible('flex')
+    setVisible(serviceMenu ? 'none' : 'flex')
+    setVisible2('none')
   }
 
   const handleOnShowMenu2 = () => {
-    setVisible2('flex')
+    setVisible2(caseMenu ? 'none' : 'flex')
+    setVisible('none')
   }
 
   const handleOnLeave = () => {

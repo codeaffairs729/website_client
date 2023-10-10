@@ -7,7 +7,7 @@ import { HiArrowSmRight } from 'react-icons/hi'
 export default function BlogSection({ data, linktext, heading }) {
   const blog_category = [
     {
-      category: 'Web Development & Optimization',
+      category: 'Web Development ',
       heading: 'A Complete Guide on How to Enhance the Speed of Your Website',
       id: '0',
     },
@@ -37,7 +37,7 @@ export default function BlogSection({ data, linktext, heading }) {
       id: '5',
     },
     {
-      category: 'Web Development & Optimization',
+      category: 'Web Development',
       heading: 'Steps to take for Accelerating a Growing Web Application',
       id: '6',
     },
@@ -83,8 +83,6 @@ export default function BlogSection({ data, linktext, heading }) {
     const j = Math.floor(Math.random() * (i + 1))
     ;[shuffledData[i], shuffledData[j]] = [shuffledData[j], shuffledData[i]]
   }
-
-  // Get the first 3 blogs from the shuffled array
   const randomBlogs = shuffledData.slice(0, 3)
 
   return (
@@ -147,6 +145,6 @@ export default function BlogSection({ data, linktext, heading }) {
 
   function getCategoryForBlog(title) {
     const blog = blog_category.find((blog) => title.includes(blog.heading))
-    return blog ? blog.category : 'Technology Insights'
+    return blog ? blog.category : 'Technology'
   }
 }

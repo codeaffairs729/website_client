@@ -1126,16 +1126,17 @@
   display: flex;
   justify-content: space-between;
   margin-top: 8rem;
-  margin-bottom: 7rem;
   gap: 178px;
   align-items: center;
   position: relative;
   top: 2rem;
 }
 .bannercomponent {
-  position: relative;
-  top: 0.95rem;
-  height: 2rem;
+  position: sticky;
+  top: 46.99em;
+  left: 0;
+  right: 0;
+  z-index: 999;
 }
 .mobileservicebody {
   min-height: 370px;

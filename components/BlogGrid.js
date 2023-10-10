@@ -4,7 +4,7 @@ import styles from '../styles/blogStyle.module.css'
 const BlogGrid = ({ data, authorized, setDelId, db }) => {
   const blog_category = [
     {
-      category: 'Web Development & Optimization',
+      category: 'Web Development ',
       heading: 'A Complete Guide on How to Enhance the Speed of Your Website',
       id: '0',
     },
@@ -34,7 +34,7 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
       id: '5',
     },
     {
-      category: 'Web Development & Optimization',
+      category: 'Web Development',
       heading: 'Steps to take for Accelerating a Growing Web Application',
       id: '6',
     },

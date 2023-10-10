@@ -659,11 +659,16 @@ height: 100%;
 
 @media only screen and (max-width: 1439px) {
   .cardheading {
-    width: 131px;
+    width: 194px;
+    font-size:1.2rem;
     display: -webkit-box;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 0;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+  .cardtitle h3{
+    font-size: 13px;
+
   }
   .cardbody {
     width: 45%;
@@ -676,10 +681,11 @@ height: 100%;
   .design__link {
     margin: 0rem;
     margin-left: 0.35rem;
+    font-size:1rem;
   }
   .cardimg {
-    width: 76%;
-    margin-top: 2rem;
+    width: 34%;
+    margin-top:0.5rem !important
   }
   .blogcontainerleft {
     width: 75%;
@@ -807,13 +813,14 @@ height: 100%;
   }
   .cardheading {
     width: 290px;
+    font-size:24px;
   }
   .cardimg {
-    width: 76%;
-    margin-top: 0rem !important;
+    width: 43%;
   }
   .design__link {
     margin: 0rem;
+    font-size:18px;
   }
   .text_end {
     margin-right: 4rem;
@@ -893,6 +900,7 @@ height: 100%;
   .cardtitle {
     width: 37%;
     margin: 0rem;
+
   }
 }
 @media only screen and (max-width: 768px) {
@@ -914,6 +922,9 @@ height: 100%;
   .card__img {
     width: 79%;
     margin-left: 30px;
+  }
+  .cardimg {
+    width: 100%;
   }
   .blog_list {
     flex-direction: column;
