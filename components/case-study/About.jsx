@@ -1,5 +1,6 @@
 import style from '../../styles/case-page.module.css'
 import Image from 'next/image'
+import styles from '../../styles/blogStyle.module.css'
 const About = ({ Casedata }) => {
   console.log(Casedata)
 
@@ -8,7 +9,7 @@ const About = ({ Casedata }) => {
       <section>
         <div className="about-section">
           <div className="row">
-            <div className="col-12 pt-4 fw-font lead">
+            <div className={`col-12 pt-4 fw-font lead ${style.about_data}`}>
               <p>{Casedata.about} </p>
             </div>
           </div>

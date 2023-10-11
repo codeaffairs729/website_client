@@ -445,3 +445,7 @@
     height: 58%;
   }
 }
+.about_data p {
+  color: #000000;
+  font-family: 'Poppins';
+}

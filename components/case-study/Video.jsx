@@ -87,7 +87,7 @@ const Video = ({ Casedata }) => {
       id: '3',
       title: 'Logistics Management',
       about:
-        'A SAS mobile and web application that is specifically designed for the residential and commercial moving and storage industry. It offers streamlined online transportation services from various providers, with the aim of simplifying the management of moving operations. It has the ability to conduct and create an estimate on-site.The application empowers movers to view their jobs, alert the customer through a GPS when they are en route, access the customer digital invoice, and capture payment once the move is complete. ',
+        'A SAAS mobile and web application that is specifically designed for the residential and commercial moving and storage industry. It offers streamlined online transportation services from various providers, with the aim of simplifying the management of moving operations. It has the ability to conduct and create an estimate on-site.The application empowers movers to view their jobs, alert the customer through a GPS when they are en route, access the customer digital invoice, and capture payment once the move is complete. ',
       Active: '20,000',
       Logs: '10 Lakh',
       AppDownloads: '50k, in one year',
@@ -185,7 +185,7 @@ const Video = ({ Casedata }) => {
         },
       ],
       Results:
-        'The SAS web and mobile application, Chatwoot, now offers enhanced lead generation, sales team management, deal tracking, and customer communication capabilities across multiple channels. The challenges were met with comprehensive solutions, empowering businesses to streamline their operations and provide superior customer experiences.',
+        'The SAAS web and mobile application, Chatwoot, now offers enhanced lead generation, sales team management, deal tracking, and customer communication capabilities across multiple channels. The challenges were met with comprehensive solutions, empowering businesses to streamline their operations and provide superior customer experiences.',
       img: '/case_study/peasyAI.png',
       resimg: '/case_study/peasy_results.png',
       challengeimg1: '/case_study/peasy_challenge_1.png',
