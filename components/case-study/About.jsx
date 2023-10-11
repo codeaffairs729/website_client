@@ -8,7 +8,7 @@ const About = ({ Casedata }) => {
       <section>
         <div className="about-section">
           <div className="row">
-            <div className="col-12 pt-4 fw-semibold lead">
+            <div className="col-12 pt-4 fw-font lead">
               <p>{Casedata.about} </p>
             </div>
           </div>

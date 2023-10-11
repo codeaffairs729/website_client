@@ -10,7 +10,7 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
     },
     {
       category: 'Cost Estimation',
-      heading: 'What Is The Cost of Progressive Web App Development in 2023?',
+      heading: 'What is the Cost of Progressive Web App Development in 2023?',
       id: '1',
     },
     {
@@ -35,7 +35,7 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
     },
     {
       category: 'Web Development',
-      heading: 'Steps to take for Accelerating a Growing Web Application',
+      heading: 'Steps To Take For Accelerating A Growing Web Application',
       id: '6',
     },
     {
@@ -55,7 +55,7 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
       id: '9',
     },
     {
-      category: 'Software security',
+      category: 'Software Security',
       heading: 'Why Is Mobile App Security Crucial? And Its Typical Threats',
       id: '10',
     },
@@ -66,18 +66,19 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
     },
     {
       category: 'Technology',
-      heading: '4 Best Web Development Frameworks -Frontend & Backend',
+      heading: '4 Best Web Development Frameworks Frontend & Backend',
       id: '12',
     },
     {
       category: 'Artificial Intelligence',
-      heading: 'Is ChatGPT Suitable for Building and Scaling a Mobile App?',
+      heading:
+        'Is ChatGPT Suitable for Building and Scaling a Web & Mobile Application?',
       id: '13',
     },
   ]
   function getCategoryForBlog(title) {
     const blog = blog_category.find((blog) => title.includes(blog.heading))
-    return blog ? blog.category : 'Technology Insights'
+    return blog ? blog.category : 'Technology'
   }
   return (
     <>

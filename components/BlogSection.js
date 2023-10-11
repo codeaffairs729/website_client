@@ -13,7 +13,7 @@ export default function BlogSection({ data, linktext, heading }) {
     },
     {
       category: 'Cost Estimation',
-      heading: 'What Is The Cost of Progressive Web App Development in 2023?',
+      heading: 'What is the Cost of Progressive Web App Development in 2023?',
       id: '1',
     },
     {
@@ -38,7 +38,7 @@ export default function BlogSection({ data, linktext, heading }) {
     },
     {
       category: 'Web Development',
-      heading: 'Steps to take for Accelerating a Growing Web Application',
+      heading: 'Steps To Take For Accelerating A Growing Web Application',
       id: '6',
     },
     {
@@ -58,7 +58,7 @@ export default function BlogSection({ data, linktext, heading }) {
       id: '9',
     },
     {
-      category: 'Software security',
+      category: 'Software Security',
       heading: 'Why Is Mobile App Security Crucial? And Its Typical Threats',
       id: '10',
     },
@@ -69,12 +69,13 @@ export default function BlogSection({ data, linktext, heading }) {
     },
     {
       category: 'Technology',
-      heading: '4 Best Web Development Frameworks -Frontend & Backend',
+      heading: '4 Best Web Development Frameworks Frontend & Backend',
       id: '12',
     },
     {
       category: 'Artificial Intelligence',
-      heading: 'Is ChatGPT Suitable for Building and Scaling a Mobile App?',
+      heading:
+        'Is ChatGPT Suitable for Building and Scaling a Web & Mobile Application?',
       id: '13',
     },
   ]

@@ -157,7 +157,7 @@ const Video = ({ Casedata }) => {
       id: '5',
       title: 'Customer Engagement App',
       about:
-        'A SAS web and mobile application that is designed to generate high-quality leads, manage your sales team, and track as well as close deals- all on one platform. It is an open-source, and centralized system named Chatwoot that connects with popular customer communication channels, such as WhatsApp, Email, Website live-chat, Instagram, Facebook, Twitter, Line, etc.',
+        'A SAAS web and mobile application that is designed to generate high-quality leads, manage your sales team, and track as well as close deals- all on one platform named Chatwoot. This platform analyzes WhatsApp conversations, emails, live chats, and Instagram interactions to significantly improve targeting, resulting in higher quality leads, and cost savings. The user-friendly design of Chatwoot, requiring just three simple steps to launch a lead campaign, further underscores its potential to reshape the way businesses approach customer engagement and sales management.',
       Active: '20,000',
       Logs: '10 Lakh',
       AppDownloads: '50k, in one year',
