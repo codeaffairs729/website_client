@@ -75,6 +75,12 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
         'Is ChatGPT Suitable for Building and Scaling a Web & Mobile Application?',
       id: '13',
     },
+    {
+      category: 'E-Commerce',
+      heading:
+        'Crafting an E-Commerce Web or Mobile App from Scratch to Success',
+      id: '14',
+    },
   ]
   function getCategoryForBlog(title) {
     const blog = blog_category.find((blog) => title.includes(blog.heading))
@@ -125,6 +131,27 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
                         </a>
                       </Link>
                     </div>
+                    {authorized && (
+                      <>
+                        <Link href={`/${db}/edit/${e.id}`}>
+                          <span className="text-primary fw-bold">
+                            <span
+                              className={` ${styles.textblue} link-text fs-6 fw-semibold cursor_pointer`}
+                            >
+                              EDIT
+                            </span>
+                          </span>
+                        </Link>
+                        <button
+                          className={`${styles.textblue} fs-6 fw-semibold cursor_pointer fw-bold`}
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                          onClick={() => setDelId(e.id)}
+                        >
+                          DELETE
+                        </button>
+                      </>
+                    )}
                   </div>
                 </div>
               ))}
