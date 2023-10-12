@@ -78,6 +78,12 @@ export default function BlogSection({ data, linktext, heading }) {
         'Is ChatGPT Suitable for Building and Scaling a Web & Mobile Application?',
       id: '13',
     },
+    {
+      category: 'E-Commerce',
+      heading:
+        'Crafting an E-Commerce Web or Mobile App from Scratch to Success',
+      id: '14',
+    },
   ]
   const shuffledData = [...data]
   for (let i = shuffledData.length - 1; i > 0; i--) {
