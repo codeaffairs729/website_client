@@ -132,23 +132,27 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
                       </Link>
                       {authorized && (
                         <>
-                          <Link href={`/${db}/edit/${e.id}`}>
-                            <span className="text-primary fw-bold">
-                              <span
-                                className={` ${styles.textblue} link-text fs-6 fw-semibold cursor_pointer`}
-                              >
-                                EDIT
+                          <div className={styles.edit}>
+                            <Link href={`/${db}/edit/${e.id}`}>
+                              <span className="text-primary fw-bold">
+                                <span
+                                  className={` ${styles.textblue} link-text fs-6 fw-semibold cursor_pointer`}
+                                >
+                                  EDIT
+                                </span>
                               </span>
-                            </span>
-                          </Link>
-                          <button
-                            className={`${styles.textblue} fs-6 fw-semibold cursor_pointer fw-bold`}
-                            data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"
-                            onClick={() => setDelId(e.id)}
-                          >
-                            DELETE
-                          </button>
+                            </Link>
+                          </div>
+                          <div>
+                            <button
+                              className={`${styles.textblue} fs-6 fw-semibold cursor_pointer fw-bold`}
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
+                              onClick={() => setDelId(e.id)}
+                            >
+                              DELETE
+                            </button>
+                          </div>
                         </>
                       )}
                     </div>
