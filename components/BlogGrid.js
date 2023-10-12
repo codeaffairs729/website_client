@@ -130,28 +130,28 @@ const BlogGrid = ({ data, authorized, setDelId, db }) => {
                           Read <img src="Newimages/arrow.png" alt="" />
                         </a>
                       </Link>
-                    </div>
-                    {authorized && (
-                      <>
-                        <Link href={`/${db}/edit/${e.id}`}>
-                          <span className="text-primary fw-bold">
-                            <span
-                              className={` ${styles.textblue} link-text fs-6 fw-semibold cursor_pointer`}
-                            >
-                              EDIT
+                      {authorized && (
+                        <>
+                          <Link href={`/${db}/edit/${e.id}`}>
+                            <span className="text-primary fw-bold">
+                              <span
+                                className={` ${styles.textblue} link-text fs-6 fw-semibold cursor_pointer`}
+                              >
+                                EDIT
+                              </span>
                             </span>
-                          </span>
-                        </Link>
-                        <button
-                          className={`${styles.textblue} fs-6 fw-semibold cursor_pointer fw-bold`}
-                          data-bs-toggle="modal"
-                          data-bs-target="#exampleModal"
-                          onClick={() => setDelId(e.id)}
-                        >
-                          DELETE
-                        </button>
-                      </>
-                    )}
+                          </Link>
+                          <button
+                            className={`${styles.textblue} fs-6 fw-semibold cursor_pointer fw-bold`}
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                            onClick={() => setDelId(e.id)}
+                          >
+                            DELETE
+                          </button>
+                        </>
+                      )}
+                    </div>
                   </div>
                 </div>
               ))}
