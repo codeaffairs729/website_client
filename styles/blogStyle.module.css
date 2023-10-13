@@ -339,7 +339,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.para{
+.para {
   width: 28rem;
 }
 .cardtitle {
@@ -584,7 +584,7 @@
 }
 .disk {
   position: absolute;
-  right: 9rem;
+  right: 7rem;
   top: 18rem;
   height: 100px;
   width: 100px;
@@ -592,7 +592,7 @@
 .blogcloud2 {
   position: absolute;
   top: -2rem;
-  right: 9rem;
+  right: 7rem;
   width: 94px;
 }
 .cube {
@@ -660,15 +660,14 @@ height: 100%;
 @media only screen and (max-width: 1439px) {
   .cardheading {
     width: 194px;
-    font-size:1.2rem;
+    font-size: 1.2rem;
     display: -webkit-box;
     -webkit-line-clamp: 0;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  .cardtitle h3{
+  .cardtitle h3 {
     font-size: 13px;
-
   }
   .cardbody {
     width: 45%;
@@ -681,11 +680,11 @@ height: 100%;
   .design__link {
     margin: 0rem;
     margin-left: 0.35rem;
-    font-size:1rem;
+    font-size: 1rem;
   }
   .cardimg {
     width: 34%;
-    margin-top:0.5rem !important
+    margin-top: 0.5rem !important;
   }
   .blogcontainerleft {
     width: 75%;
@@ -694,7 +693,7 @@ height: 100%;
     top: 30%;
     right: 48%;
   }
-  .para{
+  .para {
     width: 23rem;
   }
   .card {
@@ -707,13 +706,13 @@ height: 100%;
     gap: 3rem;
   }
   .casestudypage {
-    top:2rem;
-    }
+    top: 2rem;
+  }
 }
 @media screen and (max-width: 1365px) {
   .casestudypage {
-    top:0rem;
-    }
+    top: 0rem;
+  }
   .clock {
     right: -2rem;
   }
@@ -813,20 +812,20 @@ height: 100%;
   }
   .cardheading {
     width: 290px;
-    font-size:24px;
+    font-size: 24px;
   }
   .cardimg {
     width: 43%;
   }
   .design__link {
     margin: 0rem;
-    font-size:18px;
+    font-size: 18px;
   }
   .text_end {
     margin-right: 4rem;
     margin-top: 0px;
   }
-  .para{
+  .para {
     width: 42rem;
   }
   .customcard {
@@ -900,7 +899,6 @@ height: 100%;
   .cardtitle {
     width: 37%;
     margin: 0rem;
-
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1044,7 +1042,7 @@ height: 100%;
     font-size: 1.5rem;
     line-height: 38px;
   }
-  .para{
+  .para {
     width: 24rem;
   }
 }

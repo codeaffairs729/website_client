@@ -215,14 +215,18 @@
 .row {
   width: 100%;
 }
-
+.col_12 {
+  width: 33%;
+}
+.col_6 {
+  width: 30%;
+}
 .result_section {
   display: flex;
   /* justify-content: center; */
   align-items: center;
   margin: auto;
   gap: 2em;
-
   /* background: rgba(214, 112, 112, 0.3); */
 }
 .results h1 {
@@ -366,6 +370,14 @@
     /* background: rgba(214, 112, 112, 0.3); */
 
     /* border: 1px solid red; */
+  }
+}
+@media (max-width: 992px) {
+  .col_12 {
+    width: 100%;
+  }
+  .col_6 {
+    width: 100%;
   }
 }
 @media (max-width: 768px) {

@@ -379,9 +379,9 @@ const FooterNew = () => {
               </div>
               <span className="footer__link footer-link-about">
                 <br />
-                The Atrium Quarkcity,
+                106 Sundridge St,
                 <br />
-                industrial area, SAS-Nagar, Mohali, Punjab -160059
+                Brampton, ON L7A1J8
               </span>
             </div>
           </div>

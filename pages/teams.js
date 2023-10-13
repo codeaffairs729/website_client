@@ -1,6 +1,7 @@
 import React from 'react'
 import Slider from 'react-slick'
 import Typewriter from 'typewriter-effect'
+import style from '../styles/about.module.css'
 
 const Teams = () => {
   const settings = {
@@ -88,8 +89,8 @@ const Teams = () => {
 
   return (
     <>
-      <div className="teams teams-main">
-        <div className="teams__center center">
+      <div className={`teams teams-main ${style.teams}`}>
+        <div className={`teams__center center ${style.teams_center}`}>
           <div className="teams__head" data-aos="animation-scale-y">
             {/* <div className="teams__stage stage">Team Collaboration Redefined</div> */}
             <span className="teams__title title teams-main-title">
@@ -460,7 +461,7 @@ const Teams = () => {
             </div>
           </div>
         </div>
-        <div className="teams__circle js-rellax" data-rellax-speed="1"></div>
+        {/* <div className="teams__circle js-rellax" data-rellax-speed="1"></div> */}
       </div>
     </>
   )

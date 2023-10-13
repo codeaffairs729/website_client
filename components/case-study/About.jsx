@@ -13,10 +13,15 @@ const About = ({ Casedata }) => {
             </div>
           </div>
           <div className="row d-flex justify-content-center pt-xl-3 attraction">
-            <div className="col-12 col-lg-6 my-3">
+            <div className={`col-12 col-lg-6 my-3 ${style.col_12}`}>
               <div className="d-flex align-items-center">
                 <div className="flex-shrink-0">
-                  <img src="/Newimages/color.png" alt="..." />
+                  <img
+                    src="/Newimages/color.png"
+                    alt="..."
+                    height="89"
+                    width="8"
+                  />
                 </div>
                 <div className="flex-grow-1 ms-3">
                   <h4 className="fw-bold text-color-indigo">Active Users</h4>
@@ -24,13 +29,13 @@ const About = ({ Casedata }) => {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-lg-6 col-xl-5 my-3 ">
+            <div className={`col-12 col-lg-6 col-xl-5 my-3 ${style.col_6}`}>
               <div className="d-flex align-items-center">
                 <div className="flex-shrink-0">
                   <img
                     src="/Newimages/Camera.png"
                     alt="..."
-                    height="69"
+                    height="79"
                     width="84"
                   />
                 </div>
@@ -40,13 +45,13 @@ const About = ({ Casedata }) => {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-lg-6 my-3">
+            <div className={`col-12 col-lg-6 my-3 ${style.col_12}`}>
               <div className="d-flex align-items-center">
                 <div className="flex-shrink-0">
                   <img
                     src="/Newimages/file.png"
                     alt="..."
-                    height={'84'}
+                    height="79"
                     width="84"
                   />
                 </div>

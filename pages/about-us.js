@@ -12,9 +12,9 @@ const Company_highlights = dynamic(
     ssr: false,
   }
 )
-const Vision = dynamic(() => import('../components/Vision'), {
-  ssr: false,
-})
+// const Vision = dynamic(() => import('../components/Vision'), {
+//   ssr: false,
+// })
 const Company_teams = dynamic(() => import('../components/Teams'), {
   ssr: false,
 })
@@ -56,8 +56,8 @@ function AboutUs() {
           ></meta>
         </Head>
         <Company_teams />
-        <Vision />
-        <History />
+        {/* <Vision /> */}
+        {/* <History /> */}
         <Companyfaces />
         <Teams />
         <BuildingPicsSlider />
