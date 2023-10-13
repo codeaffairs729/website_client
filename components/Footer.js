@@ -139,9 +139,9 @@ const Footer = () => {
                 </div>
               </div>
               <div className={` ${FooterCss.address_text}  `}>
-                The Atrium Quarkcity, Industrial <br />
-                Area, Sahibzada Ajit Singh Nagar, Mohali,
-                <br /> Punjab -160059
+                106 Sundridge St,
+                <br />
+                Brampton, ON L7A1J8
               </div>
 
               <div className={`${FooterCss.social_links_container}`}>

@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react'
-
+import style from '../styles/about.module.css'
+import dynamic from 'next/dynamic'
+import Image from 'next/image'
+const Vision = dynamic(() => import('../components/Vision'), {
+  ssr: false,
+})
 function Teams() {
   const [loaded, setLoaded] = useState(false)
   const handleImageLoad = (origin) => {
@@ -21,8 +26,23 @@ function Teams() {
               <br />
               We Keep You Successful
             </h1>
+            <div className={style.about_heading}>
+              <p>
+                We are dedicated to shaping the future of technology through
+                innovative software development solutions. With a passion for
+                empowering businesses, we specialize in crafting software
+                solutions that cater to a diverse range of needs and scales.
+              </p>
+              <br></br>
+              <p>
+                Our vision is rooted in the belief that technology is the
+                driving force behind modern business evolution. We aspire to be
+                the catalyst for growth, aiding individuals and organizations in
+                their quest for a seamless transition into the digital era.
+              </p>
+            </div>
           </div>
-          <div className="col-lg-12">
+          {/* <div className="col-lg-12">
             <div className="row">
               <div className="col-lg-5 col-md-5 col-12 text-end">
                 <img
@@ -73,10 +93,40 @@ function Teams() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
+          <Vision />
         </div>
-        <div className="about-area-6-circle-1"></div>
-        <div className="about-area-6-circle-2"></div>
+        <div className="about-area-6-circle-1">
+          <Image
+            // className="w-100 h-100"
+            src="/aboutUsImages/Cloud.png"
+            alt="Aim Board"
+            width={162}
+            height={119.34}
+            objectFit="cover"
+          />
+        </div>
+        <div className="about-area-6-circle-2">
+          <Image
+            // className="w-100 h-100"
+            src="/aboutUsImages/cube.png"
+            alt="Aim Board"
+            width={43.85}
+            height={40.65}
+            objectFit="cover"
+          />
+        </div>
+        <div className="about-area-7-circle-1"></div>
+        <div className="about-area-6-circle-3">
+          <Image
+            // className="w-100 h-100"
+            src="/aboutUsImages/cube2.png"
+            alt="Aim Board"
+            width={50.85}
+            height={50.65}
+            objectFit="cover"
+          />
+        </div>
       </div>
     </>
   )

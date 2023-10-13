@@ -50,7 +50,7 @@ const Casestudy = () => {
         },
         {
           info: 'To rigorously test and assess the applications performance under various conditions, we acquired essential equipment such as pressure chambers. Additionally, we established a controlled dark room to simulate a virtual underwater environment, allowing us to conduct precise and controlled experiments.',
-          solimg: '/case_study/Divers5.png',
+          solimg: '/case_study/Divers7.png',
         },
       ],
 
@@ -98,7 +98,7 @@ const Casestudy = () => {
       Results:
         'The implementation of the solutions mentioned above has resulted in a user-focused, secure, e-commerce website. These outcomes have collectively contributed to increased customer satisfaction, higher conversion rates, and a stronger competitive position in the market, ensuring the ongoing success of the webs.',
       img: '/case_study/byuma.png',
-      resimg: '/case_study/byuma5.png',
+      resimg: '/case_study/byuma6.png',
       challengeimg1: '/case_study/byumachallenge.png',
       // challengeimg2: '/case_study/byuma_challenge_2.png',
     },

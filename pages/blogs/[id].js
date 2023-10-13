@@ -111,7 +111,7 @@ export default function BlogDetails({ data, blogData }) {
                   </div>
                   <Image
                     src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/${e.image}`}
-                    width={320}
+                    width={350}
                     height={310}
                     objectFit="cover"
                   />

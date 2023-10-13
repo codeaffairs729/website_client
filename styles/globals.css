@@ -1615,13 +1615,14 @@ body:not(.touch-device) .header-item[href]:before {
   font-size: 24px;
   letter-spacing: -0.025em;
   line-height: 1.25;
-  color: #292930;
+  color: white;
   height: 207px;
 }
 
 .teams-cmnt-author {
   font-weight: 500;
   letter-spacing: -0.04em;
+  color: white;
 }
 
 .teams-cmnt-row {
@@ -2230,7 +2231,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-4-side-img {
-  width: 50px;
+  width: 60px;
   border-radius: 50%;
   border: 3px solid #5956e9;
 }
@@ -2243,6 +2244,7 @@ body:not(.touch-device) .header-item[href]:before {
   position: relative;
   overflow: hidden;
   border-radius: 50%;
+  left: 3rem;
 }
 
 .about-area-4-main-img {
@@ -2294,7 +2296,6 @@ body:not(.touch-device) .header-item[href]:before {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 24px;
 }
 
 .about-area-4-main-social-icon {
@@ -2319,13 +2320,11 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-4-main-data-outer {
-  background-image: linear-gradient(90deg, white 25%, #d9d9d9 50%);
   border-radius: 0px 15px 15px 0px;
-  min-height: 462px;
 }
 
 .about-area-4-main-desc-outer {
-  padding: 3rem;
+  /* padding: 3rem; */
 }
 
 .about-us-trophies {
@@ -2338,8 +2337,8 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-5-container {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .about-area-5-heading {
@@ -2365,9 +2364,10 @@ body:not(.touch-device) .header-item[href]:before {
   /* border-top: 1px solid #cdcdcd; */
   /* margin-top: 150px; */
   margin-top: 90px;
-
+  background-color: #2a2831;
   margin-bottom: 70px;
   position: relative;
+  height: auto;
 }
 
 .about-area-6-pics {
@@ -2404,27 +2404,26 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-6-circle-1 {
-  background-color: #5ba79f;
-  height: 15px;
-  width: 15px;
+  height: 119.34px;
+  width: 160px;
   position: absolute;
-  top: 7%;
-  right: 5%;
+  top: 3%;
+  right: 2%;
   border-radius: 50%;
 }
 
 .about-area-6-circle-2 {
-  background-color: #fab8c4;
-  height: 30px;
-  width: 30px;
+  height: 44px;
+  width: 44px;
   position: absolute;
-  top: 30%;
-  left: 5%;
+  top: 9%;
+  left: 13%;
   border-radius: 50%;
 }
 
 .about-area-6-heading {
   font-size: 50px;
+  color: white;
 }
 
 .about-area-6-img-outer {
@@ -2432,15 +2431,15 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-7 {
-  background-color: #f3db7e;
   position: relative;
   overflow: hidden;
 }
 
 .about-area-7-heading {
-  font-family: 'DM Sans';
+  font-family: 'Poppins';
   font-weight: 400;
-  font-size: 60px;
+  font-size: 1rem;
+  color: #eadff8;
 }
 
 .about-area-7-pic-1-outer {
@@ -2454,6 +2453,7 @@ body:not(.touch-device) .header-item[href]:before {
 
 .about-area-7-left-outer {
   padding: 5rem 0 5rem 5rem;
+  width: 49.333333% !important;
 }
 
 .about-area-7-para {
@@ -2466,14 +2466,22 @@ body:not(.touch-device) .header-item[href]:before {
 
 .about-area-7-circle-1 {
   position: absolute;
-  background-color: white;
-  height: 20px;
-  width: 20px;
-  top: 50px;
+  background-color: #585858;
+  height: 81px;
+  width: 81px;
+  top: 37%;
   border-radius: 50%;
-  left: 70px;
+  left: 15%;
 }
 
+.about-area-6-circle-3 {
+  position: absolute;
+  height: 81px;
+  width: 81px;
+  top: 45%;
+  border-radius: 50%;
+  right: 5%;
+}
 .about-area-8 {
   background-color: #ffd9e0;
 }
@@ -2604,7 +2612,7 @@ body:not(.touch-device) .header-item[href]:before {
   margin-bottom: 30px;
 }
 .trophies-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-weight: 400;
   font-size: 32px;
   line-height: 48px;
@@ -3526,6 +3534,10 @@ body:not(.touch-device) .header-item[href]:before {
   .career-area-2-img-1 {
     width: 28%;
   }
+  .trophies-text {
+    font-size: 20px;
+    line-height: 42px;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -3757,11 +3769,6 @@ body:not(.touch-device) .header-item[href]:before {
   .trophies-img {
     height: 80px;
   }
-
-  .trophies-text {
-    font-size: 20px;
-  }
-
   .partners-pic {
     height: 18%;
   }
@@ -3838,7 +3845,8 @@ body:not(.touch-device) .header-item[href]:before {
   }
 
   .about-area-4-heading {
-    font-size: 40px;
+    font-size: 38px;
+    margin-bottom: 0rem !important;
   }
 
   .about-area-4-main-name {
@@ -4087,6 +4095,22 @@ body:not(.touch-device) .header-item[href]:before {
   .career-area-2-img-3 {
     width: 215px;
     left: 265px;
+  }
+  .about-area-7-left-outer {
+    padding: 2rem;
+    width: 100% !important;
+  }
+  .about-area-4 {
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+  }
+  .about-area-6 {
+    margin-bottom: 0rem;
+    margin-bottom: 1rem;
+  }
+  .trophies-text {
+    font-size: 15px;
+    line-height: 30px;
   }
 }
 
@@ -4765,11 +4789,11 @@ body:not(.touch-device) .header-item[href]:before {
   } */
 
   .about-area-5-heading {
-    font-size: 40px;
+    font-size: 37px;
   }
 
   .about-area-6 {
-    margin-top: 60px;
+    margin-top: 73px;
   }
 
   .about-area-6-heading-outer {
@@ -4792,6 +4816,7 @@ body:not(.touch-device) .header-item[href]:before {
 
   .about-area-7-left-outer {
     padding: 2rem;
+    width: 100% !important;
   }
 
   .about-area-8-heading {
@@ -5120,8 +5145,8 @@ body:not(.touch-device) .header-item[href]:before {
   }
 
   .about-area-4-main-outer {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    /* padding-left: 5rem;
+    padding-right: 5rem; */
   }
 
   .career-area-2-img-2 {
@@ -5142,7 +5167,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 @media only screen and (min-width: 1023px) {
   .about-area-4-main-data-outer {
-    min-height: 552px;
+    /* min-height: 552px; */
   }
   .about-area-4-sideImages-row {
     display: flex;
@@ -5273,10 +5298,27 @@ body:not(.touch-device) .header-item[href]:before {
     letter-spacing: 0px;
   }
   .about-area-4-main-data-outer {
-    min-height: 586px;
+    /* min-height: 586px; */
+  }
+  .about-area-4-main-img-outer {
+    left: 0rem;
+    top: 1rem;
+    height: 320px;
+    width: 320px;
   }
   .header__row {
     padding: 29px 30px;
+  }
+  .about-area-7-circle-1 {
+    top: 26%;
+    left: 2%;
+  }
+  .about-area-6-circle-3 {
+    top: 30%;
+    right: 4%;
+  }
+  .about-area-4-main-desc-outer {
+    width: 49% !important;
   }
 }
 @media (max-width: 500px) {
@@ -5300,5 +5342,27 @@ body:not(.touch-device) .header-item[href]:before {
   .header__body {
     margin-top: 0px;
     padding-top: 10px;
+  }
+  .trophies .container {
+    padding-top: 68px;
+    padding-bottom: 35px;
+  }
+  .about-area-6-circle-1,
+  .about-area-6-circle-2,
+  .about-area-6-circle-3,
+  .about-area-7-circle-1 {
+    display: none;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .teams-cmnt-text {
+    font-size: 21px;
+  }
+  .about-area-4-main-img-outer {
+    left: 0rem;
+  }
+  .about-area-4-side-img {
+    width: 54px;
   }
 }

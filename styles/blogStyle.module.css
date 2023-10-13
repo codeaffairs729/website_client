@@ -588,7 +588,7 @@
 }
 .disk {
   position: absolute;
-  right: 9rem;
+  right: 7rem;
   top: 18rem;
   height: 100px;
   width: 100px;
@@ -596,7 +596,7 @@
 .blogcloud2 {
   position: absolute;
   top: -2rem;
-  right: 9rem;
+  right: 7rem;
   width: 94px;
 }
 .cube {

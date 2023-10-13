@@ -5,7 +5,7 @@ const Effort = ({ Casedata }) => {
   return (
     <>
       <div className={style.case_container}>
-        <h1 className={style.challenge_header}>Technology Solutions:</h1>
+        <h1 className={style.challenge_header}>Technology Solutions</h1>
         <div className={style.effort_div}>
           {Casedata.Solutions.map((item, index) => (
             <div key={index} className={style.effort_section}>
@@ -41,7 +41,7 @@ const Effort = ({ Casedata }) => {
           {Casedata.id === '3' && (
             <div className={style.online}>
               <h4 className={style.challenge_header}>
-                Offline/Online Working and Synchronize :
+                Offline/Online Working and Synchronize
               </h4>
               <div className={style.effort_section}>
                 <div className={style.odd}>
@@ -60,7 +60,7 @@ const Effort = ({ Casedata }) => {
           )}
         </div>
         <div className={style.results}>
-          <h1 className={style.challenge_header}>Results:</h1>
+          <h1 className={style.challenge_header}>Results</h1>
           <div className={style.result_section}>
             <Image
               src={Casedata.resimg}
