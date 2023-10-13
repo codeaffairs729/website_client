@@ -21,7 +21,7 @@ const About = ({ Casedata }) => {
                     src="/Newimages/color.png"
                     alt="..."
                     height="89"
-                    width="8"
+                    width="89"
                   />
                 </div>
                 <div className="flex-grow-1 ms-3">
