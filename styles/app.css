@@ -3036,6 +3036,7 @@ body:not(.touch-device) .header__item:hover .header__body2 {
   font-size: 60px;
   font-weight: bolder;
   line-height: 1.2;
+  color:#000000
 }
 @media (max-width: 767px) {
   .home-header {
