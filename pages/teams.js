@@ -93,7 +93,7 @@ const Teams = () => {
         <div className={`teams__center center ${style.teams_center}`}>
           <div className="teams__head" data-aos="animation-scale-y">
             {/* <div className="teams__stage stage">Team Collaboration Redefined</div> */}
-            <span className="teams__title title teams-main-title">
+            <h1 className="teams__title title teams-main-title">
               We&apos;re Top Ranked Service Provider On
               <Typewriter
                 options={{
@@ -102,7 +102,7 @@ const Teams = () => {
                   loop: true,
                 }}
               />
-            </span>
+            </h1>
           </div>
           <div className="teams__body">
             <div className="teams__col" data-aos="animation-scale-y">

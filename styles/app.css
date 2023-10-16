@@ -225,14 +225,12 @@ button {
 }
 /* sticky header css */
 .is-sticky {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
-  box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
   background-color: #ffffff !important;
-  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   padding-top: 0px;
   padding-bottom: 0px;
 }
@@ -2434,7 +2432,7 @@ body.no-scroll {
 }
 
 .header {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   right: 0;
@@ -3016,7 +3014,7 @@ body:not(.touch-device) .header__item:hover .header__body2 {
   font-weight: 500;
   line-height: 1;
   letter-spacing: -0.025em;
-  color: white;
+  color: #000000;
 }
 
 .title__line {
@@ -3036,7 +3034,7 @@ body:not(.touch-device) .header__item:hover .header__body2 {
   font-size: 60px;
   font-weight: bolder;
   line-height: 1.2;
-  color:#000000
+  color: #000000;
 }
 @media (max-width: 767px) {
   .home-header {
@@ -3069,7 +3067,7 @@ body:not(.touch-device) .header__item:hover .header__body2 {
 .title_sm {
   font-size: 40px;
   letter-spacing: -0.045em;
-  color: white;
+  color: #000000;
 }
 
 .title_big {
@@ -8473,7 +8471,6 @@ html {
   .home-header {
     font-size: 46px;
   }
-  
 }
 @media only screen and (min-width: 1540px) {
   .design__hand {
@@ -8804,6 +8801,7 @@ html {
   .teams__body .teams__title {
     max-width: 375px;
     font-size: 40px;
+    color: white;
   }
   .teams__line {
     margin-bottom: 40px;

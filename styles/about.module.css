@@ -125,6 +125,12 @@
 .teams_center {
   padding-top: 5rem;
 }
+.teams_center h1 {
+  color: white;
+}
+.teams_center h2 {
+  color: white;
+}
 .about_area_4 {
   flex-direction: column-reverse !important;
   gap: 2rem;
