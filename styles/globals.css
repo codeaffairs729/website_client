@@ -1602,7 +1602,7 @@ body:not(.touch-device) .header-item[href]:before {
 
 /* Teams Component CSS Start */
 .teams-main {
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 }
 
 .teams-cmnt-text {
@@ -2233,7 +2233,7 @@ body:not(.touch-device) .header-item[href]:before {
 .about-area-4-side-img {
   width: 60px;
   border-radius: 50%;
-  border: 3px solid transparent;
+  border: 1px solid transparent; 
 }
 .selected {
   border: 3px solid #5956e9!important;
@@ -2366,9 +2366,9 @@ body:not(.touch-device) .header-item[href]:before {
 .about-area-6 {
   /* border-top: 1px solid #cdcdcd; */
   /* margin-top: 150px; */
-  margin-top: 90px;
+  margin-top: 74px;
   background-color: #2a2831;
-  margin-bottom: 70px;
+  margin-bottom: 65px;
   position: relative;
   height: auto;
 }
@@ -2627,7 +2627,7 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .trophies .container {
-  padding-top: 130px;
+  padding-top: 25px;
   padding-bottom: 100px;
 }
 
@@ -5318,7 +5318,7 @@ body:not(.touch-device) .header-item[href]:before {
     /* min-height: 586px; */
   }
   .about-area-4-main-img-outer {
-    left: 0rem;
+    left: 2.5rem;
     top: 1rem;
     height: 320px;
     width: 320px;
@@ -5327,7 +5327,7 @@ body:not(.touch-device) .header-item[href]:before {
     padding: 29px 30px;
   }
   .about-area-7-circle-1 {
-    top: 39%;
+    top: 33%;
     left: 2%;
     height: 66px;
     width: 66px;
@@ -5380,7 +5380,7 @@ body:not(.touch-device) .header-item[href]:before {
     font-size: 21px;
   }
   .about-area-4-main-img-outer {
-    left: 0rem;
+    left: 1rem;
   }
   .about-area-4-side-img {
     width: 54px;

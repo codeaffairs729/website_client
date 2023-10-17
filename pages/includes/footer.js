@@ -381,7 +381,7 @@ const FooterNew = () => {
                 <br />
                 106 Sundridge St,
                 <br />
-                Brampton, ON L7A1J8
+                Brampton, ON L7A1J8 Canada
               </span>
             </div>
           </div>

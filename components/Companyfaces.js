@@ -13,7 +13,9 @@ function Companyfaces() {
   const handleImageLoad = (origin) => {
     setLoaded(true)
   }
-  var sliderDiv = useRef(null)
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0) // Track the selected slide index
+  const sliderDiv = useRef(null)
+
   const sideImgArr = [
     ['aboutUsImages/about-img1.webp', 'MP Singh(Founder)'],
     ['aboutUsImages/about-img6.jpg', , 'Ankush Mahajan(CTO)'],
@@ -77,11 +79,13 @@ function Companyfaces() {
     slidesToShow: 1,
     speed: 800,
     arrows: false,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 4000,
     pauseOnHover: true,
     lazyLoad: true,
-    beforeChange: (currentSlide, nextSlide) => setImageIndex(nextSlide),
+    beforeChange: (currentSlide, nextSlide) => {
+      setSelectedImageIndex(nextSlide)
+    },
     responsive: [
       {
         breakpoint: 1199,
@@ -104,13 +108,19 @@ function Companyfaces() {
       },
     ],
   }
+
+  const handleSlideChange = (currentSlide) => {
+    setSelectedImageIndex(currentSlide)
+  }
   const SideImagesChangeHandle = (index) => {
     setCompanyFacesDesc(index)
-    sliderDiv.current.slickGoTo(index) // Use the .current property to access the ref
+    setSelectedImageIndex(index)
+    sliderDiv.current.slickGoTo(index)
   }
+
   return (
     <div className={`container about-area-4 ${style.about_area_4_outer}`}>
-      <h5> Our Leadership</h5>
+      <h5>Our Leadership</h5>
       <div className={`row about-area-4-main-outer ${style.about_area_4}`}>
         <div
           className={`col-lg-1 col-md-2 text-center mt-4 d-flex flex-column justify-content-center ${style.col_lg_1}`}
@@ -118,17 +128,16 @@ function Companyfaces() {
           <div
             className={`row about-area-4-sideImages-row ${style.about_area_4_sideImages}`}
           >
-            {sideImgArr.map((element, index) => {
-              return (
-                <SideImages
-                  key={index}
-                  id={index}
-                  altImg={element[1]}
-                  sideImagesgUrl={element[0]}
-                  SideImagesChangeHandle={SideImagesChangeHandle}
-                />
-              )
-            })}
+            {sideImgArr.map((element, index) => (
+              <SideImages
+                key={index}
+                id={index}
+                altImg={element[1]}
+                sideImagesgUrl={element[0]}
+                SideImagesChangeHandle={SideImagesChangeHandle}
+                selected={index === selectedImageIndex}
+              />
+            ))}
           </div>
         </div>
 
