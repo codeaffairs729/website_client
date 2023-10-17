@@ -94,14 +94,14 @@ const Footer = () => {
                 <div className={`${FooterCss.india_container}`}>
                   <span>
                     <Image
-                      src="/footer-images/india_logo.svg"
+                      src="/footer-images/Canada_flag.png"
                       alt="india-flag-logo"
                       width={32}
                       height={24}
                     />
                   </span>
                   <span className={FooterCss.india_text}>
-                    &nbsp;&nbsp;+91 814 639 4889
+                    &nbsp;&nbsp;+1 (437) 662-9166
                   </span>
                 </div>
                 <div className={`${FooterCss.india_container}`}>
@@ -138,10 +138,21 @@ const Footer = () => {
                   )}
                 </div>
               </div>
-              <div className={` ${FooterCss.address_text}  `}>
-                106 Sundridge St,
-                <br />
-                Brampton, ON L7A1J8
+              <div className={`d-flex ${FooterCss.add}`}>
+                <div className={` ${FooterCss.address_text}  `}>
+                  106 Sundridge St,
+                  <br />
+                  Brampton, ON L7A1J8,
+                  <br />
+                  Canada
+                </div>
+                <div className={` ${FooterCss.address_text}  `}>
+                  The Atrium Quarkcity, A-45
+                  <br />
+                  Phase 8B, Industrial Area
+                  <br />
+                  SAS Nagar, PB 160059, India
+                </div>
               </div>
 
               <div className={`${FooterCss.social_links_container}`}>
@@ -640,7 +651,7 @@ const Footer = () => {
       </div>
       <div className={`row ${FooterCss.footer_footer_container}`}>
         <div className={`col-lg-8 col-sm-12 ${FooterCss.footer_copyright}`}>
-          © Copyright 2023. Code Garage Tech Private Ltd.
+          © Copyright 2023. Code Garage Tech Private Limited.
         </div>
 
         <div

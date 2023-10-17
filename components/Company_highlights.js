@@ -7,8 +7,8 @@ function Company_highlites() {
     {
       src: '/aboutUsImages/teams1.png',
       alt: 'Image 1',
-      height: 300,
-      width: 500,
+      height: 400,
+      width: 600,
       objectFit: 'cover',
       borderRadius: '20px',
       position: { top: '2rem' },
@@ -16,98 +16,104 @@ function Company_highlites() {
     {
       src: '/aboutUsImages/trophy1.png',
       alt: 'Image 2',
-      height: 300,
-      width: 500,
-      objectFit: 'cover',
+      height: 450,
+      width: 400,
+      objectFit: 'contain',
       borderRadius: '20px',
-      position: 'left',
+      position: { top: '6rem' },
     },
     {
       src: '/aboutUsImages/teams2.png',
       alt: 'Image 3',
-      height: 300,
-      width: 500,
-      objectFit: 'cover',
+      height: 500,
+      width: 350,
+      objectFit: 'contain',
       borderRadius: '20px',
-      position: { top: '-2rem' },
-    },
-    {
-      src: '/aboutUsImages/trophy2.png',
-      alt: 'Image 4',
-      height: 300,
-      width: 500,
-      objectFit: 'cover',
-      borderRadius: '20px',
-      position: 'top 2rem',
+      position: { top: '2rem' },
     },
     {
       src: '/aboutUsImages/teams3.png',
       alt: 'Image 3',
       height: 300,
-      width: 500,
+      width: 300,
       objectFit: 'cover',
       borderRadius: '20px',
-      position: { top: '-2rem' },
+      position: { top: '3rem' },
     },
     {
-      src: '/aboutUsImages/trophy3.png',
+      src: '/aboutUsImages/trophy2.png',
       alt: 'Image 4',
-      height: 300,
-      width: 500,
-      objectFit: 'cover',
+      height: 400,
+      width: 450,
+      objectFit: 'contain',
       borderRadius: '20px',
-      position: 'top 2rem',
+      position: { top: '-1rem' },
     },
     {
       src: '/aboutUsImages/teams4.png',
       alt: 'Image 3',
-      height: 300,
-      width: 500,
+      height: 500,
+      width: 300,
+      objectFit: 'contain',
+      borderRadius: '20px',
+      position: { top: '3rem' },
+    },
+    {
+      src: '/aboutUsImages/teams6.webp',
+      alt: 'Image 3',
+      height: 400,
+      width: 300,
       objectFit: 'cover',
+      borderRadius: '20px',
+      position: { top: '0rem' },
+    },
+    {
+      src: '/aboutUsImages/trophy3.png',
+      alt: 'Image 4',
+      height: 500,
+      width: 500,
+      objectFit: 'contain',
       borderRadius: '20px',
       position: { top: '-2rem' },
     },
     {
-      src: '/aboutUsImages/teams6.png',
+      src: '/aboutUsImages/teams5.webp',
       alt: 'Image 3',
-      height: 300,
+      height: 400,
       width: 500,
       objectFit: 'cover',
       borderRadius: '20px',
-      position: { top: '-2rem' },
+      position: { top: '3rem' },
     },
     {
-      src: '/aboutUsImages/teams5.png',
+      src: '/aboutUsImages/teams7.webp',
       alt: 'Image 3',
-      height: 300,
-      width: 500,
+      height: 600,
+      width: 700,
       objectFit: 'cover',
       borderRadius: '20px',
-      position: { top: '-2rem' },
+      position: { top: '6rem' },
     },
     {
-      src: '/aboutUsImages/teams7.png',
+      src: '/aboutUsImages/teams8.webp',
       alt: 'Image 3',
-      height: 300,
+      height: 600,
       width: 500,
       objectFit: 'cover',
       borderRadius: '20px',
-      position: { top: '-2rem' },
-    },
-    {
-      src: '/aboutUsImages/teams8.png',
-      alt: 'Image 3',
-      height: 300,
-      width: 500,
-      objectFit: 'cover',
-      borderRadius: '20px',
-      position: { top: '-2rem' },
+      position: { top: '0rem' },
     },
   ]
 
+  const repeatedImages = images
+    .concat(images)
+    .concat(images)
+    .concat(images)
+    .concat(images)
+
   return (
     <>
-      {/* <div
+      <div
         className={`container-fluid trophies about-us-trophies ${style.main_div}`}
       >
         <div className={`container ${style.container_highlight}`}>
@@ -118,14 +124,13 @@ function Company_highlites() {
           </div>
           <div className={style.pics}>
             <div className={style.pics_slider}>
-              {images.map((image, index) => (
+              {repeatedImages.map((image, index) => (
                 <div
                   key={index}
                   className={`col-lg-4 col-md-4 trophies-cols ${style.col_lg_5}`}
                   style={{
-                    position: 'absolute',
+                    position: 'relative',
                     top: image.position.top,
-                    left: image.position.left,
                   }}
                 >
                   <Image
@@ -142,7 +147,7 @@ function Company_highlites() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       <div className="container-fluid about-area-5">
         <div className="container about-area-5-container">
           <div className="row">
@@ -172,7 +177,6 @@ function Company_highlites() {
                       />
                     </svg>
                   </p>
-
                   <a
                     href="./contact"
                     target="_blank"
