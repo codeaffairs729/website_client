@@ -29,7 +29,7 @@ function Companyfaces() {
       'MP Singh',
       "The guy, who established Code Garage Tech. He is a computer science engineer and has experience of more than a decade in software development. He encourages conformity with business rules & regulations and also ensures that the company's code of ethics is being followed.",
       'https://www.linkedin.com/in/mehakpal-singh-3a9215a5/',
-      'www.instagram.com',
+      'https://api.whatsapp.com/send?phone=14376629166',
       '/aboutUsImages/about-img1.webp',
     ],
     [
@@ -38,7 +38,7 @@ function Companyfaces() {
       'Ankush',
       "The guy, who empowers excellence with technology leadership. With a master's degree in computer science and over eight years of professional experience in the software development industry, he possesses a strong academic background and extensive professional expertise.",
       'https://www.linkedin.com/in/ankush-mahajan-776397205/',
-      'www.instagram.com',
+      'https://api.whatsapp.com/send?phone=17606839821',
       '/aboutUsImages/about-img6.jpg',
     ],
     [
@@ -77,7 +77,7 @@ function Companyfaces() {
     slidesToShow: 1,
     speed: 800,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000,
     pauseOnHover: true,
     lazyLoad: true,
@@ -109,7 +109,8 @@ function Companyfaces() {
     sliderDiv.current.slickGoTo(index) // Use the .current property to access the ref
   }
   return (
-    <div className="container about-area-4">
+    <div className={`container about-area-4 ${style.about_area_4_outer}`}>
+      <h5> Our Leadership</h5>
       <div className={`row about-area-4-main-outer ${style.about_area_4}`}>
         <div
           className={`col-lg-1 col-md-2 text-center mt-4 d-flex flex-column justify-content-center ${style.col_lg_1}`}
@@ -171,7 +172,7 @@ function Companyfaces() {
                 <div className="col-lg-6 col-md-6 d-flex about-area-4-main-desc-outer">
                   <div className="row h-100">
                     <div
-                      className={`col-lg-12 d-flex flex-column justify-content-center ${style.col_lg_12}`}
+                      className={`col-lg-12 d-flex flex-column justify-content-center ${style.col_lg}`}
                     >
                       <div className="about-area-4-main-para">
                         <div className={`fw-bolder ${style.about_faces}`}>
@@ -190,14 +191,21 @@ function Companyfaces() {
                                 width={50}
                               />
                             </a>
-                            {/* <a href={detail[5]} className="footer__link me-3" target="_blank">
-                              <Image
-                                src={'/images/WhatsApp.webp'}
-                                alt="3D LinkedIn Icon"
-                                height={50}
-                                width={50}
-                              />
-                            </a> */}
+                            {index === 0 || index === 1 ? (
+                              <a
+                                href={detail[5]}
+                                className="footer__link me-3"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                <Image
+                                  src={'/images/WhatsApp.webp'}
+                                  alt="WhatsApp Icon"
+                                  height={50}
+                                  width={50}
+                                />
+                              </a>
+                            ) : null}
                           </div>
                         </div>
                         <br />

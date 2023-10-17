@@ -2233,7 +2233,10 @@ body:not(.touch-device) .header-item[href]:before {
 .about-area-4-side-img {
   width: 60px;
   border-radius: 50%;
-  border: 3px solid #5956e9;
+  border: 3px solid transparent;
+}
+.selected {
+  border: 3px solid #5956e9!important;
 }
 
 .about-area-4-side-col {
@@ -2404,11 +2407,11 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .about-area-6-circle-1 {
-  height: 119.34px;
-  width: 160px;
+  height: 59.34px;
+  width: 55px;
   position: absolute;
-  top: 3%;
-  right: 2%;
+  top: 19%;
+  right: 8%;
   border-radius: 50%;
 }
 
@@ -2416,14 +2419,16 @@ body:not(.touch-device) .header-item[href]:before {
   height: 44px;
   width: 44px;
   position: absolute;
-  top: 9%;
-  left: 13%;
+  top: 17%;
+  left: 7%;
   border-radius: 50%;
 }
 
 .about-area-6-heading {
   font-size: 50px;
-  color: white;
+  color: #F0F7F6;
+  font-family: 'DM Sans';
+  font-weight:bold;;
 }
 
 .about-area-6-img-outer {
@@ -2469,18 +2474,18 @@ body:not(.touch-device) .header-item[href]:before {
   background-color: #585858;
   height: 81px;
   width: 81px;
-  top: 37%;
+  top: 45%;
   border-radius: 50%;
-  left: 15%;
+  left: 7%;
 }
 
 .about-area-6-circle-3 {
   position: absolute;
-  height: 81px;
-  width: 81px;
-  top: 45%;
+  height: 84px;
+  width: 78px;
+  top: 46%;
   border-radius: 50%;
-  right: 5%;
+  right: 14%;
 }
 .about-area-8 {
   background-color: #ffd9e0;
@@ -2608,7 +2613,8 @@ body:not(.touch-device) .header-item[href]:before {
 }
 
 .trophies-img {
-  height: 100px;
+  height: 150px;
+  width: 135px;
   margin-bottom: 30px;
 }
 .trophies-text {
@@ -2616,7 +2622,7 @@ body:not(.touch-device) .header-item[href]:before {
   font-weight: 400;
   font-size: 32px;
   line-height: 48px;
-  color: #27272e;
+  color:#ffffff;
   opacity: 0.7;
 }
 
@@ -4776,7 +4782,6 @@ body:not(.touch-device) .header-item[href]:before {
 
   .about-area-4-main-data-outer {
     /* border: 1px solid; */
-    background: white;
     min-height: 462px;
   }
   .about-img-height {
@@ -5084,6 +5089,19 @@ body:not(.touch-device) .header-item[href]:before {
   /* .header__row {
     padding: 55px 30px;
   } */
+  .about-area-6-circle-2 {
+    top: 19%;
+    left: 1%;
+  }
+  .about-area-6-circle-1 {
+    width: 29px;
+    top: 20%;
+    right: 3%;
+  }
+  .about-area-6-circle-3 {
+    top: 49%;
+    right: 4%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -5309,12 +5327,15 @@ body:not(.touch-device) .header-item[href]:before {
     padding: 29px 30px;
   }
   .about-area-7-circle-1 {
-    top: 26%;
+    top: 39%;
     left: 2%;
+    height: 66px;
+    width: 66px;
   }
   .about-area-6-circle-3 {
-    top: 30%;
-    right: 4%;
+    top: 32%;
+    right: 1%;
+    width: 70px;
   }
   .about-area-4-main-desc-outer {
     width: 49% !important;

@@ -38,10 +38,7 @@ function vision() {
                   enterprises to thrive, utilizing information technology. Over
                   these years, we've grown alongside our clients, crafting
                   exceptional software, overcoming challenges, and embracing
-                  innovation. Our global reach has solidified connections with
-                  enterprises worldwide, and our commitment to excellence
-                  remains unwavering as we continue to embrace new challenges
-                  and opportunities on the horizon.
+                  innovation.
                 </h3>
                 <div className={style.companyface2}>
                   <Image
@@ -89,13 +86,11 @@ function vision() {
                   Building Futures
                 </h1>
                 <h3>
-                  We're driven by a mission to be a catalyst for change,
-                  enabling entrepreneurs to thrive. Our focus is on delivering
-                  valuable software solutions that elevate society's quality.
-                  With expertise in web design, mobile development, and digital
-                  marketing, we harness cutting-edge technologies to provide
-                  quality-centered software services, fostering the growth of
-                  aspiring businesses.
+                  Our mission is to ignite change and empower entrepreneurs to
+                  excel. We specialize in providing high-impact software
+                  solutions that enhance the quality of life. With expertise in
+                  AI, ML, web, and mobile development, we are committed to
+                  making a difference
                 </h3>
                 <div className={style.target}>
                   <Image

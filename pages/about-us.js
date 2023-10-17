@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import BuildingPicsSlider from './buildingPicsSlider'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
+import styles from '../styles/about.module.css'
 import style from '../styles/Shimmer.module.css'
 const Companyfaces = dynamic(() => import('../components/Companyfaces'), {
   ssr: false,
@@ -55,22 +56,15 @@ function AboutUs() {
             content="Custom Web App Development Company, Web Design And Development"
           ></meta>
         </Head>
-        <Company_teams />
-        {/* <Vision /> */}
-        {/* <History /> */}
-        <Companyfaces />
-        <Teams />
-        <BuildingPicsSlider />
-        <Company_highlights />
-        {/* <div className="main">
-                <div className="main__center center">
-                    <div>
-                        <h1>The Team You’re Looking for</h1>
-                        <p>We offer flexible pricing options for freelancers and design teams. </p>
-                        <button className='btn' >Our Magic Potion</button>
-                    </div>
-                </div>
-            </div> */}
+        <div className={styles.main_div}>
+          <Company_teams />
+          {/* <Vision /> */}
+          {/* <History /> */}
+          <Companyfaces />
+          <Teams />
+          {/* <BuildingPicsSlider /> */}
+          <Company_highlights />
+        </div>
       </div>
     </>
   )
