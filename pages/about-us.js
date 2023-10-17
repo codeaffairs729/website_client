@@ -7,12 +7,12 @@ import style from '../styles/Shimmer.module.css'
 const Companyfaces = dynamic(() => import('../components/Companyfaces'), {
   ssr: false,
 })
-const Company_highlights = dynamic(
-  () => import('../components/Company_highlights'),
-  {
-    ssr: false,
-  }
-)
+// const Company_highlights = dynamic(
+//   () => import('../components/Company_highlights'),
+//   {
+//     ssr: false,
+//   }
+// )
 // const Vision = dynamic(() => import('../components/Vision'), {
 //   ssr: false,
 // })
@@ -63,7 +63,7 @@ function AboutUs() {
           <Companyfaces />
           <Teams />
           {/* <BuildingPicsSlider /> */}
-          <Company_highlights />
+          {/* <Company_highlights /> */}
         </div>
       </div>
     </>
