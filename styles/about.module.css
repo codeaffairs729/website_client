@@ -531,6 +531,7 @@
   .about_faces h1 {
     margin-left: 3.9rem;
     width: 267px;
+    font-size:28px;
   }
   .about_heading {
     width: 75%;
@@ -549,7 +550,7 @@
   }
 
   .companyface {
-    right: -7.5rem;
+    right: -8.5rem;
     top: 6.5rem;
   }
   .about_area_7 h2 {
