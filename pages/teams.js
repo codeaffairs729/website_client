@@ -119,7 +119,9 @@ const Teams = () => {
                       {...settingsRight}
                     >
                       <div className="row teams-cmnt-row">
-                        <div className="col-lg-12 mt-5 mb-4 teams-cmnt-text">
+                        <div
+                          className={`col-lg-12 mt-5 mb-4 teams-cmnt-text ${style.sm_text}`}
+                        >
                           Solid work. Can&apos;t go wrong.
                         </div>
                         <div className="col-lg-12 mb-5 teams-cmnt-author">
@@ -127,7 +129,9 @@ const Teams = () => {
                         </div>
                       </div>
                       <div className="row teams-cmnt-row">
-                        <div className="col-lg-12 mt-5 mb-4 teams-cmnt-text">
+                        <div
+                          className={`col-lg-12 mt-5 mb-4 teams-cmnt-text ${style.sm_text}`}
+                        >
                           Completed the work as per schedule and demonstrated
                           the approaches while consultation.
                         </div>
@@ -165,7 +169,9 @@ const Teams = () => {
                       {...settingsUp}
                     >
                       <div className="row teams-cmnt-row">
-                        <div className="col-lg-12 mt-5  mb-4 teams-cmnt-text">
+                        <div
+                          className={`col-lg-12 mt-5 mb-4 teams-cmnt-text ${style.sm_text}`}
+                        >
                           Team did a great job for our front end tasks. They are
                           knowledgeable and worked fast and efficiently in
                           completing the tasks.
@@ -175,7 +181,9 @@ const Teams = () => {
                         </div>
                       </div>
                       <div className="row teams-cmnt-row">
-                        <div className="col-lg-12 mt-5  mb-4 teams-cmnt-text">
+                        <div
+                          className={`col-lg-12 mt-5 mb-4 teams-cmnt-text ${style.sm_text}`}
+                        >
                           Team consider many ways to resolve our issues,
                           considering multiple aspects as well (ie. Performance,
                           accuracy, simplicity). Their feedback is documented
@@ -193,7 +201,9 @@ const Teams = () => {
                         </div>
                       </div>
                       <div className="row teams-cmnt-row">
-                        <div className="col-lg-12 mt-5  mb-4 teams-cmnt-text">
+                        <div
+                          className={`col-lg-12 mt-5 mb-4 teams-cmnt-text ${style.sm_text}`}
+                        >
                           They quickly grasps business processes and business
                           issues. They provide a close follow-up by directly
                           contacting us which shows that they are dedicated to
@@ -242,7 +252,9 @@ const Teams = () => {
                       {...settingsDown}
                     >
                       <div className="row teams-cmnt-row">
-                        <div className="col-lg-12 mt-5 mb-4 teams-cmnt-text">
+                        <div
+                          className={`col-lg-12 mt-5 mb-4 teams-cmnt-text ${style.sm_text}`}
+                        >
                           Absolute 5 star experience. These guys are pros -
                           excellent communication, prompt and really competent
                           professionals!
@@ -252,7 +264,9 @@ const Teams = () => {
                         </div>
                       </div>
                       <div className="row teams-cmnt-row">
-                        <div className="col-lg-12 mt-5 mb-4 teams-cmnt-text">
+                        <div
+                          className={`col-lg-12 mt-5 mb-4 teams-cmnt-text ${style.sm_text}`}
+                        >
                           A complete professional team. Ask and you will
                           receive. Excellent communicators. A pleasure to work
                           with.
@@ -292,7 +306,9 @@ const Teams = () => {
                       {...settingsLeft}
                     >
                       <div className="row teams-cmnt-row">
-                        <div className="col-lg-12 mt-5 mb-4 teams-cmnt-text">
+                        <div
+                          className={`col-lg-12 mt-5 mb-4 teams-cmnt-text ${style.sm_text}`}
+                        >
                           Excellent work as usual, very friendly and very
                           dedicated in achieving the best result.
                         </div>
@@ -301,7 +317,9 @@ const Teams = () => {
                         </div>
                       </div>
                       <div className="row teams-cmnt-row">
-                        <div className="col-lg-12 mt-5 mb-4 teams-cmnt-text">
+                        <div
+                          className={`col-lg-12 mt-5 mb-4 teams-cmnt-text ${style.sm_text}`}
+                        >
                           Available on time, delivery on schedule and excellent
                           communication, this is what one will look while
                           working with a professional, team was on top of all

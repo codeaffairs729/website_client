@@ -27,10 +27,13 @@ function Teams() {
             <div className={style.about_heading}>
               <p>
                 Our dedication lies in shaping technology's future through
-                innovative software solutions, including AI, ML, web, and mobile
-                development. We're passionate about empowering businesses and
-                specialize in crafting software for diverse needs and scales,
-                driving technology forward.
+                innovative software solutions, including AI, Web, and Mobile
+                Development. We're passionate about empowering businesses and
+                specialize in crafting software for diverse needs and scales. We
+                believe that everyone deserves the opportunity to be heard and
+                understood—no matter where they are or what they do and that's
+                why we work hard every day to make sure our services provide
+                optimum outcomes
               </p>
               <br></br>
             </div>
@@ -39,8 +42,8 @@ function Teams() {
                 // className="w-100 h-100"
                 src="/aboutUsImages/group.png"
                 alt="Aim Board"
-                width={700}
-                height={350}
+                width={600}
+                height={300}
               />
             </div>
           </div>

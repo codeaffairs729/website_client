@@ -148,7 +148,9 @@ function Companyfaces() {
                 className="row about-area-4-main-data-outer d-flex"
                 key={index}
               >
-                <div className="col-lg-6 col-md-6 d-flex align-items-center about-img-height">
+                <div
+                  className={`col-lg-6 col-md-6 d-flex align-items-center about-img-height  ${style.image_height}`}
+                >
                   <div className="row">
                     <div
                       className={`col-lg-10 col-md-12 col-10 ${style.col_10}`}

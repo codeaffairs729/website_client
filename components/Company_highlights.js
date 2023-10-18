@@ -5,33 +5,6 @@ import style from '../styles/about.module.css'
 function Company_highlites() {
   const images = [
     {
-      src: '/aboutUsImages/teams1.png',
-      alt: 'Image 1',
-      height: 400,
-      width: 600,
-      objectFit: 'cover',
-      borderRadius: '20px',
-      position: { top: '2rem' },
-    },
-    {
-      src: '/aboutUsImages/trophy1.png',
-      alt: 'Image 2',
-      height: 450,
-      width: 400,
-      objectFit: 'contain',
-      borderRadius: '20px',
-      position: { top: '6rem' },
-    },
-    {
-      src: '/aboutUsImages/teams2.png',
-      alt: 'Image 3',
-      height: 500,
-      width: 350,
-      objectFit: 'contain',
-      borderRadius: '20px',
-      position: { top: '2rem' },
-    },
-    {
       src: '/aboutUsImages/teams3.png',
       alt: 'Image 3',
       height: 300,
@@ -41,13 +14,31 @@ function Company_highlites() {
       position: { top: '3rem' },
     },
     {
-      src: '/aboutUsImages/trophy2.png',
-      alt: 'Image 4',
-      height: 400,
-      width: 450,
+      src: '/aboutUsImages/trophy1.png',
+      alt: 'Image 2',
+      height: 350,
+      width: 290,
       objectFit: 'contain',
       borderRadius: '20px',
-      position: { top: '-1rem' },
+      position: { top: '2rem' },
+    },
+    {
+      src: '/aboutUsImages/teams2.png',
+      alt: 'Image 3',
+      height: 500,
+      width: 350,
+      objectFit: 'contain',
+      borderRadius: '20px',
+      position: { top: '-2rem' },
+    },
+    {
+      src: '/aboutUsImages/teams1.png',
+      alt: 'Image 1',
+      height: 400,
+      width: 600,
+      objectFit: 'cover',
+      borderRadius: '20px',
+      position: { top: '0rem' },
     },
     {
       src: '/aboutUsImages/teams4.png',
@@ -56,7 +47,16 @@ function Company_highlites() {
       width: 300,
       objectFit: 'contain',
       borderRadius: '20px',
-      position: { top: '3rem' },
+      position: { top: '-3rem' },
+    },
+    {
+      src: '/aboutUsImages/trophy2.png',
+      alt: 'Image 4',
+      height: 350,
+      width: 290,
+      objectFit: 'contain',
+      borderRadius: '20px',
+      position: { top: '2rem' },
     },
     {
       src: '/aboutUsImages/teams6.webp',
@@ -70,11 +70,11 @@ function Company_highlites() {
     {
       src: '/aboutUsImages/trophy3.png',
       alt: 'Image 4',
-      height: 500,
-      width: 500,
+      height: 350,
+      width: 290,
       objectFit: 'contain',
       borderRadius: '20px',
-      position: { top: '-2rem' },
+      position: { top: '2rem' },
     },
     {
       src: '/aboutUsImages/teams5.webp',
@@ -83,7 +83,7 @@ function Company_highlites() {
       width: 500,
       objectFit: 'cover',
       borderRadius: '20px',
-      position: { top: '3rem' },
+      position: { top: '0rem' },
     },
     {
       src: '/aboutUsImages/teams7.webp',
@@ -92,7 +92,7 @@ function Company_highlites() {
       width: 700,
       objectFit: 'cover',
       borderRadius: '20px',
-      position: { top: '6rem' },
+      position: { top: '10rem' },
     },
     {
       src: '/aboutUsImages/teams8.webp',
@@ -106,6 +106,12 @@ function Company_highlites() {
   ]
 
   const repeatedImages = images
+    .concat(images)
+    .concat(images)
+    .concat(images)
+    .concat(images)
+    .concat(images)
+    .concat(images)
     .concat(images)
     .concat(images)
     .concat(images)
