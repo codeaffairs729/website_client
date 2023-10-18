@@ -18,8 +18,8 @@ function vision() {
                       <Image
                         src="/aboutUsImages/ceo.png"
                         alt="Aim Board"
-                        width={140}
-                        height={142}
+                        width={100}
+                        height={100}
                         objectFit="cover"
                       />
                       <div className={style.companyface_title}>
@@ -44,8 +44,8 @@ function vision() {
                   <Image
                     src="/aboutUsImages/cto.png"
                     alt="Aim Board"
-                    width={140}
-                    height={142}
+                    width={100}
+                    height={100}
                     objectFit="cover"
                   />
                   <div className={style.companyface_title}>
