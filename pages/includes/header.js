@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import Image from 'next/image'
 import styles from '../../styles/case-page.module.css'
 import caseStudy from '../../pages/Case_Study_List/[id]'
+
 const Header = () => {
   const [headerSearchBar, setHeaderSearchBar] = useState(false)
   const [sideBarHandler, setSideBarHandler] = useState(false)
@@ -274,6 +275,7 @@ const Header = () => {
                                         src="/images/ror1.webp"
                                         alt="ROR - Icon"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -297,6 +299,7 @@ const Header = () => {
                                         src="/images/react_3.webp"
                                         alt="React Icon"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -325,6 +328,7 @@ const Header = () => {
                                         src="/icons/vuejs.webp"
                                         alt="Vuejs PNG Image"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -357,6 +361,7 @@ const Header = () => {
                                         src="/icons/node_2.webp"
                                         alt="Nodejs PNG Image"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -385,6 +390,7 @@ const Header = () => {
                                         src="/icons/laravel.webp"
                                         alt="Laravel PNG Image"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -414,6 +420,7 @@ const Header = () => {
                                         src="/images/shopify_icon.webp"
                                         alt="Shopify Icon"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -441,6 +448,7 @@ const Header = () => {
                                         src="/icons/wordpress.webp"
                                         alt="Wordpress Icon"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -613,6 +621,7 @@ const Header = () => {
                                         src="/icons/android_2.webp"
                                         alt="Android PNG Image"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -642,6 +651,7 @@ const Header = () => {
                                         src="/icons/ios.webp"
                                         alt="iOS PNG Image"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -671,6 +681,7 @@ const Header = () => {
                                         src="/icons/react_native.webp"
                                         alt="iOS PNG Image"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -699,6 +710,7 @@ const Header = () => {
                                         src="/images/flutter.webp"
                                         alt="Flutter PNG Image"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -859,6 +871,7 @@ const Header = () => {
                                         src="/icons/Unionautomation.svg"
                                         alt="automatin PNG Image"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -888,6 +901,7 @@ const Header = () => {
                                         src="/icons/VectorCICD.svg"
                                         alt="cicd PNG Image"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -915,6 +929,7 @@ const Header = () => {
                                         src="/img/cloud.webp"
                                         alt="3D Cloud"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -957,6 +972,7 @@ const Header = () => {
                                         src="/icons/content-management-system.webp"
                                         alt="3D Pencil"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -984,6 +1000,7 @@ const Header = () => {
                                         src="/icons/bag-front-color.webp"
                                         alt="3D Bag"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -1013,6 +1030,7 @@ const Header = () => {
                                         src="/icons/notebook-iso-color.webp"
                                         alt="3D Notebook"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -1042,6 +1060,7 @@ const Header = () => {
                                         src="/icons/customer-relationship-management.webp"
                                         alt="3D Customer"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -1070,6 +1089,7 @@ const Header = () => {
                                         src="/icons/digital-marketing.webp"
                                         alt="3D Speaker"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -1098,6 +1118,7 @@ const Header = () => {
                                         src="/icons/deployment-host-management.webp"
                                         alt="3D Deployment PNG"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -1126,6 +1147,7 @@ const Header = () => {
                                         src="/icons/strapi-frame.webp"
                                         alt="strapi PNG"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -1152,6 +1174,7 @@ const Header = () => {
                                         src="/icons/chatwoot.webp"
                                         alt="chatwoot PNG"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -1178,6 +1201,7 @@ const Header = () => {
                                         src="/icons/openai1.svg"
                                         alt="openAI icon svg"
                                         layout="fill"
+                                        priority={true}
                                       />
                                     </div>
                                   </div>
@@ -1313,6 +1337,7 @@ const Header = () => {
                                         alt="ROR - Icon"
                                         height={20}
                                         width={20}
+                                        priority={true}
                                         objectFit="contain"
                                       />
                                     </div>
@@ -1338,6 +1363,7 @@ const Header = () => {
                                         alt="React Icon"
                                         height={35}
                                         width={35}
+                                        priority={true}
                                         objectFit="cover"
                                       />
                                     </div>
@@ -1363,6 +1389,7 @@ const Header = () => {
                                         alt="Vuejs PNG Image"
                                         height={35}
                                         width={35}
+                                        priority={true}
                                         objectFit="cover"
                                       />
                                     </div>
@@ -1391,6 +1418,7 @@ const Header = () => {
                                         alt="Nodejs PNG Image"
                                         height={35}
                                         width={35}
+                                        priority={true}
                                         objectFit="cover"
                                       />
                                     </div>
@@ -1416,6 +1444,7 @@ const Header = () => {
                                         alt="Laravel PNG Image"
                                         height={35}
                                         width={35}
+                                        priority={true}
                                         objectFit="cover"
                                       />
                                     </div>

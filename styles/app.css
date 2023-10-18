@@ -2622,20 +2622,22 @@ body:not(.touch-device) .header__item[href]:hover:before {
   /* height: 78px; */
 }
 .header__head .icon {
-  margin-left: 11px;
+  margin-left: 9px;
   font-size: 8px;
   fill: #999fae;
   -webkit-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
+  margin-top: 4px;
 }
 .header__head2 .icon {
-  margin-left: 11px;
+  margin-left: 9px;
   font-size: 8px;
   fill: #999fae;
   -webkit-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
+  margin-top: 4px;
 }
 
 .header__head:before {
