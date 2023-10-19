@@ -319,23 +319,6 @@
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-.outer_circle {
-  height: 100px;
-  width: 100px;
-  border-radius: 83px;
-  background-color: #747278;
-  position: relative;
-  left: 95rem;
-  bottom: 3rem;
-}
-.link a {
-  color: var(--bs-body-color);
-  transition: text-decoration 0.2s;
-  text-transform: none;
-}
-.link a:hover {
-  text-decoration: underline blue; /* Change the underline color to blue on hover */
-}
 @media only screen and (max-width: 1128px) {
   .companyface {
     right: -17.5rem;
