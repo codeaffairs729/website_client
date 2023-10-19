@@ -1285,7 +1285,7 @@
 /* media query */
 .Aiconatinerright {
   width: 50%;
-  margin-left: 61px;
+  margin-left: 46px;
 }
 .Aiservicebodyleft {
   width: 50%;
@@ -1408,7 +1408,7 @@
     margin-left: 0px;
   }
   .solutiontext {
-    width: 96%;
+    width: 100%;
   }
   .AIservicebody {
     gap: 0px;
@@ -1795,17 +1795,17 @@
   }
   .Aiconatinerright {
     width: 410px;
-    margin-left: 3px;
+    margin-left: 0px;
   }
   .Aicontainerleftttext {
     margin-left: 21px;
-    width: 320px;
+    width: 328px;
   }
   .mainAIcontainer {
     margin-top: 10px;
   }
   .Aiservicebodyleft {
-    padding-left: 2px;
+    padding-left: 0px;
   }
   .AIimage {
     margin-left: 35px;

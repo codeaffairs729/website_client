@@ -235,7 +235,7 @@
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  animation: 500s linear 0s infinite normal none running slide;
+  animation: 1000s linear 0s infinite normal none running slide;
 }
 @keyframes slide {
   0% {
@@ -537,4 +537,13 @@
   .image_height {
     width: 100%;
   }
+}
+.link a {
+  color: var(--bs-body-color);
+  text-transform: none;
+  transition: text-decoration 0.2s;
+}
+
+.link a:hover {
+  text-decoration: underline rgb(42, 42, 129);
 }

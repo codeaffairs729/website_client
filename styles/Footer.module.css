@@ -123,6 +123,17 @@
   line-height: 24px;
   word-spacing: 3px;
 }
+.address_text2 {
+  color: white;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  word-spacing: 3px;
+  border-left: 1px solid #16161a;
+  padding-left: 2rem;
+}
 .social_links_container {
   display: flex;
   flex-direction: row;
@@ -315,5 +326,11 @@
   }
   .add {
     flex-direction: column;
+  }
+  .address_text2 {
+    border-left: none;
+    border-top: 1px solid #16161a;
+    padding-top: 2rem;
+    padding-left: 0rem;
   }
 }
