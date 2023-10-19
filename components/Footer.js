@@ -146,12 +146,12 @@ const Footer = () => {
                   <br />
                   Canada
                 </div>
-                <div className={` ${FooterCss.address_text}  `}>
+                <div className={` ${FooterCss.address_text2}  `}>
                   The Atrium Quarkcity, A-45
                   <br />
-                  Phase 8B, Industrial Area
+                  Phase 8B, Industrial Area SAS-
                   <br />
-                  SAS Nagar, PB 160059, India
+                  Nagar, Punjab -160059, India
                 </div>
               </div>
 

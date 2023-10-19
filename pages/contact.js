@@ -6,9 +6,9 @@ import 'react-toastify/dist/ReactToastify.min.css'
 import GenericModal from '../components/GenericModal'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
-const ChatwootWidget = dynamic(() => import('../components/ChatwootWidget'), {
-  ssr: false,
-})
+// const ChatwootWidget = dynamic(() => import('../components/ChatwootWidget'), {
+//   ssr: false,
+// })
 
 const Contact = () => {
   const [nameIcon, setNameIcon] = useState(false)
@@ -619,7 +619,7 @@ const Contact = () => {
           </div>
         }
       />
-      <ChatwootWidget />
+      {/* <ChatwootWidget /> */}
     </>
   )
 }
