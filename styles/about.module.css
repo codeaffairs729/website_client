@@ -538,3 +538,12 @@
     width: 100%;
   }
 }
+.link a {
+  color: var(--bs-body-color);
+  text-transform: none;
+  transition: text-decoration 0.2s;
+}
+
+.link a:hover {
+  text-decoration: underline rgb(42, 42, 129);
+}
