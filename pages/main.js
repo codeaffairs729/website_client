@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 // import Header from './includes/header'
 import Typewriter from 'typewriter-effect'
 import Head from 'next/head'
@@ -18,7 +18,7 @@ import ShimmerEffect from '../components/ShimmerHome'
 const Main = () => {
   const [show, SetShow] = useState(true)
 
-  useState(() => {
+  useEffect(() => {
     setTimeout(() => {
       SetShow(false)
     }, 500)
@@ -54,7 +54,12 @@ const Main = () => {
             ></meta>
           </Head>
           <div className="main__center center">
-            <div className="main-big-blue-circle">
+            <div
+              className="main-big-blue-circle"
+              data-aos="animation-translate-y"
+              data-aos-delay="50"
+              // data-aos-offset="300"
+            >
               <Image
                 src="/icons/Ellipse-blue-full.svg"
                 alt=""
@@ -67,14 +72,24 @@ const Main = () => {
                 <div className="row">
                   <div className="col-12 col-md-7">
                     <div className="">
-                      <div className="main__title title title_big" data-aos>
+                      <div
+                        className="main__title title title_big"
+                        data-aos="animation-translate-y"
+                        data-aos-delay="200"
+                        // data-aos-offset="300"
+                      >
                         <span className="title__box dev-title mb-3"></span>
                         <h1 className="home-header">
                           Simplifying Processes
                           <br /> Through Scalable IT Solutions
                         </h1>
                       </div>
-                      <div className="main__info info ms-3 main-info">
+                      <div
+                        className="main__info info ms-3 main-info"
+                        data-aos="animation-translate-y"
+                        data-aos-delay="200"
+                        // data-aos-offset="300"
+                      >
                         We have extensive experience in developing
                         high-performance, scalable software solutions using
                         full-stack technologies that drive business
@@ -83,12 +98,18 @@ const Main = () => {
                       <Rating />
                       <div
                         className="main__scroll ms-3"
-                        data-aos="animation-scale-y"
-                        data-aos-delay="650"
+                        data-aos="animation-translate-y"
+                        data-aos-delay="200"
+                        // data-aos-offset="300"
                       ></div>
                     </div>
                   </div>
-                  <div className="col-12 col-lg-5 col-md-5 d-flex align-items-center justify-content-center desktop_image">
+                  <div
+                    className="col-12 col-lg-5 col-md-5 d-flex align-items-center justify-content-center desktop_image"
+                    data-aos="animation-translate-y"
+                    data-aos-delay="200"
+                    // data-aos-offset="300"
+                  >
                     <Image
                       src="/images/Desktop Asset Group.png"
                       alt="3D Desktop Assets Group"
@@ -101,12 +122,14 @@ const Main = () => {
               </div>
             </div>
 
-            <div className="main__circles">
+            <div
+              className="main__circles"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-offset="10"
+            >
               <div className="main__circle"></div>
-              <div
-                className="main__circle js-rellax"
-                data-rellax-speed="2"
-              ></div>
+              <div className="main__circle js-rellax"></div>
               {/* <div className="main__circle js-rellax" data-rellax-speed="1"></div> */}
               {/* <div className="main__circle js-rellax" data-rellax-speed="2"></div> */}
             </div>

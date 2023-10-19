@@ -93,11 +93,20 @@ export default function BlogSection({ data, linktext, heading }) {
   const randomBlogs = shuffledData.slice(0, 3)
 
   return (
-    <div className="container blog-container">
+    <div
+      className="container blog-container"
+      data-aos="zoom-in"
+      data-aos-delay="200"
+    >
       <h2>{heading}</h2>
       <div className={`row blog-list ${styles.blog_list}`}>
         {randomBlogs.map((e, i) => (
-          <div className={`col-12 col-lg-3 ${styles.customcol}`} key={i}>
+          <div
+            className={`col-12 col-lg-3 ${styles.customcol}`}
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            key={i}
+          >
             <div className={`card   ${styles.customcard}`}>
               <Link href={`/blogs/${e.slug}`} className="">
                 <div
@@ -137,7 +146,12 @@ export default function BlogSection({ data, linktext, heading }) {
           </div>
         ))}
       </div>
-      <div className={`cursor_pointer ${styles.text_end}`}>
+      <div
+        className={`cursor_pointer ${styles.text_end}`}
+        data-aos="fade"
+        data-aos-delay="200"
+        data-aos-offset="10"
+      >
         <Link href="/user-blog-list">
           <a className={styles.design}>
             {linktext}

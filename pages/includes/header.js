@@ -126,6 +126,17 @@ const Header = () => {
     verticalSwiping: true,
     autoplaySpeed: 3000,
   }
+
+  const [isHovered, setIsHovered] = useState(false)
+
+  const handleMouseEnter = () => {
+    setIsHovered(true)
+  }
+
+  const handleMouseLeave = () => {
+    setIsHovered(false)
+  }
+
   return (
     <>
       <header className={classes}>
@@ -1288,12 +1299,7 @@ const Header = () => {
                       <use xlinkHref="/img/sprite.svg#icon-arrow-down"></use>
                     </svg>
                   </div>
-                  {/* </Link> */}
-                  <div
-                    className={`header__body2 ${caseMenu && ' text-start'}`}
-
-                    // style={{opacity:"1"}}
-                  >
+                  <div className={`header__body2 ${caseMenu && ' text-start'}`}>
                     <div
                       className=" header-center center header-dropdown-body"
                       style={{ display: `${visible2}` }}
@@ -1334,11 +1340,11 @@ const Header = () => {
                                     <div className="header-solutions-icon">
                                       <Image
                                         src="/blogs/mg_glass2.png"
-                                        alt="ROR - Icon"
-                                        height={20}
-                                        width={20}
+                                        alt="search icon"
+                                        height={35}
+                                        width={35}
                                         priority={true}
-                                        objectFit="contain"
+                                        objectFit="cover"
                                       />
                                     </div>
                                   </div>
@@ -1360,7 +1366,7 @@ const Header = () => {
                                     <div className="header-solutions-icon">
                                       <Image
                                         src="/blogs/mg_glass2.png"
-                                        alt="React Icon"
+                                        alt="search icon"
                                         height={35}
                                         width={35}
                                         priority={true}
@@ -1386,7 +1392,7 @@ const Header = () => {
                                     <div className="header-solutions-icon">
                                       <Image
                                         src="/blogs/mg_glass2.png"
-                                        alt="Vuejs PNG Image"
+                                        alt="search icon"
                                         height={35}
                                         width={35}
                                         priority={true}
@@ -1415,7 +1421,7 @@ const Header = () => {
                                     <div className="header-solutions-icon">
                                       <Image
                                         src="/blogs/mg_glass2.png"
-                                        alt="Nodejs PNG Image"
+                                        alt="search icon"
                                         height={35}
                                         width={35}
                                         priority={true}
@@ -1441,7 +1447,7 @@ const Header = () => {
                                     <div className="header-solutions-icon">
                                       <Image
                                         src="/blogs/mg_glass2.png"
-                                        alt="Laravel PNG Image"
+                                        alt="search icon"
                                         height={35}
                                         width={35}
                                         priority={true}
@@ -1472,6 +1478,7 @@ const Header = () => {
                       alt="3D Computer System"
                       width={350}
                       height={308}
+                      priority={true}
                     />
                   </div>
                 </div>

@@ -32,15 +32,21 @@ const FeatureList = () => {
           alt=""
           width={56}
           height={56}
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          data-aos-offset="10"
         />
       </div>
+
       <div className="row align-items-center  gx-5 feature-overflow-hiiden">
         <div className="col-md-12 col-lg-6">
-          <div className="feature-small-text">
+          <div className="feature-small-text" data-aos="animation-scale-y">
             Definite Process, Remarkable Outcomes
           </div>
-          <h2 className="mb-4">Leading The Way In Crafting New Innovations</h2>
-          <p className="mb-4">
+          <h2 className="mb-4" data-aos="animation-scale-y">
+            Leading The Way In Crafting New Innovations
+          </h2>
+          <p className="mb-4" data-aos="animation-scale-y">
             We understand that your goals are unique and believe that business
             advice and solutions should be tailored accordingly. Allow us to
             assist you with top-notch software development solutions.
@@ -52,6 +58,7 @@ const FeatureList = () => {
               <div
                 className="feature-slide-row d-flex align-items-center py-3"
                 key={i}
+                data-aos="animation-scale-y"
               >
                 <div className="logo-container">
                   <Image src={e.img} alt="" width={56} height={56} />
@@ -71,6 +78,9 @@ const FeatureList = () => {
           alt=""
           width={56}
           height={56}
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          data-aos-offset="10"
         />
       </div>
     </div>

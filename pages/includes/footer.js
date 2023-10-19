@@ -108,13 +108,23 @@ const FooterNew = () => {
                 </span>
                 <span className="footer__link footer-link-contact d-flex">
                   <span className="mr-2">
-                    <Image src="/logo/india_logo.svg" width={32} height={24} />
+                    <Image
+                      src="/logo/india_logo.svg"
+                      width={32}
+                      height={24}
+                      priority={true}
+                    />
                   </span>
                   <span>&nbsp;&nbsp;+91 82889 83623</span>
                 </span>
                 <span className="footer__link footer-link-contact d-flex">
                   <span>
-                    <Image src="/logo/US_logo.svg" width={32} height={24} />
+                    <Image
+                      src="/logo/US_logo.svg"
+                      width={32}
+                      height={24}
+                      priority={true}
+                    />
                   </span>
                   <span>&nbsp;&nbsp;+1 7606839821</span>
                 </span>
@@ -164,6 +174,7 @@ const FooterNew = () => {
                           alt="ROR - PNG Icon"
                           width={20}
                           height={20}
+                          priority={true}
                         />
                       </div>
                       <div className="col-lg-8 col-md-10 col-sm-10 col-xs-10 col-10">
@@ -187,6 +198,7 @@ const FooterNew = () => {
                           alt="Nodejs PNG Image"
                           width={25}
                           height={25}
+                          priority={true}
                         />
                       </div>
                       <div className="col-lg-8 col-md-10 col-sm-10 col-xs-10 col-10">
@@ -209,6 +221,7 @@ const FooterNew = () => {
                           alt="Reactjs Icon"
                           width={25}
                           height={25}
+                          priority={true}
                         />
                       </div>
                       <div className="col-lg-8 col-md-10 col-sm-10 col-xs-10 col-10">
@@ -232,6 +245,7 @@ const FooterNew = () => {
                           alt="Laravel Icon"
                           width={25}
                           height={25}
+                          priority={true}
                         />
                       </div>
                       <div className="col-lg-8 col-md-10 col-sm-10 col-xs-10 col-10">
@@ -255,6 +269,7 @@ const FooterNew = () => {
                           alt="Reactjs Icon"
                           width={25}
                           height={25}
+                          priority={true}
                         />
                       </div>
                       <div className="col-lg-8 col-md-10 col-sm-10 col-xs-10 col-10">
@@ -277,6 +292,7 @@ const FooterNew = () => {
                           alt=""
                           width={25}
                           height={25}
+                          priority={true}
                         />
                       </div>
                       <div className="col-lg-8 col-md-10 col-sm-10 col-xs-10 col-10">
@@ -327,6 +343,7 @@ const FooterNew = () => {
                       alt="3D Facebook Icon"
                       height={35}
                       width={35}
+                      priority={true}
                     />
                   </a>
                 </Link>
@@ -342,6 +359,7 @@ const FooterNew = () => {
                       alt="3D Twitter Icon"
                       height={35}
                       width={35}
+                      priority={true}
                     />
                     {/* <Image src="/images/Twitter3d.webp" alt="3D Twitter Icon" /> */}
                   </a>
@@ -358,6 +376,7 @@ const FooterNew = () => {
                       alt="3D LinkedIn Icon"
                       height={35}
                       width={35}
+                      priority={true}
                     />
                   </a>
                 </Link>
@@ -373,6 +392,7 @@ const FooterNew = () => {
                       alt="3D Instagram Icon"
                       height={35}
                       width={35}
+                      priority={true}
                     />
                   </a>
                 </Link>

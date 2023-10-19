@@ -60,7 +60,9 @@ const Design = () => {
       <div id="portfolio" className="design">
         <div className="design__center center">
           <div className="design__body">
-            <h2>We Build Delightful Experiences.</h2>
+            <h2 data-aos="animation-translate-y" data-aos-delay="200">
+              We Build Delightful Experiences.
+            </h2>
             {/* <a className="design__scroll" href="#">
                             <div className="design__icon">
                                 <img className="design__pic" src="img/scroll.webp" alt="" />
@@ -69,7 +71,12 @@ const Design = () => {
                         </a> */}
             <div className="design__container">
               <div className="d-flex justify-content-end">
-                <div className="design-slider-btn">
+                <div
+                  className="design-slider-btn"
+                  data-aos="zoom-in"
+                  data-aos-delay="200"
+                  data-aos-offset="10"
+                >
                   <SliderButton gotoNext={gotoNext} gotoPrev={gotoPrev} />
                 </div>
               </div>
@@ -81,7 +88,7 @@ const Design = () => {
                 <div
                   className="design-slide-pink"
                   data-aos="animation-translate-y"
-                  data-aos-delay="0"
+                  data-aos-delay="200"
                 >
                   <div className="design__view">
                     <Image
@@ -156,7 +163,7 @@ const Design = () => {
                 <div
                   className="design-slide-green"
                   data-aos="animation-translate-y"
-                  data-aos-delay="400"
+                  data-aos-delay="200"
                 >
                   <div className="design__view">
                     <Image
@@ -194,6 +201,7 @@ const Design = () => {
                 <div
                   className="design-slide-pink"
                   data-aos="animation-translate-y"
+                  data-aos-delay="200"
                 >
                   <div className="design__view">
                     <Image
@@ -233,6 +241,7 @@ const Design = () => {
                 <div
                   className="design-slide-blue"
                   data-aos="animation-translate-y"
+                  data-aos-delay="200"
                 >
                   <div className="design__view design-view-buyma-bg">
                     <Image
@@ -266,7 +275,7 @@ const Design = () => {
                 <div
                   className="design-slide-green"
                   data-aos="animation-translate-y"
-                  data-aos-delay="0"
+                  data-aos-delay="200"
                 >
                   <div className="design__view">
                     <Image
@@ -301,6 +310,7 @@ const Design = () => {
                 <div
                   className="design-slide-pink"
                   data-aos="animation-translate-y"
+                  data-aos-delay="200"
                 >
                   <div className="design__view">
                     <Image
@@ -335,6 +345,7 @@ const Design = () => {
                 <div
                   className="design-slide-blue"
                   data-aos="animation-translate-y"
+                  data-aos-delay="200"
                 >
                   <div className="design__view">
                     <Image
@@ -367,7 +378,12 @@ const Design = () => {
                   </div>
                 </div>
               </Slider>
-              <div className="d-flex justify-content-start">
+              <div
+                className="d-flex justify-content-start"
+                data-aos="fade"
+                data-aos-delay="150"
+                data-aos-offset="70"
+              >
                 <SliderButton gotoNext={gotoNext} gotoPrev={gotoPrev} />
               </div>
             </div>

@@ -143,10 +143,18 @@ const Industries = () => {
             className={`col-lg-7 col-md-12 col-sm-12 ${styles.left_container}`}
           >
             <div className={`${styles.left_upper_container}`}>
-              <div className={`${styles.left_text_second}`}>
+              <div
+                className={`${styles.left_text_second}`}
+                data-aos="fade-right"
+                data-aos-delay="150"
+              >
                 Industries <br /> We Serve{' '}
               </div>
-              <div className={`${styles.left_text_third}`}>
+              <div
+                className={`${styles.left_text_third}`}
+                data-aos="fade-right"
+                data-aos-delay="150"
+              >
                 We provide innovative and valuable digital solutions that cater
                 to a wide range of business objectives and niches.{' '}
               </div>
@@ -160,6 +168,8 @@ const Industries = () => {
                       className={`col ${styles.lower_grid_container} cursor_pointer`}
                       key={item.title}
                       onMouseEnter={() => handleMouseEnter(item)}
+                      data-aos="fade-right"
+                      data-aos-delay="150"
                       // onMouseLeave={() => handleMouseLeave()}
                     >
                       <div

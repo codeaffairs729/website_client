@@ -7,13 +7,28 @@ const Aisolutions = () => {
     <>
       <div className={` feature-list container ${hireService.mainAIcontainer}`}>
         {/* <div className={hireService.AIcontainer}> */}
-        <div className={hireService.AItopcircle}></div>
-        <div className={hireService.hireh6}>{techTitle}</div>
+        <div
+          className={hireService.AItopcircle}
+          data-aos="zoom-in"
+          data-aos-delay="150"
+          data-aos-offset="10"
+        ></div>
+        <div
+          className={hireService.hireh6}
+          data-aos="fade-right"
+          data-aos-delay="150"
+        >
+          {techTitle}
+        </div>
         <div
           className={`${hireService.AIservicebody} ${hireService.adjusAIservicebody}`}
         >
           <div className={hireService.Aiservicebodyleft}>
-            <div className={hireService.solutiontext}>
+            <div
+              className={hireService.solutiontext}
+              data-aos="fade-right"
+              data-aos-delay="150"
+            >
               Experience the fusion of cutting-edge technology and visionary
               thinking as we harness the power of Artificial Intelligence (AI).
               Our expertise lies in crafting seamless solutions that drive
@@ -23,7 +38,9 @@ const Aisolutions = () => {
             </div>
             <div className={hireService.Aicontainerleftttext}>
               <ul
-                className={`${hireService.AIlisticon} ${hireService.hire_list_items_services} `}
+                className={`${hireService.AIlisticon} ${hireService.hire_list_items_services}`}
+                data-aos="fade-right"
+                data-aos-delay="150"
               >
                 <li className={hireService.marginebottom16px}>
                   <p className={hireService.marginleft26px}>
@@ -52,12 +69,19 @@ const Aisolutions = () => {
                 </li>
               </ul>
             </div>
-            <div className={hireService.AIbottomcircle2} />
+            <div
+              className={hireService.AIbottomcircle2}
+              data-aos="zoom-in"
+              data-aos-delay="150"
+              data-aos-offset="80"
+            />
           </div>
           <div className={hireService.Aiconatinerright}>
             <div className={hireService.Aicontainerrighttext}>
               <ul
                 className={`${hireService.AIlisticon} ${hireService.hire_list_items_services} `}
+                data-aos="fade-left"
+                data-aos-delay="150"
               >
                 <li className={hireService.marginebottom16px}>
                   <p className={hireService.marginleft26px}>
@@ -87,7 +111,11 @@ const Aisolutions = () => {
               </ul>
             </div>
 
-            <div className={hireService.AIimage}>
+            <div
+              className={hireService.AIimage}
+              data-aos="fade-left"
+              data-aos-delay="150"
+            >
               <Image
                 src="/dev_ops/AItool_pic.webp"
                 alt="AIimage"

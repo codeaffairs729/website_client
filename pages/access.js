@@ -398,7 +398,7 @@ const Access = () => {
               src="images/rackspace.webp"
               alt="Rackspace - Logo"
             /> */}
-            <div className="access-google-cloud access-rackspace-cloud">
+            <div className="access-google-cloud access-rackspace-cloud ">
               <Image
                 src="/images/rackspace.webp"
                 alt="Rackspace - Logo"
