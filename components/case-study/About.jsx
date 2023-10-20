@@ -11,7 +11,7 @@ const About = ({ Casedata }) => {
     <>
       <section>
         <div className="about-section">
-          <div className={style.top_circle}>
+          {/* <div className={style.top_circle}>
             <Image
               src="/case_study/circle.png"
               alt="blogimage"
@@ -19,7 +19,7 @@ const About = ({ Casedata }) => {
               width={120}
               objectFit="contain"
             />
-          </div>
+          </div> */}
           <div className={style.about_section}>
             <div className={style.challengeimg}>
               {Mobile_divers ? (

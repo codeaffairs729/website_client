@@ -53,7 +53,7 @@ const Video = ({ Casedata }) => {
               </div>
               <div className={styles.clock}>
                 <Image
-                  src="/blogs/clock2.png"
+                  src="/blogs/Clock2.png"
                   alt="blognotebook"
                   height={100}
                   width={154.72}
