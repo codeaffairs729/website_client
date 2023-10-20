@@ -4,6 +4,7 @@
 }
 .casestudypage {
   position: relative;
+  width: 54.333333%;
 }
 .p {
   font-size: 16px;
@@ -344,7 +345,7 @@
   overflow: hidden;
 }
 .para {
-  width: 28rem;
+  width: 26rem;
 }
 .cardtitle {
   font-weight: normal;
@@ -555,6 +556,12 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.aboutus h2 {
+  font-family: 'DM Sans';
+  font-weight: 500 !important;
+  color: #292930;
+  font-size: 59px;
+}
 .bloglistdesc {
   height: 105px;
 }
@@ -575,14 +582,14 @@
 }
 .glass {
   position: absolute;
-  left: -3rem;
-  top: 19rem;
-  width: 161px;
+  left: -2rem;
+  top: 18rem;
+  width: 173px;
 }
 .clock {
   position: absolute;
-  right: -2rem;
-  top: 21rem;
+  right: 0rem;
+  top: 20rem;
   height: 100px;
   width: 154.72px;
 }
@@ -652,7 +659,18 @@ height: 100%;
 }
 .singleblogrightcontainer {
 }
-
+.ml_5 {
+  border-radius: 48px;
+  background: #f9fdff;
+  box-shadow: 10px 2px 20px 0px #fff inset,
+    -2px -10px 20px 0px rgba(147, 185, 221, 0.4) inset,
+    40px 60px 80px 0px rgba(68, 111, 195, 0.15);
+  width: 585px;
+  height: 389px;
+  padding: 10px;
+  padding-left: 18px;
+  padding-top: 17px;
+}
 /* Change styles for cancel button and delete button on extra small screens */
 @media screen and (max-width: 300px) {
   .cancelbtn,
@@ -716,16 +734,17 @@ height: 100%;
 @media screen and (max-width: 1365px) {
   .casestudypage {
     top: 0rem;
+    left: 2rem;
   }
   .clock {
-    right: -2rem;
+    right: -0rem;
   }
   .cube {
     right: -5rem;
   }
   .glass {
-    left: -3rem;
-    top: 20rem;
+    left: -1rem;
+    top: 19rem;
     width: 134px;
   }
   .casestudycontainer {
@@ -750,6 +769,9 @@ height: 100%;
     top: 3rem;
     left: 6rem;
     width: 40%;
+  }
+  .ml_5 {
+    height: 302px;
   }
 }
 @media screen and (max-width: 1128px) {
@@ -806,9 +828,6 @@ height: 100%;
     padding: 20px;
   }
 }
-.ml_5 {
-  margin-left: 0rem;
-}
 @media only screen and (max-width: 991px) {
   .customcol {
     width: 75%;
@@ -840,8 +859,8 @@ height: 100%;
     width: 34%;
   }
   .ml_5 {
-    margin-left: 2.5rem;
-    width: 100%;
+    width: 84%;
+    height: 392px;
   }
   .blogdiv {
     left: 11rem;
@@ -868,18 +887,18 @@ height: 100%;
     top: 5rem;
   }
   .glass {
-    top: 21rem;
-    width: 110px;
-    left: 1rem;
+    top: 19rem;
+    width: 142px;
+    left: -2rem;
   }
   .cube {
     right: -2rem;
     width: 98px;
   }
   .clock {
-    right: -1rem;
-    top: 21rem;
-    width: 147px;
+    right: 7rem;
+    top: 20rem;
+    width: 154px;
   }
   .blogcontainer {
     left: 5.5rem;
@@ -903,6 +922,10 @@ height: 100%;
   .cardtitle {
     width: 37%;
     margin: 0rem;
+  }
+  .casestudypage {
+    width: 100%;
+    left: 0rem;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -957,6 +980,7 @@ height: 100%;
   .ml_5 {
     margin: 0rem;
     width: 100%;
+    height: 237px;
   }
   .blogcontainerleft {
     width: 100%;
@@ -1047,7 +1071,7 @@ height: 100%;
     line-height: 38px;
   }
   .para {
-    width: 24rem;
+    width: 22rem;
   }
 }
 .hirecontainer {
