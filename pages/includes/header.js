@@ -30,9 +30,10 @@ const Header = () => {
 
   const handleSidebar = (e) => {
     sideBarHandler ? setSideBarHandler(false) : setSideBarHandler(true)
+    setVisible2('none')
+    setVisible('none')
 
     header.parentElement.style.overflowY = 'unset'
-    setVisible('none')
   }
 
   const toggleSidebarInternalMenu = () => {
@@ -227,7 +228,7 @@ const Header = () => {
                     className={`btn-outline-danger cursor_pointer header__head ${
                       visible === 'flex' ? 'service-underline' : ''
                     } ${serviceMenu ? 'service-menu-head  nav-css' : ''}`}
-                    onClick={toggleSidebarInternalMenu}
+                    // onClick={toggleSidebarInternalMenu}
                     onMouseOver={handleOnShowMenu}
                   >
                     Services
@@ -237,241 +238,246 @@ const Header = () => {
                     >
                       <use xlinkHref="/img/sprite.svg#icon-arrow-down"></use>
                     </svg>
-                  </div>
-                  {/* </Link> */}
-                  <div
-                    className={`header__body ${
-                      serviceMenu && 'service-menu text-start'
-                    }`}
-
-                    // style={{opacity:"1"}}
-                  >
+                    {/* </div> */}
+                    {/* </Link> */}
                     <div
-                      className="header__center center header-dropdown-body"
+                      className={`header__body service-menu-visible ${
+                        serviceMenu && 'service-menu text-start'
+                      }`}
                       style={{ display: `${visible}` }}
+                      onMouseLeave={handleOnLeave}
+
+                      // style={{opacity:"1"}}
                     >
                       <div
-                        className="service-menu-visible header__row row"
-                        style={{ display: `${visible}` }}
-                        onMouseLeave={handleOnLeave}
+                      // className="header__center center header-dropdown-body"
+                      // style={{ display: `${visible}` }}
                       >
-                        <div className="col-lg-4 col-md-4 col-sm-4">
-                          <div
-                            className={`header__category cursor_pointer ${
-                              serviceMenu && 'service-menu-header-item'
-                            }`}
-                          >
-                            <Link
-                              href="/services/web-solutions"
-                              legacyBehavior={true}
+                        <div
+                          // className="service-menu-visible header__row row"
+                          className={`header__row row ${styles.serviceStudy}`}
+                          // style={{ display: `${visible}` }}
+                          // onMouseLeave={handleOnLeave}
+                        >
+                          <div className="col-lg-4 col-md-4 col-sm-4">
+                            <div
+                              className={`header__category cursor_pointer ${
+                                serviceMenu && 'service-menu-header-item'
+                              }`}
                             >
-                              <div onClick={handleSidebar}>Web Solutions</div>
-                            </Link>
-                          </div>
-                          <div className="row">
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/web-solutions/#ruby-rails">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                              <Link
+                                href="/services/web-solutions"
+                                legacyBehavior={true}
+                              >
+                                <div onClick={handleSidebar}>Web Solutions</div>
+                              </Link>
+                            </div>
+                            <div className="row">
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/web-solutions/#ruby-rails">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                   className="header-solutions-icon"
                                   src="/images/ror1.webp"
                                   alt="ROR - Icon"
                                 /> */}
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/images/ror1.webp"
-                                        alt="ROR - Icon"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/images/ror1.webp"
+                                          alt="ROR - Icon"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        Ruby on Rails Development
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      Ruby on Rails Development
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/reactjs-nextjs">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/images/react_3.webp"
+                                          alt="React Icon"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        React / NextJs Development
+                                      </div>
                                     </div>
                                   </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/reactjs-nextjs">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/images/react_3.webp"
-                                        alt="React Icon"
-                                        layout="fill"
-                                        priority={true}
-                                      />
-                                    </div>
-                                  </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      React / NextJs Development
-                                    </div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/vuejs-nuxtjs">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/vuejs-nuxtjs">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                   className="header-solutions-icon"
                                   src="/images/vuejs.webp"
                                   alt="Vuejs PNG Image"
                                 /> */}
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/icons/vuejs.webp"
-                                        alt="Vuejs PNG Image"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/icons/vuejs.webp"
+                                          alt="Vuejs PNG Image"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        VueJs / NuxtJs Development
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      VueJs / NuxtJs Development
-                                    </div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div
-                              className="col-lg-12 header-solutions-outer"
-                              style={{ position: 'relative' }}
-                            >
-                              <Link href="/services/web-solutions/#nodejs">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                                </Link>
+                              </div>
+                              <div
+                                className="col-lg-12 header-solutions-outer"
+                                style={{ position: 'relative' }}
+                              >
+                                <Link href="/services/web-solutions/#nodejs">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                   className="header-solutions-icon"
                                   src="/images/node_2.webp"
                                   alt="Nodejs PNG Image"
                                 /> */}
 
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/icons/node_2.webp"
-                                        alt="Nodejs PNG Image"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/icons/node_2.webp"
+                                          alt="Nodejs PNG Image"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        NodeJs Development
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      NodeJs Development
-                                    </div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/web-solutions/#laravel">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/web-solutions/#laravel">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                   className="header-solutions-icon"
                                   src="/images/laravel.webp"
                                   alt="Laravel PNG Image"
                                 /> */}
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/icons/laravel.webp"
-                                        alt="Laravel PNG Image"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/icons/laravel.webp"
+                                          alt="Laravel PNG Image"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        Laravel Development
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      Laravel Development
-                                    </div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/web-solutions/#shopify">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/web-solutions/#shopify">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                   className="header-solutions-icon"
                                   src="/images/shopify_icon.webp"
                                   alt="Shopify Icon"
                                 /> */}
 
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/images/shopify_icon.webp"
-                                        alt="Shopify Icon"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/images/shopify_icon.webp"
+                                          alt="Shopify Icon"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        Shopify
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">Shopify</div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/web-solutions/#wordpress">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/web-solutions/#wordpress">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                   className="header-solutions-icon"
                                   src="/icons/wordpress.webp"
                                   alt="Wordpress Icon"
                                 /> */}
 
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/icons/wordpress.webp"
-                                        alt="Wordpress Icon"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/icons/wordpress.webp"
+                                          alt="Wordpress Icon"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        Wordpress
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      Wordpress
-                                    </div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            {/* <Slider {...servicesSettings}>
+                                </Link>
+                              </div>
+                              {/* <Slider {...servicesSettings}>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
@@ -523,7 +529,7 @@ const Header = () => {
                                                             </div>
                                                         </div> */}
 
-                            {/* <div className="col-lg-12 header-solutions-outer" >
+                              {/* <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="/images/computer-front-color.webp" alt="" />
@@ -593,145 +599,147 @@ const Header = () => {
                                                                 </div>
                                                             </div>
                                                         </div> */}
-                            {/* </Slider> */}
+                              {/* </Slider> */}
+                            </div>
                           </div>
-                        </div>
-                        <div className="col-lg-4 col-md-4 col-sm-4">
-                          <div
-                            className={`header__category cursor_pointer ${
-                              serviceMenu
-                                ? 'service-menu-header-item service-menu-header-category'
-                                : ''
-                            }`}
-                          >
-                            <Link
-                              href="/services/mobile-solutions"
-                              legacyBehavior={true}
+                          <div className="col-lg-4 col-md-4 col-sm-4">
+                            <div
+                              className={`header__category cursor_pointer ${
+                                serviceMenu
+                                  ? 'service-menu-header-item service-menu-header-category'
+                                  : ''
+                              }`}
                             >
-                              <div onClick={handleSidebar}>
-                                Mobile Solutions
-                              </div>
-                            </Link>
-                          </div>
-                          <div className="row ">
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/mobile-solutions/#android">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                              <Link
+                                href="/services/mobile-solutions"
+                                legacyBehavior={true}
+                              >
+                                <div onClick={handleSidebar}>
+                                  Mobile Solutions
+                                </div>
+                              </Link>
+                            </div>
+                            <div className="row ">
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/mobile-solutions/#android">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                   className="header-solutions-icon"
                                   src="/icons/android_2.webp"
                                   alt="Android PNG Image"
                                 /> */}
 
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/icons/android_2.webp"
-                                        alt="Android PNG Image"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/icons/android_2.webp"
+                                          alt="Android PNG Image"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        Android App Development
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      Android App Development
-                                    </div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/mobile-solutions/#ios">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/mobile-solutions/#ios">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                   className="header-solutions-icon"
                                   src="/images/ios.webp"
                                   alt="iOS PNG Image"
                                 /> */}
 
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/icons/ios.webp"
-                                        alt="iOS PNG Image"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/icons/ios.webp"
+                                          alt="iOS PNG Image"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        IOS App Development
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      IOS App Development
-                                    </div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/mobile-solutions/#mobile_react">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/mobile-solutions/#mobile_react">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                   className="header-solutions-icon"
                                   src="/images/react_native.webp"
                                   alt="React Native PNG Image"
                                 /> */}
 
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/icons/react_native.webp"
-                                        alt="iOS PNG Image"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/icons/react_native.webp"
+                                          alt="iOS PNG Image"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        React Native Development
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      React Native Development
-                                    </div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/mobile-solutions/#flutter">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/mobile-solutions/#flutter">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                   className="header-solutions-icon"
                                   src="/images/flutter.webp"
                                   alt="Flutter PNG Image"
                                 /> */}
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/images/flutter.webp"
-                                        alt="Flutter PNG Image"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/images/flutter.webp"
+                                          alt="Flutter PNG Image"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        Flutter
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">Flutter</div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            {/* <div className="col-lg-12 header-solutions-outer" >
+                                </Link>
+                              </div>
+                              {/* <div className="col-lg-12 header-solutions-outer" >
                                                         <div className="row" >
                                                             <div className=".col-xl-2 col-lg-1 col-md-2 col-sm-2 d-flex justify-content-center align-items-center" >
                                                                 <img className="header-solutions-icon" src="icons/ionic.webp" alt="" />
@@ -741,7 +749,7 @@ const Header = () => {
                                                             </div>
                                                         </div>
                                                     </div> */}
-                            {/* <Slider {...technologiesSettings}>
+                              {/* <Slider {...technologiesSettings}>
                                                         <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
@@ -782,7 +790,7 @@ const Header = () => {
                                                                 </div>
                                                             </div>
                                                         </div> */}
-                            {/* <div className="col-lg-12 header-solutions-outer" >
+                              {/* <div className="col-lg-12 header-solutions-outer" >
                                                             <div className="row" >
                                                                 <div className="col-lg-3" >
                                                                     <img className="header-solutions-icon" src="/images/javascript.webp" alt="" />
@@ -852,377 +860,385 @@ const Header = () => {
                                                                 </div>
                                                             </div>
                                                         </div> */}
-                            {/* </Slider> */}
-                          </div>
-                          <div
-                            className={`header__category cursor_pointer mt-3 ${
-                              serviceMenu ? 'service-menu-header-item' : ''
-                            }`}
-                          >
-                            <Link href="/services/devops" legacyBehavior={true}>
-                              <div onClick={handleSidebar}>DevOps</div>
-                            </Link>
-                          </div>
-                          <div className="row ">
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/devops/#automation">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2  col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                              {/* </Slider> */}
+                            </div>
+                            <div
+                              className={`header__category cursor_pointer mt-3 ${
+                                serviceMenu ? 'service-menu-header-item' : ''
+                              }`}
+                            >
+                              <Link
+                                href="/services/devops"
+                                legacyBehavior={true}
+                              >
+                                <div onClick={handleSidebar}>DevOps</div>
+                              </Link>
+                            </div>
+                            <div className="row ">
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/devops/#automation">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2  col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                   className="header-solutions-icon"
                                   src="/icons/android_2.webp"
                                   alt="Android PNG Image"
                                 /> */}
 
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/icons/Unionautomation.svg"
-                                        alt="automatin PNG Image"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/icons/Unionautomation.svg"
+                                          alt="automatin PNG Image"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        Automation
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      Automation
-                                    </div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/devops/#ci/cd">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/devops/#ci/cd">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                   className="header-solutions-icon"
                                   src="/icons/android_2.webp"
                                   alt="Android PNG Image"
                                 /> */}
 
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/icons/VectorCICD.svg"
-                                        alt="cicd PNG Image"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/icons/VectorCICD.svg"
+                                          alt="cicd PNG Image"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">CI/CD</div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">CI/CD</div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/devops/#cloud">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/devops/#cloud">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                   className="header-solutions-icon"
                                   src="/img/cloud.webp"
                                   alt="3D Cloud"
                                 /> */}
 
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/img/cloud.webp"
-                                        alt="3D Cloud"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/img/cloud.webp"
+                                          alt="3D Cloud"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        Cloud Engineering
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      Cloud Engineering
-                                    </div>
-                                  </div>
-                                </div>
-                              </Link>
+                                </Link>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div className="col-lg-4 col-md-4 col-sm-4">
-                          <div
-                            className={`header__category ${
-                              serviceMenu &&
-                              'service-menu-header-item service-menu-header-category'
-                            }`}
-                          >
-                            Miscellaneous
-                          </div>
+                          <div className="col-lg-4 col-md-4 col-sm-4">
+                            <div
+                              className={`header__category ${
+                                serviceMenu &&
+                                'service-menu-header-item service-menu-header-category'
+                              }`}
+                            >
+                              Miscellaneous
+                            </div>
 
-                          <div className="row">
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/ui-ux">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                            <div className="row">
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/ui-ux">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                   className="header-solutions-icon"
                                   src="/images/content-management-system.webp"
                                   alt="3D Pencil"
                                 /> */}
 
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/icons/content-management-system.webp"
-                                        alt="3D Pencil"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/icons/content-management-system.webp"
+                                          alt="3D Pencil"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        UI / UX
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">UI / UX</div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/ecommerce-solutions">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/ecommerce-solutions">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                   className="header-solutions-icon"
                                   src="/images/bag-front-color.webp"
                                   alt="3D Bag"
                                 /> */}
 
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/icons/bag-front-color.webp"
-                                        alt="3D Bag"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/icons/bag-front-color.webp"
+                                          alt="3D Bag"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        E-commerce Solutions
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      E-commerce Solutions
-                                    </div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/content-management-system">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/content-management-system">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                   className="header-solutions-icon"
                                   src="/images/notebook-iso-color.webp"
                                   alt="3D Notebook"
                                 /> */}
 
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/icons/notebook-iso-color.webp"
-                                        alt="3D Notebook"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/icons/notebook-iso-color.webp"
+                                          alt="3D Notebook"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        Content Management System
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      Content Management System
-                                    </div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/customer-relationship-management">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/customer-relationship-management">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                   className="header-solutions-icon"
                                   src="/images/customer-relationship-management.webp"
                                   alt="3D Customer"
                                 /> */}
 
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/icons/customer-relationship-management.webp"
-                                        alt="3D Customer"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/icons/customer-relationship-management.webp"
+                                          alt="3D Customer"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        Customer Relationship Management
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      Customer Relationship Management
-                                    </div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/digital-marketing">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/digital-marketing">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                   className="header-solutions-icon"
                                   src="/icons/digital-marketing.webp"
                                   alt="3D Speaker"
                                 /> */}
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/icons/digital-marketing.webp"
-                                        alt="3D Speaker"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/icons/digital-marketing.webp"
+                                          alt="3D Speaker"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        Digital Marketing (PPC, SEO, ORM)
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      Digital Marketing (PPC, SEO, ORM)
-                                    </div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/deployment-and-host-management">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/deployment-and-host-management">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                   className="header-solutions-icon"
                                   src="/icons/deployment-host-management.webp"
                                   alt="3D Deployment PNG"
                                 /> */}
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/icons/deployment-host-management.webp"
-                                        alt="3D Deployment PNG"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/icons/deployment-host-management.webp"
+                                          alt="3D Deployment PNG"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        Deployment and Host Management
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      Deployment and Host Management
-                                    </div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/strapi">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/strapi">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                     className="header-solutions-icon"
                                     src="/icons/strapi-frame.webp"
                                     alt="strapi PNG"
                                   /> */}
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/icons/strapi-frame.webp"
-                                        alt="strapi PNG"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/icons/strapi-frame.webp"
+                                          alt="strapi PNG"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">Strapi</div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">Strapi</div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/chatwoot">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/chatwoot">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                     className="header-solutions-icon"
                                     src="/icons/chatwoot.webp"
                                     alt="chatwoot PNG"
                                   /> */}
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/icons/chatwoot.webp"
-                                        alt="chatwoot PNG"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/icons/chatwoot.webp"
+                                          alt="chatwoot PNG"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        Chatwoot
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">Chatwoot</div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/services/openAi">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/services/openAi">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                     className="header-solutions-icon"
                                     src="/icons/chatwoot.webp"
                                     alt="chatwoot PNG"
                                   /> */}
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/icons/openai1.svg"
-                                        alt="openAI icon svg"
-                                        layout="fill"
-                                        priority={true}
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/icons/openai1.svg"
+                                          alt="openAI icon svg"
+                                          layout="fill"
+                                          priority={true}
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        OpenAI (ChatGPT)
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      OpenAI (ChatGPT)
-                                    </div>
-                                  </div>
-                                </div>
-                              </Link>
+                                </Link>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -1235,8 +1251,8 @@ const Header = () => {
                   <div
                     className={
                       currentPath === '/about-us'
-                        ? 'cursor_pointer header__item nav-css underline_text '
-                        : 'cursor_pointer header__item nav-css blue-underline'
+                        ? 'cursor_pointer header__item header__item_index nav-css underline_text '
+                        : 'cursor_pointer header__item header__item_index nav-css blue-underline'
                     }
                     onClick={handleSidebar}
                   >
@@ -1247,8 +1263,8 @@ const Header = () => {
                   <div
                     className={
                       currentPath === '/careers'
-                        ? 'cursor_pointer header__item nav-css underline_text'
-                        : 'cursor_pointer header__item nav-css blue-underline'
+                        ? 'cursor_pointer header__item header__item_index nav-css underline_text'
+                        : 'cursor_pointer header__item header__item_index nav-css blue-underline'
                     }
                     onClick={handleSidebar}
                   >
@@ -1280,15 +1296,15 @@ const Header = () => {
                   </div>
                 </Link> */}
                 <div
-                  className={`header__item2 ${
-                    caseMenu && 'service-menu text-start'
+                  className={`header__item ${
+                    caseMenu && 'service-menu-header-item'
                   }`}
                 >
                   <div
                     className={`btn-outline-danger cursor_pointer header__head2 ${
                       visible2 === 'flex' ? 'service-underline' : ''
-                    } ${caseMenu ? ' nav-css' : ''}`}
-                    onClick={toggleSidebarInternalMenu2}
+                    } ${caseMenu ? 'service-menu-head nav-css' : ''}`}
+                    // onClick={toggleSidebarInternalMenu2}
                     onMouseOver={handleOnShowMenu2}
                   >
                     Case Studies
@@ -1298,170 +1314,173 @@ const Header = () => {
                     >
                       <use xlinkHref="/img/sprite.svg#icon-arrow-down"></use>
                     </svg>
-                  </div>
-                  <div className={`header__body2 ${caseMenu && ' text-start'}`}>
+                    {/* </div> */}
                     <div
-                      className=" header-center center header-dropdown-body"
+                      className={`header__body2 service-menu-visible ${
+                        caseMenu && 'service-menu text-start'
+                      }`}
                       style={{ display: `${visible2}` }}
+                      onMouseLeave={handleOnLeave2}
                     >
-                      <div
-                        className={`service-menu-visible header__row row ${styles.casestudy}`}
-                        style={{ display: `${visible2}` }}
-                        onMouseLeave={handleOnLeave2}
-                      >
+                      <div className="">
                         <div
-                          className={`col-lg-4 col-md-4 col-sm-4 ${styles.row}`}
+                          className={`header__row row ${styles.casestudy}`}
+                          // style={{ display: `${visible2}` }}
                         >
                           <div
-                            className={`header__category cursor_pointer ${
-                              caseMenu && ''
-                            }`}
+                            className={`col-lg-4 col-md-4 col-sm-4 ${styles.row}`}
                           >
-                            <Link
-                              href="/services/web-solutions"
-                              legacyBehavior={true}
+                            <div
+                              className={`header__category cursor_pointer ${
+                                caseMenu && 'service-menu-header-item'
+                              }`}
                             >
-                              <div onClick={handleSidebar}></div>
-                            </Link>
-                          </div>
-                          <div className="row">
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/Case_Study_List/1">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    {/* <img
+                              <Link
+                                href="/services/web-solutions"
+                                legacyBehavior={true}
+                              >
+                                <div onClick={handleSidebar}></div>
+                              </Link>
+                            </div>
+                            <div className="row">
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/Case_Study_List/1">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      {/* <img
                                   className="header-solutions-icon"
                                   src="/images/ror1.webp"
                                   alt="ROR - Icon"
                                 /> */}
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/blogs/mg_glass2.png"
-                                        alt="search icon"
-                                        height={35}
-                                        width={35}
-                                        priority={true}
-                                        objectFit="cover"
-                                      />
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/blogs/mg_glass2.png"
+                                          alt="search icon"
+                                          height={35}
+                                          width={35}
+                                          priority={true}
+                                          objectFit="cover"
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        Mobile App For Divers
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      Mobile App For Divers
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/Case_Study_List/2">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/blogs/mg_glass2.png"
+                                          alt="search icon"
+                                          height={35}
+                                          width={35}
+                                          priority={true}
+                                          objectFit="cover"
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        International E-Commerce
+                                      </div>
                                     </div>
                                   </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/Case_Study_List/2">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/blogs/mg_glass2.png"
-                                        alt="search icon"
-                                        height={35}
-                                        width={35}
-                                        priority={true}
-                                        objectFit="cover"
-                                      />
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/Case_Study_List/3">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/blogs/mg_glass2.png"
+                                          alt="search icon"
+                                          height={35}
+                                          width={35}
+                                          priority={true}
+                                          objectFit="cover"
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        Logistics Management
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      International E-Commerce
+                                </Link>
+                              </div>
+                              <div
+                                className="col-lg-12 header-solutions-outer"
+                                style={{ position: 'relative' }}
+                              >
+                                <Link href="/Case_Study_List/4">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/blogs/mg_glass2.png"
+                                          alt="search icon"
+                                          height={35}
+                                          width={35}
+                                          priority={true}
+                                          objectFit="cover"
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        Video Call Support App
+                                      </div>
                                     </div>
                                   </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/Case_Study_List/3">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/blogs/mg_glass2.png"
-                                        alt="search icon"
-                                        height={35}
-                                        width={35}
-                                        priority={true}
-                                        objectFit="cover"
-                                      />
+                                </Link>
+                              </div>
+                              <div className="col-lg-12 header-solutions-outer">
+                                <Link href="/Case_Study_List/5">
+                                  <div
+                                    className="row cursor_pointer"
+                                    onClick={handleSidebar}
+                                  >
+                                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
+                                      <div className="header-solutions-icon">
+                                        <Image
+                                          src="/blogs/mg_glass2.png"
+                                          alt="search icon"
+                                          height={35}
+                                          width={35}
+                                          priority={true}
+                                          objectFit="cover"
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
+                                      <div className="header__info">
+                                        Customer Engagement App
+                                      </div>
                                     </div>
                                   </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      Logistics Management
-                                    </div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div
-                              className="col-lg-12 header-solutions-outer"
-                              style={{ position: 'relative' }}
-                            >
-                              <Link href="/Case_Study_List/4">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/blogs/mg_glass2.png"
-                                        alt="search icon"
-                                        height={35}
-                                        width={35}
-                                        priority={true}
-                                        objectFit="cover"
-                                      />
-                                    </div>
-                                  </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      Video Call Support App
-                                    </div>
-                                  </div>
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="col-lg-12 header-solutions-outer">
-                              <Link href="/Case_Study_List/5">
-                                <div
-                                  className="row cursor_pointer"
-                                  onClick={handleSidebar}
-                                >
-                                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
-                                    <div className="header-solutions-icon">
-                                      <Image
-                                        src="/blogs/mg_glass2.png"
-                                        alt="search icon"
-                                        height={35}
-                                        width={35}
-                                        priority={true}
-                                        objectFit="cover"
-                                      />
-                                    </div>
-                                  </div>
-                                  <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ps-0 ms-0">
-                                    <div className="header__info">
-                                      Customer Engagement App
-                                    </div>
-                                  </div>
-                                </div>
-                              </Link>
+                                </Link>
+                              </div>
                             </div>
                           </div>
                         </div>

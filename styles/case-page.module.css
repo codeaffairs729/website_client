@@ -204,10 +204,21 @@
 }
 .casestudy {
   width: 320px;
-  height: 45%;
+  height: 200px;
   padding: 15px 30px;
   align-items: center;
+  margin: auto;
+  margin-top: 25px;
+  /* margin-right: 100px; */
+  margin-left: -125px;
 }
+.serviceStudy {
+  width: 1274px;
+  margin: auto;
+  margin-top: 25px;
+  margin-left: -820px;
+}
+
 .effort_div {
   display: flex;
   flex-direction: column;
@@ -454,7 +465,14 @@
     margin-top: 1rem;
   }
   .casestudy {
-    height: 58%;
+    margin-top: -200px;
+    /* height: 58%; */
+  }
+
+  .serviceStudy {
+    width: 580px;
+    margin-top: -200px;
+    margin-left: -250px;
   }
 }
 .about_data p {
