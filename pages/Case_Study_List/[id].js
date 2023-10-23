@@ -495,13 +495,11 @@ const Casestudy = () => {
               </div>
             </div>
             <div className={style.button}>
-              <a
-                href="./contact"
-                target="_blank"
-                className={`btn btn_pink px-5" ${style.button_link}`}
-              >
-                Initiate a Partnership
-              </a>
+              <Link href="/contact" passHref>
+                <a className={`btn btn_pink px-5 ${style.button_link}`}>
+                  Initiate a Partnership
+                </a>
+              </Link>
             </div>
           </div>
         </div>

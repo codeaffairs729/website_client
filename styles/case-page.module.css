@@ -360,7 +360,7 @@
 .button {
   position: relative;
   width: 213px;
-  left: 29rem;
+  left: 28.5rem;
 }
 .casestudy_area_5 {
   background-color: #e4ecf0;
@@ -372,6 +372,8 @@
   background-color: #2522ba;
   color: white;
   width: 211px;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 .about_data p {
   margin-bottom: 25px;
@@ -710,7 +712,7 @@
   }
   .challenge_main h1 {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     left: 1rem;
   }
   .results {
@@ -770,9 +772,16 @@
     width: 350px;
   }
   .logo {
-    top: -2.6rem;
+    top: -0.6rem;
   }
   .top_circle {
     display: none;
+  }
+
+  .py_3 {
+    padding-top: 0.5rem !important;
+  }
+  .about_image3 {
+    top: 0rem;
   }
 }
