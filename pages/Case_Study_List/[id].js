@@ -207,9 +207,9 @@ const Casestudy = () => {
             "The application empowers movers to view their jobs, alert the customer through a GPS when they are en route, access the customer's digital invoice, and capture payment once the move is complete.",
         },
       ],
-      Active: '20,000',
-      Logs: '10 Lakh',
-      AppDownloads: '50k, in one year',
+      Active: '100+',
+      Logs: '10 Lakh+',
+      AppDownloads: '1 lakh',
       Challenges: [
         {
           heading: 'Complex Data Representatio',

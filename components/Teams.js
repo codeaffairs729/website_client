@@ -44,6 +44,7 @@ function Teams() {
                 alt="Aim Board"
                 width={600}
                 height={300}
+                priority="true"
               />
             </div>
           </div>

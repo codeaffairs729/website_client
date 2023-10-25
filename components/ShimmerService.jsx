@@ -5,14 +5,15 @@ const ShimmerServices = () => {
     <>
       <div className={`${style.container}`}>
         <div className={`${style.mainContainer}`}>
+          <div></div>
           <div className={`${style.leftContainer}`}>
             <div>
               <div></div>
               <div>
                 <div></div>
+                {/* <div></div>
                 <div></div>
-                <div></div>
-                <div></div>
+                <div></div> */}
               </div>
               <div></div>
             </div>
