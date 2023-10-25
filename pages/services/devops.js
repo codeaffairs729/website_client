@@ -30,12 +30,13 @@ const contentHeader1 = () => {
             src="/icons/service-icon/cloud.webp"
             alt="3D Cloud"
             width={378}
-            height={280}
+            height={250}
             priority={true}
           />
           {/* </div> */}
         </div>
       </div>
+      <div className={hireService.temp}></div>
     </>
   )
 }
@@ -304,11 +305,12 @@ const DevOps = () => {
         content1={content1}
         content3={content3}
         // content6={content6}
+        isIconExit={true}
         content7={content7}
         contentHeader1={contentHeader1}
         techTitle={techTitle}
         // techImage={techImage}
-        isIconExit={true}
+
         bannerComponent={<Banner techTitle={heading} />}
         requestOrigin={'Requested from devops solution page'}
       />

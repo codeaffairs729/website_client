@@ -45,7 +45,6 @@
   line-height: 107%;
   color: #292930;
   margin-bottom: 50px;
-  width: 50%;
 }
 .hireh8 {
   color: #999fae;
@@ -53,6 +52,9 @@
   font-size: 1rem;
   font-style: normal;
   width: 86%;
+}
+.temp {
+  margin-bottom: 5rem;
 }
 .hireh9 {
   color: #999fae;
@@ -734,6 +736,9 @@
     left: -46px;
     transform: rotate(-46deg);
   }
+  .temp {
+    margin-bottom: 0rem;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -1133,10 +1138,9 @@
 }
 .bannercomponent {
   position: sticky;
-  top: 46.99em;
+  top: 47rem;
   left: 0;
   right: 0;
-  z-index: 999;
 }
 .mobileservicebody {
   min-height: 370px;
@@ -1876,6 +1880,9 @@
   }
   .hirelisticon p {
     font-size: 1.3rem;
+  }
+  .bannercomponent {
+    top: 3.99em;
   }
 }
 .Aicontainerleftttext ul,

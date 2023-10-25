@@ -30,6 +30,7 @@ const About = ({ Casedata }) => {
                         src={Casedata.challengeimg1}
                         height={500}
                         width="auto"
+                        priority="true"
                       />
                     </div>
                     <div className={style.image2}>
@@ -37,6 +38,7 @@ const About = ({ Casedata }) => {
                         src={Casedata.challengeimg2}
                         height={500}
                         width="auto"
+                        priority="true"
                       />
                     </div>
                   </div>
@@ -51,6 +53,7 @@ const About = ({ Casedata }) => {
                           height={247}
                           width={443.433}
                           objectFit="cover"
+                          priority="true"
                         />
                       </div>
                       <div className={style.about_images}>
@@ -60,6 +63,7 @@ const About = ({ Casedata }) => {
                             height={332}
                             width={156}
                             objectFit="cover"
+                            priority="true"
                           />
                         </div>
                         <div className={style.about_image3}>
@@ -68,6 +72,7 @@ const About = ({ Casedata }) => {
                             height={223}
                             width={432}
                             objectFit="cover"
+                            priority="true"
                           />
                         </div>
                       </div>
@@ -78,6 +83,7 @@ const About = ({ Casedata }) => {
                       height={500}
                       width={640}
                       objectFit="contain"
+                      priority="true"
                     />
                   )}
                 </div>
