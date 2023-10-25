@@ -1,11 +1,8 @@
+import React, { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
 import styles from '../styles/hireService.module.css'
-// import ShimmerServices from './ShimmerService'
-// import ShimmerHire from './ShimmerHire'
-
-import React, { useEffect, useState } from 'react'
-import { useRouter } from 'next/router'
 
 const ShimmerServices = dynamic(() => import('./ShimmerService'), {
   ssr: false,
@@ -39,11 +36,17 @@ const HireServiceLayout = ({
       `.${styles.bannercomponent}`
     )
     const scrollY = window.scrollY
-    const initialOffset = 100
+    const initialOffset = 47 * 16
+    const threshold = 200 // Adjust this threshold as needed
 
     if (bannerComponentElement) {
-      bannerComponentElement.style.top = `${initialOffset - scrollY}px`
+      const newTop = Math.max(initialOffset - scrollY, -threshold)
+      bannerComponentElement.style.top = `${newTop}px`
     }
+  }
+
+  const onScroll = () => {
+    requestAnimationFrame(handleScroll)
   }
 
   useEffect(() => {
@@ -51,16 +54,16 @@ const HireServiceLayout = ({
       setShow(false)
     }, 1000)
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', onScroll)
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('scroll', onScroll)
     }
   }, [])
+
   return (
     <>
       {show ? (
-        // <ShimmerServices />
         path === '/hire-team' || path === '/hire-freelancer' ? (
           <ShimmerHire />
         ) : (
@@ -70,22 +73,15 @@ const HireServiceLayout = ({
         <>
           <div className={styles.hirecontainer}>
             {isIconExit && (
-              <div>
-                {/* <div className={styles.bannercloud}>
-                  <Image src="/img/cloud.webp" alt="cloud-jpg" layout="fill" />
-                </div> */}
-
-                <div className={styles.bannertype}>
-                  <Image
-                    src="/images/type.webp"
-                    alt="cloud-jpg"
-                    width={26}
-                    height={66}
-                  />
-                </div>
+              <div className={styles.bannertype}>
+                <Image
+                  src="/images/type.webp"
+                  alt="cloud-jpg"
+                  width={26}
+                  height={66}
+                />
               </div>
             )}
-
             {contentHeader && contentHeader()}
             {contentHeader1 && contentHeader1()}
           </div>
@@ -96,13 +92,6 @@ const HireServiceLayout = ({
           {content5 && content5()}
           <div className={styles.maindiv}>
             <div className={styles.blue}></div>
-            {/* <div className={styles.black}>
-            <Image
-            src="/images/half-ellipse.png"
-            height={60}
-            width={60}
-            objectFit="cover"
-            /></div> */}
             <div
               className={`feature-list container ${styles.hirecontainer} ${styles.hirecontainerbodycontent}`}
             >

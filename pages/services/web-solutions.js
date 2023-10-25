@@ -133,6 +133,7 @@ const content1 = () => {
     <>
       {/* Service container body content */}
       <div className="hire-container-body-left-content-1">
+        <br></br>
         <p className={hireService.hirep}>
           At Code Garage Tech, we take pride in offering comprehensive web
           development services that encompass the entire journey, from initial

@@ -18,28 +18,36 @@
 }
 .upper_container {
   width: 100%;
-  height: 30%;
+  height: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .upper_container_item {
   height: 60%;
-  width: 30%;
+  width: 40%;
   border-radius: 20px;
   background-color: var(--shimmer-bg-color);
 }
 .lower_container {
   width: 100%;
-  height: 1000px;
-  display: flex;
+  height: 100%;
   overflow: hidden;
 }
 .lower_container_item {
-  margin: 20px;
+  margin: auto;
+  margin-bottom: 0.5rem;
+  background-color: var(--shimmer-bg-color);
+  width: 50%;
+  height: 1%;
+  border-radius: 20px;
+}
+.lower_container_item_2 {
+  margin: auto;
+  margin-top: 1rem;
   background-color: var(--shimmer-bg-color);
   width: 35%;
-  height: 100%;
+  height: 20%;
   border-radius: 20px;
 }
 .width_20 {
