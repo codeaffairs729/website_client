@@ -70,7 +70,8 @@
 /* -----------About page--------- */
 .case_container {
   margin: auto;
-  margin-block: 80px;
+  margin-block: 11px;
+  margin-bottom: 3rem;
 }
 
 .about {
@@ -142,11 +143,11 @@
 
 .challenge_main {
   position: relative;
-  display: flex;
   margin: auto;
   align-items: center;
-  gap: 95px;
   overflow-x: hidden;
+  margin-top: 8rem;
+  width: 1262px;
 }
 
 .challenge_img {
@@ -154,17 +155,21 @@
   gap: 30px;
   /* background: rgba(214, 112, 112, 0.3); */
   align-items: center;
-  justify-content: center;
 }
 
 .challenge_img div:nth-child(2) img {
-  margin-top: 70px;
+  position: relative;
+  top: 0rem;
 }
 
 .challenge_header {
-  font-size: 2em;
   color: #5956e9;
-  font-weight: bold;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 /* .challenge_main div:nth-child(2) img {
@@ -183,7 +188,10 @@
   padding-right: 0px;
 }
 .casestudycontainer h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
+  position: relative;
+  left: 2rem;
+  top: 1.7rem;
 }
 .effort_section img {
   /* height: 150px; */
@@ -223,12 +231,6 @@
 .row {
   width: 100%;
 }
-.col_12 {
-  width: 33%;
-}
-.col_6 {
-  width: 30%;
-}
 .result_section {
   display: flex;
   /* justify-content: center; */
@@ -238,7 +240,7 @@
   /* background: rgba(214, 112, 112, 0.3); */
 }
 .results h1 {
-  margin-bottom: 0rem;
+  margin-top: 1.5rem;
 }
 .result_section div:nth-child(1) {
   position: relative;
@@ -254,7 +256,94 @@
 .result_section div:nth-child(2) {
   flex: 1;
 }
-
+.result_div {
+  gap: 10rem;
+  width: 1200px;
+}
+.result_heading {
+  width: 151px;
+}
+.results h4 {
+  font-size: 1.2rem;
+}
+.col_12 {
+  width: 33%;
+}
+.col_6 {
+  width: 33%;
+}
+.challenge_columns {
+  display: flex;
+  gap: 4rem;
+}
+.challenge_columns h3 {
+  padding-bottom: 10px;
+}
+.logo {
+  position: relative;
+}
+.logs {
+  width: 1000px;
+}
+.py_3 {
+  padding-top: 2.4rem !important;
+}
+.about_section {
+  display: flex;
+  gap: 3rem;
+}
+.about_data {
+  width: 46%;
+}
+.about_data p {
+  color: #000000;
+  font-family: 'Poppins';
+}
+.challengeimg {
+  width: 50%;
+}
+.image1,
+.image2 {
+  padding: 10px;
+  width: 272.408px;
+  height: 519.188px;
+  border-radius: 33px;
+  background: #f9fdff;
+  box-shadow: 10px 2px 20px 0px #fff inset,
+    -2px -10px 20px 0px rgba(147, 185, 221, 0.4) inset,
+    40px 60px 80px 0px rgba(68, 111, 195, 0.15);
+}
+.image2 {
+  position: relative;
+  top: 6rem;
+}
+.about_images {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  top: 2rem;
+  left: -5rem;
+  height: 356px;
+}
+.about_image2 {
+  width: 176px;
+  height: 354px;
+  padding: 10px;
+  border-radius: 18px;
+  background: #f9fdff;
+  box-shadow: 10px 2px 20px 0px #fff inset,
+    -2px -10px 20px 0px rgba(147, 185, 221, 0.4) inset,
+    40px 60px 80px 0px rgba(68, 111, 195, 0.15);
+}
+.about_image3 {
+  position: relative;
+  top: 3rem;
+  left: 0rem;
+}
+.about_img1 {
+  position: relative;
+  top: 1rem;
+}
 .result_section div:nth-child(1) img {
   position: absolute;
   height: 100%;
@@ -262,9 +351,63 @@
   /* left: -150px; */
   transform: translateX(-35%);
 }
+.Link_heading h2 {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 64px;
+  text-align: center;
+}
+.Link_heading h1 {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 64px;
+  text-align: center;
+}
+.button {
+  position: relative;
+  width: 213px;
+  left: 28.5rem;
+}
+.casestudy_area_5 {
+  background-color: #e4ecf0;
+}
+.casestudy_area_6 {
+  padding-top: 2rem;
+}
+.button_link {
+  background-color: #2522ba;
+  color: white;
+  width: 211px;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+.about_data p {
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-family: 'Poppins';
+  color: #292930;
+}
+.top_circle {
+  height: 120px;
+  width: 120px;
+  position: relative;
+  left: 27rem;
+}
 @media (max-width: 1369px) {
   .results h1 {
-    margin: 0rem;
+    margin-top: 1rem;
+  }
+  .about_images {
+    left: -3rem;
+  }
+  .challenge_main {
+    margin-top: 3rem;
+    width: 1162px;
+  }
+  .py_3 {
+    padding-top: 2rem !important;
   }
   .casestudy {
     margin-left: -160px;
@@ -291,9 +434,6 @@
   .result_section div:nth-child(1) {
     top: 2.5rem;
   }
-  .results h1 {
-    margin: 0rem;
-  }
   .challenge_main {
     gap: 37px;
   }
@@ -308,6 +448,52 @@
     width: 60%;
     margin-left: 450px;
   } */
+  .result_div {
+    gap: 1rem;
+  }
+  .results h1 {
+    margin-top: 0rem;
+  }
+  .logs {
+    width: 870px;
+  }
+  /* .challengeimg {
+    width: 50%;
+  } */
+  .about_section {
+    gap: 5rem;
+  }
+  .about_image3 img {
+    width: 305px;
+  }
+  .about_image3 {
+    left: 0rem;
+  }
+  .about_data p {
+    font-size: 18px;
+  }
+  .button {
+    left: 22rem;
+  }
+  .challenge_main {
+    width: 100%;
+  }
+  .challenge_img img {
+    width: 210px;
+  }
+  .about_images {
+    left: 0rem;
+  }
+  .challenge_columns {
+    gap: 1rem;
+  }
+}
+
+.challenge_column_left {
+  width: 50%;
+}
+.challenge_column_right {
+  width: 50%;
 }
 @media (max-width: 1024px) {
   .stats {
@@ -356,10 +542,10 @@
 
     /* border-radius: 16px; */
   }
-  .case_container div:nth-child(2) {
+  /* .case_container div:nth-child(2) {
     flex-direction: column;
     gap: 0px;
-  }
+  } */
   .challenge_img div:nth-child(2) img {
     margin-top: 0px;
   }
@@ -400,7 +586,8 @@
   }
 }
 .odd,
-.even {
+.even,
+.extra {
   display: flex;
   gap: 2rem;
 }
@@ -414,10 +601,83 @@
 }
 @media (max-width: 992px) {
   .col_12 {
-    width: 100%;
+    width: 33%;
+    padding: 0px;
   }
   .col_6 {
+    width: 34%;
+    padding: 0px;
+  }
+  .result_div {
+    flex-direction: column;
+    gap: 0rem;
+    width: 750px;
+  }
+  .logs {
+    width: 783px;
+  }
+  .about_section {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .challengeimg {
     width: 100%;
+  }
+
+  .about_image3 img {
+    width: 410px;
+  }
+  .about_images {
+    left: 3rem;
+  }
+  .about_img1 {
+    left: 7rem;
+    width: 80%;
+  }
+  .challenge_columns {
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .challenge_column_left,
+  .challenge_column_right {
+    width: 100%;
+  }
+  .casestudycontainer h1 {
+    margin-bottom: 2rem;
+    left: 0rem;
+  }
+  .Link_heading h2 {
+    font-size: 40px;
+  }
+  .Link_heading h1 {
+    font-size: 14px;
+    line-height: 41px;
+  }
+  .button {
+    left: 15.5rem;
+  }
+  .challenge_main {
+    margin-top: 5rem;
+  }
+  .odd,
+  .even {
+    gap: 0rem;
+  }
+  .extra {
+    flex-direction: column;
+  }
+  .about_section {
+    gap: 0rem;
+  }
+  .challenge_img img {
+    width: 100%;
+  }
+  .about_data {
+    width: 100%;
+  }
+  .top_circle {
+    left: 38rem;
+    top: -1rem;
   }
 }
 @media (max-width: 768px) {
@@ -433,6 +693,9 @@
     flex-direction: column-reverse;
     gap: 2rem;
   }
+  .extra {
+    flex-direction: column-reverse;
+  }
 }
 
 @media (max-width: 767px) {
@@ -440,10 +703,10 @@
     height: 45vw;
   }
   .case_container {
-    margin-block: 35px;
+    margin-block: 0px;
   }
   .challenge_main {
-    margin-block: 30px;
+    margin-block: 0px;
     gap: 47px;
   }
   .challenge_img {
@@ -481,14 +744,16 @@
     margin-left: 3rem;
   } */
   .casestudycontainer {
-    padding: 0px 38px 100px;
+    padding: 0px 22px 83px;
   }
   .case_container h1 {
-    font-size: 1.6rem;
+    left: 0rem;
+    font-size: 30px;
   }
   .challenge_main h1 {
-    font-size: 1.6rem;
-    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    left: 1rem;
   }
   .results {
     margin-top: 1rem;
@@ -505,4 +770,67 @@
 .about_data p {
   color: #000000;
   font-family: 'Poppins';
+  .challenge_columns {
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .logs {
+    flex-direction: column;
+    position: relative;
+    left: 2.3rem;
+  }
+  .about_images {
+    left: 0rem;
+    flex-direction: column;
+  }
+  .about_img1 {
+    left: 0rem;
+    width: 100%;
+  }
+  .challengeimg {
+    width: 100%;
+  }
+  .about_image3 img {
+    width: 316px;
+    height: 199px;
+  }
+  .about_image2 {
+    position: relative;
+    left: 2rem;
+  }
+  .Link_heading h2 {
+    font-size: 23px;
+  }
+  .Link_heading h1 {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .button {
+    left: 4.5rem;
+  }
+  .image2 {
+    top: 1rem;
+  }
+  .about_section {
+    gap: 2rem;
+  }
+  .main {
+    height: 850px;
+  }
+  .result_div {
+    width: 350px;
+  }
+  .logo {
+    top: -0.6rem;
+  }
+  .top_circle {
+    display: none;
+  }
+
+  .py_3 {
+    padding-top: 0.5rem !important;
+  }
+  .about_image3 {
+    top: 0rem;
+  }
 }
