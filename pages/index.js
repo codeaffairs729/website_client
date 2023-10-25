@@ -103,12 +103,12 @@ export default function Home({ data, caseData }) {
         <Access />
         <Layouts />
         <Design />
-        <Industries />
-        {/* <BlogSection
+        {/* <Industries /> */}
+        <BlogSection
           data={data}
           linktext="More Blogs"
           heading="Our Featured Blogs"
-        /> */}
+        />
       </div>
     </>
   )
