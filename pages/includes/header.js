@@ -6,33 +6,6 @@ import { useRouter } from 'next/router'
 import Image from 'next/image'
 import styles from '../../styles/case-page.module.css'
 import caseStudy from '../../pages/Case_Study_List/[id]'
-import cgt_new_favicon from '../../public/logo/cgt_new_favicon.webp'
-import codeGarageTechLogo from '../../public/logo/cgt_new_logo_alt.webp'
-import ror1 from '../../public/images/ror1.webp'
-import menu_pic from '../../public/img/menu-pic.webp'
-import mg_glass from '../../public/blogs/mg_glass3.webp'
-import openai1 from '../../public/icons/openai1.svg'
-import chatwoot from '../../public/icons/chatwoot.webp'
-import strapi_frame from '../../public/icons/strapi-frame.webp'
-import deployment_host_management from '../../public/icons/deployment-host-management.webp'
-import digital_marketing from '../../public/icons/digital-marketing.webp'
-import customer_relationship_management from '../../public/icons/customer-relationship-management.webp'
-import notebook_iso from '../../public/icons/notebook-iso-color.webp'
-import bag_front_color from '../../public/icons/bag-front-color.webp'
-import content_management from '../../public/icons/content-management-system.webp'
-import cloud from '../../public/img/cloud.webp'
-import VectorCICD from '../../public/icons/VectorCICD.svg'
-import Unionautomation from '../../public/icons/Unionautomation.svg'
-import flutter from '../../public/images/flutter.webp'
-import react_native from '../../public/icons/react_native.webp'
-import ios from '../../public/icons/ios.webp'
-import android_2 from '../../public/icons/android_2.webp'
-import wordpress from '../../public/icons/wordpress.webp'
-import shopify_icon from '../../public/images/shopify_icon.webp'
-import laravel from '../../public/icons/laravel.webp'
-import node_2 from '../../public/icons/node_2.webp'
-import vuejs from '../../public/icons/vuejs.webp'
-import react_3 from '../../public/images/react_3.webp'
 
 const Header = () => {
   const [headerSearchBar, setHeaderSearchBar] = useState(false)
@@ -170,13 +143,13 @@ const Header = () => {
             rel="icon"
             type="image.webp"
             sizes="32x32"
-            href={cgt_new_favicon}
+            href="/logo/cgt_new_favicon.webp"
           />
           <link
             rel="icon"
             type="image.webp"
             sizes="16x16"
-            href={cgt_new_favicon}
+            href="/logo/cgt_new_favicon.webp"
           />
           {/* <link rel="manifest" href="/img/site.webmanifest" /> */}
           <link
@@ -215,7 +188,7 @@ const Header = () => {
               <div className="cursor_pointer header__logo">
                 <div className="header__pic">
                   <Image
-                    src={codeGarageTechLogo}
+                    src="/logo/cgt_new_logo_alt.webp"
                     alt="Code Garage Tech - Logo"
                     width={210}
                     height={39}
@@ -263,9 +236,7 @@ const Header = () => {
 
                   <div
                     className={`header__body service-menu-visible service-menu text-start`}
-                    style={{
-                      display: menuVisibleService ? `flex` : 'none',
-                    }}
+                    style={{ display: menuVisibleService ? `flex` : 'none' }}
                   >
                     <div className="header__center center header-dropdown-body">
                       <div
@@ -291,7 +262,7 @@ const Header = () => {
                                   <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={ror1}
+                                        src="/images/ror1.webp"
                                         alt="ROR - Icon"
                                         layout="fill"
                                         priority={true}
@@ -315,7 +286,7 @@ const Header = () => {
                                   <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={react_3}
+                                        src="/images/react_3.webp"
                                         alt="React Icon"
                                         layout="fill"
                                         priority={true}
@@ -344,7 +315,7 @@ const Header = () => {
                                 /> */}
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={vuejs}
+                                        src="/icons/vuejs.webp"
                                         alt="Vuejs PNG Image"
                                         layout="fill"
                                         priority={true}
@@ -377,7 +348,7 @@ const Header = () => {
 
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={node_2}
+                                        src="/icons/node_2.webp"
                                         alt="Nodejs PNG Image"
                                         layout="fill"
                                         priority={true}
@@ -406,7 +377,7 @@ const Header = () => {
                                 /> */}
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={laravel}
+                                        src="/icons/laravel.webp"
                                         alt="Laravel PNG Image"
                                         layout="fill"
                                         priority={true}
@@ -436,7 +407,7 @@ const Header = () => {
 
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={shopify_icon}
+                                        src="/images/shopify_icon.webp"
                                         alt="Shopify Icon"
                                         layout="fill"
                                         priority={true}
@@ -464,7 +435,7 @@ const Header = () => {
 
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={wordpress}
+                                        src="/icons/wordpress.webp"
                                         alt="Wordpress Icon"
                                         layout="fill"
                                         priority={true}
@@ -631,7 +602,7 @@ const Header = () => {
 
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={android_2}
+                                        src="/icons/android_2.webp"
                                         alt="Android PNG Image"
                                         layout="fill"
                                         priority={true}
@@ -661,7 +632,7 @@ const Header = () => {
 
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={ios}
+                                        src="/icons/ios.webp"
                                         alt="iOS PNG Image"
                                         layout="fill"
                                         priority={true}
@@ -691,7 +662,7 @@ const Header = () => {
 
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={react_native}
+                                        src="/icons/react_native.webp"
                                         alt="iOS PNG Image"
                                         layout="fill"
                                         priority={true}
@@ -720,7 +691,7 @@ const Header = () => {
                                 /> */}
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={flutter}
+                                        src="/images/flutter.webp"
                                         alt="Flutter PNG Image"
                                         layout="fill"
                                         priority={true}
@@ -879,7 +850,7 @@ const Header = () => {
 
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={Unionautomation}
+                                        src="/icons/Unionautomation.svg"
                                         alt="automatin PNG Image"
                                         layout="fill"
                                         priority={true}
@@ -909,7 +880,7 @@ const Header = () => {
 
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={VectorCICD}
+                                        src="/icons/VectorCICD.svg"
                                         alt="cicd PNG Image"
                                         layout="fill"
                                         priority={true}
@@ -937,7 +908,7 @@ const Header = () => {
 
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={cloud}
+                                        src="/img/cloud.webp"
                                         alt="3D Cloud"
                                         layout="fill"
                                         priority={true}
@@ -975,7 +946,7 @@ const Header = () => {
 
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={content_management}
+                                        src="/icons/content-management-system.webp"
                                         alt="3D Pencil"
                                         layout="fill"
                                         priority={true}
@@ -1003,7 +974,7 @@ const Header = () => {
 
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={bag_front_color}
+                                        src="/icons/bag-front-color.webp"
                                         alt="3D Bag"
                                         layout="fill"
                                         priority={true}
@@ -1033,7 +1004,7 @@ const Header = () => {
 
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={notebook_iso}
+                                        src="/icons/notebook-iso-color.webp"
                                         alt="3D Notebook"
                                         layout="fill"
                                         priority={true}
@@ -1063,7 +1034,7 @@ const Header = () => {
 
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={customer_relationship_management}
+                                        src="/icons/customer-relationship-management.webp"
                                         alt="3D Customer"
                                         layout="fill"
                                         priority={true}
@@ -1092,7 +1063,7 @@ const Header = () => {
                                 /> */}
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={digital_marketing}
+                                        src="/icons/digital-marketing.webp"
                                         alt="3D Speaker"
                                         layout="fill"
                                         priority={true}
@@ -1121,7 +1092,7 @@ const Header = () => {
                                 /> */}
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={deployment_host_management}
+                                        src="/icons/deployment-host-management.webp"
                                         alt="3D Deployment PNG"
                                         layout="fill"
                                         priority={true}
@@ -1150,7 +1121,7 @@ const Header = () => {
                                   /> */}
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={strapi_frame}
+                                        src="/icons/strapi-frame.webp"
                                         alt="strapi PNG"
                                         layout="fill"
                                         priority={true}
@@ -1177,7 +1148,7 @@ const Header = () => {
                                   /> */}
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={chatwoot}
+                                        src="/icons/chatwoot.webp"
                                         alt="chatwoot PNG"
                                         layout="fill"
                                         priority={true}
@@ -1204,7 +1175,7 @@ const Header = () => {
                                   /> */}
                                     <div className="header-solutions-icon">
                                       <Image
-                                        src={openai1}
+                                        src="/icons/openai1.svg"
                                         alt="openAI icon svg"
                                         layout="fill"
                                         priority={true}
@@ -1329,7 +1300,7 @@ const Header = () => {
                                 <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                   <div className="header-solutions-icon">
                                     <Image
-                                      src={mg_glass}
+                                      src="/blogs/mg_glass2.png"
                                       alt="search icon"
                                       height={35}
                                       width={35}
@@ -1355,7 +1326,7 @@ const Header = () => {
                                 <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                   <div className="header-solutions-icon">
                                     <Image
-                                      src={mg_glass}
+                                      src="/blogs/mg_glass2.png"
                                       alt="search icon"
                                       height={35}
                                       width={35}
@@ -1381,7 +1352,7 @@ const Header = () => {
                                 <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                   <div className="header-solutions-icon">
                                     <Image
-                                      src={mg_glass}
+                                      src="/blogs/mg_glass2.png"
                                       alt="search icon"
                                       height={35}
                                       width={35}
@@ -1410,7 +1381,7 @@ const Header = () => {
                                 <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                   <div className="header-solutions-icon">
                                     <Image
-                                      src={mg_glass}
+                                      src="/blogs/mg_glass2.png"
                                       alt="search icon"
                                       height={35}
                                       width={35}
@@ -1436,7 +1407,7 @@ const Header = () => {
                                 <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 d-flex justify-content-center align-items-center">
                                   <div className="header-solutions-icon">
                                     <Image
-                                      src={mg_glass}
+                                      src="/blogs/mg_glass2.png"
                                       alt="search icon"
                                       height={35}
                                       width={35}
@@ -1465,7 +1436,7 @@ const Header = () => {
                 <div className="header__pic">
                   <div style={{ zIndex: '999' }}>
                     <Image
-                      src={menu_pic}
+                      src="/img/menu-pic.webp"
                       alt="3D Computer System"
                       width={350}
                       height={308}
