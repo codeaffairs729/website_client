@@ -152,9 +152,13 @@ hire-h2 .header__col:nth-child(2) .header__box:nth-child(8) .header__preview {
 
 .service-underline {
   border-bottom: 2px solid blue;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
 }
 .blue-underline:hover {
   border-bottom: 2px solid blue;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 .header-solutions-icon {
@@ -643,6 +647,15 @@ body:not(.touch-device) .header-item[href]:before {
   width: 40px;
 }
 
+
+.image-hidden {
+  display: none;
+}
+
+/* Display the image when menuVisible is true */
+.image-visible {
+  display: block;
+}
 .footer-social-menu {
   display: flex !important;
   flex-direction: unset;
@@ -4438,10 +4451,12 @@ body:not(.touch-device) .header-item[href]:before {
   }
 
   .service-menu {
-    display: block;
     position: unset;
     overflow-y: scroll;
-    max-height: 1600px;
+    height: 370px;
+  }
+  .header__body {
+    margin: 0px 0px;
   }
 
   .service-menu-header-item {
@@ -5191,9 +5206,6 @@ body:not(.touch-device) .header-item[href]:before {
   /* About Us Component CSS End */
 }
 @media only screen and (min-width: 1023px) {
-  .about-area-4-main-data-outer {
-    /* min-height: 552px; */
-  }
   .about-area-4-sideImages-row {
     display: flex;
     flex-direction: column;
@@ -5359,8 +5371,8 @@ body:not(.touch-device) .header-item[href]:before {
 }
 @media screen and (max-width: 479px) {
   .header__row {
-    height: 1069px;
-    width: 346px;
+    height: 960px;
+    /* width: 346px; */
     padding-top: 18px;
     padding-bottom: 18px;
   }
