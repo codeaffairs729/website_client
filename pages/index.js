@@ -103,7 +103,7 @@ export default function Home({ data, caseData }) {
         <Access />
         <Layouts />
         <Design />
-        {/* <Industries /> */}
+        <Industries />
         <BlogSection
           data={data}
           linktext="More Blogs"
