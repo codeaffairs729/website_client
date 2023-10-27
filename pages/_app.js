@@ -24,6 +24,10 @@ const Header = dynamic(() => import('./includes/header'), {
 const Footer = dynamic(() => import('../components/Footer'), {
   ssr: true,
 })
+
+import Qrm from '../pages/qrm'
+import Qra from '../pages/qra'
+
 // const Footer = dynamic(() => import('./includes/footer'), {
 //   ssr: true,
 // })
@@ -37,7 +41,7 @@ function MyApp({ Component, pageProps }) {
   }, [])
 
   // const [auth, setAuth] = useState(false)
-
+  const hideHeader = Component === Qrm || Component === Qra
   return (
     // <GoogleReCaptchaProvider
     //   reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
@@ -63,9 +67,9 @@ function MyApp({ Component, pageProps }) {
         pauseOnHover
         theme="light"
       />
-      <Header />
+
+      {!hideHeader && <Header />}
       <Component {...pageProps} />
-      {/* <ChatwootWidget /> */}
       <Footer />
     </>
   )
