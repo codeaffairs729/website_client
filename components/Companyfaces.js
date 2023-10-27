@@ -219,7 +219,6 @@ function Companyfaces() {
                             ) : null}
                           </div>
                         </div>
-                        <br />
                         <div className={style.facedetail}>{detail[3]}</div>
                       </div>
                     </div>

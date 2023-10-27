@@ -9,6 +9,7 @@ import Effort from '../../components/case-study/Effort'
 import Challenges from '../../components/case-study/Challenges'
 import style from '../../styles/case-page.module.css'
 import styles from '../../styles/blogStyle.module.css'
+import design from '../../styles/about.module.css'
 const Casestudy = () => {
   const router = useRouter()
   const id = router.query.id
@@ -479,27 +480,25 @@ const Casestudy = () => {
           <Challenges Casedata={data} />
           <Effort Casedata={data} />
         </div>
-        <div className={`container-fluid  ${style.casestudy_area_5}`}>
-          <div
-            className={`container about-area-5-container  ${style.casestudy_area_6}`}
-          >
+        <div className="container-fluid about-area-5">
+          <div className="container about-area-5-container">
             <div className="row">
-              <div className={`col-lg-12 ${style.Link_heading}`}>
-                <h2 className={` ${style.Link_heading}`}>
-                  Kickstart Your Project With Us
+              <div className="col-lg-12">
+                <h2 className="mb-5 about-area-5-heading">
+                  Let’s build the future of technology together
                 </h2>
-                <h1 className={`about-area-5-heading `}>
-                  We've collaborated with top-notch innovative ideas and global
-                  brands spanning diverse sectors.
-                </h1>
+                <div
+                  className={`d-flex flex-wrap align-items-content ${design.link}`}
+                >
+                  <a
+                    href="./contact"
+                    target="_blank"
+                    class={`align-self-center about-area-5-para ${design.link}`}
+                  >
+                    Initiate a Partnership
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className={style.button}>
-              <Link href="/contact" passHref>
-                <a className={`btn btn_pink px-5 ${style.button_link}`}>
-                  Initiate a Partnership
-                </a>
-              </Link>
             </div>
           </div>
         </div>

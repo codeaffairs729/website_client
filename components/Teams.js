@@ -19,11 +19,16 @@ function Teams() {
       <div className="container-fluid about-area-6">
         <div className="row">
           <div className="col-lg-12 about-area-6-heading-outer">
-            <h1 className="text-center about-area-6-heading">
+            <h1
+              className="text-center about-area-6-heading "
+              data-aos="animation-translate-y"
+              data-aos-delay="200"
+            >
               We Help You Succeed With
               <br />
               IT Solutions
             </h1>
+
             <div className={style.about_heading}>
               <p>
                 Our dedication lies in shaping technology's future through
@@ -61,7 +66,7 @@ function Teams() {
             objectFit="cover"
           />
         </div>
-        <div className="about-area-6-circle-2">
+        <div className="about-area-6-circle-2 digitalocean-floating">
           <Image
             // className="w-100 h-100"
             src="/aboutUsImages/cube2.png"
@@ -72,7 +77,7 @@ function Teams() {
           />
         </div>
         <div className="about-area-7-circle-1"></div>
-        <div className="about-area-6-circle-3">
+        <div className="about-area-6-circle-3 digitalocean-floating">
           <Image
             // className="w-100 h-100"
             src="/aboutUsImages/cube2.png"

@@ -27,7 +27,11 @@ function vision() {
                       </div>
                     </div>
                   </h2>
-                  <h1 className="about-area-7-heading mb-5">
+                  <h1
+                    className="about-area-7-heading mb-5"
+                    data-aos="animation-translate-y"
+                    data-aos-delay="200"
+                  >
                     Growth Through
                     <br />
                     Shared Innovation
@@ -80,7 +84,11 @@ function vision() {
                     />
                   </div>
                 </h2>
-                <h1 className="about-area-7-heading mb-5">
+                <h1
+                  className="about-area-7-heading mb-5"
+                  data-aos="animation-translate-y"
+                  data-aos-delay="200"
+                >
                   Empowering Entrepreneurs,
                   <br />
                   Building Futures
