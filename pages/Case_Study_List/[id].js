@@ -490,13 +490,13 @@ const Casestudy = () => {
                 <div
                   className={`d-flex flex-wrap align-items-content ${design.link}`}
                 >
-                  <a
-                    href="./contact"
-                    target="_blank"
-                    class={`align-self-center about-area-5-para ${design.link}`}
-                  >
-                    Initiate a Partnership
-                  </a>
+                  <Link href="/contact" passHref>
+                    <a
+                      class={`align-self-center about-area-5-para ${design.link}`}
+                    >
+                      Initiate a Partnership
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
