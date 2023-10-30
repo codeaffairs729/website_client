@@ -46,8 +46,8 @@ function Qrm() {
             <Image
               src="/footer-images/Logo__text.svg"
               alt="Code Garage Tech - Logo"
-              width={210}
-              height={39}
+              width={250}
+              height={59}
               priority={true}
             />
           </a>
@@ -89,8 +89,8 @@ function Qrm() {
                       <Image
                         src={'/images/LinkedIn3d.webp'}
                         alt="3D LinkedIn Icon"
-                        height={60}
-                        width={60}
+                        height={50}
+                        width={50}
                       />
                     </a>
                     <a
@@ -102,8 +102,8 @@ function Qrm() {
                       <Image
                         src={'/images/WhatsApp.webp'}
                         alt="WhatsApp Icon"
-                        height={60}
-                        width={60}
+                        height={50}
+                        width={50}
                       />
                     </a>
                     <a
@@ -115,8 +115,8 @@ function Qrm() {
                       <Image
                         src="/footer-images/email.png"
                         alt="Email Icon"
-                        height={60}
-                        width={60}
+                        height={50}
+                        width={50}
                       />
                     </a>
                   </div>

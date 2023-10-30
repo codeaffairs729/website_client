@@ -49,7 +49,7 @@
   gap: 1.5rem;
 }
 .social_link {
-  height: 60px;
+  height: 50px;
   gap: 1rem;
   margin: 0rem !important;
 }
@@ -98,8 +98,9 @@
 
   } */
   .redirect_link_top {
-    left: 7rem;
-    width: 210px;
+    left: 6rem;
+    width: 260px;
+    margin-bottom: 10px;
   }
   .img img {
     min-width: 75% !important;
@@ -114,8 +115,7 @@
     margin-top: 2rem !important;
   }
   .redirect_link_top {
-    left: 5.5rem;
-    width: 210px;
+    left: 3.8rem;
   }
   .left_part {
     min-width: 50px;
