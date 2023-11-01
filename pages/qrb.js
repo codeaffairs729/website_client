@@ -5,7 +5,10 @@ const Qrb = () => {
   const router = useRouter()
   console.log('router as path', router.asPath)
   useEffect(() => {
-    router.push('/')
+    if (router.asPath === '/qrb') {
+      console.log('qrb')
+      router.push('/')
+    }
   }, [])
 
   return null
