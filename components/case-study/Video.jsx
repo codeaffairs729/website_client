@@ -37,7 +37,7 @@ const Video = ({ Casedata }) => {
                   width={555}
                   height={360}
                   className="img-fluid mx-auto"
-                  priority="true"
+                  priority={true}
                   style={{ borderRadius: '30px' }}
                 />
               </div>
