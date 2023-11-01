@@ -124,8 +124,8 @@ function Qrm() {
                     <a
                       href={''}
                       target="_blank"
-                      rel="noreferrer"
                       onClick={handleWhatsAppClick}
+                      className={`btn career-area-1-btn px-5 ${styles.btn}`}
                     >
                       Save Contact
                     </a>

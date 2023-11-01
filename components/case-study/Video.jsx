@@ -36,7 +36,6 @@ const Video = ({ Casedata }) => {
                   src={Casedata.img}
                   width={555}
                   height={360}
-                  objectFit="cover"
                   className="img-fluid mx-auto"
                   priority="true"
                   style={{ borderRadius: '30px' }}

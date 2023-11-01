@@ -8,13 +8,16 @@ const ShimmerEffect = () => {
         <div className={`  ${style.upper_container_item}`}></div>
       </div>
       <div className={` ${style.lower_container}`}>
-        <div className={`${style.lower_container_item}`}></div>
-        <div className={`${style.lower_container_item}`}></div>
-        <div className={`${style.lower_container_item}`}></div>
-        <div className={`${style.lower_container_item}`}></div>
-        <div className={`${style.lower_container_item}`}></div>
-        <div className={`${style.lower_container_item_2}`}></div>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
+      <div className={`${style.lower_container_item_2}`}></div>
     </div>
   )
 }

@@ -2,6 +2,7 @@
   background-color: #323038;
   margin-bottom: 0rem;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   margin-top: 0rem;
   color: white;
   width: 500px;
@@ -59,7 +60,11 @@
   gap: 2rem;
   align-items: center;
 }
-
+.btn {
+  height: 53px;
+  padding: 0rem !important;
+  background-color: #a6a0a0;
+}
 @media only screen and (max-width: 575px) {
   .left_part {
     min-width: 50px;
@@ -67,7 +72,7 @@
   }
   .about_area_outer {
     padding-top: 0rem;
-    padding-bottom: 0rem;
+    padding-bottom: 1.2rem;
     width: 100%;
   }
   .about_faces h1 {

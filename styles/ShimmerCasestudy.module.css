@@ -1,0 +1,171 @@
+/* :root {
+  --shimmer-bg-color: rgba(241, 234, 234, 0.558);
+} */
+.container {
+  width: 110vw;
+  height: 100vh;
+  --shimmer-bg-color: rgba(222, 215, 215, 0.832);
+}
+
+.mainContainer {
+  display: flex;
+  padding-top: 7em;
+  width: 80vw;
+  margin: auto;
+  height: 75vh;
+}
+.bottomContainer {
+  display: flex;
+  margin: auto;
+  width: 80vw;
+  gap: 2rem;
+}
+.leftContainer {
+  width: 40%;
+}
+.leftContainerbottom {
+  width: 50%;
+}
+
+.rightContainer {
+  width: 40%;
+  height: 150vh;
+}
+
+.rightContainer div {
+  width: 100%;
+  height: 45vh;
+  background: white;
+  margin-top: 2em;
+  background-color: var(--shimmer-bg-color);
+  border-radius: 12px;
+}
+
+.leftContainer div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.leftContainerbottom div {
+  display: flex;
+  gap: 5px;
+}
+.simplebottomContainer {
+    width: 50%;
+}
+.leftContainer div :nth-child(1) {
+  width: 6vw;
+  height: 3vh;
+  background: var(--shimmer-bg-color);
+  border-radius: 12px;
+}
+/* .leftContainer div :nth-child(2) {
+    width: 50vw;
+    height: 70vh;
+  } */
+.leftContainer div :nth-child(2) {
+  width: 30vw;
+  height: 25vh;
+  background: var(--shimmer-bg-color);
+  border-radius: 12px;
+}
+.leftContainer div :nth-child(3) {
+  width: 30vw;
+  height: 25vh;
+  background: var(--shimmer-bg-color);
+  border-radius: 12px;
+}
+.leftContainer div :nth-child(5) {
+  width: 30vw;
+  height: 8vh;
+  background: var(--shimmer-bg-color);
+  border-radius: 12px;
+}
+
+.leftContainerbottom div {
+  display: flex;
+  gap: 5px;
+}
+.simplebottomContainer div {
+    width: 30vw;
+    height: 25vh;
+    background: var(--shimmer-bg-color);
+    border-radius: 22px;
+  }
+  
+.leftContainerbottom div :nth-child(1) {
+  width: 18vw;
+  height: 25vh;
+  background: var(--shimmer-bg-color);
+  border-radius: 22px;
+  margin-right: 2rem;
+}
+
+.leftContainerbottom div :nth-child(3) {
+  width: 18vw;
+  height: 25vh;
+  background: var(--shimmer-bg-color);
+  border-radius: 22px;
+  position: relative;
+  top: 4rem;
+}
+.rightContainerbottom div {
+  width: 100%;
+  height: 45vh;
+  background: white;
+  border-radius: 12px;
+}
+.rightContainerbottom div :nth-child(1) {
+  width: 32rem;
+  height: 6rem;
+  background: var(--shimmer-bg-color);
+}
+.rightContainerbottom div :nth-child(3) {
+  width: 32rem;
+  height: 5rem;
+  background: var(--shimmer-bg-color);
+}
+.rightContainerbottom div :nth-child(5) {
+  width: 35rem;
+  height: 5rem;
+  background: var(--shimmer-bg-color);
+}
+@media only screen and (max-width: 768px) {
+  .mainContainer {
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+  .leftContainer {
+    width: 100%;
+    margin: auto;
+  }
+
+  .rightContainer {
+    width: 100%;
+  }
+  .leftContainer div {
+    margin: auto;
+  }
+  .rightContainer div {
+    margin-top: 2em;
+  }
+
+  .leftContainer div :nth-child(1) {
+    width: 70vw;
+    height: 50vh;
+    background: var(--shimmer-bg-color);
+    border-radius: 12px;
+  }
+  .leftContainer div :nth-child(2) {
+    width: 80vw;
+    height: 50vh;
+    /* background: var(--shimmer-bg-color); */
+    /* border-radius: 12px; */
+  }
+  .leftContainer div :nth-child(3) {
+    width: 90vw;
+    height: 60vh;
+    background: var(--shimmer-bg-color);
+    border-radius: 12px;
+  }
+}

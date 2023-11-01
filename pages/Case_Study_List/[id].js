@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
+import dynamic from 'next/dynamic'
 import Video from '../../components/case-study/Video'
 import About from '../../components/case-study/About'
 import Effort from '../../components/case-study/Effort'
@@ -10,6 +11,10 @@ import Challenges from '../../components/case-study/Challenges'
 import style from '../../styles/case-page.module.css'
 import styles from '../../styles/blogStyle.module.css'
 import design from '../../styles/about.module.css'
+const Shimmer = dynamic(() => import('../../components/ShimmerCasestudy'), {
+  ssr: false,
+})
+import style1 from '../../styles/ShimmerCasestudy.module.css'
 const Casestudy = () => {
   const router = useRouter()
   const id = router.query.id
@@ -451,58 +456,70 @@ const Casestudy = () => {
       router.push('/404')
     }
   }, [])
+  const [show, SetShow] = useState(true)
 
+  useEffect(() => {
+    setTimeout(() => {
+      SetShow(false)
+    }, 500)
+  }, [])
   const handleOnBack = () => {
     router.back()
   }
   if (!data) {
     return null
   }
-
   return (
     <>
-      <div className={style.container}>
-        <img
-          src="/case_study/Ellipse_blue.png"
-          className={style.ellipse_blue_img}
-        />
-        <img
-          src="/case_study/ellipse_black_circle.png"
-          className={style.ellipse_blue_circle}
-        />
-        <img
-          src="/case_study/ellipse_blue_circle.png"
-          className={style.ellipse_black_circle}
-        />
-        <Video Casedata={data} />
-        <div className={` container ${style.casestudycontainer}`}>
-          <About Casedata={data} />
-          <Challenges Casedata={data} />
-          <Effort Casedata={data} />
-        </div>
-        <div className="container-fluid about-area-5">
-          <div className="container about-area-5-container">
-            <div className="row">
-              <div className="col-lg-12">
-                <h2 className="mb-5 about-area-5-heading">
-                  Let’s build the future of technology together
-                </h2>
-                <div
-                  className={`d-flex flex-wrap align-items-content ${design.link}`}
-                >
-                  <Link href="/contact" passHref>
-                    <a
-                      class={`align-self-center about-area-5-para ${design.link}`}
-                    >
-                      Initiate a Partnership
-                    </a>
-                  </Link>
+      {show ? (
+        <>
+          <Shimmer Casedata={data} />
+        </>
+      ) : (
+        <div className={style.container}>
+          <img
+            src="/case_study/Ellipse_blue.png"
+            className={style.ellipse_blue_img}
+          />
+          <img
+            src="/case_study/ellipse_black_circle.png"
+            className={style.ellipse_blue_circle}
+          />
+          <img
+            src="/case_study/ellipse_blue_circle.png"
+            className={style.ellipse_black_circle}
+          />
+          <Video Casedata={data} />
+          <div className={` container ${style.casestudycontainer}`}>
+            <About Casedata={data} />
+            <Challenges Casedata={data} />
+            <Effort Casedata={data} />
+          </div>
+
+          <div className="container-fluid about-area-5">
+            <div className="container about-area-5-container">
+              <div className="row">
+                <div className="col-lg-12">
+                  <h2 className="mb-5 about-area-5-heading">
+                    Let’s build the future of technology together
+                  </h2>
+                  <div
+                    className={`d-flex flex-wrap align-items-content ${design.link}`}
+                  >
+                    <Link href="/contact" passHref>
+                      <a
+                        class={`align-self-center about-area-5-para ${design.link}`}
+                      >
+                        Initiate a Partnership
+                      </a>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
     </>
   )
 }
