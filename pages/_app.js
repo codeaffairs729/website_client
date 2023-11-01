@@ -22,7 +22,7 @@ const Header = dynamic(() => import('./includes/header'), {
   ssr: false,
 })
 const Footer = dynamic(() => import('../components/Footer'), {
-  ssr: false,
+  ssr: true,
 })
 
 import Qrm from '../pages/qrm'
