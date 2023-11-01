@@ -51,7 +51,7 @@
   gap: 5px;
 }
 .simplebottomContainer {
-    width: 50%;
+  width: 50%;
 }
 .leftContainer div :nth-child(1) {
   width: 6vw;
@@ -87,12 +87,12 @@
   gap: 5px;
 }
 .simplebottomContainer div {
-    width: 30vw;
-    height: 25vh;
-    background: var(--shimmer-bg-color);
-    border-radius: 22px;
-  }
-  
+  width: 30vw;
+  height: 25vh;
+  background: var(--shimmer-bg-color);
+  border-radius: 22px;
+}
+
 .leftContainerbottom div :nth-child(1) {
   width: 18vw;
   height: 25vh;
@@ -130,42 +130,47 @@
   height: 5rem;
   background: var(--shimmer-bg-color);
 }
-@media only screen and (max-width: 768px) {
+@media (max-width: 992px) {
   .mainContainer {
     flex-direction: column;
-    /* justify-content: center; */
   }
-  .leftContainer {
-    width: 100%;
-    margin: auto;
+  .bottomContainer {
+    display: none;
   }
-
-  .rightContainer {
-    width: 100%;
-  }
-  .leftContainer div {
-    margin: auto;
-  }
-  .rightContainer div {
-    margin-top: 2em;
-  }
-
   .leftContainer div :nth-child(1) {
-    width: 70vw;
-    height: 50vh;
+    width: 16vw;
+    height: 2vh;
     background: var(--shimmer-bg-color);
     border-radius: 12px;
   }
+  /* .leftContainer div :nth-child(2) {
+      width: 50vw;
+      height: 70vh;
+    } */
   .leftContainer div :nth-child(2) {
-    width: 80vw;
-    height: 50vh;
-    /* background: var(--shimmer-bg-color); */
-    /* border-radius: 12px; */
+    width: 30vw;
+    height: 2vh;
+    background: var(--shimmer-bg-color);
+    border-radius: 12px;
   }
   .leftContainer div :nth-child(3) {
-    width: 90vw;
-    height: 60vh;
+    width: 60vw;
+    height: 2vh;
     background: var(--shimmer-bg-color);
+    border-radius: 12px;
+  }
+  .leftContainer div :nth-child(5) {
+    width: 60vw;
+    height: 4vh;
+    background: var(--shimmer-bg-color);
+    border-radius: 12px;
+  }
+  .rightContainer div {
+    width: 40vh;
+    height: 25vh;
+    background: white;
+    margin-top: 2em;
+    background-color: var(--shimmer-bg-color);
     border-radius: 12px;
   }
 }

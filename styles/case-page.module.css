@@ -765,7 +765,7 @@
     width: 100%;
     margin-left: 900px;
   } */
-}
+
 .about_data p {
   color: #000000;
   font-family: 'Poppins';
@@ -773,6 +773,7 @@
     flex-direction: column;
     gap: 0rem;
   }
+}
   .logs {
     flex-direction: column;
     position: relative;
@@ -829,10 +830,11 @@
   .py_3 {
     padding-top: 0.5rem !important;
   }
-  .about_image3 {
+.about_image3 {
     top: 0rem;
   }
   .col_6 {
     padding: 0px !important;
   }
 }
+
