@@ -99,15 +99,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 1000px;
+    height: 100%;
   }
   .lower_container_item {
     display: flex;
-    width: 90%;
-    height: 1000px;
+    width: 100%;
+    height: 100%;
   }
   .upper_container_item {
-    width: 70%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
   }
 }

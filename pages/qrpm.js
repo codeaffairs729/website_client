@@ -3,11 +3,11 @@ import style from '../styles/about.module.css'
 import styles from '/styles/qrcode.module.css'
 import Image from 'next/image'
 import FooterCss from '../styles/Footer.module.css'
-const email = 'ceo@codegaragetech.com'
+const email = 'dixit@codegaragetech.com'
 function generateVCFData() {
   const contactName = 'Dixit Tiwari (Project Manager)'
   const phoneNumber = '+91 8288878881'
-  const email = 'ceo@codegaragetech.com'
+  const email = 'dixit@codegaragetech.com'
 
   return `BEGIN:VCARD
 VERSION:3.0
@@ -76,7 +76,7 @@ function Qrpm() {
             >
               <div className={`about-area-4-main-para ${styles.main_para} `}>
                 <div className={`fw-bolder ${styles.about_faces}`}>
-                  <h1>Dixit Tiwari (PM)</h1>
+                  <h1>Dixit Tiwari (PM)     </h1>
                   <div className={`d-flex ${styles.social_link}`}>
                     <a
                       href={

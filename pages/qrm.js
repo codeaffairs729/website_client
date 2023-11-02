@@ -27,7 +27,7 @@ function Qrm() {
 
     const a = document.createElement('a')
     a.href = url
-    a.download = 'mehakpal_contact.vcf'
+    a.download = 'Mehakpal_Singh.vcf'
     a.style.display = 'none'
     document.body.appendChild(a)
     a.click()
