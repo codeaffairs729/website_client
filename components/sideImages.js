@@ -16,7 +16,7 @@ const SideImages = (props) => {
         <img
           className={`about-area-4-side-img ${selected ? style.selected : ''}`}
           id={id}
-          src={sideImagesgUrl}
+          src={sideImagesgUrl}glob
           alt={altImg}
         />
       </a>

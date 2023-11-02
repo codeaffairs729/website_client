@@ -1661,6 +1661,7 @@
     position: inherit;
     margin-left: -129px;
     width: 970px;
+    height: 500px;
   }
   .maindevcontainer h5 {
     width: 100%;
@@ -1758,9 +1759,6 @@
     font-size: 35px;
   }
 
-  .adjustservicebody {
-    margin-left: 5px;
-  }
   .adjustAIservicebody {
     margin-top: -10vw;
   }
@@ -1789,17 +1787,20 @@
   }
   .hireh6 {
     margin-left: 23px;
+    font-size:44px;
   }
   .AItopcircle {
     display: none;
   }
-
+.AIlisticon li{
+  font-size:19px;
+}
   .AIbottomcircle2 {
     display: none;
   }
   .Aiconatinerright {
-    width: 410px;
-    margin-left: 0px;
+    width: 405px;
+    margin-left: -7px;
   }
   .Aicontainerleftttext {
     margin-left: 21px;
@@ -1810,21 +1811,21 @@
   }
   .Aiservicebodyleft {
     padding-left: 0px;
+    margin-left: 27px;
   }
   .AIimage {
     margin-left: 35px;
   }
   .hireh5 {
-    font-size: 43px;
+    font-size: 35px;
     line-height: 3.2rem;
-    width: 444px;
+    width: 380px;
     margin-left: -1px;
   }
   .topImage {
-    width: 446px;
-    margin-top: 23px;
-    margin-bottom: 15px;
-    margin-left: -43px;
+    width: 531px;
+    margin-left: -86px;
+    height: 275px;
   }
   .maindevcontainer {
     padding-bottom: 20px;
