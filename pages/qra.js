@@ -28,7 +28,7 @@ function Qra() {
     const url = window.URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url
-    a.download = 'ankush_contact.vcf'
+    a.download = 'Ankus_Mahajan.vcf'
     a.style.display = 'none'
     document.body.appendChild(a)
     a.click()
