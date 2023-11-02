@@ -27,6 +27,7 @@ const Footer = dynamic(() => import('../components/Footer'), {
 
 import Qrm from '../pages/qrm'
 import Qra from '../pages/qra'
+import Qrpm from '../pages/qrpm'
 
 // const Footer = dynamic(() => import('./includes/footer'), {
 //   ssr: true,
@@ -41,7 +42,8 @@ function MyApp({ Component, pageProps }) {
   }, [])
 
   // const [auth, setAuth] = useState(false)
-  const hideHeader = Component === Qrm || Component === Qra
+  const hideHeader =
+    Component === Qrm || Component === Qra || Component === Qrpm
   return (
     // <GoogleReCaptchaProvider
     //   reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
