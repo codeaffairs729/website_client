@@ -60,10 +60,10 @@
   gap: 2rem;
   align-items: center;
 }
-.btn {
-  height: 53px;
-  padding: 0rem !important;
-  background-color: #a6a0a0;
+.btn{
+  height:53px;
+  padding:0rem !important;
+  background-color:#a6a0a0;
 }
 @media only screen and (max-width: 575px) {
   .left_part {

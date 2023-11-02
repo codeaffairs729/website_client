@@ -5,8 +5,8 @@ import Image from 'next/image'
 import FooterCss from '../styles/Footer.module.css'
 const email = 'ceo@codegaragetech.com'
 function generateVCFData() {
-  const contactName = 'MP Singh (CEO)'
-  const phoneNumber = '+1 (437) 662-9166'
+  const contactName = 'Dixit Tiwari (Project Manager)'
+  const phoneNumber = '+91 8288878881'
   const email = 'ceo@codegaragetech.com'
 
   return `BEGIN:VCARD
@@ -27,7 +27,7 @@ function Qrpm() {
 
     const a = document.createElement('a')
     a.href = url
-    a.download = 'mehakpal_contact.vcf'
+    a.download = 'Dixit_Tiwari.vcf'
     a.style.display = 'none'
     document.body.appendChild(a)
     a.click()
@@ -64,7 +64,7 @@ function Qrpm() {
               <div className={styles.img}>
                 <Image
                   className="about-area-4-main-img"
-                  src="/aboutUsImages/ceo.png"
+                  src="/aboutUsImages/pm2.png"
                   height={400}
                   width={400}
                   objectFit="cover"
@@ -76,11 +76,11 @@ function Qrpm() {
             >
               <div className={`about-area-4-main-para ${styles.main_para} `}>
                 <div className={`fw-bolder ${styles.about_faces}`}>
-                  <h1> Mehakpal Singh (CEO)</h1>
+                  <h1>Dixit Tiwari (PM)</h1>
                   <div className={`d-flex ${styles.social_link}`}>
                     <a
                       href={
-                        'https://www.linkedin.com/in/mehakpal-singh-3a9215a5/'
+                        'https://www.linkedin.com/in/dixit-tiwari-b30882216/'
                       }
                       className="footer__link"
                       target="_blank"
@@ -94,7 +94,7 @@ function Qrpm() {
                       />
                     </a>
                     <a
-                      href={'https://api.whatsapp.com/send?phone=14376629166'}
+                      href={'https://api.whatsapp.com/send?phone=8288878881'}
                       className="footer__link "
                       target="_blank"
                       rel="noreferrer"
