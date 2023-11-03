@@ -38,7 +38,10 @@ function MyApp({ Component, pageProps }) {
     AOS.init()
     AOS.refresh()
   }, [])
-
+  const [isLoading, setIsLoading] = useState(true)
+  setTimeout(() => {
+    setIsLoading(false)
+  }, 15000)
   // const [auth, setAuth] = useState(false)
   const hideHeader =
     Component === Qrm || Component === Qra || Component === Qrpm
@@ -70,7 +73,7 @@ function MyApp({ Component, pageProps }) {
 
       {!hideHeader && <Header />}
       <Component {...pageProps} />
-      <Footer />
+      {!isLoading && <Footer />}
     </>
   )
 }
