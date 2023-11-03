@@ -6,18 +6,18 @@ const Rating = () => {
       <div className="rating-container d-flex flex-column justify-content-between">
         <div
           className="rating-text fw-bold fs-5"
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-offset="10"
+          // data-aos="fade-up"
+          // data-aos-delay="200"
+          // data-aos-offset="10"
         >
           Top Rated On
         </div>
         <div className="rating-row">
           <div
             className="d-flex flex-column justify-content-between rating-border-left"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-offset="10"
+            // data-aos="fade-up"
+            // data-aos-delay="200"
+            // data-aos-offset="10"
           >
             <div>
               <Image
@@ -33,9 +33,9 @@ const Rating = () => {
                 alt="five-star-img"
                 width={143}
                 height={20}
-                data-aos="fade-up"
-                data-aos-delay="200"
-                data-aos-offset="10"
+                // data-aos="fade-up"
+                // data-aos-delay="200"
+                // data-aos-offset="10"
               />
             </div>
           </div>
@@ -46,9 +46,9 @@ const Rating = () => {
                 alt="goodfirm-logo"
                 width={142}
                 height={22}
-                data-aos="fade-up"
-                data-aos-delay="200"
-                data-aos-offset="10"
+                // data-aos="fade-up"
+                // data-aos-delay="200"
+                // data-aos-offset="10"
               />
             </div>
             <div className="rating-img">
@@ -57,9 +57,9 @@ const Rating = () => {
                 alt="five-full-rating-png"
                 width={142}
                 height={20}
-                data-aos="fade-up"
-                data-aos-delay="200"
-                data-aos-offset="10"
+                // data-aos="fade-up"
+                // data-aos-delay="200"
+                // data-aos-offset="10"
               />
             </div>
           </div>

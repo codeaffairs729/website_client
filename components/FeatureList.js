@@ -32,9 +32,9 @@ const FeatureList = () => {
           alt=""
           width={56}
           height={56}
-          data-aos="zoom-in"
-          data-aos-delay="200"
-          data-aos-offset="10"
+          // data-aos="zoom-in"
+          // data-aos-delay="200"
+          // data-aos-offset="10"
         />
       </div>
 

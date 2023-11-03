@@ -56,8 +56,8 @@ const Main = () => {
           <div className="main__center center">
             <div
               className="main-big-blue-circle"
-              data-aos="animation-translate-y"
-              data-aos-delay="50"
+              // data-aos="animation-translate-y"
+              // data-aos-delay="50"
               // data-aos-offset="300"
             >
               <Image
@@ -74,8 +74,8 @@ const Main = () => {
                     <div className="">
                       <div
                         className="main__title title title_big"
-                        data-aos="animation-translate-y"
-                        data-aos-delay="200"
+                        // data-aos="animation-translate-y"
+                        // data-aos-delay="200"
                         // data-aos-offset="300"
                       >
                         <span className="title__box dev-title mb-3"></span>
@@ -86,8 +86,8 @@ const Main = () => {
                       </div>
                       <div
                         className="main__info info ms-3 main-info"
-                        data-aos="animation-translate-y"
-                        data-aos-delay="200"
+                        // data-aos="animation-translate-y"
+                        // data-aos-delay="200"
                         // data-aos-offset="300"
                       >
                         We have extensive experience in developing
@@ -98,16 +98,16 @@ const Main = () => {
                       <Rating />
                       <div
                         className="main__scroll ms-3"
-                        data-aos="animation-translate-y"
-                        data-aos-delay="200"
+                        // data-aos="animation-translate-y"
+                        // data-aos-delay="200"
                         // data-aos-offset="300"
                       ></div>
                     </div>
                   </div>
                   <div
                     className="col-12 col-lg-5 col-md-5 d-flex align-items-center justify-content-center desktop_image"
-                    data-aos="animation-translate-y"
-                    data-aos-delay="200"
+                    // data-aos="animation-translate-y"
+                    // data-aos-delay="200"
                     // data-aos-offset="300"
                   >
                     <Image
@@ -124,9 +124,9 @@ const Main = () => {
 
             <div
               className="main__circles"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-offset="10"
+              // data-aos="fade-up"
+              // data-aos-delay="200"
+              // data-aos-offset="10"
             >
               <div className="main__circle"></div>
               <div className="main__circle js-rellax"></div>
