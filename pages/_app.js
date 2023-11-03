@@ -21,9 +21,7 @@ import 'react-toastify/dist/ReactToastify.css'
 const Header = dynamic(() => import('./includes/header'), {
   ssr: false,
 })
-const Footer = dynamic(() => import('../components/Footer'), {
-  ssr: false,
-})
+import Footer from '../components/Footer'
 
 import Qrm from '../pages/qrm'
 import Qra from '../pages/qra'
