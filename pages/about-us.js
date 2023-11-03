@@ -4,6 +4,9 @@ import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import styles from '../styles/about.module.css'
 import style from '../styles/Shimmer.module.css'
+const Shimmer = dynamic(() => import('../components/ShimmerEffect'), {
+  ssr: false,
+})
 const Companyfaces = dynamic(() => import('../components/Companyfaces'), {
   ssr: false,
 })
@@ -25,9 +28,7 @@ const History = dynamic(() => import('../components/History'), {
 const Teams = dynamic(() => import('./teams'), {
   ssr: false,
 })
-const Shimmer = dynamic(() => import('../components/ShimmerEffect'), {
-  ssr: false,
-})
+
 
 function AboutUs() {
   const [loaded, setLoaded] = useState(false)

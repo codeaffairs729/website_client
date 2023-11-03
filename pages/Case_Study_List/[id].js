@@ -4,6 +4,9 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import dynamic from 'next/dynamic'
+const Shimmer = dynamic(() => import('../../components/ShimmerCasestudy'), {
+  ssr: false,
+})
 import Video from '../../components/case-study/Video'
 import About from '../../components/case-study/About'
 import Effort from '../../components/case-study/Effort'
@@ -11,9 +14,6 @@ import Challenges from '../../components/case-study/Challenges'
 import style from '../../styles/case-page.module.css'
 import styles from '../../styles/blogStyle.module.css'
 import design from '../../styles/about.module.css'
-const Shimmer = dynamic(() => import('../../components/ShimmerCasestudy'), {
-  ssr: false,
-})
 import style1 from '../../styles/ShimmerCasestudy.module.css'
 const Casestudy = () => {
   const router = useRouter()
