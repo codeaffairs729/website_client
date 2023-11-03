@@ -41,7 +41,7 @@ function MyApp({ Component, pageProps }) {
   const [isLoading, setIsLoading] = useState(true)
   setTimeout(() => {
     setIsLoading(false)
-  }, 35000)
+  }, 20000)
   // const [auth, setAuth] = useState(false)
   const hideHeader =
     Component === Qrm || Component === Qra || Component === Qrpm
