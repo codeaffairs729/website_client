@@ -104,10 +104,10 @@
 }
 .companyface_title {
   height: 31px;
-  width: 90px;
+  width: 98px;
   border-radius: 25px;
   position: relative;
-  right: -4.5rem;
+  right: -4rem;
   top: -2rem;
   background-color: #eadff8;
   text-align: center;
@@ -326,7 +326,7 @@
     width: 122.1px;
   }
   .companyface_title {
-    right: -4.5rem;
+    right: -4rem;
   }
   .about_mouse {
     height: 53px;
@@ -429,7 +429,7 @@
   }
 
   .companyface {
-    right: -8.5rem;
+    right: -9rem;
     top: 6.5rem;
   }
   .about_area_7 h2 {
