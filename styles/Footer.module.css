@@ -18,6 +18,9 @@
   padding-top: 70px;
   padding-bottom: 40px;
   margin: 0px;
+  position: sticky;
+  bottom: 0;
+  left: 0;
 }
 .left_container {
   display: flex;
